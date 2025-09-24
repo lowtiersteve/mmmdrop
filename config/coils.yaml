@@ -4,70 +4,48 @@ coils:
   c_flipper_left_main:
     number: 3208-3
     default_pulse_ms: 25
-    label: "Left Flipper Coil Flip Signal"
   c_flipper_left_hold:
     number: 3208-2
     allow_enable: true
-    label: "Left Flipper Coil Hold Signal"
   c_flipper_right_main:
     number: 3208-5
     default_pulse_ms: 19
-    label: "Right Lower Flipper Coil Flip Signal"
   c_flipper_right_hold:
     number: 3208-4
     allow_enable: true
-    label: "Right Lower Flipper Coil Hold Signal"
   c_trough_eject:
     number: 3208-1
-    default_pulse_ms: 15
-    label: "Trough Eject"
+    default_pulse_ms: 20
   c_left_slingshot:
     number: 3208-7
     default_pulse_ms: 15
-    label: "Left Sling"
   c_right_slingshot:
     number: 3208-6
     default_pulse_ms: 15
-    label: "Right Sling"
   c_flipper_top_right_main:
     number: 0804-0
     default_pulse_ms: 20
-    label: "Right Upper Flipper Coil Flip Signal"
   c_flipper_top_right_hold:
     number: 0804-1
     allow_enable: true
-    label: "Right Upper Flipper Coil Hold Signal"
   c_right_lower_pop:
     number: 0804-2
     default_pulse_ms: 20
-    label: "Lower Right Pop Bumper"
   c_three_bank:
     number: 0804-3
     default_pulse_ms: 23
-    label: "Drop Target Reset"
   c_center_upper_pop:
     number: 0804b-1
     default_pulse_ms: 20
-    label: "Upper Right Pop Bumper"
   c_left_upper_pop:
     number: 0804b-0
     default_pulse_ms: 20
-    label: "Upper Left Pop Bumper"
   c_scoop_eject:
     number: 0804b-2
     default_pulse_ms: 25
-    label: "Scoop Eject"
   c_plunger:
     number: 3208-0
     default_pulse_ms: 20
-    label: "Auto Plunger"
-  c_uppost:
-    number: 0804b-3
-    default_pulse_ms: 15
-    label: "Up Post"
-    default_hold_power: 0.1
-    default_pulse_power: 0.1
-
 
 autofire_coils:
   left_slingshot:

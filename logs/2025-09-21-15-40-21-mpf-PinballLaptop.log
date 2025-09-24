@@ -1,0 +1,93 @@
+2025-09-21 15:40:21,386 : INFO : root : Loading config.
+2025-09-21 15:40:21,390 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2025-09-21 15:40:21,390 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\config\config.yaml
+2025-09-21 15:40:21,390 : INFO : ConfigProcessor : Loading config from file c:\venv\mpf\lib\site-packages\mpf\mpfconfig.yaml.
+2025-09-21 15:40:21,399 : INFO : ConfigProcessor : Loading config: c:\venv\mpf\lib\site-packages\mpf\mpfconfig.yaml
+2025-09-21 15:40:21,399 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\config\config.yaml.
+2025-09-21 15:40:21,402 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\config\config.yaml
+2025-09-21 15:40:21,405 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\config\coils.yaml
+2025-09-21 15:40:21,408 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\config\switches.yaml
+2025-09-21 15:40:21,410 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\19f6d0d7953982fda9d956182316b8e5.mpf_cache
+2025-09-21 15:40:21,473 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\835b5bfea4be8b279a05e96caaaffbbb.mpf_cache
+2025-09-21 15:40:21,474 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\9b0a7575388f9d9bd2f6ab87bf9fd2f7.mpf_cache
+2025-09-21 15:40:21,475 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\c340ec0033d1055cd797ffd5447ef414.mpf_cache
+2025-09-21 15:40:21,477 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\835b5bfea4be8b279a05e96caaaffbbb.mpf_cache
+2025-09-21 15:40:21,478 : INFO : Machine : Mission Pinball Framework Core Engine v0.80.0.dev9
+2025-09-21 15:40:21,478 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'force_assets_load': False, 'platform_integration_test': False, 'jsonlogging': False, 'logfile': 'logs\\2025-09-21-15-40-21-mpf-PinballLaptop.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': 'smart_virtual', 'syslog_address': None, 'full_logfile_path': 'C:\\venv\\mpf\\mmmdrop\\logs\\2025-09-21-15-40-21-mpf-PinballLaptop.log'}
+2025-09-21 15:40:21,478 : INFO : Machine : MPF path: c:\venv\mpf\lib\site-packages\mpf
+2025-09-21 15:40:21,478 : INFO : Machine : Machine path: C:\venv\mpf\mmmdrop
+2025-09-21 15:40:21,478 : INFO : Machine : Platform: win32
+2025-09-21 15:40:21,478 : INFO : Machine : Python executable location: c:\venv\mpf\Scripts\python.exe
+2025-09-21 15:40:21,478 : INFO : Machine : Python version: 3.9.13 (64-bit)
+2025-09-21 15:40:21,481 : INFO : Machine : Initializing MPF...
+2025-09-21 15:40:21,684 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2025-09-21 15:40:21,700 : INFO : EventManager : Event: ======'machine_var_fast_audio_headphones_volume'====== Args={'value': 10, 'prev_value': None, 'change': True}
+2025-09-21 15:40:21,700 : INFO : EventManager : Event: ======'machine_var_fast_audio_main_volume'====== Args={'value': 44, 'prev_value': None, 'change': True}
+2025-09-21 15:40:21,700 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.15, 'prev_value': None, 'change': True}
+2025-09-21 15:40:21,700 : INFO : EventManager : Event: ======'machine_var_player1_score'====== Args={'value': 140190, 'prev_value': None, 'change': True}
+2025-09-21 15:40:21,700 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'Mission Pinball Framework v0.80.0.dev9', 'prev_value': None, 'change': True}
+2025-09-21 15:40:21,700 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'Mission Pinball Framework v0.80.0.dev9, Config version:6, Show version: 6, BCP version:1.1', 'prev_value': None, 'change': True}
+2025-09-21 15:40:21,700 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.9.13', 'prev_value': None, 'change': True}
+2025-09-21 15:40:22,008 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.26100-SP0', 'prev_value': None, 'change': True}
+2025-09-21 15:40:22,008 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2025-09-21 15:40:22,008 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2025-09-21 15:40:22,008 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.26100', 'prev_value': None, 'change': True}
+2025-09-21 15:40:22,008 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2025-09-21 15:40:22,008 : INFO : EventManager : Event: ======'machine_var_log_file_path'====== Args={'value': 'C:\\venv\\mpf\\mmmdrop\\logs\\2025-09-21-15-40-21-mpf-PinballLaptop.log', 'prev_value': None, 'change': True}
+2025-09-21 15:40:22,008 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2025-09-21 15:40:22,028 : INFO : EventManager : Event: ======'drop_target_bank_three_bank_up'====== Args={}
+2025-09-21 15:40:22,029 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2025-09-21 15:40:22,029 : INFO : SwitchController : Found active switch: ('3208-0', <Platform.SmartVirtual>) <switch.s_trough1>
+2025-09-21 15:40:22,029 : INFO : SwitchController : Found active switch: ('3208-1', <Platform.SmartVirtual>) <switch.s_trough2>
+2025-09-21 15:40:22,029 : INFO : SwitchController : Found active switch: ('3208-2', <Platform.SmartVirtual>) <switch.s_trough3>
+2025-09-21 15:40:22,029 : INFO : SwitchController : Found active switch: ('3208-3', <Platform.SmartVirtual>) <switch.s_trough4>
+2025-09-21 15:40:22,029 : INFO : SwitchController : Found active switch: ('3208-4', <Platform.SmartVirtual>) <switch.s_trough5>
+2025-09-21 15:40:22,029 : INFO : SwitchController : Found active switch: ('3208-5', <Platform.SmartVirtual>) <switch.s_trough6>
+2025-09-21 15:40:22,032 : INFO : EventManager : Event: ======'bcp_connection_attempt'====== Args={'name': 'local_display', 'host': 'localhost', 'port': 5050}
+2025-09-21 15:40:22,034 : INFO : BCPClientSocket : Connecting BCP to 'local_display' at localhost:5050...
+2025-09-21 15:40:28,582 : ERROR : asyncio : Exception in callback DelayManager._process_delay_callback('draw_screen', <bound method...01FA86CC53D0>>)()
+handle: <TimerHandle when=239623.385 DelayManager._process_delay_callback('draw_screen', <bound method...01FA86CC53D0>>)()>
+Traceback (most recent call last):
+  File "C:\Program Files\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\delays.py", line 189, in _process_delay_callback
+    callback(**kwargs)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\text_ui.py", line 442, in _draw_screen
+    self.screen.draw_next_frame()
+  File "c:\venv\mpf\lib\site-packages\asciimatics\screen.py", line 1690, in draw_next_frame
+    event = scene.process_event(event)
+  File "c:\venv\mpf\lib\site-packages\asciimatics\scene.py", line 98, in process_event
+    event = effect.process_event(event)
+  File "c:\venv\mpf\lib\site-packages\asciimatics\widgets\frame.py", line 699, in process_event
+    claimed_focus, quit_now = self._handle_desktop_ordering(event)
+  File "c:\venv\mpf\lib\site-packages\asciimatics\widgets\frame.py", line 677, in _handle_desktop_ordering
+    effect.blur()
+  File "c:\venv\mpf\lib\site-packages\asciimatics\widgets\frame.py", line 540, in blur
+    self._layouts[self._focus].blur()
+IndexError: list index out of range
+2025-09-21 15:40:28,590 : INFO : Machine : Starting the main run loop with active modes: []
+2025-09-21 15:40:28,590 : WARNING : Machine : Attract mode is not active, game will not be playable. Please check your attract mode configuration.
+2025-09-21 15:40:28,591 : INFO : Machine : Shutting down...
+2025-09-21 15:40:28,591 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2025-09-21 15:40:29,587 : ERROR : Machine : Runtime Exception
+Traceback (most recent call last):
+  File "c:\venv\mpf\lib\site-packages\mpf\core\machine.py", line 808, in _run_loop
+    raise self._exception['exception']
+  File "C:\Program Files\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\delays.py", line 189, in _process_delay_callback
+    callback(**kwargs)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\text_ui.py", line 442, in _draw_screen
+    self.screen.draw_next_frame()
+  File "c:\venv\mpf\lib\site-packages\asciimatics\screen.py", line 1690, in draw_next_frame
+    event = scene.process_event(event)
+  File "c:\venv\mpf\lib\site-packages\asciimatics\scene.py", line 98, in process_event
+    event = effect.process_event(event)
+  File "c:\venv\mpf\lib\site-packages\asciimatics\widgets\frame.py", line 699, in process_event
+    claimed_focus, quit_now = self._handle_desktop_ordering(event)
+  File "c:\venv\mpf\lib\site-packages\asciimatics\widgets\frame.py", line 677, in _handle_desktop_ordering
+    effect.blur()
+  File "c:\venv\mpf\lib\site-packages\asciimatics\widgets\frame.py", line 540, in blur
+    self._layouts[self._focus].blur()
+IndexError: list index out of range
+2025-09-21 15:40:31,434 : INFO : root : MPF run loop ended.

@@ -1,15 +1,8 @@
-###
-# The core MPF GMC Script, responsible for everything.
-#
-# Set this as a Global Autoload in your Godot project.
-###
-
-class_name MPFGMC
 extends LoggingNode
 
 const CONFIG_PATH = "res://gmc.cfg"
 const LOCAL_CONFIG_PATH = "user://gmc.local.cfg"
-const MPF_MIN_VERSION = "0.80.0.dev10"
+const MPF_MIN_VERSION = "0.80.0"
 
 var game
 var media
@@ -20,7 +13,6 @@ var util
 var keyboard: = {}
 var config
 var local_config
-var version: String
 
 var _suppress_input := true
 
@@ -36,8 +28,7 @@ func _init():
 	var perr = plugin_config.load("res://addons/mpf-gmc/plugin.cfg")
 	if perr != OK:
 		self.log.error("Error loading GMC plugin file.")
-	self.version = plugin_config.get_value("plugin", "version", "UNKNOWN")
-	self.log.log("Initializing GMC version %s" % self.version)
+	self.log.log("Initializing GMC version %s" % plugin_config.get_value("plugin", "version"))
 
 	for cfg in [[CONFIG_PATH, "config"], [LOCAL_CONFIG_PATH, "local_config"]]:
 		self[cfg[1]] = ConfigFile.new()
@@ -50,9 +41,6 @@ func _init():
 		if err != OK:
 			# Error 7 is file not found, that's okay
 			if err == ERR_FILE_NOT_FOUND:
-				# But still, everybody *should* have a gmc.cfg
-				if cfg[0] == CONFIG_PATH:
-					self.log.warning("Unable to find gmc.cfg in the project root.")
 				pass
 			else:
 				self.log.error("Error loading GMC config file '%s': %s" % [cfg[0], error_string(err)])
@@ -65,27 +53,25 @@ func _init():
 	# This is done explicitly line-by-line for optimized preload and relative paths
 	for s in [
 			# Static utility functions first
-			["util", preload("scripts/utilities.gd"), "GMCUtil", false],
+			["util", preload("scripts/utilities.gd"), "GMCUtil"],
 			# Log is needed for the rest
-			["log", preload("scripts/log.gd"), "GMCLogger", false],
+			["log", preload("scripts/log.gd"), "GMCLogger"],
 			# Game should be loaded next
-			["game", preload("scripts/mpf_game.gd"), "GMCGame", true],
+			["game", preload("scripts/mpf_game.gd"), "GMCGame"],
 			# Server depends on Game, should be loaded after
-			["server", preload("scripts/bcp_server.gd"), "GMCServer", true],
+			["server", preload("scripts/bcp_server.gd"), "GMCServer"],
 			# Process is here too
-			["process", preload("scripts/process.gd"), "GMCProcess", true],
+			["process", preload("scripts/process.gd"), "GMCProcess"],
 			# Media controller can come last
-			["media", preload("scripts/media.gd"), "GMCMedia", true]
+			["media", preload("scripts/media.gd"), "GMCMedia"]
 	]:
-		var script: String = self.get_config_value("gmc", s[2], '')
-		# Add logging configuration as init parameters so logging
+		var script = self.get_config_value("gmc", s[2], false)
+		# TODO: Add logging configuration as init parameters so logging
 		# is available in the _init() methods of all scripts
-		var script_inst: Resource = load(script) if script else s[1]
-		# For the main server nodes (GMCCoreScriptNode) pass this instance to the constructor
-		if s[3] == true:
-			self[s[0]] = script_inst.new(self)
+		if script:
+			self[s[0]] = load(script).new()
 		else:
-			self[s[0]] = script_inst.new()
+			self[s[0]] = s[1].new()
 		# If an explicit value is set for this log, use it
 		if self[s[0]] is LoggingNode:
 			var script_log_level = self.get_config_value("gmc", "logging_%s" % s[0], -1)
@@ -99,14 +85,6 @@ func _enter_tree():
 	self.add_child(media)
 	self.add_child(process)
 	self.add_child(game)
-
-	# Initialize window parameters
-	var scale = self.get_config_value("window", "scale", 1.0)
-	if scale != 1.0:
-		get_window().content_scale_factor = scale
-	var size = self.get_config_value("window", "size", 0)
-	if size:
-		get_window().size = size
 
 func _ready():
 	if self.config.has_section("keyboard"):
@@ -138,8 +116,8 @@ func has_config_section(section: String) -> bool:
 func has_local_config_value(section: String, key: String) -> bool:
 	return self.local_config.has_section_key(section, key)
 
-func validate_min_version(compare_version: String, min_version: String) -> bool:
-	return _explode_version_string(compare_version) >= _explode_version_string(min_version)
+func validate_min_version(compare_version: String) -> bool:
+	return _explode_version_string(compare_version) >= _explode_version_string(MPF_MIN_VERSION)
 
 func _explode_version_string(version: String) -> int:
 	var bits = version.split(".")
@@ -192,9 +170,9 @@ func _input(event: InputEvent) -> void:
 					return
 				# If a kwarg dict is provided, include it
 				if cfg.size() > 2:
-					self.server.send_event_with_args(cfg[1], cfg[2])
+					MPF.server.send_event_with_args(cfg[1], cfg[2])
 				else:
-					self.server.send_event(cfg[1])
+					MPF.server.send_event(cfg[1])
 			"switch":
 				var action
 				var state
@@ -211,6 +189,6 @@ func _input(event: InputEvent) -> void:
 						state = 0
 					"toggle":
 						state = -1
-				self.server.send_switch(cfg[1], state)
+				MPF.server.send_switch(cfg[1], state)
 			_:
 				return

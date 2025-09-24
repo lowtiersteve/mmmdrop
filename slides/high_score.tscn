@@ -1,109 +1,35 @@
-[gd_scene load_steps=9 format=3 uid="uid://cyrfcchefgffx"]
+[gd_scene load_steps=3 format=3 uid="uid://cyrfcchefgffx"]
 
-[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_adeqt"]
-[ext_resource type="Script" uid="uid://btfn6s6a0a7rg" path="res://addons/mpf-gmc/classes/mpf_text_input.gd" id="2_6uslk"]
-[ext_resource type="VideoStream" uid="uid://bdkrdeh2cp861" path="res://modes/highscore/slides/DontPlayNoGameThatICantWin.ogv" id="2_au3ls"]
-[ext_resource type="Script" uid="uid://bov7mrgxslshq" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_f3egr"]
-[ext_resource type="Texture2D" uid="uid://dtodnmwfxtclr" path="res://assets/burstbacking.png" id="4_i5kur"]
-[ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="5_5lg8l"]
-[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="5_w6f4i"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_5lg8l"]
-font = ExtResource("5_w6f4i")
-font_size = 80
-outline_size = 25
-outline_color = Color(0, 0, 0, 1)
+[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_adeqt"]
+[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_text_input.gd" id="2_6uslk"]
 
 [node name="HighScore" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_adeqt")
 
-[node name="MPFVideoPlayer" type="VideoStreamPlayer" parent="."]
-custom_minimum_size = Vector2(1920, 1080)
+[node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_right = 1920.0
-offset_bottom = 1080.0
-stream = ExtResource("2_au3ls")
-autoplay = true
-expand = true
-loop = true
-script = ExtResource("3_f3egr")
-hide_behavior = 1
-preview_in_editor = true
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(908.00006, 186)
-scale = Vector2(0.7828126, 0.4037037)
-texture = ExtResource("4_i5kur")
-
-[node name="MPFVariable - Award" type="Label" parent="."]
-layout_mode = 0
-offset_left = 3.0
-offset_top = 347.0
-offset_right = 1915.0
-offset_bottom = 538.0
-theme_override_constants/outline_size = 35
-theme_override_fonts/font = ExtResource("5_w6f4i")
-theme_override_font_sizes/font_size = 80
-text = "high score type
-sample 2"
-horizontal_alignment = 1
-autowrap_mode = 3
-script = ExtResource("5_5lg8l")
-variable_type = 1
-variable_name = "award"
-update_event = "high_score_enter_initials"
+offset_left = 691.0
+offset_top = 104.0
+offset_right = 1356.0
+offset_bottom = 246.0
 
 [node name="MPFTextInput" type="HFlowContainer" parent="." node_paths=PackedStringArray("display_node")]
 layout_mode = 0
-offset_left = 222.0
-offset_top = 768.0
-offset_right = 1819.0
-offset_bottom = 1055.0
+offset_left = 720.0
+offset_top = 419.0
+offset_right = 1259.0
+offset_bottom = 605.0
 script = ExtResource("2_6uslk")
-allowed_characters = "ABCDEFGHiJKLMNOPQRSTUVWXYZ"
 grid_width = 30
 display_node = NodePath("../RichTextLabel")
-character_appearance = SubResource("LabelSettings_5lg8l")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 layout_mode = 0
-offset_left = 3.0
-offset_top = 563.0
-offset_right = 1915.0
-offset_bottom = 762.0
-theme_override_constants/outline_size = 20
-theme_override_fonts/normal_font = ExtResource("5_w6f4i")
-theme_override_font_sizes/normal_font_size = 180
+offset_left = 664.0
+offset_top = 72.0
+offset_right = 1264.0
+offset_bottom = 332.0
+theme_override_font_sizes/normal_font_size = 60
 bbcode_enabled = true
-text = "[pulse freq=3.0 color=#ff00ffff ease=-1.0]A[/pulse]"
-horizontal_alignment = 1
-
-[node name="MPFVariable - player number" type="Label" parent="."]
-layout_mode = 0
-offset_left = 1115.0
-offset_top = 92.0
-offset_right = 1242.0
-offset_bottom = 236.0
-theme_override_constants/outline_size = 35
-theme_override_fonts/font = ExtResource("5_w6f4i")
-theme_override_font_sizes/font_size = 110
-text = "2"
-horizontal_alignment = 1
-script = ExtResource("5_5lg8l")
-variable_type = 1
-variable_name = "player_num"
-min_digits = 1
-update_event = "high_score_enter_initials"
-
-[node name="Label" type="Label" parent="."]
-layout_mode = 0
-offset_left = 603.0
-offset_top = 101.0
-offset_right = 1079.0
-offset_bottom = 204.0
-theme_override_constants/outline_size = 35
-theme_override_fonts/font = ExtResource("5_w6f4i")
-theme_override_font_sizes/font_size = 100
-text = "player"

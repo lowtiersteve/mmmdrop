@@ -4,7 +4,6 @@
 # https://fastpinball.com/cookbook/lower-third/
 # https://fastpinball.com/mpf/config/net/
 
-
 hardware:
   platform: fast
   driverboards: fast
@@ -26,21 +25,13 @@ fast:
         model: FP-I/O-0804
         order: 4
 
-  exp:
-    boards:
-      lightboard:
-        model: FP-EXP-0081
-    port: COM4
-    baud: 921600
-    debug: False
-
   aud:
     port: auto
-    debug: False
+    debug: false
 
-    main_amp_enabled: True
-    sub_amp_enabled: True
-    headphones_amp_enabled: True
+    main_amp_enabled: true
+    sub_amp_enabled: true
+    headphones_amp_enabled: true
 
     main_steps: 10
     sub_steps: 10
@@ -50,7 +41,7 @@ fast:
     default_sub_volume: 80
     default_headphones_volume: 60
 
-    persist_volume_settings: True
+    persist_volume_settings: true
 
     max_hw_volume_main: 100
     max_hw_volume_sub: 100
@@ -60,11 +51,11 @@ fast:
     sub_levels_list: None
     headphones_levels_list: None
 
-    link_sub_to_main: True
-    link_headphones_to_main: True
+    link_sub_to_main: true
+    link_headphones_to_main: true
 
     headphones_level: line
-    mute_speakers_with_headphones: True
+    mute_speakers_with_headphones: true
 
 
 displays:
@@ -73,35 +64,19 @@ displays:
     height: 1080
 
 slide_player:
-  init_done:
-    loading:
-      action: play
+  init_done: loading
+
 
 config:
   - coils.yaml
   - switches.yaml
-  - lights.yaml
-
-
-machine_vars:
-  game_just_played:
-    initial_value: 0
-    persist: False
-    value_type: int
-
 
 
 playfields:
   playfield:
     tags: default
     default_source_device: bd_plunger
-    enable_ball_search: False
-
-
-game:
-  balls_per_game: settings.balls_per_game
-  max_players: settings.max_players
-
+    enable_ball_search: false
 
 flippers:
   left_flipper:
@@ -128,7 +103,7 @@ ball_devices:
     eject_timeouts: 3s
   bd_plunger:
     ball_switches: s_plunger
-    mechanical_eject: True
+    mechanical_eject: true
     eject_coil: c_plunger
     eject_timeouts: 3s
   bd_scoop:
@@ -137,348 +112,56 @@ ball_devices:
     eject_timeouts: 3s
 
 
-diverters:
-  up_post:
-    activation_coil: c_uppost
-    activate_events: uppost_up
-    deactivate_events: uppost_down, inner_loop_hit, left_orbit_hit, right_orbit_hit
-    activation_time: 1s
-    enable_events: ball_started
-    disable_events: ball_ending
-    type: hold
-
 ball_saves:
   default:
-    active_time: 10s
-    hurry_up_time: 4s
+    active_time: 5s
+    hurry_up_time: 2s
     grace_period: 2s
     enable_events: mode_base_started
     timer_start_events: ball_out
-    auto_launch: True
-    balls_to_save: -1
-  mode_start:
-    active_time: 5s
-    hurry_up_time: 2s
-    grace_period: 1s
-    enable_events: ball_hold_fingerlickingood_scoop_hold_balls_released, ball_hold_highplainsdrifter_scoop_hold_balls_released, ball_hold_intergalactic_scoop_hold_balls_released, ball_hold_paulrevere_scoop_hold_balls_released, ball_hold_sabotage_scoop_hold_balls_released, ball_hold_threemcsand1dj_scoop_hold_balls_released, ball_hold_toomanyrappers_scoop_hold_balls_released, ball_hold_tripletrouble_scoop_hold_balls_released
-    auto_launch: True
-    balls_to_save: -1
-  instrument_collect:
-    active_time: 10s
-    hurry_up_time: 3s
-    grace_period: 1s
-    enable_events: microphone_collected, boombox_collected, turntable_collected
-    auto_launch: True
-    balls_to_save: -1
-  girls_frenzy:
-    active_time: 38s
-    hurry_up_time: 5s
-    grace_period: 1s
-    enable_events: mode_girls_started
-    auto_launch: True
+    auto_launch: true
     balls_to_save: -1
 
 
 modes:
   - base
   - attract
-  - skill_shot
-  - multiball
-  - carousel
-  - intergalactic
-  - paulrevere
-  - service
-  - makesomenoise
-  - tilt
-  - tripletrouble
-  - bonus
-  - combos
-  - batterycharger
-  - sabotage
-  - fingerlickingood
-  - toomanyrappers
-  - threemcsand1dj
-  - chcheckitout
-  - bodymovin
-  - highplainsdrifter
-  - superpops
-  - superdrops
-  - superspins
-  - superstandups
-  - supercombos
-  - girls
-  - highscore
-  - instruments
-  - wizardcarousel
 
 
-settings:
-  replay_score:
-    label: "Replay Score"
-    values:
-      50000000: "50,000,000"
-      100000000: "100,000,000 (Default)"
-      200000000: "200,000,000"
-    default: 100000000
-    key_type: int
-    sort: 300
-  warnings_to_tilt:
-    label: "Number of Tilts to Tilt"
-    values:
-      0: "0 (No Warnings)"
-      1: "1"
-      2: "2"
-      3: "3 (Default)"
-      5: "5"
-      10: "10"
-    default: 3
-    key_type: int
-    sort: 600
-  settle_time:
-    label: "Time Tilt Bob Takes to Settle (Start Next Ball)"
-    values:
-      3000: "3 Seconds"
-      5000: "5 Seconds (Default)"
-      10000: "10 Seconds"
-    default: 5000
-    key_type: int
-    sort: 610
-  multiple_hit_window:
-    label: "Tilt Sensitivity"
-    values:
-      150: "Sensitive"
-      300: "Normal (Default)"
-      500: "Insensitive"
-      1000: "Very Insensitive"
-    default: 300
-    key_type: int
-    sort: 620
-  balls_per_game:
-    label: "Balls Per Game"
-    values:
-      1: "1"
-      3: "3 (Default)"
-      5: "5"
-      7: "7"
-      9: "9"
-    default: 3
-    key_type: int
-    sort: 100
-  max_players:
-    label: "Max Number of Players"
-    values:
-      1: "1"
-      2: "2"
-      3: "3"
-      4: "4 (Default)"
-    default: 4
-    key_type: int
-    sort: 150
-
-
-event_player:
-  machine_reset_phase_2:
-    game_just_played:
-      action: set_machine
-      int: 0
-
-
-variable_player:
-  game_started:
-    game_just_played:
-      action: set_machine
-      int: 1
-
-
-shot_profiles:
-  lit_mode_shot_profile:
-    states:
-      - name: flashing
-        show: flash
-      - name: unlit
-    loop: False
-
-player_vars:
-  chcheckitout_multiball_blocking_flag:
-    initial_value: 0
-  bodymovin_multiball_blocking_flag:
-    initial_value: 0
-  mode_blocking_flag:
-    initial_value: 0
-  battery_charged_yesorno:
-    initial_value: 0
-  combos:
-    initial_value: 0
-  modes_played:
-    initial_value: 0
-  modes_completed:
-    initial_value: 0
-  chcheckitout_qualified_flag:
-    initial_value: 0
-  bodymovin_lock1_qualified_flag:
-    initial_value: 0
-  bodymovin_lock2_qualified_flag:
-    initial_value: 0
-  bodymovin_lock1_locked_flag:
-    initial_value: 1
-  bodymovin_lock2_locked_flag:
-    initial_value: 0
-  bodymovin_multiball_qualified_flag:
-    initial_value: 0
-  bodymovin_round:
-    initial_value: 0
-  girls_bonus_score:
-    initial_value: 0
-  girls_blocking_flag:
-    initial_value: 0
-  characters_collected:
-    initial_value: 0
-  adroc_collected:
-    initial_value: 0
-  mca_collected:
-    initial_value: 0
-  miked_collected:
-    initial_value: 0
-  mmm_collected:
-    initial_value: 0
-  djhurr_collected:
-    initial_value: 0
-  chcheckitout_multiplier:
-    initial_value: 0
-  microphone_collected:
-    initial_value: 0
-  turntable_collected:
-    initial_value: 0
-  boombox_collected:
-    initial_value: 0
-  playfield_x:
-    initial_value: 1
-  drop_target_bank_counter_count:
-    initial_value: 0
-  charges_remaining_variable:
-    initial_value: 0
-  multiball_bodymovin_score:
-    initial_value: 0
-  bonus_multiplier:
-    initial_value: 1
-  player_drop_target_bank_counter_count:
-    initial_value: 1
-  mode_intergalactic_score:
-    initial_value: 1
-  mode_fingerlickingood_score:
-    initial_value: 1
-  mode_highplainsdrifter_score:
-    initial_value: 1
-  mode_makesomenoise_score:
-    initial_value: 1
-  mode_paulrevere_score:
-    initial_value: 1
-  mode_sabotage_score:
-    initial_value: 1
-  mode_threemcsand1dj_score:
-    initial_value: 1
-  mode_toomanyrappers_score:
-    initial_value: 1
-  mode_tripletrouble_score:
-    initial_value: 1
-  mode_time_remaining_total:
-    initial_value: 0
-  selected_mode:
-    value_type: str
-    initial_value: "Triple Trouble"
-  multiball_chcheckitout_score:
-    initial_value: 0
-  fingerlickingood_boost:
-    initial_value: 1
-  fingerlickingood_intro_show_variable_times_100:
-    initial_value: 0
-  fingerlickingood_time_remaining_variable_times_1:
-    initial_value: 0
-  highplainsdrifter_intro_show_variable_times_100:
-    initial_value: 0
-  highplainsdrifter_time_remaining_variable_times_1:
-    initial_value: 0
-  intergalactic_intro_show_variable_times_100:
-    initial_value: 0
-  intergalactic_time_remaining_variable_times_1:
-    initial_value: 0
-  paulrevere_intro_show_variable_times_100:
-    initial_value: 0
-  paulrevere_time_remaining_variable_times_1:
-    initial_value: 0
-  sabotage_intro_show_variable_times_100:
-    initial_value: 0
-  sabotage_time_remaining_variable_times_1:
-    initial_value: 0
-  threemcsand1dj_intro_show_variable_times_100:
-    initial_value: 0
-  threemcsand1dj_time_remaining_variable_times_1:
-    initial_value: 0
-  toomanyrappers_intro_show_variable_times_100:
-    initial_value: 0
-  toomanyrappers_time_remaining_variable_times_1:
-    initial_value: 0
-  tripletrouble_intro_show_variable_times_100:
-    initial_value: 0
-  tripletrouble_time_remaining_variable_times_1:
-    initial_value: 0
-  makesomenoise_intro_show_variable_times_100:
-    initial_value: 0
-  highplainsdrifter_shots_remaining:
-    initial_value: 3
-  makesomenoise_pops_remaining:
-    initial_value: 10
-  makesomenoise_spins_remaining:
-    initial_value: 40
-  makesomenoise_drops_remaining:
-    initial_value: 6
-  makesomenoise_ramps_remaining:
-    initial_value: 4
-  sabotage_perps_caught:
-    initial_value: 0
-  stache_multiplier:
-    initial_value: 1
-  threemcsand1dj_scratch_value:
-    initial_value: 100000
-  threemcsand1dj_mix_multiplier:
-    initial_value: 1
-  threemcsand1dj_scratches_remaining:
-    initial_value: 3
-  toomanyrappers_rhymes_loaded:
-    initial_value: 0
-  tripletrouble_standups_remaining:
-    initial_value: 7
-  instruments_collected_this_ball:
-    initial_value: 0
-  instruments_collected_total:
-    initial_value: 0
-  fingerlickingood_played:
-    initial_value: 0
-  highplainsdrifter_played:
-    initial_value: 0
-  intergalactic_played:
-    initial_value: 0
-  paulrevere_played:
-    initial_value: 0
-  sabotage_played:
-    initial_value: 0
-  threemcsand1dj_played:
-    initial_value: 0
-  toomanyrappers_played:
-    initial_value: 0
-  tripletrouble_played:
-    initial_value: 0
-  all_modes_played:
-    initial_value: 0
-  makesomenoise_mode_multiplier:
-    initial_value: 1
-  sureshot_mode_multiplier:
-    initial_value: 1
-  bodhisattvavow_mode_multiplier:
-    initial_value: 1
-  wizard_choice_select_variable_times_1:
-    initial_value: 10
-
-
-
-
+keyboard:
+  s:
+    switch: s_start
+  1:
+    switch: s_trough1
+    toggle: true
+  2:
+    switch: s_trough2
+    toggle: true
+  3:
+    switch: s_trough3
+    toggle: true
+  4:
+    switch: s_trough4
+    toggle: true
+  5:
+    switch: s_trough5
+    toggle: true
+  p:
+    switch: s_plunger
+    toggle: true
+  m:
+    switch: s_scoop
+    toggle: true
+  b:
+    switch: s_right_lower_pop
+  u:
+    switch: s_three_bank_bottom
+    toggle: true
+  i:
+    switch: s_three_bank_middle
+    toggle: true
+  o:
+    switch: s_three_bank_top
+    toggle: true
+  y:
+    switch: s_three_bank_standup

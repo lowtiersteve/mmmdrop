@@ -1,0 +1,49 @@
+2025-09-17 19:28:20,169 : INFO : root : Loading config.
+2025-09-17 19:28:20,172 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2025-09-17 19:28:20,172 : INFO : ConfigProcessor : Loading config from file c:\venv\mpf\lib\site-packages\mpf\mpfconfig.yaml.
+2025-09-17 19:28:20,181 : INFO : ConfigProcessor : Loading config: c:\venv\mpf\lib\site-packages\mpf\mpfconfig.yaml
+2025-09-17 19:28:20,182 : INFO : ConfigProcessor : Loading config from file c:\venv\mpf\Beastie\config\config.yaml.
+2025-09-17 19:28:20,185 : INFO : ConfigProcessor : Loading config: c:\venv\mpf\Beastie\config\config.yaml
+2025-09-17 19:28:20,188 : INFO : ConfigProcessor : Loading config: c:\venv\mpf\Beastie\config\coils.yaml
+2025-09-17 19:28:20,190 : INFO : ConfigProcessor : Loading config: c:\venv\mpf\Beastie\config\switches.yaml
+2025-09-17 19:28:20,192 : INFO : ConfigProcessor : Loading config: c:\venv\mpf\Beastie\config\multiball.yaml
+2025-09-17 19:28:20,194 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\bff46033d8cba1affb39a92630dacfac.mpf_cache
+2025-09-17 19:28:20,264 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\9850977bb9bffa92584f0b363c7a65d4.mpf_cache
+2025-09-17 19:28:20,265 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\9b0a7575388f9d9bd2f6ab87bf9fd2f7.mpf_cache
+2025-09-17 19:28:20,266 : INFO : Machine : Mission Pinball Framework Core Engine v0.57.3
+2025-09-17 19:28:20,266 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'force_assets_load': False, 'platform_integration_test': False, 'jsonlogging': False, 'logfile': 'logs\\2025-09-17-19-28-20-mpf-PinballLaptop.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': None, 'syslog_address': None, 'mc_file_name': None, 'no_sound': False}
+2025-09-17 19:28:20,266 : INFO : Machine : MPF path: c:\venv\mpf\lib\site-packages\mpf
+2025-09-17 19:28:20,266 : INFO : Machine : Machine path: c:\venv\mpf\Beastie
+2025-09-17 19:28:20,266 : INFO : Machine : Platform: win32
+2025-09-17 19:28:20,266 : INFO : Machine : Python executable location: c:\venv\mpf\Scripts\python.exe
+2025-09-17 19:28:20,266 : INFO : Machine : Python version: 3.9.13 (64-bit)
+2025-09-17 19:28:20,269 : INFO : Machine : Initializing MPF...
+2025-09-17 19:28:20,527 : INFO : FAST : Auto-detecting ports for the following connections: ['net', 'aud']
+2025-09-17 19:28:20,638 : ERROR : FAST [NET] : Failed to connect to any of the specified ports.
+2025-09-17 19:28:20,643 : INFO : Machine : Shutting down...
+2025-09-17 19:28:20,643 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2025-09-17 19:28:20,746 : ERROR : Machine : Failed to initialize MPF
+Traceback (most recent call last):
+  File "c:\venv\mpf\lib\site-packages\mpf\platforms\fast\fast.py", line 277, in _connect_to_hardware
+    await communicator.connect()
+  File "c:\venv\mpf\lib\site-packages\mpf\platforms\fast\communicators\base.py", line 114, in connect
+    raise SerialException(f"{self} could not connect to a serial port. Is it open in CoolTerm? ;)")
+serial.serialutil.SerialException: [FAST NET] could not connect to a serial port. Is it open in CoolTerm? ;)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\venv\mpf\lib\site-packages\mpf\core\machine.py", line 686, in initialize_mpf
+    raise init.exception()
+  File "c:\venv\mpf\lib\site-packages\mpf\core\machine.py", line 248, in initialize
+    await self.initialize_core_and_hardware()
+  File "c:\venv\mpf\lib\site-packages\mpf\core\machine.py", line 244, in initialize_core_and_hardware
+    await self._initialize_platforms()
+  File "c:\venv\mpf\lib\site-packages\mpf\core\machine.py", line 334, in _initialize_platforms
+    result.result()
+  File "c:\venv\mpf\lib\site-packages\mpf\platforms\fast\fast.py", line 123, in initialize
+    await self._connect_to_hardware()
+  File "c:\venv\mpf\lib\site-packages\mpf\platforms\fast\fast.py", line 284, in _connect_to_hardware
+    raise MpfRuntimeError(f"Could not open serial port {port}. Is something else connected to the port? "
+mpf.exceptions.runtime_error.MpfRuntimeError: Runtime Error in FAST: Could not open serial port net. Is something else connected to the port? Did the port number or your computer change? Do you have permissions to access the port? Error Code: RE-FAST-1 (https://missionpinball.org/logs)
+2025-09-17 19:28:50,008 : INFO : root : MPF run loop ended.
