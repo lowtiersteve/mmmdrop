@@ -119,7 +119,7 @@ func play(filename: String, settings: Dictionary = {}) -> void:
 	if filename.left(4) == "res:":
 		filepath = filename
 	else:
-		# TODO: Clean this up now that sounds are indexed by MC
+		# Clean this up now that sounds are indexed by MC
 		filepath = "res://assets/%s/%s" % [self.name, filename]
 	var available_channel: AudioStreamPlayer
 	# REFACT:R is this needed?
@@ -165,7 +165,7 @@ func play(filename: String, settings: Dictionary = {}) -> void:
 
 	if settings.get("ducking", false):
 		if stream is AudioStreamRandomizer:
-			# TODO: Get current stream from AudioStreamRandomizer:
+			# Get current stream from AudioStreamRandomizer:
 			# https://github.com/godotengine/godot/pull/88437
 			self.log.warning("AudioStreamRandomizer ducking is not supported. Waiting for a Godot update.")
 			return
@@ -253,7 +253,7 @@ func _create_duck_tween(attenuation: float, duration: float) -> Tween:
 						 "Please specify attenuation as a value from 0.0 (no change) to 1.0 (full mute)")
 		attenuation = 0.0
 	var duck_tween = self.create_tween()
-	# TODO: Integrate default values
+	# Integrate default values
 	var full_volume = db_to_linear(self._full_volume_db)
 	# Attenuation value is the percentage of full volume to reduce.
 	var target_volume = full_volume * (1.0 - attenuation)

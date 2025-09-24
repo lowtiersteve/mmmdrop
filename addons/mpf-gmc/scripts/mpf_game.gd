@@ -49,7 +49,7 @@ func add_player(kwargs: Dictionary) -> void:
 	## MPF has inconsistencies in how player_added events are sent, and
 	# may send two events: one with a 'num' kwarg and one with 'player_num'.
 	# For consistency, check the number against the player count to avoid dupes.
-	# TODO: Fix MPF's inconsistent/duplicate player_added events.
+	# Fix MPF's inconsistent/duplicate player_added events.
 	var player_number = kwargs.get("num", kwargs.get("player_num", 0))
 	var current_player_count = players.size()
 	if player_number <= current_player_count:
@@ -189,7 +189,7 @@ func update_settings(result: Dictionary) -> void:
 
 func get_tracker(node_path: String, player_number: int, reset_on_game_end: bool) -> Dictionary:
 	if not node_path in self._trackers:
-		# TODO: Make a class for Trackers
+		# Make a class for Trackers
 		self._trackers[node_path] = {"_reset_on_game_end": reset_on_game_end}
 	if not player_number in self._trackers[node_path]:
 		self._trackers[node_path][player_number] = { "last_index": -1, "used": []}

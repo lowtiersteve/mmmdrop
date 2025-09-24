@@ -104,7 +104,7 @@ func play_sounds(s: Dictionary) -> void:
 
 		# A key is all we need to stop
 		if action == "stop" or action == "loop_stop":
-			# TODO: Accept GMCBus as a stop param?
+			# Accept GMCBus as a stop param?
 			bus.stop(settings.key, settings)
 			return
 
