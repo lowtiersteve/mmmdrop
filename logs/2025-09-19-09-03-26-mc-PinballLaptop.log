@@ -1,0 +1,29 @@
+2025-09-19 09:03:26,892 : kivy : deps: Successfully imported "kivy_deps.gstreamer" 0.3.3
+2025-09-19 09:03:26,892 : kivy : deps: Successfully imported "kivy_deps.angle" 0.3.3
+2025-09-19 09:03:26,892 : kivy : deps: Successfully imported "kivy_deps.glew" 0.3.1
+2025-09-19 09:03:26,892 : kivy : deps: Successfully imported "kivy_deps.sdl2" 0.6.0
+2025-09-19 09:03:26,893 : kivy : Kivy: v2.2.1
+2025-09-19 09:03:26,893 : kivy : Kivy: Installed at "c:\venv\mpf\lib\site-packages\kivy\__init__.py"
+2025-09-19 09:03:26,893 : kivy : Python: v3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]
+2025-09-19 09:03:26,893 : kivy : Python: Interpreter at "c:\venv\mpf\Scripts\python.exe"
+2025-09-19 09:03:26,942 : kivy : Factory: 190 symbols loaded
+2025-09-19 09:03:27,267 : kivy : ImageLoaderFFPy: Using ffpyplayer 4.5.1
+2025-09-19 09:03:27,267 : kivy : Image: Providers: img_tex, img_dds, img_sdl2, img_pil, img_ffpyplayer 
+2025-09-19 09:03:27,519 : kivy : VideoGstplayer: Using Gstreamer 1.18.5.0
+2025-09-19 09:03:27,519 : kivy : Video: Provider: gstplayer
+2025-09-19 09:03:27,599 : root : Loading MPF-MC controller
+2025-09-19 09:03:27,602 : YamlMultifileConfigLoader : Machine config file #1: config
+2025-09-19 09:03:27,603 : ConfigProcessor : Config file in cache changed: C:\venv\mpf\soultrain\config\config
+2025-09-19 09:03:27,603 : ConfigProcessor : Loading config from file c:\venv\mpf\lib\site-packages\mpfmc\mcconfig.yaml.
+2025-09-19 09:03:27,609 : ConfigProcessor : Loading config: c:\venv\mpf\lib\site-packages\mpfmc\mcconfig.yaml
+2025-09-19 09:03:27,609 : ConfigProcessor : Loading config from file C:\venv\mpf\soultrain\config\config.
+2025-09-19 09:03:27,611 : ConfigProcessor : Loading config: C:\venv\mpf\soultrain\config\config
+2025-09-19 09:03:27,613 : ConfigProcessor : Loading config: C:\venv\mpf\soultrain\config\coils.yaml
+2025-09-19 09:03:27,615 : ConfigProcessor : Loading config: C:\venv\mpf\soultrain\config\switches.yaml
+2025-09-19 09:03:27,616 : ConfigProcessor : Loading config: C:\venv\mpf\soultrain\config\multiball.yaml
+2025-09-19 09:03:27,618 : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\d1c76a6711522dcfe5a45e149ba5eb45.mpf_cache
+2025-09-19 09:03:27,618 : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\e94a3f920a4b4ef5386ff9f8a570c7d8.mpf_cache
+2025-09-19 09:03:27,619 : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\9b0a7575388f9d9bd2f6ab87bf9fd2f7.mpf_cache
+2025-09-19 09:03:27,620 : ConfigProcessor : Config file in cache changed: C:\venv\mpf\soultrain\modes\base\config\base.yaml
+2025-09-19 09:03:27,620 : ConfigProcessor : Loading config from file C:\venv\mpf\soultrain\modes\base\config\base.yaml.
+2025-09-19 09:03:27,621 : ConfigProcessor : Loading config: C:\venv\mpf\soultrain\modes\base\config\base.yaml

@@ -1,0 +1,67 @@
+2025-09-18 20:46:01,418 : kivy : deps: Successfully imported "kivy_deps.gstreamer" 0.3.3
+2025-09-18 20:46:01,418 : kivy : deps: Successfully imported "kivy_deps.angle" 0.3.3
+2025-09-18 20:46:01,419 : kivy : deps: Successfully imported "kivy_deps.glew" 0.3.1
+2025-09-18 20:46:01,419 : kivy : deps: Successfully imported "kivy_deps.sdl2" 0.6.0
+2025-09-18 20:46:01,420 : kivy : Kivy: v2.2.1
+2025-09-18 20:46:01,420 : kivy : Kivy: Installed at "C:\Users\sdona\AppData\Roaming\Python\Python39\site-packages\kivy\__init__.py"
+2025-09-18 20:46:01,420 : kivy : Python: v3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]
+2025-09-18 20:46:01,421 : kivy : Python: Interpreter at "C:\Program Files\Python39\python.exe"
+2025-09-18 20:46:04,262 : kivy : Factory: 190 symbols loaded
+2025-09-18 20:46:13,617 : kivy : ImageLoaderFFPy: Using ffpyplayer 4.5.1
+2025-09-18 20:46:13,617 : kivy : Image: Providers: img_tex, img_dds, img_sdl2, img_pil, img_ffpyplayer 
+2025-09-18 20:46:14,976 : kivy : VideoFFPy: Using ffpyplayer 4.5.1
+2025-09-18 20:46:14,976 : kivy : Video: Provider: ffpyplayer(['video_ffmpeg'] ignored)
+2025-09-18 20:46:15,069 : root : Error importing MPF-MC audio library. Audio will be disabled.
+2025-09-18 20:46:15,070 : root : *** [[[[[[[[[[[[[[[[[[[ NO AUDIO ]]]]]]]]]]]]]]]]] ***
+2025-09-18 20:46:15,070 : root : DLL load failed while importing audio_interface: The specified module could not be found.
+Traceback (most recent call last):
+  File "C:\Users\sdona\AppData\Roaming\Python\Python39\site-packages\mpfmc\core\mc.py", line 52, in <module>
+    from mpfmc.core.audio.audio_interface import AudioInterface
+  File "C:\Users\sdona\AppData\Roaming\Python\Python39\site-packages\mpfmc\core\audio\__init__.py", line 7, in <module>
+    from mpfmc.core.audio.audio_interface import AudioInterface
+ImportError: DLL load failed while importing audio_interface: The specified module could not be found.
+2025-09-18 20:46:15,072 : root : Loading MPF-MC controller
+2025-09-18 20:46:15,157 : ConfigProcessor : Config spec file cache created: C:\Users\sdona\AppData\Local\Temp\config_spec.mpf_cache
+2025-09-18 20:46:15,158 : YamlMultifileConfigLoader : Machine config file #1: config
+2025-09-18 20:46:15,159 : ConfigProcessor : Loading config from file C:\Users\sdona\AppData\Roaming\Python\Python39\site-packages\mpfmc\mcconfig.yaml.
+2025-09-18 20:46:15,168 : ConfigProcessor : Loading config: C:\Users\sdona\AppData\Roaming\Python\Python39\site-packages\mpfmc\mcconfig.yaml
+2025-09-18 20:46:15,169 : ConfigProcessor : Loading config from file C:\venv\mpf\soultrain\config\config.
+2025-09-18 20:46:15,175 : ConfigProcessor : Loading config: C:\venv\mpf\soultrain\config\config
+2025-09-18 20:46:15,178 : ConfigProcessor : Loading config: C:\venv\mpf\soultrain\config\coils.yaml
+2025-09-18 20:46:15,183 : ConfigProcessor : Loading config: C:\venv\mpf\soultrain\config\switches.yaml
+2025-09-18 20:46:15,186 : ConfigProcessor : Loading config: C:\venv\mpf\soultrain\config\multiball.yaml
+2025-09-18 20:46:15,189 : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\ee6e69e5e1a79de336d7839e04c52127.mpf_cache
+2025-09-18 20:46:15,190 : ConfigProcessor : Loading config from file C:\Users\sdona\AppData\Roaming\Python\Python39\site-packages\mpf\modes\attract\config\attract.yaml.
+2025-09-18 20:46:15,192 : ConfigProcessor : Loading config: C:\Users\sdona\AppData\Roaming\Python\Python39\site-packages\mpf\modes\attract\config\attract.yaml
+2025-09-18 20:46:15,193 : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\04b50eb8001e61932b049f84de72b94b.mpf_cache
+2025-09-18 20:46:15,194 : ConfigProcessor : Loading config from file C:\Users\sdona\AppData\Roaming\Python\Python39\site-packages\mpf\modes\game\config\game.yaml.
+2025-09-18 20:46:15,196 : ConfigProcessor : Loading config: C:\Users\sdona\AppData\Roaming\Python\Python39\site-packages\mpf\modes\game\config\game.yaml
+2025-09-18 20:46:15,197 : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\59c69c473eb223b00bad10095ca7861f.mpf_cache
+2025-09-18 20:46:15,198 : mpfmc : Mission Pinball Framework Media Controller (MPF-MC) v0.57.1. Requires MPF v0.57.0 or newer.
+2025-09-18 20:46:15,199 : mpfmc : Found MPF v0.57.3
+2025-09-18 20:46:15,199 : mpfmc : Machine path: C:\venv\mpf\soultrain
+2025-09-18 20:46:15,199 : mpfmc : Starting clock at 60.0Hz
+2025-09-18 20:46:15,704 : kivy : Text: Provider: sdl2
+2025-09-18 20:46:15,749 : root : DLL load failed while importing audio_interface: The specified module could not be found.
+Traceback (most recent call last):
+  File "C:\Users\sdona\AppData\Roaming\Python\Python39\site-packages\mpfmc\commands\mc.py", line 215, in __init__
+    MpfMc(options=vars(args),
+  File "C:\Users\sdona\AppData\Roaming\Python\Python39\site-packages\mpfmc\core\mc.py", line 148, in __init__
+    create_config_collections(self, self.machine_config['mpf-mc']['config_collections'])
+  File "C:\Users\sdona\AppData\Roaming\Python\Python39\site-packages\mpfmc\core\config_collection.py", line 82, in create_config_collections
+    imported_module = import_module(module)
+  File "C:\Program Files\Python39\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "C:\Users\sdona\AppData\Roaming\Python\Python39\site-packages\mpfmc\config_collections\sound_loop_set.py", line 1, in <module>
+    from mpfmc.core.audio.audio_exception import AudioException
+  File "C:\Users\sdona\AppData\Roaming\Python\Python39\site-packages\mpfmc\core\audio\__init__.py", line 7, in <module>
+    from mpfmc.core.audio.audio_interface import AudioInterface
+ImportError: DLL load failed while importing audio_interface: The specified module could not be found.
+2025-09-18 20:46:15,753 : root : Stopping child threads... (0 remaining)
+2025-09-18 20:46:15,753 : root : All child threads stopped.

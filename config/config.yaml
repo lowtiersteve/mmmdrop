@@ -1,0 +1,167 @@
+#config_version=6
+
+# mike is using this for the numbers
+# https://fastpinball.com/cookbook/lower-third/
+# https://fastpinball.com/mpf/config/net/
+
+hardware:
+  platform: fast
+  driverboards: fast
+
+fast:
+  net:
+    controller: neuron
+    io_loop:
+      cab:
+        model: FP-I/O-0024
+        order: 1
+      "3208":
+        model: FP-I/O-3208
+        order: 2
+      "0804":
+        model: FP-I/O-0804
+        order: 3
+      "0804b":
+        model: FP-I/O-0804
+        order: 4
+
+  aud:
+    port: auto
+    debug: false
+
+    main_amp_enabled: true
+    sub_amp_enabled: true
+    headphones_amp_enabled: true
+
+    main_steps: 10
+    sub_steps: 10
+    headphones_steps: 10
+
+    default_main_volume: 80
+    default_sub_volume: 80
+    default_headphones_volume: 60
+
+    persist_volume_settings: true
+
+    max_hw_volume_main: 100
+    max_hw_volume_sub: 100
+    max_hw_volume_headphones: 100
+
+    main_levels_list: None
+    sub_levels_list: None
+    headphones_levels_list: None
+
+    link_sub_to_main: true
+    link_headphones_to_main: true
+
+    headphones_level: line
+    mute_speakers_with_headphones: true
+
+
+displays:
+  window:
+    width: 1920
+    height: 1080
+
+slide_player:
+  init_done: loading
+
+
+config:
+  - coils.yaml
+  - switches.yaml
+
+
+playfields:
+  playfield:
+    tags: default
+    default_source_device: bd_plunger
+    enable_ball_search: false
+
+flippers:
+  left_flipper:
+    main_coil: c_flipper_left_main
+    hold_coil: c_flipper_left_hold
+    activation_switch: s_left_flipper
+  right_flipper:
+    main_coil: c_flipper_right_main
+    hold_coil: c_flipper_right_hold
+    activation_switch: s_right_flipper
+  top_right_flipper:
+    main_coil: c_flipper_top_right_main
+    hold_coil: c_flipper_top_right_hold
+    activation_switch: s_top_right_flipper
+
+ball_devices:
+  bd_trough:
+    ball_switches: s_trough1, s_trough2, s_trough3, s_trough4, s_trough5, s_trough6, s_trough_jam
+    eject_coil: c_trough_eject
+    tags: trough, home, drain
+    jam_switch: s_trough_jam
+    eject_coil_jam_pulse: 15ms
+    eject_targets: bd_plunger
+    eject_timeouts: 3s
+  bd_plunger:
+    ball_switches: s_plunger
+    mechanical_eject: true
+    eject_coil: c_plunger
+    eject_timeouts: 3s
+  bd_scoop:
+    ball_switches: s_scoop
+    eject_coil: c_scoop_eject
+    eject_timeouts: 3s
+
+
+ball_saves:
+  default:
+    active_time: 5s
+    hurry_up_time: 2s
+    grace_period: 2s
+    enable_events: mode_base_started
+    timer_start_events: ball_out
+    auto_launch: true
+    balls_to_save: -1
+
+
+modes:
+  - base
+  - attract
+
+
+keyboard:
+  s:
+    switch: s_start
+  1:
+    switch: s_trough1
+    toggle: true
+  2:
+    switch: s_trough2
+    toggle: true
+  3:
+    switch: s_trough3
+    toggle: true
+  4:
+    switch: s_trough4
+    toggle: true
+  5:
+    switch: s_trough5
+    toggle: true
+  p:
+    switch: s_plunger
+    toggle: true
+  m:
+    switch: s_scoop
+    toggle: true
+  b:
+    switch: s_right_lower_pop
+  u:
+    switch: s_three_bank_bottom
+    toggle: true
+  i:
+    switch: s_three_bank_middle
+    toggle: true
+  o:
+    switch: s_three_bank_top
+    toggle: true
+  y:
+    switch: s_three_bank_standup

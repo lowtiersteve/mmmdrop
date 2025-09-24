@@ -1,0 +1,86 @@
+#config_version=6
+mode:
+  start_events: ball_starting
+  priority: 100
+
+counters:
+  drop_target_counter:
+    count_events: drop_target_top_hit, drop_target_middle_hit, drop_target_bottom_hit
+    multiple_hit_window: 500ms
+    events_when_hit: drop_target_counter_hit
+
+slide_player:
+  mode_base_started:
+    base:
+      action: play
+      priority: 100000
+    score_overlay:
+      action: play
+      priority: 900000
+
+sound_player:
+  mode_base_started:
+    base_game_random_music:
+      bus: music
+      loops: 14
+  drop_target_counter_hit:
+    drop_sound_random:
+      bus: effects
+      max_queue_time: 1s
+
+
+variable_player:
+  s_right_inlane_active:
+    score: 110
+  s_left_inlane_active:
+    score: 110
+  s_right_outlane_active:
+    score: 1110
+  s_left_outlane_active:
+    score: 1110
+  s_left_slingshot_active:
+    score: 10
+  s_right_slingshot_active:
+    score: 10
+  s_right_lower_pop_active:
+    score: 1110
+  s_left_upper_pop_active:
+    score: 1110
+  s_center_upper_pop_active:
+    score: 1110
+  s_upper_pop_standup_active:
+    score: 5010
+  s_pop_standup_active:
+    score: 5010
+  s_captive_ball_active:
+    score: 10010
+  s_spinner_active:
+    score: 1010
+  s_three_bank_bottom_active:
+    score: 2220
+  s_three_bank_middle_active:
+    score: 2220
+  s_three_bank_top_active:
+    score: 2220
+  s_scoop_active:
+    score: 2310
+  s_tshirt_top_standup_active:
+    score: 5010
+  s_tshirt_bottom_standup_active:
+    score: 5010
+  s_three_bank_standup_active:
+    score: 20010
+  s_left_orbit_active:
+    score: 110
+  s_right_orbit_active:
+    score: 110
+  s_inner_orbit_active:
+    score: 1010
+  s_left_ramp_active:
+    score: 3010
+  s_right_ramp_active:
+    score: 3010
+
+
+
+

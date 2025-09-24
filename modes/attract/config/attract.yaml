@@ -1,0 +1,13 @@
+#config_version=6
+
+slide_player:
+  mode_attract_started:
+    loading:
+      action: remove
+    attract:
+      action: play
+
+sound_player:
+  mode_attract_started:
+    attract_crowd:
+      bus: music

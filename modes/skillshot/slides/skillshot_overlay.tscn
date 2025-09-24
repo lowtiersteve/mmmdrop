@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://pvq15xw5a86p"]
+
+[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_5i820"]
+[ext_resource type="FontFile" uid="uid://c5wtmofvonrew" path="res://fonts/countdown.ttf" id="2_81mmh"]
+
+[node name="SkillshotOverlay" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_5i820")
+metadata/_custom_type_script = "uid://d15ukepy10pan"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 540.0
+offset_top = 293.0
+offset_right = 975.0
+offset_bottom = 562.0
+scale = Vector2(2.13139, 2.00571)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_81mmh")
+theme_override_font_sizes/font_size = 76
+text = "Skill Shot:
+
+Shoot the
+Side Targets"
+horizontal_alignment = 1
+vertical_alignment = 1

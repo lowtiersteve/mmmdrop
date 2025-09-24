@@ -1,0 +1,59 @@
+2025-09-14 19:05:29,131 : kivy : deps: Successfully imported "kivy_deps.gstreamer" 0.3.3
+2025-09-14 19:05:29,132 : kivy : deps: Successfully imported "kivy_deps.angle" 0.3.3
+2025-09-14 19:05:29,133 : kivy : deps: Successfully imported "kivy_deps.glew" 0.3.1
+2025-09-14 19:05:29,133 : kivy : deps: Successfully imported "kivy_deps.sdl2" 0.6.0
+2025-09-14 19:05:29,133 : kivy : Kivy: v2.2.1
+2025-09-14 19:05:29,133 : kivy : Kivy: Installed at "c:\venv\mpf\lib\site-packages\kivy\__init__.py"
+2025-09-14 19:05:29,134 : kivy : Python: v3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]
+2025-09-14 19:05:29,135 : kivy : Python: Interpreter at "c:\venv\mpf\Scripts\python.exe"
+2025-09-14 19:05:29,189 : kivy : Factory: 190 symbols loaded
+2025-09-14 19:05:29,410 : kivy : ImageLoaderFFPy: Using ffpyplayer 4.5.1
+2025-09-14 19:05:29,410 : kivy : Image: Providers: img_tex, img_dds, img_sdl2, img_pil, img_ffpyplayer 
+2025-09-14 19:05:29,656 : kivy : VideoGstplayer: Using Gstreamer 1.18.5.0
+2025-09-14 19:05:29,656 : kivy : Video: Provider: gstplayer
+2025-09-14 19:05:29,716 : root : Loading MPF-MC controller
+2025-09-14 19:05:29,718 : YamlMultifileConfigLoader : Machine config file #1: config
+2025-09-14 19:05:29,719 : ConfigProcessor : Config file in cache changed: C:\venv\mpf\Beastie\config\config
+2025-09-14 19:05:29,719 : ConfigProcessor : Loading config from file c:\venv\mpf\lib\site-packages\mpfmc\mcconfig.yaml.
+2025-09-14 19:05:29,726 : ConfigProcessor : Loading config: c:\venv\mpf\lib\site-packages\mpfmc\mcconfig.yaml
+2025-09-14 19:05:29,727 : ConfigProcessor : Loading config from file C:\venv\mpf\Beastie\config\config.
+2025-09-14 19:05:29,730 : ConfigProcessor : Loading config: C:\venv\mpf\Beastie\config\config
+2025-09-14 19:05:29,733 : ConfigProcessor : Loading config: C:\venv\mpf\Beastie\config\coils.yaml
+2025-09-14 19:05:29,736 : ConfigProcessor : Loading config: C:\venv\mpf\Beastie\config\switches.yaml
+2025-09-14 19:05:29,737 : ConfigProcessor : Loading config: C:\venv\mpf\Beastie\config\variables.yaml
+2025-09-14 19:05:29,739 : ConfigProcessor : Loading config: C:\venv\mpf\Beastie\config\multiball.yaml
+2025-09-14 19:05:29,741 : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\44bf464d96061a002296b46dc480c9cc.mpf_cache
+2025-09-14 19:05:29,742 : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\c173f56c3c3e06c9459d5099cad4d2e2.mpf_cache
+2025-09-14 19:05:29,743 : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\9b0a7575388f9d9bd2f6ab87bf9fd2f7.mpf_cache
+2025-09-14 19:05:29,744 : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\030316ed146861bf4833849128e89e85.mpf_cache
+2025-09-14 19:05:29,745 : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\e48fb50b13b2bebe709754f0f023ac13.mpf_cache
+2025-09-14 19:05:29,746 : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\c173f56c3c3e06c9459d5099cad4d2e2.mpf_cache
+2025-09-14 19:05:29,747 : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\d408215fbe0903da49214f9253f3ff03.mpf_cache
+2025-09-14 19:05:29,748 : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\a77b41b6e08c0747a8d996cb4add835c.mpf_cache
+2025-09-14 19:05:29,748 : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\b516601b81b35a5e1dbe36ee8acca3d3.mpf_cache
+2025-09-14 19:05:29,749 : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\55b6e894568d0a6d7715e31be358c79d.mpf_cache
+2025-09-14 19:05:29,749 : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\3e6c11c2ad4c6626db68823ae2991cd4.mpf_cache
+2025-09-14 19:05:29,751 : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\78085b93b916d5530832e66de2199ed9.mpf_cache
+2025-09-14 19:05:29,752 : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\919e5de0e5988aaf4efa64a3536197a2.mpf_cache
+2025-09-14 19:05:29,753 : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\8eeaa6d788aaafae551659d3c01096ba.mpf_cache
+2025-09-14 19:05:29,754 : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\46dee2f797cf009739b611c129f81e95.mpf_cache
+2025-09-14 19:05:29,755 : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\07f6b238aeee7077c1368dc0c90c6631.mpf_cache
+2025-09-14 19:05:29,756 : mpfmc : Mission Pinball Framework Media Controller (MPF-MC) v0.57.1. Requires MPF v0.57.0 or newer.
+2025-09-14 19:05:29,756 : mpfmc : Found MPF v0.57.3
+2025-09-14 19:05:29,756 : mpfmc : Machine path: C:\venv\mpf\Beastie
+2025-09-14 19:05:29,756 : mpfmc : Starting clock at 60.0Hz
+2025-09-14 19:05:29,785 : kivy : Text: Provider: sdl2
+2025-09-14 19:05:29,827 : kivy : Window: Provider: sdl2
+2025-09-14 19:05:30,108 : kivy : GL: Using the "OpenGL" graphics system
+2025-09-14 19:05:30,119 : kivy : GL: GLEW initialization succeeded
+2025-09-14 19:05:30,120 : kivy : GL: Backend used <glew>
+2025-09-14 19:05:30,120 : kivy : GL: OpenGL version <b'4.6.0 Compatibility Profile Context 24.10.26.240627'>
+2025-09-14 19:05:30,120 : kivy : GL: OpenGL vendor <b'ATI Technologies Inc.'>
+2025-09-14 19:05:30,120 : kivy : GL: OpenGL renderer <b'AMD Radeon(TM) Graphics'>
+2025-09-14 19:05:30,120 : kivy : GL: OpenGL parsed version: 4, 6
+2025-09-14 19:05:30,120 : kivy : GL: Shading version <b'4.60'>
+2025-09-14 19:05:30,120 : kivy : GL: Texture max size <16384>
+2025-09-14 19:05:30,120 : kivy : GL: Texture max units <32>
+2025-09-14 19:05:30,163 : kivy : Window: auto add sdl2 input provider
+2025-09-14 19:05:30,164 : kivy : Window: virtual keyboard not allowed, single mode, not docked
+2025-09-14 19:05:30,173 : SoundSystem : SoundSystem: Using default 'sound_system' settings

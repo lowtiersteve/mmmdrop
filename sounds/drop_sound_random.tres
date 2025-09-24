@@ -1,0 +1,8 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://dn11h2g2flo1a"]
+
+[ext_resource type="AudioStream" uid="uid://b1kudtcducfk" path="res://sounds/shortbeep.wav" id="1_6op7e"]
+
+[resource]
+playback_mode = 2
+streams_count = 1
+stream_0/stream = ExtResource("1_6op7e")
