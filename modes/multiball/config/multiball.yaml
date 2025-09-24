@@ -1,0 +1,10 @@
+#config_version=6
+
+  slide_player:
+    mode_multiball_started: multiball_base_slide
+    multiball_super_jackpot_lit:
+      multiball_super_jackpot_slide:
+        priority: 10
+    multiball_super_jackpot_hit:
+      multiball_super_jackpot_slide:
+        action: remove

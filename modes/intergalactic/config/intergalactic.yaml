@@ -1,0 +1,53 @@
+#config_version=6
+mode:
+  start_events: intergalactic_start
+  stop_events: intergalactic_stop
+  priority: 200
+
+widgets:
+  wham:
+    type: text
+    text: "WHAM!"
+    font_size: 72
+    color: yellow
+    expire: 1.5s
+  bam:
+    type: text
+    text: "BAM!!"
+    font_size: 72
+    color: green
+    expire: 1.5s
+  slam:
+    type: text
+    text: "SLAM!!!"
+    font_size: 100
+    color: blue
+    expire: 2s
+
+shots:
+  left_shot:
+    switch: s_left_orbit
+  right_shot:
+    switch: s_right_orbit
+  final_shot:
+    switch: s_right_lower_pop
+
+show_player:
+  mode_intergalactic_started: intergalactic_start_text
+
+widget_player:
+  left_shot_make: wham
+  right_shot_make: bam
+  final_shot_make: slam
+
+variable_player:
+  left_shot_1:
+    score: 100000
+  right_shot_1:
+    score: 150000
+  left_shot_2:
+    score: 200000
+  right_shot_2:
+    score: 250000
+  final_shot:
+    score: 1000000

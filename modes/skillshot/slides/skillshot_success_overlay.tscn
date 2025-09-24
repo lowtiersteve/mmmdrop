@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://bq3uv62ni4g2k"]
+
+[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_8x6qk"]
+[ext_resource type="FontFile" uid="uid://c5wtmofvonrew" path="res://fonts/countdown.ttf" id="2_46t43"]
+
+[node name="SkillshotSuccessOverlay" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_8x6qk")
+metadata/_custom_type_script = "uid://d15ukepy10pan"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 596.0
+offset_top = 327.0
+offset_right = 1031.0
+offset_bottom = 596.0
+scale = Vector2(1.87781, 1.71507)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_46t43")
+theme_override_font_sizes/font_size = 76
+text = "SUCCESS!
+
+1,000,000"
+horizontal_alignment = 1
+vertical_alignment = 1

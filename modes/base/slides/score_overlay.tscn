@@ -1,0 +1,246 @@
+[gd_scene load_steps=4 format=3 uid="uid://c2alaagu3le5k"]
+
+[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_j4cmf"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="2_vwbax"]
+[ext_resource type="Script" uid="uid://b3ni1cjx2r6sx" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_6f3t8"]
+
+[node name="Base" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_j4cmf")
+metadata/_custom_type_script = "uid://d15ukepy10pan"
+
+[node name="background" type="Sprite2D" parent="."]
+
+[node name="currentplayer" type="Label" parent="."]
+layout_mode = 0
+offset_left = 837.0
+offset_top = 24.0
+offset_right = 1118.0
+offset_bottom = 77.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_vwbax")
+theme_override_font_sizes/font_size = 40
+text = "Player 1"
+horizontal_alignment = 1
+script = ExtResource("3_6f3t8")
+variable_name = "number"
+template_string = "Player %s"
+metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"
+
+[node name="currentball" type="Label" parent="."]
+layout_mode = 0
+offset_left = 879.0
+offset_top = 81.0
+offset_right = 1096.0
+offset_bottom = 166.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_vwbax")
+theme_override_font_sizes/font_size = 40
+text = "Ball 1"
+horizontal_alignment = 1
+script = ExtResource("3_6f3t8")
+variable_name = "ball"
+template_string = "Ball %s"
+metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"
+
+[node name="p1name" type="Label" parent="."]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 24.0
+offset_right = 627.0
+offset_bottom = 88.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_vwbax")
+theme_override_font_sizes/font_size = 40
+text = "Player 1"
+horizontal_alignment = 1
+script = ExtResource("3_6f3t8")
+variable_type = 4
+min_digits = 0
+template_string = "Player 1"
+format_string = "Player 1"
+initialize_empty = false
+min_players = 2
+metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"
+
+[node name="p1score" type="Label" parent="."]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 81.0
+offset_right = 627.0
+offset_bottom = 145.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_vwbax")
+theme_override_font_sizes/font_size = 40
+text = "00"
+horizontal_alignment = 1
+script = ExtResource("3_6f3t8")
+variable_type = 4
+variable_name = "score"
+comma_separate = true
+min_digits = 2
+initialize_empty = false
+min_players = 2
+metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"
+
+[node name="p2name" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1304.0
+offset_top = 24.0
+offset_right = 1916.0
+offset_bottom = 88.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_vwbax")
+theme_override_font_sizes/font_size = 40
+text = "Player 2"
+horizontal_alignment = 1
+script = ExtResource("3_6f3t8")
+variable_type = 5
+min_digits = 0
+template_string = "Player 2"
+format_string = "Player 2"
+initialize_empty = false
+min_players = 2
+metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"
+
+[node name="p2score" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1304.0
+offset_top = 81.0
+offset_right = 1916.0
+offset_bottom = 145.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_vwbax")
+theme_override_font_sizes/font_size = 40
+text = "00"
+horizontal_alignment = 1
+script = ExtResource("3_6f3t8")
+variable_type = 5
+variable_name = "score"
+comma_separate = true
+min_digits = 2
+initialize_empty = false
+min_players = 2
+metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"
+
+[node name="p3name" type="Label" parent="."]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 1019.0
+offset_right = 627.0
+offset_bottom = 1083.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_vwbax")
+theme_override_font_sizes/font_size = 40
+text = "Player 3"
+horizontal_alignment = 1
+script = ExtResource("3_6f3t8")
+variable_type = 6
+min_digits = 0
+template_string = "Player 3"
+format_string = "Player 3"
+initialize_empty = false
+min_players = 3
+metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"
+
+[node name="p3score" type="Label" parent="."]
+layout_mode = 0
+offset_top = 955.0
+offset_right = 612.0
+offset_bottom = 1019.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_vwbax")
+theme_override_font_sizes/font_size = 40
+text = "00"
+horizontal_alignment = 1
+script = ExtResource("3_6f3t8")
+variable_type = 6
+variable_name = "score"
+comma_separate = true
+min_digits = 2
+initialize_empty = false
+min_players = 3
+metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"
+
+[node name="p4name" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1304.0
+offset_top = 1019.0
+offset_right = 1916.0
+offset_bottom = 1083.0
+scale = Vector2(1.00845, 0.984678)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_vwbax")
+theme_override_font_sizes/font_size = 40
+text = "Player 4"
+horizontal_alignment = 1
+script = ExtResource("3_6f3t8")
+variable_type = 7
+min_digits = 0
+template_string = "Player 4"
+format_string = "Player 4"
+initialize_empty = false
+min_players = 4
+metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"
+
+[node name="p4score" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1304.0
+offset_top = 955.0
+offset_right = 1916.0
+offset_bottom = 1019.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_vwbax")
+theme_override_font_sizes/font_size = 40
+text = "00"
+horizontal_alignment = 1
+script = ExtResource("3_6f3t8")
+variable_type = 7
+variable_name = "score"
+comma_separate = true
+min_digits = 2
+initialize_empty = false
+min_players = 4
+metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"
+
+[node name="p1scoresolo" type="Label" parent="."]
+layout_mode = 0
+offset_left = 413.0
+offset_top = 955.0
+offset_right = 1516.0
+offset_bottom = 1062.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_vwbax")
+theme_override_font_sizes/font_size = 80
+text = "00"
+horizontal_alignment = 1
+script = ExtResource("3_6f3t8")
+variable_name = "score"
+comma_separate = true
+min_digits = 2
+initialize_empty = false
+max_players = 1
+metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"

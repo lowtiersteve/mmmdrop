@@ -1,0 +1,27 @@
+2025-09-17 19:26:35,427 : kivy : deps: Successfully imported "kivy_deps.gstreamer" 0.3.3
+2025-09-17 19:26:35,427 : kivy : deps: Successfully imported "kivy_deps.angle" 0.3.3
+2025-09-17 19:26:35,429 : kivy : deps: Successfully imported "kivy_deps.glew" 0.3.1
+2025-09-17 19:26:35,429 : kivy : deps: Successfully imported "kivy_deps.sdl2" 0.6.0
+2025-09-17 19:26:35,429 : kivy : Kivy: v2.2.1
+2025-09-17 19:26:35,429 : kivy : Kivy: Installed at "c:\venv\mpf\lib\site-packages\kivy\__init__.py"
+2025-09-17 19:26:35,430 : kivy : Python: v3.9.13 (tags/v3.9.13:6de2ca5, May 17 2022, 16:36:42) [MSC v.1929 64 bit (AMD64)]
+2025-09-17 19:26:35,433 : kivy : Python: Interpreter at "c:\venv\mpf\Scripts\python.exe"
+2025-09-17 19:26:35,485 : kivy : Factory: 190 symbols loaded
+2025-09-17 19:26:35,724 : kivy : ImageLoaderFFPy: Using ffpyplayer 4.5.1
+2025-09-17 19:26:35,724 : kivy : Image: Providers: img_tex, img_dds, img_sdl2, img_pil, img_ffpyplayer 
+2025-09-17 19:26:35,981 : kivy : VideoGstplayer: Using Gstreamer 1.18.5.0
+2025-09-17 19:26:35,981 : kivy : Video: Provider: gstplayer
+2025-09-17 19:26:36,047 : root : Loading MPF-MC controller
+2025-09-17 19:26:36,051 : YamlMultifileConfigLoader : Machine config file #1: config
+2025-09-17 19:26:36,052 : ConfigProcessor : Loading config from file c:\venv\mpf\lib\site-packages\mpfmc\mcconfig.yaml.
+2025-09-17 19:26:36,058 : ConfigProcessor : Loading config: c:\venv\mpf\lib\site-packages\mpfmc\mcconfig.yaml
+2025-09-17 19:26:36,059 : ConfigProcessor : Loading config from file c:\venv\mpf\Beastie\config\config.
+2025-09-17 19:26:36,062 : ConfigProcessor : Loading config: c:\venv\mpf\Beastie\config\config
+2025-09-17 19:26:36,065 : ConfigProcessor : Loading config: c:\venv\mpf\Beastie\config\coils.yaml
+2025-09-17 19:26:36,068 : ConfigProcessor : Loading config: c:\venv\mpf\Beastie\config\switches.yaml
+2025-09-17 19:26:36,070 : ConfigProcessor : Loading config: c:\venv\mpf\Beastie\config\multiball.yaml
+2025-09-17 19:26:36,073 : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\db3ad8af3a31a90fb3d45ccf9ef2b9d7.mpf_cache
+2025-09-17 19:26:36,074 : ConfigProcessor : Loading config from file c:\venv\mpf\lib\site-packages\mpf\modes\attract\config\attract.yaml.
+2025-09-17 19:26:36,075 : ConfigProcessor : Loading config: c:\venv\mpf\lib\site-packages\mpf\modes\attract\config\attract.yaml
+2025-09-17 19:26:36,076 : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\9850977bb9bffa92584f0b363c7a65d4.mpf_cache
+2025-09-17 19:26:36,077 : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\9b0a7575388f9d9bd2f6ab87bf9fd2f7.mpf_cache
