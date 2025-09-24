@@ -3,25 +3,6 @@ mode:
   start_events: ball_starting
   priority: 100
 
-sequence_shots:
-  left_orbit:
-    switch_sequence: s_left_orbit, s_right_orbit
-    sequence_timeout: 3s
-  right_orbit:
-    switch_sequence: s_right_orbit, s_left_orbit
-    sequence_timeout: 3s
-  inner_loop:
-    switch_sequence: s_inner_orbit, s_right_orbit
-    sequence_timeout: 2s
-  right_ramp:
-    switch_sequence: s_right_ramp
-  left_ramp:
-    switch_sequence: s_left_ramp
-  pop_standup:
-    switch_sequence: s_pop_standup
-  scoop:
-    switch_sequence: s_scoop
-
 counters:
   drop_target_counter:
     count_events: drop_target_top_hit, drop_target_middle_hit, drop_target_bottom_hit
@@ -32,26 +13,18 @@ slide_player:
   mode_base_started:
     base:
       action: play
-      priority: 5000
+      priority: 100000
     score_overlay:
       action: play
       priority: 900000
-  mode_intergalactic_stop:
-    intergalactic:
-      action: remove
-    base:
-      action: play
-      priority: 5000
 
 sound_player:
-  mode_carousel_started:
+  mode_base_started:
     base_game_random_music:
-      action: play
       bus: music
       loops: 14
   drop_target_counter_hit:
     drop_sound_random:
-      action: play
       bus: effects
       max_queue_time: 1s
 
@@ -89,7 +62,7 @@ variable_player:
     score: 2220
   s_three_bank_top_active:
     score: 2220
-  scoop_hit:
+  s_scoop_active:
     score: 2310
   s_tshirt_top_standup_active:
     score: 5010
@@ -103,10 +76,11 @@ variable_player:
     score: 110
   s_inner_orbit_active:
     score: 1010
-  left_ramp_hit:
+  s_left_ramp_active:
     score: 3010
-  right_ramp_hit:
+  s_right_ramp_active:
     score: 3010
+
 
 
 

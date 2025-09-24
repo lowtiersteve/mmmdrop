@@ -66,7 +66,7 @@ func _init():
 			["media", preload("scripts/media.gd"), "GMCMedia"]
 	]:
 		var script = self.get_config_value("gmc", s[2], false)
-		# Add logging configuration as init parameters so logging
+		# TODO: Add logging configuration as init parameters so logging
 		# is available in the _init() methods of all scripts
 		if script:
 			self[s[0]] = load(script).new()
