@@ -15,7 +15,7 @@ position = Vector2(959, 545)
 scale = Vector2(1.47846, 1.48361)
 texture = ExtResource("2_rqxsl")
 
-[node name="Label" type="Label" parent="."]
+[node name="pressstart" type="Label" parent="."]
 layout_mode = 0
 offset_left = 712.0
 offset_top = 440.0
@@ -26,3 +26,14 @@ theme_override_fonts/font = ExtResource("2_gensg")
 theme_override_font_sizes/font_size = 106
 text = "Press
 Start"
+
+[node name="version" type="Label" parent="."]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 1016.0
+offset_right = 368.0
+offset_bottom = 1072.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_gensg")
+theme_override_font_sizes/font_size = 36
+text = "Version 0.20"
