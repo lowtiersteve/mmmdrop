@@ -1,1 +1,164 @@
 #config_version=6
+
+lights:
+  l_leftorbit_arrow_led:
+    number: 1
+    subtype: led
+    type: rgb
+  l_leftramp_arrow_led:
+    number: 2
+    subtype: led
+    type: rgb
+  l_innerloop_arrow_led:
+    number: 3
+    subtype: led
+    type: rgb
+  l_scoop_arrow_led:
+    number: 4
+    subtype: led
+    type: rgb
+  l_rightramp_arrow_led:
+    number: 5
+    subtype: led
+    type: rgb
+  l_rightorbit_arrow_led:
+    number: 6
+    subtype: led
+    type: rgb
+  l_lowerpop_smallarrow_led:
+    number: 7
+    subtype: led
+    type: rgb
+  l_lowerrightstandup_circle_led:
+    number: 8
+    subtype: led
+    type: rgb
+  l_upperpop_smallarrow_led:
+    number: 9
+    subtype: led
+    type: rgb
+  l_captiveball_smallcircle_led:
+    number: 10
+    subtype: led
+    type: rgb
+  l_lowerdrop_circle_led:
+    number: 11
+    subtype: led
+    type: rgb
+  l_middledrop_circle_led:
+    number: 12
+    subtype: led
+    type: rgb
+  l_upperdrop_circle_led:
+    number: 13
+    subtype: led
+    type: rgb
+  l_dropstandup_flasher_led:
+    number: 14
+    subtype: led
+    type: rgb
+  l_upperleftpop_inside_led:
+    number: 15
+    subtype: led
+    type: rgb
+  l_uppercenterpop_inside_led:
+    number: 16
+    subtype: led
+    type: rgb
+  l_lowerrightpop_inside_led:
+    number: 17
+    subtype: led
+    type: rgb
+  l_dropbank_rectangle_led:
+    number: 18
+    subtype: led
+    type: rgb
+  l_leftoutlane_circle_led:
+    number: 19
+    subtype: led
+    type: rgb
+  l_leftinlane_circle_led:
+    number: 20
+    subtype: led
+    type: rgb
+  l_rightinlane_circle_led:
+    number: 21
+    subtype: led
+    type: rgb
+  l_rightoutlane_circle_led:
+    number: 22
+    subtype: led
+    type: rgb
+  l_ballsave_circle_led:
+    number: 23
+    subtype: led
+    type: rgb
+  l_leftorbitcombo_circle_led:
+    number: 24
+    subtype: led
+    type: rgb
+  l_leftrampcombo_circle_led:
+    number: 25
+    subtype: led
+    type: rgb
+  l_innerloopcombo_circle_led:
+    number: 26
+    subtype: led
+    type: rgb
+  l_rightrampcombo_circle_led:
+    number: 27
+    subtype: led
+    type: rgb
+  l_rightorbitcombo_circle_led:
+    number: 28
+    subtype: led
+    type: rgb
+  l_scoopcombo_circle_led:
+    number: 29
+    subtype: led
+    type: rgb
+  l_scoopmode_square_led:
+    number: 30
+    subtype: led
+    type: rgb
+  l_leftorbitbattery_rectangle_led:
+    number: 31
+    subtype: led
+    type: rgb
+  l_modeindicator1_rectangle_led:
+    number: 32
+    subtype: led
+    type: rgb
+  l_modeindicator2_rectangle_led:
+    number: 33
+    subtype: led
+    type: rgb
+  l_modeindicator3_rectangle_led:
+    number: 34
+    subtype: led
+    type: rgb
+  l_modeindicator4_rectangle_led:
+    number: 35
+    subtype: led
+    type: rgb
+  l_modeindicator5_rectangle_led:
+    number: 36
+    subtype: led
+    type: rgb
+  l_modeindicator6_rectangle_led:
+    number: 37
+    subtype: led
+    type: rgb
+  l_modeindicator7_rectangle_led:
+    number: 38
+    subtype: led
+    type: rgb
+  l_modeindicator8_rectangle_led:
+    number: 39
+    subtype: led
+    type: rgb
+  l_wizardindicator_rectangle_led:
+    number: 40
+    subtype: led
+    type: rgb
+

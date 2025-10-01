@@ -1,0 +1,43 @@
+[gd_scene load_steps=4 format=3 uid="uid://cfchbfgunagos"]
+
+[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_wh4wg"]
+[ext_resource type="Script" uid="uid://bg3lbwyn7udbh" path="res://addons/mpf-gmc/classes/mpf_carousel.gd" id="3_5j6cv"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="3_ruqgo"]
+
+[node name="carousel" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_wh4wg")
+metadata/_custom_type_script = "uid://d15ukepy10pan"
+
+[node name="ModeReady" type="Label" parent="."]
+layout_mode = 0
+offset_left = 300.0
+offset_top = 341.0
+offset_right = 1685.0
+offset_bottom = 500.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("3_ruqgo")
+theme_override_font_sizes/font_size = 51
+text = "Mode Ready!
+Shoot the scoop to start:"
+horizontal_alignment = 1
+
+[node name="MPFCarousel" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_5j6cv")
+carousel_name = "carousel"
+metadata/_custom_type_script = "uid://bg3lbwyn7udbh"
+
+[node name="intergalactic" type="Label" parent="MPFCarousel"]
+layout_mode = 0
+offset_left = 599.0
+offset_top = 599.0
+offset_right = 1411.0
+offset_bottom = 748.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("3_ruqgo")
+theme_override_font_sizes/font_size = 81
+text = "iNTERGALACTIC"

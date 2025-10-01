@@ -1,53 +1,119 @@
 #config_version=6
 mode:
-  start_events: intergalactic_start
-  stop_events: intergalactic_stop
-  priority: 200
+  start_events: carousel_intergalactic_selected
+  stop_events: mode_intergalactic_stop, ball_ended
+  priority: 1000
 
-widgets:
-  wham:
-    type: text
-    text: "WHAM!"
-    font_size: 72
-    color: yellow
-    expire: 1.5s
-  bam:
-    type: text
-    text: "BAM!!"
-    font_size: 72
-    color: green
-    expire: 1.5s
-  slam:
-    type: text
-    text: "SLAM!!!"
-    font_size: 100
-    color: blue
-    expire: 2s
+sequences:
+  intergalactic_shot_1:
+    events:
+      - right_ramp_hit, right_orbit_hit
+    events_when_complete: intergalactic_shot_1_done
+    reset_on_complete: False
+  intergalactic_shot_2:
+    events:
+      - left_ramp_hit, left_orbit_hit
+    enable_events: intergalactic_shot_1_done
+    events_when_complete: intergalactic_shot_2_done
+    reset_on_complete: False
+  intergalactic_shot_3:
+    events:
+      - right_ramp_hit, right_orbit_hit
+    enable_events: intergalactic_shot_2_done
+    events_when_complete: intergalactic_shot_3_done
+    reset_on_complete: False
+  intergalactic_shot_4:
+    events:
+      - left_ramp_hit, left_orbit_hit
+    enable_events: intergalactic_shot_3_done
+    events_when_complete: intergalactic_shot_4_done
+    reset_on_complete: False
+  intergalactic_shot_5:
+    events:
+      - pop_standup_hit
+    enable_events: intergalactic_shot_4_done
+    events_when_complete: intergalactic_shot_5_done, mode_intergalactic_stop
+    reset_on_complete: False
 
-shots:
-  left_shot:
-    switch: s_left_orbit
-  right_shot:
-    switch: s_right_orbit
-  final_shot:
-    switch: s_right_lower_pop
-
-show_player:
-  mode_intergalactic_started: intergalactic_start_text
-
-widget_player:
-  left_shot_make: wham
-  right_shot_make: bam
-  final_shot_make: slam
+#show_player:
+#  mode_intergalactic_started:
+#     add light show stuff here
 
 variable_player:
-  left_shot_1:
-    score: 100000
-  right_shot_1:
-    score: 150000
-  left_shot_2:
-    score: 200000
-  right_shot_2:
-    score: 250000
-  final_shot:
+  intergalactic_shot_1_done:
     score: 1000000
+  intergalactic_shot_2_done:
+    score: 2000000
+  intergalactic_shot_3_done:
+    score: 3000000
+  intergalactic_shot_4_done:
+    score: 5000000
+  intergalactic_shot_5_done:
+    score: 10000000
+  timer_intro_show_tick:
+    intro_show_variable_times_100:
+      int: device.timers.intro_show.ticks * 100
+      action: set
+
+slide_player:
+  mode_intergalactic_started:
+    current_mode_highlighted:
+      action: remove
+    base:
+      action: remove
+    intergalactic:
+      action: play
+      priority: 500000
+  timer_intro_show_complete:
+    intergalactic_right_shot_lit:
+      action: play
+      priority: 800000
+  intergalactic_shot_1_done:
+    intergalactic_right_shot_lit:
+      action: remove
+    intergalactic_left_shot_lit:
+      action: play
+      priority: 800000
+  intergalactic_shot_2_done:
+    intergalactic_left_shot_lit:
+      action: remove
+    intergalactic_right_shot_lit:
+      action: play
+      priority: 800000
+  intergalactic_shot_3_done:
+    intergalactic_right_shot_lit:
+      action: remove
+    intergalactic_left_shot_lit:
+      action: play
+      priority: 800000
+  intergalactic_shot_4_done:
+    intergalactic_left_shot_lit:
+      action: remove
+    intergalactic_final_shot_lit:
+      action: play
+      priority: 800000
+  intergalactic_shot_5_done:
+    intergalactic_final_shot_lit:
+      action: remove
+
+sound_player:
+  mode_intergalactic_started:
+    base_game_random_music:
+      action: stop
+      bus: music
+
+ball_holds:
+  scoop_hold:
+    balls_to_hold: 1
+    hold_devices: bd_scoop
+    enable_events: mode_intergalactic_started
+    disable_events: timer_intro_show_complete
+    release_one_events: timer_intro_show_complete
+
+timers:
+  intro_show:
+    start_value: 0
+    end_value: 9
+    control_events:
+      - action: start
+        event: mode_intergalactic_started

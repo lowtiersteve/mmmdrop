@@ -4,6 +4,9 @@
 # https://fastpinball.com/cookbook/lower-third/
 # https://fastpinball.com/mpf/config/net/
 
+#v0.12 updates: Added 6 and 7 on keyboard to decrease/increase volume, lowered upper flipper power a bit,
+#added sequence shots for orbits and loop
+
 hardware:
   platform: fast
   driverboards: fast
@@ -64,12 +67,15 @@ displays:
     height: 1080
 
 slide_player:
-  init_done: loading
+  init_done:
+    loading:
+      action: play
 
 
 config:
   - coils.yaml
   - switches.yaml
+  - lights.yaml
 
 
 playfields:
@@ -126,7 +132,8 @@ ball_saves:
 modes:
   - base
   - attract
-
+  - carousel
+  - intergalactic
 
 keyboard:
   s:
@@ -154,6 +161,8 @@ keyboard:
     toggle: true
   b:
     switch: s_right_lower_pop
+  n:
+    switch: s_center_upper_pop
   u:
     switch: s_three_bank_bottom
     toggle: true
@@ -165,3 +174,12 @@ keyboard:
     toggle: true
   y:
     switch: s_three_bank_standup
+  e:
+    event: master_volume_decrease
+  r:
+    event: master_volume_increase
+  d:
+    switch: s_left_flipper
+  f:
+    switch: s_right_flipper
+

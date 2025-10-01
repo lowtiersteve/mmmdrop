@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://d31n0lq3kpiyp"]
+
+[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_tw08j"]
+[ext_resource type="FontFile" uid="uid://c5wtmofvonrew" path="res://fonts/countdown.ttf" id="2_kny84"]
+
+[node name="IntergalacticRightShotLit" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_tw08j")
+metadata/_custom_type_script = "uid://d15ukepy10pan"
+
+[node name="shootrightshot" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1021.0
+offset_top = 417.0
+offset_right = 1884.0
+offset_bottom = 690.0
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("2_kny84")
+theme_override_font_sizes/font_size = 106
+text = "Shoot the
+Right Ramp
+or Right Orbit!"
+horizontal_alignment = 1

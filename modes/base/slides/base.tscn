@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://bhck7fscj4hgh"]
+[gd_scene load_steps=2 format=3 uid="uid://bhck7fscj4hgh"]
 
 [ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_j4cmf"]
-[ext_resource type="Texture2D" uid="uid://duavrcrlcuet4" path="res://assets/BeastieLogoTransparentOutside.webp" id="2_g2r2l"]
 
 [node name="Base" type="Control"]
 layout_mode = 3
@@ -15,7 +14,3 @@ offset_right = 1920.0
 offset_bottom = 1080.0
 scale = Vector2(1, 0.996312)
 color = Color(0, 0, 0, 1)
-
-[node name="BeastieLogoTransparentOutside" type="Sprite2D" parent="."]
-position = Vector2(970, 551)
-texture = ExtResource("2_g2r2l")

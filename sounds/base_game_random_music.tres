@@ -1,4 +1,4 @@
-[gd_resource type="AudioStreamRandomizer" load_steps=15 format=3 uid="uid://cuh4on317hknk"]
+[gd_resource type="AudioStreamRandomizer" load_steps=14 format=3 uid="uid://cuh4on317hknk"]
 
 [ext_resource type="AudioStream" uid="uid://db48skr21o8e8" path="res://sounds/MakeSomeNoise.ogg" id="1_w5kg0"]
 [ext_resource type="AudioStream" uid="uid://dju3np2igx3g6" path="res://sounds/BodyMovin.ogg" id="2_iupfn"]
@@ -9,25 +9,23 @@
 [ext_resource type="AudioStream" uid="uid://bjobv6qrnlfft" path="res://sounds/BrassMonkey.ogg" id="7_mpiuo"]
 [ext_resource type="AudioStream" uid="uid://3t68c8wjhoce" path="res://sounds/FingerLickinGood.ogg" id="8_vx1oi"]
 [ext_resource type="AudioStream" uid="uid://b4llhcvxhk6o4" path="res://sounds/HighPlainsDrifter.ogg" id="9_e27hi"]
-[ext_resource type="AudioStream" uid="uid://bw6pmy6pho4t6" path="res://sounds/Intergalactic.ogg" id="10_5idgo"]
 [ext_resource type="AudioStream" uid="uid://8vc2cnixljsn" path="res://sounds/MultilateralNuclearDisarmament.ogg" id="11_4bmwv"]
 [ext_resource type="AudioStream" uid="uid://clbijmmkgp7jt" path="res://sounds/PaulRevere.ogg" id="12_d6lvr"]
 [ext_resource type="AudioStream" uid="uid://dedptjpkx0aci" path="res://sounds/POW.ogg" id="13_sexib"]
 [ext_resource type="AudioStream" uid="uid://bwie15sohlvyb" path="res://sounds/Sabotage.ogg" id="14_khju3"]
 
 [resource]
-streams_count = 14
+streams_count = 13
 stream_0/stream = ExtResource("1_w5kg0")
 stream_1/stream = ExtResource("2_iupfn")
 stream_2/stream = ExtResource("7_mpiuo")
 stream_3/stream = ExtResource("8_vx1oi")
 stream_4/stream = ExtResource("9_e27hi")
-stream_5/stream = ExtResource("10_5idgo")
-stream_6/stream = ExtResource("11_4bmwv")
-stream_7/stream = ExtResource("12_d6lvr")
-stream_8/stream = ExtResource("13_sexib")
-stream_9/stream = ExtResource("14_khju3")
-stream_10/stream = ExtResource("3_5g7oh")
-stream_11/stream = ExtResource("4_8egh4")
-stream_12/stream = ExtResource("5_rrp6t")
-stream_13/stream = ExtResource("6_xlcnx")
+stream_5/stream = ExtResource("11_4bmwv")
+stream_6/stream = ExtResource("12_d6lvr")
+stream_7/stream = ExtResource("13_sexib")
+stream_8/stream = ExtResource("14_khju3")
+stream_9/stream = ExtResource("3_5g7oh")
+stream_10/stream = ExtResource("4_8egh4")
+stream_11/stream = ExtResource("5_rrp6t")
+stream_12/stream = ExtResource("6_xlcnx")
