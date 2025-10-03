@@ -71,12 +71,10 @@ slide_player:
     loading:
       action: play
 
-
 config:
   - coils.yaml
   - switches.yaml
   - lights.yaml
-
 
 playfields:
   playfield:
@@ -117,7 +115,6 @@ ball_devices:
     eject_coil: c_scoop_eject
     eject_timeouts: 3s
 
-
 ball_saves:
   default:
     active_time: 5s
@@ -128,12 +125,15 @@ ball_saves:
     auto_launch: true
     balls_to_save: -1
 
-
 modes:
   - base
   - attract
+  - skill_shot
+  - multiball
   - carousel
   - intergalactic
+  - paulrevere
+
 
 keyboard:
   s:

@@ -1,0 +1,119 @@
+2025-10-02 20:16:05,412 : INFO : root : Loading config.
+2025-10-02 20:16:05,417 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2025-10-02 20:16:05,417 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\19f6d0d7953982fda9d956182316b8e5.mpf_cache
+2025-10-02 20:16:05,519 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\835b5bfea4be8b279a05e96caaaffbbb.mpf_cache
+2025-10-02 20:16:05,520 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\9b0a7575388f9d9bd2f6ab87bf9fd2f7.mpf_cache
+2025-10-02 20:16:05,520 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\base\config\base.yaml
+2025-10-02 20:16:05,520 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\base\config\base.yaml.
+2025-10-02 20:16:05,526 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\base\config\base.yaml
+2025-10-02 20:16:05,527 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\c340ec0033d1055cd797ffd5447ef414.mpf_cache
+2025-10-02 20:16:05,528 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\835b5bfea4be8b279a05e96caaaffbbb.mpf_cache
+2025-10-02 20:16:05,529 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\8c11a28e3c38d4ad47947b6a126f2ee9.mpf_cache
+2025-10-02 20:16:05,529 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\multiball\config\multiball.yaml
+2025-10-02 20:16:05,530 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\multiball\config\multiball.yaml.
+2025-10-02 20:16:05,530 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\multiball\config\multiball.yaml
+2025-10-02 20:16:05,531 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\e391083cdc9e667060411fe5838e93f2.mpf_cache
+2025-10-02 20:16:05,531 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\f0c219a993d891ee86dcb7eae47dde67.mpf_cache
+2025-10-02 20:16:05,532 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\96aa58108928490b129531848cd9b506.mpf_cache
+2025-10-02 20:16:05,532 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\567636b9d9766e3361204e954a8382da.mpf_cache
+2025-10-02 20:16:05,534 : INFO : Machine : Mission Pinball Framework Core Engine v0.80.0.dev9
+2025-10-02 20:16:05,534 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'force_assets_load': False, 'platform_integration_test': False, 'jsonlogging': False, 'logfile': 'logs\\2025-10-02-20-16-05-mpf-PinballLaptop.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': 'smart_virtual', 'syslog_address': None, 'full_logfile_path': 'C:\\venv\\mpf\\mmmdrop\\logs\\2025-10-02-20-16-05-mpf-PinballLaptop.log'}
+2025-10-02 20:16:05,534 : INFO : Machine : MPF path: c:\venv\mpf\lib\site-packages\mpf
+2025-10-02 20:16:05,534 : INFO : Machine : Machine path: C:\venv\mpf\mmmdrop
+2025-10-02 20:16:05,534 : INFO : Machine : Platform: win32
+2025-10-02 20:16:05,534 : INFO : Machine : Python executable location: c:\venv\mpf\Scripts\python.exe
+2025-10-02 20:16:05,534 : INFO : Machine : Python version: 3.9.13 (64-bit)
+2025-10-02 20:16:05,536 : INFO : Machine : Initializing MPF...
+2025-10-02 20:16:05,744 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2025-10-02 20:16:05,768 : INFO : EventManager : Event: ======'machine_var_fast_audio_headphones_volume'====== Args={'value': 10, 'prev_value': None, 'change': True}
+2025-10-02 20:16:05,769 : INFO : EventManager : Event: ======'machine_var_fast_audio_main_volume'====== Args={'value': 44, 'prev_value': None, 'change': True}
+2025-10-02 20:16:05,769 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.15, 'prev_value': None, 'change': True}
+2025-10-02 20:16:05,769 : INFO : EventManager : Event: ======'machine_var_player1_score'====== Args={'value': 140190, 'prev_value': None, 'change': True}
+2025-10-02 20:16:05,769 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'Mission Pinball Framework v0.80.0.dev9', 'prev_value': None, 'change': True}
+2025-10-02 20:16:05,769 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'Mission Pinball Framework v0.80.0.dev9, Config version:6, Show version: 6, BCP version:1.1', 'prev_value': None, 'change': True}
+2025-10-02 20:16:05,769 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.9.13', 'prev_value': None, 'change': True}
+2025-10-02 20:16:05,800 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.26100-SP0', 'prev_value': None, 'change': True}
+2025-10-02 20:16:05,800 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2025-10-02 20:16:05,800 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2025-10-02 20:16:05,800 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.26100', 'prev_value': None, 'change': True}
+2025-10-02 20:16:05,800 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2025-10-02 20:16:05,800 : INFO : EventManager : Event: ======'machine_var_log_file_path'====== Args={'value': 'C:\\venv\\mpf\\mmmdrop\\logs\\2025-10-02-20-16-05-mpf-PinballLaptop.log', 'prev_value': None, 'change': True}
+2025-10-02 20:16:05,800 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2025-10-02 20:16:05,832 : INFO : EventManager : Event: ======'drop_target_bank_three_bank_up'====== Args={}
+2025-10-02 20:16:05,834 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2025-10-02 20:16:05,834 : INFO : SwitchController : Found active switch: ('3208-0', <Platform.SmartVirtual>) <switch.s_trough1>
+2025-10-02 20:16:05,834 : INFO : SwitchController : Found active switch: ('3208-1', <Platform.SmartVirtual>) <switch.s_trough2>
+2025-10-02 20:16:05,834 : INFO : SwitchController : Found active switch: ('3208-2', <Platform.SmartVirtual>) <switch.s_trough3>
+2025-10-02 20:16:05,834 : INFO : SwitchController : Found active switch: ('3208-3', <Platform.SmartVirtual>) <switch.s_trough4>
+2025-10-02 20:16:05,834 : INFO : SwitchController : Found active switch: ('3208-4', <Platform.SmartVirtual>) <switch.s_trough5>
+2025-10-02 20:16:05,834 : INFO : SwitchController : Found active switch: ('3208-5', <Platform.SmartVirtual>) <switch.s_trough6>
+2025-10-02 20:16:05,839 : ERROR : asyncio : Exception in callback EventManager._queue_task_done(<Task finishe...load,unload')>)
+handle: <Handle EventManager._queue_task_done(<Task finishe...load,unload')>)>
+Traceback (most recent call last):
+  File "C:\Program Files\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\events.py", line 795, in _queue_task_done
+    future.result()
+  File "c:\venv\mpf\lib\site-packages\mpf\core\events.py", line 708, in _run_handlers_sequential
+    handler.callback(queue=queue, **merged_kwargs)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\mode_controller.py", line 97, in initialize_modes
+    item.method(config=mode.config[item.config_section],
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_player.py", line 150, in process_mode_config
+    config = self.validate_config(config)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_player.py", line 113, in validate_config
+    validated_config[event] = self.validate_config_entry(settings, event)
+  File "c:\venv\mpf\lib\site-packages\mpf\config_players\device_config_player.py", line 56, in validate_config_entry
+    raise e
+  File "c:\venv\mpf\lib\site-packages\mpf\config_players\device_config_player.py", line 52, in validate_config_entry
+    self._validate_config_item(device, device_settings))
+  File "c:\venv\mpf\lib\site-packages\mpf\config_players\sound_player.py", line 24, in _validate_config_item
+    device_settings = self.machine.config_validator.validate_config(
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 164, in validate_config
+    return self._validate_config(config_spec, source, base_spec=base_spec, add_missing_keys=add_missing_keys,
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 204, in _validate_config
+    processed_config[k] = self.validate_config_item(
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 243, in validate_config_item
+    return self.validate_item(item, validation, validation_failure_info)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 699, in validate_item
+    return self.validator_list[validator](item, validation_failure_info=validation_failure_info, param=param)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 390, in _validate_type_enum
+    raise self.validation_error(
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in ConfigValidator: Failed to load config player mode_carousel_ended:sounds with settings {'base_game_random_music': {'action': 'remove', 'block': False}} >> Config validation error: Entry sound_player:sound_player:action = "remove" is not valid. Entry "remove" is not valid for enum. Valid values are: play,replace,stop,stop_looping,load,unload Error Code: CFE-ConfigValidator-5 (https://missionpinball.org/logs)
+2025-10-02 20:16:05,862 : INFO : Machine : Starting the main run loop with active modes: []
+2025-10-02 20:16:05,862 : WARNING : Machine : Attract mode is not active, game will not be playable. Please check your attract mode configuration.
+2025-10-02 20:16:05,863 : INFO : Machine : Shutting down...
+2025-10-02 20:16:05,863 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2025-10-02 20:16:06,886 : ERROR : Machine : Runtime Exception
+Traceback (most recent call last):
+  File "c:\venv\mpf\lib\site-packages\mpf\core\machine.py", line 808, in _run_loop
+    raise self._exception['exception']
+  File "C:\Program Files\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\events.py", line 795, in _queue_task_done
+    future.result()
+  File "c:\venv\mpf\lib\site-packages\mpf\core\events.py", line 708, in _run_handlers_sequential
+    handler.callback(queue=queue, **merged_kwargs)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\mode_controller.py", line 97, in initialize_modes
+    item.method(config=mode.config[item.config_section],
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_player.py", line 150, in process_mode_config
+    config = self.validate_config(config)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_player.py", line 113, in validate_config
+    validated_config[event] = self.validate_config_entry(settings, event)
+  File "c:\venv\mpf\lib\site-packages\mpf\config_players\device_config_player.py", line 56, in validate_config_entry
+    raise e
+  File "c:\venv\mpf\lib\site-packages\mpf\config_players\device_config_player.py", line 52, in validate_config_entry
+    self._validate_config_item(device, device_settings))
+  File "c:\venv\mpf\lib\site-packages\mpf\config_players\sound_player.py", line 24, in _validate_config_item
+    device_settings = self.machine.config_validator.validate_config(
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 164, in validate_config
+    return self._validate_config(config_spec, source, base_spec=base_spec, add_missing_keys=add_missing_keys,
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 204, in _validate_config
+    processed_config[k] = self.validate_config_item(
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 243, in validate_config_item
+    return self.validate_item(item, validation, validation_failure_info)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 699, in validate_item
+    return self.validator_list[validator](item, validation_failure_info=validation_failure_info, param=param)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 390, in _validate_type_enum
+    raise self.validation_error(
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in ConfigValidator: Failed to load config player mode_carousel_ended:sounds with settings {'base_game_random_music': {'action': 'remove', 'block': False}} >> Config validation error: Entry sound_player:sound_player:action = "remove" is not valid. Entry "remove" is not valid for enum. Valid values are: play,replace,stop,stop_looping,load,unload Error Code: CFE-ConfigValidator-5 (https://missionpinball.org/logs)
+2025-10-02 20:16:07,950 : INFO : root : MPF run loop ended.

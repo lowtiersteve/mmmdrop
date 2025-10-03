@@ -41,3 +41,13 @@ theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("3_ruqgo")
 theme_override_font_sizes/font_size = 81
 text = "iNTERGALACTIC"
+
+[node name="paulrevere" type="Label" parent="MPFCarousel"]
+offset_left = 660.0
+offset_top = 599.0
+offset_right = 1359.0
+offset_bottom = 706.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("3_ruqgo")
+theme_override_font_sizes/font_size = 81
+text = "Paul Revere"

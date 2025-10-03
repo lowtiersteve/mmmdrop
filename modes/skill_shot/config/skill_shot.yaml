@@ -1,4 +1,5 @@
 #config_version=6
+
 mode:
   start_events: ball_started
   stop_events:
@@ -7,18 +8,20 @@ mode:
   priority: 500
 
 shots:
-  skill_side_target_1:
-    switch: s_tshirt_bottom_standup
+  skill_side_targets:
+    switch: s_tshirt_bottom_standup, s_tshirt_top_standup
     profile: skill_shot_profile
-    advance_events: mode_skillshot_started
-  skill_side_target_2:
-    switch: s_tshirt_top_standup
+    advance_events: mode_skill_shot_started
+  skill_drop_targets:
+    switch: s_three_bank_bottom, s_three_bank_middle, s_three_bank_top
     profile: skill_shot_profile
-    advance_events: mode_skillshot_started
+    advance_events: mode_skill_shot_started
 
 shot_groups:
   skill_shot:
-    shots: skill_side_target_1, skill_side_target_2
+    shots: skill_side_targets, skill_drop_targets
+    rotate_left_events: s_left_flipper_active
+    rotate_right_events: s_right_flipper_active
 
 shot_profiles:
   skill_shot_profile:
@@ -34,20 +37,22 @@ shot_profiles:
         show: on
     loop: true
 
+
 variable_player:
   skill_success:
-    score: 1000000
+    score: 2000000
 
 timers:
   skill_shot_timeout:
     start_value: 0
-    end_value: 5     # set the timeout of your skill shot here
+    end_value: 3
     direction: up
-    tick_interval: 1s
+    tick_interval: 1
     start_running: false
     control_events:
       - action: start
-        event: balldevice_bd_plunger_ball_eject_success  # replace "plunger_lane" with the name of your plunger device
+        event: balldevice_bd_plunger_ball_eject_success
+
 
 state_machines:
   skill_shot_success:
@@ -70,17 +75,13 @@ state_machines:
         events: skill_shot_unlit_hit, timer_skill_shot_timeout_complete
 
 slide_player:
-  mode_skillshot_started:
+  mode_skill_shot_started:
     skillshot_overlay:
       action: play
-      priority: 800000
-  skillshot_hit:
+      priority: 850000
+  skill_success:
     skillshot_overlay:
       action: remove
-    skillshot_success_overlay:
-      action: play
-      duration: 3s
-      priority: 800000
-  skillshot_failed:
+  skill_failed:
     skillshot_overlay:
       action: remove

@@ -1,10 +1,28 @@
 #config_version=6
 
-  slide_player:
-    mode_multiball_started: multiball_base_slide
-    multiball_super_jackpot_lit:
-      multiball_super_jackpot_slide:
-        priority: 10
-    multiball_super_jackpot_hit:
-      multiball_super_jackpot_slide:
-        action: remove
+#This is ChCheckItOut!!
+
+mode:
+  start_events: mode_base_started
+  priority: 1000
+
+multiballs:
+  chcheckitout:
+    ball_count: 3
+    start_events: chcheckitout_start_multiball
+    shoot_again: 15s
+    add_a_ball_events: three_bank_standup_hit
+    reset_events: multiball_chcheckitout_ended
+    enable_events: chcheckitout_multiball_qualified, mode_intergalactic_stop, mode_paulrevere_stop
+    disable_events: carousel_item_selected
+
+
+slide_player:
+  multiball_chcheckitout_started:
+    current_mode_highlighted:
+      action: remove
+    base:
+      action: remove
+    multiball:
+      action: play
+      priority: 450000

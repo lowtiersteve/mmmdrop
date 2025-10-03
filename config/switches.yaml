@@ -100,11 +100,12 @@ drop_targets:
   top:
     switch: s_three_bank_top
 
+
 drop_target_banks:
   three_bank:
     drop_targets: bottom, middle, top
     reset_coils: c_three_bank
-    reset_on_complete: 500ms
+    reset_on_complete: 1s
 
 spinners:
   basic_spinner:

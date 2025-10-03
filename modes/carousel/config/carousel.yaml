@@ -1,13 +1,13 @@
 #config_version=6
 
 mode:
-  start_events: mode_base_started, mode_intergalactic_stop #start_selection_mode #add list of all modes here as you add them
-  stop_events: carousel_item_selected
+  start_events: mode_base_started, mode_intergalactic_stop, mode_paulrevere_stop, multiball_chcheckitout_ended
+  stop_events: carousel_item_selected, multiball_chcheckitout_started
   code: mpf.modes.carousel.code.carousel.Carousel
   priority: 200
 
 mode_settings:
-  selectable_items: intergalactic
+  selectable_items: intergalactic, paulrevere
   select_item_events: scoop_hit
   next_item_events: s_left_upper_pop_active, s_center_upper_pop_active
   previous_item_events: s_right_lower_pop_active
@@ -16,6 +16,10 @@ variable_player:
   carousel_intergalactic_selected:
     selected_mode:
       string: "Intergalactic"
+      action: set
+  carousel_paulrevere_selected:
+    selected_mode:
+      string: "Paul Revere"
       action: set
 
 slide_player:
@@ -27,3 +31,4 @@ slide_player:
 
 event_player:
   select_intergalactic: mode_intergalactic_start
+  select_paulrevere: mode_paulrevere_start

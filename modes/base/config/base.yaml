@@ -21,12 +21,11 @@ sequence_shots:
     switch_sequence: s_pop_standup
   scoop:
     switch_sequence: s_scoop
+  captive_ball:
+    switch_sequence: s_captive_ball
+  three_bank_standup:
+    switch_sequence: s_three_bank_standup
 
-counters:
-  drop_target_counter:
-    count_events: drop_target_top_hit, drop_target_middle_hit, drop_target_bottom_hit
-    multiple_hit_window: 500ms
-    events_when_hit: drop_target_counter_hit
 
 slide_player:
   mode_base_started:
@@ -36,8 +35,27 @@ slide_player:
     score_overlay:
       action: play
       priority: 900000
+    attract:
+      action: remove
   mode_intergalactic_stop:
     intergalactic:
+      action: remove
+    base:
+      action: play
+      priority: 5000
+  mode_paulrevere_stop:
+    paulrevere:
+      action: remove
+    base:
+      action: play
+      priority: 5000
+  skill_success:
+    skillshot_success_overlay:
+      action: play
+      priority: 850000
+      expire: 2s
+  multiball_chcheckitout_ended:
+    multiball:
       action: remove
     base:
       action: play
@@ -49,11 +67,25 @@ sound_player:
       action: play
       bus: music
       loops: 14
-  drop_target_counter_hit:
+  drop_target_top_down:
     drop_sound_random:
       action: play
       bus: effects
       max_queue_time: 1s
+  drop_target_middle_down:
+    drop_sound_random:
+      action: play
+      bus: effects
+      max_queue_time: 1s
+  drop_target_bottom_down:
+    drop_sound_random:
+      action: play
+      bus: effects
+      max_queue_time: 1s
+  mode_carousel_stopped:
+    base_game_random_music:
+      action: stop
+      bus: music
 
 
 variable_player:
@@ -77,9 +109,9 @@ variable_player:
     score: 1110
   s_upper_pop_standup_active:
     score: 5010
-  s_pop_standup_active:
+  pop_standup_hit:
     score: 5010
-  s_captive_ball_active:
+  captive_ball_hit:
     score: 10010
   s_spinner_active:
     score: 1010
@@ -95,7 +127,7 @@ variable_player:
     score: 5010
   s_tshirt_bottom_standup_active:
     score: 5010
-  s_three_bank_standup_active:
+  three_bank_standup_hit:
     score: 20010
   s_left_orbit_active:
     score: 110
@@ -107,6 +139,46 @@ variable_player:
     score: 3010
   right_ramp_hit:
     score: 3010
+  logicblock_drop_target_bank_counter_updated:
+    drop_target_bank_counter_count:
+      int: value
+      action: set
+
+sequences:
+  qualify_chcheckitout_multiball:
+    events:
+      - chcheckitout_multiball_qualified
+    events_when_complete: drops_standup_start_multiball
+    reset_on_complete: true #this could be a problem if multiballs are immediately lighting again too fast
+    disable_on_complete: false
+  chcheckitout_multiball_ready:
+    events:
+      - three_bank_standup_hit
+    enable_events: drops_standup_start_multiball
+    events_when_complete: chcheckitout_start_multiball
+    reset_on_complete: true
+    disable_on_complete: false
+
+counters:
+  drop_target_bank_counter:
+    count_events: drop_target_bank_three_bank_down, ball_started
+    events_when_complete: chcheckitout_multiball_qualified
+    starting_count: 0
+    count_complete_value: 2
+    count_interval: 1
+    direction: up
+    persist_state: true
+    disable_on_complete: false
+    reset_on_complete: false
+    disable_events: multiball_chcheckitout_started #, mode_makesomenoise_started
+#    enable_events: mode_makesomenoise_ended
+    restart_events: multiball_chcheckitout_ended
+    control_events:
+      - event: reset_drop_target_bank_counter
+        action: jump
+        value: 0
 
 
-
+event_player:
+  multiball_chcheckitout_ended: reset_drop_target_bank_counter
+#  mode_makesomenoise_ended: reset_drop_target_bank_counter

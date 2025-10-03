@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://cugwf2ne7spx1"]
+
+[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_sicnm"]
+[ext_resource type="VideoStream" uid="uid://c5v47n5on7qtl" path="res://modes/paulrevere/slides/PaulRevere.ogv" id="2_3yifr"]
+[ext_resource type="Script" uid="uid://bf2dsnm46ji2e" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_anbbg"]
+
+[node name="paulrevere" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_sicnm")
+metadata/_custom_type_script = "uid://d15ukepy10pan"
+
+[node name="MPFVideoPlayer" type="VideoStreamPlayer" parent="."]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+stream = ExtResource("2_3yifr")
+autoplay = true
+expand = true
+bus = &"music"
+script = ExtResource("3_anbbg")
+hide_behavior = 1
+preview_in_editor = true
+metadata/_custom_type_script = "uid://bf2dsnm46ji2e"

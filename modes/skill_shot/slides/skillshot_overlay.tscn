@@ -1,0 +1,36 @@
+[gd_scene load_steps=4 format=3 uid="uid://pvq15xw5a86p"]
+
+[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_5i820"]
+[ext_resource type="Texture2D" uid="uid://f2w7wxg2lr3k" path="res://assets/BeastieGroup2.jpg" id="2_5spag"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="2_81mmh"]
+
+[node name="SkillshotOverlay" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_5i820")
+metadata/_custom_type_script = "uid://d15ukepy10pan"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(960.5, 541.001)
+scale = Vector2(1.915, 1.79667)
+texture = ExtResource("2_5spag")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 378.0
+offset_top = 111.0
+offset_right = 917.0
+offset_bottom = 513.0
+scale = Vector2(2.13139, 2.00571)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_81mmh")
+theme_override_font_sizes/font_size = 25
+text = "Skill Shot:
+
+Shoot the
+Lit Shot!
+(Side Targets or Drops)
+
+Choose with Flippers!"
+horizontal_alignment = 1
+vertical_alignment = 1

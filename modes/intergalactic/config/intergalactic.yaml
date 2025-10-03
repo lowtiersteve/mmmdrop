@@ -50,9 +50,9 @@ variable_player:
     score: 5000000
   intergalactic_shot_5_done:
     score: 10000000
-  timer_intro_show_tick:
-    intro_show_variable_times_100:
-      int: device.timers.intro_show.ticks * 100
+  timer_intergalactic_intro_show_tick:
+    intergalactic_intro_show_variable_times_100:
+      int: device.timers.intergalactic_intro_show.ticks * 100
       action: set
 
 slide_player:
@@ -64,7 +64,7 @@ slide_player:
     intergalactic:
       action: play
       priority: 500000
-  timer_intro_show_complete:
+  timer_intergalactic_intro_show_complete:
     intergalactic_right_shot_lit:
       action: play
       priority: 800000
@@ -103,15 +103,15 @@ sound_player:
       bus: music
 
 ball_holds:
-  scoop_hold:
+  intergalactic_scoop_hold:
     balls_to_hold: 1
     hold_devices: bd_scoop
     enable_events: mode_intergalactic_started
-    disable_events: timer_intro_show_complete
-    release_one_events: timer_intro_show_complete
+    disable_events: timer_intergalactic_intro_show_complete
+    release_one_events: timer_intergalactic_intro_show_complete
 
 timers:
-  intro_show:
+  intergalactic_intro_show:
     start_value: 0
     end_value: 9
     control_events:

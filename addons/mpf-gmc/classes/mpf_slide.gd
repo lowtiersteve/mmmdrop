@@ -53,3 +53,7 @@ func _sort_widgets() -> void:
 
 func _to_string() -> String:
 	return "<%s:MPFSlide:pri=%s:%s" % [self.name, self.priority, self.get_instance_id()]
+
+
+func _on_timer_timeout() -> void:
+	queue_free() # Replace with function body.
