@@ -1,25 +1,40 @@
 events:
   game_ended: 36
-  game_started: 256
+  game_started: 257
 missing_switches:
-  s_inner_orbit: 182
-  s_left_flipper: 54
-  s_left_slingshot: 182
-  s_right_flipper: 54
-  s_right_inlane: 67
-  s_right_outlane: 67
-  s_right_slingshot: 32
-  s_spinner: 88
-  s_start: 51
-  s_tilt_bob: 190
-  s_top_right_flipper: 182
-  s_trough4: 181
-  s_trough5: 181
-  s_trough6: 31
-  s_trough_jam: 182
-  s_tshirt_bottom_standup: 28
-  s_tshirt_top_standup: 7
-  s_upper_pop_standup: 182
+  s_captive_ball: 1
+  s_center_upper_pop: 1
+  s_inner_orbit: 183
+  s_left_flipper: 55
+  s_left_inlane: 1
+  s_left_orbit: 1
+  s_left_outlane: 1
+  s_left_ramp: 1
+  s_left_slingshot: 183
+  s_left_upper_pop: 1
+  s_pop_standup: 1
+  s_right_flipper: 55
+  s_right_inlane: 68
+  s_right_lower_pop: 1
+  s_right_orbit: 1
+  s_right_outlane: 68
+  s_right_ramp: 1
+  s_right_slingshot: 33
+  s_spinner: 89
+  s_start: 52
+  s_three_bank_standup: 1
+  s_tilt_bob: 191
+  s_top_right_flipper: 183
+  s_trough1: 1
+  s_trough2: 1
+  s_trough3: 1
+  s_trough4: 182
+  s_trough5: 182
+  s_trough6: 32
+  s_trough_jam: 183
+  s_tshirt_bottom_standup: 29
+  s_tshirt_top_standup: 8
+  s_upper_pop_standup: 183
 player:
   score:
     average: 16766
@@ -37,7 +52,7 @@ player:
     total: 37
 shots:
   skill_captive: 16
-  skill_drop_targets: 31
+  skill_drop_targets: 32
   skill_side_targets: 27
 switches:
   s_captive_ball: 163
@@ -50,7 +65,7 @@ switches:
   s_left_ramp: 41
   s_left_slingshot: 259
   s_left_upper_pop: 148
-  s_plunger: 696
+  s_plunger: 697
   s_pop_standup: 68
   s_right_flipper: 1515
   s_right_inlane: 106
@@ -59,13 +74,13 @@ switches:
   s_right_outlane: 53
   s_right_ramp: 41
   s_right_slingshot: 366
-  s_scoop: 186
+  s_scoop: 187
   s_spinner: 1371
   s_start: 55
-  s_three_bank_bottom: 178
-  s_three_bank_middle: 188
+  s_three_bank_bottom: 179
+  s_three_bank_middle: 189
   s_three_bank_standup: 126
-  s_three_bank_top: 182
+  s_three_bank_top: 183
   s_tilt_bob: 21
   s_top_right_flipper: 1294
   s_trough1: 246

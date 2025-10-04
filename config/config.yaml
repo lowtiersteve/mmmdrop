@@ -4,7 +4,7 @@
 # https://fastpinball.com/cookbook/lower-third/
 # https://fastpinball.com/mpf/config/net/
 
-#v0.21 updates: added Paul Revere mode, added Ch-Check It Out Multiball
+#v0.22 updates: Fix git pull
 
 hardware:
   platform: fast
