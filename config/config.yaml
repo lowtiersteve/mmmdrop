@@ -4,8 +4,7 @@
 # https://fastpinball.com/cookbook/lower-third/
 # https://fastpinball.com/mpf/config/net/
 
-#v0.12 updates: Added 6 and 7 on keyboard to decrease/increase volume, lowered upper flipper power a bit,
-#added sequence shots for orbits and loop
+#v0.21 updates: added Paul Revere mode, added Ch-Check It Out Multiball
 
 hardware:
   platform: fast

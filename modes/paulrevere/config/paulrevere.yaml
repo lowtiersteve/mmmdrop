@@ -127,7 +127,7 @@ ball_holds:
 timers:
   paulrevere_intro_show:
     start_value: 0
-    end_value: 7
+    end_value: 6
     control_events:
       - action: start
         event: mode_paulrevere_started

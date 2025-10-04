@@ -1,30 +1,25 @@
 events:
   game_ended: 36
-  game_started: 255
+  game_started: 256
 missing_switches:
-  s_inner_orbit: 181
-  s_left_flipper: 53
-  s_left_inlane: 66
-  s_left_outlane: 66
-  s_left_slingshot: 181
-  s_left_upper_pop: 31
-  s_right_flipper: 53
-  s_right_inlane: 66
-  s_right_lower_pop: 1
-  s_right_outlane: 66
-  s_right_slingshot: 31
-  s_spinner: 87
-  s_start: 50
-  s_tilt_bob: 189
-  s_top_right_flipper: 181
-  s_trough1: 8
-  s_trough4: 180
-  s_trough5: 180
-  s_trough6: 30
-  s_trough_jam: 181
-  s_tshirt_bottom_standup: 27
-  s_tshirt_top_standup: 6
-  s_upper_pop_standup: 181
+  s_inner_orbit: 182
+  s_left_flipper: 54
+  s_left_slingshot: 182
+  s_right_flipper: 54
+  s_right_inlane: 67
+  s_right_outlane: 67
+  s_right_slingshot: 32
+  s_spinner: 88
+  s_start: 51
+  s_tilt_bob: 190
+  s_top_right_flipper: 182
+  s_trough4: 181
+  s_trough5: 181
+  s_trough6: 31
+  s_trough_jam: 182
+  s_tshirt_bottom_standup: 28
+  s_tshirt_top_standup: 7
+  s_upper_pop_standup: 182
 player:
   score:
     average: 16766
@@ -42,40 +37,40 @@ player:
     total: 37
 shots:
   skill_captive: 16
-  skill_drop_targets: 30
+  skill_drop_targets: 31
   skill_side_targets: 27
 switches:
-  s_captive_ball: 162
-  s_center_upper_pop: 195
+  s_captive_ball: 163
+  s_center_upper_pop: 196
   s_inner_orbit: 0
   s_left_flipper: 1243
-  s_left_inlane: 109
-  s_left_orbit: 23
-  s_left_outlane: 55
-  s_left_ramp: 36
+  s_left_inlane: 110
+  s_left_orbit: 27
+  s_left_outlane: 56
+  s_left_ramp: 41
   s_left_slingshot: 259
-  s_left_upper_pop: 147
-  s_plunger: 692
-  s_pop_standup: 66
+  s_left_upper_pop: 148
+  s_plunger: 696
+  s_pop_standup: 68
   s_right_flipper: 1515
   s_right_inlane: 106
-  s_right_lower_pop: 452
-  s_right_orbit: 23
+  s_right_lower_pop: 454
+  s_right_orbit: 27
   s_right_outlane: 53
-  s_right_ramp: 38
+  s_right_ramp: 41
   s_right_slingshot: 366
-  s_scoop: 182
+  s_scoop: 186
   s_spinner: 1371
   s_start: 55
-  s_three_bank_bottom: 175
-  s_three_bank_middle: 185
-  s_three_bank_standup: 125
-  s_three_bank_top: 179
+  s_three_bank_bottom: 178
+  s_three_bank_middle: 188
+  s_three_bank_standup: 126
+  s_three_bank_top: 182
   s_tilt_bob: 21
   s_top_right_flipper: 1294
-  s_trough1: 245
-  s_trough2: 254
-  s_trough3: 182
+  s_trough1: 246
+  s_trough2: 255
+  s_trough3: 183
   s_trough4: 160
   s_trough5: 160
   s_trough6: 161
