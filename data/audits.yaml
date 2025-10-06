@@ -1,40 +1,29 @@
 events:
   game_ended: 36
-  game_started: 257
+  game_started: 325
 missing_switches:
-  s_captive_ball: 1
-  s_center_upper_pop: 1
-  s_inner_orbit: 183
-  s_left_flipper: 55
-  s_left_inlane: 1
-  s_left_orbit: 1
-  s_left_outlane: 1
-  s_left_ramp: 1
-  s_left_slingshot: 183
-  s_left_upper_pop: 1
-  s_pop_standup: 1
-  s_right_flipper: 55
-  s_right_inlane: 68
-  s_right_lower_pop: 1
-  s_right_orbit: 1
-  s_right_outlane: 68
-  s_right_ramp: 1
-  s_right_slingshot: 33
-  s_spinner: 89
-  s_start: 52
-  s_three_bank_standup: 1
-  s_tilt_bob: 191
-  s_top_right_flipper: 183
-  s_trough1: 1
-  s_trough2: 1
-  s_trough3: 1
-  s_trough4: 182
-  s_trough5: 182
-  s_trough6: 32
-  s_trough_jam: 183
-  s_tshirt_bottom_standup: 29
-  s_tshirt_top_standup: 8
-  s_upper_pop_standup: 183
+  s_center_upper_pop: 69
+  s_inner_orbit: 251
+  s_left_flipper: 35
+  s_left_inlane: 69
+  s_left_outlane: 69
+  s_left_slingshot: 251
+  s_left_upper_pop: 69
+  s_right_flipper: 35
+  s_right_inlane: 136
+  s_right_outlane: 136
+  s_right_slingshot: 101
+  s_spinner: 2
+  s_start: 34
+  s_tilt_bob: 259
+  s_top_right_flipper: 251
+  s_trough4: 250
+  s_trough5: 250
+  s_trough6: 100
+  s_trough_jam: 251
+  s_tshirt_bottom_standup: 97
+  s_tshirt_top_standup: 76
+  s_upper_pop_standup: 251
 player:
   score:
     average: 16766
@@ -52,40 +41,40 @@ player:
     total: 37
 shots:
   skill_captive: 16
-  skill_drop_targets: 32
+  skill_drop_targets: 100
   skill_side_targets: 27
 switches:
-  s_captive_ball: 163
+  s_captive_ball: 172
   s_center_upper_pop: 196
   s_inner_orbit: 0
-  s_left_flipper: 1243
+  s_left_flipper: 1247
   s_left_inlane: 110
-  s_left_orbit: 27
+  s_left_orbit: 47
   s_left_outlane: 56
-  s_left_ramp: 41
+  s_left_ramp: 92
   s_left_slingshot: 259
   s_left_upper_pop: 148
-  s_plunger: 697
-  s_pop_standup: 68
-  s_right_flipper: 1515
+  s_plunger: 843
+  s_pop_standup: 88
+  s_right_flipper: 1521
   s_right_inlane: 106
-  s_right_lower_pop: 454
-  s_right_orbit: 27
+  s_right_lower_pop: 467
+  s_right_orbit: 49
   s_right_outlane: 53
-  s_right_ramp: 41
+  s_right_ramp: 94
   s_right_slingshot: 366
-  s_scoop: 187
-  s_spinner: 1371
-  s_start: 55
-  s_three_bank_bottom: 179
-  s_three_bank_middle: 189
-  s_three_bank_standup: 126
-  s_three_bank_top: 183
+  s_scoop: 252
+  s_spinner: 1372
+  s_start: 56
+  s_three_bank_bottom: 270
+  s_three_bank_middle: 310
+  s_three_bank_standup: 172
+  s_three_bank_top: 301
   s_tilt_bob: 21
   s_top_right_flipper: 1294
-  s_trough1: 246
-  s_trough2: 255
-  s_trough3: 183
+  s_trough1: 247
+  s_trough2: 268
+  s_trough3: 196
   s_trough4: 160
   s_trough5: 160
   s_trough6: 161

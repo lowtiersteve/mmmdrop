@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://drp7ca6lfiekf"]
 
 [ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_yt6t5"]
-[ext_resource type="VideoStream" uid="uid://cct22a11vpcma" path="res://modes/multiball/slides/ChCheckItOut.ogv" id="2_ovihf"]
+[ext_resource type="VideoStream" uid="uid://br3sqyxjfgcsd" path="res://modes/multiball/slides/ChCheckItOut.ogv" id="2_ovihf"]
 [ext_resource type="Script" uid="uid://bf2dsnm46ji2e" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_pqdlj"]
 
 [node name="chcheckitout" type="Control"]
@@ -18,8 +18,6 @@ offset_bottom = 1080.0
 stream = ExtResource("2_ovihf")
 autoplay = true
 expand = true
-bus = &"music"
 script = ExtResource("3_pqdlj")
-hide_behavior = 1
 preview_in_editor = true
 metadata/_custom_type_script = "uid://bf2dsnm46ji2e"

@@ -1,7 +1,7 @@
 #config_version=6
 mode:
   start_events: carousel_paulrevere_selected
-  stop_events: mode_paulrevere_stop, ball_ended
+  stop_events: mode_paulrevere_stop, ball_ended, timer_paulrevere_time_remaining_complete
   priority: 1000
 
 sequences:
@@ -62,6 +62,14 @@ variable_player:
     paulrevere_intro_show_variable_times_100:
       int: device.timers.paulrevere_intro_show.ticks * 100
       action: set
+  mode_paulrevere_started:
+    mode_blocking_flag:
+      int: 1
+      action: set
+  timer_paulrevere_time_remaining_tick:
+    paulrevere_time_remaining_variable_times_1:
+      int: device.timers.paulrevere_time_remaining.ticks * 1
+      action: set
 
 slide_player:
   mode_paulrevere_started:
@@ -76,6 +84,9 @@ slide_player:
     paulrevere_left_orbit_lit:
       action: play
       priority: 800000
+    paulrevere_display_timer:
+      action: play
+      priority: 825000
   paulrevere_shot_1_done:
     paulrevere_left_orbit_lit:
       action: remove
@@ -112,8 +123,8 @@ slide_player:
 
 sound_player:
   mode_paulrevere_started:
-    base_game_random_music:
-      action: stop
+    paulrevere_music:
+      action: play
       bus: music
 
 ball_holds:
@@ -131,3 +142,18 @@ timers:
     control_events:
       - action: start
         event: mode_paulrevere_started
+  paulrevere_time_remaining:
+    start_value: 60
+    end_value: 0
+    direction: down
+    control_events:
+      - action: start
+        event: timer_paulrevere_intro_show_complete
+      - action: pause
+        event: paulrevere_shot_6_done
+      - action: reset
+        event: mode_paulrevere_started
+
+event_player:
+  timer_paulrevere_time_remaining_complete: mode_paulrevere_failed
+  paulrevere_shot_6_done: mode_paulrevere_success

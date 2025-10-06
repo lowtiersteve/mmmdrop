@@ -1,0 +1,7 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://dqb0hitcxiqpd"]
+
+[ext_resource type="AudioStream" uid="uid://csgvhsot20e1s" path="res://modes/multiball/slides/chcheckitoutflac.ogg" id="1_fkr1x"]
+
+[resource]
+streams_count = 1
+stream_0/stream = ExtResource("1_fkr1x")

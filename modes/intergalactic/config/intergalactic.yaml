@@ -1,7 +1,7 @@
 #config_version=6
 mode:
   start_events: carousel_intergalactic_selected
-  stop_events: mode_intergalactic_stop, ball_ended
+  stop_events: mode_intergalactic_stop, ball_ended, timer_intergalactic_time_remaining_complete
   priority: 1000
 
 sequences:
@@ -54,6 +54,15 @@ variable_player:
     intergalactic_intro_show_variable_times_100:
       int: device.timers.intergalactic_intro_show.ticks * 100
       action: set
+  timer_intergalactic_time_remaining_tick:
+    intergalactic_time_remaining_variable_times_1:
+      int: device.timers.intergalactic_time_remaining.ticks * 1
+      action: set
+  mode_intergalactic_started:
+    mode_blocking_flag:
+      int: 1
+      action: set
+
 
 slide_player:
   mode_intergalactic_started:
@@ -68,6 +77,9 @@ slide_player:
     intergalactic_right_shot_lit:
       action: play
       priority: 800000
+    intergalactic_display_timer:
+      action: play
+      priority: 825000
   intergalactic_shot_1_done:
     intergalactic_right_shot_lit:
       action: remove
@@ -95,11 +107,17 @@ slide_player:
   intergalactic_shot_5_done:
     intergalactic_final_shot_lit:
       action: remove
+    intergalactic_display_timer:
+      action: remove
+  timer_intergalactic_time_remaining_complete:
+    intergalactic_display_timer:
+      action: remove
+
 
 sound_player:
   mode_intergalactic_started:
-    base_game_random_music:
-      action: stop
+    intergalacticmusic:
+      action: play
       bus: music
 
 ball_holds:
@@ -113,7 +131,25 @@ ball_holds:
 timers:
   intergalactic_intro_show:
     start_value: 0
-    end_value: 9
+    end_value: 13
     control_events:
       - action: start
         event: mode_intergalactic_started
+      - action: jump
+        value: 13
+        event: flipper_cancel
+  intergalactic_time_remaining:
+    start_value: 60
+    end_value: 0
+    direction: down
+    control_events:
+      - action: start
+        event: timer_intergalactic_intro_show_complete
+      - action: pause
+        event: intergalactic_shot_5_done
+      - action: reset
+        event: mode_intergalactic_started
+
+event_player:
+  timer_intergalactic_time_remaining_complete: mode_intergalactic_failed
+  intergalactic_shot_5_done: mode_intergalactic_success

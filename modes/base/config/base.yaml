@@ -37,12 +37,26 @@ slide_player:
       priority: 900000
     attract:
       action: remove
-  mode_intergalactic_stop:
+  mode_intergalactic_failed:
     intergalactic:
       action: remove
     base:
       action: play
       priority: 5000
+    intergalacticfailed:
+      action: play
+      priority: 950000
+      expire: 3s
+  intergalactic_shot_5_done:
+    intergalactic:
+      action: remove
+    base:
+      action: play
+      priority: 5000
+    intergalacticfinish:
+      action: play
+      priority: 900000
+      expire: 7s
   mode_paulrevere_stop:
     paulrevere:
       action: remove
@@ -66,7 +80,7 @@ sound_player:
     base_game_random_music:
       action: play
       bus: music
-      loops: 14
+      loops: 13
   drop_target_top_down:
     drop_sound_random:
       action: play
@@ -86,6 +100,66 @@ sound_player:
     base_game_random_music:
       action: stop
       bus: music
+  mode_paulrevere_stopped:
+    paulrevere_music:
+      action: stop
+      bus: music
+  mode_paulrevere_success{current_player.multiball_blocking_flag==0}:
+    base_game_random_music:
+      action: play
+      bus: music
+      loops: 14
+  mode_paulrevere_success{current_player.multiball_blocking_flag==1}:
+    chcheckitoutmultiballmusic:
+      action: play
+      bus: music
+      loops: 5
+  mode_paulrevere_failed{current_player.multiball_blocking_flag==0}: #or  slide_intergalacticfailed_removed
+    base_game_random_music:
+      action: play
+      bus: music
+      loops: 13
+  mode_paulrevere_failed{current_player.multiball_blocking_flag==1}: #or  slide_intergalacticfailed_removed
+    chcheckitoutmultiballmusic:
+      action: play
+      bus: music
+      loops: 5
+  mode_intergalactic_stopped:
+    intergalacticmusic:
+      action: stop
+      bus: music
+  mode_intergalactic_success{current_player.multiball_blocking_flag==0}:
+    base_game_random_music:
+      action: play
+      bus: music
+      loops: 14
+  mode_intergalactic_success{current_player.multiball_blocking_flag==1}:
+    chcheckitoutmultiballmusic:
+      action: play
+      bus: music
+      loops: 5
+  mode_intergalactic_failed{current_player.multiball_blocking_flag==0}: #or  slide_intergalacticfailed_removed
+    base_game_random_music:
+      action: play
+      bus: music
+      loops: 13
+  mode_intergalactic_failed{current_player.multiball_blocking_flag==1}: #or  slide_intergalacticfailed_removed
+    chcheckitoutmultiballmusic:
+      action: play
+      bus: music
+      loops: 5
+  multiball_chcheckitout_started{current_player.mode_blocking_flag==0}: #add player_ back in before mode_blocking_flags?
+    base_game_random_music:
+      action: stop
+      bus: music
+  multiball_chcheckitout_ended{current_player.mode_blocking_flag==0}:
+    chcheckitoutmultiballmusic:
+      action: stop
+      bus: music
+    base_game_random_music:
+      action: play
+      bus: music
+      loops: 13
 
 
 variable_player:
@@ -143,6 +217,22 @@ variable_player:
     drop_target_bank_counter_count:
       int: value
       action: set
+  ball_started:
+    multiball_blocking_flag:
+      int: value
+      action: set
+    mode_blocking_flag:
+      int: value
+      action: set
+  mode_intergalactic_stopped:
+    mode_blocking_flag:
+      int: 0
+      action: set
+  mode_paulrevere_stopped:
+    mode_blocking_flag:
+      int: 0
+      action: set
+
 
 sequences:
   qualify_chcheckitout_multiball:

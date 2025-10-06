@@ -1,8 +1,8 @@
 #config_version=6
 
 mode:
-  start_events: mode_base_started, mode_intergalactic_stop, mode_paulrevere_stop, multiball_chcheckitout_ended
-  stop_events: carousel_item_selected, multiball_chcheckitout_started
+  start_events: mode_base_started, mode_intergalactic_stopped{current_player.multiball_blocking_flag==0}, mode_paulrevere_stopped{current_player.multiball_blocking_flag==0}, multiball_chcheckitout_ended{current_player.mode_blocking_flag==0}
+  stop_events: carousel_item_selected, chcheckitout_start_multiball
   code: mpf.modes.carousel.code.carousel.Carousel
   priority: 200
 

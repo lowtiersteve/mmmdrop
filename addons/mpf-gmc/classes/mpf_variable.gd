@@ -162,3 +162,5 @@ func _calculate_player_value() -> bool:
 	elif MPF.game.players.size() >= self.player_number:
 		self.update_text(MPF.game.players[self.player_number - 1].get(self.variable_name))
 	return false
+
+	

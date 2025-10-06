@@ -1,0 +1,8 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://c75gg5sxt2i8w"]
+
+[ext_resource type="AudioStream" uid="uid://buayw2nmc4ebv" path="res://modes/intergalactic/slides/IntergalacticSongAndIntro32.ogg" id="1_argli"]
+
+[resource]
+playback_mode = 2
+streams_count = 1
+stream_0/stream = ExtResource("1_argli")

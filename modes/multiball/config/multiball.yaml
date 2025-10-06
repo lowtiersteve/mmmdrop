@@ -13,8 +13,7 @@ multiballs:
     shoot_again: 15s
     add_a_ball_events: three_bank_standup_hit
     reset_events: multiball_chcheckitout_ended
-    enable_events: chcheckitout_multiball_qualified, mode_intergalactic_stop, mode_paulrevere_stop
-    disable_events: carousel_item_selected
+    enable_events: chcheckitout_multiball_qualified
 
 
 slide_player:
@@ -26,3 +25,21 @@ slide_player:
     multiball:
       action: play
       priority: 450000
+
+sound_player:
+  multiball_chcheckitout_started{current_player.mode_blocking_flag==0}:
+    chcheckitoutmultiballmusic:
+      action: play
+      bus: music
+      loops: 5
+
+
+variable_player:
+  multiball_chcheckitout_started:
+    multiball_blocking_flag:
+      int: 1
+      action: set
+  multiball_chcheckitout_ended:
+    multiball_blocking_flag:
+      int: 0
+      action: set
