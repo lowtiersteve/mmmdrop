@@ -74,6 +74,28 @@ slide_player:
     base:
       action: play
       priority: 5000
+  ball_ending:
+    multiball:
+      action: remove
+    base:
+      action: remove
+    paulrevere:
+      action: remove
+    paulrevere_display_timer:
+      action: remove
+    intergalactic:
+      action: remove
+    intergalacticfinish:
+      action: remove
+    intergalacticfailed:
+      action: remove
+    intergalactic_display_timer:
+      action: remove
+    score_overlay:
+      action: remove
+    current_mode_highlighted:
+      action: remove
+
 
 sound_player:
   mode_carousel_started:
@@ -160,6 +182,19 @@ sound_player:
       action: play
       bus: music
       loops: 13
+  ball_ending:
+    chcheckitoutmultiballmusic:
+      action: stop
+      bus: music
+    base_game_random_music:
+      action: stop
+      bus: music
+    paulrevere_music:
+      action: stop
+      bus: music
+    intergalacticmusic:
+      action: stop
+      bus: music
 
 
 variable_player:
@@ -224,6 +259,9 @@ variable_player:
     mode_blocking_flag:
       int: value
       action: set
+    player_drop_target_bank_counter_count:
+      int: 0
+      action: set
   mode_intergalactic_stopped:
     mode_blocking_flag:
       int: 0
@@ -241,6 +279,7 @@ sequences:
     events_when_complete: drops_standup_start_multiball
     reset_on_complete: true #this could be a problem if multiballs are immediately lighting again too fast
     disable_on_complete: false
+    reset_events: ball_started
   chcheckitout_multiball_ready:
     events:
       - three_bank_standup_hit
@@ -248,16 +287,17 @@ sequences:
     events_when_complete: chcheckitout_start_multiball
     reset_on_complete: true
     disable_on_complete: false
+    reset_events: ball_started
 
 counters:
   drop_target_bank_counter:
-    count_events: drop_target_bank_three_bank_down, ball_started
+    count_events: drop_target_bank_three_bank_down
     events_when_complete: chcheckitout_multiball_qualified
     starting_count: 0
-    count_complete_value: 2
+    count_complete_value: 1
     count_interval: 1
     direction: up
-    persist_state: true
+    persist_state: false
     disable_on_complete: false
     reset_on_complete: false
     disable_events: multiball_chcheckitout_started #, mode_makesomenoise_started
@@ -267,6 +307,7 @@ counters:
       - event: reset_drop_target_bank_counter
         action: jump
         value: 0
+
 
 
 event_player:

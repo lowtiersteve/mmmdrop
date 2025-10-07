@@ -1,8 +1,8 @@
 #config_version=6
 
 mode:
-  start_events: mode_base_started, mode_intergalactic_stopped{current_player.multiball_blocking_flag==0}, mode_paulrevere_stopped{current_player.multiball_blocking_flag==0}, multiball_chcheckitout_ended{current_player.mode_blocking_flag==0}
-  stop_events: carousel_item_selected, chcheckitout_start_multiball
+  start_events: mode_base_started, mode_intergalactic_success{current_player.multiball_blocking_flag==0}, mode_intergalactic_failed{current_player.multiball_blocking_flag==0}, mode_paulrevere_success{current_player.multiball_blocking_flag==0}, mode_paulrevere_failed{current_player.multiball_blocking_flag==0}, multiball_chcheckitout_ended{current_player.mode_blocking_flag==0}
+  stop_events: carousel_item_selected, chcheckitout_start_multiball, ball_ending
   code: mpf.modes.carousel.code.carousel.Carousel
   priority: 200
 
@@ -27,7 +27,6 @@ slide_player:
     current_mode_highlighted:
       action: play
       priority: 500000
-
 
 event_player:
   select_intergalactic: mode_intergalactic_start

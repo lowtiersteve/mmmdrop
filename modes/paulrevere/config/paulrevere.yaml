@@ -1,7 +1,7 @@
 #config_version=6
 mode:
   start_events: carousel_paulrevere_selected
-  stop_events: mode_paulrevere_stop, ball_ended, timer_paulrevere_time_remaining_complete
+  stop_events: mode_paulrevere_stop, timer_paulrevere_time_remaining_complete
   priority: 1000
 
 sequences:

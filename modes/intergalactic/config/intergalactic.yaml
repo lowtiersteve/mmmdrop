@@ -1,7 +1,7 @@
 #config_version=6
 mode:
   start_events: carousel_intergalactic_selected
-  stop_events: mode_intergalactic_stop, ball_ended, timer_intergalactic_time_remaining_complete
+  stop_events: mode_intergalactic_stop, timer_intergalactic_time_remaining_complete
   priority: 1000
 
 sequences:
