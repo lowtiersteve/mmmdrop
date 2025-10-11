@@ -1,0 +1,8 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://80p61hlaxd5k"]
+
+[ext_resource type="AudioStream" uid="uid://udgviwtnv44d" path="res://sounds/MakeSomeNoiseMVAudio.ogg" id="2_02g6y"]
+
+[resource]
+playback_mode = 1
+streams_count = 1
+stream_0/stream = ExtResource("2_02g6y")

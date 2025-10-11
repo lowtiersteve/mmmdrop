@@ -19,12 +19,29 @@ sequence_shots:
     switch_sequence: s_left_ramp
   pop_standup:
     switch_sequence: s_pop_standup
+  upper_pop_standup:
+    switch_sequence: s_upper_pop_standup
   scoop:
     switch_sequence: s_scoop
   captive_ball:
     switch_sequence: s_captive_ball
   three_bank_standup:
     switch_sequence: s_three_bank_standup
+  spinner:
+    switch_sequence: s_spinner
+  pop1:
+    switch_sequence: s_left_upper_pop
+  pop2:
+    switch_sequence: s_center_upper_pop
+  pop3:
+    switch_sequence: s_right_lower_pop
+  bottom_drop:
+    switch_sequence: s_three_bank_bottom
+  middle_drop:
+    switch_sequence: s_three_bank_middle
+  top_drop:
+    switch_sequence: s_three_bank_top
+
 
 
 slide_player:
@@ -63,19 +80,43 @@ slide_player:
     base:
       action: play
       priority: 5000
+  mode_paulrevere_failed:
+    paulrevere:
+      action: remove
+    base:
+      action: play
+      priority: 5000
+  mode_paulrevere_success:
+    paulrevere:
+      action: remove
+    base:
+      action: play
+      priority: 5000
+    paulrevere_success:
+      action: play
+      priority: 850000
+      expire: 3s
   skill_success:
     skillshot_success_overlay:
       action: play
       priority: 850000
       expire: 2s
   multiball_chcheckitout_ended:
-    multiball:
+    multiball1:
+      action: remove
+    multiball2:
+      action: remove
+    multiball3:
       action: remove
     base:
       action: play
       priority: 5000
   ball_ending:
-    multiball:
+    multiball1:
+      action: remove
+    multiball2:
+      action: remove
+    multiball3:
       action: remove
     base:
       action: remove
@@ -95,6 +136,26 @@ slide_player:
       action: remove
     current_mode_highlighted:
       action: remove
+  play_base_video1:
+    basevideo1:
+      action: play
+      priority: 5001
+  play_base_video2:
+    basevideo2:
+      action: play
+      priority: 5001
+  play_base_video3:
+    basevideo3:
+      action: play
+      priority: 5001
+  play_base_video4:
+    basevideo4:
+      action: play
+      priority: 5001
+  mode_makesomenoise_stopped:
+    base:
+      action: play
+      priority: 5000
 
 
 sound_player:
@@ -118,6 +179,47 @@ sound_player:
       action: play
       bus: effects
       max_queue_time: 1s
+  spinner_hit:
+    spinner_sound:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  pop1_hit:
+    pops_sound:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  pop2_hit:
+    pops_sound:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  pop3_hit:
+    pops_sound:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  three_bank_standup_hit:
+    standup_sound:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  pop_standup_hit:
+    standup_sound:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  upper_pop_standup_hit:
+    standup_sound:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  captive_ball_hit:
+    captive_sound:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+      block: true
   mode_carousel_stopped:
     base_game_random_music:
       action: stop
@@ -182,6 +284,10 @@ sound_player:
       action: play
       bus: music
       loops: 13
+  mode_makesomenoise_stopped:
+    makesomenoisemusic:
+      action: stop
+      bus: music
   ball_ending:
     chcheckitoutmultiballmusic:
       action: stop
@@ -195,6 +301,10 @@ sound_player:
     intergalacticmusic:
       action: stop
       bus: music
+    makesomenoisemusic:
+      action: stop
+      bus: music
+
 
 
 variable_player:
@@ -270,6 +380,22 @@ variable_player:
     mode_blocking_flag:
       int: 0
       action: set
+  mode_makesomenoise_stopped:
+    mode_blocking_flag:
+      int: 0
+      action: set
+  mode_intergalactic_started:
+    mode_intergalactic_score:
+      int: 0
+      action: set
+  mode_paulrevere_started:
+    mode_paulrevere_score:
+      int: 0
+      action: set
+  mode_makesomenoise_started:
+    mode_makesomenoise_score:
+      int: 0
+      action: set
 
 
 sequences:
@@ -300,16 +426,26 @@ counters:
     persist_state: false
     disable_on_complete: false
     reset_on_complete: false
-    disable_events: multiball_chcheckitout_started #, mode_makesomenoise_started
-#    enable_events: mode_makesomenoise_ended
+    disable_events: multiball_chcheckitout_started, mode_makesomenoise_started
+    enable_events: mode_makesomenoise_stopped
     restart_events: multiball_chcheckitout_ended
     control_events:
       - event: reset_drop_target_bank_counter
         action: jump
         value: 0
 
-
-
 event_player:
   multiball_chcheckitout_ended: reset_drop_target_bank_counter
-#  mode_makesomenoise_ended: reset_drop_target_bank_counter
+
+random_event_player:
+  multiball_chcheckitout_started:
+    events:
+      - play_chcheckitout_video1
+      - play_chcheckitout_video2
+      - play_chcheckitout_video3
+  slide_base_created:
+    events:
+      - play_base_video1
+      - play_base_video2
+      - play_base_video3
+      - play_base_video4

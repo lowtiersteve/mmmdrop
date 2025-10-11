@@ -33,8 +33,6 @@ shot_profiles:
         show_tokens:
           color: red
         speed: 4
-      - name: lit
-        show: on
     loop: true
 
 
@@ -52,7 +50,8 @@ timers:
     control_events:
       - action: start
         event: balldevice_bd_plunger_ball_eject_success
-
+      - action: reset
+        event: ball_starting
 
 state_machines:
   skill_shot_success:

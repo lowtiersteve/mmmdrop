@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://dc4bed81p4lfu"]
+
+[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_unwv1"]
+[ext_resource type="VideoStream" uid="uid://crjfa6x476dxv" path="res://modes/makesomenoise/slides/MakeSomeNoiseVideoOnly.ogv" id="2_853k7"]
+[ext_resource type="Script" uid="uid://bf2dsnm46ji2e" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_jadjd"]
+
+[node name="chcheckitout" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_unwv1")
+metadata/_custom_type_script = "uid://d15ukepy10pan"
+
+[node name="MPFVideoPlayer" type="VideoStreamPlayer" parent="."]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+stream = ExtResource("2_853k7")
+autoplay = true
+expand = true
+script = ExtResource("3_jadjd")
+preview_in_editor = true
+metadata/_custom_type_script = "uid://bf2dsnm46ji2e"

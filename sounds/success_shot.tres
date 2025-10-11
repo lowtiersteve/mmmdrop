@@ -1,0 +1,8 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://mv8vkjquheml"]
+
+[ext_resource type="AudioStream" uid="uid://drh2yroeu1jar" path="res://sounds/success_bell.wav" id="1_n40sn"]
+
+[resource]
+playback_mode = 2
+streams_count = 1
+stream_0/stream = ExtResource("1_n40sn")

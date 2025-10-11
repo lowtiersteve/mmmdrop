@@ -1,0 +1,65 @@
+[gd_scene load_steps=5 format=3 uid="uid://gdxh1qglv4pc"]
+
+[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_ahh4a"]
+[ext_resource type="Texture2D" uid="uid://dt7hpexqpath5" path="res://assets/action_bubble.png" id="2_r0q42"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="3_l0es7"]
+[ext_resource type="Script" uid="uid://b3ni1cjx2r6sx" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="4_xsi0w"]
+
+[node name="PaulRevereSuccessOverlay" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_ahh4a")
+metadata/_custom_type_script = "uid://d15ukepy10pan"
+
+[node name="ActionImage" type="Sprite2D" parent="."]
+position = Vector2(1012.34, 528.124)
+scale = Vector2(0.686956, 0.597394)
+texture = ExtResource("2_r0q42")
+
+[node name="ModeComplete" type="Label" parent="."]
+layout_mode = 0
+offset_left = 653.0
+offset_top = 350.0
+offset_right = 1062.0
+offset_bottom = 427.0
+scale = Vector2(1.87781, 1.71507)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("3_l0es7")
+theme_override_font_sizes/font_size = 37
+text = "Mode Complete!"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="ModeTotal" type="Label" parent="."]
+layout_mode = 0
+offset_left = 657.0
+offset_top = 506.0
+offset_right = 1066.0
+offset_bottom = 583.0
+scale = Vector2(1.87781, 1.71507)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("3_l0es7")
+theme_override_font_sizes/font_size = 25
+text = "Mode Total:"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="PaulRevereScore" type="Label" parent="."]
+layout_mode = 0
+offset_left = 663.0
+offset_top = 619.0
+offset_right = 1394.0
+offset_bottom = 689.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("3_l0es7")
+theme_override_font_sizes/font_size = 50
+text = "00"
+horizontal_alignment = 1
+script = ExtResource("4_xsi0w")
+variable_name = "mode_paulrevere_score"
+comma_separate = true
+min_digits = 1
+initialize_empty = false
+metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"

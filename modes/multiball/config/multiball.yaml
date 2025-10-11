@@ -14,6 +14,12 @@ multiballs:
     add_a_ball_events: three_bank_standup_hit
     reset_events: multiball_chcheckitout_ended
     enable_events: chcheckitout_multiball_qualified
+  makesomenoise:
+    ball_count: 2
+    start_events: timer_makesomenoise_intro_show_complete
+    shoot_again: 15s
+    reset_events: multiball_makesomenoise_ended
+    enable_events: mode_makesomenoise_starting
 
 
 slide_player:
@@ -22,7 +28,24 @@ slide_player:
       action: remove
     base:
       action: remove
-    multiball:
+    basevideo1:
+      action: remove
+    basevideo2:
+      action: remove
+    basevideo3:
+      action: remove
+    basevideo4:
+      action: remove
+  play_chcheckitout_video1:
+    multiball1:
+      action: play
+      priority: 450000
+  play_chcheckitout_video2:
+    multiball2:
+      action: play
+      priority: 450000
+  play_chcheckitout_video3:
+    multiball3:
       action: play
       priority: 450000
 

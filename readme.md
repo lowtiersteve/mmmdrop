@@ -1,10 +1,12 @@
-# v0.0.1
-# mpf-cookiepuss
+# v0.27
+
+# mmmdrop
 
 # to run without hardware
 
-mpf -b -x
+mpf -X
 
 # to run with hardware
 
-mpf -b
+mpf
+

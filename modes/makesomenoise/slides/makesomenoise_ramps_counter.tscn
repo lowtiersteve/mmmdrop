@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=3 uid="uid://duvwxkvggnyuu"]
+
+[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_mtiqo"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="2_kkhas"]
+[ext_resource type="Script" uid="uid://b3ni1cjx2r6sx" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_y357v"]
+
+[node name="MakeSomeNoiseRamps" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_mtiqo")
+metadata/_custom_type_script = "uid://d15ukepy10pan"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1416.0
+offset_top = 545.0
+offset_right = 1846.0
+offset_bottom = 595.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_kkhas")
+theme_override_font_sizes/font_size = 36
+text = "Ramps Remaining:"
+horizontal_alignment = 1
+
+[node name="MPFVariable" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1537.0
+offset_top = 604.0
+offset_right = 1696.0
+offset_bottom = 677.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_kkhas")
+theme_override_font_sizes/font_size = 71
+text = "0"
+horizontal_alignment = 1
+script = ExtResource("3_y357v")
+variable_name = "makesomenoise_ramps_remaining"
+min_digits = 1
+initialize_empty = false
+metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"

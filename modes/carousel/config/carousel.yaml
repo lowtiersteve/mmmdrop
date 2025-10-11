@@ -1,13 +1,13 @@
 #config_version=6
 
 mode:
-  start_events: mode_base_started, mode_intergalactic_success{current_player.multiball_blocking_flag==0}, mode_intergalactic_failed{current_player.multiball_blocking_flag==0}, mode_paulrevere_success{current_player.multiball_blocking_flag==0}, mode_paulrevere_failed{current_player.multiball_blocking_flag==0}, multiball_chcheckitout_ended{current_player.mode_blocking_flag==0}
+  start_events: mode_base_started, mode_intergalactic_success{current_player.multiball_blocking_flag==0}, mode_intergalactic_failed{current_player.multiball_blocking_flag==0}, mode_paulrevere_success{current_player.multiball_blocking_flag==0}, mode_paulrevere_failed{current_player.multiball_blocking_flag==0}, multiball_chcheckitout_ended{current_player.mode_blocking_flag==0}, mode_makesomenoise_stopped
   stop_events: carousel_item_selected, chcheckitout_start_multiball, ball_ending
   code: mpf.modes.carousel.code.carousel.Carousel
   priority: 200
 
 mode_settings:
-  selectable_items: intergalactic, paulrevere
+  selectable_items: intergalactic, paulrevere, makesomenoise
   select_item_events: scoop_hit
   next_item_events: s_left_upper_pop_active, s_center_upper_pop_active
   previous_item_events: s_right_lower_pop_active
@@ -21,6 +21,10 @@ variable_player:
     selected_mode:
       string: "Paul Revere"
       action: set
+  carousel_makesomenoise_selected:
+    selected_mode:
+      string: "Make Some Noise"
+      action: set
 
 slide_player:
   mode_carousel_started:
@@ -31,3 +35,4 @@ slide_player:
 event_player:
   select_intergalactic: mode_intergalactic_start
   select_paulrevere: mode_paulrevere_start
+  select_makesomenoise: mode_makesomenoise_start

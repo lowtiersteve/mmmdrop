@@ -48,16 +48,22 @@ sequences:
 variable_player:
   paulrevere_shot_1_done:
     score: 1000000
+    mode_paulrevere_score: 1000000
   paulrevere_shot_2_done:
     score: 2000000
+    mode_paulrevere_score: 2000000
   paulrevere_shot_3_done:
     score: 5000000
+    mode_paulrevere_score: 5000000
   paulrevere_shot_4_done:
     score: 3000000
+    mode_paulrevere_score: 3000000
   paulrevere_shot_5_done:
-    score: 50000000
+    score: 5000000
+    mode_paulrevere_score: 5000000
   paulrevere_shot_6_done:
     score: 10000000
+    mode_paulrevere_score: 10000000
   timer_paulrevere_intro_show_tick:
     paulrevere_intro_show_variable_times_100:
       int: device.timers.paulrevere_intro_show.ticks * 100
@@ -76,6 +82,14 @@ slide_player:
     current_mode_highlighted:
       action: remove
     base:
+      action: remove
+    basevideo1:
+      action: remove
+    basevideo2:
+      action: remove
+    basevideo3:
+      action: remove
+    basevideo4:
       action: remove
     paulrevere:
       action: play
@@ -126,6 +140,37 @@ sound_player:
     paulrevere_music:
       action: play
       bus: music
+  paulrevere_shot_1_done:
+    success_shot:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  paulrevere_shot_2_done:
+    success_shot:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  paulrevere_shot_3_done:
+    success_shot:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  paulrevere_shot_4_done:
+    success_shot:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  paulrevere_shot_5_done:
+    success_shot:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  paulrevere_shot_6_done:
+    success_finish:
+      action: play
+      bus: effects
+      max_queue_time: 1s
+
 
 ball_holds:
   paulrevere_scoop_hold:

@@ -4,7 +4,9 @@
 # https://fastpinball.com/cookbook/lower-third/
 # https://fastpinball.com/mpf/config/net/
 
-#v0.22 updates: Fix git pull
+#v0.30 updates: Add videos to attract and base; add random videos to chcheckitout multiball and base; add sound effects;
+# add Service menu and QWER for service buttons; fixed skill shots to work on all balls; Added Make Some Noise mode
+# and Make Some Noise multiball.
 
 hardware:
   platform: fast
@@ -132,7 +134,20 @@ modes:
   - carousel
   - intergalactic
   - paulrevere
+  - service
+  - makesomenoise
 
+
+settings:
+  replay_score:
+    label: Replay Score
+    values:
+      500000: "500000 (default)"
+      1000000: "1000000"
+      1500000: "1500000"
+    default: 500000
+    key_type: int
+    sort: 100
 
 keyboard:
   s:
@@ -173,12 +188,15 @@ keyboard:
     toggle: true
   y:
     switch: s_three_bank_standup
-  e:
-    event: master_volume_decrease
-  r:
-    event: master_volume_increase
   d:
     switch: s_left_flipper
   f:
     switch: s_right_flipper
-
+  q:
+    switch: s_service_esc
+  w:
+    switch: s_service_down
+  e:
+    switch: s_service_up
+  r:
+    switch: s_service_enter
