@@ -95,7 +95,7 @@ offset_bottom = 554.0
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("2_gensg")
 theme_override_font_sizes/font_size = 96
-text = "Version 0.32"
+text = "Version 0.33"
 
 [node name="credits" type="Label" parent="MPFCarousel"]
 top_level = true
