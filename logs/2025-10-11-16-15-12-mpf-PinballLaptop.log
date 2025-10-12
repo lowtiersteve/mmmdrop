@@ -1,0 +1,6 @@
+2025-10-11 16:15:12,740 : INFO : root : Loading config.
+2025-10-11 16:15:12,743 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2025-10-11 16:15:12,744 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\config\config.yaml
+2025-10-11 16:15:12,744 : INFO : ConfigProcessor : Loading config from file c:\venv\mpf\lib\site-packages\mpf\mpfconfig.yaml.
+2025-10-11 16:15:12,753 : INFO : ConfigProcessor : Loading config: c:\venv\mpf\lib\site-packages\mpf\mpfconfig.yaml
+2025-10-11 16:15:12,753 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\config\config.yaml.

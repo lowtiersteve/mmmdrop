@@ -77,6 +77,13 @@ config:
   - switches.yaml
   - lights.yaml
 
+machine_vars:
+  game_just_played:
+    initial_value: 0
+    persist: False
+    value_type: int
+
+
 playfields:
   playfield:
     tags: default
@@ -136,6 +143,7 @@ modes:
   - paulrevere
   - service
   - makesomenoise
+  - tilt
 
 
 settings:
@@ -148,6 +156,51 @@ settings:
     default: 500000
     key_type: int
     sort: 100
+  warnings_to_tilt:
+    label: Number of tilt warnings
+    values:
+      0: "no warnings"
+      1: "1"
+      2: "2"
+      3: "3"
+      5: "5"
+      10: "10"
+    default: 3
+    key_type: int
+    sort: 600
+  settle_time:
+    label: Time to wait on tilt to settle bob
+    values:
+      3000: "3s"
+      5000: "5s"
+      10000: "10s"
+    default: 5000
+    key_type: int
+    sort: 610
+  multiple_hit_window:
+    label: Tilt sensitivity
+    values:
+      150: "Sensitive"
+      300: "Normal"
+      500: "Insensitive"
+      1000: "Very Insensitive"
+    default: 300
+    key_type: int
+    sort: 620
+
+
+event_player:
+  machine_reset_phase_2:
+    game_just_played:
+      action: set_machine
+      int: 0
+
+
+variable_player:
+  game_started:
+    game_just_played:
+      action: set_machine
+      int: 1
 
 keyboard:
   s:

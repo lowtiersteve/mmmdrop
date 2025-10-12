@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://1fga0ktt0c68"]
+
+[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_aigyv"]
+[ext_resource type="Texture2D" uid="uid://ybn1lk0y6nwd" path="res://assets/BeastieGroup3.webp" id="2_6xtg1"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="4_rph03"]
+
+[node name="Intergalactic" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_aigyv")
+metadata/_custom_type_script = "uid://d15ukepy10pan"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(988, 501)
+scale = Vector2(1.10611, 1.08235)
+texture = ExtResource("2_6xtg1")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 503.0
+offset_top = 399.0
+offset_right = 1487.0
+offset_bottom = 640.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("4_rph03")
+theme_override_font_sizes/font_size = 116
+text = "WARNING"
+horizontal_alignment = 1

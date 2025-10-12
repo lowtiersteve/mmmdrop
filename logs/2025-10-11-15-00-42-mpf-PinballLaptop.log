@@ -1,0 +1,109 @@
+2025-10-11 15:00:42,538 : INFO : root : Loading config.
+2025-10-11 15:00:42,543 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2025-10-11 15:00:42,544 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\config\config.yaml
+2025-10-11 15:00:42,544 : INFO : ConfigProcessor : Loading config from file c:\venv\mpf\lib\site-packages\mpf\mpfconfig.yaml.
+2025-10-11 15:00:42,553 : INFO : ConfigProcessor : Loading config: c:\venv\mpf\lib\site-packages\mpf\mpfconfig.yaml
+2025-10-11 15:00:42,553 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\config\config.yaml.
+2025-10-11 15:00:42,557 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\config\config.yaml
+2025-10-11 15:00:42,558 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\config\coils.yaml
+2025-10-11 15:00:42,561 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\config\switches.yaml
+2025-10-11 15:00:42,565 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\config\lights.yaml
+2025-10-11 15:00:42,568 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\19f6d0d7953982fda9d956182316b8e5.mpf_cache
+2025-10-11 15:00:42,670 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\835b5bfea4be8b279a05e96caaaffbbb.mpf_cache
+2025-10-11 15:00:42,671 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\9b0a7575388f9d9bd2f6ab87bf9fd2f7.mpf_cache
+2025-10-11 15:00:42,672 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\c340ec0033d1055cd797ffd5447ef414.mpf_cache
+2025-10-11 15:00:42,673 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\835b5bfea4be8b279a05e96caaaffbbb.mpf_cache
+2025-10-11 15:00:42,673 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\8c11a28e3c38d4ad47947b6a126f2ee9.mpf_cache
+2025-10-11 15:00:42,674 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\e391083cdc9e667060411fe5838e93f2.mpf_cache
+2025-10-11 15:00:42,675 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\f0c219a993d891ee86dcb7eae47dde67.mpf_cache
+2025-10-11 15:00:42,675 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\96aa58108928490b129531848cd9b506.mpf_cache
+2025-10-11 15:00:42,676 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\567636b9d9766e3361204e954a8382da.mpf_cache
+2025-10-11 15:00:42,677 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\d5ead8dff868c6c4b1faf37537a19bc2.mpf_cache
+2025-10-11 15:00:42,678 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\112f935d1c2002cb40d3e6e497be9e7c.mpf_cache
+2025-10-11 15:00:42,679 : INFO : Machine : Mission Pinball Framework Core Engine v0.80.0.dev9
+2025-10-11 15:00:42,679 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'force_assets_load': False, 'platform_integration_test': False, 'jsonlogging': False, 'logfile': 'logs\\2025-10-11-15-00-42-mpf-PinballLaptop.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': 'smart_virtual', 'syslog_address': None, 'full_logfile_path': 'C:\\venv\\mpf\\mmmdrop\\logs\\2025-10-11-15-00-42-mpf-PinballLaptop.log'}
+2025-10-11 15:00:42,679 : INFO : Machine : MPF path: c:\venv\mpf\lib\site-packages\mpf
+2025-10-11 15:00:42,679 : INFO : Machine : Machine path: C:\venv\mpf\mmmdrop
+2025-10-11 15:00:42,679 : INFO : Machine : Platform: win32
+2025-10-11 15:00:42,680 : INFO : Machine : Python executable location: c:\venv\mpf\Scripts\python.exe
+2025-10-11 15:00:42,680 : INFO : Machine : Python version: 3.9.13 (64-bit)
+2025-10-11 15:00:42,682 : INFO : Machine : Initializing MPF...
+2025-10-11 15:00:42,883 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2025-10-11 15:00:42,908 : INFO : EventManager : Event: ======'machine_var_fast_audio_headphones_volume'====== Args={'value': 10, 'prev_value': None, 'change': True}
+2025-10-11 15:00:42,908 : INFO : EventManager : Event: ======'machine_var_fast_audio_main_volume'====== Args={'value': 44, 'prev_value': None, 'change': True}
+2025-10-11 15:00:42,908 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2025-10-11 15:00:42,908 : INFO : EventManager : Event: ======'machine_var_player1_score'====== Args={'value': 6022290, 'prev_value': None, 'change': True}
+2025-10-11 15:00:42,908 : INFO : EventManager : Event: ======'machine_var_game_just_played'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-10-11 15:00:42,908 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'Mission Pinball Framework v0.80.0.dev9', 'prev_value': None, 'change': True}
+2025-10-11 15:00:42,908 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'Mission Pinball Framework v0.80.0.dev9, Config version:6, Show version: 6, BCP version:1.1', 'prev_value': None, 'change': True}
+2025-10-11 15:00:42,908 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.9.13', 'prev_value': None, 'change': True}
+2025-10-11 15:00:42,953 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.26100-SP0', 'prev_value': None, 'change': True}
+2025-10-11 15:00:42,953 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2025-10-11 15:00:42,955 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2025-10-11 15:00:42,955 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.26100', 'prev_value': None, 'change': True}
+2025-10-11 15:00:42,955 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2025-10-11 15:00:42,955 : INFO : EventManager : Event: ======'machine_var_log_file_path'====== Args={'value': 'C:\\venv\\mpf\\mmmdrop\\logs\\2025-10-11-15-00-42-mpf-PinballLaptop.log', 'prev_value': None, 'change': True}
+2025-10-11 15:00:42,955 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2025-10-11 15:00:42,995 : INFO : EventManager : Event: ======'drop_target_bank_three_bank_up'====== Args={}
+2025-10-11 15:00:42,996 : ERROR : asyncio : Exception in callback EventManager._queue_task_done(<Task finishe...s \'list\'>')>)
+handle: <Handle EventManager._queue_task_done(<Task finishe...s \'list\'>')>)>
+Traceback (most recent call last):
+  File "C:\Program Files\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\events.py", line 795, in _queue_task_done
+    future.result()
+  File "c:\venv\mpf\lib\site-packages\mpf\core\events.py", line 708, in _run_handlers_sequential
+    handler.callback(queue=queue, **merged_kwargs)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_player.py", line 90, in _initialize_system_wide
+    self.validate_config(
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_player.py", line 113, in validate_config
+    validated_config[event] = self.validate_config_entry(settings, event)
+  File "c:\venv\mpf\lib\site-packages\mpf\config_players\event_player.py", line 75, in validate_config_entry
+    config = super().validate_config_entry(settings, name)
+  File "c:\venv\mpf\lib\site-packages\mpf\config_players\flat_config_player.py", line 17, in validate_config_entry
+    config = self._parse_config(settings, name)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_player.py", line 144, in _parse_config
+    return self.get_full_config(config)
+  File "c:\venv\mpf\lib\site-packages\mpf\config_players\flat_config_player.py", line 23, in get_full_config
+    value[element] = super().get_full_config(value[element])
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_player.py", line 216, in get_full_config
+    return self.machine.config_validator.validate_config(
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 164, in validate_config
+    return self._validate_config(config_spec, source, base_spec=base_spec, add_missing_keys=add_missing_keys,
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 182, in _validate_config
+    raise self.validation_error(source, validation_failure_info,
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in ConfigValidator: Config validation error: Entry event_player:event_player = "[{'action': 'set', 'int': 1}]" is not valid. Config attribute should be dict but is <class 'list'> Error Code: CFE-ConfigValidator-5 (https://missionpinball.org/logs)
+2025-10-11 15:00:43,013 : INFO : Machine : Starting the main run loop with active modes: []
+2025-10-11 15:00:43,013 : WARNING : Machine : Attract mode is not active, game will not be playable. Please check your attract mode configuration.
+2025-10-11 15:00:43,013 : INFO : Machine : Shutting down...
+2025-10-11 15:00:43,014 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2025-10-11 15:00:44,030 : ERROR : Machine : Runtime Exception
+Traceback (most recent call last):
+  File "c:\venv\mpf\lib\site-packages\mpf\core\machine.py", line 808, in _run_loop
+    raise self._exception['exception']
+  File "C:\Program Files\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\events.py", line 795, in _queue_task_done
+    future.result()
+  File "c:\venv\mpf\lib\site-packages\mpf\core\events.py", line 708, in _run_handlers_sequential
+    handler.callback(queue=queue, **merged_kwargs)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_player.py", line 90, in _initialize_system_wide
+    self.validate_config(
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_player.py", line 113, in validate_config
+    validated_config[event] = self.validate_config_entry(settings, event)
+  File "c:\venv\mpf\lib\site-packages\mpf\config_players\event_player.py", line 75, in validate_config_entry
+    config = super().validate_config_entry(settings, name)
+  File "c:\venv\mpf\lib\site-packages\mpf\config_players\flat_config_player.py", line 17, in validate_config_entry
+    config = self._parse_config(settings, name)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_player.py", line 144, in _parse_config
+    return self.get_full_config(config)
+  File "c:\venv\mpf\lib\site-packages\mpf\config_players\flat_config_player.py", line 23, in get_full_config
+    value[element] = super().get_full_config(value[element])
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_player.py", line 216, in get_full_config
+    return self.machine.config_validator.validate_config(
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 164, in validate_config
+    return self._validate_config(config_spec, source, base_spec=base_spec, add_missing_keys=add_missing_keys,
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 182, in _validate_config
+    raise self.validation_error(source, validation_failure_info,
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in ConfigValidator: Config validation error: Entry event_player:event_player = "[{'action': 'set', 'int': 1}]" is not valid. Config attribute should be dict but is <class 'list'> Error Code: CFE-ConfigValidator-5 (https://missionpinball.org/logs)
+2025-10-11 15:00:45,221 : INFO : root : MPF run loop ended.

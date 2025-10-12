@@ -1,14 +1,66 @@
 #config_version=6
 
+mode_settings:
+  selectable_items:
+    - gameover{machine.game_just_played==1}
+    - last_scores_1p{machine.player1_score and machine.game_just_played==1 and not machine.player2_score}
+    - last_scores_2p{machine.player2_score and machine.game_just_played==1 and not machine.player3_score}
+    - last_scores_3p{machine.player3_score and machine.game_just_played==1 and not machine.player4_score}
+    - last_scores_4p{machine.player4_score}
+    - mpf_logo
+    - fast_logo
+#    - specialthanks
+    - credits
+    - pressstart
+    - version
+  next_item_events: s_right_flipper_active, timer_attract_carousel_timer_complete
+  previous_item_events: s_left_flipper_active
+
+
 slide_player:
-  mode_attract_started:
+  mode_attract_started{machine.game_just_played==0}:
+    loading:
+      action: remove
+    attract_load:
+      action: play
+      priority: 1000
+  timer_attract_intro_timer_complete{machine.game_just_played==0}:
+    attract_load:
+      action: remove
+    attract:
+      action: play
+      priority: 1000
+  mode_attract_started{machine.game_just_played==1}:
     loading:
       action: remove
     attract:
       action: play
       priority: 1000
 
+
 sound_player:
   mode_attract_started:
     attract_crowd:
       bus: effects
+
+timers:
+  attract_carousel_timer:
+    end_value: 1
+    tick_interval: 5s
+    start_running: true
+    control_events:
+      - event: item_highlighted
+        action: restart
+      - event: flipper_cradle
+        action: stop
+      - event: flipper_cradle_release
+        action: restart
+  attract_intro_timer:
+    end_value: 16
+    tick_interval: 1s
+    start_running: true
+    control_events:
+      - event: mode_attract_started
+        action: restart
+      - event: game_started
+        action: stop

@@ -306,7 +306,6 @@ sound_player:
       bus: music
 
 
-
 variable_player:
   s_right_inlane_active:
     score: 110
@@ -396,6 +395,10 @@ variable_player:
     mode_makesomenoise_score:
       int: 0
       action: set
+  game_ended:
+    game_just_played:
+      int: 1
+      action: set_machine
 
 
 sequences:
@@ -436,6 +439,7 @@ counters:
 
 event_player:
   multiball_chcheckitout_ended: reset_drop_target_bank_counter
+
 
 random_event_player:
   multiball_chcheckitout_started:
