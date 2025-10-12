@@ -41,6 +41,10 @@ sequence_shots:
     switch_sequence: s_three_bank_middle
   top_drop:
     switch_sequence: s_three_bank_top
+  tshirt_top_standup:
+    switch_sequence: s_tshirt_top_standup
+  tshirt_bottom_standup:
+    switch_sequence: s_tshirt_bottom_standup
 
 
 
@@ -96,6 +100,42 @@ slide_player:
       action: play
       priority: 850000
       expire: 3s
+  mode_tripletrouble_stop:
+    tripletrouble:
+      action: remove
+    tripletrouble_standups_counter:
+      action: remove
+    tripletrouble_final_shot_lit:
+      action: remove
+    base:
+      action: play
+      priority: 5000
+  mode_tripletrouble_failed:
+    tripletrouble:
+      action: remove
+    tripletrouble_standups_counter:
+      action: remove
+    tripletrouble_final_shot_lit:
+      action: remove
+    tripletroublefailed:
+      action: play
+      priority: 850000
+      expire: 6s
+    base:
+      action: play
+      priority: 5000
+  mode_tripletrouble_success:
+    tripletrouble:
+      action: remove
+    tripletrouble_final_shot_lit:
+      action: remove
+    base:
+      action: play
+      priority: 5000
+    tripletroublefinish:
+      action: play
+      priority: 850000
+      expire: 6s
   skill_success:
     skillshot_success_overlay:
       action: play
@@ -123,6 +163,18 @@ slide_player:
     paulrevere:
       action: remove
     paulrevere_display_timer:
+      action: remove
+    tripletrouble:
+      action: remove
+    tripletrouble_display_timer:
+      action: remove
+    tripletrouble_standups_counter:
+      action: remove
+    tripletrouble_final_shot_lit:
+      action: remove
+    tripletroublefailed:
+      action: remove
+    tripletroublefinish:
       action: remove
     intergalactic:
       action: remove
@@ -288,6 +340,30 @@ sound_player:
     makesomenoisemusic:
       action: stop
       bus: music
+  mode_tripletrouble_stopped:
+    tripletroublemusic:
+      action: stop
+      bus: music
+  mode_tripletrouble_success{current_player.multiball_blocking_flag==0}:
+    base_game_random_music:
+      action: play
+      bus: music
+      loops: 14
+  mode_tripletrouble_success{current_player.multiball_blocking_flag==1}:
+    chcheckitoutmultiballmusic:
+      action: play
+      bus: music
+      loops: 5
+  mode_tripletrouble_failed{current_player.multiball_blocking_flag==0}: #or  slide_intergalacticfailed_removed
+    base_game_random_music:
+      action: play
+      bus: music
+      loops: 13
+  mode_tripletrouble_failed{current_player.multiball_blocking_flag==1}: #or  slide_intergalacticfailed_removed
+    chcheckitoutmultiballmusic:
+      action: play
+      bus: music
+      loops: 5
   ball_ending:
     chcheckitoutmultiballmusic:
       action: stop
@@ -302,6 +378,9 @@ sound_player:
       action: stop
       bus: music
     makesomenoisemusic:
+      action: stop
+      bus: music
+    tripletroublemusic:
       action: stop
       bus: music
 
@@ -383,6 +462,10 @@ variable_player:
     mode_blocking_flag:
       int: 0
       action: set
+  mode_tripletrouble_stopped:
+    mode_blocking_flag:
+      int: 0
+      action: set
   mode_intergalactic_started:
     mode_intergalactic_score:
       int: 0
@@ -393,6 +476,10 @@ variable_player:
       action: set
   mode_makesomenoise_started:
     mode_makesomenoise_score:
+      int: 0
+      action: set
+  mode_tripletrouble_started:
+    mode_tripletrouble_score:
       int: 0
       action: set
   game_ended:

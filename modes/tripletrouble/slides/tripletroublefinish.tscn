@@ -1,11 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://4no8q4ulwfh1"]
+[gd_scene load_steps=10 format=3 uid="uid://br6l7ped5nf7r"]
 
-[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_ubusq"]
-[ext_resource type="VideoStream" uid="uid://caoix4udvsqm2" path="res://modes/intergalactic/slides/IntergalacticFinish.ogv" id="2_ubusq"]
-[ext_resource type="Script" uid="uid://bf2dsnm46ji2e" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_kqghm"]
-[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="4_kqghm"]
-[ext_resource type="Texture2D" uid="uid://dt7hpexqpath5" path="res://assets/action_bubble.png" id="5_t14pj"]
-[ext_resource type="Script" uid="uid://b3ni1cjx2r6sx" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="6_x0lxk"]
+[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_oifp6"]
+[ext_resource type="VideoStream" uid="uid://c8u7dybigsudf" path="res://modes/tripletrouble/slides/TripleTroubleSuccess.ogv" id="2_sns08"]
+[ext_resource type="Script" uid="uid://bf2dsnm46ji2e" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_iysx2"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="4_f2v5n"]
+[ext_resource type="Texture2D" uid="uid://dt7hpexqpath5" path="res://assets/action_bubble.png" id="5_gm0f2"]
+[ext_resource type="Script" uid="uid://b3ni1cjx2r6sx" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="6_248x1"]
 
 [sub_resource type="Animation" id="Animation_swyhi"]
 resource_name = "Blinking"
@@ -47,7 +47,7 @@ _data = {
 [node name="Intergalactic" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-script = ExtResource("1_ubusq")
+script = ExtResource("1_oifp6")
 metadata/_custom_type_script = "uid://d15ukepy10pan"
 
 [node name="MPFVideoPlayer" type="VideoStreamPlayer" parent="."]
@@ -55,11 +55,11 @@ custom_minimum_size = Vector2(1920, 1080)
 layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
-stream = ExtResource("2_ubusq")
+stream = ExtResource("2_sns08")
 autoplay = true
 expand = true
 bus = &"effects"
-script = ExtResource("3_kqghm")
+script = ExtResource("3_iysx2")
 hide_behavior = 1
 preview_in_editor = true
 metadata/_custom_type_script = "uid://bf2dsnm46ji2e"
@@ -72,10 +72,9 @@ offset_top = 399.0
 offset_right = 1487.0
 offset_bottom = 640.0
 theme_override_constants/outline_size = 20
-theme_override_fonts/font = ExtResource("4_kqghm")
+theme_override_fonts/font = ExtResource("4_f2v5n")
 theme_override_font_sizes/font_size = 116
-text = "ROBO-BATTLE
-WON!"
+text = "Hang Session!"
 horizontal_alignment = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Label"]
@@ -89,7 +88,7 @@ playback_auto_capture = false
 [node name="ActionImage" type="Sprite2D" parent="."]
 position = Vector2(415.671, 843.25)
 scale = Vector2(0.444077, 0.267791)
-texture = ExtResource("5_t14pj")
+texture = ExtResource("5_gm0f2")
 
 [node name="ModeTotal" type="Label" parent="."]
 layout_mode = 0
@@ -99,26 +98,26 @@ offset_right = 442.0
 offset_bottom = 798.0
 scale = Vector2(1.87781, 1.71507)
 theme_override_constants/outline_size = 20
-theme_override_fonts/font = ExtResource("4_kqghm")
+theme_override_fonts/font = ExtResource("4_f2v5n")
 theme_override_font_sizes/font_size = 25
 text = "Mode Total:"
 horizontal_alignment = 1
 vertical_alignment = 1
 clip_text = true
 
-[node name="IntergalacticScore" type="Label" parent="."]
+[node name="TripleTroubleScore" type="Label" parent="."]
 layout_mode = 0
 offset_left = 43.0
 offset_top = 838.0
 offset_right = 774.0
 offset_bottom = 908.0
 theme_override_constants/outline_size = 20
-theme_override_fonts/font = ExtResource("4_kqghm")
+theme_override_fonts/font = ExtResource("4_f2v5n")
 theme_override_font_sizes/font_size = 50
 text = "00"
 horizontal_alignment = 1
-script = ExtResource("6_x0lxk")
-variable_name = "mode_intergalactic_score"
+script = ExtResource("6_248x1")
+variable_name = "mode_tripletrouble_score"
 comma_separate = true
 min_digits = 1
 metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"

@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://c7f4onw3sp2jm"]
+
+[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_xsva6"]
+[ext_resource type="VideoStream" uid="uid://bhood0rixhqav" path="res://modes/tripletrouble/slides/TripleTrouble50.ogv" id="2_bdm8g"]
+[ext_resource type="Script" uid="uid://bf2dsnm46ji2e" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_0vc0n"]
+
+[node name="paulrevere" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_xsva6")
+metadata/_custom_type_script = "uid://d15ukepy10pan"
+
+[node name="MPFVideoPlayer" type="VideoStreamPlayer" parent="."]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+stream = ExtResource("2_bdm8g")
+autoplay = true
+expand = true
+loop = true
+script = ExtResource("3_0vc0n")
+hide_behavior = 1
+preview_in_editor = true
+metadata/_custom_type_script = "uid://bf2dsnm46ji2e"

@@ -188,6 +188,13 @@ slide_player:
     makesomenoise:
       action: play
       priority: 500000
+    makesomenoise_instructions:
+      action: play
+      priority: 500001
+      expire: 8s
+  flipper_cancel:
+    makesomenoise_instructions:
+      action: remove
   timer_makesomenoise_intro_show_complete:
     makesomenoise_drops_counter:
       action: play
@@ -247,6 +254,18 @@ slide_player:
     makesomenoise_pops_counter:
       action: remove
     makesomenoise:
+      action: remove
+  makesomenoise_drops_counter_complete:
+    makesomenoise_drops_counter:
+      action: remove
+  makesomenoise_spins_counter_complete:
+    makesomenoise_spins_counter:
+      action: remove
+  makesomenoise_pops_counter_complete:
+    makesomenoise_pops_counter:
+      action: remove
+  makesomenoise_ramps_counter_complete:
+    makesomenoise_ramps_counter:
       action: remove
 
 

@@ -1,0 +1,161 @@
+#config_version=6
+mode:
+  start_events: carousel_tripletrouble_selected
+  stop_events: mode_tripletrouble_stop, timer_tripletrouble_time_remaining_complete
+  priority: 1000
+
+counters:
+  tripletrouble_standups_counter:
+    count_events: pop_standup_hit, upper_pop_standup_hit, three_bank_standup_hit, tshirt_top_standup_hit, tshirt_bottom_standup_hit
+    events_when_complete: tripletrouble_standups_counter_complete
+    starting_count: 7
+    count_complete_value: 0
+    count_interval: 1
+    direction: down
+    persist_state: false
+    disable_on_complete: false
+    reset_on_complete: false
+    disable_events: mode_tripletrouble_ended
+    enable_events: mode_tripletrouble_started
+    restart_events: mode_tripletrouble_started, tripletrouble_final_shot_hit
+    control_events:
+      - event: reset_tripletrouble_standups_counter
+        action: jump
+        value: 7
+
+sequences:
+  tripletrouble_shot_1:
+    events:
+      - tripletrouble_standups_counter_complete
+    events_when_complete: tripletrouble_shot_1_done
+    reset_on_complete: False
+  tripletrouble_shot_2:
+    events:
+      - scoop_hit
+    enable_events: tripletrouble_shot_1_done
+    events_when_complete: tripletrouble_final_shot_hit, mode_tripletrouble_stop
+    reset_on_complete: False
+
+#show_player:
+#  mode_intergalactic_started:
+#     add light show stuff here
+
+variable_player:
+  tripletrouble_shot_1_done:
+    score: 10000000
+    mode_tripletrouble_score: 10000000
+  tripletrouble_final_shot_hit:
+    score: 10000000
+    mode_tripletrouble_score: 10000000
+  counter_tripletrouble_standups_counter_hit:
+    score: 2000000
+    mode_tripletrouble_score: 2000000
+    tripletrouble_standups_remaining:
+      int: -1
+      action: add
+  timer_tripletrouble_intro_show_tick:
+    tripletrouble_intro_show_variable_times_100:
+      int: device.timers.tripletrouble_intro_show.ticks * 100
+      action: set
+  mode_tripletrouble_started:
+    mode_blocking_flag:
+      int: 1
+      action: set
+    tripletrouble_standups_remaining:
+      int: 7
+      action: set
+
+  timer_tripletrouble_time_remaining_tick:
+    tripletrouble_time_remaining_variable_times_1:
+      int: device.timers.tripletrouble_time_remaining.ticks * 1
+      action: set
+
+slide_player:
+  mode_tripletrouble_started:
+    current_mode_highlighted:
+      action: remove
+    base:
+      action: remove
+    basevideo1:
+      action: remove
+    basevideo2:
+      action: remove
+    basevideo3:
+      action: remove
+    basevideo4:
+      action: remove
+    tripletrouble:
+      action: play
+      priority: 500000
+    tripletrouble_instructions:
+      action: play
+      priority: 500001
+      expire: 5s
+  flipper_cancel:
+    tripletrouble_instructions:
+      action: remove
+  timer_tripletrouble_intro_show_complete:
+    tripletrouble_standups_counter:
+      action: play
+      priority: 800000
+    tripletrouble_display_timer:
+      action: play
+      priority: 825000
+  tripletrouble_shot_1_done:
+    tripletrouble_standups_counter:
+      action: remove
+    tripletrouble_final_shot_lit:
+      action: play
+      priority: 800000
+  tripletrouble_final_shot_hit:
+    tripletrouble_final_shot_lit:
+      action: remove
+
+
+sound_player:
+  mode_tripletrouble_started:
+    tripletroublemusic:
+      action: play
+      bus: music
+  counter_tripletrouble_standups_counter_hit:
+    success_shot:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  tripletrouble_final_shot_hit:
+    success_finish:
+      action: play
+      bus: effects
+      max_queue_time: 1s
+
+
+ball_holds:
+  tripletrouble_scoop_hold:
+    balls_to_hold: 1
+    hold_devices: bd_scoop
+    enable_events: mode_tripletrouble_started
+    disable_events: timer_tripletrouble_intro_show_complete
+    release_one_events: timer_tripletrouble_intro_show_complete
+
+timers:
+  tripletrouble_intro_show:
+    start_value: 0
+    end_value: 5
+    control_events:
+      - action: start
+        event: mode_tripletrouble_started
+  tripletrouble_time_remaining:
+    start_value: 60
+    end_value: 0
+    direction: down
+    control_events:
+      - action: start
+        event: timer_tripletrouble_intro_show_complete
+      - action: pause
+        event: tripletrouble_final_shot_hit
+      - action: reset
+        event: mode_tripletrouble_started
+
+event_player:
+  timer_tripletrouble_time_remaining_complete: mode_tripletrouble_failed
+  tripletrouble_final_shot_hit: mode_tripletrouble_success

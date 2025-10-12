@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://cgfwj4e5fyx2c"]
+
+[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_xqmik"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="2_fahrs"]
+
+[node name="PaulRevereInstructions" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_xqmik")
+metadata/_custom_type_script = "uid://d15ukepy10pan"
+
+[node name="instructions" type="Label" parent="."]
+layout_mode = 0
+offset_left = 162.0
+offset_top = 282.0
+offset_right = 1772.0
+offset_bottom = 788.0
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("2_fahrs")
+theme_override_font_sizes/font_size = 75
+text = "Befriend the Yeti!
+
+
+Hit Standups,
+then chill at the cave"
+horizontal_alignment = 1
