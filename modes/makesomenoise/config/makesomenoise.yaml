@@ -272,7 +272,7 @@ slide_player:
 sound_player:
   mode_makesomenoise_started:
     makesomenoisemusic:
-      action: play
+      action: replace
       bus: music
       loops: 6
   makesomenoise_drops_counter_complete:
