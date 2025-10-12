@@ -86,6 +86,13 @@ slide_player:
     intergalactic:
       action: play
       priority: 500000
+    intergalactic_instructions:
+      action: play
+      priority: 500001
+      expire: 9s
+  flipper_cancel:
+    intergalactic_instructions:
+      action: remove
   timer_intergalactic_intro_show_complete:
     intergalactic_right_shot_lit:
       action: play
@@ -192,4 +199,3 @@ timers:
 event_player:
   timer_intergalactic_time_remaining_complete: mode_intergalactic_failed
   intergalactic_shot_5_done: mode_intergalactic_success
-

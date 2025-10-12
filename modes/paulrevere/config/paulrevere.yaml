@@ -94,6 +94,13 @@ slide_player:
     paulrevere:
       action: play
       priority: 500000
+    paulrevere_instructions:
+      action: play
+      priority: 500001
+      expire: 6s
+  flipper_cancel:
+    paulrevere_instructions:
+      action: remove
   timer_paulrevere_intro_show_complete:
     paulrevere_left_orbit_lit:
       action: play

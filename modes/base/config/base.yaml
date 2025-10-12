@@ -430,7 +430,7 @@ counters:
     disable_on_complete: false
     reset_on_complete: false
     disable_events: multiball_chcheckitout_started, mode_makesomenoise_started
-    enable_events: mode_makesomenoise_stopped
+    enable_events: ball_started, mode_makesomenoise_stopped
     restart_events: multiball_chcheckitout_ended
     control_events:
       - event: reset_drop_target_bank_counter
