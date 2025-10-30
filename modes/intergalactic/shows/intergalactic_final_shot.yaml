@@ -2,7 +2,7 @@
 
 - duration: 200ms
   lights:
-    l_lowerrightstandup_circle_led: OrangeRed
+    l_lowerrightstandup_circle_led: yellow
 - duration: 200ms
   lights:
     l_lowerrightstandup_circle_led: off

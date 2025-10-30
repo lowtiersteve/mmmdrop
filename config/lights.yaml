@@ -14,7 +14,7 @@ lights:
     subtype: led
     type: rgb
   l_scoop_arrow_led:
-    number: 4
+    number: lightboard-8-4
     subtype: led
     type: rgb
   l_rightramp_arrow_led:
@@ -114,15 +114,15 @@ lights:
     subtype: led
     type: rgb
   l_scoopcombo_circle_led:
-    number: 29
+    number: lightboard-8-3
     subtype: led
     type: rgb
   l_scoopmode_square_led:
-    number: 30
+    number: lightboard-8-1
     subtype: led
     type: rgb
   l_scoopmode_circle2_led:
-    number: 41
+    number: lightboard-8-2
     subtype: led
     type: rgb
   l_leftorbitbattery_rectangle_led:
@@ -226,4 +226,53 @@ lights:
     subtype: led
     type: rgb
 
+blinkenlights:
+  bl_leftorbit_arrow_led:
+    off_when_multiple: false
+    color_duration: 750ms
+    light: l_leftorbit_arrow_led
+  bl_leftramp_arrow_led:
+    off_when_multiple: false
+    color_duration: 750ms
+    light: l_leftramp_arrow_led
+  bl_innerloop_arrow_led:
+    off_when_multiple: false
+    color_duration: 750ms
+    light: l_innerloop_arrow_led
+  bl_scoop_arrow_led:
+    off_when_multiple: false
+    color_duration: 750ms
+    light: l_scoop_arrow_led
+  bl_rightramp_arrow_led:
+    off_when_multiple: false
+    color_duration: 750ms
+    light: l_rightramp_arrow_led
+  bl_rightorbit_arrow_led:
+    off_when_multiple: false
+    color_duration: 750ms
+    light: l_rightorbit_arrow_led
+  bl_captiveball_smallcircle_led:
+    off_when_multiple: false
+    color_duration: 750ms
+    light: l_captiveball_smallcircle_led
+  bl_lowerrightstandup_circle_led:
+    off_when_multiple: false
+    color_duration: 750ms
+    light: l_lowerrightstandup_circle_led
+  bl_dropstandup_flasher_led:
+    off_when_multiple: false
+    color_duration: 750ms
+    light: l_dropstandup_flasher_led
+  bl_upperpop_smallarrow_led:
+    off_when_multiple: false
+    color_duration: 750ms
+    light: l_upperpop_smallarrow_led
+  bl_tshirttopcircle_led:
+    off_when_multiple: false
+    color_duration: 750ms
+    light: l_tshirttopcircle_led
+  bl_tshirtbottomcircle_led:
+    off_when_multiple: false
+    color_duration: 750ms
+    light: l_tshirtbottomcircle_led
 

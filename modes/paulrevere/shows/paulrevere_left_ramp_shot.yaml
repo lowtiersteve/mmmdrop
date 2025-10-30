@@ -1,9 +1,6 @@
 #show_version=6
 
-- duration: 750ms
-  lights:
-    l_leftramp_arrow_led: Gold
-- duration: 750ms
-  lights:
-    l_leftramp_arrow_led: off
+- time: 0
+  blinkenlights:
+    bl_leftramp_arrow_led: gold
 

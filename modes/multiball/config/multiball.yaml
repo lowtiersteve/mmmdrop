@@ -120,31 +120,6 @@ sequences:
     restart_events: chcheckitout_superjackpot_hit
 
 show_player:
-  multiball_chcheckitout_started:
-    chcheckitout_left_orbit_shot:
-      action: play
-      loops: -1
-    chcheckitout_left_ramp_shot:
-      action: play
-      loops: -1
-    chcheckitout_right_ramp_shot:
-      action: play
-      loops: -1
-    chcheckitout_right_orbit_shot:
-      action: play
-      loops: -1
-  chcheckitout_leftorbit_jackpot_hit:
-    chcheckitout_left_orbit_shot:
-      action: stop
-  chcheckitout_leftramp_jackpot_hit:
-    chcheckitout_left_ramp_shot:
-      action: stop
-  chcheckitout_rightramp_jackpot_hit:
-    chcheckitout_right_ramp_shot:
-      action: stop
-  chcheckitout_rightorbit_jackpot_hit:
-    chcheckitout_right_orbit_shot:
-      action: stop
   chcheckitout_superjackpot_lit:
     chcheckitout_inner_loop_shot:
       action: play
@@ -152,27 +127,31 @@ show_player:
   chcheckitout_superjackpot_hit:
     chcheckitout_inner_loop_shot:
       action: stop
-    chcheckitout_left_orbit_shot:
-      action: play
-      loops: -1
-    chcheckitout_left_ramp_shot:
-      action: play
-      loops: -1
-    chcheckitout_right_ramp_shot:
-      action: play
-      loops: -1
-    chcheckitout_right_orbit_shot:
-      action: play
-      loops: -1
   multiball_chcheckitout_ended:
     chcheckitout_inner_loop_shot:
       action: stop
-    chcheckitout_left_orbit_shot:
-      action: stop
-    chcheckitout_left_ramp_shot:
-      action: stop
-    chcheckitout_right_ramp_shot:
-      action: stop
-    chcheckitout_right_orbit_shot:
-      action: stop
 
+blinkenlight_player:
+  multiball_chcheckitout_started:
+    bl_leftorbit_arrow_led: red
+    bl_leftramp_arrow_led: red
+    bl_rightramp_arrow_led: red
+    bl_rightorbit_arrow_led: red
+  chcheckitout_leftorbit_jackpot_hit:
+    bl_leftorbit_arrow_led: remove
+  chcheckitout_leftramp_jackpot_hit:
+    bl_leftramp_arrow_led: remove
+  chcheckitout_rightramp_jackpot_hit:
+    bl_rightramp_arrow_led: remove
+  chcheckitout_rightorbit_jackpot_hit:
+    bl_rightorbit_arrow_led: remove
+  chcheckitout_superjackpot_hit:
+    bl_leftorbit_arrow_led: red
+    bl_leftramp_arrow_led: red
+    bl_rightramp_arrow_led: red
+    bl_rightorbit_arrow_led: red
+  multiball_chcheckitout_ended:
+    bl_leftorbit_arrow_led: remove
+    bl_leftramp_arrow_led: remove
+    bl_rightramp_arrow_led: remove
+    bl_rightorbit_arrow_led: remove

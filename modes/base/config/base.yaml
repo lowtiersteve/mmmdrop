@@ -665,7 +665,7 @@ sequences:
     events:
       - chcheckitout_multiball_qualified
     events_when_complete: drops_standup_start_multiball
-    reset_on_complete: true #this could be a problem if multiballs are immediately lighting again too fast
+    reset_on_complete: true
     disable_on_complete: false
     reset_events: ball_started
   chcheckitout_multiball_ready:
@@ -759,7 +759,13 @@ show_player:
       action: play
       loops: -1
 
-
+blinkenlight_player:
+  chcheckitout_multiball_qualified:
+    bl_dropstandup_flasher_led: green
+  chcheckitout_start_multiball:
+    bl_dropstandup_flasher_led: remove
+  mode_makesomenoise_started:
+    bl_dropstandup_flasher_led: remove
 
 widget_player:
   multiball_chcheckitout_ended:

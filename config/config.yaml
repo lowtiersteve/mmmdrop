@@ -27,6 +27,11 @@ fast:
         model: FP-I/O-0804
         order: 4
 
+  exp:
+    boards:
+      lightboard:
+        model: FP-EXP-0081-1
+
   aud:
     port: auto
     debug: false

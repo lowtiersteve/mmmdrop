@@ -177,22 +177,27 @@ shot_profiles:
     states:
       - name: "off"
         show: "off"
-      - name: lit
-        show: flash_color
-        show_tokens:
-          color: DodgerBlue
-        speed: 2
     loop: false
 
 show_player:
-  timer_tripletrouble_intro_show_complete:
-    tripletrouble_standup_show:
-      action: play
-      loops: -1
   tripletrouble_shot_1_done:
-    tripletrouble_standup_show:
-      action: stop
     tripletrouble_final_shot:
       action: play
       loops: -1
+
+blinkenlight_player:
+  timer_tripletrouble_intro_show_complete:
+    bl_lowerrightstandup_circle_led: lime
+    bl_dropstandup_flasher_led: lime
+    bl_upperpop_smallarrow_led: lime
+    bl_tshirttopcircle_led: lime
+    bl_tshirtbottomcircle_led: lime
+    bl_captiveball_smallcircle_led: lime
+  tripletrouble_shot_1_done:
+    bl_lowerrightstandup_circle_led: remove
+    bl_dropstandup_flasher_led: remove
+    bl_upperpop_smallarrow_led: remove
+    bl_tshirttopcircle_led: remove
+    bl_tshirtbottomcircle_led: remove
+    bl_captiveball_smallcircle_led: remove
 
