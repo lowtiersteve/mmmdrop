@@ -1,0 +1,9 @@
+#show_version=6
+
+- duration: 300ms
+  lights:
+    l_innerloop_arrow_led: red
+- duration: 300ms
+  lights:
+    l_innerloop_arrow_led: off
+

@@ -1,0 +1,21 @@
+#show_version=6
+
+- duration: 100ms
+  lights:
+    l_scoopmode_square_led: Aqua
+    l_scoop_arrow_led: off
+- duration: 200ms
+  lights:
+    l_scoopmode_circle2_led: Aqua
+- duration: 200ms
+  lights:
+    l_scoopcombo_circle_led: Aqua
+    l_scoopmode_square_led: off
+- duration: 200ms
+  lights:
+    l_scoop_arrow_led: Aqua
+    l_scoopmode_circle2_led: off
+- duration: 300ms
+  lights:
+    l_scoopcombo_circle_led: off
+

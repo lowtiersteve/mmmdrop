@@ -1,0 +1,77 @@
+[gd_scene load_steps=6 format=3 uid="uid://bpg88uvpuemma"]
+
+[ext_resource type="Script" uid="uid://bp5npfvnd6fvx" path="res://addons/mpf-gmc/classes/mpf_widget.gd" id="1_hcudx"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="2_f0f82"]
+
+[sub_resource type="Animation" id="Animation_s3nnd"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(216, 224)]
+}
+
+[sub_resource type="Animation" id="Animation_w5fd8"]
+resource_name = "SlideInLeft"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0333333, 0.0666667, 0.1, 0.133333, 0.166667, 0.2, 0.233333, 0.266667, 0.3, 0.333333, 0.366667, 0.4, 0.433333, 0.466667, 0.5, 0.533333, 0.566667, 0.6, 0.633333, 0.666667, 0.7, 0.733333, 0.766667, 0.8, 0.833333, 0.866667, 0.9, 0.933333, 0.966667, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1920, 224), Vector2(1863.2, 224), Vector2(1806.4, 224), Vector2(1749.6, 224), Vector2(1692.8, 224), Vector2(1636, 224), Vector2(1579.2, 224), Vector2(1522.4, 224), Vector2(1465.6, 224), Vector2(1408.8, 224), Vector2(1352, 224), Vector2(1295.2, 224), Vector2(1238.4, 224), Vector2(1181.6, 224), Vector2(1124.8, 224), Vector2(1068, 224), Vector2(1011.2, 224), Vector2(954.401, 224), Vector2(897.6, 224), Vector2(840.799, 224), Vector2(784.001, 224), Vector2(727.2, 224), Vector2(670.399, 224), Vector2(613.601, 224), Vector2(556.8, 224), Vector2(499.999, 224), Vector2(443.201, 224), Vector2(386.4, 224), Vector2(329.599, 224), Vector2(272.801, 224), Vector2(216, 224)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2soeo"]
+_data = {
+&"RESET": SubResource("Animation_s3nnd"),
+&"SlideInLeft": SubResource("Animation_w5fd8")
+}
+
+[node name="makercredits" type="Control" node_paths=PackedStringArray("animation_player")]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_hcudx")
+animation_player = NodePath("makercredits/AnimationPlayer")
+metadata/_custom_type_script = "uid://bp5npfvnd6fvx"
+
+[node name="makercredits" type="Label" parent="."]
+top_level = true
+layout_mode = 0
+offset_left = 216.0
+offset_top = 224.0
+offset_right = 1841.0
+offset_bottom = 871.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_f0f82")
+theme_override_font_sizes/font_size = 60
+text = "Game Concept and Build:
+Michael Rausch
+
+
+Rules:
+Michael Rausch and Stephen donaldson
+
+
+Code:
+Stephen Donaldson"
+horizontal_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="makercredits"]
+libraries = {
+&"": SubResource("AnimationLibrary_2soeo")
+}
+autoplay = "SlideInLeft"

@@ -143,6 +143,9 @@ modes:
   - makesomenoise
   - tilt
   - tripletrouble
+  - bonus
+  - combos
+
 
 settings:
   replay_score:
@@ -200,6 +203,15 @@ variable_player:
       action: set_machine
       int: 1
 
+shot_profiles:
+  lit_mode_shot_profile:
+    states:
+      - name: flashing
+        show: flash
+      - name: unlit
+        show: off
+    loop: false
+
 keyboard:
   s:
     switch: s_start
@@ -251,3 +263,4 @@ keyboard:
     switch: s_service_up
   r:
     switch: s_service_enter
+

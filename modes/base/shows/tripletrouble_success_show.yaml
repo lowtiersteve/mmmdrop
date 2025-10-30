@@ -1,0 +1,40 @@
+#show_version=6
+
+- duration: 500ms
+  lights:
+    l_scoopmode_square_led: lime
+    l_scoop_arrow_led: lime
+    l_scoopmode_circle2_led: lime
+    l_scoopcombo_circle_led: lime
+    l_leftorbit_arrow_led: lime
+    l_leftorbitcombo_circle_led: lime
+    l_leftorbitbattery_rectangle_led: lime
+    l_leftramp_arrow_led: lime
+    l_leftrampcombo_circle_led: lime
+    l_leftramprectangle_led: lime
+    l_rightramp_arrow_led: lime
+    l_rightrampcombo_circle_led: lime
+    l_rightramprectangle_led: lime
+    l_rightorbit_arrow_led: lime
+    l_rightorbitcombo_circle_led: lime
+    l_rightorbitrectangle_led: lime
+    l_lowerrightstandup_circle_led: lime
+- duration: 500ms
+  lights:
+    l_scoopmode_square_led: off
+    l_scoop_arrow_led: off
+    l_scoopmode_circle2_led: off
+    l_scoopcombo_circle_led: off
+    l_leftorbit_arrow_led: off
+    l_leftorbitcombo_circle_led: off
+    l_leftorbitbattery_rectangle_led: off
+    l_leftramp_arrow_led: off
+    l_leftrampcombo_circle_led: off
+    l_leftramprectangle_led: off
+    l_rightramp_arrow_led: off
+    l_rightrampcombo_circle_led: off
+    l_rightramprectangle_led: off
+    l_rightorbit_arrow_led: off
+    l_rightorbitcombo_circle_led: off
+    l_rightorbitrectangle_led: off
+    l_lowerrightstandup_circle_led: off

@@ -1,0 +1,9 @@
+#show_version=6
+
+- duration: 500ms
+  lights:
+    l_dropstandup_flasher_led: green
+- duration: 500ms
+  lights:
+    l_dropstandup_flasher_led: off
+

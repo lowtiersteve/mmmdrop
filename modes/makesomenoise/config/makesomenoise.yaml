@@ -1,6 +1,6 @@
 #config_version=6
 mode:
-  start_events: carousel_makesomenoise_selected
+  start_events: carousel_makesomenoise_selected, start_makesomenoise
   stop_events: mode_makesomenoise_stop, multiball_makesomenoise_ended
   priority: 1000
 
@@ -93,9 +93,6 @@ sequences:
     reset_on_complete: True
     restart_events: makesomenoise_final_shot_lit
 
-#show_player:
-#  mode_intergalactic_started:
-#     add light show stuff here
 
 variable_player:
   makesomenoise_drops_counter_complete:
@@ -145,19 +142,19 @@ variable_player:
     makesomenoise_ramps_remaining:
       int: 4
       action: set
-  counter_makesomenoise_spins_counter_hit:
+  logicblock_makesomenoise_spins_counter_hit:
     makesomenoise_spins_remaining:
       int: -1
       action: add
-  counter_makesomenoise_pops_counter_hit:
+  logicblock_makesomenoise_pops_counter_hit:
     makesomenoise_pops_remaining:
       int: -1
       action: add
-  counter_makesomenoise_ramps_counter_hit:
+  logicblock_makesomenoise_ramps_counter_hit:
     makesomenoise_ramps_remaining:
       int: -1
       action: add
-  counter_makesomenoise_drops_counter_hit:
+  logicblock_makesomenoise_drops_counter_hit:
     makesomenoise_drops_remaining:
       int: -1
       action: add
@@ -317,4 +314,66 @@ timers:
     control_events:
       - action: start
         event: mode_makesomenoise_started
+      - action: jump
+        value: 10
+        event: flipper_cancel
 
+show_player:
+  timer_makesomenoise_intro_show_complete:
+    makesomenoise_ramps_shot:
+      action: play
+      loops: -1
+    makesomenoise_spins_shot:
+      action: play
+      loops: -1
+    makesomenoise_pops_shot:
+      action: play
+      loops: -1
+    makesomenoise_drops_shot:
+      action: play
+      loops: -1
+  makesomenoise_ramps_counter_complete:
+    makesomenoise_ramps_shot:
+      action: stop
+  makesomenoise_spins_counter_complete:
+    makesomenoise_spins_shot:
+      action: stop
+  makesomenoise_pops_counter_complete:
+    makesomenoise_pops_shot:
+      action: stop
+  makesomenoise_drops_counter_complete:
+    makesomenoise_drops_shot:
+      action: stop
+  makesomenoise_final_shot_lit:
+    makesomenoise_final_shot:
+      action: play
+      loops: -1
+  makesomenoise_final_shot_hit:
+    makesomenoise_final_shot:
+      action: stop
+    makesomenoise_ramps_shot:
+      action: play
+      loops: -1
+    makesomenoise_spins_shot:
+      action: play
+      loops: -1
+    makesomenoise_pops_shot:
+      action: play
+      loops: -1
+    makesomenoise_drops_shot:
+      action: play
+      loops: -1
+
+
+shot_profiles:
+  makesomenoise_shot:
+    advance_on_hit: false
+    states:
+      - name: "off"
+        show: "off"
+      - name: lit
+        show: flash_color
+        show_tokens:
+          color: DodgerBlue
+        speed: 2
+    loop: false

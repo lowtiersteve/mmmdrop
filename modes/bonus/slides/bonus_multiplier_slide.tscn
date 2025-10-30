@@ -1,0 +1,57 @@
+[gd_scene load_steps=5 format=3 uid="uid://c5qbmnl787jio"]
+
+[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_4el81"]
+[ext_resource type="Texture2D" uid="uid://dpqmqttajwyak" path="res://assets/IllCommunication.jpg" id="2_sls42"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="3_kooir"]
+[ext_resource type="Script" uid="uid://b3ni1cjx2r6sx" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="4_mfckg"]
+
+[node name="bonus_start_slide" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_4el81")
+metadata/_custom_type_script = "uid://d15ukepy10pan"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1008, 104)
+scale = Vector2(2.5, 2.5)
+texture = ExtResource("2_sls42")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 112.0
+offset_top = 296.0
+offset_right = 1901.0
+offset_bottom = 435.0
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("3_kooir")
+theme_override_font_sizes/font_size = 136
+text = "Bonus  Multiplier:"
+
+[node name="bonus_multiplier" type="Label" parent="."]
+layout_mode = 0
+offset_left = 552.0
+offset_top = 576.0
+offset_right = 976.0
+offset_bottom = 780.0
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("3_kooir")
+theme_override_font_sizes/font_size = 230
+text = "0"
+horizontal_alignment = 1
+script = ExtResource("4_mfckg")
+variable_type = 1
+variable_name = "score"
+comma_separate = true
+min_digits = 1
+metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"
+
+[node name="x" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1056.0
+offset_top = 560.0
+offset_right = 1240.0
+offset_bottom = 764.0
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("3_kooir")
+theme_override_font_sizes/font_size = 230
+text = "X"

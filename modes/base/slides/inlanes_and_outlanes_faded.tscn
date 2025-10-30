@@ -1,0 +1,127 @@
+[gd_scene load_steps=4 format=3 uid="uid://n5k7wowunp4q"]
+
+[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_rgn45"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="2_re7d2"]
+[ext_resource type="Script" uid="uid://cripy32q61js4" path="res://addons/mpf-gmc/classes/mpf_scene_base.gd" id="2_rgn45"]
+
+[node name="inlanes_and_outlanes_faded" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_rgn45")
+metadata/_custom_type_script = "uid://d15ukepy10pan"
+
+[node name="MPFSceneBase" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_rgn45")
+metadata/_custom_type_script = "uid://cripy32q61js4"
+
+[node name="leftoutlane" type="Label" parent="MPFSceneBase"]
+self_modulate = Color(1, 1, 1, 0.196078)
+layout_mode = 0
+offset_left = 720.0
+offset_top = 750.0
+offset_right = 758.0
+offset_bottom = 827.0
+scale = Vector2(1.87781, 1.71507)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_re7d2")
+theme_override_font_sizes/font_size = 25
+text = "O"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="leftinlane" type="Label" parent="MPFSceneBase"]
+self_modulate = Color(1, 1, 1, 0.196078)
+layout_mode = 0
+offset_left = 888.0
+offset_top = 750.0
+offset_right = 926.0
+offset_bottom = 827.0
+scale = Vector2(1.87781, 1.71507)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_re7d2")
+theme_override_font_sizes/font_size = 25
+text = "L"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="rightinlane" type="Label" parent="MPFSceneBase"]
+self_modulate = Color(1, 1, 1, 0.196078)
+layout_mode = 0
+offset_left = 1040.0
+offset_top = 750.0
+offset_right = 1078.0
+offset_bottom = 827.0
+scale = Vector2(1.87781, 1.71507)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_re7d2")
+theme_override_font_sizes/font_size = 25
+text = "i"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="rightoutlane" type="Label" parent="MPFSceneBase"]
+self_modulate = Color(1, 1, 1, 0.196078)
+layout_mode = 0
+offset_left = 1192.0
+offset_top = 750.0
+offset_right = 1230.0
+offset_bottom = 827.0
+scale = Vector2(1.87781, 1.71507)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_re7d2")
+theme_override_font_sizes/font_size = 25
+text = "O"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="dash1" type="Label" parent="MPFSceneBase"]
+layout_mode = 0
+offset_left = 776.0
+offset_top = 760.0
+offset_right = 818.0
+offset_bottom = 837.0
+scale = Vector2(1.87781, 1.71507)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_re7d2")
+theme_override_font_sizes/font_size = 25
+text = "-"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="dash2" type="Label" parent="MPFSceneBase"]
+layout_mode = 0
+offset_left = 952.0
+offset_top = 760.0
+offset_right = 994.0
+offset_bottom = 837.0
+scale = Vector2(1.87781, 1.71507)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_re7d2")
+theme_override_font_sizes/font_size = 25
+text = "-"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="dash3" type="Label" parent="MPFSceneBase"]
+layout_mode = 0
+offset_left = 1104.0
+offset_top = 760.0
+offset_right = 1146.0
+offset_bottom = 837.0
+scale = Vector2(1.87781, 1.71507)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_re7d2")
+theme_override_font_sizes/font_size = 25
+text = "-"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true

@@ -1,0 +1,9 @@
+#show_version=6
+
+- duration: 750ms
+  lights:
+    l_cassetteleft_led: white
+- duration: 750ms
+  lights:
+    l_cassetteleft_led: off
+

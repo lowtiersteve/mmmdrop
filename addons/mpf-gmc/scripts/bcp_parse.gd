@@ -4,7 +4,7 @@
 # Released under the MIT License
 
 
-# TODO: Define a type for the response dictionary
+# Define a type for the response dictionary
 static func parse(message: String) -> Dictionary:
 	var cmd: String
 	var result = {}

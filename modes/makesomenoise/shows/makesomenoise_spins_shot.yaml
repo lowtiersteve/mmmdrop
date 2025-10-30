@@ -1,0 +1,9 @@
+#show_version=6
+
+- duration: 750ms
+  lights:
+    l_leftorbitbattery_rectangle_led: Aqua
+- duration: 750ms
+  lights:
+    l_leftorbitbattery_rectangle_led: off
+

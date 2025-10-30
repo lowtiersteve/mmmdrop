@@ -9,13 +9,74 @@ mode_settings:
     - last_scores_4p{machine.player4_score}
     - mpf_logo
     - fast_logo
-#    - specialthanks
+    - specialthanks
     - credits
     - pressstart
     - version
+    - makercredits
+    - dedicated
   next_item_events: s_right_flipper_active, timer_attract_carousel_timer_complete
   previous_item_events: s_left_flipper_active
 
+sequences:
+  mca_sequence:
+    events:
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_left_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_left_flipper_active
+    - s_right_flipper_active
+    - s_left_flipper_active
+    disable_events: game_starting
+    reset_on_complete: false
+    restart_events: mode_attract_started, adr_sequence_hit, mca_sequence_hit, flipper_cancel
+    events_when_complete: mca_sequence_hit
+  adr_sequence:
+    events:
+    - s_right_flipper_active
+    - s_left_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_left_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_left_flipper_active
+    disable_events: game_starting
+    reset_on_complete: false
+    restart_events: mode_attract_started, adr_sequence_hit, mca_sequence_hit, flipper_cancel
+    events_when_complete: adr_sequence_hit
 
 slide_player:
   mode_attract_started{machine.game_just_played==0}:
@@ -23,7 +84,7 @@ slide_player:
       action: remove
     attract_load:
       action: play
-      priority: 1000
+      priority: 1000000
   timer_attract_intro_timer_complete{machine.game_just_played==0}:
     attract_load:
       action: remove
@@ -36,24 +97,80 @@ slide_player:
     attract:
       action: play
       priority: 1000
-
+  mca_sequence_hit:
+    attract_load:
+      action: remove
+    attract:
+      action: remove
+    ghostbusters:
+      action: play
+      priority: 1100000
+  timer_mca_attract_video_timer_complete:
+    ghostbusters:
+      action: remove
+    attract:
+      action: play
+      priority: 1000
+  adr_sequence_hit:
+    attract_load:
+      action: remove
+    attract:
+      action: remove
+    friends:
+      action: play
+      priority: 1100000
+  timer_adr_attract_video_timer_complete:
+    friends:
+      action: remove
+    attract:
+      action: play
+      priority: 1000
 
 sound_player:
   mode_attract_started:
     attract_crowd:
       bus: effects
+      action: play
+  mca_sequence_hit:
+    attract_crowd:
+      action: stop
+      bus: effects
+  timer_mca_attract_video_timer_complete:
+    attract_crowd:
+      bus: effects
+      action: play
+  adr_sequence_hit:
+    attract_crowd:
+      action: stop
+      bus: effects
+  timer_adr_attract_video_timer_complete:
+    attract_crowd:
+      bus: effects
+      action: play
 
 timers:
   attract_carousel_timer:
-    end_value: 1
-    tick_interval: 5s
-    start_running: true
+    end_value: 5
+    tick_interval: 1s
+    start_running: false
     control_events:
       - event: item_highlighted
         action: restart
       - event: flipper_cradle
         action: stop
       - event: flipper_cradle_release
+        action: restart
+      - event: timer_attract_intro_timer_complete
+        action: start
+      - event: game_ended
+        action: start
+      - event: mca_sequence_hit
+        action: pause
+      - event: adr_sequence_hit
+        action: pause
+      - event: slide_ghostbusters_removed
+        action: restart
+      - event: slide_friends_removed
         action: restart
   attract_intro_timer:
     end_value: 16
@@ -64,3 +181,150 @@ timers:
         action: restart
       - event: game_started
         action: stop
+  mca_attract_video_timer:
+    end_value: 192
+    tick_interval: 1s
+    start_running: false
+    control_events:
+      - event: slide_ghostbusters_active
+        action: start
+      - event: game_started
+        action: stop
+  adr_attract_video_timer:
+    end_value: 49
+    tick_interval: 1s
+    start_running: false
+    control_events:
+      - event: slide_friends_active
+        action: start
+      - event: game_started
+        action: stop
+
+
+widget_player:
+  item_highlighted{item=="gameover"}:
+    attract_dedicated:
+      action: remove
+    attract_last_scores_1p:
+      action: remove
+    attract_last_scores_2p:
+      action: remove
+    attract_last_scores_3p:
+      action: remove
+    attract_last_scores_4p:
+      action: remove
+    attract_gameover:
+      action: play
+      slide: attract
+  item_highlighted{item=="last_scores_1p"}:
+    attract_gameover:
+      action: remove
+    attract_mpf_logo:
+      action: remove
+    attract_last_scores_1p:
+      action: play
+      slide: attract
+  item_highlighted{item=="last_scores_2p"}:
+    attract_gameover:
+      action: remove
+    attract_mpf_logo:
+      action: remove
+    attract_last_scores_2p:
+      action: play
+      slide: attract
+  item_highlighted{item=="last_scores_3p"}:
+    attract_gameover:
+      action: remove
+    attract_mpf_logo:
+      action: remove
+    attract_last_scores_3p:
+      action: play
+      slide: attract
+  item_highlighted{item=="last_scores_4p"}:
+    attract_gameover:
+      action: remove
+    attract_mpf_logo:
+      action: remove
+    attract_last_scores_4p:
+      action: play
+      slide: attract
+  item_highlighted{item=="mpf_logo"}:
+    attract_dedicated:
+      action: remove
+    attract_last_scores_1p:
+      action: remove
+    attract_last_scores_2p:
+      action: remove
+    attract_last_scores_3p:
+      action: remove
+    attract_last_scores_4p:
+      action: remove
+    attract_fast_logo:
+      action: remove
+    attract_mpf_logo:
+      action: play
+      slide: attract
+  item_highlighted{item=="fast_logo"}:
+    attract_mpf_logo:
+      action: remove
+    attract_specialthanks:
+      action: remove
+    attract_fast_logo:
+      action: play
+      slide: attract
+  item_highlighted{item=="specialthanks"}:
+    attract_fast_logo:
+      action: remove
+    attract_credits:
+      action: remove
+    attract_specialthanks:
+      action: play
+      slide: attract
+  item_highlighted{item=="credits"}:
+    attract_specialthanks:
+      action: remove
+    attract_pressstart:
+      action: remove
+    attract_credits:
+      action: play
+      slide: attract
+  item_highlighted{item=="pressstart"}:
+    attract_credits:
+      action: remove
+    attract_version:
+      action: remove
+    attract_pressstart:
+      action: play
+      slide: attract
+  item_highlighted{item=="version"}:
+    attract_pressstart:
+      action: remove
+    attract_makercredits:
+      action: remove
+    attract_version:
+      action: play
+      slide: attract
+  item_highlighted{item=="makercredits"}:
+    attract_version:
+      action: remove
+    attract_dedicated:
+      action: remove
+    attract_makercredits:
+      action: play
+      slide: attract
+  item_highlighted{item=="dedicated"}:
+    attract_makercredits:
+      action: remove
+    attract_gameover:
+      action: remove
+    attract_mpf_logo:
+      action: remove
+    attract_dedicated:
+      action: play
+      slide: attract
+
+show_player:
+  mode_attract_started: attract_light_show
+  mode_attract_stopping:
+    attract_light_show:
+      action: stop

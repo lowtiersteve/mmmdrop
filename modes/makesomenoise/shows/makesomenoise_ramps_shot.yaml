@@ -1,0 +1,11 @@
+#show_version=6
+
+- duration: 750ms
+  lights:
+    l_leftramp_arrow_led: Aqua
+    l_rightramp_arrow_led: Aqua
+- duration: 750ms
+  lights:
+    l_leftramp_arrow_led: off
+    l_rightramp_arrow_led: off
+

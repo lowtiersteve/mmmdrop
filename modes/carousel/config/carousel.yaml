@@ -1,13 +1,13 @@
 #config_version=6
 
 mode:
-  start_events: mode_base_started, mode_intergalactic_success{current_player.multiball_blocking_flag==0}, mode_tripletrouble_success{current_player.multiball_blocking_flag==0}, mode_intergalactic_failed{current_player.multiball_blocking_flag==0}, mode_tripletrouble_failed{current_player.multiball_blocking_flag==0}, mode_paulrevere_success{current_player.multiball_blocking_flag==0}, mode_paulrevere_failed{current_player.multiball_blocking_flag==0}, multiball_chcheckitout_ended{current_player.mode_blocking_flag==0}, mode_makesomenoise_stopped
-  stop_events: carousel_item_selected, chcheckitout_start_multiball, ball_ending
+  start_events: battery_charged, mode_base_started, mode_intergalactic_stopped{current_player.multiball_blocking_flag==0 and device.achievements.wizard1.state!='enabled'}, mode_tripletrouble_stopped{current_player.multiball_blocking_flag==0 and device.achievements.wizard1.state!='enabled'}, mode_paulrevere_stopped{current_player.multiball_blocking_flag==0 and device.achievements.wizard1.state!='enabled'}, multiball_chcheckitout_ended{current_player.mode_blocking_flag==0}, mode_makesomenoise_stopped
+  stop_events: carousel_item_selected, chcheckitout_start_multiball, ball_will_end, stop_carousel
   code: mpf.modes.carousel.code.carousel.Carousel
   priority: 200
 
 mode_settings:
-  selectable_items: intergalactic, paulrevere, makesomenoise, tripletrouble
+  selectable_items: intergalactic{not device.achievements.intergalactic_mode.state=='completed'}, paulrevere{not device.achievements.paulrevere_mode.state=='completed'}, tripletrouble{not device.achievements.tripletrouble_mode.state=='completed'}
   select_item_events: scoop_hit
   next_item_events: s_left_upper_pop_active, s_center_upper_pop_active
   previous_item_events: s_right_lower_pop_active
@@ -20,10 +20,6 @@ variable_player:
   carousel_paulrevere_selected:
     selected_mode:
       string: "Paul Revere"
-      action: set
-  carousel_makesomenoise_selected:
-    selected_mode:
-      string: "Make Some Noise"
       action: set
   carousel_tripletrouble_selected:
     selected_mode:
@@ -39,5 +35,36 @@ slide_player:
 event_player:
   select_intergalactic: mode_intergalactic_start
   select_paulrevere: mode_paulrevere_start
-  select_makesomenoise: mode_makesomenoise_start
   select_tripletrouble: mode_tripletrouble_start
+  achievement_wizard1_state_enabled: stop_carousel
+
+show_player:
+  item_highlighted{item=='intergalactic'}:
+    intergalactic_mode_lit:
+      action: play
+      loops: -1
+  item_highlighted{item!='intergalactic'}:
+    intergalactic_mode_lit:
+      action: stop
+  item_highlighted{item=='paulrevere'}:
+    paulrevere_mode_lit:
+      action: play
+      loops: -1
+  item_highlighted{item!='paulrevere'}:
+    paulrevere_mode_lit:
+      action: stop
+  item_highlighted{item=='tripletrouble'}:
+    tripletrouble_mode_lit:
+      action: play
+      loops: -1
+  item_highlighted{item!='tripletrouble'}:
+    tripletrouble_mode_lit:
+      action: stop
+  item_highlighted{item=='sabotage'}:
+    sabotage_mode_lit:
+      action: play
+      loops: -1
+  item_highlighted{item!='sabotage'}:
+    sabotage_mode_lit:
+      action: stop
+

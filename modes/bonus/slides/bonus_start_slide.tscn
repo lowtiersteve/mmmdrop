@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://x3whld0pdfvq"]
+
+[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_1pdwc"]
+[ext_resource type="Texture2D" uid="uid://bldchd71jvxls" path="res://assets/LicensedToIll.jpg" id="2_r0nst"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="3_r0nst"]
+
+[node name="bonus_start_slide" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_1pdwc")
+metadata/_custom_type_script = "uid://d15ukepy10pan"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(944, 584)
+scale = Vector2(3.3, 3.3)
+texture = ExtResource("2_r0nst")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 664.0
+offset_top = 456.0
+offset_right = 1285.0
+offset_bottom = 595.0
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("3_r0nst")
+theme_override_font_sizes/font_size = 136
+text = "Bonus:"

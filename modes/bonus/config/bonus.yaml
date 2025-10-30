@@ -1,0 +1,126 @@
+#config_version=6
+
+mode_settings:
+  display_delay_ms: 2.5s
+  hurry_up_delay_ms: 0
+  hurry_up_event: flipper_cancel
+  bonus_entries:
+    - entry: bonus_modes_played
+      score: 100000
+      player_score_entry: modes_played
+      skip_if_negative: true
+    - entry: bonus_modes_completed
+      score: 250000
+      player_score_entry: modes_completed
+      skip_if_negative: true
+    - entry: bonus_combos
+      score: 25000
+      player_score_entry: combos
+      skip_if_negative: true
+
+slide_player:
+  mode_bonus_started:
+    bonus_start_slide:
+      action: play
+      priority: 1000000
+  bonus_entry{entry=="bonus_modes_played"}:
+    bonus_start_slide:
+      action: remove
+    bonus_modes_played_slide:
+      action: play
+      priority: 1000000
+  bonus_entry{entry=="bonus_modes_completed"}:
+    bonus_start_slide:
+      action: remove
+    bonus_modes_played_slide:
+      action: remove
+    bonus_modes_completed_slide:
+      action: play
+      priority: 1000000
+  bonus_entry{entry=="bonus_combos"}:
+    bonus_start_slide:
+      action: remove
+    bonus_modes_played_slide:
+      action: remove
+    bonus_modes_completed_slide:
+      action: remove
+    bonus_combos_slide:
+      action: play
+      priority: 1000000
+  bonus_entry{entry=="subtotal"}:
+    bonus_start_slide:
+      action: remove
+    bonus_modes_played_slide:
+      action: remove
+    bonus_modes_completed_slide:
+      action: remove
+    bonus_combos_slide:
+      action: remove
+    bonus_subtotal_slide:
+      action: play
+      priority: 1000000
+  bonus_entry{entry=="multiplier"}:
+    bonus_start_slide:
+      action: remove
+    bonus_modes_played_slide:
+      action: remove
+    bonus_modes_completed_slide:
+      action: remove
+    bonus_combos_slide:
+      action: remove
+    bonus_subtotal_slide:
+      action: remove
+    bonus_multiplier_slide:
+      action: play
+      priority: 1000000
+  bonus_entry{entry=="total"}:
+    bonus_start_slide:
+      action: remove
+    bonus_modes_played_slide:
+      action: remove
+    bonus_modes_completed_slide:
+      action: remove
+    bonus_combos_slide:
+      action: remove
+    bonus_subtotal_slide:
+      action: remove
+    bonus_multiplier_slide:
+      action: remove
+    bonus_total_slide:
+      action: play
+      priority: 1000000
+
+sound_player:
+  mode_bonus_started:
+    base_game_random_music:
+      action: stop
+      bus: music
+  slide_bonus_start_slide_active:
+    bonus_sound_random:
+      action: play
+      bus: effects
+  slide_bonus_combos_slide_active:
+    bonus_sound_random:
+      action: play
+      bus: effects
+  slide_bonus_modes_played_slide_active:
+    bonus_sound_random:
+      action: play
+      bus: effects
+  slide_bonus_modes_completed_slide_active:
+    bonus_sound_random:
+      action: play
+      bus: effects
+  slide_bonus_multiplier_slide_active:
+    bonus_sound_random:
+      action: play
+      bus: effects
+  slide_bonus_subtotal_slide_active:
+    bonus_sound_random:
+      action: play
+      bus: effects
+  slide_bonus_total_slide_active:
+    bonus_sound_random:
+      action: play
+      bus: effects
+

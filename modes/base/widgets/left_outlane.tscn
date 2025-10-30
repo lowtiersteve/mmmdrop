@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://cy8hgxucbynwh"]
+
+[ext_resource type="Script" uid="uid://bp5npfvnd6fvx" path="res://addons/mpf-gmc/classes/mpf_widget.gd" id="1_xta6r"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="3_pdr5s"]
+
+[node name="left_outlane" type="Control"]
+top_level = true
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_xta6r")
+metadata/_custom_type_script = "uid://bp5npfvnd6fvx"
+
+[node name="leftoutlane" type="Label" parent="."]
+layout_mode = 0
+offset_left = 720.0
+offset_top = 750.0
+offset_right = 758.0
+offset_bottom = 827.0
+scale = Vector2(1.87781, 1.71507)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("3_pdr5s")
+theme_override_font_sizes/font_size = 25
+text = "O"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true

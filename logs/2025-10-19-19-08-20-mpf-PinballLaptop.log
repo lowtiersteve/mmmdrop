@@ -1,0 +1,182 @@
+2025-10-19 19:08:20,071 : INFO : root : Loading config.
+2025-10-19 19:08:20,076 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2025-10-19 19:08:20,077 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\19f6d0d7953982fda9d956182316b8e5.mpf_cache
+2025-10-19 19:08:20,187 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\835b5bfea4be8b279a05e96caaaffbbb.mpf_cache
+2025-10-19 19:08:20,188 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\9b0a7575388f9d9bd2f6ab87bf9fd2f7.mpf_cache
+2025-10-19 19:08:20,190 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\base\config\base.yaml
+2025-10-19 19:08:20,190 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\base\config\base.yaml.
+2025-10-19 19:08:20,202 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\base\config\base.yaml
+2025-10-19 19:08:20,203 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\c340ec0033d1055cd797ffd5447ef414.mpf_cache
+2025-10-19 19:08:20,203 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\835b5bfea4be8b279a05e96caaaffbbb.mpf_cache
+2025-10-19 19:08:20,205 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\8c11a28e3c38d4ad47947b6a126f2ee9.mpf_cache
+2025-10-19 19:08:20,206 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\e391083cdc9e667060411fe5838e93f2.mpf_cache
+2025-10-19 19:08:20,207 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\f0c219a993d891ee86dcb7eae47dde67.mpf_cache
+2025-10-19 19:08:20,208 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\intergalactic\config\intergalactic.yaml
+2025-10-19 19:08:20,208 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\intergalactic\config\intergalactic.yaml.
+2025-10-19 19:08:20,212 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\intergalactic\config\intergalactic.yaml
+2025-10-19 19:08:20,214 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\96aa58108928490b129531848cd9b506.mpf_cache
+2025-10-19 19:08:20,214 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\567636b9d9766e3361204e954a8382da.mpf_cache
+2025-10-19 19:08:20,216 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\d5ead8dff868c6c4b1faf37537a19bc2.mpf_cache
+2025-10-19 19:08:20,216 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\112f935d1c2002cb40d3e6e497be9e7c.mpf_cache
+2025-10-19 19:08:20,217 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\aba0711976820dea629bb4c00b006efc.mpf_cache
+2025-10-19 19:08:20,218 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\de8ed6c6d4c48d1b5b054ff74222cb35.mpf_cache
+2025-10-19 19:08:20,220 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\e6b55d6a1c06b0dd6369c964181bf8d3.mpf_cache
+2025-10-19 19:08:20,221 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\intergalactic\shows\.\intergalactic_final_shot.yaml.
+2025-10-19 19:08:20,222 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\intergalactic\shows\.\intergalactic_final_shot.yaml
+2025-10-19 19:08:20,222 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\c25e7c71bc90546538d4e68911be6658.mpf_cache
+2025-10-19 19:08:20,224 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\intergalactic\shows\.\intergalactic_left_shot.yaml
+2025-10-19 19:08:20,224 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\intergalactic\shows\.\intergalactic_left_shot.yaml.
+2025-10-19 19:08:20,224 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\intergalactic\shows\.\intergalactic_left_shot.yaml
+2025-10-19 19:08:20,225 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\b7a51086f1e3c926b3977a0d025a1faa.mpf_cache
+2025-10-19 19:08:20,225 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\intergalactic\shows\.\intergalactic_right_shot.yaml.
+2025-10-19 19:08:20,226 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\intergalactic\shows\.\intergalactic_right_shot.yaml
+2025-10-19 19:08:20,227 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\479eb3ca656e084fa2e092204a5b8039.mpf_cache
+2025-10-19 19:08:20,227 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\intergalactic\shows\.\intergalactic_success_show.yaml.
+2025-10-19 19:08:20,229 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\intergalactic\shows\.\intergalactic_success_show.yaml
+2025-10-19 19:08:20,229 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\9d78d3eab0b46a97108ba4956ff9c711.mpf_cache
+2025-10-19 19:08:20,230 : INFO : Machine : Mission Pinball Framework Core Engine v0.80.0.dev9
+2025-10-19 19:08:20,230 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'force_assets_load': False, 'platform_integration_test': False, 'jsonlogging': False, 'logfile': 'logs\\2025-10-19-19-08-20-mpf-PinballLaptop.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': 'smart_virtual', 'syslog_address': None, 'full_logfile_path': 'C:\\venv\\mpf\\mmmdrop\\logs\\2025-10-19-19-08-20-mpf-PinballLaptop.log'}
+2025-10-19 19:08:20,230 : INFO : Machine : MPF path: c:\venv\mpf\lib\site-packages\mpf
+2025-10-19 19:08:20,230 : INFO : Machine : Machine path: C:\venv\mpf\mmmdrop
+2025-10-19 19:08:20,230 : INFO : Machine : Platform: win32
+2025-10-19 19:08:20,230 : INFO : Machine : Python executable location: c:\venv\mpf\Scripts\python.exe
+2025-10-19 19:08:20,231 : INFO : Machine : Python version: 3.9.13 (64-bit)
+2025-10-19 19:08:20,232 : INFO : Machine : Initializing MPF...
+2025-10-19 19:08:20,440 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2025-10-19 19:08:20,471 : INFO : EventManager : Event: ======'machine_var_fast_audio_headphones_volume'====== Args={'value': 10, 'prev_value': None, 'change': True}
+2025-10-19 19:08:20,471 : INFO : EventManager : Event: ======'machine_var_fast_audio_main_volume'====== Args={'value': 44, 'prev_value': None, 'change': True}
+2025-10-19 19:08:20,471 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.55, 'prev_value': None, 'change': True}
+2025-10-19 19:08:20,471 : INFO : EventManager : Event: ======'machine_var_player1_score'====== Args={'value': 4013890, 'prev_value': None, 'change': True}
+2025-10-19 19:08:20,471 : INFO : EventManager : Event: ======'machine_var_game_just_played'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-10-19 19:08:20,471 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'Mission Pinball Framework v0.80.0.dev9', 'prev_value': None, 'change': True}
+2025-10-19 19:08:20,471 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'Mission Pinball Framework v0.80.0.dev9, Config version:6, Show version: 6, BCP version:1.1', 'prev_value': None, 'change': True}
+2025-10-19 19:08:20,472 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.9.13', 'prev_value': None, 'change': True}
+2025-10-19 19:08:20,515 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.26100-SP0', 'prev_value': None, 'change': True}
+2025-10-19 19:08:20,515 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2025-10-19 19:08:20,515 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2025-10-19 19:08:20,515 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.26100', 'prev_value': None, 'change': True}
+2025-10-19 19:08:20,515 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2025-10-19 19:08:20,515 : INFO : EventManager : Event: ======'machine_var_log_file_path'====== Args={'value': 'C:\\venv\\mpf\\mmmdrop\\logs\\2025-10-19-19-08-20-mpf-PinballLaptop.log', 'prev_value': None, 'change': True}
+2025-10-19 19:08:20,515 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2025-10-19 19:08:20,562 : INFO : EventManager : Event: ======'drop_target_bank_three_bank_up'====== Args={}
+2025-10-19 19:08:20,562 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2025-10-19 19:08:20,564 : INFO : SwitchController : Found active switch: ('3208-0', <Platform.SmartVirtual>) <switch.s_trough1>
+2025-10-19 19:08:20,564 : INFO : SwitchController : Found active switch: ('3208-1', <Platform.SmartVirtual>) <switch.s_trough2>
+2025-10-19 19:08:20,564 : INFO : SwitchController : Found active switch: ('3208-2', <Platform.SmartVirtual>) <switch.s_trough3>
+2025-10-19 19:08:20,564 : INFO : SwitchController : Found active switch: ('3208-3', <Platform.SmartVirtual>) <switch.s_trough4>
+2025-10-19 19:08:20,564 : INFO : SwitchController : Found active switch: ('3208-4', <Platform.SmartVirtual>) <switch.s_trough5>
+2025-10-19 19:08:20,564 : INFO : SwitchController : Found active switch: ('3208-5', <Platform.SmartVirtual>) <switch.s_trough6>
+2025-10-19 19:08:20,576 : INFO : EventManager : Event: ======'bcp_connection_attempt'====== Args={'name': 'local_display', 'host': 'localhost', 'port': 5050}
+2025-10-19 19:08:20,578 : INFO : BCPClientSocket : Connecting BCP to 'local_display' at localhost:5050...
+2025-10-19 19:08:24,172 : INFO : BCPClientSocket : Connected BCP to 'local_display' localhost:5050
+2025-10-19 19:08:24,173 : INFO : EventManager : Event: ======'bcp_clients_connected'====== Args={}
+2025-10-19 19:08:24,323 : INFO : ball_device.bd_trough : BCH: Initial count: 6
+2025-10-19 19:08:24,381 : INFO : ball_device.bd_trough : State: idle
+2025-10-19 19:08:24,381 : INFO : ball_device.bd_plunger : BCH: Initial count: 0
+2025-10-19 19:08:24,382 : INFO : ball_device.bd_plunger : State: idle
+2025-10-19 19:08:24,382 : INFO : ball_device.bd_scoop : BCH: Initial count: 0
+2025-10-19 19:08:24,382 : INFO : ball_device.bd_scoop : State: idle
+2025-10-19 19:08:24,400 : INFO : EventManager : Event: ======'init_phase_3'====== Args={}
+2025-10-19 19:08:24,407 : ERROR : asyncio : Exception in callback EventManager._queue_task_done(<Task finishe...rcle_led\']')>)
+handle: <Handle EventManager._queue_task_done(<Task finishe...rcle_led\']')>)>
+Traceback (most recent call last):
+  File "C:\Program Files\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\events.py", line 795, in _queue_task_done
+    future.result()
+  File "c:\venv\mpf\lib\site-packages\mpf\core\events.py", line 708, in _run_handlers_sequential
+    handler.callback(queue=queue, **merged_kwargs)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\show_controller.py", line 53, in _load_shows
+    self.machine.shows[show_name].load(show_config)
+  File "c:\venv\mpf\lib\site-packages\mpf\assets\show.py", line 171, in load
+    self._process_step_actions(step, actions)
+  File "c:\venv\mpf\lib\site-packages\mpf\assets\show.py", line 201, in _process_step_actions
+    raise e
+  File "c:\venv\mpf\lib\site-packages\mpf\assets\show.py", line 197, in _process_step_actions
+    self.machine.show_controller.show_players[key].validate_config_entry(value, self.name)
+  File "c:\venv\mpf\lib\site-packages\mpf\config_players\device_config_player.py", line 56, in validate_config_entry
+    raise e
+  File "c:\venv\mpf\lib\site-packages\mpf\config_players\device_config_player.py", line 52, in validate_config_entry
+    self._validate_config_item(device, device_settings))
+  File "c:\venv\mpf\lib\site-packages\mpf\config_players\device_config_player.py", line 85, in _validate_config_item
+    devices = self._expand_device(device)
+  File "c:\venv\mpf\lib\site-packages\mpf\config_players\device_config_player.py", line 114, in _expand_device
+    return self.raise_config_error(
+  File "c:\venv\mpf\lib\site-packages\mpf\core\logging.py", line 175, in raise_config_error
+    raise ConfigFileError(msg, error_no, self.log.name if self.log else "", context, self._url_base) \
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in light_player: Show "intergalactic_final_shot" >> Failed to load config player intergalactic_final_shot:lights with settings {'l_scoopmode_circle_led': 'red', 'l_scoopmode_square_led': 'off'} >> Could not find a lights device with name or tag l_scoopmode_circle_led, from list ['l_scoopmode_circle_led'] Error Code: CFE-light_player-101 (https://missionpinball.org/logs)
+2025-10-19 19:08:24,439 : INFO : Machine : Starting the main run loop with active modes: []
+2025-10-19 19:08:24,439 : WARNING : Machine : Attract mode is not active, game will not be playable. Please check your attract mode configuration.
+2025-10-19 19:08:24,440 : INFO : Machine : Shutting down...
+2025-10-19 19:08:24,440 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2025-10-19 19:08:25,464 : ERROR : Machine : Runtime Exception
+Traceback (most recent call last):
+  File "c:\venv\mpf\lib\site-packages\mpf\core\machine.py", line 808, in _run_loop
+    raise self._exception['exception']
+  File "C:\Program Files\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\events.py", line 795, in _queue_task_done
+    future.result()
+  File "c:\venv\mpf\lib\site-packages\mpf\core\events.py", line 708, in _run_handlers_sequential
+    handler.callback(queue=queue, **merged_kwargs)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\show_controller.py", line 53, in _load_shows
+    self.machine.shows[show_name].load(show_config)
+  File "c:\venv\mpf\lib\site-packages\mpf\assets\show.py", line 171, in load
+    self._process_step_actions(step, actions)
+  File "c:\venv\mpf\lib\site-packages\mpf\assets\show.py", line 201, in _process_step_actions
+    raise e
+  File "c:\venv\mpf\lib\site-packages\mpf\assets\show.py", line 197, in _process_step_actions
+    self.machine.show_controller.show_players[key].validate_config_entry(value, self.name)
+  File "c:\venv\mpf\lib\site-packages\mpf\config_players\device_config_player.py", line 56, in validate_config_entry
+    raise e
+  File "c:\venv\mpf\lib\site-packages\mpf\config_players\device_config_player.py", line 52, in validate_config_entry
+    self._validate_config_item(device, device_settings))
+  File "c:\venv\mpf\lib\site-packages\mpf\config_players\device_config_player.py", line 85, in _validate_config_item
+    devices = self._expand_device(device)
+  File "c:\venv\mpf\lib\site-packages\mpf\config_players\device_config_player.py", line 114, in _expand_device
+    return self.raise_config_error(
+  File "c:\venv\mpf\lib\site-packages\mpf\core\logging.py", line 175, in raise_config_error
+    raise ConfigFileError(msg, error_no, self.log.name if self.log else "", context, self._url_base) \
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in light_player: Show "intergalactic_final_shot" >> Failed to load config player intergalactic_final_shot:lights with settings {'l_scoopmode_circle_led': 'red', 'l_scoopmode_square_led': 'off'} >> Could not find a lights device with name or tag l_scoopmode_circle_led, from list ['l_scoopmode_circle_led'] Error Code: CFE-light_player-101 (https://missionpinball.org/logs)
+2025-10-19 19:08:27,505 : ERROR : root : 
+Traceback (most recent call last):
+  File "c:\venv\mpf\lib\site-packages\mpf\core\machine.py", line 808, in _run_loop
+    raise self._exception['exception']
+  File "C:\Program Files\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\events.py", line 795, in _queue_task_done
+    future.result()
+  File "c:\venv\mpf\lib\site-packages\mpf\core\events.py", line 708, in _run_handlers_sequential
+    handler.callback(queue=queue, **merged_kwargs)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\show_controller.py", line 53, in _load_shows
+    self.machine.shows[show_name].load(show_config)
+  File "c:\venv\mpf\lib\site-packages\mpf\assets\show.py", line 171, in load
+    self._process_step_actions(step, actions)
+  File "c:\venv\mpf\lib\site-packages\mpf\assets\show.py", line 201, in _process_step_actions
+    raise e
+  File "c:\venv\mpf\lib\site-packages\mpf\assets\show.py", line 197, in _process_step_actions
+    self.machine.show_controller.show_players[key].validate_config_entry(value, self.name)
+  File "c:\venv\mpf\lib\site-packages\mpf\config_players\device_config_player.py", line 56, in validate_config_entry
+    raise e
+  File "c:\venv\mpf\lib\site-packages\mpf\config_players\device_config_player.py", line 52, in validate_config_entry
+    self._validate_config_item(device, device_settings))
+  File "c:\venv\mpf\lib\site-packages\mpf\config_players\device_config_player.py", line 85, in _validate_config_item
+    devices = self._expand_device(device)
+  File "c:\venv\mpf\lib\site-packages\mpf\config_players\device_config_player.py", line 114, in _expand_device
+    return self.raise_config_error(
+  File "c:\venv\mpf\lib\site-packages\mpf\core\logging.py", line 175, in raise_config_error
+    raise ConfigFileError(msg, error_no, self.log.name if self.log else "", context, self._url_base) \
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in light_player: Show "intergalactic_final_shot" >> Failed to load config player intergalactic_final_shot:lights with settings {'l_scoopmode_circle_led': 'red', 'l_scoopmode_square_led': 'off'} >> Could not find a lights device with name or tag l_scoopmode_circle_led, from list ['l_scoopmode_circle_led'] Error Code: CFE-light_player-101 (https://missionpinball.org/logs)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\venv\mpf\lib\site-packages\mpf\commands\game.py", line 229, in __init__
+    self.machine.run()
+  File "c:\venv\mpf\lib\site-packages\mpf\core\machine.py", line 704, in run
+    self._run_loop()
+  File "c:\venv\mpf\lib\site-packages\mpf\core\machine.py", line 811, in _run_loop
+    report_crash(self._exception['exception'], "exception_during_run", self.config)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\crash_reporter.py", line 236, in report_crash
+    response = input("Do you want to report the crash to the MPF team (yes/no/show)? ")
+EOFError

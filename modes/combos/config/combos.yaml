@@ -1,0 +1,346 @@
+#config_version=6
+mode:
+  start_events: ball_started
+  stop_events: ball_ended
+  priority: 2000
+
+sequence_shots:
+  left_orbit_to_inner_loop_combo:
+    sequence_timeout: 3s
+    event_sequence: left_orbit_hit, inner_loop_hit
+  left_orbit_to_left_ramp_combo:
+    sequence_timeout: 3s
+    event_sequence: left_orbit_hit, left_ramp_hit
+  left_orbit_to_captive_ball_combo:
+    sequence_timeout: 3s
+    event_sequence: left_orbit_hit, captive_ball_hit
+  left_orbit_to_right_ramp_combo:
+    sequence_timeout: 3s
+    event_sequence: left_orbit_hit, right_ramp_hit
+  left_orbit_to_right_orbit_combo:
+    sequence_timeout: 3s
+    event_sequence: left_orbit_hit, right_orbit_hit
+  left_ramp_to_left_orbit_combo:
+    sequence_timeout: 3s
+    event_sequence: left_ramp_hit, left_orbit_hit
+  left_ramp_to_inner_loop_combo:
+    sequence_timeout: 3s
+    event_sequence: left_ramp_hit, inner_loop_hit
+  left_ramp_to_captive_ball_combo:
+    sequence_timeout: 3s
+    event_sequence: left_ramp_hit, captive_ball_hit
+  left_ramp_to_right_ramp_combo:
+    sequence_timeout: 3s
+    event_sequence: left_ramp_hit, right_ramp_hit
+  left_ramp_to_right_orbit_combo:
+    sequence_timeout: 3s
+    event_sequence: left_ramp_hit, right_orbit_hit
+  inner_loop_to_inner_loop_combo:
+    sequence_timeout: 3s
+    event_sequence: inner_loop_hit, inner_loop_hit
+  inner_loop_to_left_orbit_combo:
+    sequence_timeout: 3s
+    event_sequence: inner_loop_hit, left_orbit_hit
+  inner_loop_to_left_ramp_combo:
+    sequence_timeout: 3s
+    event_sequence: inner_loop_hit, left_ramp_hit
+  inner_loop_to_captive_ball_ramp_combo:
+    sequence_timeout: 3s
+    event_sequence: inner_loop_hit, captive_ball_hit
+  inner_loop_to_right_ramp_combo:
+    sequence_timeout: 3s
+    event_sequence: inner_loop_hit, right_ramp_hit
+  inner_loop_to_right_orbit_combo:
+    sequence_timeout: 3s
+    event_sequence: inner_loop_hit, right_orbit_hit
+  captive_ball_to_left_orbit_combo:
+    sequence_timeout: 3s
+    event_sequence: captive_ball_hit, left_orbit_hit
+  captive_ball_to_left_ramp_combo:
+    sequence_timeout: 3s
+    event_sequence: captive_ball_hit, left_ramp_hit
+  captive_ball_to_inner_loop_combo:
+    sequence_timeout: 3s
+    event_sequence: captive_ball_hit, inner_loop_hit
+  captive_ball_to_right_ramp_combo:
+    sequence_timeout: 3s
+    event_sequence: captive_ball_hit, right_ramp_hit
+  captive_ball_to_right_orbit_combo:
+    sequence_timeout: 3s
+    event_sequence: captive_ball_hit, right_orbit_hit
+  right_ramp_to_left_orbit_combo:
+    sequence_timeout: 3s
+    event_sequence: right_ramp_hit, left_orbit_hit
+  right_ramp_to_left_ramp_combo:
+    sequence_timeout: 3s
+    event_sequence: right_ramp_hit, left_ramp_hit
+  right_ramp_to_inner_loop_combo:
+    sequence_timeout: 3s
+    event_sequence: right_ramp_hit, inner_loop_hit
+  right_ramp_to_captive_ball_combo:
+    sequence_timeout: 3s
+    event_sequence: right_ramp_hit, captive_ball_hit
+  right_ramp_to_right_orbit_combo:
+    sequence_timeout: 3s
+    event_sequence: right_ramp_hit, right_orbit_hit
+  right_orbit_to_left_orbit_combo:
+    sequence_timeout: 3s
+    event_sequence: right_orbit_hit, left_orbit_hit
+  right_orbit_to_left_ramp_combo:
+    sequence_timeout: 3s
+    event_sequence: right_orbit_hit, left_ramp_hit
+  right_orbit_to_inner_loop_combo:
+    sequence_timeout: 3s
+    event_sequence: right_orbit_hit, inner_loop_hit
+  right_orbit_to_captive_ball_combo:
+    sequence_timeout: 3s
+    event_sequence: right_orbit_hit, captive_ball_hit
+  right_orbit_to_right_ramp_combo:
+    sequence_timeout: 3s
+    event_sequence: right_orbit_hit, right_ramp_hit
+
+
+event_player:
+  left_orbit_to_inner_loop_combo_hit: combo_hit
+  left_orbit_to_left_ramp_combo_hit: combo_hit
+  left_orbit_to_captive_ball_combo_hit: combo_hit
+  left_orbit_to_right_ramp_combo_hit: combo_hit
+  left_orbit_to_right_orbit_combo_hit: combo_hit
+  left_ramp_to_left_orbit_combo_hit: combo_hit
+  left_ramp_to_inner_loop_combo_hit: combo_hit
+  left_ramp_to_captive_ball_combo_hit: combo_hit
+  left_ramp_to_right_ramp_combo_hit: combo_hit
+  left_ramp_to_right_orbit_combo_hit: combo_hit
+  inner_loop_to_left_orbit_combo_hit: combo_hit
+  inner_loop_to_left_ramp_combo_hit: combo_hit
+  inner_loop_to_inner_loop_combo_hit: combo_hit
+  inner_loop_to_captive_ball_combo_hit: combo_hit
+  inner_loop_to_right_ramp_combo_hit: combo_hit
+  inner_loop_to_right_orbit_combo_hit: combo_hit
+  captive_ball_to_inner_loop_combo_hit: combo_hit
+  captive_ball_to_left_orbit_combo_hit: combo_hit
+  captive_ball_to_left_ramp_combo_hit: combo_hit
+  captive_ball_to_right_ramp_combo_hit: combo_hit
+  captive_ball_to_right_orbit_combo_hit: combo_hit
+  right_ramp_to_inner_loop_combo_hit: combo_hit
+  right_ramp_to_left_orbit_combo_hit: combo_hit
+  right_ramp_to_left_ramp_combo_hit: combo_hit
+  right_ramp_to_captive_ball_combo_hit: combo_hit
+  right_ramp_to_right_orbit_combo_hit: combo_hit
+  right_orbit_to_left_orbit_combo_hit: combo_hit
+  right_orbit_to_left_ramp_combo_hit: combo_hit
+  right_orbit_to_inner_loop_combo_hit: combo_hit
+  right_orbit_to_captive_ball_combo_hit: combo_hit
+  right_orbit_to_right_ramp_combo_hit: combo_hit
+
+show_player:
+  left_orbit_hit:
+    left_orbit_combo_show:
+      action: play
+      loops: -1
+  left_ramp_hit:
+    left_ramp_combo_show:
+      action: play
+      loops: -1
+  inner_loop_hit:
+    inner_loop_combo_show:
+      action: play
+      loops: -1
+  captive_ball_hit:
+    captive_ball_combo_show:
+      action: play
+      loops: -1
+  right_ramp_hit:
+    right_ramp_combo_show:
+      action: play
+      loops: -1
+  right_orbit_hit:
+    right_orbit_combo_show:
+      action: play
+      loops: -1
+  left_orbit_to_inner_loop_combo_timeout:
+    left_orbit_combo_show:
+      action: stop
+  left_orbit_to_left_ramp_combo_timeout:
+    left_orbit_combo_show:
+      action: stop
+  left_orbit_to_captive_ball_combo_timeout:
+    left_orbit_combo_show:
+      action: stop
+  left_orbit_to_right_ramp_combo_timeout:
+    left_orbit_combo_show:
+      action: stop
+  left_orbit_to_right_orbit_combo_timeout:
+    left_orbit_combo_show:
+      action: stop
+  left_orbit_to_inner_loop_combo_hit:
+    left_orbit_combo_show:
+      action: stop
+  left_orbit_to_left_ramp_combo_hit:
+    left_orbit_combo_show:
+      action: stop
+  left_orbit_to_captive_ball_combo_hit:
+    left_orbit_combo_show:
+      action: stop
+  left_orbit_to_right_ramp_combo_hit:
+    left_orbit_combo_show:
+      action: stop
+  left_orbit_to_right_orbit_combo_hit:
+    left_orbit_combo_show:
+      action: stop
+  left_ramp_to_left_orbit_combo_timeout:
+    left_ramp_combo_show:
+      action: stop
+  left_ramp_to_inner_loop_combo_timeout:
+    left_ramp_combo_show:
+      action: stop
+  left_ramp_to_captive_ball_combo_timeout:
+    left_ramp_combo_show:
+      action: stop
+  left_ramp_to_right_ramp_combo_timeout:
+    left_ramp_combo_show:
+      action: stop
+  left_ramp_to_right_orbit_combo_timeout:
+    left_ramp_combo_show:
+      action: stop
+  left_ramp_to_inner_loop_combo_hit:
+    left_ramp_combo_show:
+      action: stop
+  left_ramp_to_left_orbit_combo_hit:
+    left_ramp_combo_show:
+      action: stop
+  left_ramp_to_captive_ball_combo_hit:
+    left_ramp_combo_show:
+      action: stop
+  left_ramp_to_right_ramp_combo_hit:
+    left_ramp_combo_show:
+      action: stop
+  left_ramp_to_right_orbit_combo_hit:
+    left_ramp_combo_show:
+      action: stop
+  inner_loop_to_inner_loop_combo_timeout:
+    inner_loop_combo_show:
+      action: stop
+  inner_loop_to_left_orbit_combo_timeout:
+    inner_loop_combo_show:
+      action: stop
+  inner_loop_to_left_ramp_combo_timeout:
+    inner_loop_combo_show:
+      action: stop
+  inner_loop_to_captive_ball_combo_timeout:
+    inner_loop_combo_show:
+      action: stop
+  inner_loop_to_right_ramp_combo_timeout:
+    inner_loop_combo_show:
+      action: stop
+  inner_loop_to_right_orbit_combo_timeout:
+    inner_loop_combo_show:
+      action: stop
+  inner_loop_to_left_orbit_combo_hit:
+    inner_loop_combo_show:
+      action: stop
+  inner_loop_to_left_ramp_combo_hit:
+    inner_loop_combo_show:
+      action: stop
+  inner_loop_to_captive_ball_combo_hit:
+    inner_loop_combo_show:
+      action: stop
+  inner_loop_to_right_ramp_combo_hit:
+    inner_loop_combo_show:
+      action: stop
+  inner_loop_to_right_orbit_combo_hit:
+    inner_loop_combo_show:
+      action: stop
+  right_ramp_to_inner_loop_combo_timeout:
+    right_ramp_combo_show:
+      action: stop
+  right_ramp_to_left_ramp_combo_timeout:
+    right_ramp_combo_show:
+      action: stop
+  right_ramp_to_captive_ball_combo_timeout:
+    right_ramp_combo_show:
+      action: stop
+  right_ramp_to_left_orbit_combo_timeout:
+    right_ramp_combo_show:
+      action: stop
+  right_ramp_to_right_orbit_combo_timeout:
+    right_ramp_combo_show:
+      action: stop
+  right_ramp_to_inner_loop_combo_hit:
+    right_ramp_combo_show:
+      action: stop
+  right_ramp_to_left_ramp_combo_hit:
+    right_ramp_combo_show:
+      action: stop
+  right_ramp_to_captive_ball_combo_hit:
+    right_ramp_combo_show:
+      action: stop
+  right_ramp_to_left_orbit_combo_hit:
+    right_ramp_combo_show:
+      action: stop
+  right_ramp_to_right_orbit_combo_hit:
+    right_ramp_combo_show:
+      action: stop
+  right_orbit_to_inner_loop_combo_timeout:
+    right_orbit_combo_show:
+      action: stop
+  right_orbit_to_left_ramp_combo_timeout:
+    right_orbit_combo_show:
+      action: stop
+  right_orbit_to_captive_ball_combo_timeout:
+    right_orbit_combo_show:
+      action: stop
+  right_orbit_to_right_ramp_combo_timeout:
+    right_orbit_combo_show:
+      action: stop
+  right_orbit_to_left_orbit_combo_timeout:
+    right_orbit_combo_show:
+      action: stop
+  right_orbit_to_inner_loop_combo_hit:
+    right_orbit_combo_show:
+      action: stop
+  right_orbit_to_left_ramp_combo_hit:
+    right_orbit_combo_show:
+      action: stop
+  right_orbit_to_captive_ball_combo_hit:
+    right_orbit_combo_show:
+      action: stop
+  right_orbit_to_right_ramp_combo_hit:
+    right_orbit_combo_show:
+      action: stop
+  right_orbit_to_left_orbit_combo_hit:
+    right_orbit_combo_show:
+      action: stop
+  captive_ball_to_inner_loop_combo_timeout:
+    captive_ball_combo_show:
+      action: stop
+  captive_ball_to_left_ramp_combo_timeout:
+    captive_ball_combo_show:
+      action: stop
+  captive_ball_to_left_orbit_combo_timeout:
+    captive_ball_combo_show:
+      action: stop
+  captive_ball_to_right_ramp_combo_timeout:
+    captive_ball_combo_show:
+      action: stop
+  captive_ball_to_right_orbit_combo_timeout:
+    captive_ball_combo_show:
+      action: stop
+  captive_ball_to_inner_loop_combo_hit:
+    captive_ball_combo_show:
+      action: stop
+  captive_ball_to_left_ramp_combo_hit:
+    captive_ball_combo_show:
+      action: stop
+  captive_ball_to_left_orbit_combo_hit:
+    captive_ball_combo_show:
+      action: stop
+  captive_ball_to_right_ramp_combo_hit:
+    captive_ball_combo_show:
+      action: stop
+  captive_ball_to_right_orbit_combo_hit:
+    captive_ball_combo_show:
+      action: stop
+
+
+# left_orbit_to_inner_loop_combo_hit, left_orbit_to_left_ramp_combo_hit, left_orbit_to_right_ramp_combo_hit, left_orbit_to_captive_ball_combo_hit, left_ramp_to_left_orbit_combo_hit, left_ramp_to_inner_loop_combo_hit, left_ramp_to_captive_ball_combo_hit, left_ramp_to_right_ramp_combo_hit, left_ramp_to_right_orbit_combo_hit, inner_loop_to_inner_loop_combo_hit, inner_loop_to_left_orbit_combo_hit, inner_loop_to_left_ramp_combo_hit, inner_loop_to_captive_ball_combo_hit, inner_loop_to_right_ramp_combo_hit, inner_loop_to_right_orbit_combo_hit, right_ramp_to_left_orbit_combo_hit, right_ramp_to_left_ramp_combo_hit, right_ramp_to_inner_loop_combo_hit, right_ramp_to_captive_ball_combo_hit, right_ramp_to_right_orbit_combo_hit, right_orbit_to_left_orbit_combo_hit, right_orbit_to_left_ramp_combo_hit, right_orbit_to_inner_loop_combo_hit, right_orbit_to_captive_ball_combo_hit, right_orbit_to_right_ramp_combo_hit

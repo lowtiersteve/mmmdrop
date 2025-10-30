@@ -1,0 +1,18 @@
+#show_version=6
+
+- duration: 500ms
+  lights:
+    l_leftorbitcombo_circle_led: yellow
+    l_leftrampcombo_circle_led: yellow
+    l_innerloopcombo_circle_led: yellow
+    l_rightrampcombo_circle_led: yellow
+    l_captiveball_smallcircle_led: yellow
+- duration: 500ms
+  lights:
+    l_leftorbitcombo_circle_led: off
+    l_leftrampcombo_circle_led: off
+    l_innerloopcombo_circle_led: off
+    l_rightrampcombo_circle_led: off
+    l_captiveball_smallcircle_led: off
+
+

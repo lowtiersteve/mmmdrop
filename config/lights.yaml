@@ -121,6 +121,10 @@ lights:
     number: 30
     subtype: led
     type: rgb
+  l_scoopmode_circle2_led:
+    number: 41
+    subtype: led
+    type: rgb
   l_leftorbitbattery_rectangle_led:
     number: 31
     subtype: led
@@ -161,4 +165,65 @@ lights:
     number: 40
     subtype: led
     type: rgb
+  l_wizardindicator2_rectangle_led:
+    number: 42
+    subtype: led
+    type: rgb
+  l_wizardindicator3_rectangle_led:
+    number: 43
+    subtype: led
+    type: rgb
+  l_supercircle1_led:
+    number: 44
+    subtype: led
+    type: rgb
+  l_supercircle2_led:
+    number: 45
+    subtype: led
+    type: rgb
+  l_supercircle3_led:
+    number: 46
+    subtype: led
+    type: rgb
+  l_supercircle4_led:
+    number: 47
+    subtype: led
+    type: rgb
+  l_supercircle5_led:
+    number: 48
+    subtype: led
+    type: rgb
+  l_cassetteleft_led:
+    number: 49
+    subtype: led
+    type: rgb
+  l_cassetteright_led:
+    number: 50
+    subtype: led
+    type: rgb
+  l_leftramprectangle_led:
+    number: 51
+    subtype: led
+    type: rgb
+  l_rightramprectangle_led:
+    number: 52
+    subtype: led
+    type: rgb
+  l_rightorbitrectangle_led:
+    number: 53
+    subtype: led
+    type: rgb
+  l_tshirttopcircle_led:
+    number: 54
+    subtype: led
+    type: rgb
+  l_tshirtbottomcircle_led:
+    number: 55
+    subtype: led
+    type: rgb
+  l_leftorbit_rectangle_led:
+    number: 56
+    subtype: led
+    type: rgb
+
 

@@ -1,0 +1,9 @@
+#show_version=6
+
+- duration: 750ms
+  lights:
+    l_leftorbit_arrow_led: Gold
+- duration: 750ms
+  lights:
+    l_leftorbit_arrow_led: off
+

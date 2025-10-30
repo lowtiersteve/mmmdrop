@@ -1,0 +1,20 @@
+#show_version=6
+
+- duration: 750ms
+  lights:
+    l_lowerrightstandup_circle_led: lime
+    l_dropstandup_flasher_led: lime
+    l_upperpop_smallarrow_led: lime
+    l_captiveball_smallcircle_led: lime
+    l_tshirttopcircle_led: lime
+    l_tshirtbottomcircle_led: lime
+- duration: 750ms
+  lights:
+    l_lowerrightstandup_circle_led: off
+    l_dropstandup_flasher_led: off
+    l_upperpop_smallarrow_led: off
+    l_captiveball_smallcircle_led: off
+    l_tshirttopcircle_led: off
+    l_tshirtbottomcircle_led: off
+
+

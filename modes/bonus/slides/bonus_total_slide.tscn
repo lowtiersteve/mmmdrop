@@ -1,0 +1,46 @@
+[gd_scene load_steps=5 format=3 uid="uid://dindy1ecnopy2"]
+
+[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_v2xtk"]
+[ext_resource type="Texture2D" uid="uid://bldchd71jvxls" path="res://assets/LicensedToIll.jpg" id="2_23do0"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="3_oau72"]
+[ext_resource type="Script" uid="uid://b3ni1cjx2r6sx" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="4_23do0"]
+
+[node name="bonus_start_slide" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_v2xtk")
+metadata/_custom_type_script = "uid://d15ukepy10pan"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(944, 584)
+scale = Vector2(3.3, 3.3)
+texture = ExtResource("2_23do0")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 376.0
+offset_top = 328.0
+offset_right = 1594.0
+offset_bottom = 467.0
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("3_oau72")
+theme_override_font_sizes/font_size = 136
+text = "Total Bonus:"
+
+[node name="totalscore" type="Label" parent="."]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 568.0
+offset_right = 1896.0
+offset_bottom = 682.0
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("3_oau72")
+theme_override_font_sizes/font_size = 111
+text = "00"
+horizontal_alignment = 1
+script = ExtResource("4_23do0")
+variable_type = 1
+variable_name = "score"
+comma_separate = true
+min_digits = 2
+metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"

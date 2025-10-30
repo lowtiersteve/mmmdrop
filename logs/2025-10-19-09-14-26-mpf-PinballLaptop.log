@@ -1,0 +1,253 @@
+2025-10-19 09:14:26,093 : INFO : root : Loading config.
+2025-10-19 09:14:26,106 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2025-10-19 09:14:26,107 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\19f6d0d7953982fda9d956182316b8e5.mpf_cache
+2025-10-19 09:14:26,267 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\835b5bfea4be8b279a05e96caaaffbbb.mpf_cache
+2025-10-19 09:14:26,277 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\9b0a7575388f9d9bd2f6ab87bf9fd2f7.mpf_cache
+2025-10-19 09:14:26,289 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\c340ec0033d1055cd797ffd5447ef414.mpf_cache
+2025-10-19 09:14:26,300 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\835b5bfea4be8b279a05e96caaaffbbb.mpf_cache
+2025-10-19 09:14:26,302 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\8c11a28e3c38d4ad47947b6a126f2ee9.mpf_cache
+2025-10-19 09:14:26,313 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\e391083cdc9e667060411fe5838e93f2.mpf_cache
+2025-10-19 09:14:26,323 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\f0c219a993d891ee86dcb7eae47dde67.mpf_cache
+2025-10-19 09:14:26,334 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\96aa58108928490b129531848cd9b506.mpf_cache
+2025-10-19 09:14:26,350 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\567636b9d9766e3361204e954a8382da.mpf_cache
+2025-10-19 09:14:26,364 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\d5ead8dff868c6c4b1faf37537a19bc2.mpf_cache
+2025-10-19 09:14:26,377 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\112f935d1c2002cb40d3e6e497be9e7c.mpf_cache
+2025-10-19 09:14:26,393 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\aba0711976820dea629bb4c00b006efc.mpf_cache
+2025-10-19 09:14:26,407 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\de8ed6c6d4c48d1b5b054ff74222cb35.mpf_cache
+2025-10-19 09:14:26,423 : INFO : Machine : Mission Pinball Framework Core Engine v0.80.0.dev9
+2025-10-19 09:14:26,423 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'force_assets_load': False, 'platform_integration_test': False, 'jsonlogging': False, 'logfile': 'logs\\2025-10-19-09-14-26-mpf-PinballLaptop.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': 'smart_virtual', 'syslog_address': None, 'full_logfile_path': 'C:\\venv\\mpf\\mmmdrop\\logs\\2025-10-19-09-14-26-mpf-PinballLaptop.log'}
+2025-10-19 09:14:26,423 : INFO : Machine : MPF path: c:\venv\mpf\lib\site-packages\mpf
+2025-10-19 09:14:26,423 : INFO : Machine : Machine path: C:\venv\mpf\mmmdrop
+2025-10-19 09:14:26,423 : INFO : Machine : Platform: win32
+2025-10-19 09:14:26,424 : INFO : Machine : Python executable location: c:\venv\mpf\Scripts\python.exe
+2025-10-19 09:14:26,424 : INFO : Machine : Python version: 3.9.13 (64-bit)
+2025-10-19 09:14:26,426 : INFO : Machine : Initializing MPF...
+2025-10-19 09:14:26,812 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2025-10-19 09:14:26,853 : INFO : EventManager : Event: ======'machine_var_fast_audio_headphones_volume'====== Args={'value': 10, 'prev_value': None, 'change': True}
+2025-10-19 09:14:26,854 : INFO : EventManager : Event: ======'machine_var_fast_audio_main_volume'====== Args={'value': 44, 'prev_value': None, 'change': True}
+2025-10-19 09:14:26,854 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.55, 'prev_value': None, 'change': True}
+2025-10-19 09:14:26,854 : INFO : EventManager : Event: ======'machine_var_player1_score'====== Args={'value': 6006660, 'prev_value': None, 'change': True}
+2025-10-19 09:14:26,854 : INFO : EventManager : Event: ======'machine_var_game_just_played'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-10-19 09:14:26,854 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'Mission Pinball Framework v0.80.0.dev9', 'prev_value': None, 'change': True}
+2025-10-19 09:14:26,854 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'Mission Pinball Framework v0.80.0.dev9, Config version:6, Show version: 6, BCP version:1.1', 'prev_value': None, 'change': True}
+2025-10-19 09:14:26,854 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.9.13', 'prev_value': None, 'change': True}
+2025-10-19 09:14:26,882 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.26100-SP0', 'prev_value': None, 'change': True}
+2025-10-19 09:14:26,882 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2025-10-19 09:14:26,882 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2025-10-19 09:14:26,882 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.26100', 'prev_value': None, 'change': True}
+2025-10-19 09:14:26,882 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2025-10-19 09:14:26,882 : INFO : EventManager : Event: ======'machine_var_log_file_path'====== Args={'value': 'C:\\venv\\mpf\\mmmdrop\\logs\\2025-10-19-09-14-26-mpf-PinballLaptop.log', 'prev_value': None, 'change': True}
+2025-10-19 09:14:26,882 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2025-10-19 09:14:26,931 : INFO : EventManager : Event: ======'drop_target_bank_three_bank_up'====== Args={}
+2025-10-19 09:14:26,932 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2025-10-19 09:14:26,932 : INFO : SwitchController : Found active switch: ('3208-0', <Platform.SmartVirtual>) <switch.s_trough1>
+2025-10-19 09:14:26,932 : INFO : SwitchController : Found active switch: ('3208-1', <Platform.SmartVirtual>) <switch.s_trough2>
+2025-10-19 09:14:26,932 : INFO : SwitchController : Found active switch: ('3208-2', <Platform.SmartVirtual>) <switch.s_trough3>
+2025-10-19 09:14:26,932 : INFO : SwitchController : Found active switch: ('3208-3', <Platform.SmartVirtual>) <switch.s_trough4>
+2025-10-19 09:14:26,932 : INFO : SwitchController : Found active switch: ('3208-4', <Platform.SmartVirtual>) <switch.s_trough5>
+2025-10-19 09:14:26,932 : INFO : SwitchController : Found active switch: ('3208-5', <Platform.SmartVirtual>) <switch.s_trough6>
+2025-10-19 09:14:26,943 : INFO : EventManager : Event: ======'bcp_connection_attempt'====== Args={'name': 'local_display', 'host': 'localhost', 'port': 5050}
+2025-10-19 09:14:26,945 : INFO : BCPClientSocket : Connecting BCP to 'local_display' at localhost:5050...
+2025-10-19 09:14:36,403 : INFO : BCPClientSocket : Connected BCP to 'local_display' localhost:5050
+2025-10-19 09:14:36,404 : INFO : EventManager : Event: ======'bcp_clients_connected'====== Args={}
+2025-10-19 09:14:36,404 : ERROR : asyncio : Exception in callback EventManager.process_event_queue()
+handle: <Handle EventManager.process_event_queue()>
+Traceback (most recent call last):
+  File "c:\venv\mpf\lib\site-packages\mpf\core\events.py", line 755, in _run_handlers
+    result = handler.callback(**merged_kwargs)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\text_ui.py", line 466, in _bcp_connected
+    self.scene.remove_effect(self._pending_bcp_connection)
+  File "c:\venv\mpf\lib\site-packages\asciimatics\scene.py", line 85, in remove_effect
+    self._effects.remove(effect)
+ValueError: list.remove(x): x not in list
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\events.py", line 846, in process_event_queue
+    self._process_event(event=event[0],
+  File "c:\venv\mpf\lib\site-packages\mpf\core\events.py", line 808, in _process_event
+    result = self._run_handlers(event, ev_type, kwargs)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\events.py", line 757, in _run_handlers
+    raise EventHandlerException(
+mpf.core.events.EventHandlerException: Exception while processing RegisteredHandler(callback=<bound method TextUi._bcp_connected of <mpf.core.text_ui.TextUi object at 0x000002040B979500>>, priority=1, kwargs={}, key=UUID('2985ec19-5eb9-46f3-9bcc-171065784a4c'), condition=None, blocking_facility=None) for event bcp_clients_connected. list.remove(x): x not in list
+2025-10-19 09:14:36,475 : INFO : ball_device.bd_trough : BCH: Initial count: 6
+2025-10-19 09:14:36,475 : INFO : ball_device.bd_trough : State: idle
+2025-10-19 09:14:36,475 : INFO : Machine : Starting the main run loop with active modes: []
+2025-10-19 09:14:36,476 : WARNING : Machine : Attract mode is not active, game will not be playable. Please check your attract mode configuration.
+2025-10-19 09:14:36,476 : INFO : Machine : Shutting down...
+2025-10-19 09:14:36,477 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2025-10-19 09:14:36,478 : INFO : ball_device.bd_plunger : BCH: Initial count: 0
+2025-10-19 09:14:36,478 : INFO : ball_device.bd_plunger : State: idle
+2025-10-19 09:14:36,480 : INFO : ball_device.bd_scoop : BCH: Initial count: 0
+2025-10-19 09:14:36,481 : INFO : ball_device.bd_scoop : State: idle
+2025-10-19 09:14:36,497 : INFO : EventManager : Event: ======'init_phase_3'====== Args={}
+2025-10-19 09:14:36,498 : INFO : EventManager : Event: ======'init_phase_4'====== Args={}
+2025-10-19 09:14:36,500 : ERROR : asyncio : Exception in callback Util.raise_exceptions(<Task finishe...unt_stable'")>) at c:\venv\mpf\lib\site-packages\mpf\core\utility_functions.py:789
+handle: <Handle Util.raise_exceptions(<Task finishe...unt_stable'")>) at c:\venv\mpf\lib\site-packages\mpf\core\utility_functions.py:789>
+Traceback (most recent call last):
+  File "C:\Program Files\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\utility_functions.py", line 797, in raise_exceptions
+    future.result()
+  File "c:\venv\mpf\lib\site-packages\mpf\core\ball_controller.py", line 90, in _add_new_balls_to_playfield
+    self.num_balls_known = await self._count_all_balls_in_devices()
+  File "c:\venv\mpf\lib\site-packages\mpf\core\ball_controller.py", line 129, in _count_all_balls_in_devices
+    futures.append(asyncio.ensure_future(device.ball_count_handler.counter.wait_for_count_stable()))
+AttributeError: 'NoneType' object has no attribute 'wait_for_count_stable'
+2025-10-19 09:14:36,545 : INFO : EventManager : Event: ======'machine_var_audits_events_game_ended'====== Args={'value': 52, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,546 : INFO : EventManager : Event: ======'machine_var_audits_events_game_started'====== Args={'value': 414, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,546 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_captive_ball'====== Args={'value': 5, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,547 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_center_upper_pop'====== Args={'value': 3, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,547 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_inner_orbit'====== Args={'value': 70, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,547 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_left_flipper'====== Args={'value': 17, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,548 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_left_inlane'====== Args={'value': 70, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,548 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_left_orbit'====== Args={'value': 5, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,550 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_left_outlane'====== Args={'value': 158, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,550 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_left_ramp'====== Args={'value': 3, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,550 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_left_slingshot'====== Args={'value': 340, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,551 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_left_upper_pop'====== Args={'value': 5, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,551 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_pop_standup'====== Args={'value': 3, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,552 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_right_flipper'====== Args={'value': 17, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,552 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_right_inlane'====== Args={'value': 70, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,553 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_right_lower_pop'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,553 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_right_orbit'====== Args={'value': 5, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,554 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_right_outlane'====== Args={'value': 225, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,554 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_right_ramp'====== Args={'value': 3, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,554 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_right_slingshot'====== Args={'value': 190, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,555 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_scoop'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,555 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_service_down'====== Args={'value': 59, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,556 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_service_enter'====== Args={'value': 59, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,557 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_service_esc'====== Args={'value': 59, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,557 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_service_up'====== Args={'value': 32, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,558 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_spinner'====== Args={'value': 3, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,558 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_start'====== Args={'value': 3, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,558 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_three_bank_standup'====== Args={'value': 3, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,560 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_tilt_bob'====== Args={'value': 23, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,560 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_top_right_flipper'====== Args={'value': 340, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,561 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_trough2'====== Args={'value': 3, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,561 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_trough3'====== Args={'value': 3, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,562 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_trough4'====== Args={'value': 339, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,562 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_trough5'====== Args={'value': 339, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,563 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_trough6'====== Args={'value': 189, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,563 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_trough_jam'====== Args={'value': 340, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,564 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_tshirt_bottom_standup'====== Args={'value': 5, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,564 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_tshirt_top_standup'====== Args={'value': 5, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,564 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_upper_pop_standup'====== Args={'value': 5, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,564 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_service_esc'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,565 : INFO : EventManager : Event: ======'machine_var_audits_player_score'====== Args={'value': {'average': 6763410, 'top': [147275560, 142237180, 6022290, 6019980, 6019980, 6019980, 6019980, 6019980, 6019980, 6019980], 'total': 53}, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,565 : INFO : EventManager : Event: ======'machine_var_audits_shots_skill_captive'====== Args={'value': 16, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,566 : INFO : EventManager : Event: ======'machine_var_audits_shots_skill_drop_targets'====== Args={'value': 225, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,566 : INFO : EventManager : Event: ======'machine_var_audits_shots_skill_side_targets'====== Args={'value': 27, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,566 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_captive_ball'====== Args={'value': 187, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,566 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_center_upper_pop'====== Args={'value': 219, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,567 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_inner_orbit'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,568 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 1261, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,568 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_inlane'====== Args={'value': 111, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,569 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_orbit'====== Args={'value': 61, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,569 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_outlane'====== Args={'value': 56, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,570 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_ramp'====== Args={'value': 133, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,571 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_slingshot'====== Args={'value': 259, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,571 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_upper_pop'====== Args={'value': 160, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,572 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_plunger'====== Args={'value': 1107, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,572 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pop_standup'====== Args={'value': 120, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,572 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 1535, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,572 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_inlane'====== Args={'value': 107, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,573 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_lower_pop'====== Args={'value': 722, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,573 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_orbit'====== Args={'value': 63, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,574 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_outlane'====== Args={'value': 53, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,575 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_ramp'====== Args={'value': 147, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,575 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_slingshot'====== Args={'value': 366, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,576 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_scoop'====== Args={'value': 336, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,576 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_service_down'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,576 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_service_enter'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,577 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_service_esc'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,577 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_service_up'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,577 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_spinner'====== Args={'value': 2058, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,578 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_start'====== Args={'value': 64, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,579 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_three_bank_bottom'====== Args={'value': 480, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,579 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_three_bank_middle'====== Args={'value': 523, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,580 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_three_bank_standup'====== Args={'value': 237, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,581 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_three_bank_top'====== Args={'value': 522, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,582 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_tilt_bob'====== Args={'value': 45, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,582 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_top_right_flipper'====== Args={'value': 1294, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,583 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough1'====== Args={'value': 348, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,583 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough2'====== Args={'value': 300, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,584 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough3'====== Args={'value': 226, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,584 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough4'====== Args={'value': 160, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,585 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough5'====== Args={'value': 160, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,585 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough6'====== Args={'value': 161, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,585 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough_jam'====== Args={'value': 206, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,586 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_tshirt_bottom_standup'====== Args={'value': 36, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,587 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_tshirt_top_standup'====== Args={'value': 64, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,587 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_upper_pop_standup'====== Args={'value': 173, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,588 : INFO : EventManager : Event: ======'machine_var_audits_switches_service_down'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,588 : INFO : EventManager : Event: ======'machine_var_audits_switches_service_enter'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,588 : INFO : EventManager : Event: ======'machine_var_audits_switches_service_esc'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,590 : INFO : EventManager : Event: ======'machine_var_audits_switches_service_up'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2025-10-19 09:14:36,591 : INFO : EventManager : Event: ======'init_phase_5'====== Args={}
+2025-10-19 09:14:36,593 : ERROR : asyncio : Task was destroyed but it is pending!
+task: <Task pending name='Task-170' coro=<IocpProactor.accept.<locals>.accept_coro() running at C:\Program Files\Python39\lib\asyncio\windows_events.py:571> wait_for=<_OverlappedFuture cancelled>>
+2025-10-19 09:14:36,594 : ERROR : Machine : Runtime Exception
+Traceback (most recent call last):
+  File "c:\venv\mpf\lib\site-packages\mpf\core\events.py", line 755, in _run_handlers
+    result = handler.callback(**merged_kwargs)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\text_ui.py", line 466, in _bcp_connected
+    self.scene.remove_effect(self._pending_bcp_connection)
+  File "c:\venv\mpf\lib\site-packages\asciimatics\scene.py", line 85, in remove_effect
+    self._effects.remove(effect)
+ValueError: list.remove(x): x not in list
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\venv\mpf\lib\site-packages\mpf\core\machine.py", line 808, in _run_loop
+    raise self._exception['exception']
+  File "C:\Program Files\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\events.py", line 846, in process_event_queue
+    self._process_event(event=event[0],
+  File "c:\venv\mpf\lib\site-packages\mpf\core\events.py", line 808, in _process_event
+    result = self._run_handlers(event, ev_type, kwargs)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\events.py", line 757, in _run_handlers
+    raise EventHandlerException(
+mpf.core.events.EventHandlerException: Exception while processing RegisteredHandler(callback=<bound method TextUi._bcp_connected of <mpf.core.text_ui.TextUi object at 0x000002040B979500>>, priority=1, kwargs={}, key=UUID('2985ec19-5eb9-46f3-9bcc-171065784a4c'), condition=None, blocking_facility=None) for event bcp_clients_connected. list.remove(x): x not in list
+2025-10-19 09:14:51,496 : ERROR : root : 
+Traceback (most recent call last):
+  File "c:\venv\mpf\lib\site-packages\mpf\core\events.py", line 755, in _run_handlers
+    result = handler.callback(**merged_kwargs)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\text_ui.py", line 466, in _bcp_connected
+    self.scene.remove_effect(self._pending_bcp_connection)
+  File "c:\venv\mpf\lib\site-packages\asciimatics\scene.py", line 85, in remove_effect
+    self._effects.remove(effect)
+ValueError: list.remove(x): x not in list
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\venv\mpf\lib\site-packages\mpf\core\machine.py", line 808, in _run_loop
+    raise self._exception['exception']
+  File "C:\Program Files\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\events.py", line 846, in process_event_queue
+    self._process_event(event=event[0],
+  File "c:\venv\mpf\lib\site-packages\mpf\core\events.py", line 808, in _process_event
+    result = self._run_handlers(event, ev_type, kwargs)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\events.py", line 757, in _run_handlers
+    raise EventHandlerException(
+mpf.core.events.EventHandlerException: Exception while processing RegisteredHandler(callback=<bound method TextUi._bcp_connected of <mpf.core.text_ui.TextUi object at 0x000002040B979500>>, priority=1, kwargs={}, key=UUID('2985ec19-5eb9-46f3-9bcc-171065784a4c'), condition=None, blocking_facility=None) for event bcp_clients_connected. list.remove(x): x not in list
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\venv\mpf\lib\site-packages\mpf\commands\game.py", line 229, in __init__
+    self.machine.run()
+  File "c:\venv\mpf\lib\site-packages\mpf\core\machine.py", line 704, in run
+    self._run_loop()
+  File "c:\venv\mpf\lib\site-packages\mpf\core\machine.py", line 811, in _run_loop
+    report_crash(self._exception['exception'], "exception_during_run", self.config)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\crash_reporter.py", line 236, in report_crash
+    response = input("Do you want to report the crash to the MPF team (yes/no/show)? ")
+EOFError

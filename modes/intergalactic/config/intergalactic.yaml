@@ -1,7 +1,7 @@
 #config_version=6
 mode:
   start_events: carousel_intergalactic_selected
-  stop_events: mode_intergalactic_stop, timer_intergalactic_time_remaining_complete
+  stop_events: mode_intergalactic_stop, timer_intergalactic_time_remaining_complete, ball_will_end
   priority: 1000
 
 sequences:
@@ -35,9 +35,6 @@ sequences:
     events_when_complete: intergalactic_shot_5_done, mode_intergalactic_stop
     reset_on_complete: False
 
-#show_player:
-#  mode_intergalactic_started:
-#     add light show stuff here
 
 variable_player:
   intergalactic_shot_1_done:
@@ -67,7 +64,6 @@ variable_player:
     mode_blocking_flag:
       int: 1
       action: set
-
 
 slide_player:
   mode_intergalactic_started:
@@ -195,7 +191,63 @@ timers:
         event: intergalactic_shot_5_done
       - action: reset
         event: mode_intergalactic_started
+      - action: add
+        value: 5
+        event: add_intergalactic_time_5s
+      - action: add
+        value: 15
+        event: add_intergalactic_time_15s
 
 event_player:
   timer_intergalactic_time_remaining_complete: mode_intergalactic_failed
   intergalactic_shot_5_done: mode_intergalactic_success
+  pop_standup_hit: add_intergalactic_time_15s
+  intergalactic_shot_1_done: add_intergalactic_time_5s
+  intergalactic_shot_2_done: add_intergalactic_time_5s
+  intergalactic_shot_3_done: add_intergalactic_time_5s
+  intergalactic_shot_4_done: add_intergalactic_time_5s
+
+
+show_player:
+  timer_intergalactic_intro_show_complete:
+    intergalactic_right_shot:
+      action: play
+      loops: -1
+  intergalactic_shot_1_done:
+    intergalactic_right_shot:
+      action: stop
+    intergalactic_left_shot:
+      action: play
+      loops: -1
+  intergalactic_shot_2_done:
+      intergalactic_left_shot:
+        action: stop
+      intergalactic_right_shot:
+        action: play
+        loops: -1
+  intergalactic_shot_3_done:
+    intergalactic_right_shot:
+      action: stop
+    intergalactic_left_shot:
+      action: play
+      loops: -1
+  intergalactic_shot_4_done:
+    intergalactic_left_shot:
+      action: stop
+    intergalactic_final_shot:
+      action: play
+      loops: -1
+
+
+shot_profiles:
+  intergalactic_shot:
+    advance_on_hit: false
+    states:
+      - name: "off"
+        show: "off"
+      - name: lit
+        show: flash_color
+        show_tokens:
+          color: DodgerBlue
+        speed: 2
+    loop: false

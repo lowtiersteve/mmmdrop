@@ -10,24 +10,26 @@ anchors_preset = 0
 script = ExtResource("1_5i820")
 metadata/_custom_type_script = "uid://d15ukepy10pan"
 
-[node name="Sprite2D2" type="Sprite2D" parent="."]
-position = Vector2(976, 520)
-scale = Vector2(0.75, 0.727)
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(960, 552)
+scale = Vector2(0.496805, 0.515647)
 texture = ExtResource("2_5spag")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 582.0
-offset_top = 345.0
-offset_right = 967.0
-offset_bottom = 508.0
+offset_left = 563.0
+offset_top = 392.0
+offset_right = 948.0
+offset_bottom = 555.0
 scale = Vector2(2.13139, 2.00571)
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("2_81mmh")
-theme_override_font_sizes/font_size = 25
+theme_override_font_sizes/font_size = 20
 text = "Skill Shot:
 
-Shoot the
-Side Targets or Drops"
+Choose your
+skill shot
+with the
+flippers!"
 horizontal_alignment = 1
 vertical_alignment = 1

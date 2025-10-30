@@ -1,0 +1,9 @@
+#show_version=6
+
+- duration: 750ms
+  lights:
+    l_rightramp_arrow_led: red
+- duration: 750ms
+  lights:
+    l_rightramp_arrow_led: off
+

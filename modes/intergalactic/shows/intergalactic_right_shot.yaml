@@ -1,0 +1,12 @@
+#show_version=6
+
+- duration: 750ms
+  lights:
+    l_rightorbit_arrow_led: DodgerBlue
+    l_rightramp_arrow_led: DodgerBlue
+- duration: 750ms
+  lights:
+    l_rightorbit_arrow_led: off
+    l_rightramp_arrow_led: off
+
+

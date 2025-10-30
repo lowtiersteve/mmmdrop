@@ -1,7 +1,7 @@
 #config_version=6
 mode:
   start_events: carousel_paulrevere_selected
-  stop_events: mode_paulrevere_stop, timer_paulrevere_time_remaining_complete
+  stop_events: mode_paulrevere_stop, timer_paulrevere_time_remaining_complete, ball_will_end
   priority: 1000
 
 sequences:
@@ -41,10 +41,6 @@ sequences:
     events_when_complete: paulrevere_shot_6_done, mode_paulrevere_stop
     reset_on_complete: False
 
-#show_player:
-#  mode_intergalactic_started:
-#     add light show stuff here
-
 variable_player:
   paulrevere_shot_1_done:
     score: 1000000
@@ -76,6 +72,7 @@ variable_player:
     paulrevere_time_remaining_variable_times_1:
       int: device.timers.paulrevere_time_remaining.ticks * 1
       action: set
+
 
 slide_player:
   mode_paulrevere_started:
@@ -194,6 +191,9 @@ timers:
     control_events:
       - action: start
         event: mode_paulrevere_started
+      - action: jump
+        value: 6
+        event: flipper_cancel
   paulrevere_time_remaining:
     start_value: 60
     end_value: 0
@@ -205,7 +205,68 @@ timers:
         event: paulrevere_shot_6_done
       - action: reset
         event: mode_paulrevere_started
+      - action: add
+        value: 5
+        event: add_paulrevere_time_5s
+      - action: add
+        value: 15
+        event: add_paulrevere_time_15s
 
 event_player:
   timer_paulrevere_time_remaining_complete: mode_paulrevere_failed
   paulrevere_shot_6_done: mode_paulrevere_success
+  paulrevere_shot_1_done: add_paulrevere_time_5s
+  paulrevere_shot_2_done: add_paulrevere_time_5s
+  paulrevere_shot_3_done: add_paulrevere_time_5s
+  paulrevere_shot_4_done: add_paulrevere_time_5s
+  paulrevere_shot_5_done: add_paulrevere_time_5s
+  pop_standup_hit: add_paulrevere_time_15s
+
+show_player:
+  timer_paulrevere_intro_show_complete:
+    paulrevere_left_orbit_shot:
+      action: play
+      loops: -1
+  paulrevere_shot_1_done:
+    paulrevere_left_orbit_shot:
+      action: stop
+    paulrevere_left_ramp_shot:
+      action: play
+      loops: -1
+  paulrevere_shot_2_done:
+      paulrevere_left_ramp_shot:
+        action: stop
+      paulrevere_captive_ball_shot:
+        action: play
+        loops: -1
+  paulrevere_shot_3_done:
+    paulrevere_captive_ball_shot:
+      action: stop
+    paulrevere_right_ramp_shot:
+      action: play
+      loops: -1
+  paulrevere_shot_4_done:
+    paulrevere_right_ramp_shot:
+      action: stop
+    paulrevere_right_orbit_shot:
+      action: play
+      loops: -1
+  paulrevere_shot_5_done:
+    paulrevere_right_orbit_shot:
+      action: stop
+    paulrevere_final_shot:
+      action: play
+      loops: -1
+
+shot_profiles:
+  paulrevere_shot:
+    advance_on_hit: false
+    states:
+      - name: "off"
+        show: "off"
+      - name: lit
+        show: flash_color
+        show_tokens:
+          color: DodgerBlue
+        speed: 2
+    loop: false
