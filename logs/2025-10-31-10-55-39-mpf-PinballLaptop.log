@@ -1,0 +1,10 @@
+2025-10-31 10:55:39,373 : INFO : root : Loading config.
+2025-10-31 10:55:39,394 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2025-10-31 10:55:39,395 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\19f6d0d7953982fda9d956182316b8e5.mpf_cache
+2025-10-31 10:55:39,411 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\config\lights.yaml
+2025-10-31 10:55:39,412 : INFO : ConfigProcessor : Loading config from file c:\venv\mpf\lib\site-packages\mpf\mpfconfig.yaml.
+2025-10-31 10:55:39,442 : INFO : ConfigProcessor : Loading config: c:\venv\mpf\lib\site-packages\mpf\mpfconfig.yaml
+2025-10-31 10:55:39,442 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\config\config.yaml.
+2025-10-31 10:55:39,449 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\config\config.yaml
+2025-10-31 10:55:39,453 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\config\coils.yaml
+2025-10-31 10:55:39,458 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\config\switches.yaml

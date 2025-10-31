@@ -789,7 +789,7 @@ sequences:
   enable_bodymovin_lock_3:
     events:
       - lock_standups_complete{current_player.chcheckitout_multiball_blocking_flag==0}
-    events_when_complete: bodymovin_lock_3_enabled
+    events_when_complete: bodymovin_lock_3_enabled, bodymovin_multiball_qualified
     reset_on_complete: false
     start_enabled: false
     disable_on_complete: true
@@ -894,8 +894,6 @@ blinkenlight_player:
     bl_dropstandup_flasher_led: remove
   mode_makesomenoise_started:
     bl_dropstandup_flasher_led: remove
-
-
   bodymovin_lock_1_enabled:
     bl_scoop_arrow_led: green
   bodymovin_ball_1_locked:
@@ -1039,12 +1037,12 @@ timers:
     start_value: 0
     end_value: 4
     tick_interval: 1s
-    start_running: false
+    start_running: true
     control_events:
       - event: widget_bodymovin_lock_enabled_widget_active
-        action: start
+        action: restart
       - event: widget_bodymovin_multiball_ready_widget_active
-        action: start
+        action: restart
       - event: ball_ending
         action: stop
   bodymovin_ball_1_locked_widget_timer:

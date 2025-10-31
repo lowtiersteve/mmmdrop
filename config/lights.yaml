@@ -13,10 +13,6 @@ lights:
     number: lightboard-1-3
     subtype: led
     type: rgb
-  l_scoop_arrow_led:
-    number: lightboard-8-4
-    subtype: led
-    type: rgb
   l_rightramp_arrow_led:
     number: lightboard-1-4
     subtype: led
@@ -113,16 +109,20 @@ lights:
     number: lightboard-2-11
     subtype: led
     type: rgb
-  l_scoopcombo_circle_led:
-    number: lightboard-8-3
-    subtype: led
-    type: rgb
   l_scoopmode_square_led:
-    number: lightboard-8-1
+    number: lightboard-8-0
     subtype: led
     type: rgb
   l_scoopmode_circle2_led:
+    number: lightboard-8-1
+    subtype: led
+    type: rgb
+  l_scoopcombo_circle_led:
     number: lightboard-8-2
+    subtype: led
+    type: rgb
+  l_scoop_arrow_led:
+    number: lightboard-8-3
     subtype: led
     type: rgb
   l_leftorbitbattery_rectangle_led:
