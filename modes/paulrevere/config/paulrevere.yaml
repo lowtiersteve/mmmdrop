@@ -222,30 +222,29 @@ event_player:
   paulrevere_shot_5_done: add_paulrevere_time_5s
   pop_standup_hit: add_paulrevere_time_15s
 
-show_player:
-  paulrevere_shot_5_done:
-    paulrevere_final_shot:
-      action: play
-      loops: -1
+#show_player:
+#  paulrevere_shot_5_done:
+#    paulrevere_final_shot:
+#      action: play
+#      loops: -1
 
-
-blinkenlight_player:
-  timer_paulrevere_intro_show_complete:
-    bl_leftorbit_arrow_led: gold
-  paulrevere_shot_1_done:
-    bl_leftorbit_arrow_led: remove
-    bl_leftramp_arrow_led: gold
-  paulrevere_shot_2_done:
-    bl_leftramp_arrow_led: remove
-    bl_captiveball_smallcircle_led: gold
-  paulrevere_shot_3_done:
-    bl_captiveball_smallcircle_led: remove
-    bl_rightramp_arrow_led: gold
-  paulrevere_shot_4_done:
-    bl_rightramp_arrow_led: remove
-    bl_rightorbit_arrow_led: gold
-  paulrevere_shot_5_done:
-    bl_rightorbit_arrow_led: remove
+#blinkenlight_player:
+#  timer_paulrevere_intro_show_complete:
+#    bl_leftorbit_arrow_led: gold
+#  paulrevere_shot_1_done:
+#    bl_leftorbit_arrow_led: remove
+#    bl_leftramp_arrow_led: gold
+#  paulrevere_shot_2_done:
+#    bl_leftramp_arrow_led: remove
+#    bl_captiveball_smallcircle_led: gold
+#  paulrevere_shot_3_done:
+#    bl_captiveball_smallcircle_led: remove
+#    bl_rightramp_arrow_led: gold
+#  paulrevere_shot_4_done:
+#    bl_rightramp_arrow_led: remove
+#    bl_rightorbit_arrow_led: gold
+#  paulrevere_shot_5_done:
+#    bl_rightorbit_arrow_led: remove
 
 
 shot_profiles:

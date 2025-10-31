@@ -179,25 +179,25 @@ shot_profiles:
         show: "off"
     loop: false
 
-show_player:
-  tripletrouble_shot_1_done:
-    tripletrouble_final_shot:
-      action: play
-      loops: -1
+#show_player:
+#  tripletrouble_shot_1_done:
+#    tripletrouble_final_shot:
+#      action: play
+#      loops: -1
 
-blinkenlight_player:
-  timer_tripletrouble_intro_show_complete:
-    bl_lowerrightstandup_circle_led: lime
-    bl_dropstandup_flasher_led: lime
-    bl_upperpop_smallarrow_led: lime
-    bl_tshirttopcircle_led: lime
-    bl_tshirtbottomcircle_led: lime
-    bl_captiveball_smallcircle_led: lime
-  tripletrouble_shot_1_done:
-    bl_lowerrightstandup_circle_led: remove
-    bl_dropstandup_flasher_led: remove
-    bl_upperpop_smallarrow_led: remove
-    bl_tshirttopcircle_led: remove
-    bl_tshirtbottomcircle_led: remove
-    bl_captiveball_smallcircle_led: remove
+#blinkenlight_player:
+#  timer_tripletrouble_intro_show_complete:
+#    bl_lowerrightstandup_circle_led: lime
+#    bl_dropstandup_flasher_led: lime
+#    bl_upperpop_smallarrow_led: lime
+#    bl_tshirttopcircle_led: lime
+#    bl_tshirtbottomcircle_led: lime
+#    bl_captiveball_smallcircle_led: lime
+#  tripletrouble_shot_1_done:
+#    bl_lowerrightstandup_circle_led: remove
+#    bl_dropstandup_flasher_led: remove
+#    bl_upperpop_smallarrow_led: remove
+#    bl_tshirttopcircle_led: remove
+#    bl_tshirtbottomcircle_led: remove
+#    bl_captiveball_smallcircle_led: remove
 

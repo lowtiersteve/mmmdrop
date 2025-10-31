@@ -17,32 +17,32 @@ shots:
     switch: s_tshirt_bottom_standup, s_tshirt_top_standup
     profile: skill_shot_profile
     advance_events: advance_skill_side_targets
-    show_tokens:
-      led: l_tshirttopcircle_led, l_tshirtbottomcircle_led
+#    show_tokens:
+#      led: l_tshirttopcircle_led, l_tshirtbottomcircle_led
   skillshot_drop_targets:
     switch: s_three_bank_bottom, s_three_bank_middle, s_three_bank_top
     profile: skill_shot_profile
     advance_events: advance_skill_drop_targets
-    show_tokens:
-      led: l_lowerdrop_circle_led, l_middledrop_circle_led, l_upperdrop_circle_led
+#    show_tokens:
+#      led: l_lowerdrop_circle_led, l_middledrop_circle_led, l_upperdrop_circle_led
   skillshot_hideout_plunge:
     switch: s_scoop
     profile: skill_shot_profile
     advance_events: advance_skill_hideout
-    show_tokens:
-      led: l_innerloop_arrow_led, l_innerloopcombo_circle_led, l_scoop_arrow_led
+#    show_tokens:
+#      led: l_innerloop_arrow_led, l_innerloopcombo_circle_led, l_scoop_arrow_led
   skillshot_left_outlane:
     switch: s_left_outlane
     profile: skill_shot_profile
     advance_events: advance_skill_left_outlane
-    show_tokens:
-      led: l_leftoutlane_circle_led
+#    show_tokens:
+#      led: l_leftoutlane_circle_led
   skillshot_super:
     hit_events: inner_loop_skill_sequence_hit
     profile: skill_shot_profile
     advance_events: advance_skill_super
-    show_tokens:
-      led: l_innerloop_arrow_led, l_innerloopcombo_circle_led, l_rightorbitcombo_circle_led
+#    show_tokens:
+#      led: l_innerloop_arrow_led, l_innerloopcombo_circle_led, l_rightorbitcombo_circle_led
 
 shot_profiles:
   skill_shot_profile:
@@ -52,9 +52,9 @@ shot_profiles:
         show: off
       - name: lit
         show: flash_color
-        show_tokens:
-          color: white
-        speed: 4
+#        show_tokens:
+#          color: white
+#        speed: 4
     loop: true
 
 shot_groups:

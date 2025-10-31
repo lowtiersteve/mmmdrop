@@ -27,13 +27,13 @@ fast:
         model: FP-I/O-0804
         order: 4
 
-  exp:
-    boards:
-      lightboard:
-        model: FP-EXP-0081
-    port: auto
-    baud: 921600
-    debug: False
+#  exp:
+#    boards:
+#      lightboard:
+#        model: FP-EXP-0081
+#    port: auto
+#    baud: 921600
+#    debug: False
 
   aud:
     port: auto
@@ -81,7 +81,7 @@ slide_player:
 config:
   - coils.yaml
   - switches.yaml
-  - lights.yaml
+#  - lights.yaml
 
 machine_vars:
   game_just_played:
