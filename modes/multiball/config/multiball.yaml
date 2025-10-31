@@ -15,12 +15,17 @@ multiballs:
     reset_events: multiball_chcheckitout_ended
     enable_events: chcheckitout_multiball_qualified
   makesomenoise:
-    ball_count: 2
+    ball_count: 4
     start_events: timer_makesomenoise_intro_show_complete
     shoot_again: 15s
     reset_events: multiball_makesomenoise_ended
     enable_events: mode_makesomenoise_starting
-
+  bodymovin:
+    ball_count: 3
+    start_events: bodymovin_start_multiball
+    shoot_again: 15s
+    reset_events: multiball_bodymovin_ended
+    enable_events: bodymovin_multiball_qualified
 
 slide_player:
   multiball_chcheckitout_started:
@@ -48,6 +53,23 @@ slide_player:
     multiball3:
       action: play
       priority: 450000
+  multiball_bodymovin_started:
+    current_mode_highlighted:
+      action: remove
+    base:
+      action: remove
+    basevideo1:
+      action: remove
+    basevideo2:
+      action: remove
+    basevideo3:
+      action: remove
+    basevideo4:
+      action: remove
+    bodymovin:
+      action: play
+      priority: 450000
+
 
 sound_player:
   multiball_chcheckitout_started{current_player.mode_blocking_flag==0}:
@@ -55,20 +77,39 @@ sound_player:
       action: play
       bus: music
       loops: 5
+  multiball_bodymovin_started{current_player.mode_blocking_flag==0}:
+    bodymovinmultiballmusic:
+      action: play
+      bus: music
+      loops: 5
 
 variable_player:
   multiball_chcheckitout_started:
-    multiball_blocking_flag:
+    chcheckitout_multiball_blocking_flag:
       int: 1
       action: set
   multiball_chcheckitout_ended:
-    multiball_blocking_flag:
+    chcheckitout_multiball_blocking_flag:
+      int: 0
+      action: set
+  multiball_bodymovin_started:
+    bodymovin_multiball_blocking_flag:
+      int: 1
+      action: set
+  multiball_bodymovin_ended:
+    bodymovin_multiball_blocking_flag:
       int: 0
       action: set
   chcheckitout_jackpot_hit:
     score: 500000
     multiball_chcheckitout_score: 500000
   chcheckitout_superjackpot_hit:
+    score: 2000000
+    multiball_chcheckitout_score: 2000000
+  bodymovin_jackpot_hit:
+    score: 500000
+    multiball_chcheckitout_score: 500000
+  bodymovin_superjackpot_hit:
     score: 2000000
     multiball_chcheckitout_score: 2000000
 
@@ -81,6 +122,14 @@ accruals:
       - chcheckitout_rightorbit_jackpot_hit
     events_when_complete: chcheckitout_superjackpot_lit
     restart_events: chcheckitout_superjackpot_hit
+  completing_bodymovin_jackpots:
+    events:
+      - bodymovin_leftorbit_jackpot_hit
+      - bodymovin_leftramp_jackpot_hit
+      - bodymovin_rightramp_jackpot_hit
+      - bodymovin_rightorbit_jackpot_hit
+    events_when_complete: bodymovin_superjackpot_lit
+    restart_events: bodymovin_superjackpot_hit
 
 sequences:
   chcheckitout_superjackpot:
@@ -118,17 +167,60 @@ sequences:
     events_when_complete: chcheckitout_rightorbit_jackpot_hit, chcheckitout_jackpot_hit
     reset_on_complete: false
     restart_events: chcheckitout_superjackpot_hit
+  bodymovin_superjackpot:
+    events:
+      - inner_loop_hit
+    enable_events: bodymovin_superjackpot_lit
+    events_when_complete: bodymovin_superjackpot_hit
+    reset_on_complete: True
+    restart_events: bodymovin_superjackpot_lit
+  bodymovin_leftorbit_jackpot:
+    events:
+      - left_orbit_hit
+    enable_events: multiball_bodymovin_started, bodymovin_superjackpot_hit
+    events_when_complete: bodymovin_leftorbit_jackpot_hit, bodymovin_jackpot_hit
+    reset_on_complete: false
+    restart_events: bodymovin_superjackpot_hit
+  bodymovin_leftramp_jackpot:
+    events:
+      - left_ramp_hit
+    enable_events: multiball_bodymovin_started, bodymovin_superjackpot_hit
+    events_when_complete: bodymovin_leftramp_jackpot_hit, bodymovin_jackpot_hit
+    reset_on_complete: false
+    restart_events: bodymovin_superjackpot_hit
+  bodymovin_rightramp_jackpot:
+    events:
+      - right_ramp_hit
+    enable_events: multiball_bodymovin_started, bodymovin_superjackpot_hit
+    events_when_complete: bodymovin_rightramp_jackpot_hit, bodymovin_jackpot_hit
+    reset_on_complete: false
+    restart_events: bodymovin_superjackpot_hit
+  bodymovin_rightorbit_jackpot:
+    events:
+      - right_orbit_hit
+    enable_events: multiball_bodymovin_started, bodymovin_superjackpot_hit
+    events_when_complete: bodymovin_rightorbit_jackpot_hit, bodymovin_jackpot_hit
+    reset_on_complete: false
+    restart_events: bodymovin_superjackpot_hit
 
 show_player:
   chcheckitout_superjackpot_lit:
     chcheckitout_inner_loop_shot:
       action: play
-      loops: -1
   chcheckitout_superjackpot_hit:
     chcheckitout_inner_loop_shot:
       action: stop
   multiball_chcheckitout_ended:
     chcheckitout_inner_loop_shot:
+      action: stop
+  bodymovin_superjackpot_lit:
+    bodymovin_inner_loop_shot:
+      action: play
+  bodymovin_superjackpot_hit:
+    bodymovin_inner_loop_shot:
+      action: stop
+  multiball_bodymovin_ended:
+    bodymovin_inner_loop_shot:
       action: stop
 
 blinkenlight_player:
@@ -151,6 +243,29 @@ blinkenlight_player:
     bl_rightramp_arrow_led: red
     bl_rightorbit_arrow_led: red
   multiball_chcheckitout_ended:
+    bl_leftorbit_arrow_led: remove
+    bl_leftramp_arrow_led: remove
+    bl_rightramp_arrow_led: remove
+    bl_rightorbit_arrow_led: remove
+  multiball_bodymovin_started:
+    bl_leftorbit_arrow_led: green
+    bl_leftramp_arrow_led: green
+    bl_rightramp_arrow_led: green
+    bl_rightorbit_arrow_led: green
+  bodymovin_leftorbit_jackpot_hit:
+    bl_leftorbit_arrow_led: remove
+  bodymovin_leftramp_jackpot_hit:
+    bl_leftramp_arrow_led: remove
+  bodymovin_rightramp_jackpot_hit:
+    bl_rightramp_arrow_led: remove
+  bodymovin_rightorbit_jackpot_hit:
+    bl_rightorbit_arrow_led: remove
+  bodymovin_superjackpot_hit:
+    bl_leftorbit_arrow_led: green
+    bl_leftramp_arrow_led: green
+    bl_rightramp_arrow_led: green
+    bl_rightorbit_arrow_led: green
+  multiball_bodymovin_ended:
     bl_leftorbit_arrow_led: remove
     bl_leftramp_arrow_led: remove
     bl_rightramp_arrow_led: remove

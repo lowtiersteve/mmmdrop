@@ -66,7 +66,7 @@ shots:
     show_tokens:
       led: l_dropstandup_flasher_led
       color: green
-    profile: multiball_standup_profile
+    profile: ball_lock_profile
     advance_events: logicblock_qualify_chcheckitout_multiball_hit, multiball_chcheckitout_started
   spinner:
     switch: s_spinner
@@ -103,13 +103,13 @@ shots:
     show_tokens:
       led: l_tshirttopcircle_led
       color: green
-    profile: base_shot_profile
+    profile: ball_lock_profile
   tshirt_bottom_standup:
     switch: s_tshirt_bottom_standup
     show_tokens:
       led: l_tshirtbottomcircle_led
       color: green
-    profile: base_shot_profile
+    profile: ball_lock_profile
   left_outlane:
     switch: s_left_outlane
     show_tokens:
@@ -143,14 +143,14 @@ shot_profiles:
       - name: off
         show: "off"
     loop: false
-  multiball_standup_profile:
-    advance_on_hit: false
+  ball_lock_profile:
+    advance_on_hit: true
     states:
-      - name: off
-        show: "off"
-      - name: flash
+      - name: "flash"
         show: "flash_color"
-    loop: true
+      - name: "on"
+        show: "led_color"
+    loop: false
   lane_profile:
     states:
       - name: unlit
@@ -166,6 +166,10 @@ shot_groups:
     rotate_right_events: s_right_flipper_active
     reset_events:
       sg_lanes_lit_complete: 1s
+  sg_tshirts:
+    shots: tshirt_top_standup, tshirt_bottom_standup
+    restart_events: bodymovin_ball_1_locked, bodymovin_ball_2_locked, multiball_bodymovin_ended, ball_started{current_player.ball==1}
+    disable_events: bodymovin_lock_1_enabled, bodymovin_lock_2_enabled, bodymovin_lock_3_enabled
 
 
 slide_player:
@@ -270,7 +274,7 @@ slide_player:
       action: play
       priority: 1000000
       expire: 2s
-  multiball_chcheckitout_ended:
+  multiball_chcheckitout_ended{current_player.mode_blocking_flag==0}:
     multiball1:
       action: remove
     multiball2:
@@ -280,12 +284,30 @@ slide_player:
     base:
       action: play
       priority: 5000
+  multiball_chcheckitout_ended{current_player.mode_blocking_flag==1}:
+    multiball1:
+      action: remove
+    multiball2:
+      action: remove
+    multiball3:
+      action: remove
+  multiball_bodymovin_ended{current_player.mode_blocking_flag==0}:
+    bodymovin:
+      action: remove
+    base:
+      action: play
+      priority: 5000
+  multiball_bodymovin_ended{current_player.mode_blocking_flag==1}:
+    bodymovin:
+      action: remove
   ball_will_end:
     multiball1:
       action: remove
     multiball2:
       action: remove
     multiball3:
+      action: remove
+    bodymovin:
       action: remove
     base:
       action: remove
@@ -409,23 +431,33 @@ sound_player:
     paulrevere_music:
       action: stop
       bus: music
-  mode_paulrevere_success{current_player.multiball_blocking_flag==0}:
+  mode_paulrevere_success{current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     base_game_random_music:
       action: play
       bus: music
       loops: 14
-  mode_paulrevere_success{current_player.multiball_blocking_flag==1}:
+  mode_paulrevere_success{current_player.chcheckitout_multiball_blocking_flag==1}:
     chcheckitoutmultiballmusic:
       action: play
       bus: music
       loops: 5
-  mode_paulrevere_failed{current_player.multiball_blocking_flag==0}:
+  mode_paulrevere_success{current_player.bodymovin_multiball_blocking_flag==1}:
+    bodymovinmultiballmusic:
+      action: play
+      bus: music
+      loops: 5
+  mode_paulrevere_failed{current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     base_game_random_music:
       action: play
       bus: music
       loops: 13
-  mode_paulrevere_failed{current_player.multiball_blocking_flag==1}:
+  mode_paulrevere_failed{current_player.chcheckitout_multiball_blocking_flag==1}:
     chcheckitoutmultiballmusic:
+      action: play
+      bus: music
+      loops: 5
+  mode_paulrevere_failed{current_player.bodymovin_multiball_blocking_flag==1}:
+    bodymovinmultiballmusic:
       action: play
       bus: music
       loops: 5
@@ -433,23 +465,33 @@ sound_player:
     intergalacticmusic:
       action: stop
       bus: music
-  mode_intergalactic_success{current_player.multiball_blocking_flag==0}:
+  mode_intergalactic_success{current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     base_game_random_music:
       action: play
       bus: music
       loops: 14
-  mode_intergalactic_success{current_player.multiball_blocking_flag==1}:
+  mode_intergalactic_success{current_player.chcheckitout_multiball_blocking_flag==1}:
     chcheckitoutmultiballmusic:
       action: play
       bus: music
       loops: 5
-  mode_intergalactic_failed{current_player.multiball_blocking_flag==0}:
+  mode_intergalactic_success{current_player.bodymovin_multiball_blocking_flag==1}:
+    bodymovinmultiballmusic:
+      action: play
+      bus: music
+      loops: 5
+  mode_intergalactic_failed{current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     base_game_random_music:
       action: play
       bus: music
       loops: 13
-  mode_intergalactic_failed{current_player.multiball_blocking_flag==1}:
+  mode_intergalactic_failed{current_player.chcheckitout_multiball_blocking_flag==1}:
     chcheckitoutmultiballmusic:
+      action: play
+      bus: music
+      loops: 5
+  mode_intergalactic_failed{current_player.bodymovin_multiball_blocking_flag==1}:
+    bodymovinmultiballmusic:
       action: play
       bus: music
       loops: 5
@@ -457,8 +499,20 @@ sound_player:
     base_game_random_music:
       action: stop
       bus: music
+  multiball_bodymovin_started{current_player.mode_blocking_flag==0}:
+    base_game_random_music:
+      action: stop
+      bus: music
   multiball_chcheckitout_ended{current_player.mode_blocking_flag==0}:
     chcheckitoutmultiballmusic:
+      action: stop
+      bus: music
+    base_game_random_music:
+      action: play
+      bus: music
+      loops: 13
+  multiball_bodymovin_ended{current_player.mode_blocking_flag==0}:
+    bodymovinmultiballmusic:
       action: stop
       bus: music
     base_game_random_music:
@@ -473,28 +527,41 @@ sound_player:
     tripletroublemusic:
       action: stop
       bus: music
-  mode_tripletrouble_success{current_player.multiball_blocking_flag==0}:
+  mode_tripletrouble_success{current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     base_game_random_music:
       action: play
       bus: music
       loops: 14
-  mode_tripletrouble_success{current_player.multiball_blocking_flag==1}:
+  mode_tripletrouble_success{current_player.chcheckitout_multiball_blocking_flag==1}:
     chcheckitoutmultiballmusic:
       action: play
       bus: music
       loops: 5
-  mode_tripletrouble_failed{current_player.multiball_blocking_flag==0}:
+  mode_tripletrouble_success{current_player.bodymovin_multiball_blocking_flag==1}:
+    bodymovinmultiballmusic:
+      action: play
+      bus: music
+      loops: 5
+  mode_tripletrouble_failed{current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     base_game_random_music:
       action: play
       bus: music
       loops: 13
-  mode_tripletrouble_failed{current_player.multiball_blocking_flag==1}:
+  mode_tripletrouble_failed{current_player.chcheckitout_multiball_blocking_flag==1}:
     chcheckitoutmultiballmusic:
+      action: play
+      bus: music
+      loops: 5
+  mode_tripletrouble_failed{current_player.bodymovin_multiball_blocking_flag==1}:
+    bodymovinmultiballmusic:
       action: play
       bus: music
       loops: 5
   ball_will_end:
     chcheckitoutmultiballmusic:
+      action: stop
+      bus: music
+    bodymovinmultiballmusic:
       action: stop
       bus: music
     base_game_random_music:
@@ -549,9 +616,9 @@ variable_player:
     score: 2220
   scoop_hit:
     score: 2310
-  s_tshirt_top_standup_active:
+  tshirt_top_standup_hit:
     score: 5010
-  s_tshirt_bottom_standup_active:
+  tshirt_bottom_standup_hit:
     score: 5010
   three_bank_standup_hit:
     score: 20010
@@ -576,7 +643,10 @@ variable_player:
       int: value
       action: set
   ball_started:
-    multiball_blocking_flag:
+    chcheckitout_multiball_blocking_flag:
+      int: value
+      action: set
+    bodymovin_multiball_blocking_flag:
       int: value
       action: set
     mode_blocking_flag:
@@ -633,6 +703,10 @@ variable_player:
     multiball_chcheckitout_score:
       int: 0
       action: set
+  multiball_bodymovin_started:
+    multiball_bodymovin_score:
+      int: 0
+      action: set
   mode_tripletrouble_started:
     mode_tripletrouble_score:
       int: 0
@@ -670,16 +744,70 @@ sequences:
     reset_events: ball_started
   chcheckitout_multiball_ready:
     events:
-      - three_bank_standup_hit
+      - three_bank_standup_hit{current_player.bodymovin_multiball_blocking_flag==0}
     enable_events: drops_standup_start_multiball
     events_when_complete: chcheckitout_start_multiball
     reset_on_complete: true
     disable_on_complete: false
     reset_events: ball_started
+  enable_bodymovin_lock_1:
+    events:
+      - lock_standups_complete{current_player.chcheckitout_multiball_blocking_flag==0}
+    events_when_complete: bodymovin_lock_1_enabled
+    reset_on_complete: false
+    start_enabled: false
+    disable_on_complete: true
+    persist_state: true
+    restart_events: multiball_bodymovin_ended, ball_started{current_player.ball==1}
+  bodymovin_lock_1:
+    events:
+      - scoop_hit{current_player.chcheckitout_multiball_blocking_flag==0}
+    events_when_complete: bodymovin_ball_1_locked
+    reset_on_complete: false
+    start_enabled: false
+    disable_on_complete: true
+    persist_state: true
+    restart_events: bodymovin_lock_1_enabled
+  enable_bodymovin_lock_2:
+    events:
+      - lock_standups_complete{current_player.chcheckitout_multiball_blocking_flag==0}
+    events_when_complete: bodymovin_lock_2_enabled
+    reset_on_complete: false
+    start_enabled: false
+    disable_on_complete: true
+    persist_state: true
+    restart_events: bodymovin_ball_1_locked
+  bodymovin_lock_2:
+    events:
+      - scoop_hit{current_player.chcheckitout_multiball_blocking_flag==0}
+    events_when_complete: bodymovin_ball_2_locked
+    reset_on_complete: false
+    start_enabled: false
+    disable_on_complete: true
+    persist_state: true
+    restart_events: bodymovin_lock_2_enabled
+  enable_bodymovin_lock_3:
+    events:
+      - lock_standups_complete{current_player.chcheckitout_multiball_blocking_flag==0}
+    events_when_complete: bodymovin_lock_3_enabled
+    reset_on_complete: false
+    start_enabled: false
+    disable_on_complete: true
+    persist_state: true
+    restart_events: bodymovin_ball_2_locked
+  bodymovin_multiball_ready:
+    events:
+      - scoop_hit{current_player.chcheckitout_multiball_blocking_flag==0}
+    enable_events: bodymovin_lock_3_enabled
+    events_when_complete: bodymovin_start_multiball
+    reset_on_complete: true
+    disable_on_complete: true
+    persist_state: true
+    restart_events: bodymovin_lock_3_enabled
 
 counters:
   drop_target_bank_counter:
-    count_events: drop_target_bank_three_bank_down
+    count_events: drop_target_bank_three_bank_down{current_player.bodymovin_multiball_blocking_flag==0}
     events_when_complete: chcheckitout_multiball_qualified
     starting_count: 0
     count_complete_value: 1
@@ -688,8 +816,8 @@ counters:
     persist_state: false
     disable_on_complete: false
     reset_on_complete: false
-    disable_events: multiball_chcheckitout_started, mode_makesomenoise_started
-    enable_events: ball_started, mode_makesomenoise_stopped
+    disable_events: multiball_chcheckitout_started, mode_makesomenoise_started, multiball_bodymovin_started
+    enable_events: ball_started, mode_makesomenoise_stopped, multiball_bodymovin_ended
     restart_events: multiball_chcheckitout_ended
     control_events:
       - event: reset_drop_target_bank_counter
@@ -767,6 +895,21 @@ blinkenlight_player:
   mode_makesomenoise_started:
     bl_dropstandup_flasher_led: remove
 
+
+  bodymovin_lock_1_enabled:
+    bl_scoop_arrow_led: green
+  bodymovin_ball_1_locked:
+    bl_scoop_arrow_led: remove
+  bodymovin_lock_2_enabled:
+    bl_scoop_arrow_led: green
+  bodymovin_ball_2_locked:
+    bl_scoop_arrow_led: remove
+  bodymovin_lock_3_enabled:
+    bl_scoop_arrow_led: green
+  multiball_bodymovin_started:
+    bl_scoop_arrow_led: remove
+
+
 widget_player:
   multiball_chcheckitout_ended:
     chcheckitoutfinish:
@@ -776,8 +919,18 @@ widget_player:
   timer_chcheckitoutfinish_widget_timer_complete:
     chcheckitoutfinish:
       action: remove
+  multiball_bodymovin_ended:
+    bodymovinfinish:
+      action: play
+      slide: base
+      priority: 975000
+  timer_bodymovinfinish_widget_timer_complete:
+    bodymovinfinish:
+      action: remove
   ball_will_end:
     chcheckitoutfinish:
+      action: remove
+    bodymovinfinish:
       action: remove
     left_outlane:
       action: remove
@@ -828,6 +981,37 @@ widget_player:
       action: remove
     right_outlane:
       action: remove
+  bodymovin_lock_1_enabled:
+    bodymovin_lock_enabled_widget:
+      action: play
+      priority: 950000
+  bodymovin_lock_2_enabled:
+    bodymovin_lock_enabled_widget:
+      action: play
+      priority: 950000
+  bodymovin_lock_3_enabled:
+    bodymovin_multiball_ready_widget:
+      action: play
+      priority: 950000
+  bodymovin_ball_1_locked:
+    bodymovin_ball_1_locked_widget:
+      action: play
+      priority: 950000
+  bodymovin_ball_2_locked:
+    bodymovin_ball_2_locked_widget:
+      action: play
+      priority: 950000
+  timer_bodymovin_lock_enabled_widget_timer_complete:
+    bodymovin_lock_enabled_widget:
+      action: remove
+    bodymovin_multiball_ready_widget:
+      action: remove
+  timer_bodymovin_ball_1_locked_widget_timer_complete:
+    bodymovin_ball_1_locked_widget:
+      action: remove
+  timer_bodymovin_ball_2_locked_widget_timer_complete:
+    bodymovin_ball_2_locked_widget:
+      action: remove
 
 
 timers:
@@ -838,6 +1022,48 @@ timers:
     start_running: false
     control_events:
       - event: widget_chcheckitoutfinish_active
+        action: start
+      - event: ball_ending
+        action: stop
+  bodymovin_widget_timer:
+    start_value: 0
+    end_value: 5
+    tick_interval: 1s
+    start_running: false
+    control_events:
+      - event: widget_bodymovinfinish_active
+        action: start
+      - event: ball_ending
+        action: stop
+  bodymovin_lock_enabled_widget_timer:
+    start_value: 0
+    end_value: 4
+    tick_interval: 1s
+    start_running: false
+    control_events:
+      - event: widget_bodymovin_lock_enabled_widget_active
+        action: start
+      - event: widget_bodymovin_multiball_ready_widget_active
+        action: start
+      - event: ball_ending
+        action: stop
+  bodymovin_ball_1_locked_widget_timer:
+    start_value: 0
+    end_value: 4
+    tick_interval: 1s
+    start_running: false
+    control_events:
+      - event: widget_bodymovin_ball_1_locked_widget_active
+        action: start
+      - event: ball_ending
+        action: stop
+  bodymovin_ball_2_locked_widget_timer:
+    start_value: 0
+    end_value: 4
+    tick_interval: 1s
+    start_running: false
+    control_events:
+      - event: widget_bodymovin_ball_2_locked_widget_active
         action: start
       - event: ball_ending
         action: stop
@@ -894,9 +1120,19 @@ achievements:
     reset_events: game_start_over
     start_enabled: true
     restart_on_next_ball_when_started: true
+  bodymovin_multiball:
+    show_tokens:
+      lights: l_cassetteright_led
+    show_when_started: flash
+    show_when_completed: on
+    start_events: multiball_bodymovin_started
+    complete_events: bodymovin_superjackpot_hit
+    reset_events: game_start_over
+    start_enabled: true
+    restart_on_next_ball_when_started: true
 
 event_player:
   multiball_chcheckitout_ended: reset_drop_target_bank_counter
   achievement_wizard1_state_enabled: stop_carousel
   sg_lanes_lit_complete: add_bonus_x
-
+  sg_tshirts_on_complete: lock_standups_complete

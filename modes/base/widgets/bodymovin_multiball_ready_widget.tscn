@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=3 uid="uid://dmioe1inhwofy"]
+
+[ext_resource type="Script" uid="uid://bp5npfvnd6fvx" path="res://addons/mpf-gmc/classes/mpf_widget.gd" id="1_ucind"]
+[ext_resource type="Texture2D" uid="uid://dt7hpexqpath5" path="res://assets/action_bubble.png" id="2_8prjb"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="3_0550p"]
+
+[node name="bodymovin_lock_enabled_widget" type="Control"]
+top_level = true
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_ucind")
+metadata/_custom_type_script = "uid://bp5npfvnd6fvx"
+
+[node name="ActionImage" type="Sprite2D" parent="."]
+position = Vector2(1480.33, 778.25)
+scale = Vector2(0.444077, 0.267791)
+texture = ExtResource("2_8prjb")
+
+[node name="multiballready" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1104.0
+offset_top = 664.0
+offset_right = 1513.0
+offset_bottom = 792.0
+scale = Vector2(1.87781, 1.71507)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("3_0550p")
+theme_override_font_sizes/font_size = 25
+text = "body movin'
+
+multiball
+ready"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true

@@ -1,0 +1,214 @@
+2025-10-30 19:50:15,202 : INFO : root : Loading config.
+2025-10-30 19:50:15,219 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2025-10-30 19:50:15,220 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\19f6d0d7953982fda9d956182316b8e5.mpf_cache
+2025-10-30 19:50:15,365 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\835b5bfea4be8b279a05e96caaaffbbb.mpf_cache
+2025-10-30 19:50:15,383 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\9b0a7575388f9d9bd2f6ab87bf9fd2f7.mpf_cache
+2025-10-30 19:50:15,399 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\base\config\base.yaml
+2025-10-30 19:50:15,399 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\base\config\base.yaml.
+2025-10-30 19:50:15,420 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\base\config\base.yaml
+2025-10-30 19:50:15,422 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\c340ec0033d1055cd797ffd5447ef414.mpf_cache
+2025-10-30 19:50:15,424 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\835b5bfea4be8b279a05e96caaaffbbb.mpf_cache
+2025-10-30 19:50:15,425 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\8c11a28e3c38d4ad47947b6a126f2ee9.mpf_cache
+2025-10-30 19:50:15,437 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\multiball\config\multiball.yaml
+2025-10-30 19:50:15,438 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\multiball\config\multiball.yaml.
+2025-10-30 19:50:15,443 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\multiball\config\multiball.yaml
+2025-10-30 19:50:15,445 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\e391083cdc9e667060411fe5838e93f2.mpf_cache
+2025-10-30 19:50:15,446 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\carousel\config\carousel.yaml
+2025-10-30 19:50:15,446 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\carousel\config\carousel.yaml.
+2025-10-30 19:50:15,448 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\carousel\config\carousel.yaml
+2025-10-30 19:50:15,449 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\f0c219a993d891ee86dcb7eae47dde67.mpf_cache
+2025-10-30 19:50:15,450 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\96aa58108928490b129531848cd9b506.mpf_cache
+2025-10-30 19:50:15,467 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\567636b9d9766e3361204e954a8382da.mpf_cache
+2025-10-30 19:50:15,483 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\d5ead8dff868c6c4b1faf37537a19bc2.mpf_cache
+2025-10-30 19:50:15,496 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\makesomenoise\config\makesomenoise.yaml
+2025-10-30 19:50:15,496 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\makesomenoise\config\makesomenoise.yaml.
+2025-10-30 19:50:15,518 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\makesomenoise\config\makesomenoise.yaml
+2025-10-30 19:50:15,520 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\112f935d1c2002cb40d3e6e497be9e7c.mpf_cache
+2025-10-30 19:50:15,522 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\aba0711976820dea629bb4c00b006efc.mpf_cache
+2025-10-30 19:50:15,535 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\de8ed6c6d4c48d1b5b054ff74222cb35.mpf_cache
+2025-10-30 19:50:15,550 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\5db6c64b0c3bca58d6bbb0f959e933ad.mpf_cache
+2025-10-30 19:50:15,564 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\3eebd8fc985a6907aa555c0256177d6c.mpf_cache
+2025-10-30 19:50:15,579 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\e6b55d6a1c06b0dd6369c964181bf8d3.mpf_cache
+2025-10-30 19:50:15,593 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\2eef6648f7190b215d7c16d8157b8208.mpf_cache
+2025-10-30 19:50:15,605 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\5a7ad07f75832c2fa569d8508186f943.mpf_cache
+2025-10-30 19:50:15,617 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\711653a87803a851864824c720cfa295.mpf_cache
+2025-10-30 19:50:15,629 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\b049f3bb793752455511c0ce4851dcec.mpf_cache
+2025-10-30 19:50:15,641 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\141b19e6c0168c485bbb38b6543175a8.mpf_cache
+2025-10-30 19:50:15,654 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\4e6dd3b0a361d042ad5ab93a8cc8b437.mpf_cache
+2025-10-30 19:50:15,666 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\e97c871403fe82070ff249d62d7cfe22.mpf_cache
+2025-10-30 19:50:15,678 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\64b6da5876f56fc970400d85dfe882ec.mpf_cache
+2025-10-30 19:50:15,691 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\c5a11fc9367393a964e333a780e846f7.mpf_cache
+2025-10-30 19:50:15,708 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\2816335dd466496617c9461f091e66f7.mpf_cache
+2025-10-30 19:50:15,723 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\6359f7257429add2d261e94bcafd60d5.mpf_cache
+2025-10-30 19:50:15,738 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\bed2bac5ea254e8ca98f6dd45e865fd8.mpf_cache
+2025-10-30 19:50:15,752 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\48e8797b77339ec89f8005d20046fbbb.mpf_cache
+2025-10-30 19:50:15,765 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\b0b8ed4dbd306ac2f063788d81ec6bc4.mpf_cache
+2025-10-30 19:50:15,781 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\98b42cbd2eba7845afea8d7862634639.mpf_cache
+2025-10-30 19:50:15,798 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\44893055a228bb5e0381bfc6f9c0abd7.mpf_cache
+2025-10-30 19:50:15,811 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\e134e8f85ba8fa9c3d7f1500ca292437.mpf_cache
+2025-10-30 19:50:15,825 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\b24b6909ee6e0520126bbce60d1ed210.mpf_cache
+2025-10-30 19:50:15,840 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\cba807ea4a81180f6dd01afffacec8ed.mpf_cache
+2025-10-30 19:50:15,856 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\multiball\shows\.\bodymovin_inner_loop_shot.yaml.
+2025-10-30 19:50:15,858 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\multiball\shows\.\bodymovin_inner_loop_shot.yaml
+2025-10-30 19:50:15,859 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\53e749a0c04d997040a6edc556572299.mpf_cache
+2025-10-30 19:50:15,860 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\f4dd4d2b5212b72c6e9e67ac9e704e63.mpf_cache
+2025-10-30 19:50:15,871 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\b47d9bb1214e11383bf30352af24a7d5.mpf_cache
+2025-10-30 19:50:15,882 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\23d7d59c131357e53b11dbd4a18e6a94.mpf_cache
+2025-10-30 19:50:15,893 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\4233704904419fdd214152084a83fec1.mpf_cache
+2025-10-30 19:50:15,905 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\989ee664052248e9552213e43037a565.mpf_cache
+2025-10-30 19:50:15,916 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\428bc1fa3c6dcaec1d63d9276cdb6405.mpf_cache
+2025-10-30 19:50:15,928 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\f071e720e1ef2a753ced60502153911a.mpf_cache
+2025-10-30 19:50:15,942 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\a464c65b0880a71dbe3e02b1f7271abd.mpf_cache
+2025-10-30 19:50:15,956 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\b4bf5fa77bdb26872f42159f572a3499.mpf_cache
+2025-10-30 19:50:15,970 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\cd6f6abb19272a94675a232f8f899ac9.mpf_cache
+2025-10-30 19:50:15,986 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\cbc61a9ec21d345237ebbced62572970.mpf_cache
+2025-10-30 19:50:16,000 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\c25e7c71bc90546538d4e68911be6658.mpf_cache
+2025-10-30 19:50:16,016 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\b7a51086f1e3c926b3977a0d025a1faa.mpf_cache
+2025-10-30 19:50:16,032 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\479eb3ca656e084fa2e092204a5b8039.mpf_cache
+2025-10-30 19:50:16,048 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\bdb81eccbf19551abd8bea5fafeca7c0.mpf_cache
+2025-10-30 19:50:16,064 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\8f065719b93e886777277178babee650.mpf_cache
+2025-10-30 19:50:16,079 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\7fef0463a0df344c3146c845257ec616.mpf_cache
+2025-10-30 19:50:16,096 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\a4f333ad36a077996c49298642b6bdcf.mpf_cache
+2025-10-30 19:50:16,109 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\e8d69d74f27089cda2650299e9916804.mpf_cache
+2025-10-30 19:50:16,120 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\05530f35bd950f18d27d3fd571d96823.mpf_cache
+2025-10-30 19:50:16,132 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\fc1e3f85304c911eb844eb65d36e61be.mpf_cache
+2025-10-30 19:50:16,145 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\53223d3922288729ee504c1b2a98bb55.mpf_cache
+2025-10-30 19:50:16,158 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\8d20136ddb274338050d1d1ccc1a5e4f.mpf_cache
+2025-10-30 19:50:16,172 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\1254d50720d6d5d0da0e84e29cdbaa7a.mpf_cache
+2025-10-30 19:50:16,185 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\1a7ae31e9f779b1261e3d1eee1831b27.mpf_cache
+2025-10-30 19:50:16,197 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\8e3ea42c38f2105e0d9462648474c540.mpf_cache
+2025-10-30 19:50:16,211 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\a61b86d39bcc5a5ea0a5885549542355.mpf_cache
+2025-10-30 19:50:16,222 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\ec387031d703ca01cd1e512f54ea45a6.mpf_cache
+2025-10-30 19:50:16,235 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\6060c5cf25a8bbaedfcd18b580aef368.mpf_cache
+2025-10-30 19:50:16,248 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\62ef5d872b70fca48f955a2e25312807.mpf_cache
+2025-10-30 19:50:16,260 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\c52aca253ccfb6abe708ff6ee9d67c14.mpf_cache
+2025-10-30 19:50:16,286 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\f4a78d1a7bce952f8a932d586083fdd8.mpf_cache
+2025-10-30 19:50:16,302 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\bb94c9c1e15d87765c90f1ffc77705c9.mpf_cache
+2025-10-30 19:50:16,317 : INFO : Machine : Mission Pinball Framework Core Engine v0.80.0.dev9
+2025-10-30 19:50:16,317 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'force_assets_load': False, 'platform_integration_test': False, 'jsonlogging': False, 'logfile': 'logs\\2025-10-30-19-50-15-mpf-PinballLaptop.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': 'smart_virtual', 'syslog_address': None, 'full_logfile_path': 'C:\\venv\\mpf\\mmmdrop\\logs\\2025-10-30-19-50-15-mpf-PinballLaptop.log'}
+2025-10-30 19:50:16,317 : INFO : Machine : MPF path: c:\venv\mpf\lib\site-packages\mpf
+2025-10-30 19:50:16,317 : INFO : Machine : Machine path: C:\venv\mpf\mmmdrop
+2025-10-30 19:50:16,317 : INFO : Machine : Platform: win32
+2025-10-30 19:50:16,317 : INFO : Machine : Python executable location: c:\venv\mpf\Scripts\python.exe
+2025-10-30 19:50:16,317 : INFO : Machine : Python version: 3.9.13 (64-bit)
+2025-10-30 19:50:16,319 : INFO : Machine : Initializing MPF...
+2025-10-30 19:50:16,672 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2025-10-30 19:50:16,702 : INFO : EventManager : Event: ======'machine_var_fast_audio_headphones_volume'====== Args={'value': 10, 'prev_value': None, 'change': True}
+2025-10-30 19:50:16,703 : INFO : EventManager : Event: ======'machine_var_fast_audio_main_volume'====== Args={'value': 44, 'prev_value': None, 'change': True}
+2025-10-30 19:50:16,703 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.55, 'prev_value': None, 'change': True}
+2025-10-30 19:50:16,703 : INFO : EventManager : Event: ======'machine_var_player1_score'====== Args={'value': 20034230, 'prev_value': None, 'change': True}
+2025-10-30 19:50:16,703 : INFO : EventManager : Event: ======'machine_var_game_just_played'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-10-30 19:50:16,703 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'Mission Pinball Framework v0.80.0.dev9', 'prev_value': None, 'change': True}
+2025-10-30 19:50:16,703 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'Mission Pinball Framework v0.80.0.dev9, Config version:6, Show version: 6, BCP version:1.1', 'prev_value': None, 'change': True}
+2025-10-30 19:50:16,703 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.9.13', 'prev_value': None, 'change': True}
+2025-10-30 19:50:16,755 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.26200-SP0', 'prev_value': None, 'change': True}
+2025-10-30 19:50:16,755 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2025-10-30 19:50:16,755 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2025-10-30 19:50:16,755 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.26200', 'prev_value': None, 'change': True}
+2025-10-30 19:50:16,755 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2025-10-30 19:50:16,755 : INFO : EventManager : Event: ======'machine_var_log_file_path'====== Args={'value': 'C:\\venv\\mpf\\mmmdrop\\logs\\2025-10-30-19-50-15-mpf-PinballLaptop.log', 'prev_value': None, 'change': True}
+2025-10-30 19:50:16,755 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2025-10-30 19:50:16,831 : INFO : EventManager : Event: ======'drop_target_bank_three_bank_up'====== Args={}
+2025-10-30 19:50:16,833 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2025-10-30 19:50:16,833 : INFO : SwitchController : Found active switch: ('3208-0', <Platform.SmartVirtual>) <switch.s_trough1>
+2025-10-30 19:50:16,833 : INFO : SwitchController : Found active switch: ('3208-1', <Platform.SmartVirtual>) <switch.s_trough2>
+2025-10-30 19:50:16,833 : INFO : SwitchController : Found active switch: ('3208-2', <Platform.SmartVirtual>) <switch.s_trough3>
+2025-10-30 19:50:16,833 : INFO : SwitchController : Found active switch: ('3208-3', <Platform.SmartVirtual>) <switch.s_trough4>
+2025-10-30 19:50:16,833 : INFO : SwitchController : Found active switch: ('3208-4', <Platform.SmartVirtual>) <switch.s_trough5>
+2025-10-30 19:50:16,833 : INFO : SwitchController : Found active switch: ('3208-5', <Platform.SmartVirtual>) <switch.s_trough6>
+2025-10-30 19:50:16,855 : ERROR : asyncio : Exception in callback EventManager._queue_task_done(<Task finishe...0: \'bml1\'')>)
+handle: <Handle EventManager._queue_task_done(<Task finishe...0: \'bml1\'')>)>
+Traceback (most recent call last):
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 671, in _validate_type_color
+    return int(color[0]), int(color[1]), int(color[2])
+ValueError: invalid literal for int() with base 10: 'bml1'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\events.py", line 795, in _queue_task_done
+    future.result()
+  File "c:\venv\mpf\lib\site-packages\mpf\core\events.py", line 708, in _run_handlers_sequential
+    handler.callback(queue=queue, **merged_kwargs)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\mode_controller.py", line 97, in initialize_modes
+    item.method(config=mode.config[item.config_section],
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_player.py", line 150, in process_mode_config
+    config = self.validate_config(config)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_player.py", line 113, in validate_config
+    validated_config[event] = self.validate_config_entry(settings, event)
+  File "c:\venv\mpf\lib\site-packages\mpf\config_players\device_config_player.py", line 56, in validate_config_entry
+    raise e
+  File "c:\venv\mpf\lib\site-packages\mpf\config_players\device_config_player.py", line 52, in validate_config_entry
+    self._validate_config_item(device, device_settings))
+  File "c:\venv\mpf\lib\site-packages\mpf\config_players\device_config_player.py", line 78, in _validate_config_item
+    device_settings = self._parse_config(device_settings, device)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_player.py", line 144, in _parse_config
+    return self.get_full_config(config)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_player.py", line 216, in get_full_config
+    return self.machine.config_validator.validate_config(
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 164, in validate_config
+    return self._validate_config(config_spec, source, base_spec=base_spec, add_missing_keys=add_missing_keys,
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 204, in _validate_config
+    processed_config[k] = self.validate_config_item(
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 243, in validate_config_item
+    return self.validate_item(item, validation, validation_failure_info)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 701, in validate_item
+    return self.validator_list[validator](item, validation_failure_info=validation_failure_info)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 96, in _validate_type_or_token_real
+    return func(item, validation_failure_info, param)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 673, in _validate_type_color
+    raise self.validation_error(item, validation_failure_info, "Could not parse color: {}".format(e))
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in ConfigValidator: Failed to load config player bodymovin_lock_1_enabled:blinkenlights with settings {'bl_scoop_arrow_led': 'green', 'key': 'bml1'} >> Config validation error: Entry blinkenlight_player:blinkenlight_player:color = "bml1" is not valid. Could not parse color: invalid literal for int() with base 10: 'bml1' Error Code: CFE-ConfigValidator-5 (https://missionpinball.org/logs)
+2025-10-30 19:50:16,965 : INFO : Machine : Starting the main run loop with active modes: []
+2025-10-30 19:50:16,965 : WARNING : Machine : Attract mode is not active, game will not be playable. Please check your attract mode configuration.
+2025-10-30 19:50:16,965 : INFO : Machine : Shutting down...
+2025-10-30 19:50:16,966 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2025-10-30 19:50:17,985 : ERROR : Machine : Runtime Exception
+Traceback (most recent call last):
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 671, in _validate_type_color
+    return int(color[0]), int(color[1]), int(color[2])
+ValueError: invalid literal for int() with base 10: 'bml1'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\venv\mpf\lib\site-packages\mpf\core\machine.py", line 808, in _run_loop
+    raise self._exception['exception']
+  File "C:\Program Files\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\events.py", line 795, in _queue_task_done
+    future.result()
+  File "c:\venv\mpf\lib\site-packages\mpf\core\events.py", line 708, in _run_handlers_sequential
+    handler.callback(queue=queue, **merged_kwargs)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\mode_controller.py", line 97, in initialize_modes
+    item.method(config=mode.config[item.config_section],
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_player.py", line 150, in process_mode_config
+    config = self.validate_config(config)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_player.py", line 113, in validate_config
+    validated_config[event] = self.validate_config_entry(settings, event)
+  File "c:\venv\mpf\lib\site-packages\mpf\config_players\device_config_player.py", line 56, in validate_config_entry
+    raise e
+  File "c:\venv\mpf\lib\site-packages\mpf\config_players\device_config_player.py", line 52, in validate_config_entry
+    self._validate_config_item(device, device_settings))
+  File "c:\venv\mpf\lib\site-packages\mpf\config_players\device_config_player.py", line 78, in _validate_config_item
+    device_settings = self._parse_config(device_settings, device)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_player.py", line 144, in _parse_config
+    return self.get_full_config(config)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_player.py", line 216, in get_full_config
+    return self.machine.config_validator.validate_config(
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 164, in validate_config
+    return self._validate_config(config_spec, source, base_spec=base_spec, add_missing_keys=add_missing_keys,
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 204, in _validate_config
+    processed_config[k] = self.validate_config_item(
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 243, in validate_config_item
+    return self.validate_item(item, validation, validation_failure_info)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 701, in validate_item
+    return self.validator_list[validator](item, validation_failure_info=validation_failure_info)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 96, in _validate_type_or_token_real
+    return func(item, validation_failure_info, param)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 673, in _validate_type_color
+    raise self.validation_error(item, validation_failure_info, "Could not parse color: {}".format(e))
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in ConfigValidator: Failed to load config player bodymovin_lock_1_enabled:blinkenlights with settings {'bl_scoop_arrow_led': 'green', 'key': 'bml1'} >> Config validation error: Entry blinkenlight_player:blinkenlight_player:color = "bml1" is not valid. Could not parse color: invalid literal for int() with base 10: 'bml1' Error Code: CFE-ConfigValidator-5 (https://missionpinball.org/logs)
+2025-10-30 19:50:19,093 : INFO : root : MPF run loop ended.

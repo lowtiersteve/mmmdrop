@@ -30,7 +30,7 @@ fast:
   exp:
     boards:
       lightboard:
-        model: FP-EXP-0081-1
+        model: FP-EXP-0081
 
   aud:
     port: auto

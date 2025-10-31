@@ -21,15 +21,15 @@ texture = ExtResource("5_bkix4")
 
 [node name="ModeTotal" type="Label" parent="."]
 layout_mode = 0
-offset_left = 1104.66
-offset_top = 679.0
-offset_right = 1513.66
-offset_bottom = 756.0
+offset_left = 1096.0
+offset_top = 680.0
+offset_right = 1505.0
+offset_bottom = 757.0
 scale = Vector2(1.87781, 1.71507)
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("2_q5k6u")
 theme_override_font_sizes/font_size = 25
-text = "Multiball
+text = "Ch-Check it Out
 Total:"
 horizontal_alignment = 1
 vertical_alignment = 1

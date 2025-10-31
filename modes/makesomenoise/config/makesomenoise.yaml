@@ -159,11 +159,17 @@ variable_player:
       int: -1
       action: add
   multiball_makesomenoise_started:
-    multiball_blocking_flag:
+    chcheckitout_multiball_blocking_flag:
+      int: 1
+      action: set
+    bodymovin_multiball_blocking_flag:
       int: 1
       action: set
   multiball_makesomenoise_ended:
-    multiball_blocking_flag:
+    chcheckitout_multiball_blocking_flag:
+      int: 0
+      action: set
+    bodymovin_multiball_blocking_flag:
       int: 0
       action: set
 
