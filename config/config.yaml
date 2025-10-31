@@ -31,8 +31,9 @@ fast:
     boards:
       lightboard:
         model: FP-EXP-0081
-        config:
-          ignore_led_errors: true
+      port: auto
+      baud: 921600
+      debug: False
 
   aud:
     port: auto
