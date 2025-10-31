@@ -31,9 +31,9 @@ fast:
     boards:
       lightboard:
         model: FP-EXP-0081
-      port: auto
-      baud: 921600
-      debug: False
+    port: auto
+    baud: 921600
+    debug: False
 
   aud:
     port: auto
