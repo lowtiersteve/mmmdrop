@@ -2,227 +2,227 @@
 
 lights:
   l_leftorbit_arrow_led:
-    number: lightboard-1-0
-    subtype: led
-    type: rgb
-  l_leftramp_arrow_led:
     number: lightboard-1-1
     subtype: led
     type: rgb
-  l_innerloop_arrow_led:
+  l_leftramp_arrow_led:
     number: lightboard-1-2
     subtype: led
     type: rgb
-  l_rightramp_arrow_led:
+  l_innerloop_arrow_led:
     number: lightboard-1-3
     subtype: led
     type: rgb
-  l_rightorbit_arrow_led:
+  l_rightramp_arrow_led:
     number: lightboard-1-4
     subtype: led
     type: rgb
-  l_lowerpop_smallarrow_led:
+  l_rightorbit_arrow_led:
     number: lightboard-1-5
     subtype: led
     type: rgb
-  l_lowerrightstandup_circle_led:
+  l_lowerpop_smallarrow_led:
     number: lightboard-1-6
     subtype: led
     type: rgb
-  l_upperpop_smallarrow_led:
+  l_lowerrightstandup_circle_led:
     number: lightboard-1-7
     subtype: led
     type: rgb
-  l_captiveball_smallcircle_led:
+  l_upperpop_smallarrow_led:
     number: lightboard-1-8
     subtype: led
     type: rgb
-  l_lowerdrop_circle_led:
+  l_captiveball_smallcircle_led:
     number: lightboard-1-9
     subtype: led
     type: rgb
-  l_middledrop_circle_led:
+  l_lowerdrop_circle_led:
     number: lightboard-1-10
     subtype: led
     type: rgb
-  l_upperdrop_circle_led:
+  l_middledrop_circle_led:
     number: lightboard-1-11
     subtype: led
     type: rgb
-  l_dropstandup_flasher_led:
+  l_upperdrop_circle_led:
     number: lightboard-1-12
     subtype: led
     type: rgb
-  l_upperleftpop_inside_led:
+  l_dropstandup_flasher_led:
     number: lightboard-1-13
     subtype: led
     type: rgb
-  l_uppercenterpop_inside_led:
+  l_upperleftpop_inside_led:
     number: lightboard-1-14
     subtype: led
     type: rgb
-  l_lowerrightpop_inside_led:
+  l_uppercenterpop_inside_led:
     number: lightboard-1-15
     subtype: led
     type: rgb
-  l_dropbank_rectangle_led:
-    number: lightboard-2-0
+  l_lowerrightpop_inside_led:
+    number: lightboard-1-16
     subtype: led
     type: rgb
-  l_leftoutlane_circle_led:
+  l_dropbank_rectangle_led:
     number: lightboard-2-1
     subtype: led
     type: rgb
-  l_leftinlane_circle_led:
+  l_leftoutlane_circle_led:
     number: lightboard-2-2
     subtype: led
     type: rgb
-  l_rightinlane_circle_led:
+  l_leftinlane_circle_led:
     number: lightboard-2-3
     subtype: led
     type: rgb
-  l_rightoutlane_circle_led:
+  l_rightinlane_circle_led:
     number: lightboard-2-4
     subtype: led
     type: rgb
-  l_ballsave_circle_led:
+  l_rightoutlane_circle_led:
     number: lightboard-2-5
     subtype: led
     type: rgb
-  l_leftorbitcombo_circle_led:
+  l_ballsave_circle_led:
     number: lightboard-2-6
     subtype: led
     type: rgb
-  l_leftrampcombo_circle_led:
+  l_leftorbitcombo_circle_led:
     number: lightboard-2-7
     subtype: led
     type: rgb
-  l_innerloopcombo_circle_led:
+  l_leftrampcombo_circle_led:
     number: lightboard-2-8
     subtype: led
     type: rgb
-  l_rightrampcombo_circle_led:
+  l_innerloopcombo_circle_led:
     number: lightboard-2-9
     subtype: led
     type: rgb
-  l_rightorbitcombo_circle_led:
+  l_rightrampcombo_circle_led:
     number: lightboard-2-10
     subtype: led
     type: rgb
-  l_scoopmode_square_led:
-    number: lightboard-8-0
-    subtype: led
-    type: rgb
-  l_scoopmode_circle2_led:
-    number: lightboard-8-1
-    subtype: led
-    type: rgb
-  l_scoopcombo_circle_led:
-    number: lightboard-8-2
-    subtype: led
-    type: rgb
-  l_scoop_arrow_led:
-    number: lightboard-8-3
-    subtype: led
-    type: rgb
-  l_leftorbitbattery_rectangle_led:
+  l_rightorbitcombo_circle_led:
     number: lightboard-2-11
     subtype: led
     type: rgb
-  l_modeindicator1_rectangle_led:
+  l_scoopmode_square_led:
+    number: lightboard-8-1
+    subtype: led
+    type: rgb
+  l_scoopmode_circle2_led:
+    number: lightboard-8-2
+    subtype: led
+    type: rgb
+  l_scoopcombo_circle_led:
+    number: lightboard-8-3
+    subtype: led
+    type: rgb
+  l_scoop_arrow_led:
+    number: lightboard-8-4
+    subtype: led
+    type: rgb
+  l_leftorbitbattery_rectangle_led:
     number: lightboard-2-12
     subtype: led
     type: rgb
-  l_modeindicator2_rectangle_led:
+  l_modeindicator1_rectangle_led:
     number: lightboard-2-13
     subtype: led
     type: rgb
-  l_modeindicator3_rectangle_led:
+  l_modeindicator2_rectangle_led:
     number: lightboard-2-14
     subtype: led
     type: rgb
-  l_modeindicator4_rectangle_led:
+  l_modeindicator3_rectangle_led:
     number: lightboard-2-15
     subtype: led
     type: rgb
-  l_modeindicator5_rectangle_led:
-    number: lightboard-3-0
+  l_modeindicator4_rectangle_led:
+    number: lightboard-2-16
     subtype: led
     type: rgb
-  l_modeindicator6_rectangle_led:
+  l_modeindicator5_rectangle_led:
     number: lightboard-3-1
     subtype: led
     type: rgb
-  l_modeindicator7_rectangle_led:
+  l_modeindicator6_rectangle_led:
     number: lightboard-3-2
     subtype: led
     type: rgb
-  l_modeindicator8_rectangle_led:
+  l_modeindicator7_rectangle_led:
     number: lightboard-3-3
     subtype: led
     type: rgb
-  l_wizardindicator_rectangle_led:
+  l_modeindicator8_rectangle_led:
     number: lightboard-3-4
     subtype: led
     type: rgb
-  l_wizardindicator2_rectangle_led:
+  l_wizardindicator_rectangle_led:
     number: lightboard-3-5
     subtype: led
     type: rgb
-  l_wizardindicator3_rectangle_led:
+  l_wizardindicator2_rectangle_led:
     number: lightboard-3-6
     subtype: led
     type: rgb
-  l_supercircle1_led:
+  l_wizardindicator3_rectangle_led:
     number: lightboard-3-7
     subtype: led
     type: rgb
-  l_supercircle2_led:
+  l_supercircle1_led:
     number: lightboard-3-8
     subtype: led
     type: rgb
-  l_supercircle3_led:
+  l_supercircle2_led:
     number: lightboard-3-9
     subtype: led
     type: rgb
-  l_supercircle4_led:
+  l_supercircle3_led:
     number: lightboard-3-10
     subtype: led
     type: rgb
-  l_supercircle5_led:
+  l_supercircle4_led:
     number: lightboard-3-11
     subtype: led
     type: rgb
-  l_cassetteleft_led:
+  l_supercircle5_led:
     number: lightboard-3-12
     subtype: led
     type: rgb
-  l_cassetteright_led:
+  l_cassetteleft_led:
     number: lightboard-3-13
     subtype: led
     type: rgb
-  l_leftramprectangle_led:
+  l_cassetteright_led:
     number: lightboard-3-14
     subtype: led
     type: rgb
-  l_rightramprectangle_led:
+  l_leftramprectangle_led:
     number: lightboard-3-15
     subtype: led
     type: rgb
-  l_rightorbitrectangle_led:
-    number: lightboard-4-0
+  l_rightramprectangle_led:
+    number: lightboard-3-16
     subtype: led
     type: rgb
-  l_tshirttopcircle_led:
+  l_rightorbitrectangle_led:
     number: lightboard-4-1
     subtype: led
     type: rgb
-  l_tshirtbottomcircle_led:
+  l_tshirttopcircle_led:
     number: lightboard-4-2
     subtype: led
     type: rgb
-  l_leftorbit_rectangle_led:
+  l_tshirtbottomcircle_led:
     number: lightboard-4-3
+    subtype: led
+    type: rgb
+  l_leftorbit_rectangle_led:
+    number: lightboard-4-4
     subtype: led
     type: rgb
 
