@@ -31,7 +31,7 @@ fast:
     boards:
       lightboard:
         model: FP-EXP-0081
-    port: auto
+    port: COM4
     baud: 921600
     debug: False
 
