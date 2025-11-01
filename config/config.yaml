@@ -4,7 +4,7 @@
 # https://fastpinball.com/cookbook/lower-third/
 # https://fastpinball.com/mpf/config/net/
 
-#v0.33
+#v0.51
 
 hardware:
   platform: fast
@@ -27,13 +27,13 @@ fast:
         model: FP-I/O-0804
         order: 4
 
-#  exp:
-#    boards:
-#      lightboard:
-#        model: FP-EXP-0081
-#    port: auto
-#    baud: 921600
-#    debug: False
+  exp:
+    boards:
+      lightboard:
+        model: FP-EXP-0081
+    port: auto
+    baud: 921600
+    debug: False
 
   aud:
     port: auto
@@ -81,7 +81,7 @@ slide_player:
 config:
   - coils.yaml
   - switches.yaml
-#  - lights.yaml
+  - lights.yaml
 
 machine_vars:
   game_just_played:
@@ -131,8 +131,8 @@ ball_devices:
 
 ball_saves:
   default:
-    active_time: 5s
-    hurry_up_time: 2s
+    active_time: 10s
+    hurry_up_time: 4s
     grace_period: 2s
     enable_events: mode_base_started
     timer_start_events: ball_out

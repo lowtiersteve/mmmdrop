@@ -323,8 +323,8 @@ widget_player:
       action: play
       slide: attract
 
-#show_player:
-#  mode_attract_started: attract_light_show
-#  mode_attract_stopping:
-#    attract_light_show:
-#      action: stop
+show_player:
+  mode_attract_started: attract_light_show
+  mode_attract_stopping:
+    attract_light_show:
+      action: stop

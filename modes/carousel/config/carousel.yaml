@@ -38,33 +38,33 @@ event_player:
   select_tripletrouble: mode_tripletrouble_start
   achievement_wizard1_state_enabled: stop_carousel
 
-#show_player:
-#  item_highlighted{item=='intergalactic'}:
-#    intergalactic_mode_lit:
-#      action: play
-#      loops: -1
-#  item_highlighted{item!='intergalactic'}:
-#    intergalactic_mode_lit:
-#      action: stop
-#  item_highlighted{item=='paulrevere'}:
-#    paulrevere_mode_lit:
-#      action: play
-#      loops: -1
-#  item_highlighted{item!='paulrevere'}:
-#    paulrevere_mode_lit:
-#      action: stop
-#  item_highlighted{item=='tripletrouble'}:
-#    tripletrouble_mode_lit:
-#      action: play
-#      loops: -1
-#  item_highlighted{item!='tripletrouble'}:
-#    tripletrouble_mode_lit:
-#      action: stop
-#  item_highlighted{item=='sabotage'}:
-#    sabotage_mode_lit:
-#      action: play
-#      loops: -1
-#  item_highlighted{item!='sabotage'}:
-#    sabotage_mode_lit:
-#      action: stop
+show_player:
+  item_highlighted{item=='intergalactic'}:
+    intergalactic_mode_lit:
+      action: play
+      loops: -1
+  item_highlighted{item!='intergalactic'}:
+    intergalactic_mode_lit:
+      action: stop
+  item_highlighted{item=='paulrevere'}:
+    paulrevere_mode_lit:
+      action: play
+      loops: -1
+  item_highlighted{item!='paulrevere'}:
+    paulrevere_mode_lit:
+      action: stop
+  item_highlighted{item=='tripletrouble'}:
+    tripletrouble_mode_lit:
+      action: play
+      loops: -1
+  item_highlighted{item!='tripletrouble'}:
+    tripletrouble_mode_lit:
+      action: stop
+  item_highlighted{item=='sabotage'}:
+    sabotage_mode_lit:
+      action: play
+      loops: -1
+  item_highlighted{item!='sabotage'}:
+    sabotage_mode_lit:
+      action: stop
 
