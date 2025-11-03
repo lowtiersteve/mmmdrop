@@ -10,8 +10,8 @@ mode:
 mode_settings:
   selectable_items: intergalactic{not device.achievements.intergalactic_mode.state=='completed'}, paulrevere{not device.achievements.paulrevere_mode.state=='completed'}, tripletrouble{not device.achievements.tripletrouble_mode.state=='completed'}, sabotage{not device.achievements.sabotage_mode.state=='completed'}
   select_item_events: scoop_hit
-  next_item_events: s_left_upper_pop_active, s_center_upper_pop_active
-  previous_item_events: s_right_lower_pop_active
+  next_item_events: pop1_hit, pop2_hit, carousel_advance, carousel_advance_2, carousel_advance_3
+  previous_item_events: pop3_hit
 
 
 variable_player:
@@ -46,6 +46,18 @@ event_player:
   select_tripletrouble: mode_tripletrouble_start
   select_sabotage: mode_sabotage_start
   achievement_wizard1_state_enabled: stop_carousel
+  random_mode_picker_paulrevere: carousel_advance
+  random_mode_picker_tripletrouble: carousel_advance, carousel_advance_2
+  random_mode_picker_sabotage: carousel_advance, carousel_advance_2, carousel_advance_3
+
+
+random_event_player:
+  slide_current_mode_highlighted_created:
+    events:
+    - random_mode_picker_intergalactic
+    - random_mode_picker_paulrevere
+    - random_mode_picker_tripletrouble
+    - random_mode_picker_sabotage
 
 
 show_player:
@@ -77,4 +89,5 @@ show_player:
   item_highlighted{item!='sabotage'}:
     sabotage_mode_lit:
       action: stop
+
 

@@ -41,6 +41,7 @@ sequences:
     events_when_complete: paulrevere_shot_6_done, mode_paulrevere_stop
     reset_on_complete: False
 
+
 variable_player:
   paulrevere_shot_1_done:
     score: 1000000
@@ -94,7 +95,7 @@ slide_player:
     paulrevere_instructions:
       action: play
       priority: 500001
-      expire: 6s
+      expire: 11s
   flipper_cancel:
     paulrevere_instructions:
       action: remove
@@ -187,12 +188,12 @@ ball_holds:
 timers:
   paulrevere_intro_show:
     start_value: 0
-    end_value: 6
+    end_value: 11
     control_events:
       - action: start
         event: mode_paulrevere_started
       - action: jump
-        value: 6
+        value: 11
         event: flipper_cancel
   paulrevere_time_remaining:
     start_value: 60
