@@ -125,6 +125,14 @@ slide_player:
     attract:
       action: play
       priority: 1000
+  flipper_cancel:
+    friends:
+      action: remove
+    ghostbusters:
+      action: remove
+    attract:
+        action: play
+        priority: 1000
 
 sound_player:
   mode_attract_started:

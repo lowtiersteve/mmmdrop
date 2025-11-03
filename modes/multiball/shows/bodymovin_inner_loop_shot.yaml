@@ -2,5 +2,5 @@
 
 - time: 0
   blinkenlights:
-    bl_innerloop_arrow_led: green
+    bl_innerloop_arrow_led: ff073a #neonred
 

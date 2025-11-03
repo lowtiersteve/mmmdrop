@@ -2,12 +2,12 @@
 
 - duration: 500ms
   lights:
-    l_leftorbitcombo_circle_led: yellow
-    l_leftrampcombo_circle_led: yellow
-    l_innerloopcombo_circle_led: yellow
-    l_rightrampcombo_circle_led: yellow
-    l_rightorbitcombo_circle_led: yellow
-    l_captiveball_smallcircle_led: yellow
+    l_leftorbitcombo_circle_led: CFFF04
+    l_leftrampcombo_circle_led: CFFF04
+    l_innerloopcombo_circle_led: CFFF04
+    l_rightrampcombo_circle_led: CFFF04
+    l_rightorbitcombo_circle_led: CFFF04
+    l_captiveball_smallcircle_led: CFFF04
 - duration: 500ms
   lights:
     l_leftorbitcombo_circle_led: off

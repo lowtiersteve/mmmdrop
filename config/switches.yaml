@@ -4,105 +4,147 @@ switches:
   s_left_flipper:
     number: cab-8
     tags: left_flipper
+    label: "Left Flipper"
   s_right_flipper:
     number: cab-9
     tags: right_flipper
+    label: "Right Lower Flipper"
   s_top_right_flipper:
     number: cab-10
     tags: top_right_flipper
+    label: "Right Upper Flipper"
   s_start:
     number: cab-11
     tags: start
+    label: "Start Button"
   s_tilt_bob:
     number: cab-12
     tags: tilt_warning
+    label: "Tilt Bob"
   s_trough1:
     number: 3208-0
     type: NC
+    label: "Trough 1"
   s_trough2:
     number: 3208-1
+    label: "Trough 2"
   s_trough3:
     number: 3208-2
+    label: "Trough 3"
   s_trough4:
     number: 3208-3
+    label: "Trough 4"
   s_trough5:
     number: 3208-4
+    label: "Trough 5"
   s_trough6:
     number: 3208-5
+    label: "Trough 6"
   s_trough_jam:
     number: 3208-6
     type: NC
+    label: "Trough Jam"
   s_plunger:
     number: 3208-7
     events_when_activated: ball_in
     events_when_deactivated: ball_out
+    label: "Plunger Lane"
   s_right_inlane:
     number: 3208-10
     tags: playfield_active
+    label: "Right Inlane"
   s_left_inlane:
     number: 3208-14
     tags: playfield_active
+    label: "Left Inlane"
   s_right_outlane:
     number: 3208-11
     tags: playfield_active
+    label: "Right Outlane"
   s_left_outlane:
     number: 3208-13
     tags: playfield_active
+    label: "Left Outlane"
   s_left_slingshot:
     number: 3208-15
+    label: "Left Sling"
   s_right_slingshot:
     number: 3208-9
+    label: "Right Sling"
   s_right_lower_pop:
     number: 0804-0
+    label: "Lower Right Pop Bumper"
   s_captive_ball:
     number: 0804-1
     ignore_window_ms: 500
+    label: "Captive Ball Target"
   s_pop_standup:
     number: 0804-6
+    label: "Lower Pop Standup"
   s_spinner:
     number: 0804-5
+    label: "Spinner"
   s_three_bank_bottom:
     number: 0804-2
+    label: "Lower Drop Target"
   s_three_bank_middle:
     number: 0804-3
+    label: "Middle Drop Target"
   s_three_bank_top:
     number: 0804-4
+    label: "Upper Drop Target"
   s_left_upper_pop:
     number: 0804b-0
+    label: "Upper Left Pop Bumper"
   s_center_upper_pop:
     number: 0804b-1
+    label: "Upper Right Pop Bumper"
   s_upper_pop_standup:
     number: 0804b-3
+    label: "Upper Pop Standup"
   s_scoop:
     number: 0804b-2
+    label: "Scoop"
   s_tshirt_top_standup:
     number: 3208-23
+    label: "T-Shirt Top Standup"
   s_tshirt_bottom_standup:
     number: 3208-22
+    label: "T-Shirt Bottom Standup"
   s_three_bank_standup:
     number: 3208-21
+    label: "Standup Behind Drops"
   s_left_orbit:
     number: 0804b-4
+    label: "Left Orbit"
   s_inner_orbit:
     number: 0804b-5
+    label: "Inner Loop"
   s_left_ramp:
     number: 0804b-6
+    label: "Left Ramp"
   s_right_ramp:
     number: 0804b-7
+    label: "Right Ramp"
   s_right_orbit:
     number: 0804-7
+    label: "Right Orbit"
   s_service_esc:
     number: 3208-16
     tags: service_esc
+    label: "Service Door Esc"
   s_service_down:
     number: 3208-17
     tags: service_down
+    label: "Service Door Down"
   s_service_up:
     number: 3208-18
     tags: service_up
+    label: "Service Door Up"
   s_service_enter:
     number: 3208-19
     tags: service_enter
+    label: "Service Door Enter"
 
 drop_targets:
   bottom:

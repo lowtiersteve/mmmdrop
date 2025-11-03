@@ -65,8 +65,8 @@ shots:
     switch: s_three_bank_standup
     show_tokens:
       led: l_dropstandup_flasher_led
-      color: green
-    profile: ball_lock_profile
+      color: 39FF14
+    profile: base_shot_profile
     advance_events: logicblock_qualify_chcheckitout_multiball_hit, multiball_chcheckitout_started
   spinner:
     switch: s_spinner
@@ -102,13 +102,13 @@ shots:
     switch: s_tshirt_top_standup
     show_tokens:
       led: l_tshirttopcircle_led
-      color: green
+      color: 39FF14
     profile: ball_lock_profile
   tshirt_bottom_standup:
     switch: s_tshirt_bottom_standup
     show_tokens:
       led: l_tshirtbottomcircle_led
-      color: green
+      color: 39FF14
     profile: ball_lock_profile
   left_outlane:
     switch: s_left_outlane
@@ -870,22 +870,25 @@ show_player:
   mode_intergalactic_success:
     intergalactic_success_show:
       action: play
-      loops: 6
+      loops: 4
       priority: 50000
   mode_paulrevere_success:
     paulrevere_success_show:
       action: play
-      loops: 6
+      loops: 4
       priority: 50000
   mode_tripletrouble_success:
     tripletrouble_success_show:
       action: play
-      loops: 6
+      loops: 4
       priority: 50000
   achievement_wizard1_state_enabled:
     makesomenoise_mode_qualified_light:
       action: play
       loops: -1
+  mode_makesomenoise_started:
+    makesomenoise_mode_qualified_light:
+      action: stop
   ball_save_default_timer_start:
     ball_save_show:
       action: play
@@ -910,21 +913,21 @@ show_player:
 
 blinkenlight_player:
   chcheckitout_multiball_qualified:
-    bl_dropstandup_flasher_led: green
+    bl_dropstandup_flasher_led: 39FF14
   chcheckitout_start_multiball:
     bl_dropstandup_flasher_led: remove
   mode_makesomenoise_started:
     bl_dropstandup_flasher_led: remove
   bodymovin_lock_1_enabled:
-    bl_scoop_arrow_led: green
+    bl_scoop_arrow_led: 39FF14
   bodymovin_ball_1_locked:
     bl_scoop_arrow_led: remove
   bodymovin_lock_2_enabled:
-    bl_scoop_arrow_led: green
+    bl_scoop_arrow_led: 39FF14
   bodymovin_ball_2_locked:
     bl_scoop_arrow_led: remove
   bodymovin_lock_3_enabled:
-    bl_captiveball_smallcircle_led: green
+    bl_captiveball_smallcircle_led: 39FF14
   multiball_bodymovin_started:
     bl_captiveball_smallcircle_led: remove
 
@@ -943,7 +946,7 @@ widget_player:
       action: play
       slide: base
       priority: 975000
-  timer_bodymovinfinish_widget_timer_complete:
+  timer_bodymovin_widget_timer_complete:
     bodymovinfinish:
       action: remove
   ball_will_end:
@@ -1041,7 +1044,7 @@ timers:
     start_running: false
     control_events:
       - event: widget_chcheckitoutfinish_active
-        action: start
+        action: restart
       - event: ball_ending
         action: stop
   bodymovin_widget_timer:
@@ -1051,7 +1054,7 @@ timers:
     start_running: false
     control_events:
       - event: widget_bodymovinfinish_active
-        action: start
+        action: restart
       - event: ball_ending
         action: stop
   bodymovin_lock_enabled_widget_timer:
@@ -1073,7 +1076,7 @@ timers:
     start_running: false
     control_events:
       - event: widget_bodymovin_ball_1_locked_widget_active
-        action: start
+        action: restart
       - event: ball_ending
         action: stop
   bodymovin_ball_2_locked_widget_timer:
@@ -1083,7 +1086,7 @@ timers:
     start_running: false
     control_events:
       - event: widget_bodymovin_ball_2_locked_widget_active
-        action: start
+        action: restart
       - event: ball_ending
         action: stop
 

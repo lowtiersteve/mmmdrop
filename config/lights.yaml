@@ -1,230 +1,287 @@
 #config_version=6
+# lights with lightboard-6-* are not cut/wired on the IRL playfield yet
 
 lights:
   l_leftorbit_arrow_led:
+    number: lightboard-4-7
+    subtype: led
+    type: rgb
+    label: "Left Orbit Arrow"
+  l_leftramp_arrow_led:
+    number: lightboard-3-1
+    subtype: led
+    type: rgb
+    label: "Left Ramp Arrow"
+  l_innerloop_arrow_led:
     number: lightboard-4-6
     subtype: led
     type: rgb
-  l_leftramp_arrow_led:
-    number: lightboard-1-2
-    subtype: led
-    type: rgb
-  l_innerloop_arrow_led:
-    number: lightboard-4-5
-    subtype: led
-    type: rgb
+    label: "Inner Loop Arrow"
   l_rightramp_arrow_led:
     number: lightboard-8-7
     subtype: led
     type: rgb
+    label: "Right Ramp Arrow"
   l_rightorbit_arrow_led:
     number: lightboard-8-8
     subtype: led
     type: rgb
+    label: "Right Orbit Arrow"
   l_lowerpop_smallarrow_led:
-    number: lightboard-1-4
+    number: lightboard-6-1
     subtype: led
     type: rgb
+    label: "Lower Pop Arrow"
   l_lowerrightstandup_circle_led:
-    number: lightboard-1-5
-    subtype: led
-    type: rgb
-  l_upperpop_smallarrow_led:
-    number: lightboard-1-6
-    subtype: led
-    type: rgb
-  l_captiveball_smallcircle_led:
-    number: lightboard-4-4
-    subtype: led
-    type: rgb
-  l_lowerdrop_circle_led:
-    number: lightboard-4-12
-    subtype: led
-    type: rgb
-  l_middledrop_circle_led:
-    number: lightboard-4-11
-    subtype: led
-    type: rgb
-  l_upperdrop_circle_led:
-    number: lightboard-4-10
-    subtype: led
-    type: rgb
-  l_dropstandup_flasher_led:
-    number: lightboard-1-11
-    subtype: led
-    type: rgb
-  l_upperleftpop_inside_led:
-    number: lightboard-1-12
-    subtype: led
-    type: rgb
-  l_uppercenterpop_inside_led:
-    number: lightboard-1-13
-    subtype: led
-    type: rgb
-  l_lowerrightpop_inside_led:
-    number: lightboard-1-14
-    subtype: led
-    type: rgb
-  l_dropbank_rectangle_led:
     number: lightboard-2-1
     subtype: led
     type: rgb
-  l_leftoutlane_circle_led:
-    number: lightboard-4-14
+    label: "Lower Right Standup Circle"
+  l_upperpop_smallarrow_led:
+    number: lightboard-4-2
     subtype: led
     type: rgb
-  l_leftinlane_circle_led:
+    label: "Upper Pops Standup Circle"
+  l_captiveball_smallcircle_led:
+    number: lightboard-4-5
+    subtype: led
+    type: rgb
+    label: "Captive Ball Arrow"
+  l_lowerdrop_circle_led:
     number: lightboard-4-13
     subtype: led
     type: rgb
+    label: "Lower Drop Rectangle"
+  l_middledrop_circle_led:
+    number: lightboard-4-12
+    subtype: led
+    type: rgb
+    label: "Middle Drop Rectangle"
+  l_upperdrop_circle_led:
+    number: lightboard-4-11
+    subtype: led
+    type: rgb
+    label: "Upper Drop Rectangle"
+  l_dropstandup_flasher_led:
+    number: lightboard-6-2
+    subtype: led
+    type: rgb
+    label: "Behind Drops Standup Flasher"
+  l_upperleftpop_inside_led:
+    number: lightboard-6-3
+    subtype: led
+    type: rgb
+    label: "Upper Left Pop Inside"
+  l_uppercenterpop_inside_led:
+    number: lightboard-6-4
+    subtype: led
+    type: rgb
+    label: "Upper Right Pop Inside"
+  l_lowerrightpop_inside_led:
+    number: lightboard-6-5
+    subtype: led
+    type: rgb
+    label: "Lower Right Pop Inside"
+  l_dropbank_rectangle_led:
+    number: lightboard-6-6
+    subtype: led
+    type: rgb
+    label: "Drops 2x Scoring Square"
+  l_leftoutlane_circle_led:
+    number: lightboard-4-15
+    subtype: led
+    type: rgb
+    label: "Left Outlane Circle"
+  l_leftinlane_circle_led:
+    number: lightboard-4-14
+    subtype: led
+    type: rgb
+    label: "Left Inlane Circle"
   l_rightinlane_circle_led:
-    number: lightboard-2-4
-    subtype: led
-    type: rgb
-  l_rightoutlane_circle_led:
-    number: lightboard-2-5
-    subtype: led
-    type: rgb
-  l_ballsave_circle_led:
     number: lightboard-2-6
     subtype: led
     type: rgb
+    label: "Right Inlane Circle"
+  l_rightoutlane_circle_led:
+    number: lightboard-2-7
+    subtype: led
+    type: rgb
+    label: "Right Outlane Circle"
+  l_ballsave_circle_led:
+    number: lightboard-3-16
+    subtype: led
+    type: rgb
+    label: "Ball Save Circle"
   l_leftorbitcombo_circle_led:
-    number: lightboard-4-7
+    number: lightboard-4-8
     subtype: led
     type: rgb
+    label: "Left Orbit Combo Circle"
   l_leftrampcombo_circle_led:
-    number: lightboard-2-8
+    number: lightboard-3-2
     subtype: led
     type: rgb
+    label: "Left Ramp Combo Circle"
   l_innerloopcombo_circle_led:
-    number: lightboard-4-3
+    number: lightboard-4-4
     subtype: led
     type: rgb
+    label: "Upper Loop Combo Circle"
   l_rightrampcombo_circle_led:
     number: lightboard-8-6
     subtype: led
     type: rgb
+    label: "Right Ramp Combo Circle"
   l_rightorbitcombo_circle_led:
     number: lightboard-8-9
     subtype: led
     type: rgb
+    label: "Right Orbit Combo Circle"
   l_scoopmode_square_led:
     number: lightboard-8-1
     subtype: led
     type: rgb
+    label: "Scoop Rectangle - Mixmaster Mike"
   l_scoopmode_circle2_led:
     number: lightboard-8-2
     subtype: led
     type: rgb
+    label: "Scoop Mystery Circle"
   l_scoopcombo_circle_led:
     number: lightboard-8-3
     subtype: led
     type: rgb
+    label: "Scoop Combo Circle"
   l_scoop_arrow_led:
     number: lightboard-8-4
     subtype: led
     type: rgb
+    label: "Scoop Arrow"
   l_leftorbitbattery_rectangle_led:
-    number: lightboard-4-9
+    number: lightboard-4-10
     subtype: led
     type: rgb
+    label: "Spinner Battery Rectangle"
   l_modeindicator1_rectangle_led:
-    number: lightboard-2-11
-    subtype: led
-    type: rgb
-  l_modeindicator2_rectangle_led:
-    number: lightboard-2-12
-    subtype: led
-    type: rgb
-  l_modeindicator3_rectangle_led:
-    number: lightboard-2-13
-    subtype: led
-    type: rgb
-  l_modeindicator4_rectangle_led:
-    number: lightboard-2-14
-    subtype: led
-    type: rgb
-  l_modeindicator5_rectangle_led:
-    number: lightboard-3-1
-    subtype: led
-    type: rgb
-  l_modeindicator6_rectangle_led:
-    number: lightboard-3-2
-    subtype: led
-    type: rgb
-  l_modeindicator7_rectangle_led:
-    number: lightboard-3-3
-    subtype: led
-    type: rgb
-  l_modeindicator8_rectangle_led:
-    number: lightboard-3-4
-    subtype: led
-    type: rgb
-  l_wizardindicator_rectangle_led:
-    number: lightboard-3-5
-    subtype: led
-    type: rgb
-  l_wizardindicator2_rectangle_led:
-    number: lightboard-3-6
-    subtype: led
-    type: rgb
-  l_wizardindicator3_rectangle_led:
-    number: lightboard-3-7
-    subtype: led
-    type: rgb
-  l_supercircle1_led:
-    number: lightboard-3-8
-    subtype: led
-    type: rgb
-  l_supercircle2_led:
     number: lightboard-3-9
     subtype: led
     type: rgb
-  l_supercircle3_led:
-    number: lightboard-3-10
+    label: "Mode Rectangle 1 - Intergalactic"
+  l_modeindicator2_rectangle_led:
+    number: lightboard-3-8
     subtype: led
     type: rgb
-  l_supercircle4_led:
+    label: "Mode Rectangle 2 - Paul Revere"
+  l_modeindicator3_rectangle_led:
+    number: lightboard-2-4
+    subtype: led
+    type: rgb
+    label: "Mode Rectangle 3 - Triple Trouble"
+  l_modeindicator4_rectangle_led:
+    number: lightboard-2-5
+    subtype: led
+    type: rgb
+    label: "Mode Rectangle 4 - Sabotage"
+  l_modeindicator5_rectangle_led:
     number: lightboard-3-11
     subtype: led
     type: rgb
-  l_supercircle5_led:
+    label: "Mode Rectangle 5 - Finger Lickin Good"
+  l_modeindicator6_rectangle_led:
     number: lightboard-3-12
     subtype: led
     type: rgb
-  l_cassetteleft_led:
+    label: "Mode Rectangle 6 - Too Many Rappers"
+  l_modeindicator7_rectangle_led:
     number: lightboard-3-13
     subtype: led
     type: rgb
-  l_cassetteright_led:
+    label: "Mode Rectangle 7 - 3 MCs and One DJ"
+  l_modeindicator8_rectangle_led:
     number: lightboard-3-14
     subtype: led
     type: rgb
-  l_leftramprectangle_led:
+    label: "Mode Rectangle 8 - High Plains Drifter"
+  l_wizardindicator_rectangle_led:
     number: lightboard-3-15
     subtype: led
     type: rgb
+    label: "Wizard 2 Bottom Square - Bodhisattva Vow"
+  l_wizardindicator2_rectangle_led:
+    number: lightboard-3-7
+    subtype: led
+    type: rgb
+    label: "Wizard 1 Top Square - Make Some Noise"
+  l_wizardindicator3_rectangle_led:
+    number: lightboard-3-10
+    subtype: led
+    type: rgb
+    label: "Final Wizard Middle Square - Fight!"
+  l_supercircle1_led:
+    number: lightboard-3-4
+    subtype: led
+    type: rgb
+    label: "Super Circle 1 - Standups"
+  l_supercircle2_led:
+    number: lightboard-3-5
+    subtype: led
+    type: rgb
+    label: "Super Circle 2 - Spins"
+  l_supercircle3_led:
+    number: lightboard-3-6
+    subtype: led
+    type: rgb
+    label: "Super Circle 3 - Pops"
+  l_supercircle4_led:
+    number: lightboard-2-2
+    subtype: led
+    type: rgb
+    label: "Super Circle 4 - Drops"
+  l_supercircle5_led:
+    number: lightboard-2-3
+    subtype: led
+    type: rgb
+    label: "Super Circle 5 - Combos"
+  l_cassetteleft_led:
+    number: lightboard-6-7
+    subtype: led
+    type: rgb
+    label: "Cassette Left Mini Circle"
+  l_cassetteright_led:
+    number: lightboard-6-8
+    subtype: led
+    type: rgb
+    label: "Cassette Right Mini Circle"
+  l_leftramprectangle_led:
+    number: lightboard-3-3
+    subtype: led
+    type: rgb
+    label: "Left Ramp Rectangle - Mike D"
   l_rightramprectangle_led:
     number: lightboard-8-5
     subtype: led
     type: rgb
+    label: "Right Ramp Rectangle - Ad Roc"
   l_rightorbitrectangle_led:
     number: lightboard-8-10
     subtype: led
     type: rgb
+    label: "Right Orbit Rectangle - DJ Hurricane"
   l_tshirttopcircle_led:
-    number: lightboard-4-2
+    number: lightboard-4-3
     subtype: led
     type: rgb
+    label: "T-Shirt Top Circle"
   l_tshirtbottomcircle_led:
     number: lightboard-4-1
     subtype: led
     type: rgb
+    label: "T-Shirt Bottom Circle"
   l_leftorbit_rectangle_led:
-    number: lightboard-4-8
+    number: lightboard-4-9
     subtype: led
     type: rgb
+    label: "Left Orbit Rectangle - MCA"
 
 
 blinkenlights:
