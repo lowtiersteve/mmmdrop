@@ -231,7 +231,7 @@ slide_player:
       priority: 5000
     paulrevere_success:
       action: play
-      priority: 850000
+      priority: 950000
       expire: 3s
   mode_tripletrouble_stop:
     tripletrouble:
@@ -267,7 +267,7 @@ slide_player:
       priority: 5000
     tripletroublefinish:
       action: play
-      priority: 850000
+      priority: 950000
       expire: 6s
   skillshot_lit_hit:
     skillshot_success_overlay:
@@ -362,7 +362,7 @@ slide_player:
 
 
 sound_player:
-  mode_carousel_started:
+  mode_base_started:
     base_game_random_music:
       action: play
       bus: music
@@ -423,7 +423,7 @@ sound_player:
       bus: effects
       max_queue_time: 500ms
       block: true
-  mode_carousel_stopped:
+  carousel_item_selected:
     base_game_random_music:
       action: stop
       bus: music
@@ -652,6 +652,9 @@ variable_player:
     mode_blocking_flag:
       int: value
       action: set
+    battery_charged_yesorno:
+      int: value
+      action: set
     bonus_multiplier:
       int: 1
       action: add
@@ -666,6 +669,10 @@ variable_player:
       action: set
     modes_completed:
       int: value
+      action: set
+  battery_charged:
+    battery_charged_yesorno:
+      int: 1
       action: set
   mode_intergalactic_stopped:
     mode_blocking_flag:
@@ -688,17 +695,26 @@ variable_player:
       int: 0
       action: set
     modes_played: 1
+    battery_charged_yesorno:
+      int: 0
+      action: set
   mode_paulrevere_started:
     mode_paulrevere_score:
       int: 0
       action: set
     modes_played: 1
+    battery_charged_yesorno:
+      int: 0
+      action: set
   mode_makesomenoise_started:
     mode_makesomenoise_score:
       int: 0
       action: set
     modes_played: 1
     modes_completed: 1
+    battery_charged_yesorno:
+      int: 0
+      action: set
   multiball_chcheckitout_started:
     multiball_chcheckitout_score:
       int: 0
@@ -712,6 +728,9 @@ variable_player:
       int: 0
       action: set
     modes_played: 1
+    battery_charged_yesorno:
+      int: 0
+      action: set
   game_ended:
     game_just_played:
       int: 1

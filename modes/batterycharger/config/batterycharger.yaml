@@ -1,0 +1,95 @@
+#config_version=6
+
+mode:
+  start_events: ball_starting
+  stop_events: ball_will_end
+  priority: 11000
+
+counters:
+  battery_charged_status:
+    count_events: spinner_hit{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.mode_blocking_flag==0}
+    events_when_complete: battery_charged
+    starting_count: 30
+    count_complete_value: 0
+    count_interval: 1
+    direction: down
+    persist_state: true
+    disable_on_complete: true
+    reset_on_complete: false
+    disable_events: multiball_chcheckitout_started, mode_makesomenoise_started, multiball_bodymovin_started
+    enable_events: ball_started, multiball_chcheckitout_ended, multiball_bodymovin_ended
+    restart_events: mode_intergalactic_stopped, mode_paulrevere_stopped, mode_tripletrouble_stopped, mode_makesomenoise_stopped
+    control_events:
+      - event: reset_drop_target_bank_counter
+        action: jump
+        value: 0
+      - event: mode_batterycharger_started{current_player.ball==1}
+        action: jump
+        value: 10
+
+show_player:
+  mode_batterycharger_started{current_player.ball==1}:
+    battery_yellow:
+      action: play
+      loops: -1
+  battery_charged:
+    battery_red:
+      action: stop
+    battery_yellow:
+      action: stop
+    battery_green:
+      action: play
+      loops: -1
+  multiball_chcheckitout_started:
+    battery_red:
+      action: stop
+    battery_yellow:
+      action: stop
+    battery_green:
+      action: stop
+  multiball_bodymovin_started:
+    battery_red:
+      action: stop
+    battery_yellow:
+      action: stop
+    battery_green:
+      action: stop
+  mode_makesomenoise_started:
+    battery_red:
+      action: stop
+    battery_yellow:
+      action: stop
+    battery_green:
+      action: stop
+  carousel_item_selected:
+    battery_green:
+      action: stop
+  multiball_chcheckitout_ended{current_player.mode_blocking_flag==0 and current_player.battery_charged_yesorno==1}:
+    battery_green:
+      action: play
+      loops: -1
+  multiball_bodymovin_ended{current_player.mode_blocking_flag==0 and current_player.battery_charged_yesorno==1}:
+    battery_green:
+      action: play
+      loops: -1
+  mode_intergalactic_stopped{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0}:
+    battery_red:
+      action: play
+      loops: -1
+  mode_paulrevere_stopped{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0}:
+    battery_red:
+      action: play
+      loops: -1
+  mode_tripletrouble_stopped{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0}:
+    battery_red:
+      action: play
+      loops: -1
+  mode_makesomenoise_stopped:
+    battery_red:
+      action: play
+      loops: -1
+  logicblock_battery_charged_status_updated{device.counters.battery_charged_status.value<21 and device.counters.battery_charged_status.value!=0}:
+    battery_yellow:
+      action: play
+      loops: -1
+

@@ -1,7 +1,0 @@
-#config_version=6
-
-mode:
-  start_events: ball_starting
-  priority: 10000
-
-#use "battery_charged" as an output event to trigger carousel

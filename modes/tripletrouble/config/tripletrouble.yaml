@@ -6,7 +6,7 @@ mode:
 
 counters:
   tripletrouble_standups_counter:
-    count_events: pop_standup_hit, upper_pop_standup_hit, three_bank_standup_hit, tshirt_top_standup_hit, tshirt_bottom_standup_hit
+    count_events: pop_standup_hit, upper_pop_standup_hit, three_bank_standup_hit, tshirt_top_standup_hit, tshirt_bottom_standup_hit, captive_ball_hit
     events_when_complete: tripletrouble_standups_counter_complete
     starting_count: 7
     count_complete_value: 0

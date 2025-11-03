@@ -1,17 +1,13 @@
-[gd_resource type="AudioStreamRandomizer" load_steps=7 format=3 uid="uid://cuh4on317hknk"]
+[gd_resource type="AudioStreamRandomizer" load_steps=5 format=3 uid="uid://cuh4on317hknk"]
 
 [ext_resource type="AudioStream" uid="uid://b6m2n2osh5x2j" path="res://sounds/SneakinOutTheHospital.ogg" id="3_5g7oh"]
-[ext_resource type="AudioStream" uid="uid://dvhcdu02ymhto" path="res://sounds/TooManyRappers.ogg" id="4_8egh4"]
 [ext_resource type="AudioStream" uid="uid://bjd1fcm242pjd" path="res://sounds/BodhiVow.ogg" id="6_xlcnx"]
-[ext_resource type="AudioStream" uid="uid://bjobv6qrnlfft" path="res://sounds/BrassMonkey.ogg" id="7_mpiuo"]
 [ext_resource type="AudioStream" uid="uid://8vc2cnixljsn" path="res://sounds/MultilateralNuclearDisarmament.ogg" id="11_4bmwv"]
 [ext_resource type="AudioStream" uid="uid://dedptjpkx0aci" path="res://sounds/POW.ogg" id="13_sexib"]
 
 [resource]
-streams_count = 6
-stream_0/stream = ExtResource("7_mpiuo")
-stream_1/stream = ExtResource("11_4bmwv")
-stream_2/stream = ExtResource("13_sexib")
-stream_3/stream = ExtResource("3_5g7oh")
-stream_4/stream = ExtResource("4_8egh4")
-stream_5/stream = ExtResource("6_xlcnx")
+streams_count = 4
+stream_0/stream = ExtResource("11_4bmwv")
+stream_1/stream = ExtResource("13_sexib")
+stream_2/stream = ExtResource("3_5g7oh")
+stream_3/stream = ExtResource("6_xlcnx")

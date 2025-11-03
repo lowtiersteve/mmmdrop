@@ -1,0 +1,9 @@
+#show_version=6
+
+- duration: 300ms
+  lights:
+    l_leftorbitbattery_rectangle_led: ff000d
+- duration: 300ms
+  lights:
+    l_leftorbitbattery_rectangle_led: off
+
