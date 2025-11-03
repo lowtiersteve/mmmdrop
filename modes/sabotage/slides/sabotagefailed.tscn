@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://bt3pyed1bkrfw"]
+
+[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_lx24u"]
+[ext_resource type="VideoStream" uid="uid://ctw17vwjfm78w" path="res://modes/sabotage/slides/SabotageFailVideo.ogv" id="2_yo51e"]
+[ext_resource type="Script" uid="uid://bf2dsnm46ji2e" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_imowr"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="4_os8iu"]
+
+[node name="SabotageFailed" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_lx24u")
+metadata/_custom_type_script = "uid://d15ukepy10pan"
+
+[node name="MPFVideoPlayer" type="VideoStreamPlayer" parent="."]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+stream = ExtResource("2_yo51e")
+autoplay = true
+expand = true
+bus = &"effects"
+script = ExtResource("3_imowr")
+hide_behavior = 1
+preview_in_editor = true
+metadata/_custom_type_script = "uid://bf2dsnm46ji2e"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 503.0
+offset_top = 399.0
+offset_right = 1487.0
+offset_bottom = 640.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("4_os8iu")
+theme_override_font_sizes/font_size = 116
+text = "The Perps
+escaped"
+horizontal_alignment = 1

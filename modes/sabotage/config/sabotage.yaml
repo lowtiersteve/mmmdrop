@@ -1,0 +1,231 @@
+#config_version=6
+
+mode:
+  start_events: carousel_sabotage_selected
+  stop_events: mode_sabotage_stop, timer_sabotage_time_remaining_complete, ball_will_end
+  priority: 1000
+
+#counters:
+#  sabotage_perps_counter:
+#    count_events: left_orbit_hit, left_ramp_hit, right_ramp_hit, right_orbit_hit
+#    events_when_complete: sabotage_perps_counter_complete
+#    starting_count: 0
+#    count_complete_value: 6
+#    count_interval: 1
+#    direction: up
+#    persist_state: false
+#    disable_on_complete: false
+#    reset_on_complete: false
+#    disable_events: mode_sabotage_ended
+#    enable_events: mode_sabotage_started
+#    restart_events: mode_sabotage_started, sabotage_final_shot_hit
+#    control_events:
+#      - event: reset_sabotage_perps_counter
+#        action: jump
+#        value: 0
+#      - event: player_sabotage_perps_caught{current_player.sabotage_perps_caught<0}
+#        action: jump
+#        value: current_player.sabotage_perps_caught
+
+
+variable_player:
+  mode_sabotage_started:
+    mode_blocking_flag:
+      int: 1
+      action: set
+    sabotage_perps_caught:
+      int: 0
+      action: set
+    stache_multiplier:
+      int: 1
+      action: set
+  increase_perps{current_player.stache_multiplier==1}:
+    score: 2000000
+    mode_sabotage_score: 2000000
+    sabotage_perps_caught:
+      int: 1
+      action: add
+  increase_perps{current_player.stache_multiplier==3}:
+    score: 6000000
+    mode_sabotage_score: 6000000
+    sabotage_perps_caught:
+      int: 1
+      action: add
+    stache_multiplier:
+      int: 1
+      action: set
+  decrease_perps{current_player.sabotage_perps_caught>0}:
+    sabotage_perps_caught:
+      int: -1
+      action: add
+  decrease_perps{current_player.sabotage_perps_caught==0}:
+    sabotage_perps_caught:
+      int: 0
+      action: set
+  timer_sabotage_intro_show_tick:
+    sabotage_intro_show_variable_times_100:
+      int: device.timers.sabotage_intro_show.ticks * 100
+      action: set
+  timer_sabotage_time_remaining_tick:
+    sabotage_time_remaining_variable_times_1:
+      int: device.timers.sabotage_time_remaining.ticks * 1
+      action: set
+  drop_target_bank_three_bank_down:
+    stache_multiplier:
+      int: 3
+      action: set
+  slide_mustache1x_created:
+    stache_multiplier:
+      int: 1
+      action: set
+
+slide_player:
+  mode_sabotage_started:
+    current_mode_highlighted:
+      action: remove
+    base:
+      action: remove
+    basevideo1:
+      action: remove
+    basevideo2:
+      action: remove
+    basevideo3:
+      action: remove
+    basevideo4:
+      action: remove
+    sabotage:
+      action: play
+      priority: 500000
+    sabotage_instructions:
+      action: play
+      priority: 500001
+      expire: 11s
+  flipper_cancel:
+    sabotage_instructions:
+      action: remove
+  timer_sabotage_intro_show_complete:
+    sabotage_perps_counter:
+      action: play
+      priority: 800000
+    sabotage_display_timer:
+      action: play
+      priority: 825000
+    mustache1x:
+      action: play
+      priority: 830000
+  player_stache_multiplier{current_player.stache_multiplier==1 and device.timers.sabotage_time_remaining.running==True}:
+    mustache3x:
+      action: remove
+    mustache1x:
+      action: play
+      priority: 830000
+  player_stache_multiplier{current_player.stache_multiplier==3}:
+    mustache1x:
+      action: remove
+    mustache3x:
+      action: play
+      priority: 830000
+
+
+sound_player:
+  mode_sabotage_started:
+    sabotagemusic:
+      action: play
+      bus: music
+  increase_perps:
+    success_shot:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  sabotage_perps_counter_complete:
+    success_finish:
+      action: play
+      bus: effects
+      max_queue_time: 1s
+
+
+ball_holds:
+  sabotage_scoop_hold:
+    balls_to_hold: 1
+    hold_devices: bd_scoop
+    enable_events: mode_sabotage_started
+    disable_events: timer_sabotage_intro_show_complete
+    release_one_events: timer_sabotage_intro_show_complete
+
+
+timers:
+  sabotage_intro_show:
+    start_value: 0
+    end_value: 11
+    control_events:
+      - action: start
+        event: mode_sabotage_started
+      - action: jump
+        value: 11
+        event: flipper_cancel
+  sabotage_time_remaining:
+    start_value: 60
+    end_value: 0
+    direction: down
+    control_events:
+      - action: start
+        event: timer_sabotage_intro_show_complete
+      - action: pause
+        event: sabotage_perps_counter_complete
+      - action: reset
+        event: mode_sabotage_started
+      - action: add
+        value: 7
+        event: add_sabotage_time_7s
+      - action: add
+        value: 15
+        event: add_sabotage_time_15s
+
+
+event_player:
+  timer_sabotage_time_remaining_complete: mode_sabotage_failed
+  sabotage_perps_counter_complete: mode_sabotage_success
+  left_orbit_hit: increase_perps
+  left_ramp_hit: increase_perps
+  right_ramp_hit: increase_perps
+  right_orbit_hit: increase_perps
+  increase_perps: add_sabotage_time_7s
+  pop_standup_hit: add_sabotage_time_15s, decrease_perps
+  player_sabotage_perps_caught{current_player.sabotage_perps_caught==6}: sabotage_perps_counter_complete
+
+
+shot_profiles:
+  sabotage_shot:
+    advance_on_hit: false
+    states:
+      - name: "off"
+        show: "off"
+    loop: false
+
+
+show_player:
+  mode_sabotage_started:
+    sirens_show:
+      action: play
+      loops: -1
+  timer_sabotage_intro_show_complete:
+    stache_show:
+      action: play
+      loops: -1
+  player_stache_multiplier{current_player.stache_multiplier==1 and device.timers.sabotage_time_remaining.running==True}:
+    stache_show:
+      action: play
+      loops: -1
+  player_stache_multiplier{current_player.stache_multiplier==3}:
+    stache_show:
+      action: stop
+  sabotage_perps_counter_complete:
+    sirens_show:
+      action: stop
+    stache_show:
+      action: stop
+  sabotage_perps_counter_failed:
+    sirens_show:
+      action: stop
+    stache_show:
+      action: stop

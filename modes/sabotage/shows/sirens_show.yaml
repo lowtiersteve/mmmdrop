@@ -1,0 +1,19 @@
+#show_version=6
+
+- duration: 600ms
+  lights:
+    l_leftorbit_arrow_led: Blue
+    l_leftramp_arrow_led: Red
+    l_upperleftpop_inside_led: Blue
+    l_uppercenterpop_inside_led: Red
+    l_rightramp_arrow_led: Blue
+    l_rightorbit_arrow_led: Red
+- duration: 600ms
+  lights:
+    l_leftorbit_arrow_led: Red
+    l_leftramp_arrow_led: Blue
+    l_upperleftpop_inside_led: Red
+    l_uppercenterpop_inside_led: Blue
+    l_rightramp_arrow_led: Red
+    l_rightorbit_arrow_led: Blue
+

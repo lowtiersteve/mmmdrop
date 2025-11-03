@@ -154,44 +154,45 @@ modes:
   - bonus
   - combos
   - batterycharger
+  - sabotage
 
 
 settings:
   replay_score:
-    label: Replay Score
+    label: "Replay Score"
     values:
-      500000: "500000 (default)"
-      1000000: "1000000"
-      1500000: "1500000"
-    default: 500000
+      50000000: "50,000,000"
+      100000000: "100,000,000 (Default)"
+      200000000: "200,000,000"
+    default: 100000000
     key_type: int
     sort: 100
   warnings_to_tilt:
-    label: Number of tilt warnings
+    label: "Number of Tilt Bob Hits to Tilt"
     values:
-      0: "no warnings"
+      0: "0 (No Warnings)"
       1: "1"
       2: "2"
-      3: "3"
+      3: "3 (Default)"
       5: "5"
       10: "10"
     default: 3
     key_type: int
     sort: 600
   settle_time:
-    label: Time to wait on tilt to settle bob
+    label: "Time Tilt Bob Takes to Settle (Start Next Ball)"
     values:
-      3000: "3s"
-      5000: "5s"
-      10000: "10s"
+      3000: "3 Seconds"
+      5000: "5 Seconds (Default)"
+      10000: "10 Seconds"
     default: 5000
     key_type: int
     sort: 610
   multiple_hit_window:
-    label: Tilt sensitivity
+    label: "Tilt Sensitivity"
     values:
       150: "Sensitive"
-      300: "Normal"
+      300: "Normal (Default)"
       500: "Insensitive"
       1000: "Very Insensitive"
     default: 300

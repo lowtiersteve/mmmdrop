@@ -1,0 +1,50 @@
+[gd_scene load_steps=4 format=3 uid="uid://pnfgi761wan5"]
+
+[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_idmyr"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="2_figvd"]
+[ext_resource type="Script" uid="uid://b3ni1cjx2r6sx" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_5ycov"]
+
+[node name="SabotagePerps" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_idmyr")
+metadata/_custom_type_script = "uid://d15ukepy10pan"
+
+[node name="PerpsCaught" type="Label" parent="."]
+layout_mode = 0
+offset_left = 565.0
+offset_top = 347.0
+offset_right = 1429.0
+offset_bottom = 410.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_figvd")
+theme_override_font_sizes/font_size = 61
+text = "Perps Caught:"
+horizontal_alignment = 1
+
+[node name="MPFVariable" type="Label" parent="."]
+layout_mode = 0
+offset_left = 817.0
+offset_top = 436.0
+offset_right = 976.0
+offset_bottom = 509.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_figvd")
+theme_override_font_sizes/font_size = 71
+text = "0"
+horizontal_alignment = 1
+script = ExtResource("3_5ycov")
+variable_name = "sabotage_perps_caught"
+min_digits = 1
+metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"
+
+[node name="OutOf6" type="Label" parent="."]
+offset_left = 971.0
+offset_top = 439.0
+offset_right = 1120.0
+offset_bottom = 502.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_figvd")
+theme_override_font_sizes/font_size = 61
+text = "/ 6"
+horizontal_alignment = 1

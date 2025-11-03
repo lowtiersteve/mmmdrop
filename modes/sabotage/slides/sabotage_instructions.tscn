@@ -1,0 +1,46 @@
+[gd_scene load_steps=3 format=3 uid="uid://decrkymd03j37"]
+
+[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_aa65l"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="2_k1h6l"]
+
+[node name="SabotageInstructions" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_aa65l")
+metadata/_custom_type_script = "uid://d15ukepy10pan"
+
+[node name="instructions" type="Label" parent="."]
+layout_mode = 0
+offset_left = 408.0
+offset_top = 358.0
+offset_right = 1564.0
+offset_bottom = 955.0
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("2_k1h6l")
+theme_override_font_sizes/font_size = 45
+text = "
+catch 6 perps by hitting
+Orbits and Ramps
+
+
+clear the drop targets to
+increase 'stache (Next Shot 3x)
+
+
+avoid stand-up targets -
+don't let 'em get away!
+"
+horizontal_alignment = 1
+
+[node name="instructionsheader" type="Label" parent="."]
+layout_mode = 0
+offset_left = 417.0
+offset_top = 203.0
+offset_right = 1491.0
+offset_bottom = 358.0
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("2_k1h6l")
+theme_override_font_sizes/font_size = 65
+text = "Catch the Perps and
+Grow Your 'Stache!"
+horizontal_alignment = 1

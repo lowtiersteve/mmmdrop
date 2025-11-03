@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_xqmik"]
 [ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="2_fahrs"]
 
-[node name="PaulRevereInstructions" type="Control"]
+[node name="TripleTroubleInstructions" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_xqmik")
