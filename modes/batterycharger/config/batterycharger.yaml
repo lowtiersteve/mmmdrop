@@ -88,7 +88,7 @@ show_player:
     battery_red:
       action: play
       loops: -1
-  logicblock_battery_charged_status_updated{device.counters.battery_charged_status.value<21 and device.counters.battery_charged_status.value!=0}:
+  logicblock_battery_charged_status_updated{device.counters.battery_charged_status.value<16 and device.counters.battery_charged_status.value!=0}:
     battery_yellow:
       action: play
       loops: -1
