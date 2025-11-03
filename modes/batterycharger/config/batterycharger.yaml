@@ -57,6 +57,18 @@ show_player:
     battery_yellow:
       action: play
       loops: -1
+  mode_batterycharger_started{current_player.ball!=1 and current_player.battery_charged_yesorno==1}:
+    battery_green:
+      action: play
+      loops: -1
+  mode_batterycharger_started{current_player.ball!=1 and current_player.battery_charged_yesorno==0 and device.counters.battery_charged_status.value>10}:
+    battery_red:
+      action: play
+      loops: -1
+  mode_batterycharger_started{current_player.ball!=1 and current_player.battery_charged_yesorno==0 and device.counters.battery_charged_status.value<11}:
+    battery_yellow:
+      action: play
+      loops: -1
   battery_charged:
     battery_red:
       action: stop

@@ -737,7 +737,7 @@ variable_player:
     drop_target_bank_counter_count:
       int: value
       action: set
-  ball_started:
+  ball_started{current_player.ball==1}:
     chcheckitout_multiball_blocking_flag:
       int: value
       action: set
@@ -750,12 +750,6 @@ variable_player:
     battery_charged_yesorno:
       int: value
       action: set
-    bonus_multiplier:
-      int: 1
-      action: add
-    player_drop_target_bank_counter_count:
-      int: 0
-      action: set
     combos:
       int: value
       action: set
@@ -764,6 +758,13 @@ variable_player:
       action: set
     modes_completed:
       int: value
+      action: set
+  ball_started:
+    bonus_multiplier:
+      int: 1
+      action: set
+    player_drop_target_bank_counter_count:
+      int: 0
       action: set
   battery_charged:
     battery_charged_yesorno:

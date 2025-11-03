@@ -1,7 +1,7 @@
 #config_version=6
 
 mode:
-  start_events: battery_charged, multiball_chcheckitout_ended{current_player.mode_blocking_flag==0 and current_player.battery_charged_yesorno==1}, multiball_bodymovin_ended{current_player.mode_blocking_flag==0 and current_player.battery_charged_yesorno==1}
+  start_events: battery_charged, multiball_chcheckitout_ended{current_player.mode_blocking_flag==0 and current_player.battery_charged_yesorno==1}, multiball_bodymovin_ended{current_player.mode_blocking_flag==0 and current_player.battery_charged_yesorno==1}, ball_started{current_player.ball!=1 and current_player.battery_charged_yesorno==1}
   stop_events: carousel_item_selected, chcheckitout_start_multiball, bodymovin_start_multiball, ball_will_end, stop_carousel
   code: mpf.modes.carousel.code.carousel.Carousel
   priority: 200
