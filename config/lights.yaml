@@ -337,3 +337,11 @@ blinkenlights:
     off_when_multiple: false
     color_duration: 300ms
     light: l_ballsave_circle_led
+  bl_lowerpop_smallarrow_led:
+    off_when_multiple: false
+    color_duration: 750ms
+    light: l_lowerpop_smallarrow_led
+  bl_lowerrightpop_inside_led:
+    off_when_multiple: false
+    color_duration: 750ms
+    light: l_lowerrightpop_inside_led

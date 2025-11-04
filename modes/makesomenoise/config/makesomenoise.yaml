@@ -127,9 +127,9 @@ variable_player:
       int: device.timers.makesomenoise_intro_show.ticks * 100
       action: set
   mode_makesomenoise_started:
-    mode_blocking_flag:
-      int: 1
-      action: set
+#    mode_blocking_flag:
+#      int: 1
+#      action: set
     makesomenoise_pops_remaining:
       int: 10
       action: set
@@ -164,13 +164,6 @@ variable_player:
       action: set
     bodymovin_multiball_blocking_flag:
       int: 1
-      action: set
-  multiball_makesomenoise_ended:
-    chcheckitout_multiball_blocking_flag:
-      int: 0
-      action: set
-    bodymovin_multiball_blocking_flag:
-      int: 0
       action: set
 
 
@@ -277,7 +270,7 @@ sound_player:
     makesomenoisemusic:
       action: replace
       bus: music
-      loops: 6
+      loops: 3
   makesomenoise_drops_counter_complete:
     success_shot:
       action: play

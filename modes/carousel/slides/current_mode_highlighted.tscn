@@ -76,6 +76,7 @@ theme_override_font_sizes/font_size = 81
 text = "Triple Trouble"
 
 [node name="sabotage" type="Label" parent="MPFCarousel"]
+layout_mode = 0
 offset_left = 573.0
 offset_top = 601.0
 offset_right = 1428.0
@@ -84,4 +85,16 @@ theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("3_ruqgo")
 theme_override_font_sizes/font_size = 81
 text = "Sabotage"
+horizontal_alignment = 1
+
+[node name="fingerlickingood" type="Label" parent="MPFCarousel"]
+layout_mode = 0
+offset_left = 421.0
+offset_top = 598.0
+offset_right = 1543.0
+offset_bottom = 747.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("3_ruqgo")
+theme_override_font_sizes/font_size = 81
+text = "Finger Lickin' Good"
 horizontal_alignment = 1

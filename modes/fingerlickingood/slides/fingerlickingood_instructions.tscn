@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://diamaxmb8bx3p"]
+
+[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_tt62e"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="2_abpfr"]
+
+[node name="FingerLickinGoodInstructions" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_tt62e")
+metadata/_custom_type_script = "uid://d15ukepy10pan"
+
+[node name="instructions" type="Label" parent="."]
+layout_mode = 0
+offset_left = 301.0
+offset_top = 525.0
+offset_right = 1629.0
+offset_bottom = 910.0
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("2_abpfr")
+theme_override_font_sizes/font_size = 60
+text = "boost the value 
+at the ramps
+
+
+lick 'em at the lower pop"
+horizontal_alignment = 1
+
+[node name="instructionsheader" type="Label" parent="."]
+layout_mode = 0
+offset_left = 295.0
+offset_top = 222.0
+offset_right = 1645.0
+offset_bottom = 377.0
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("2_abpfr")
+theme_override_font_sizes/font_size = 85
+text = "Lick Ya Fingers Clean!"
+horizontal_alignment = 1

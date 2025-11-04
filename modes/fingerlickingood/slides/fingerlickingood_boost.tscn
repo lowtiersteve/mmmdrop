@@ -1,0 +1,57 @@
+[gd_scene load_steps=5 format=3 uid="uid://bsynn0dc38wmo"]
+
+[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_4xtyr"]
+[ext_resource type="Texture2D" uid="uid://djfbra6kjn1n3" path="res://assets/fingerpoint.png" id="2_gtcwr"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="3_sm1fl"]
+[ext_resource type="Script" uid="uid://b3ni1cjx2r6sx" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="4_lo00d"]
+
+[node name="fingerboost" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_4xtyr")
+metadata/_custom_type_script = "uid://d15ukepy10pan"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(631, 663)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_gtcwr")
+
+[node name="x" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1316.0
+offset_top = 603.0
+offset_right = 1410.0
+offset_bottom = 712.0
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("3_sm1fl")
+theme_override_font_sizes/font_size = 106
+text = "X"
+horizontal_alignment = 1
+
+[node name="boostvalue" type="Label" parent="."]
+layout_mode = 0
+offset_left = 995.0
+offset_top = 520.0
+offset_right = 1531.0
+offset_bottom = 607.0
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("3_sm1fl")
+theme_override_font_sizes/font_size = 61
+text = "Boost Value:"
+horizontal_alignment = 1
+
+[node name="fingerlickingood_boost" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1074.0
+offset_top = 608.0
+offset_right = 1263.0
+offset_bottom = 729.0
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("3_sm1fl")
+theme_override_font_sizes/font_size = 106
+text = "1"
+horizontal_alignment = 1
+script = ExtResource("4_lo00d")
+variable_name = "fingerlickingood_boost"
+min_digits = 1
+metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"

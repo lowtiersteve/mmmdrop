@@ -2,7 +2,7 @@
 
 mode:
   start_events: carousel_sabotage_selected
-  stop_events: mode_sabotage_stop, timer_sabotage_time_remaining_complete, ball_will_end
+  stop_events: mode_sabotage_stop, mode_sabotage_failed, mode_sabotage_success, ball_will_end
   priority: 1000
 
 #counters:
@@ -100,10 +100,9 @@ slide_player:
       action: play
       priority: 500001
       expire: 11s
-  flipper_cancel:
+  timer_sabotage_intro_show_complete:
     sabotage_instructions:
       action: remove
-  timer_sabotage_intro_show_complete:
     sabotage_perps_counter:
       action: play
       priority: 800000

@@ -1,0 +1,9 @@
+#show_version=6
+
+- duration: 200ms
+  lights:
+    l_modeindicator5_rectangle_led: white
+- duration: 200ms
+  lights:
+    l_modeindicator5_rectangle_led: off
+

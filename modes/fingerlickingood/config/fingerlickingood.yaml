@@ -1,0 +1,144 @@
+#config_version=6
+
+mode:
+  start_events: carousel_fingerlickingood_selected
+  stop_events: mode_fingerlickingood_stop, mode_fingerlickingood_failed, mode_fingerlickingood_success, ball_will_end
+  priority: 1000
+
+
+variable_player:
+  mode_fingerlickingood_started:
+    mode_blocking_flag:
+      int: 1
+      action: set
+    fingerlickingood_boost:
+      int: 1
+      action: set
+  timer_fingerlickingood_intro_show_tick:
+    fingerlickingood_intro_show_variable_times_100:
+      int: device.timers.fingerlickingood_intro_show.ticks * 100
+      action: set
+  timer_fingerlickingood_time_remaining_tick:
+    fingerlickingood_time_remaining_variable_times_1:
+      int: device.timers.fingerlickingood_time_remaining.ticks * 1
+      action: set
+  left_ramp_hit:
+    fingerlickingood_boost:
+      int: 1
+      action: add
+  right_ramp_hit:
+    fingerlickingood_boost:
+      int: 1
+      action: add
+  pop3_hit:
+    score: 3000000 * current_player.fingerlickingood_boost
+    mode_fingerlickingood_score: 3000000 * current_player.fingerlickingood_boost
+
+
+slide_player:
+  mode_fingerlickingood_started:
+    current_mode_highlighted:
+      action: remove
+    base:
+      action: remove
+    basevideo1:
+      action: remove
+    basevideo2:
+      action: remove
+    basevideo3:
+      action: remove
+    basevideo4:
+      action: remove
+    fingerlickingood:
+      action: play
+      priority: 500000
+    fingerlickingood_instructions:
+      action: play
+      priority: 500001
+      expire: 6s
+  timer_fingerlickingood_intro_show_complete:
+    fingerlickingood_boost:
+      action: play
+      priority: 800000
+    fingerlickingood_instructions:
+      action: remove
+    fingerlickingood_display_timer:
+      action: play
+      priority: 825000
+
+
+sound_player:
+  mode_fingerlickingood_started:
+    fingerlickingoodmusic:
+      action: play
+      bus: music
+  finger_boost:
+    success_shot:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  pop3_hit:
+    success_finish:
+      action: play
+      bus: effects
+      max_queue_time: 1s
+
+
+ball_holds:
+  fingerlickingood_scoop_hold:
+    balls_to_hold: 1
+    hold_devices: bd_scoop
+    enable_events: mode_fingerlickingood_started
+    disable_events: timer_fingerlickingood_intro_show_complete
+    release_one_events: timer_fingerlickingood_intro_show_complete
+
+
+timers:
+  fingerlickingood_intro_show:
+    start_value: 0
+    end_value: 6
+    control_events:
+      - action: start
+        event: mode_fingerlickingood_started
+      - action: jump
+        value: 6
+        event: flipper_cancel
+  fingerlickingood_time_remaining:
+    start_value: 60
+    end_value: 0
+    direction: down
+    control_events:
+      - action: start
+        event: timer_fingerlickingood_intro_show_complete
+      - action: pause
+        event: pop3_hit
+      - action: reset
+        event: mode_fingerlickingood_started
+      - action: add
+        value: 7
+        event: add_fingerlickingood_time_7s
+
+
+event_player:
+  timer_fingerlickingood_time_remaining_complete: mode_fingerlickingood_failed
+  pop3_hit: mode_fingerlickingood_success
+  left_ramp_hit: finger_boost, add_fingerlickingood_time_7s
+  right_ramp_hit: finger_boost, add_fingerlickingood_time_7s
+
+
+shot_profiles:
+  fingerlickingood_shot:
+    advance_on_hit: false
+    states:
+      - name: "off"
+        show: "off"
+    loop: false
+
+
+blinkenlight_player:
+  mode_fingerlickingood_started:
+    bl_leftramp_arrow_led: FF46A2
+    bl_rightramp_arrow_led: FF46A2
+    bl_lowerpop_smallarrow_led: FA8072
+    bl_lowerrightpop_inside_led: FA8072
+

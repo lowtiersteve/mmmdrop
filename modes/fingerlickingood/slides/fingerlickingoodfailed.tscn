@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://cmujquplrkape"]
+
+[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_64pji"]
+[ext_resource type="VideoStream" uid="uid://behmdqawlqor7" path="res://modes/fingerlickingood/slides/FingerLickinGoodVideo.ogv" id="2_0d3il"]
+[ext_resource type="Script" uid="uid://bf2dsnm46ji2e" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_52te4"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="4_0ggtw"]
+
+[node name="FingerLickinGoodFailed" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_64pji")
+metadata/_custom_type_script = "uid://d15ukepy10pan"
+
+[node name="MPFVideoPlayer" type="VideoStreamPlayer" parent="."]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+stream = ExtResource("2_0d3il")
+autoplay = true
+expand = true
+bus = &"effects"
+script = ExtResource("3_52te4")
+hide_behavior = 1
+preview_in_editor = true
+metadata/_custom_type_script = "uid://bf2dsnm46ji2e"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 329.0
+offset_top = 383.0
+offset_right = 1594.0
+offset_bottom = 624.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("4_0ggtw")
+theme_override_font_sizes/font_size = 116
+text = "You Didn't
+Clean ya fingas"
+horizontal_alignment = 1

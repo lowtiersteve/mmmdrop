@@ -58,7 +58,7 @@ offset_bottom = 546.0
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("2_bqhhf")
 theme_override_font_sizes/font_size = 96
-text = "Version 0.55"
+text = "Version 0.60"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="version"]
 libraries = {

@@ -1,0 +1,123 @@
+[gd_scene load_steps=10 format=3 uid="uid://cgimgbfx5wr3x"]
+
+[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_werxv"]
+[ext_resource type="VideoStream" uid="uid://behmdqawlqor7" path="res://modes/fingerlickingood/slides/FingerLickinGoodVideo.ogv" id="2_vbnnb"]
+[ext_resource type="Script" uid="uid://bf2dsnm46ji2e" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_ma4y8"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="4_dk26e"]
+[ext_resource type="Texture2D" uid="uid://dt7hpexqpath5" path="res://assets/action_bubble.png" id="5_yo1ph"]
+[ext_resource type="Script" uid="uid://b3ni1cjx2r6sx" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="6_40r66"]
+
+[sub_resource type="Animation" id="Animation_swyhi"]
+resource_name = "Blinking"
+length = 6.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0333333, 0.0666667, 0.1, 0.133333, 0.166667, 0.2, 0.233333, 0.266667, 0.3, 0.333333, 0.366667, 0.4, 0.433333, 0.466667, 0.5, 0.533333, 0.566667, 0.6, 0.633333, 0.666667, 0.7, 0.733333, 0.766667, 0.8, 0.833333, 0.866667, 0.9, 0.933333, 0.966667, 1, 1.03333, 1.06667, 1.1, 1.13333, 1.16667, 1.2, 1.23333, 1.26667, 1.3, 1.33333, 1.36667, 1.4, 1.43333, 1.46667, 1.5, 1.53333, 1.56667, 1.6, 1.63333, 1.66667, 1.7, 1.73333, 1.76667, 1.8, 1.83333, 1.86667, 1.9, 1.93333, 1.96667, 2, 2.03333, 2.06667, 2.1, 2.13333, 2.16667, 2.2, 2.23333, 2.26667, 2.3, 2.33333, 2.36667, 2.4, 2.43333, 2.46667, 2.5, 2.53333, 2.56667, 2.6, 2.63333, 2.66667, 2.7, 2.73333, 2.76667, 2.8, 2.83333, 2.86667, 2.9, 2.93333, 2.96667, 3, 3.03333, 3.06667, 3.1, 3.13333, 3.16667, 3.2, 3.23333, 3.26667, 3.3, 3.33333, 3.36667, 3.4, 3.43333, 3.46667, 3.5, 3.53333, 3.56667, 3.6, 3.63333, 3.66667, 3.7, 3.73333, 3.76667, 3.8, 3.83333, 3.86667, 3.9, 3.93333, 3.96667, 4, 4.03333, 4.06667, 4.1, 4.13333, 4.16667, 4.2, 4.23333, 4.26667, 4.3, 4.33333, 4.36667, 4.4, 4.43333, 4.46667, 4.5, 4.53333, 4.56667, 4.6, 4.63333, 4.66667, 4.7, 4.73333, 4.76667, 4.8, 4.83333, 4.86667, 4.9, 4.93333, 4.96667, 5, 5.03333, 5.06667, 5.1, 5.13333, 5.16667, 5.2, 5.23333, 5.26667, 5.3, 5.33333, 5.36667, 5.4, 5.43333, 5.46667, 5.5, 5.53333, 5.56667, 5.6, 5.63333, 5.66667, 5.7, 5.73333, 5.76667, 5.8, 5.83333, 5.86667, 5.9, 5.93333, 5.96667, 6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false]
+}
+
+[sub_resource type="Animation" id="Animation_kqghm"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_t14pj"]
+_data = {
+&"Blinking": SubResource("Animation_swyhi"),
+&"RESET": SubResource("Animation_kqghm")
+}
+
+[node name="FingerLickinGoodFinish" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_werxv")
+metadata/_custom_type_script = "uid://d15ukepy10pan"
+
+[node name="MPFVideoPlayer" type="VideoStreamPlayer" parent="."]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+stream = ExtResource("2_vbnnb")
+autoplay = true
+expand = true
+bus = &"effects"
+script = ExtResource("3_ma4y8")
+hide_behavior = 1
+preview_in_editor = true
+metadata/_custom_type_script = "uid://bf2dsnm46ji2e"
+
+[node name="Label" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 503.0
+offset_top = 399.0
+offset_right = 1487.0
+offset_bottom = 640.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("4_dk26e")
+theme_override_font_sizes/font_size = 116
+text = "Licked Clean!"
+horizontal_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Label"]
+reset_on_save = false
+libraries = {
+&"": SubResource("AnimationLibrary_t14pj")
+}
+autoplay = "Blinking"
+playback_auto_capture = false
+
+[node name="ActionImage" type="Sprite2D" parent="."]
+position = Vector2(415.671, 843.25)
+scale = Vector2(0.444077, 0.267791)
+texture = ExtResource("5_yo1ph")
+
+[node name="ModeTotal" type="Label" parent="."]
+layout_mode = 0
+offset_left = 33.0
+offset_top = 721.0
+offset_right = 442.0
+offset_bottom = 798.0
+scale = Vector2(1.87781, 1.71507)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("4_dk26e")
+theme_override_font_sizes/font_size = 25
+text = "Mode Total:"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="FingerLickinGoodScore" type="Label" parent="."]
+layout_mode = 0
+offset_left = 43.0
+offset_top = 838.0
+offset_right = 774.0
+offset_bottom = 908.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("4_dk26e")
+theme_override_font_sizes/font_size = 50
+text = "00"
+horizontal_alignment = 1
+script = ExtResource("6_40r66")
+variable_name = "mode_fingerlickingood_score"
+comma_separate = true
+min_digits = 1
+metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"
