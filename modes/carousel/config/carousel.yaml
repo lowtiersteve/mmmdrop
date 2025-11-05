@@ -105,4 +105,11 @@ show_player:
     fingerlickingood_mode_lit:
       action: stop
 
+blinkenlight_player:
+  mode_carousel_started:
+    bl_scoop_arrow_led:
+      color: 0083fb
+      action: add
+  mode_carousel_will_stop:
+    bl_scoop_arrow_led: remove
 

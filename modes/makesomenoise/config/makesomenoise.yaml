@@ -1,8 +1,9 @@
 #config_version=6
+
 mode:
-  start_events: carousel_makesomenoise_selected, start_makesomenoise
+  start_events: start_makesomenoise
   stop_events: mode_makesomenoise_stop, multiball_makesomenoise_ended
-  priority: 1000
+  priority: 5000
 
 counters:
   makesomenoise_spins_counter:
@@ -82,7 +83,7 @@ accruals:
       - makesomenoise_drops_counter_complete
       - makesomenoise_spins_counter_complete
     events_when_complete: makesomenoise_final_shot_lit
-    restart_events: makesomenoise_final_shot_hit
+    restart_events: mode_makesomenoise_started, makesomenoise_final_shot_hit
 
 sequences:
   makesomenoise_final_shot:
@@ -127,9 +128,15 @@ variable_player:
       int: device.timers.makesomenoise_intro_show.ticks * 100
       action: set
   mode_makesomenoise_started:
-#    mode_blocking_flag:
-#      int: 1
-#      action: set
+    mode_blocking_flag:
+      int: 1
+      action: set
+    chcheckitout_multiball_blocking_flag:
+      int: 1
+      action: set
+    bodymovin_multiball_blocking_flag:
+      int: 1
+      action: set
     makesomenoise_pops_remaining:
       int: 10
       action: set
@@ -158,13 +165,6 @@ variable_player:
     makesomenoise_drops_remaining:
       int: -1
       action: add
-  multiball_makesomenoise_started:
-    chcheckitout_multiball_blocking_flag:
-      int: 1
-      action: set
-    bodymovin_multiball_blocking_flag:
-      int: 1
-      action: set
 
 
 slide_player:
@@ -208,8 +208,6 @@ slide_player:
     makesomenoise_final_shot_lit:
       action: play
       priority: 800000
-    makesomenoise_scoop_lit:
-      action: remove
     makesomenoise_spins_counter:
       action: remove
     makesomenoise_ramps_counter:
@@ -238,19 +236,6 @@ slide_player:
     makesomenoise_ramps_counter:
       action: play
       priority: 800000
-  multiball_makesomenoise_ended:
-    makesomenoise_scoop_lit:
-      action: remove
-    makesomenoise_spins_counter:
-      action: remove
-    makesomenoise_ramps_counter:
-      action: remove
-    makesomenoise_drops_counter:
-      action: remove
-    makesomenoise_pops_counter:
-      action: remove
-    makesomenoise:
-      action: remove
   makesomenoise_drops_counter_complete:
     makesomenoise_drops_counter:
       action: remove
@@ -268,9 +253,8 @@ slide_player:
 sound_player:
   mode_makesomenoise_started:
     makesomenoisemusic:
-      action: replace
+      action: play
       bus: music
-      loops: 3
   makesomenoise_drops_counter_complete:
     success_shot:
       action: play
@@ -306,6 +290,7 @@ ball_holds:
     disable_events: timer_makesomenoise_intro_show_complete
     release_one_events: timer_makesomenoise_intro_show_complete
 
+
 timers:
   makesomenoise_intro_show:
     start_value: 0
@@ -316,6 +301,7 @@ timers:
       - action: jump
         value: 10
         event: flipper_cancel
+
 
 show_player:
   timer_makesomenoise_intro_show_complete:

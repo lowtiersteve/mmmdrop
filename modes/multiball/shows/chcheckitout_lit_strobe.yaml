@@ -1,9 +1,7 @@
 #show_version=6
 
-- duration: 500ms
-  lights:
-    l_dropstandup_flasher_led: green
-- duration: 500ms
-  lights:
-    l_dropstandup_flasher_led: off
+- time: 0
+  blinkenlights:
+    bl_dropstandup_flasher_led: 4CBB17
+
 

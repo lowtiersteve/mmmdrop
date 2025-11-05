@@ -461,7 +461,7 @@ slide_player:
     basevideo4:
       action: play
       priority: 5001
-  multiball_makesomenoise_ended:
+  mode_makesomenoise_will_stop:
     makesomenoise:
       action: remove
     makesomenoise_drops_counter:
@@ -544,6 +544,10 @@ sound_player:
       max_queue_time: 500ms
       block: true
   carousel_item_selected:
+    base_game_random_music:
+      action: stop
+      bus: music
+  scoop_hit{device.achievements.wizard1.state==enabled}:
     base_game_random_music:
       action: stop
       bus: music
@@ -742,8 +746,12 @@ sound_player:
       bus: music
       loops: 5
   mode_makesomenoise_stopped:
+    makesomenoisemusic:
+      action: stop
+      bus: music
+  mode_makesomenoise_complete:
     base_game_random_music:
-      action: replace
+      action: play
       bus: music
       loops: 3
   ball_will_end:
@@ -859,6 +867,9 @@ variable_player:
     modes_completed:
       int: value
       action: set
+    chcheckitout_qualified_flag:
+      int: value
+      action: set
   ball_started:
     bonus_multiplier:
       int: 1
@@ -878,10 +889,16 @@ variable_player:
     mode_blocking_flag:
       int: 0
       action: set
-#  mode_makesomenoise_stopped:
-#    mode_blocking_flag:
-#      int: 0
-#      action: set
+  mode_makesomenoise_stopped:
+    mode_blocking_flag:
+      int: 0
+      action: set
+    chcheckitout_multiball_blocking_flag:
+      int: 0
+      action: set
+    bodymovin_multiball_blocking_flag:
+      int: 0
+      action: set
   mode_tripletrouble_stopped:
     mode_blocking_flag:
       int: 0
@@ -921,6 +938,9 @@ variable_player:
       action: set
   multiball_chcheckitout_started:
     multiball_chcheckitout_score:
+      int: 0
+      action: set
+    chcheckitout_qualified_flag:
       int: 0
       action: set
   multiball_bodymovin_started:
@@ -978,12 +998,9 @@ variable_player:
     modes_completed: 1
   combo_hit:
     combos: 1
-  multiball_makesomenoise_ended:
-    chcheckitout_multiball_blocking_flag:
-      int: 0
-      action: set
-    bodymovin_multiball_blocking_flag:
-      int: 0
+  chcheckitout_multiball_qualified:
+    chcheckitout_qualified_flag:
+      int: 1
       action: set
 
 
@@ -1193,31 +1210,28 @@ show_player:
   multiball_makesomenoise_shoot_again_ended:
     ball_save_hurryup_show:
       action: stop
-  mode_carousel_started:
-    mode_start_ready_show:
-      action: play
-      priority: 10000
-  mode_carousel_will_stop:
-    mode_start_ready_show:
-      action: stop
+
+
 
 blinkenlight_player:
-  chcheckitout_multiball_qualified:
-    bl_dropstandup_flasher_led: 39FF14
-  chcheckitout_start_multiball:
-    bl_dropstandup_flasher_led: remove
   mode_makesomenoise_started:
     bl_dropstandup_flasher_led: remove
   bodymovin_lock_1_enabled:
-    bl_scoop_arrow_led: 39FF14
+    bl_scoop_arrow_led:
+      color: 4CBB17
+      action: add
   bodymovin_ball_1_locked:
     bl_scoop_arrow_led: remove
   bodymovin_lock_2_enabled:
-    bl_scoop_arrow_led: 39FF14
+    bl_scoop_arrow_led:
+      color: 4CBB17
+      action: add
   bodymovin_ball_2_locked:
     bl_scoop_arrow_led: remove
   bodymovin_lock_3_enabled:
-    bl_captiveball_smallcircle_led: 39FF14
+    bl_captiveball_smallcircle_led:
+      color: 4CBB17
+      action: add
   multiball_bodymovin_started:
     bl_captiveball_smallcircle_led: remove
 
@@ -1343,7 +1357,7 @@ achievements:
     events_when_started: start_makesomenoise
     restart_after_stop_possible: false
     events_when_completed: makesomenoise_played
-    complete_events: mode_makesomenoise_started
+    complete_events: multiball_makesomenoise_started
   intergalactic_mode:
     show_tokens:
       lights: l_modeindicator1_rectangle_led
@@ -1421,4 +1435,4 @@ event_player:
 #  achievement_wizard1_state_enabled: stop_carousel
   sg_lanes_lit_complete: add_bonus_x
   sg_tshirts_on_complete: lock_standups_complete
-
+  mode_makesomenoise_stopped: mode_makesomenoise_complete

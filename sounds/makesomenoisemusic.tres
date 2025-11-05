@@ -3,6 +3,7 @@
 [ext_resource type="AudioStream" uid="uid://udgviwtnv44d" path="res://sounds/MakeSomeNoiseMVAudio.ogg" id="2_02g6y"]
 
 [resource]
-playback_mode = 1
+resource_local_to_scene = true
+playback_mode = 2
 streams_count = 1
 stream_0/stream = ExtResource("2_02g6y")
