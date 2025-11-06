@@ -26,7 +26,7 @@ mode_settings:
 variable_player:
   mode_bonus_started:
     mode_time_remaining_total:
-      int: current_player.intergalactic_time_remaining_variable_times_1 + current_player.paulrevere_time_remaining_variable_times_1 + current_player.tripletrouble_time_remaining_variable_times_1 + current_player.sabotage_time_remaining_variable_times_1 + current_player.fingerlickingood_time_remaining_variable_times_1 + current_player.toomanyrappers_time_remaining_variable_times_1
+      int: current_player.intergalactic_time_remaining_variable_times_1 + current_player.paulrevere_time_remaining_variable_times_1 + current_player.tripletrouble_time_remaining_variable_times_1 + current_player.sabotage_time_remaining_variable_times_1 + current_player.fingerlickingood_time_remaining_variable_times_1 + current_player.toomanyrappers_time_remaining_variable_times_1 + current_player.threemcsand1dj_time_remaining_variable_times_1
       action: set
 
 

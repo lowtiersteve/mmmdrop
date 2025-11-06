@@ -1,0 +1,197 @@
+#config_version=6
+
+mode:
+  start_events: carousel_threemcsand1dj_selected
+  stop_events: mode_threemcsand1dj_stop, mode_threemcsand1dj_failed, mode_threemcsand1dj_success, ball_will_end
+  priority: 1000
+
+
+counters:
+  threemcsand1dj_scratches_counter:
+    count_events: inner_loop_hit
+    events_when_complete: threemcsand1dj_scratches_counter_complete
+    starting_count: 5
+    count_complete_value: 0
+    count_interval: 1
+    direction: down
+    persist_state: false
+    disable_on_complete: false
+    reset_on_complete: false
+    disable_events: mode_threemcsand1dj_ended
+    enable_events: mode_threemcsand1dj_started
+    restart_events: mode_threemcsand1dj_started
+
+
+variable_player:
+  mode_threemcsand1dj_started:
+    mode_blocking_flag:
+      int: 1
+      action: set
+    threemcsand1dj_scratch_value:
+      int: 100000
+      action: set
+    threemcsand1dj_mix_multiplier:
+      int: 1
+      action: set
+    threemcsand1dj_scratches_remaining:
+      int: 5
+      action: set
+  pop1_hit:
+    threemcsand1dj_scratch_value:
+      int: 25000
+      action: add
+  pop2_hit:
+    threemcsand1dj_scratch_value:
+      int: 25000
+      action: add
+  pop3_hit:
+    threemcsand1dj_scratch_value:
+      int: 25000
+      action: add
+  captive_ball_hit:
+    threemcsand1dj_mix_multiplier:
+      int: 1
+      action: add
+  inner_loop_hit:
+    score: current_player.threemcsand1dj_scratch_value * current_player.threemcsand1dj_mix_multiplier
+    mode_threemcsand1dj_score: current_player.threemcsand1dj_scratch_value * current_player.threemcsand1dj_mix_multiplier
+  timer_threemcsand1dj_intro_show_tick:
+    threemcsand1dj_intro_show_variable_times_100:
+      int: device.timers.threemcsand1dj_intro_show.ticks * 100
+      action: set
+  timer_threemcsand1dj_time_remaining_tick:
+    threemcsand1dj_time_remaining_variable_times_1:
+      int: device.timers.threemcsand1dj_time_remaining.ticks * 1
+      action: set
+  logicblock_threemcsand1dj_scratches_counter_hit:
+    threemcsand1dj_scratches_remaining:
+      int: -1
+      action: add
+
+
+slide_player:
+  mode_threemcsand1dj_started:
+    current_mode_highlighted:
+      action: remove
+    base:
+      action: remove
+    basevideo1:
+      action: remove
+    basevideo2:
+      action: remove
+    basevideo3:
+      action: remove
+    basevideo4:
+      action: remove
+    threemcsand1dj:
+      action: play
+      priority: 500000
+    threemcsand1dj_instructions:
+      action: play
+      priority: 500001
+      expire: 9s
+  timer_threemcsand1dj_intro_show_complete:
+    threemcsand1dj_instructions:
+      action: remove
+    threemcsand1dj_scratches_counter:
+      action: play
+      priority: 800000
+    threemcsand1dj_display_timer:
+      action: play
+      priority: 825000
+    threemcsand1dj_scratch_value:
+      action: play
+      priority: 830000
+    threemcsand1dj_mix_multiplier:
+      action: play
+      priority: 835000
+
+
+sound_player:
+  mode_threemcsand1dj_started:
+    threemcsand1djmusic:
+      action: play
+      bus: music
+  inner_loop_hit:
+    success_shot:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  threemcsand1dj_scratches_counter_complete:
+    success_finish:
+      action: play
+      bus: effects
+      max_queue_time: 1s
+
+
+ball_holds:
+  threemcsand1dj_scoop_hold:
+    balls_to_hold: 1
+    hold_devices: bd_scoop
+    enable_events: mode_threemcsand1dj_started
+    disable_events: timer_threemcsand1dj_intro_show_complete
+    release_one_events: timer_threemcsand1dj_intro_show_complete
+
+
+timers:
+  threemcsand1dj_intro_show:
+    start_value: 0
+    end_value: 9
+    control_events:
+      - action: start
+        event: mode_threemcsand1dj_started
+      - action: jump
+        value: 9
+        event: flipper_cancel
+  threemcsand1dj_time_remaining:
+    start_value: 60
+    end_value: 0
+    direction: down
+    control_events:
+      - action: start
+        event: timer_threemcsand1dj_intro_show_complete
+      - action: pause
+        event: threemcsand1dj_scratches_counter_complete
+      - action: reset
+        event: mode_threemcsand1dj_started
+      - action: add
+        value: 5
+        event: add_threemcsand1dj_time_5s
+      - action: add
+        value: 15
+        event: add_threemcsand1dj_time_15s
+
+
+event_player:
+  timer_threemcsand1dj_time_remaining_complete: mode_threemcsand1dj_failed
+  threemcsand1dj_scratches_counter_complete: mode_threemcsand1dj_success
+  logicblock_threemcsand1dj_scratches_counter_hit: add_threemcsand1dj_time_5s
+  pop_standup_hit: add_threemcsand1dj_time_15s, decrease_perps
+
+
+shot_profiles:
+  threemcsand1dj_shot:
+    advance_on_hit: false
+    states:
+      - name: "off"
+        show: "off"
+    loop: false
+
+
+blinkenlight_player:
+  mode_threemcsand1dj_started:
+    bl_lowerpop_smallarrow_led: red
+    bl_lowerrightpop_inside_led: red
+    bl_lowerrightpop_inside2_led: red
+    bl_upperleftpop_inside_led: red
+    bl_uppercenterpop_inside_led: red
+    bl_captiveball_smallcircle_led: red
+    bl_innerloop_arrow_led: green
+  threemcsand1dj_scratches_counter_complete:
+    bl_lowerpop_smallarrow_led: off
+    bl_lowerrightpop_inside_led: off
+    bl_lowerrightpop_inside2_led: off
+    bl_upperleftpop_inside_led: off
+    bl_uppercenterpop_inside_led: off
+    bl_captiveball_smallcircle_led: off
+    bl_innerloop_arrow_led: off

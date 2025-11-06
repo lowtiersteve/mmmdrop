@@ -56,6 +56,7 @@
     l_supercircle5_led: red
     l_lowerpop_smallarrow_led: red
     l_lowerrightpop_inside_led: red
+    l_lowerrightpop_inside2_led: red
     l_lowerdrop_circle_led: red
     l_middledrop_circle_led: red
     l_dropbank_rectangle_led: red
@@ -74,6 +75,7 @@
     l_supercircle5_led: off
     l_lowerpop_smallarrow_led: off
     l_lowerrightpop_inside_led: off
+    l_lowerrightpop_inside2_led: off
     l_lowerdrop_circle_led: off
     l_middledrop_circle_led: off
     l_dropbank_rectangle_led: off

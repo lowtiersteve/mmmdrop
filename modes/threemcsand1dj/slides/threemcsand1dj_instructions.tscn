@@ -1,0 +1,42 @@
+[gd_scene load_steps=3 format=3 uid="uid://bu2fmcmo3fqmj"]
+
+[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_h6fy7"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="2_qkl6r"]
+
+[node name="ThreeMCsand1DJInstructions" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_h6fy7")
+metadata/_custom_type_script = "uid://d15ukepy10pan"
+
+[node name="instructions" type="Label" parent="."]
+layout_mode = 0
+offset_left = 358.0
+offset_top = 345.0
+offset_right = 1514.0
+offset_bottom = 942.0
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("2_qkl6r")
+theme_override_font_sizes/font_size = 45
+text = "hit upper loops to
+scratch the record
+
+
+pops increase scratch value
+
+
+hit the captive ball to
+mix it like mike"
+horizontal_alignment = 1
+
+[node name="instructionsheader" type="Label" parent="."]
+layout_mode = 0
+offset_left = 411.0
+offset_top = 186.0
+offset_right = 1485.0
+offset_bottom = 341.0
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("2_qkl6r")
+theme_override_font_sizes/font_size = 65
+text = "Make the sickest mix!"
+horizontal_alignment = 1

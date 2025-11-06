@@ -245,13 +245,17 @@ blinkenlight_player:
   enable_spit_rhymes_once:
     bl_lowerpop_smallarrow_led: orange
     bl_lowerrightpop_inside_led: orange
+    bl_lowerrightpop_inside2_led: orange
   logicblock_spit_rhymes_once_hit:
     bl_lowerpop_smallarrow_led: off
     bl_lowerrightpop_inside_led: off
+    bl_lowerrightpop_inside2_led: off
   enable_spit_rhymes_twice:
     bl_lowerpop_smallarrow_led: orange
     bl_lowerrightpop_inside_led: orange
+    bl_lowerrightpop_inside2_led: orange
   logicblock_spit_rhymes_twice_hit:
     bl_lowerpop_smallarrow_led: off
     bl_lowerrightpop_inside_led: off
+    bl_lowerrightpop_inside2_led: off
 

@@ -1,0 +1,52 @@
+[gd_scene load_steps=4 format=3 uid="uid://qx3mp0slsxph"]
+
+[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_6gcp1"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="2_edtu0"]
+[ext_resource type="Script" uid="uid://b3ni1cjx2r6sx" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_nw88v"]
+
+[node name="ThreeMCsand1DJMixMultiplier" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_6gcp1")
+metadata/_custom_type_script = "uid://d15ukepy10pan"
+
+[node name="MixMultiplier" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1343.0
+offset_top = 625.0
+offset_right = 1844.0
+offset_bottom = 754.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_edtu0")
+theme_override_font_sizes/font_size = 61
+text = "Mix 
+Multiplier:"
+horizontal_alignment = 1
+
+[node name="MPFVariable" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1449.0
+offset_top = 784.0
+offset_right = 1615.0
+offset_bottom = 857.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_edtu0")
+theme_override_font_sizes/font_size = 71
+text = "0"
+horizontal_alignment = 1
+script = ExtResource("3_nw88v")
+variable_name = "threemcsand1dj_mix_multiplier"
+min_digits = 1
+metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"
+
+[node name="x" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1588.0
+offset_top = 785.0
+offset_right = 1686.0
+offset_bottom = 848.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_edtu0")
+theme_override_font_sizes/font_size = 61
+text = "x"
+horizontal_alignment = 1

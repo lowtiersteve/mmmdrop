@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://8edqjhku2kv0"]
+
+[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_83k5q"]
+[ext_resource type="VideoStream" uid="uid://bhn6thsxopd3n" path="res://modes/3mcsand1dj/slides/ThreeMCsandOneDJFailVideo.ogv" id="2_vfhor"]
+[ext_resource type="Script" uid="uid://bf2dsnm46ji2e" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_vo4ec"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="4_3o6xa"]
+
+[node name="3MCsand1DJFailed" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_83k5q")
+metadata/_custom_type_script = "uid://d15ukepy10pan"
+
+[node name="MPFVideoPlayer" type="VideoStreamPlayer" parent="."]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+stream = ExtResource("2_vfhor")
+autoplay = true
+expand = true
+bus = &"effects"
+script = ExtResource("3_vo4ec")
+hide_behavior = 1
+preview_in_editor = true
+metadata/_custom_type_script = "uid://bf2dsnm46ji2e"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 503.0
+offset_top = 399.0
+offset_right = 1487.0
+offset_bottom = 640.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("4_3o6xa")
+theme_override_font_sizes/font_size = 116
+text = "Your mix
+sucked!"
+horizontal_alignment = 1

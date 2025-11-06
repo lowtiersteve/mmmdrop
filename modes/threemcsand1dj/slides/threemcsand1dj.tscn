@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://b36ascvanp8vj"]
+
+[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_2iid2"]
+[ext_resource type="VideoStream" uid="uid://dd584vmv52qnv" path="res://modes/3mcsand1dj/slides/ThreeMCsandOneDJMV.ogv" id="2_hqtkv"]
+[ext_resource type="Script" uid="uid://bf2dsnm46ji2e" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_fkkkc"]
+
+[node name="3MCsand1DJ" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_2iid2")
+metadata/_custom_type_script = "uid://d15ukepy10pan"
+
+[node name="MPFVideoPlayer" type="VideoStreamPlayer" parent="."]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+stream = ExtResource("2_hqtkv")
+autoplay = true
+expand = true
+loop = true
+script = ExtResource("3_fkkkc")
+hide_behavior = 1
+preview_in_editor = true
+metadata/_custom_type_script = "uid://bf2dsnm46ji2e"

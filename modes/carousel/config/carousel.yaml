@@ -8,7 +8,7 @@ mode:
 
 
 mode_settings:
-  selectable_items: intergalactic{not device.achievements.intergalactic_mode.state=='completed'}, paulrevere{not device.achievements.paulrevere_mode.state=='completed'}, tripletrouble{not device.achievements.tripletrouble_mode.state=='completed'}, sabotage{not device.achievements.sabotage_mode.state=='completed'}, toomanyrappers{not device.achievements.toomanyrappers_mode.state=='completed'}, fingerlickingood{not device.achievements.fingerlickingood_mode.state=='completed'}
+  selectable_items: intergalactic{not device.achievements.intergalactic_mode.state=='completed'}, paulrevere{not device.achievements.paulrevere_mode.state=='completed'}, tripletrouble{not device.achievements.tripletrouble_mode.state=='completed'}, sabotage{not device.achievements.sabotage_mode.state=='completed'}, threemcsand1dj{not device.achievements.threemcsand1dj_mode.state=='completed'}, toomanyrappers{not device.achievements.toomanyrappers_mode.state=='completed'}, fingerlickingood{not device.achievements.fingerlickingood_mode.state=='completed'}
   select_item_events: scoop_hit
   next_item_events: pop1_hit, pop2_hit, carousel_advance, carousel_advance_2, carousel_advance_3, carousel_advance_4, carousel_advance_5, carousel_advance_6, carousel_advance_7
   previous_item_events: pop3_hit
@@ -39,6 +39,11 @@ variable_player:
     selected_mode:
       string: "Too Many Rappers"
       action: set
+  carousel_threemcsand1dj_selected:
+    selected_mode:
+      string: "3 MCs and 1 DJ"
+      action: set
+
 
 
 slide_player:
@@ -55,12 +60,14 @@ event_player:
   select_sabotage: mode_sabotage_start
   select_fingerlickingood: mode_fingerlickingood_start
   select_toomanyrappers: mode_toomanyrappers_start
+  select_threemcsand1dj: mode_threemcsand1dj_start
   achievement_wizard1_state_enabled: stop_carousel
   random_mode_picker_paulrevere: carousel_advance
   random_mode_picker_tripletrouble: carousel_advance, carousel_advance_2
   random_mode_picker_sabotage: carousel_advance, carousel_advance_2, carousel_advance_3
-  random_mode_picker_toomanyrappers: carousel_advance, carousel_advance_2, carousel_advance_3, carousel_advance_4
-  random_mode_picker_fingerlickingood: carousel_advance, carousel_advance_2, carousel_advance_3, carousel_advance_4, carousel_advance_5
+  random_mode_picker_threemcsand1dj: carousel_advance, carousel_advance_2, carousel_advance_3, carousel_advance_4
+  random_mode_picker_toomanyrappers: carousel_advance, carousel_advance_2, carousel_advance_3, carousel_advance_4, carousel_advance_5
+  random_mode_picker_fingerlickingood: carousel_advance, carousel_advance_2, carousel_advance_3, carousel_advance_4, carousel_advance_5, carousel_advance_6
 
 
 
@@ -74,6 +81,7 @@ random_event_player:
     - random_mode_picker_sabotage
     - random_mode_picker_fingerlickingood
     - random_mode_picker_toomanyrappers
+    - random_mode_picker_threemcsand1dj
 
 
 show_player:
@@ -118,6 +126,13 @@ show_player:
       loops: -1
   item_highlighted{item!='toomanyrappers'}:
     toomanyrappers_mode_lit:
+      action: stop
+  item_highlighted{item=='threemcsand1dj'}:
+    threemcsand1dj_mode_lit:
+      action: play
+      loops: -1
+  item_highlighted{item!='threemcsand1dj'}:
+    threemcsand1dj_mode_lit:
       action: stop
 
 

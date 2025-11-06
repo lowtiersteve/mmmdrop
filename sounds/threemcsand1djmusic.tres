@@ -1,0 +1,8 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://b4b608bicsqr2"]
+
+[ext_resource type="AudioStream" uid="uid://b8k8773x8u5rq" path="res://sounds/ThreeMCsandOneDJ.ogg" id="1_cspmr"]
+
+[resource]
+playback_mode = 2
+streams_count = 1
+stream_0/stream = ExtResource("1_cspmr")
