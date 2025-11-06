@@ -1,0 +1,257 @@
+#config_version=6
+
+mode:
+  start_events: carousel_toomanyrappers_selected
+  stop_events: mode_toomanyrappers_stop, mode_toomanyrappers_failed, mode_toomanyrappers_success, ball_will_end
+  priority: 1000
+
+sequences:
+  load_rhymes_once:
+    events:
+      - toomanyrappers_roving_shot_lit_hit
+    events_when_complete: enable_spit_rhymes_once
+    reset_on_complete: False
+    enable_events: timer_toomanyrappers_intro_show_complete
+    disable_events: logicblock_spit_rhymes_once_hit, toomanyrappers_roving_shot_lit_hit{current_player.toomanyrappers_rhymes_loaded==3}
+  spit_rhymes_once:
+    events:
+      - pop3_hit
+    enable_events: enable_spit_rhymes_once
+    events_when_complete: enable_load_rhymes_twice
+    reset_on_complete: True
+  load_rhymes_twice:
+    events:
+      - toomanyrappers_roving_shot_lit_hit
+    enable_events: enable_load_rhymes_twice
+    events_when_complete: enable_spit_rhymes_twice
+    reset_on_complete: False
+    disable_events: logicblock_spit_rhymes_twice_hit, toomanyrappers_roving_shot_lit_hit{current_player.toomanyrappers_rhymes_loaded==3}
+  spit_rhymes_twice:
+    events:
+      - pop3_hit
+    enable_events: enable_spit_rhymes_twice
+    events_when_complete: rhymes_spit_twice
+    reset_on_complete: True
+
+
+variable_player:
+  mode_toomanyrappers_started:
+    mode_blocking_flag:
+      int: 1
+      action: set
+    toomanyrappers_rhymes_loaded:
+      int: 0
+      action: set
+  increase_rhymes{current_player.toomanyrappers_rhymes_loaded<4}:
+    score: 100000
+    mode_toomanyrappers_score: 100000
+    toomanyrappers_rhymes_loaded:
+      int: 1
+      action: add
+  logicblock_spit_rhymes_once_hit:
+    score: 5000000 * current_player.toomanyrappers_rhymes_loaded
+    mode_toomanyrappers_score: 5000000 * current_player.toomanyrappers_rhymes_loaded
+    toomanyrappers_rhymes_loaded:
+      int: 0
+      action: set
+  rhymes_spit_twice:
+    score: 5000000 * current_player.toomanyrappers_rhymes_loaded
+    mode_toomanyrappers_score: 5000000 * current_player.toomanyrappers_rhymes_loaded
+  timer_toomanyrappers_intro_show_tick:
+    toomanyrappers_intro_show_variable_times_100:
+      int: device.timers.toomanyrappers_intro_show.ticks * 100
+      action: set
+  timer_toomanyrappers_time_remaining_tick:
+    toomanyrappers_time_remaining_variable_times_1:
+      int: device.timers.toomanyrappers_time_remaining.ticks * 1
+      action: set
+
+
+slide_player:
+  mode_toomanyrappers_started:
+    current_mode_highlighted:
+      action: remove
+    base:
+      action: remove
+    basevideo1:
+      action: remove
+    basevideo2:
+      action: remove
+    basevideo3:
+      action: remove
+    basevideo4:
+      action: remove
+    toomanyrappers:
+      action: play
+      priority: 500000
+    toomanyrappers_instructions:
+      action: play
+      priority: 500001
+      expire: 10s
+  timer_toomanyrappers_intro_show_complete:
+    toomanyrappers_instructions:
+      action: remove
+    toomanyrappers_rhymes_counter:
+      action: play
+      priority: 800000
+    toomanyrappers_display_timer:
+      action: play
+      priority: 825000
+
+
+sound_player:
+  mode_toomanyrappers_started:
+    toomanyrappersmusic:
+      action: play
+      bus: music
+  increase_rhymes:
+    success_shot:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  logicblock_spit_rhymes_once_hit:
+    success_shot:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  rhymes_spit_twice:
+    success_finish:
+      action: play
+      bus: effects
+      max_queue_time: 1s
+
+
+ball_holds:
+  toomanyrappers_scoop_hold:
+    balls_to_hold: 1
+    hold_devices: bd_scoop
+    enable_events: mode_toomanyrappers_started
+    disable_events: timer_toomanyrappers_intro_show_complete
+    release_one_events: timer_toomanyrappers_intro_show_complete
+
+
+timers:
+  toomanyrappers_intro_show:
+    start_value: 0
+    end_value: 10
+    control_events:
+      - action: start
+        event: mode_toomanyrappers_started
+      - action: jump
+        value: 10
+        event: flipper_cancel
+  toomanyrappers_left:
+    start_value: 0
+    end_value: 7
+    control_events:
+      - action: start
+        event: mode_toomanyrappers_started
+      - action: restart
+        event: timer_toomanyrappers_left_complete
+      - action: restart
+        event: logicblock_spit_rhymes_once_hit
+  toomanyrappers_time_remaining:
+    start_value: 60
+    end_value: 0
+    direction: down
+    control_events:
+      - action: start
+        event: timer_toomanyrappers_intro_show_complete
+      - action: pause
+        event: rhymes_spit_twice
+      - action: reset
+        event: mode_toomanyrappers_started
+      - action: add
+        value: 7
+        event: add_toomanyrappers_time_7s
+      - action: add
+        value: 15
+        event: add_toomanyrappers_time_15s
+
+
+event_player:
+  timer_toomanyrappers_intro_show_complete: advance_toomanyrappers_rightorbit
+  timer_toomanyrappers_time_remaining_complete: mode_toomanyrappers_failed
+  toomanyrappers_roving_shot_lit_hit: increase_rhymes
+  increase_rhymes: add_toomanyrappers_time_7s
+  pop_standup_hit: add_toomanyrappers_time_15s
+  rhymes_spit_twice: mode_toomanyrappers_success
+  logicblock_spit_rhymes_once_hit: advance_toomanyrappers_rightorbit
+
+
+shot_profiles:
+  toomanyrappers_roving_shot:
+    advance_on_hit: false
+    states:
+      - name: off
+        show: off
+      - name: lit
+        show: flash_color
+        show_tokens:
+          color: orange
+        speed: 2
+    loop: true
+
+
+shots:
+  toomanyrappers_leftorbit:
+    hit_events: left_orbit_hit
+    profile: toomanyrappers_roving_shot
+    advance_events: advance_toomanyrappers_leftorbit
+    show_tokens:
+      led: l_leftorbit_arrow_led
+  toomanyrappers_leftramp:
+    hit_events: left_ramp_hit
+    profile: toomanyrappers_roving_shot
+    advance_events: advance_toomanyrappers_leftramp
+    show_tokens:
+      led: l_leftramp_arrow_led
+  toomanyrappers_captiveball:
+    hit_events: captive_ball_hit
+    profile: toomanyrappers_roving_shot
+    advance_events: advance_toomanyrappers_captiveball
+    show_tokens:
+      led: l_captiveball_smallcircle_led
+  toomanyrappers_scoop:
+    hit_events: scoop_hit
+    profile: toomanyrappers_roving_shot
+    advance_events: advance_toomanyrappers_scoop
+    show_tokens:
+      led: l_scoop_arrow_led
+  toomanyrappers_rightramp:
+    hit_events: right_ramp_hit
+    profile: toomanyrappers_roving_shot
+    advance_events: advance_toomanyrappers_rightramp
+    show_tokens:
+      led: l_rightramp_arrow_led
+  toomanyrappers_rightorbit:
+    hit_events: right_orbit_hit
+    profile: toomanyrappers_roving_shot
+    advance_events: advance_toomanyrappers_rightorbit
+    show_tokens:
+      led: l_rightorbit_arrow_led
+
+
+shot_groups:
+  toomanyrappers_roving_shot:
+    shots: toomanyrappers_rightorbit, toomanyrappers_leftorbit, toomanyrappers_leftramp, toomanyrappers_captiveball, toomanyrappers_scoop, toomanyrappers_rightramp
+    rotate_left_events: timer_toomanyrappers_left_complete
+    restart_events: mode_toomanyrappers_started, logicblock_spit_rhymes_once_hit
+    enable_events: timer_toomanyrappers_intro_show_complete
+    disable_events: toomanyrappers_roving_shot_lit_hit{current_player.toomanyrappers_rhymes_loaded==3}
+
+
+blinkenlight_player:
+  enable_spit_rhymes_once:
+    bl_lowerpop_smallarrow_led: orange
+    bl_lowerrightpop_inside_led: orange
+  logicblock_spit_rhymes_once_hit:
+    bl_lowerpop_smallarrow_led: off
+    bl_lowerrightpop_inside_led: off
+  enable_spit_rhymes_twice:
+    bl_lowerpop_smallarrow_led: orange
+    bl_lowerrightpop_inside_led: orange
+  logicblock_spit_rhymes_twice_hit:
+    bl_lowerpop_smallarrow_led: off
+    bl_lowerrightpop_inside_led: off
+

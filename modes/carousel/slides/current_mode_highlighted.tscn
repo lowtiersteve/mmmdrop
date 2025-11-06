@@ -98,3 +98,36 @@ theme_override_fonts/font = ExtResource("3_ruqgo")
 theme_override_font_sizes/font_size = 81
 text = "Finger Lickin' Good"
 horizontal_alignment = 1
+
+[node name="toomanyrappers" type="Label" parent="MPFCarousel"]
+offset_left = 421.0
+offset_top = 598.0
+offset_right = 1543.0
+offset_bottom = 747.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("3_ruqgo")
+theme_override_font_sizes/font_size = 81
+text = "Too Many Rappers"
+horizontal_alignment = 1
+
+[node name="3mcsand1dj" type="Label" parent="MPFCarousel"]
+offset_left = 421.0
+offset_top = 598.0
+offset_right = 1543.0
+offset_bottom = 747.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("3_ruqgo")
+theme_override_font_sizes/font_size = 81
+text = "3 MC's and One DJ"
+horizontal_alignment = 1
+
+[node name="highplainsdrifter" type="Label" parent="MPFCarousel"]
+offset_left = 421.0
+offset_top = 598.0
+offset_right = 1543.0
+offset_bottom = 747.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("3_ruqgo")
+theme_override_font_sizes/font_size = 81
+text = "High Plains Drifter"
+horizontal_alignment = 1

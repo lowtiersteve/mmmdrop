@@ -18,7 +18,7 @@ counters:
     reset_on_complete: false
     disable_events: multiball_chcheckitout_started, mode_makesomenoise_started, multiball_bodymovin_started, ball_is_ending
     enable_events: ball_started, multiball_chcheckitout_ended, multiball_bodymovin_ended, multiball_makesomenoise_ended
-    restart_events: mode_intergalactic_stopped, mode_intergalactic_success, mode_paulrevere_stopped, mode_paulrevere_success, mode_tripletrouble_stopped, mode_tripletrouble_success, mode_sabotage_stopped, mode_sabotage_success, mode_fingerlickingood_stopped, mode_fingerlickingood_success
+    restart_events: mode_intergalactic_stopped, mode_intergalactic_success, mode_paulrevere_stopped, mode_paulrevere_success, mode_tripletrouble_stopped, mode_tripletrouble_success, mode_sabotage_stopped, mode_sabotage_success, mode_fingerlickingood_stopped, mode_fingerlickingood_success, mode_toomanyrappers_stopped, mode_toomanyrappers_success
     control_events:
       - event: reset_drop_target_bank_counter
         action: jump
@@ -84,6 +84,18 @@ counters:
         action: jump
         value: 10
       - event: mode_fingerlickingood_success{device.achievements.wizard1.state=='completed'}
+        action: jump
+        value: 20
+      - event: mode_toomanyrappers_stopped{not device.achievements.wizard1.state=='completed'}
+        action: jump
+        value: 10
+      - event: mode_toomanyrappers_stopped{device.achievements.wizard1.state=='completed'}
+        action: jump
+        value: 20
+      - event: mode_toomanyrappers_success{not device.achievements.wizard1.state=='completed'}
+        action: jump
+        value: 10
+      - event: mode_toomanyrappers_success{device.achievements.wizard1.state=='completed'}
         action: jump
         value: 20
       - event: multiball_makesomenoise_ended
@@ -188,11 +200,19 @@ show_player:
     battery_red:
       action: play
       loops: -1
+  mode_toomanyrappers_stopped{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state!='enabled'}:
+    battery_red:
+      action: play
+      loops: -1
+  mode_toomanyrappers_success{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state!='enabled'}:
+    battery_red:
+      action: play
+      loops: -1
   mode_makesomenoise_stopped:
     battery_red:
       action: play
       loops: -1
-  logicblock_battery_charged_status_updated{device.counters.battery_charged_status.value<16 and device.counters.battery_charged_status.value!=0 and device.achievements.wizard1.state=='disabled'}:
+  logicblock_battery_charged_status_updated{device.counters.battery_charged_status.value<16 and device.counters.battery_charged_status.value!=0 and device.achievements.wizard1.state=='disabled' and device.counters.battery_charged_status.enabled==True}:
     battery_red:
       action:
         stop

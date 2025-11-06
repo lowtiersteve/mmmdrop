@@ -1,0 +1,145 @@
+#show_version=6
+
+- duration: 50ms
+  lights:
+    l_ballsave_circle_led: purple
+- duration: 50ms
+  lights:
+    l_wizardindicator_rectangle_led: purple
+- duration: 50ms
+  lights:
+    l_ballsave_circle_led: off
+    l_modeindicator5_rectangle_led: purple
+    l_modeindicator6_rectangle_led: purple
+    l_modeindicator7_rectangle_led: purple
+    l_modeindicator8_rectangle_led: purple
+- duration: 50ms
+  lights:
+    l_wizardindicator_rectangle_led: off
+    l_wizardindicator3_rectangle_led: purple
+    l_cassetteleft_led: purple
+    l_cassetteright_led: purple
+- duration: 50ms
+  lights:
+    l_modeindicator5_rectangle_led: off
+    l_modeindicator6_rectangle_led: off
+    l_modeindicator7_rectangle_led: off
+    l_modeindicator8_rectangle_led: off
+    l_modeindicator1_rectangle_led: purple
+    l_modeindicator2_rectangle_led: purple
+    l_modeindicator3_rectangle_led: purple
+    l_modeindicator4_rectangle_led: purple
+    l_leftoutlane_circle_led: purple
+    l_leftinlane_circle_led: purple
+    l_rightinlane_circle_led: purple
+    l_rightoutlane_circle_led: purple
+- duration: 50ms
+  lights:
+    l_wizardindicator3_rectangle_led: off
+    l_cassetteleft_led: off
+    l_cassetteright_led: off
+    l_wizardindicator2_rectangle_led: purple
+- duration: 50ms
+  lights:
+    l_modeindicator1_rectangle_led: off
+    l_modeindicator2_rectangle_led: off
+    l_modeindicator3_rectangle_led: off
+    l_modeindicator4_rectangle_led: off
+    l_leftoutlane_circle_led: off
+    l_leftinlane_circle_led: off
+    l_rightinlane_circle_led: off
+    l_rightoutlane_circle_led: off
+    l_supercircle1_led: purple
+    l_supercircle2_led: purple
+    l_supercircle3_led: purple
+    l_supercircle4_led: purple
+    l_supercircle5_led: purple
+    l_lowerpop_smallarrow_led: purple
+    l_lowerrightpop_inside_led: purple
+    l_lowerdrop_circle_led: purple
+    l_middledrop_circle_led: purple
+    l_dropbank_rectangle_led: purple
+- duration: 50ms
+  lights:
+    l_wizardindicator2_rectangle_led: off
+    l_upperdrop_circle_led: purple
+    l_leftrampcombo_circle_led: purple
+    l_leftramprectangle_led: purple
+- duration: 50ms
+  lights:
+    l_supercircle1_led: off
+    l_supercircle2_led: off
+    l_supercircle3_led: off
+    l_supercircle4_led: off
+    l_supercircle5_led: off
+    l_lowerpop_smallarrow_led: off
+    l_lowerrightpop_inside_led: off
+    l_lowerdrop_circle_led: off
+    l_middledrop_circle_led: off
+    l_dropbank_rectangle_led: off
+    l_leftramp_arrow_led: purple
+    l_dropstandup_flasher_led: purple
+    l_leftorbitbattery_rectangle_led: purple
+- duration: 50ms
+  lights:
+    l_upperdrop_circle_led: off
+    l_leftrampcombo_circle_led: off
+    l_leftramprectangle_led: off
+    l_tshirtbottomcircle_led: purple
+    l_rightramprectangle_led: purple
+    l_leftorbit_rectangle_led: purple
+- duration: 50ms
+  lights:
+    l_leftramp_arrow_led: off
+    l_dropstandup_flasher_led: off
+    l_leftorbitbattery_rectangle_led: off
+    l_tshirttopcircle_led: purple
+    l_leftorbitcombo_circle_led: purple
+    l_scoopmode_square_led: purple
+    l_rightorbitrectangle_led: purple
+    l_innerloop_arrow_led: purple
+    l_innerloopcombo_circle_led: purple
+    l_leftorbit_arrow_led: purple
+    l_rightrampcombo_circle_led: purple
+- duration: 50ms
+  lights:
+    l_tshirtbottomcircle_led: off
+    l_rightramprectangle_led: off
+    l_leftorbit_rectangle_led: off
+    l_rightorbitcombo_circle_led: purple
+    l_rightramp_arrow_led: purple
+    l_scoopmode_circle2_led: purple
+    l_captiveball_smallcircle_led: purple
+- duration: 50ms
+  lights:
+    l_tshirttopcircle_led: off
+    l_leftorbitcombo_circle_led: off
+    l_scoopmode_square_led: off
+    l_rightorbitrectangle_led: off
+    l_innerloop_arrow_led: off
+    l_innerloopcombo_circle_led: off
+    l_leftorbit_arrow_led: off
+    l_rightrampcombo_circle_led: off
+    l_upperleftpop_inside_led: purple
+    l_uppercenterpop_inside_led: purple
+    l_upperpop_smallarrow_led: purple
+    l_scoopcombo_circle_led: purple
+    l_rightorbit_arrow_led: purple
+- duration: 50ms
+  lights:
+    l_rightorbitcombo_circle_led: off
+    l_rightramp_arrow_led: off
+    l_scoopmode_circle2_led: off
+    l_captiveball_smallcircle_led: off
+    l_scoop_arrow_led: purple
+- duration: 50ms
+  lights:
+    l_upperleftpop_inside_led: off
+    l_uppercenterpop_inside_led: off
+    l_upperpop_smallarrow_led: off
+    l_scoopcombo_circle_led: off
+    l_rightorbit_arrow_led: off
+- duration: 50ms
+  lights:
+    l_scoop_arrow_led: off
+

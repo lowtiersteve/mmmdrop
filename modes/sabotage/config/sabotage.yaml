@@ -5,28 +5,6 @@ mode:
   stop_events: mode_sabotage_stop, mode_sabotage_failed, mode_sabotage_success, ball_will_end
   priority: 1000
 
-#counters:
-#  sabotage_perps_counter:
-#    count_events: left_orbit_hit, left_ramp_hit, right_ramp_hit, right_orbit_hit
-#    events_when_complete: sabotage_perps_counter_complete
-#    starting_count: 0
-#    count_complete_value: 6
-#    count_interval: 1
-#    direction: up
-#    persist_state: false
-#    disable_on_complete: false
-#    reset_on_complete: false
-#    disable_events: mode_sabotage_ended
-#    enable_events: mode_sabotage_started
-#    restart_events: mode_sabotage_started, sabotage_final_shot_hit
-#    control_events:
-#      - event: reset_sabotage_perps_counter
-#        action: jump
-#        value: 0
-#      - event: player_sabotage_perps_caught{current_player.sabotage_perps_caught<0}
-#        action: jump
-#        value: current_player.sabotage_perps_caught
-
 
 variable_player:
   mode_sabotage_started:

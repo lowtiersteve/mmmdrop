@@ -124,3 +124,57 @@ sound_player:
       action: play
       bus: effects
 
+random_event_player:
+  mode_bonus_started:
+    - play_red_show
+    - play_pink_show
+    - play_blue_show
+    - play_green_show
+    - play_orange_show
+    - play_purple_show
+    - play_yellow_show
+  bonus_entry:
+    - play_red_show
+    - play_pink_show
+    - play_blue_show
+    - play_green_show
+    - play_orange_show
+    - play_purple_show
+    - play_yellow_show
+
+show_player:
+  play_red_show:
+    bonus_count_show_red:
+      action: play
+      loops: 0
+      priority: 1000
+  play_blue_show:
+    bonus_count_show_blue:
+      action: play
+      loops: 0
+      priority: 1000
+  play_green_show:
+    bonus_count_show_green:
+      action: play
+      loops: 0
+      priority: 1000
+  play_yellow_show:
+    bonus_count_show_yellow:
+      action: play
+      loops: 0
+      priority: 1000
+  play_orange_show:
+    bonus_count_show_orange:
+      action: play
+      loops: 0
+      priority: 1000
+  play_pink_show:
+    bonus_count_show_pink:
+      action: play
+      loops: 0
+      priority: 1000
+  play_purple_show:
+    bonus_count_show_purple:
+      action: play
+      loops: 0
+      priority: 1000

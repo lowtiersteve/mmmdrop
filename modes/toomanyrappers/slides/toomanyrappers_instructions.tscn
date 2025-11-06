@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=3 uid="uid://quayyr3osrp4"]
+
+[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_mvbfq"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="2_6w3mk"]
+
+[node name="TooManyRappersInstructions" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_mvbfq")
+metadata/_custom_type_script = "uid://d15ukepy10pan"
+
+[node name="instructions" type="Label" parent="."]
+layout_mode = 0
+offset_left = 372.0
+offset_top = 338.0
+offset_right = 1528.0
+offset_bottom = 935.0
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("2_6w3mk")
+theme_override_font_sizes/font_size = 45
+text = "Load up to 4 rhymes
+by hitting the roving shot
+
+
+spit loaded rhymes at suckas
+by hitting the lower pop
+
+
+spit 2 verses to
+diss 'em into obscurity!"
+horizontal_alignment = 1
+
+[node name="instructionsheader" type="Label" parent="."]
+layout_mode = 0
+offset_left = 411.0
+offset_top = 186.0
+offset_right = 1485.0
+offset_bottom = 341.0
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("2_6w3mk")
+theme_override_font_sizes/font_size = 65
+text = "Snipe the Biters!"
+horizontal_alignment = 1

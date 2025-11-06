@@ -1,45 +1,39 @@
 events:
   game_ended: 61
-  game_started: 708
+  game_started: 727
 missing_switches:
-  s_captive_ball: 18
-  s_center_upper_pop: 18
-  s_inner_orbit: 18
-  s_left_flipper: 8
-  s_left_inlane: 18
-  s_left_orbit: 18
-  s_left_outlane: 18
-  s_left_ramp: 12
-  s_left_slingshot: 634
-  s_left_upper_pop: 151
-  s_pop_standup: 18
-  s_right_flipper: 8
-  s_right_inlane: 18
-  s_right_lower_pop: 8
-  s_right_orbit: 18
-  s_right_outlane: 18
-  s_right_ramp: 8
-  s_right_slingshot: 484
-  s_scoop: 3
-  s_service_down: 353
-  s_service_enter: 102
-  s_service_esc: 353
-  s_service_up: 102
-  s_spinner: 8
-  s_start: 17
+  s_captive_ball: 3
+  s_center_upper_pop: 16
+  s_inner_orbit: 37
+  s_left_inlane: 37
+  s_left_orbit: 4
+  s_left_outlane: 37
+  s_left_slingshot: 653
+  s_left_upper_pop: 170
+  s_pop_standup: 15
+  s_right_inlane: 37
+  s_right_orbit: 4
+  s_right_outlane: 37
+  s_right_slingshot: 503
+  s_service_down: 372
+  s_service_enter: 121
+  s_service_esc: 372
+  s_service_up: 121
+  s_start: 36
+  s_three_bank_bottom: 1
+  s_three_bank_middle: 1
   s_three_bank_standup: 1
-  s_tilt_bob: 271
-  s_top_right_flipper: 634
-  s_trough1: 18
-  s_trough2: 8
-  s_trough3: 8
-  s_trough4: 8
-  s_trough5: 633
-  s_trough6: 483
-  s_trough_jam: 634
-  s_tshirt_bottom_standup: 2
-  s_tshirt_top_standup: 2
-  s_upper_pop_standup: 71
+  s_tilt_bob: 290
+  s_top_right_flipper: 653
+  s_trough2: 1
+  s_trough3: 1
+  s_trough4: 9
+  s_trough5: 652
+  s_trough6: 502
+  s_trough_jam: 653
+  s_tshirt_bottom_standup: 1
+  s_tshirt_top_standup: 1
+  s_upper_pop_standup: 90
   service_esc: 1
 player:
   score:
@@ -57,82 +51,87 @@ player:
     - 6022290
     total: 65
 shots:
-  bottom_drop: 94
-  captive_ball: 37
+  bottom_drop: 100
+  captive_ball: 42
   inner_loop: 20
   inner_loop_backdoor: 1
   left_inlane: 34
   left_orbit: 36
   left_orbit_backdoor: 9
   left_outlane: 28
-  left_ramp: 263
-  middle_drop: 93
+  left_ramp: 267
+  middle_drop: 101
   pop1: 9
-  pop2: 11
-  pop3: 671
-  pop_standup: 412
+  pop2: 29
+  pop3: 758
+  pop_standup: 416
   right_inlane: 33
-  right_orbit: 29
+  right_orbit: 33
   right_orbit_backdoor: 5
   right_outlane: 22
-  right_ramp: 455
-  scoop: 380
+  right_ramp: 519
+  scoop: 407
   skill_captive: 16
   skill_drop_targets: 240
   skill_side_targets: 27
-  skillshot_drop_targets: 292
+  skillshot_drop_targets: 311
   skillshot_hideout_plunge: 1
   skillshot_left_outlane: 2
   skillshot_side_targets: 7
   skillshot_super: 2
-  spinner: 1525
-  three_bank_standup: 31
-  top_drop: 315
-  tshirt_bottom_standup: 49
-  tshirt_top_standup: 51
+  spinner: 1569
+  three_bank_standup: 36
+  toomanyrappers_captiveball: 3
+  toomanyrappers_leftramp: 1
+  toomanyrappers_rightorbit: 4
+  toomanyrappers_rightramp: 49
+  toomanyrappers_scoop: 6
+  top_drop: 338
+  tshirt_bottom_standup: 50
+  tshirt_top_standup: 52
   upper_pop_standup: 34
 switches:
-  s_captive_ball: 233
-  s_center_upper_pop: 231
+  s_captive_ball: 246
+  s_center_upper_pop: 249
   s_inner_orbit: 29
-  s_left_flipper: 1482
+  s_left_flipper: 1498
   s_left_inlane: 145
-  s_left_orbit: 136
+  s_left_orbit: 140
   s_left_outlane: 85
-  s_left_ramp: 397
+  s_left_ramp: 401
   s_left_slingshot: 259
   s_left_upper_pop: 170
-  s_plunger: 1634
-  s_pop_standup: 536
-  s_right_flipper: 2250
+  s_plunger: 1669
+  s_pop_standup: 540
+  s_right_flipper: 2267
   s_right_inlane: 141
-  s_right_lower_pop: 1423
-  s_right_orbit: 162
+  s_right_lower_pop: 1510
+  s_right_orbit: 166
   s_right_outlane: 75
-  s_right_ramp: 603
+  s_right_ramp: 667
   s_right_slingshot: 366
-  s_scoop: 725
+  s_scoop: 752
   s_service_down: 0
   s_service_enter: 1
   s_service_esc: 0
   s_service_up: 2
-  s_spinner: 3585
+  s_spinner: 3629
   s_start: 70
-  s_three_bank_bottom: 587
-  s_three_bank_middle: 627
-  s_three_bank_standup: 273
-  s_three_bank_top: 853
+  s_three_bank_bottom: 593
+  s_three_bank_middle: 636
+  s_three_bank_standup: 278
+  s_three_bank_top: 876
   s_tilt_bob: 51
   s_top_right_flipper: 1294
-  s_trough1: 442
-  s_trough2: 349
-  s_trough3: 271
-  s_trough4: 182
+  s_trough1: 444
+  s_trough2: 355
+  s_trough3: 278
+  s_trough4: 183
   s_trough5: 160
   s_trough6: 161
   s_trough_jam: 206
-  s_tshirt_bottom_standup: 98
-  s_tshirt_top_standup: 129
+  s_tshirt_bottom_standup: 99
+  s_tshirt_top_standup: 130
   s_upper_pop_standup: 208
   service_down: 1
   service_enter: 2
