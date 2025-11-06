@@ -13,10 +13,22 @@ mode_settings:
       score: 250000
       player_score_entry: modes_completed
       skip_if_negative: true
+    - entry: bonus_time_remaining
+      score: 1000
+      player_score_entry: mode_time_remaining_total
+      skip_if_negative: true
     - entry: bonus_combos
       score: 25000
       player_score_entry: combos
       skip_if_negative: true
+
+
+variable_player:
+  mode_bonus_started:
+    mode_time_remaining_total:
+      int: current_player.intergalactic_time_remaining_variable_times_1 + current_player.paulrevere_time_remaining_variable_times_1 + current_player.tripletrouble_time_remaining_variable_times_1 + current_player.sabotage_time_remaining_variable_times_1 + current_player.fingerlickingood_time_remaining_variable_times_1 + current_player.toomanyrappers_time_remaining_variable_times_1
+      action: set
+
 
 slide_player:
   mode_bonus_started:
@@ -37,12 +49,24 @@ slide_player:
     bonus_modes_completed_slide:
       action: play
       priority: 1000000
+  bonus_entry{entry=="bonus_time_remaining"}:
+    bonus_start_slide:
+      action: remove
+    bonus_modes_played_slide:
+      action: remove
+    bonus_modes_completed_slide:
+      action: remove
+    bonus_time_remaining:
+      action: play
+      priority: 1000000
   bonus_entry{entry=="bonus_combos"}:
     bonus_start_slide:
       action: remove
     bonus_modes_played_slide:
       action: remove
     bonus_modes_completed_slide:
+      action: remove
+    bonus_time_remaining:
       action: remove
     bonus_combos_slide:
       action: play
@@ -53,6 +77,8 @@ slide_player:
     bonus_modes_played_slide:
       action: remove
     bonus_modes_completed_slide:
+      action: remove
+    bonus_time_remaining:
       action: remove
     bonus_combos_slide:
       action: remove
@@ -65,6 +91,8 @@ slide_player:
     bonus_modes_played_slide:
       action: remove
     bonus_modes_completed_slide:
+      action: remove
+    bonus_time_remaining:
       action: remove
     bonus_combos_slide:
       action: remove
@@ -79,6 +107,8 @@ slide_player:
     bonus_modes_played_slide:
       action: remove
     bonus_modes_completed_slide:
+      action: remove
+    bonus_time_remaining:
       action: remove
     bonus_combos_slide:
       action: remove
@@ -108,6 +138,10 @@ sound_player:
       action: play
       bus: effects
   slide_bonus_modes_completed_slide_active:
+    bonus_sound_random:
+      action: play
+      bus: effects
+  slide_bonus_time_remaining_active:
     bonus_sound_random:
       action: play
       bus: effects
