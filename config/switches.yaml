@@ -76,7 +76,6 @@ switches:
     label: "Lower Right Pop Bumper"
   s_captive_ball:
     number: 0804-1
-    ignore_window_ms: 500
     label: "Captive Ball Target"
   s_pop_standup:
     number: 0804-6
