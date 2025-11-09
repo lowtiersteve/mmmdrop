@@ -1,0 +1,9 @@
+#show_version=6
+
+- duration: -1
+  lights:
+    l_leftsling_uppergi_led: white
+    l_leftsling_lowergi_led: white
+    l_rightsling_uppergi_led: white
+    l_rightsling_lowergi_led: white
+

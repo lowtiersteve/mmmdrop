@@ -1356,6 +1356,10 @@ random_event_player:
 
 
 show_player:
+  mode_base_started:
+    GI_on:
+      action: play
+      priority: 1000
   mode_intergalactic_success:
     intergalactic_success_show:
       action: play

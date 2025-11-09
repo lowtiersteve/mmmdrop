@@ -50,6 +50,12 @@ light:
   l_leftramprectangle_led:
     x: 0.44501497646555416
     y: 0.3992297817715019
+  l_leftsling_lowergi_led:
+    x: 0.30295250320924266
+    y: 0.6328626444159178
+  l_leftsling_uppergi_led:
+    x: 0.2943945228925973
+    y: 0.5827984595635429
   l_lowerdrop_circle_led:
     x: 0.2943945228925973
     y: 0.44801026957637996
@@ -116,6 +122,12 @@ light:
   l_rightramprectangle_led:
     x: 0.6469833119383825
     y: 0.2798459563543004
+  l_rightsling_lowergi_led:
+    x: 0.7000427899015832
+    y: 0.637997432605905
+  l_rightsling_uppergi_led:
+    x: 0.7154471544715447
+    y: 0.5840821566110398
   l_scoop_arrow_led:
     x: 0.6161745827984596
     y: 0.196405648267009

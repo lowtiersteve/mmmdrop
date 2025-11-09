@@ -63,7 +63,7 @@ lights:
     type: rgb
     label: "Upper Drop Rectangle"
   l_dropstandup_flasher_led:
-    number: lightboard-6-2
+    number: lightboard-4-18
     subtype: led
     type: rgb
     label: "Behind Drops Standup Flasher"
@@ -78,12 +78,12 @@ lights:
     type: rgb
     label: "Upper Right Pop Inside"
   l_lowerrightpop_inside_led:
-    number: lightboard-2-8
+    number: lightboard-2-10
     subtype: led
     type: rgb
     label: "Lower Right Pop Inside 1"
   l_lowerrightpop_inside2_led:
-    number: lightboard-2-9
+    number: lightboard-2-11
     subtype: led
     type: rgb
     label: "Lower Right Pop Inside 2"
@@ -93,7 +93,7 @@ lights:
     type: rgb
     label: "Drops 2x Scoring Square"
   l_leftoutlane_circle_led:
-    number: lightboard-4-15
+    number: lightboard-4-17
     subtype: led
     type: rgb
     label: "Left Outlane Circle"
@@ -103,12 +103,12 @@ lights:
     type: rgb
     label: "Left Inlane Circle"
   l_rightinlane_circle_led:
-    number: lightboard-2-6
+    number: lightboard-2-8
     subtype: led
     type: rgb
     label: "Right Inlane Circle"
   l_rightoutlane_circle_led:
-    number: lightboard-2-7
+    number: lightboard-2-9
     subtype: led
     type: rgb
     label: "Right Outlane Circle"
@@ -287,6 +287,27 @@ lights:
     subtype: led
     type: rgb
     label: "Left Orbit Rectangle - MCA"
+  l_leftsling_uppergi_led:
+    number: lightboard-4-15
+    subtype: led
+    type: rgb
+    label: "Left Sling Upper GI"
+  l_leftsling_lowergi_led:
+    number: lightboard-4-16
+    subtype: led
+    type: rgb
+    label: "Left Sling Lower GI"
+  l_rightsling_uppergi_led:
+    number: lightboard-2-6
+    subtype: led
+    type: rgb
+    label: "Right Sling Upper GI"
+  l_rightsling_lowergi_led:
+    number: lightboard-2-7
+    subtype: led
+    type: rgb
+    label: "Right Sling Lower GI"
+
 
 
 blinkenlights:
@@ -324,7 +345,7 @@ blinkenlights:
     light: l_lowerrightstandup_circle_led
   bl_dropstandup_flasher_led:
     off_when_multiple: false
-    color_duration: 750ms
+    color_duration: 500ms
     light: l_dropstandup_flasher_led
   bl_upperpop_smallarrow_led:
     off_when_multiple: false
