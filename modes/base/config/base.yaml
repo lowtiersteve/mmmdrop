@@ -1359,7 +1359,7 @@ show_player:
   mode_base_started:
     GI_on:
       action: play
-      priority: 1000
+      priority: 10000
   mode_intergalactic_success:
     intergalactic_success_show:
       action: play
