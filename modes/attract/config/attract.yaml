@@ -332,7 +332,10 @@ widget_player:
       slide: attract
 
 show_player:
-  mode_attract_started: attract_light_show
+  mode_attract_started:
+    attract_light_show:
+      action: play
+      priority: 1000
   mode_attract_stopping:
     attract_light_show:
       action: stop
