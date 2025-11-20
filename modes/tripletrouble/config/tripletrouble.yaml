@@ -1,8 +1,10 @@
 #config_version=6
+
 mode:
   start_events: carousel_tripletrouble_selected
   stop_events: mode_tripletrouble_stop, mode_tripletrouble_failed, mode_tripletrouble_success, ball_will_end
   priority: 1000
+
 
 counters:
   tripletrouble_standups_counter:
@@ -22,6 +24,7 @@ counters:
       - event: reset_tripletrouble_standups_counter
         action: jump
         value: 7
+
 
 sequences:
   tripletrouble_shot_1:
@@ -143,7 +146,7 @@ timers:
         event: mode_tripletrouble_started
       - action: jump
         value: 5
-        event: flipper_cancel
+        event: flipper_cancel{device.ball_holds.tripletrouble_scoop_hold.balls_held==1}
   tripletrouble_time_remaining:
     start_value: 60
     end_value: 0
@@ -162,6 +165,7 @@ timers:
         value: 15
         event: add_tripletrouble_time_15s
 
+
 event_player:
   timer_tripletrouble_time_remaining_complete: mode_tripletrouble_failed
   tripletrouble_final_shot_hit: mode_tripletrouble_success
@@ -171,6 +175,7 @@ event_player:
   tshirt_top_standup_hit: add_tripletrouble_time_5s
   tshirt_bottom_standup_hit: add_tripletrouble_time_5s
 
+
 shot_profiles:
   tripletrouble_shot:
     advance_on_hit: false
@@ -179,20 +184,28 @@ shot_profiles:
         show: "off"
     loop: false
 
+
 show_player:
   tripletrouble_shot_1_done:
     tripletrouble_final_shot:
       action: play
       loops: -1
 
+
 blinkenlight_player:
   timer_tripletrouble_intro_show_complete:
-    bl_lowerrightstandup_circle_led: lime
-    bl_dropstandup_flasher_led: lime
-    bl_upperpop_smallarrow_led: lime
-    bl_tshirttopcircle_led: lime
-    bl_tshirtbottomcircle_led: lime
-    bl_captiveball_smallcircle_led: lime
+    bl_lowerrightstandup_circle_led:
+      color: 32CD32 #lime green 75%
+    bl_dropstandup_flasher_led:
+      color: 32CD32 #lime green 75%
+    bl_upperpop_smallarrow_led:
+      color: 32CD32 #lime green 75%
+    bl_tshirttopcircle_led:
+      color: 32CD32 #lime green 75%
+    bl_tshirtbottomcircle_led:
+      color: 32CD32 #lime green 75%
+    bl_captiveball_smallcircle_led:
+      color: 32CD32 #lime green 75%
   tripletrouble_shot_1_done:
     bl_lowerrightstandup_circle_led: remove
     bl_dropstandup_flasher_led: remove

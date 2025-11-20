@@ -44,6 +44,7 @@ shots:
     show_tokens:
       led: l_innerloop_arrow_led, l_innerloopcombo_circle_led, l_rightorbitcombo_circle_led
 
+
 shot_profiles:
   skill_shot_profile:
     advance_on_hit: true
@@ -53,9 +54,10 @@ shot_profiles:
       - name: lit
         show: flash_color
         show_tokens:
-          color: white
+          color: 999999
         speed: 4
     loop: true
+
 
 shot_groups:
   skillshot:
@@ -66,12 +68,14 @@ shot_groups:
     rotate_right_events: s_right_flipper_active
     restart_events: mode_skill_shot_started
 
+
 variable_player:
   skillshot_lit_hit:
     score: 1000000
     bonus_multiplier:
       int: 2
       action: add
+
 
 timers:
   skill_shot_timeout:
@@ -88,6 +92,7 @@ timers:
       - action: pause
         event: ball_starting
 
+
 slide_player:
   mode_skill_shot_started:
     skillshot_overlay:
@@ -99,6 +104,7 @@ slide_player:
   skill_failed:
     skillshot_overlay:
       action: remove
+
 
 random_event_player:
   mode_skill_shot_started:

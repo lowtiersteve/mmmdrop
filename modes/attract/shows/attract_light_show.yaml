@@ -7,10 +7,10 @@
     l_leftinlane_circle_led: yellow
     l_rightinlane_circle_led: yellow
     l_rightoutlane_circle_led: yellow
-    l_leftsling_uppergi_led: white%50
-    l_leftsling_lowergi_led: white%50
-    l_rightsling_uppergi_led: white%50
-    l_rightsling_lowergi_led: white%50
+    l_leftsling_uppergi_led: white
+    l_leftsling_lowergi_led: white
+    l_rightsling_uppergi_led: white
+    l_rightsling_lowergi_led: white
 - duration: 0.8
   lights:
     l_ballsave_circle_led: off
@@ -18,24 +18,24 @@
     l_leftinlane_circle_led: off
     l_rightinlane_circle_led: off
     l_rightoutlane_circle_led: off
-    l_modeindicator1_rectangle_led: white
-    l_modeindicator2_rectangle_led: white
-    l_modeindicator3_rectangle_led: white
-    l_modeindicator4_rectangle_led: white
-    l_modeindicator5_rectangle_led: white
-    l_modeindicator6_rectangle_led: white
-    l_modeindicator7_rectangle_led: white
-    l_modeindicator8_rectangle_led: white
-    l_wizardindicator_rectangle_led: white
-    l_wizardindicator2_rectangle_led: white
-    l_wizardindicator3_rectangle_led: white
-    l_supercircle1_led: white
-    l_supercircle2_led: white
-    l_supercircle3_led: white
-    l_supercircle4_led: white
-    l_supercircle5_led: white
-    l_cassetteleft_led: white
-    l_cassetteright_led: white
+    l_modeindicator1_rectangle_led: cyan
+    l_modeindicator2_rectangle_led: cyan
+    l_modeindicator3_rectangle_led: cyan
+    l_modeindicator4_rectangle_led: cyan
+    l_modeindicator5_rectangle_led: cyan
+    l_modeindicator6_rectangle_led: cyan
+    l_modeindicator7_rectangle_led: cyan
+    l_modeindicator8_rectangle_led: cyan
+    l_wizardindicator_rectangle_led: cyan
+    l_wizardindicator2_rectangle_led: cyan
+    l_wizardindicator3_rectangle_led: cyan
+    l_supercircle1_led: cyan
+    l_supercircle2_led: cyan
+    l_supercircle3_led: cyan
+    l_supercircle4_led: cyan
+    l_supercircle5_led: cyan
+    l_cassetteleft_led: cyan
+    l_cassetteright_led: cyan
 - duration: 0.8
   lights:
     l_modeindicator1_rectangle_led: off

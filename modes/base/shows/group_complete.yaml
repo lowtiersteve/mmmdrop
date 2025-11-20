@@ -8,6 +8,6 @@
     flash_color:
       priority: 10
       show_tokens:
-        color: Yellow
+        color: green
         led: l_leftoutlane_circle_led, l_leftinlane_circle_led, l_rightinlane_circle_led, l_rightoutlane_circle_led
       speed: 4

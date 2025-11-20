@@ -44,6 +44,14 @@ slide_player:
       action: remove
 
 sound_player:
+  tilt_warning_1:
+    tilt_warning_sound_random:
+      action: play
+      bus: effects
+  tilt_warning_2:
+    tilt_warning_sound_random:
+      action: play
+      bus: effects
   tilt:
     tilt_sound_random:
       action: replace

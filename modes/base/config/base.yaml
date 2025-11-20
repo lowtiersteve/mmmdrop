@@ -615,43 +615,61 @@ sound_player:
     spinner_sound:
       action: play
       bus: effects
-      max_queue_time: 500ms
+      volume: 0.8
   pop1_hit:
     pops_sound:
       action: play
       bus: effects
       max_queue_time: 500ms
+      volume: 0.8
   pop2_hit:
     pops_sound:
       action: play
       bus: effects
       max_queue_time: 500ms
+      volume: 0.8
   pop3_hit:
     pops_sound:
       action: play
       bus: effects
       max_queue_time: 500ms
+      volume: 0.8
   three_bank_standup_hit:
     standup_sound:
       action: play
       bus: effects
-      max_queue_time: 500ms
+      max_queue_time: 250ms
+      volume: 0.8
   pop_standup_hit:
     standup_sound:
       action: play
       bus: effects
-      max_queue_time: 500ms
+      max_queue_time: 250ms
+      volume: 0.8
   upper_pop_standup_hit:
     standup_sound:
       action: play
       bus: effects
-      max_queue_time: 500ms
+      max_queue_time: 250ms
+      volume: 0.8
+  tshirt_top_standup_hit:
+    standup_sound:
+      action: play
+      bus: effects
+      max_queue_time: 250ms
+      volume: 0.8
+  tshirt_bottom_standup_hit:
+    standup_sound:
+      action: play
+      bus: effects
+      max_queue_time: 250ms
+      volume: 0.8
   captive_ball_hit:
-    captive_sound:
+    standup_sound:
       action: play
       bus: effects
       max_queue_time: 500ms
-      block: true
+      volume: 0.8
   carousel_item_selected:
     base_game_random_music:
       action: stop
@@ -737,9 +755,6 @@ sound_player:
       action: stop
       bus: music
   multiball_chcheckitout_ended{current_player.mode_blocking_flag==0}:
-#    chcheckitoutmultiballmusic:
-#      action: stop
-#      bus: music
     base_game_random_music:
       action: replace
       bus: music
@@ -1299,7 +1314,7 @@ counters:
     count_events: drop_target_bank_three_bank_down{current_player.bodymovin_multiball_blocking_flag==0}
     events_when_complete: chcheckitout_multiball_qualified
     starting_count: 0
-    count_complete_value: 1
+    count_complete_value: 2
     count_interval: 1
     direction: up
     persist_state: false
@@ -1312,6 +1327,9 @@ counters:
       - event: reset_drop_target_bank_counter
         action: jump
         value: 0
+      - event: ball_started{current_player.ball==1}
+        action: add
+        value: 1
   completed_modes_count:
     count_events: mode_intergalactic_success, mode_paulrevere_success, mode_tripletrouble_success, mode_sabotage_success, mode_fingerlickingood_success, mode_toomanyrappers_success, mode_threemcsand1dj_success
     starting_count: 0

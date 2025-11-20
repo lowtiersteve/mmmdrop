@@ -138,6 +138,14 @@ ball_saves:
     timer_start_events: ball_out
     auto_launch: true
     balls_to_save: -1
+  mode_start:
+    active_time: 3s
+    hurry_up_time: 3s
+    grace_period: 1s
+    enable_events: timer_fingerlickingood_intro_show_complete, timer_highplainsdrifter_intro_show_complete, timer_intergalactic_intro_show_complete, timer_paulrevere_intro_show_complete, timer_sabotage_intro_show_complete, timer_threemcsand1dj_intro_show_complete, timer_toomanyrappers_intro_show_complete, timer_tripletrouble_intro_show_complete
+    timer_start_events: ball_out
+    auto_launch: true
+    balls_to_save: -1
 
 modes:
   - base
@@ -171,7 +179,7 @@ settings:
     key_type: int
     sort: 100
   warnings_to_tilt:
-    label: "Number of Tilt Bob Hits to Tilt"
+    label: "Number of Tilts to Tilt"
     values:
       0: "0 (No Warnings)"
       1: "1"

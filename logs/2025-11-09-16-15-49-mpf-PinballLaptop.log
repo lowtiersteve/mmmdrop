@@ -1,0 +1,492 @@
+2025-11-09 16:15:49,565 : INFO : root : Loading config.
+2025-11-09 16:15:49,574 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2025-11-09 16:15:49,575 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\19f6d0d7953982fda9d956182316b8e5.mpf_cache
+2025-11-09 16:15:49,807 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\835b5bfea4be8b279a05e96caaaffbbb.mpf_cache
+2025-11-09 16:15:49,810 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\9b0a7575388f9d9bd2f6ab87bf9fd2f7.mpf_cache
+2025-11-09 16:15:49,812 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\base\config\base.yaml
+2025-11-09 16:15:49,812 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\base\config\base.yaml.
+2025-11-09 16:15:49,885 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\base\config\base.yaml
+2025-11-09 16:15:49,889 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\c340ec0033d1055cd797ffd5447ef414.mpf_cache
+2025-11-09 16:15:49,890 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\835b5bfea4be8b279a05e96caaaffbbb.mpf_cache
+2025-11-09 16:15:49,892 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\skill_shot\config\skill_shot.yaml
+2025-11-09 16:15:49,892 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\skill_shot\config\skill_shot.yaml.
+2025-11-09 16:15:49,896 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\skill_shot\config\skill_shot.yaml
+2025-11-09 16:15:49,897 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\8c11a28e3c38d4ad47947b6a126f2ee9.mpf_cache
+2025-11-09 16:15:49,898 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\multiball\config\multiball.yaml
+2025-11-09 16:15:49,898 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\multiball\config\multiball.yaml.
+2025-11-09 16:15:49,906 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\multiball\config\multiball.yaml
+2025-11-09 16:15:49,908 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\e391083cdc9e667060411fe5838e93f2.mpf_cache
+2025-11-09 16:15:49,909 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\carousel\config\carousel.yaml
+2025-11-09 16:15:49,909 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\carousel\config\carousel.yaml.
+2025-11-09 16:15:49,914 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\carousel\config\carousel.yaml
+2025-11-09 16:15:49,915 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\f0c219a993d891ee86dcb7eae47dde67.mpf_cache
+2025-11-09 16:15:49,917 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\intergalactic\config\intergalactic.yaml
+2025-11-09 16:15:49,917 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\intergalactic\config\intergalactic.yaml.
+2025-11-09 16:15:49,923 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\intergalactic\config\intergalactic.yaml
+2025-11-09 16:15:49,925 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\96aa58108928490b129531848cd9b506.mpf_cache
+2025-11-09 16:15:49,926 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\paulrevere\config\paulrevere.yaml
+2025-11-09 16:15:49,926 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\paulrevere\config\paulrevere.yaml.
+2025-11-09 16:15:49,934 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\paulrevere\config\paulrevere.yaml
+2025-11-09 16:15:49,936 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\567636b9d9766e3361204e954a8382da.mpf_cache
+2025-11-09 16:15:49,938 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\d5ead8dff868c6c4b1faf37537a19bc2.mpf_cache
+2025-11-09 16:15:49,942 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\makesomenoise\config\makesomenoise.yaml
+2025-11-09 16:15:49,942 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\makesomenoise\config\makesomenoise.yaml.
+2025-11-09 16:15:49,953 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\makesomenoise\config\makesomenoise.yaml
+2025-11-09 16:15:49,955 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\112f935d1c2002cb40d3e6e497be9e7c.mpf_cache
+2025-11-09 16:15:49,956 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\aba0711976820dea629bb4c00b006efc.mpf_cache
+2025-11-09 16:15:49,958 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\tripletrouble\config\tripletrouble.yaml
+2025-11-09 16:15:49,958 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\tripletrouble\config\tripletrouble.yaml.
+2025-11-09 16:15:49,965 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\tripletrouble\config\tripletrouble.yaml
+2025-11-09 16:15:49,966 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\de8ed6c6d4c48d1b5b054ff74222cb35.mpf_cache
+2025-11-09 16:15:49,968 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\5db6c64b0c3bca58d6bbb0f959e933ad.mpf_cache
+2025-11-09 16:15:49,970 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\3eebd8fc985a6907aa555c0256177d6c.mpf_cache
+2025-11-09 16:15:49,972 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\7f047f20ee2604e573d0056474eb225c.mpf_cache
+2025-11-09 16:15:49,974 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\sabotage\config\sabotage.yaml
+2025-11-09 16:15:49,974 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\sabotage\config\sabotage.yaml.
+2025-11-09 16:15:49,982 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\sabotage\config\sabotage.yaml
+2025-11-09 16:15:49,983 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\7cbf965458447bfe6339fd0c6d804285.mpf_cache
+2025-11-09 16:15:49,984 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\fingerlickingood\config\fingerlickingood.yaml
+2025-11-09 16:15:49,985 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\fingerlickingood\config\fingerlickingood.yaml.
+2025-11-09 16:15:49,989 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\fingerlickingood\config\fingerlickingood.yaml
+2025-11-09 16:15:49,990 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\c09cbc2eb967f07064f0c7aeb253df93.mpf_cache
+2025-11-09 16:15:49,993 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\toomanyrappers\config\toomanyrappers.yaml
+2025-11-09 16:15:49,993 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\toomanyrappers\config\toomanyrappers.yaml.
+2025-11-09 16:15:50,000 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\toomanyrappers\config\toomanyrappers.yaml
+2025-11-09 16:15:50,002 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\3e3e819377c518a390ee259f491dfb06.mpf_cache
+2025-11-09 16:15:50,003 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\threemcsand1dj\config\threemcsand1dj.yaml
+2025-11-09 16:15:50,003 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\threemcsand1dj\config\threemcsand1dj.yaml.
+2025-11-09 16:15:50,010 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\threemcsand1dj\config\threemcsand1dj.yaml
+2025-11-09 16:15:50,011 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\1bbdf2c973c297bc3add8824c296f9ca.mpf_cache
+2025-11-09 16:15:50,013 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\attract\shows\.\attract_light_show.yaml
+2025-11-09 16:15:50,013 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\attract\shows\.\attract_light_show.yaml.
+2025-11-09 16:15:50,017 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\attract\shows\.\attract_light_show.yaml
+2025-11-09 16:15:50,019 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\e6b55d6a1c06b0dd6369c964181bf8d3.mpf_cache
+2025-11-09 16:15:50,021 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\base\shows\.\ball_save_hurryup_show.yaml
+2025-11-09 16:15:50,021 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\base\shows\.\ball_save_hurryup_show.yaml.
+2025-11-09 16:15:50,023 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\base\shows\.\ball_save_hurryup_show.yaml
+2025-11-09 16:15:50,023 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\c400bf69dd848f9ec4f3356496b25a78.mpf_cache
+2025-11-09 16:15:50,025 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\base\shows\.\ball_save_show.yaml
+2025-11-09 16:15:50,025 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\base\shows\.\ball_save_show.yaml.
+2025-11-09 16:15:50,026 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\base\shows\.\ball_save_show.yaml
+2025-11-09 16:15:50,027 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\b5a54abfbba58cd6005650aabe85cb35.mpf_cache
+2025-11-09 16:15:50,029 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\base\shows\.\bodymovin_mode_finished_light.yaml
+2025-11-09 16:15:50,029 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\base\shows\.\bodymovin_mode_finished_light.yaml.
+2025-11-09 16:15:50,030 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\base\shows\.\bodymovin_mode_finished_light.yaml
+2025-11-09 16:15:50,031 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\2eef6648f7190b215d7c16d8157b8208.mpf_cache
+2025-11-09 16:15:50,032 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\base\shows\.\bodymovin_mode_started_light.yaml
+2025-11-09 16:15:50,032 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\base\shows\.\bodymovin_mode_started_light.yaml.
+2025-11-09 16:15:50,033 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\base\shows\.\bodymovin_mode_started_light.yaml
+2025-11-09 16:15:50,033 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\5a7ad07f75832c2fa569d8508186f943.mpf_cache
+2025-11-09 16:15:50,034 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\base\shows\.\chcheckitout_mode_finished_light.yaml
+2025-11-09 16:15:50,034 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\base\shows\.\chcheckitout_mode_finished_light.yaml.
+2025-11-09 16:15:50,035 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\base\shows\.\chcheckitout_mode_finished_light.yaml
+2025-11-09 16:15:50,036 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\711653a87803a851864824c720cfa295.mpf_cache
+2025-11-09 16:15:50,036 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\base\shows\.\chcheckitout_mode_started_light.yaml
+2025-11-09 16:15:50,037 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\base\shows\.\chcheckitout_mode_started_light.yaml.
+2025-11-09 16:15:50,038 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\base\shows\.\chcheckitout_mode_started_light.yaml
+2025-11-09 16:15:50,038 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\b049f3bb793752455511c0ce4851dcec.mpf_cache
+2025-11-09 16:15:50,039 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\base\shows\.\fingerlickingood_success_show.yaml
+2025-11-09 16:15:50,039 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\base\shows\.\fingerlickingood_success_show.yaml.
+2025-11-09 16:15:50,041 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\base\shows\.\fingerlickingood_success_show.yaml
+2025-11-09 16:15:50,043 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\67d6cae7afaea6fe987e87f8d3a3ea21.mpf_cache
+2025-11-09 16:15:50,044 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\dce98d0c8129174f78168c3f3b9d3db8.mpf_cache
+2025-11-09 16:15:50,059 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\base\shows\.\group_complete.yaml
+2025-11-09 16:15:50,059 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\base\shows\.\group_complete.yaml.
+2025-11-09 16:15:50,061 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\base\shows\.\group_complete.yaml
+2025-11-09 16:15:50,062 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\141b19e6c0168c485bbb38b6543175a8.mpf_cache
+2025-11-09 16:15:50,063 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\base\shows\.\intergalactic_mode_finished_light.yaml
+2025-11-09 16:15:50,063 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\base\shows\.\intergalactic_mode_finished_light.yaml.
+2025-11-09 16:15:50,065 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\base\shows\.\intergalactic_mode_finished_light.yaml
+2025-11-09 16:15:50,065 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\4e6dd3b0a361d042ad5ab93a8cc8b437.mpf_cache
+2025-11-09 16:15:50,066 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\base\shows\.\intergalactic_mode_started_light.yaml
+2025-11-09 16:15:50,066 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\base\shows\.\intergalactic_mode_started_light.yaml.
+2025-11-09 16:15:50,067 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\base\shows\.\intergalactic_mode_started_light.yaml
+2025-11-09 16:15:50,068 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\e97c871403fe82070ff249d62d7cfe22.mpf_cache
+2025-11-09 16:15:50,069 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\base\shows\.\intergalactic_success_show.yaml
+2025-11-09 16:15:50,069 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\base\shows\.\intergalactic_success_show.yaml.
+2025-11-09 16:15:50,071 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\base\shows\.\intergalactic_success_show.yaml
+2025-11-09 16:15:50,072 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\64b6da5876f56fc970400d85dfe882ec.mpf_cache
+2025-11-09 16:15:50,073 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\base\shows\.\lane_lit.yaml
+2025-11-09 16:15:50,073 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\base\shows\.\lane_lit.yaml.
+2025-11-09 16:15:50,074 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\base\shows\.\lane_lit.yaml
+2025-11-09 16:15:50,074 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\c5a11fc9367393a964e333a780e846f7.mpf_cache
+2025-11-09 16:15:50,076 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\base\shows\.\makesomenoise_mode_qualified_light.yaml
+2025-11-09 16:15:50,076 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\base\shows\.\makesomenoise_mode_qualified_light.yaml.
+2025-11-09 16:15:50,078 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\base\shows\.\makesomenoise_mode_qualified_light.yaml
+2025-11-09 16:15:50,079 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\2816335dd466496617c9461f091e66f7.mpf_cache
+2025-11-09 16:15:50,079 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\base\shows\.\makesomenoise_mode_started_light.yaml
+2025-11-09 16:15:50,079 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\base\shows\.\makesomenoise_mode_started_light.yaml.
+2025-11-09 16:15:50,080 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\base\shows\.\makesomenoise_mode_started_light.yaml
+2025-11-09 16:15:50,081 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\6359f7257429add2d261e94bcafd60d5.mpf_cache
+2025-11-09 16:15:50,081 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\base\shows\.\mode_start_ready_show.yaml
+2025-11-09 16:15:50,082 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\base\shows\.\mode_start_ready_show.yaml.
+2025-11-09 16:15:50,083 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\base\shows\.\mode_start_ready_show.yaml
+2025-11-09 16:15:50,083 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\e1f034e230342bd5fff9d9c9df707a6d.mpf_cache
+2025-11-09 16:15:50,085 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\base\shows\.\paulrevere_mode_finished_light.yaml
+2025-11-09 16:15:50,086 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\base\shows\.\paulrevere_mode_finished_light.yaml.
+2025-11-09 16:15:50,087 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\base\shows\.\paulrevere_mode_finished_light.yaml
+2025-11-09 16:15:50,088 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\bed2bac5ea254e8ca98f6dd45e865fd8.mpf_cache
+2025-11-09 16:15:50,089 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\base\shows\.\paulrevere_mode_started_light.yaml
+2025-11-09 16:15:50,089 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\base\shows\.\paulrevere_mode_started_light.yaml.
+2025-11-09 16:15:50,089 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\base\shows\.\paulrevere_mode_started_light.yaml
+2025-11-09 16:15:50,090 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\48e8797b77339ec89f8005d20046fbbb.mpf_cache
+2025-11-09 16:15:50,090 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\base\shows\.\paulrevere_success_show.yaml
+2025-11-09 16:15:50,091 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\base\shows\.\paulrevere_success_show.yaml.
+2025-11-09 16:15:50,093 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\base\shows\.\paulrevere_success_show.yaml
+2025-11-09 16:15:50,094 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\b0b8ed4dbd306ac2f063788d81ec6bc4.mpf_cache
+2025-11-09 16:15:50,095 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\base\shows\.\sabotage_mode_finished_light.yaml
+2025-11-09 16:15:50,095 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\base\shows\.\sabotage_mode_finished_light.yaml.
+2025-11-09 16:15:50,096 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\base\shows\.\sabotage_mode_finished_light.yaml
+2025-11-09 16:15:50,097 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\98b42cbd2eba7845afea8d7862634639.mpf_cache
+2025-11-09 16:15:50,098 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\base\shows\.\sabotage_mode_started_light.yaml
+2025-11-09 16:15:50,098 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\base\shows\.\sabotage_mode_started_light.yaml.
+2025-11-09 16:15:50,099 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\base\shows\.\sabotage_mode_started_light.yaml
+2025-11-09 16:15:50,100 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\44893055a228bb5e0381bfc6f9c0abd7.mpf_cache
+2025-11-09 16:15:50,101 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\base\shows\.\sabotage_success_show.yaml
+2025-11-09 16:15:50,101 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\base\shows\.\sabotage_success_show.yaml.
+2025-11-09 16:15:50,103 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\base\shows\.\sabotage_success_show.yaml
+2025-11-09 16:15:50,104 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\2042660f443afc84f0703d0905ba54ee.mpf_cache
+2025-11-09 16:15:50,104 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\base\shows\.\threemcsand1dj_success_show.yaml
+2025-11-09 16:15:50,105 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\base\shows\.\threemcsand1dj_success_show.yaml.
+2025-11-09 16:15:50,106 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\base\shows\.\threemcsand1dj_success_show.yaml
+2025-11-09 16:15:50,107 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\ecb35127b61fe2c3f803378f52b53af8.mpf_cache
+2025-11-09 16:15:50,108 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\base\shows\.\toomanyrappers_success_show.yaml
+2025-11-09 16:15:50,108 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\base\shows\.\toomanyrappers_success_show.yaml.
+2025-11-09 16:15:50,110 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\base\shows\.\toomanyrappers_success_show.yaml
+2025-11-09 16:15:50,111 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\a453bc519324a010fc5f97d23b1d6283.mpf_cache
+2025-11-09 16:15:50,112 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\base\shows\.\tripletrouble_mode_finished_light.yaml
+2025-11-09 16:15:50,112 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\base\shows\.\tripletrouble_mode_finished_light.yaml.
+2025-11-09 16:15:50,113 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\base\shows\.\tripletrouble_mode_finished_light.yaml
+2025-11-09 16:15:50,114 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\e134e8f85ba8fa9c3d7f1500ca292437.mpf_cache
+2025-11-09 16:15:50,115 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\base\shows\.\tripletrouble_mode_started_light.yaml
+2025-11-09 16:15:50,115 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\base\shows\.\tripletrouble_mode_started_light.yaml.
+2025-11-09 16:15:50,116 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\base\shows\.\tripletrouble_mode_started_light.yaml
+2025-11-09 16:15:50,117 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\b24b6909ee6e0520126bbce60d1ed210.mpf_cache
+2025-11-09 16:15:50,118 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\base\shows\.\tripletrouble_success_show.yaml
+2025-11-09 16:15:50,118 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\base\shows\.\tripletrouble_success_show.yaml.
+2025-11-09 16:15:50,120 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\base\shows\.\tripletrouble_success_show.yaml
+2025-11-09 16:15:50,120 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\cba807ea4a81180f6dd01afffacec8ed.mpf_cache
+2025-11-09 16:15:50,122 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\multiball\shows\.\bodymovin_inner_loop_shot.yaml
+2025-11-09 16:15:50,122 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\multiball\shows\.\bodymovin_inner_loop_shot.yaml.
+2025-11-09 16:15:50,123 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\multiball\shows\.\bodymovin_inner_loop_shot.yaml
+2025-11-09 16:15:50,124 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\53e749a0c04d997040a6edc556572299.mpf_cache
+2025-11-09 16:15:50,124 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\multiball\shows\.\chcheckitout_inner_loop_shot.yaml
+2025-11-09 16:15:50,125 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\multiball\shows\.\chcheckitout_inner_loop_shot.yaml.
+2025-11-09 16:15:50,125 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\multiball\shows\.\chcheckitout_inner_loop_shot.yaml
+2025-11-09 16:15:50,126 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\f4dd4d2b5212b72c6e9e67ac9e704e63.mpf_cache
+2025-11-09 16:15:50,127 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\multiball\shows\.\chcheckitout_left_orbit_shot.yaml
+2025-11-09 16:15:50,127 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\multiball\shows\.\chcheckitout_left_orbit_shot.yaml.
+2025-11-09 16:15:50,128 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\multiball\shows\.\chcheckitout_left_orbit_shot.yaml
+2025-11-09 16:15:50,129 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\b47d9bb1214e11383bf30352af24a7d5.mpf_cache
+2025-11-09 16:15:50,129 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\multiball\shows\.\chcheckitout_left_ramp_shot.yaml
+2025-11-09 16:15:50,129 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\multiball\shows\.\chcheckitout_left_ramp_shot.yaml.
+2025-11-09 16:15:50,131 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\multiball\shows\.\chcheckitout_left_ramp_shot.yaml
+2025-11-09 16:15:50,132 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\23d7d59c131357e53b11dbd4a18e6a94.mpf_cache
+2025-11-09 16:15:50,133 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\multiball\shows\.\chcheckitout_lit_strobe.yaml
+2025-11-09 16:15:50,133 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\multiball\shows\.\chcheckitout_lit_strobe.yaml.
+2025-11-09 16:15:50,134 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\multiball\shows\.\chcheckitout_lit_strobe.yaml
+2025-11-09 16:15:50,135 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\4233704904419fdd214152084a83fec1.mpf_cache
+2025-11-09 16:15:50,136 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\multiball\shows\.\chcheckitout_right_orbit_shot.yaml
+2025-11-09 16:15:50,136 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\multiball\shows\.\chcheckitout_right_orbit_shot.yaml.
+2025-11-09 16:15:50,137 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\multiball\shows\.\chcheckitout_right_orbit_shot.yaml
+2025-11-09 16:15:50,138 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\989ee664052248e9552213e43037a565.mpf_cache
+2025-11-09 16:15:50,138 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\multiball\shows\.\chcheckitout_right_ramp_shot.yaml
+2025-11-09 16:15:50,138 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\multiball\shows\.\chcheckitout_right_ramp_shot.yaml.
+2025-11-09 16:15:50,139 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\multiball\shows\.\chcheckitout_right_ramp_shot.yaml
+2025-11-09 16:15:50,140 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\428bc1fa3c6dcaec1d63d9276cdb6405.mpf_cache
+2025-11-09 16:15:50,141 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\carousel\shows\.\fingerlickingood_mode_lit.yaml
+2025-11-09 16:15:50,141 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\carousel\shows\.\fingerlickingood_mode_lit.yaml.
+2025-11-09 16:15:50,143 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\carousel\shows\.\fingerlickingood_mode_lit.yaml
+2025-11-09 16:15:50,144 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\1ea2aa0876194c7260510f0845fe4bfe.mpf_cache
+2025-11-09 16:15:50,145 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\carousel\shows\.\intergalactic_mode_lit.yaml
+2025-11-09 16:15:50,145 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\carousel\shows\.\intergalactic_mode_lit.yaml.
+2025-11-09 16:15:50,146 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\carousel\shows\.\intergalactic_mode_lit.yaml
+2025-11-09 16:15:50,148 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\f071e720e1ef2a753ced60502153911a.mpf_cache
+2025-11-09 16:15:50,149 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\carousel\shows\.\makesomenoise_mode_lit.yaml
+2025-11-09 16:15:50,149 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\carousel\shows\.\makesomenoise_mode_lit.yaml.
+2025-11-09 16:15:50,150 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\carousel\shows\.\makesomenoise_mode_lit.yaml
+2025-11-09 16:15:50,150 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\a464c65b0880a71dbe3e02b1f7271abd.mpf_cache
+2025-11-09 16:15:50,151 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\carousel\shows\.\paulrevere_mode_lit.yaml
+2025-11-09 16:15:50,151 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\carousel\shows\.\paulrevere_mode_lit.yaml.
+2025-11-09 16:15:50,151 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\carousel\shows\.\paulrevere_mode_lit.yaml
+2025-11-09 16:15:50,152 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\b4bf5fa77bdb26872f42159f572a3499.mpf_cache
+2025-11-09 16:15:50,153 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\carousel\shows\.\sabotage_mode_lit.yaml
+2025-11-09 16:15:50,153 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\carousel\shows\.\sabotage_mode_lit.yaml.
+2025-11-09 16:15:50,154 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\carousel\shows\.\sabotage_mode_lit.yaml
+2025-11-09 16:15:50,155 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\cd6f6abb19272a94675a232f8f899ac9.mpf_cache
+2025-11-09 16:15:50,156 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\carousel\shows\.\threemcsand1dj_mode_lit.yaml
+2025-11-09 16:15:50,156 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\carousel\shows\.\threemcsand1dj_mode_lit.yaml.
+2025-11-09 16:15:50,157 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\carousel\shows\.\threemcsand1dj_mode_lit.yaml
+2025-11-09 16:15:50,158 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\5c997126cef538283363f6706780c8e5.mpf_cache
+2025-11-09 16:15:50,159 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\carousel\shows\.\toomanyrappers_mode_lit.yaml
+2025-11-09 16:15:50,159 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\carousel\shows\.\toomanyrappers_mode_lit.yaml.
+2025-11-09 16:15:50,161 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\carousel\shows\.\toomanyrappers_mode_lit.yaml
+2025-11-09 16:15:50,161 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\51c405745738281c3f5e2edc082329f1.mpf_cache
+2025-11-09 16:15:50,162 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\carousel\shows\.\tripletrouble_mode_lit.yaml
+2025-11-09 16:15:50,162 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\carousel\shows\.\tripletrouble_mode_lit.yaml.
+2025-11-09 16:15:50,163 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\carousel\shows\.\tripletrouble_mode_lit.yaml
+2025-11-09 16:15:50,164 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\cbc61a9ec21d345237ebbced62572970.mpf_cache
+2025-11-09 16:15:50,165 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\intergalactic\shows\.\intergalactic_final_shot.yaml
+2025-11-09 16:15:50,165 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\intergalactic\shows\.\intergalactic_final_shot.yaml.
+2025-11-09 16:15:50,166 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\intergalactic\shows\.\intergalactic_final_shot.yaml
+2025-11-09 16:15:50,167 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\c25e7c71bc90546538d4e68911be6658.mpf_cache
+2025-11-09 16:15:50,168 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\intergalactic\shows\.\intergalactic_left_shot.yaml
+2025-11-09 16:15:50,168 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\intergalactic\shows\.\intergalactic_left_shot.yaml.
+2025-11-09 16:15:50,169 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\intergalactic\shows\.\intergalactic_left_shot.yaml
+2025-11-09 16:15:50,170 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\b7a51086f1e3c926b3977a0d025a1faa.mpf_cache
+2025-11-09 16:15:50,170 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\intergalactic\shows\.\intergalactic_right_shot.yaml
+2025-11-09 16:15:50,170 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\intergalactic\shows\.\intergalactic_right_shot.yaml.
+2025-11-09 16:15:50,172 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\intergalactic\shows\.\intergalactic_right_shot.yaml
+2025-11-09 16:15:50,173 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\479eb3ca656e084fa2e092204a5b8039.mpf_cache
+2025-11-09 16:15:50,174 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\paulrevere\shows\.\paulrevere_captive_ball_shot.yaml
+2025-11-09 16:15:50,174 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\paulrevere\shows\.\paulrevere_captive_ball_shot.yaml.
+2025-11-09 16:15:50,175 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\paulrevere\shows\.\paulrevere_captive_ball_shot.yaml
+2025-11-09 16:15:50,176 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\bdb81eccbf19551abd8bea5fafeca7c0.mpf_cache
+2025-11-09 16:15:50,177 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\paulrevere\shows\.\paulrevere_final_shot.yaml
+2025-11-09 16:15:50,177 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\paulrevere\shows\.\paulrevere_final_shot.yaml.
+2025-11-09 16:15:50,179 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\paulrevere\shows\.\paulrevere_final_shot.yaml
+2025-11-09 16:15:50,180 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\8f065719b93e886777277178babee650.mpf_cache
+2025-11-09 16:15:50,180 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\paulrevere\shows\.\paulrevere_left_orbit_shot.yaml
+2025-11-09 16:15:50,180 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\paulrevere\shows\.\paulrevere_left_orbit_shot.yaml.
+2025-11-09 16:15:50,181 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\paulrevere\shows\.\paulrevere_left_orbit_shot.yaml
+2025-11-09 16:15:50,182 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\7fef0463a0df344c3146c845257ec616.mpf_cache
+2025-11-09 16:15:50,183 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\paulrevere\shows\.\paulrevere_left_ramp_shot.yaml
+2025-11-09 16:15:50,183 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\paulrevere\shows\.\paulrevere_left_ramp_shot.yaml.
+2025-11-09 16:15:50,184 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\paulrevere\shows\.\paulrevere_left_ramp_shot.yaml
+2025-11-09 16:15:50,184 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\a4f333ad36a077996c49298642b6bdcf.mpf_cache
+2025-11-09 16:15:50,185 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\paulrevere\shows\.\paulrevere_right_orbit_shot.yaml
+2025-11-09 16:15:50,185 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\paulrevere\shows\.\paulrevere_right_orbit_shot.yaml.
+2025-11-09 16:15:50,186 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\paulrevere\shows\.\paulrevere_right_orbit_shot.yaml
+2025-11-09 16:15:50,187 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\e8d69d74f27089cda2650299e9916804.mpf_cache
+2025-11-09 16:15:50,188 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\paulrevere\shows\.\paulrevere_right_ramp_shot.yaml
+2025-11-09 16:15:50,188 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\paulrevere\shows\.\paulrevere_right_ramp_shot.yaml.
+2025-11-09 16:15:50,189 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\paulrevere\shows\.\paulrevere_right_ramp_shot.yaml
+2025-11-09 16:15:50,190 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\05530f35bd950f18d27d3fd571d96823.mpf_cache
+2025-11-09 16:15:50,191 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\makesomenoise\shows\.\makesomenoise_drops_shot.yaml
+2025-11-09 16:15:50,191 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\makesomenoise\shows\.\makesomenoise_drops_shot.yaml.
+2025-11-09 16:15:50,192 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\makesomenoise\shows\.\makesomenoise_drops_shot.yaml
+2025-11-09 16:15:50,193 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\fc1e3f85304c911eb844eb65d36e61be.mpf_cache
+2025-11-09 16:15:50,195 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\makesomenoise\shows\.\makesomenoise_final_shot.yaml
+2025-11-09 16:15:50,195 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\makesomenoise\shows\.\makesomenoise_final_shot.yaml.
+2025-11-09 16:15:50,197 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\makesomenoise\shows\.\makesomenoise_final_shot.yaml
+2025-11-09 16:15:50,198 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\53223d3922288729ee504c1b2a98bb55.mpf_cache
+2025-11-09 16:15:50,198 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\makesomenoise\shows\.\makesomenoise_pops_shot.yaml
+2025-11-09 16:15:50,199 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\makesomenoise\shows\.\makesomenoise_pops_shot.yaml.
+2025-11-09 16:15:50,199 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\makesomenoise\shows\.\makesomenoise_pops_shot.yaml
+2025-11-09 16:15:50,201 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\8d20136ddb274338050d1d1ccc1a5e4f.mpf_cache
+2025-11-09 16:15:50,202 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\makesomenoise\shows\.\makesomenoise_ramps_shot.yaml
+2025-11-09 16:15:50,202 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\makesomenoise\shows\.\makesomenoise_ramps_shot.yaml.
+2025-11-09 16:15:50,204 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\makesomenoise\shows\.\makesomenoise_ramps_shot.yaml
+2025-11-09 16:15:50,205 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\1254d50720d6d5d0da0e84e29cdbaa7a.mpf_cache
+2025-11-09 16:15:50,205 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\makesomenoise\shows\.\makesomenoise_spins_shot.yaml
+2025-11-09 16:15:50,206 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\makesomenoise\shows\.\makesomenoise_spins_shot.yaml.
+2025-11-09 16:15:50,207 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\makesomenoise\shows\.\makesomenoise_spins_shot.yaml
+2025-11-09 16:15:50,207 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\1a7ae31e9f779b1261e3d1eee1831b27.mpf_cache
+2025-11-09 16:15:50,209 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\tripletrouble\shows\.\tripletrouble_final_shot.yaml
+2025-11-09 16:15:50,209 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\tripletrouble\shows\.\tripletrouble_final_shot.yaml.
+2025-11-09 16:15:50,210 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\tripletrouble\shows\.\tripletrouble_final_shot.yaml
+2025-11-09 16:15:50,212 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\8e3ea42c38f2105e0d9462648474c540.mpf_cache
+2025-11-09 16:15:50,213 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\tripletrouble\shows\.\tripletrouble_standup_show.yaml
+2025-11-09 16:15:50,213 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\tripletrouble\shows\.\tripletrouble_standup_show.yaml.
+2025-11-09 16:15:50,214 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\tripletrouble\shows\.\tripletrouble_standup_show.yaml
+2025-11-09 16:15:50,215 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\a61b86d39bcc5a5ea0a5885549542355.mpf_cache
+2025-11-09 16:15:50,217 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\bonus\shows\.\bonus_count_show_blue.yaml
+2025-11-09 16:15:50,217 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\bonus\shows\.\bonus_count_show_blue.yaml.
+2025-11-09 16:15:50,221 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\bonus\shows\.\bonus_count_show_blue.yaml
+2025-11-09 16:15:50,223 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\0be197154604f4b199c224fe0066296a.mpf_cache
+2025-11-09 16:15:50,225 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\bonus\shows\.\bonus_count_show_green.yaml
+2025-11-09 16:15:50,225 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\bonus\shows\.\bonus_count_show_green.yaml.
+2025-11-09 16:15:50,229 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\bonus\shows\.\bonus_count_show_green.yaml
+2025-11-09 16:15:50,231 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\8be1835d379617cb3def36e5084020f6.mpf_cache
+2025-11-09 16:15:50,232 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\bonus\shows\.\bonus_count_show_orange.yaml
+2025-11-09 16:15:50,232 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\bonus\shows\.\bonus_count_show_orange.yaml.
+2025-11-09 16:15:50,236 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\bonus\shows\.\bonus_count_show_orange.yaml
+2025-11-09 16:15:50,237 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\600d86d9f0ce58b92a4c456466b707cc.mpf_cache
+2025-11-09 16:15:50,238 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\bonus\shows\.\bonus_count_show_pink.yaml
+2025-11-09 16:15:50,238 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\bonus\shows\.\bonus_count_show_pink.yaml.
+2025-11-09 16:15:50,243 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\bonus\shows\.\bonus_count_show_pink.yaml
+2025-11-09 16:15:50,244 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\3b8a30babd008550b0699281f52ed27a.mpf_cache
+2025-11-09 16:15:50,246 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\bonus\shows\.\bonus_count_show_purple.yaml
+2025-11-09 16:15:50,246 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\bonus\shows\.\bonus_count_show_purple.yaml.
+2025-11-09 16:15:50,250 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\bonus\shows\.\bonus_count_show_purple.yaml
+2025-11-09 16:15:50,252 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\1605f6efa0d082cac196fbacc374bc42.mpf_cache
+2025-11-09 16:15:50,253 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\bonus\shows\.\bonus_count_show_red.yaml
+2025-11-09 16:15:50,253 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\bonus\shows\.\bonus_count_show_red.yaml.
+2025-11-09 16:15:50,258 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\bonus\shows\.\bonus_count_show_red.yaml
+2025-11-09 16:15:50,259 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\7e2767447a32b13b699b93d64e0ad4e1.mpf_cache
+2025-11-09 16:15:50,260 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\bonus\shows\.\bonus_count_show_yellow.yaml
+2025-11-09 16:15:50,260 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\bonus\shows\.\bonus_count_show_yellow.yaml.
+2025-11-09 16:15:50,265 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\bonus\shows\.\bonus_count_show_yellow.yaml
+2025-11-09 16:15:50,266 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\2afc3d032f598172139245ac02c70f84.mpf_cache
+2025-11-09 16:15:50,268 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\combos\shows\.\captive_ball_combo_show.yaml
+2025-11-09 16:15:50,268 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\combos\shows\.\captive_ball_combo_show.yaml.
+2025-11-09 16:15:50,269 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\combos\shows\.\captive_ball_combo_show.yaml
+2025-11-09 16:15:50,269 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\ec387031d703ca01cd1e512f54ea45a6.mpf_cache
+2025-11-09 16:15:50,271 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\combos\shows\.\inner_loop_combo_show.yaml
+2025-11-09 16:15:50,271 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\combos\shows\.\inner_loop_combo_show.yaml.
+2025-11-09 16:15:50,273 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\combos\shows\.\inner_loop_combo_show.yaml
+2025-11-09 16:15:50,274 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\6060c5cf25a8bbaedfcd18b580aef368.mpf_cache
+2025-11-09 16:15:50,274 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\combos\shows\.\left_orbit_combo_show.yaml
+2025-11-09 16:15:50,274 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\combos\shows\.\left_orbit_combo_show.yaml.
+2025-11-09 16:15:50,276 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\combos\shows\.\left_orbit_combo_show.yaml
+2025-11-09 16:15:50,277 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\62ef5d872b70fca48f955a2e25312807.mpf_cache
+2025-11-09 16:15:50,278 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\combos\shows\.\left_ramp_combo_show.yaml
+2025-11-09 16:15:50,279 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\combos\shows\.\left_ramp_combo_show.yaml.
+2025-11-09 16:15:50,280 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\combos\shows\.\left_ramp_combo_show.yaml
+2025-11-09 16:15:50,281 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\c52aca253ccfb6abe708ff6ee9d67c14.mpf_cache
+2025-11-09 16:15:50,281 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\combos\shows\.\right_orbit_combo_show.yaml
+2025-11-09 16:15:50,282 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\combos\shows\.\right_orbit_combo_show.yaml.
+2025-11-09 16:15:50,283 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\combos\shows\.\right_orbit_combo_show.yaml
+2025-11-09 16:15:50,284 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\f4a78d1a7bce952f8a932d586083fdd8.mpf_cache
+2025-11-09 16:15:50,284 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\combos\shows\.\right_ramp_combo_show.yaml
+2025-11-09 16:15:50,284 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\combos\shows\.\right_ramp_combo_show.yaml.
+2025-11-09 16:15:50,286 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\combos\shows\.\right_ramp_combo_show.yaml
+2025-11-09 16:15:50,287 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\bb94c9c1e15d87765c90f1ffc77705c9.mpf_cache
+2025-11-09 16:15:50,288 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\batterycharger\shows\.\battery_green.yaml
+2025-11-09 16:15:50,288 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\batterycharger\shows\.\battery_green.yaml.
+2025-11-09 16:15:50,289 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\batterycharger\shows\.\battery_green.yaml
+2025-11-09 16:15:50,290 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\9d4ee1bead7c17d1b5b361b9a86c5113.mpf_cache
+2025-11-09 16:15:50,290 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\batterycharger\shows\.\battery_red.yaml
+2025-11-09 16:15:50,290 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\batterycharger\shows\.\battery_red.yaml.
+2025-11-09 16:15:50,291 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\batterycharger\shows\.\battery_red.yaml
+2025-11-09 16:15:50,292 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\9eeb681ca391f55fc1b328483a35afc6.mpf_cache
+2025-11-09 16:15:50,295 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\batterycharger\shows\.\battery_yellow.yaml
+2025-11-09 16:15:50,295 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\batterycharger\shows\.\battery_yellow.yaml.
+2025-11-09 16:15:50,296 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\batterycharger\shows\.\battery_yellow.yaml
+2025-11-09 16:15:50,297 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\019a5133c8eb0a0be84c7200575a8bf2.mpf_cache
+2025-11-09 16:15:50,298 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\sabotage\shows\.\sirens_show.yaml
+2025-11-09 16:15:50,298 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\sabotage\shows\.\sirens_show.yaml.
+2025-11-09 16:15:50,300 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\sabotage\shows\.\sirens_show.yaml
+2025-11-09 16:15:50,300 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\ce0801e7c3c55e24fe9cf2e243ba629e.mpf_cache
+2025-11-09 16:15:50,301 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\sabotage\shows\.\stache_show.yaml
+2025-11-09 16:15:50,301 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\sabotage\shows\.\stache_show.yaml.
+2025-11-09 16:15:50,302 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\sabotage\shows\.\stache_show.yaml
+2025-11-09 16:15:50,304 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\1ecbcaf9f778e10bebb5864384a052b1.mpf_cache
+2025-11-09 16:15:50,305 : INFO : Machine : Mission Pinball Framework Core Engine v0.80.0.dev9
+2025-11-09 16:15:50,306 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'force_assets_load': False, 'platform_integration_test': False, 'jsonlogging': False, 'logfile': 'logs\\2025-11-09-16-15-49-mpf-PinballLaptop.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': 'smart_virtual', 'syslog_address': None, 'full_logfile_path': 'C:\\venv\\mpf\\mmmdrop\\logs\\2025-11-09-16-15-49-mpf-PinballLaptop.log'}
+2025-11-09 16:15:50,306 : INFO : Machine : MPF path: c:\venv\mpf\lib\site-packages\mpf
+2025-11-09 16:15:50,306 : INFO : Machine : Machine path: C:\venv\mpf\mmmdrop
+2025-11-09 16:15:50,306 : INFO : Machine : Platform: win32
+2025-11-09 16:15:50,306 : INFO : Machine : Python executable location: c:\venv\mpf\Scripts\python.exe
+2025-11-09 16:15:50,306 : INFO : Machine : Python version: 3.9.13 (64-bit)
+2025-11-09 16:15:50,311 : INFO : Machine : Initializing MPF...
+2025-11-09 16:15:50,749 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2025-11-09 16:15:50,807 : INFO : EventManager : Event: ======'machine_var_fast_audio_headphones_volume'====== Args={'value': 10, 'prev_value': None, 'change': True}
+2025-11-09 16:15:50,807 : INFO : EventManager : Event: ======'machine_var_fast_audio_main_volume'====== Args={'value': 44, 'prev_value': None, 'change': True}
+2025-11-09 16:15:50,807 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.6, 'prev_value': None, 'change': True}
+2025-11-09 16:15:50,807 : INFO : EventManager : Event: ======'machine_var_player1_score'====== Args={'value': 179589170, 'prev_value': None, 'change': True}
+2025-11-09 16:15:50,807 : INFO : EventManager : Event: ======'machine_var_game_just_played'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2025-11-09 16:15:50,808 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'Mission Pinball Framework v0.80.0.dev9', 'prev_value': None, 'change': True}
+2025-11-09 16:15:50,808 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'Mission Pinball Framework v0.80.0.dev9, Config version:6, Show version: 6, BCP version:1.1', 'prev_value': None, 'change': True}
+2025-11-09 16:15:50,808 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.9.13', 'prev_value': None, 'change': True}
+2025-11-09 16:15:50,863 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.26200-SP0', 'prev_value': None, 'change': True}
+2025-11-09 16:15:50,864 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2025-11-09 16:15:50,864 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2025-11-09 16:15:50,864 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.26200', 'prev_value': None, 'change': True}
+2025-11-09 16:15:50,864 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2025-11-09 16:15:50,864 : INFO : EventManager : Event: ======'machine_var_log_file_path'====== Args={'value': 'C:\\venv\\mpf\\mmmdrop\\logs\\2025-11-09-16-15-49-mpf-PinballLaptop.log', 'prev_value': None, 'change': True}
+2025-11-09 16:15:50,864 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2025-11-09 16:15:50,989 : INFO : EventManager : Event: ======'drop_target_bank_three_bank_up'====== Args={}
+2025-11-09 16:15:50,990 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2025-11-09 16:15:50,991 : INFO : SwitchController : Found active switch: ('3208-0', <Platform.SmartVirtual>) <switch.s_trough1>
+2025-11-09 16:15:50,991 : INFO : SwitchController : Found active switch: ('3208-1', <Platform.SmartVirtual>) <switch.s_trough2>
+2025-11-09 16:15:50,991 : INFO : SwitchController : Found active switch: ('3208-2', <Platform.SmartVirtual>) <switch.s_trough3>
+2025-11-09 16:15:50,991 : INFO : SwitchController : Found active switch: ('3208-3', <Platform.SmartVirtual>) <switch.s_trough4>
+2025-11-09 16:15:50,991 : INFO : SwitchController : Found active switch: ('3208-4', <Platform.SmartVirtual>) <switch.s_trough5>
+2025-11-09 16:15:50,991 : INFO : SwitchController : Found active switch: ('3208-5', <Platform.SmartVirtual>) <switch.s_trough6>
+2025-11-09 16:15:51,047 : ERROR : asyncio : Exception in callback EventManager._queue_task_done(<Task finishe... \'red%75\'')>)
+handle: <Handle EventManager._queue_task_done(<Task finishe... \'red%75\'')>)>
+Traceback (most recent call last):
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 671, in _validate_type_color
+    return int(color[0]), int(color[1]), int(color[2])
+ValueError: invalid literal for int() with base 10: 'red%75'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\events.py", line 795, in _queue_task_done
+    future.result()
+  File "c:\venv\mpf\lib\site-packages\mpf\core\events.py", line 708, in _run_handlers_sequential
+    handler.callback(queue=queue, **merged_kwargs)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\mode_controller.py", line 97, in initialize_modes
+    item.method(config=mode.config[item.config_section],
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_player.py", line 150, in process_mode_config
+    config = self.validate_config(config)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_player.py", line 113, in validate_config
+    validated_config[event] = self.validate_config_entry(settings, event)
+  File "c:\venv\mpf\lib\site-packages\mpf\config_players\device_config_player.py", line 56, in validate_config_entry
+    raise e
+  File "c:\venv\mpf\lib\site-packages\mpf\config_players\device_config_player.py", line 52, in validate_config_entry
+    self._validate_config_item(device, device_settings))
+  File "c:\venv\mpf\lib\site-packages\mpf\config_players\device_config_player.py", line 78, in _validate_config_item
+    device_settings = self._parse_config(device_settings, device)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_player.py", line 144, in _parse_config
+    return self.get_full_config(config)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_player.py", line 216, in get_full_config
+    return self.machine.config_validator.validate_config(
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 164, in validate_config
+    return self._validate_config(config_spec, source, base_spec=base_spec, add_missing_keys=add_missing_keys,
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 204, in _validate_config
+    processed_config[k] = self.validate_config_item(
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 243, in validate_config_item
+    return self.validate_item(item, validation, validation_failure_info)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 701, in validate_item
+    return self.validator_list[validator](item, validation_failure_info=validation_failure_info)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 96, in _validate_type_or_token_real
+    return func(item, validation_failure_info, param)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 673, in _validate_type_color
+    raise self.validation_error(item, validation_failure_info, "Could not parse color: {}".format(e))
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in ConfigValidator: Failed to load config player mode_threemcsand1dj_started:blinkenlights with settings {'bl_lowerpop_smallarrow_led': 'red%75', 'bl_lowerrightpop_inside_led': 'red%75', 'bl_lowerrightpop_inside2_led': 'red%75', 'bl_upperleftpop_inside_led': 'red%75', 'bl_uppercenterpop_inside_led': 'red%75', 'bl_captiveball_smallcircle_led': 'red%75', 'bl_innerloop_arrow_led': 'green%75'} >> Config validation error: Entry blinkenlight_player:blinkenlight_player:color = "red%75" is not valid. Could not parse color: invalid literal for int() with base 10: 'red%75' Error Code: CFE-ConfigValidator-5 (https://missionpinball.org/logs)
+2025-11-09 16:15:51,056 : INFO : Machine : Starting the main run loop with active modes: []
+2025-11-09 16:15:51,056 : WARNING : Machine : Attract mode is not active, game will not be playable. Please check your attract mode configuration.
+2025-11-09 16:15:51,057 : INFO : Machine : Shutting down...
+2025-11-09 16:15:51,057 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2025-11-09 16:15:52,064 : ERROR : Machine : Runtime Exception
+Traceback (most recent call last):
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 671, in _validate_type_color
+    return int(color[0]), int(color[1]), int(color[2])
+ValueError: invalid literal for int() with base 10: 'red%75'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\venv\mpf\lib\site-packages\mpf\core\machine.py", line 808, in _run_loop
+    raise self._exception['exception']
+  File "C:\Program Files\Python39\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\events.py", line 795, in _queue_task_done
+    future.result()
+  File "c:\venv\mpf\lib\site-packages\mpf\core\events.py", line 708, in _run_handlers_sequential
+    handler.callback(queue=queue, **merged_kwargs)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\mode_controller.py", line 97, in initialize_modes
+    item.method(config=mode.config[item.config_section],
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_player.py", line 150, in process_mode_config
+    config = self.validate_config(config)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_player.py", line 113, in validate_config
+    validated_config[event] = self.validate_config_entry(settings, event)
+  File "c:\venv\mpf\lib\site-packages\mpf\config_players\device_config_player.py", line 56, in validate_config_entry
+    raise e
+  File "c:\venv\mpf\lib\site-packages\mpf\config_players\device_config_player.py", line 52, in validate_config_entry
+    self._validate_config_item(device, device_settings))
+  File "c:\venv\mpf\lib\site-packages\mpf\config_players\device_config_player.py", line 78, in _validate_config_item
+    device_settings = self._parse_config(device_settings, device)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_player.py", line 144, in _parse_config
+    return self.get_full_config(config)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_player.py", line 216, in get_full_config
+    return self.machine.config_validator.validate_config(
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 164, in validate_config
+    return self._validate_config(config_spec, source, base_spec=base_spec, add_missing_keys=add_missing_keys,
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 204, in _validate_config
+    processed_config[k] = self.validate_config_item(
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 243, in validate_config_item
+    return self.validate_item(item, validation, validation_failure_info)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 701, in validate_item
+    return self.validator_list[validator](item, validation_failure_info=validation_failure_info)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 96, in _validate_type_or_token_real
+    return func(item, validation_failure_info, param)
+  File "c:\venv\mpf\lib\site-packages\mpf\core\config_validator.py", line 673, in _validate_type_color
+    raise self.validation_error(item, validation_failure_info, "Could not parse color: {}".format(e))
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in ConfigValidator: Failed to load config player mode_threemcsand1dj_started:blinkenlights with settings {'bl_lowerpop_smallarrow_led': 'red%75', 'bl_lowerrightpop_inside_led': 'red%75', 'bl_lowerrightpop_inside2_led': 'red%75', 'bl_upperleftpop_inside_led': 'red%75', 'bl_uppercenterpop_inside_led': 'red%75', 'bl_captiveball_smallcircle_led': 'red%75', 'bl_innerloop_arrow_led': 'green%75'} >> Config validation error: Entry blinkenlight_player:blinkenlight_player:color = "red%75" is not valid. Could not parse color: invalid literal for int() with base 10: 'red%75' Error Code: CFE-ConfigValidator-5 (https://missionpinball.org/logs)
+2025-11-09 16:15:53,174 : INFO : root : MPF run loop ended.

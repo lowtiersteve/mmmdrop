@@ -2,11 +2,11 @@
 
 - duration: 500ms
   lights:
-    l_leftorbitcombo_circle_led: CFFF04 #neonyellow
-    l_leftrampcombo_circle_led: CFFF04
-    l_innerloopcombo_circle_led: CFFF04
-    l_rightrampcombo_circle_led: CFFF04
-    l_rightorbitcombo_circle_led: CFFF04
+    l_leftorbitcombo_circle_led: CFFF04%75 #neonyellow
+    l_leftrampcombo_circle_led: CFFF04%75
+    l_innerloopcombo_circle_led: CFFF04%75
+    l_rightrampcombo_circle_led: CFFF04%75
+    l_rightorbitcombo_circle_led: CFFF04%75
 - duration: 500ms
   lights:
     l_leftorbitcombo_circle_led: off

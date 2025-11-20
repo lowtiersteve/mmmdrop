@@ -1,4 +1,5 @@
 #config_version=6
+
 mode:
   start_events: carousel_intergalactic_selected
   stop_events: mode_intergalactic_stop, mode_intergalactic_failed, mode_intergalactic_success, ball_will_end
@@ -179,7 +180,7 @@ timers:
         event: mode_intergalactic_started
       - action: jump
         value: 13
-        event: flipper_cancel
+        event: flipper_cancel{device.ball_holds.intergalactic_scoop_hold.balls_held==1}
   intergalactic_time_remaining:
     start_value: 60
     end_value: 0
@@ -216,23 +217,31 @@ show_player:
 
 blinkenlight_player:
   timer_intergalactic_intro_show_complete:
-    bl_rightorbit_arrow_led: yellow
-    bl_rightramp_arrow_led: yellow
+    bl_rightorbit_arrow_led:
+      color: yellow
+    bl_rightramp_arrow_led:
+      color: yellow
   intergalactic_shot_1_done:
     bl_rightorbit_arrow_led: remove
     bl_rightramp_arrow_led: remove
-    bl_leftorbit_arrow_led: yellow
-    bl_leftramp_arrow_led: yellow
+    bl_leftorbit_arrow_led:
+      color: yellow
+    bl_leftramp_arrow_led:
+      color: yellow
   intergalactic_shot_2_done:
     bl_leftorbit_arrow_led: remove
     bl_leftramp_arrow_led: remove
-    bl_rightorbit_arrow_led: yellow
-    bl_rightramp_arrow_led: yellow
+    bl_rightorbit_arrow_led:
+      color: yellow
+    bl_rightramp_arrow_led:
+      color: yellow
   intergalactic_shot_3_done:
     bl_rightorbit_arrow_led: remove
     bl_rightramp_arrow_led: remove
-    bl_leftorbit_arrow_led: yellow
-    bl_leftramp_arrow_led: yellow
+    bl_leftorbit_arrow_led:
+      color: yellow
+    bl_leftramp_arrow_led:
+      color: yellow
   intergalactic_shot_4_done:
     bl_leftorbit_arrow_led: remove
     bl_leftramp_arrow_led: remove
@@ -250,3 +259,4 @@ shot_profiles:
           color: DodgerBlue
         speed: 2
     loop: false
+

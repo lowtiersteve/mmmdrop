@@ -300,7 +300,7 @@ timers:
         event: mode_makesomenoise_started
       - action: jump
         value: 10
-        event: flipper_cancel
+        event: flipper_cancel{device.ball_holds.makesomenoise_scoop_hold.balls_held==1}
 
 
 show_player:

@@ -48,25 +48,26 @@ lights:
     type: rgb
     label: "Captive Ball Arrow"
   l_lowerdrop_circle_led:
-    number: lightboard-4-13
+    number: lightboard-4-14
     subtype: led
     type: rgb
     label: "Lower Drop Rectangle"
   l_middledrop_circle_led:
-    number: lightboard-4-12
+    number: lightboard-4-13
     subtype: led
     type: rgb
     label: "Middle Drop Rectangle"
   l_upperdrop_circle_led:
-    number: lightboard-4-11
+    number: lightboard-4-12
     subtype: led
     type: rgb
     label: "Upper Drop Rectangle"
   l_dropstandup_flasher_led:
-    number: lightboard-4-18
+    number: lightboard-4-19
     subtype: led
     type: rgb
     label: "Behind Drops Standup Flasher"
+    fade_ms: 500
   l_upperleftpop_inside_led:
     number: lightboard-6-3
     subtype: led
@@ -93,12 +94,12 @@ lights:
     type: rgb
     label: "Drops 2x Scoring Square"
   l_leftoutlane_circle_led:
-    number: lightboard-4-17
+    number: lightboard-4-18
     subtype: led
     type: rgb
     label: "Left Outlane Circle"
   l_leftinlane_circle_led:
-    number: lightboard-4-14
+    number: lightboard-4-15
     subtype: led
     type: rgb
     label: "Left Inlane Circle"
@@ -163,7 +164,7 @@ lights:
     type: rgb
     label: "Scoop Arrow"
   l_leftorbitbattery_rectangle_led:
-    number: lightboard-4-10
+    number: lightboard-4-11
     subtype: led
     type: rgb
     label: "Spinner Battery Rectangle"
@@ -288,12 +289,12 @@ lights:
     type: rgb
     label: "Left Orbit Rectangle - MCA"
   l_leftsling_uppergi_led:
-    number: lightboard-4-15
+    number: lightboard-4-16
     subtype: led
     type: rgb
     label: "Left Sling Upper GI"
   l_leftsling_lowergi_led:
-    number: lightboard-4-16
+    number: lightboard-4-17
     subtype: led
     type: rgb
     label: "Left Sling Lower GI"
@@ -307,7 +308,21 @@ lights:
     subtype: led
     type: rgb
     label: "Right Sling Lower GI"
-
+  l_behindupperflipper_uppergi_led:
+    number: lightboard-8-11
+    subtype: led
+    type: rgb
+    label: "Behind Top Right Flipper Upper GI"
+  l_behindupperflipper_lowergi_led:
+    number: lightboard-8-12
+    subtype: led
+    type: rgb
+    label: "Behind Top Right Flipper Lower GI"
+  l_behinddropflasher_leftgi_led:
+    number: lightboard-4-10
+    subtype: led
+    type: rgb
+    label: "Behind Drop Flasher Left GI"
 
 
 blinkenlights:

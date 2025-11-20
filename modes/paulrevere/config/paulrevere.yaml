@@ -1,8 +1,10 @@
 #config_version=6
+
 mode:
   start_events: carousel_paulrevere_selected
   stop_events: mode_paulrevere_stop, mode_paulrevere_failed, mode_paulrevere_success, ball_will_end
   priority: 1000
+
 
 sequences:
   paulrevere_shot_1:
@@ -140,6 +142,7 @@ slide_player:
     paulrevere_final_shot_lit:
       action: remove
 
+
 sound_player:
   mode_paulrevere_started:
     paulrevere_music:
@@ -185,6 +188,7 @@ ball_holds:
     disable_events: timer_paulrevere_intro_show_complete
     release_one_events: timer_paulrevere_intro_show_complete
 
+
 timers:
   paulrevere_intro_show:
     start_value: 0
@@ -194,7 +198,7 @@ timers:
         event: mode_paulrevere_started
       - action: jump
         value: 11
-        event: flipper_cancel
+        event: flipper_cancel{device.ball_holds.paulrevere_scoop_hold.balls_held==1}
   paulrevere_time_remaining:
     start_value: 60
     end_value: 0
@@ -213,6 +217,7 @@ timers:
         value: 15
         event: add_paulrevere_time_15s
 
+
 event_player:
   timer_paulrevere_time_remaining_complete: mode_paulrevere_failed
   paulrevere_shot_6_done: mode_paulrevere_success
@@ -223,27 +228,34 @@ event_player:
   paulrevere_shot_5_done: add_paulrevere_time_5s
   pop_standup_hit: add_paulrevere_time_15s
 
+
 show_player:
   paulrevere_shot_5_done:
     paulrevere_final_shot:
       action: play
       loops: -1
 
+
 blinkenlight_player:
   timer_paulrevere_intro_show_complete:
-    bl_leftorbit_arrow_led: gold
+    bl_leftorbit_arrow_led:
+      color: gold
   paulrevere_shot_1_done:
     bl_leftorbit_arrow_led: remove
-    bl_leftramp_arrow_led: gold
+    bl_leftramp_arrow_led:
+      color: gold
   paulrevere_shot_2_done:
     bl_leftramp_arrow_led: remove
-    bl_captiveball_smallcircle_led: gold
+    bl_captiveball_smallcircle_led:
+      color: gold
   paulrevere_shot_3_done:
     bl_captiveball_smallcircle_led: remove
-    bl_rightramp_arrow_led: gold
+    bl_rightramp_arrow_led:
+      color: gold
   paulrevere_shot_4_done:
     bl_rightramp_arrow_led: remove
-    bl_rightorbit_arrow_led: gold
+    bl_rightorbit_arrow_led:
+      color: gold
   paulrevere_shot_5_done:
     bl_rightorbit_arrow_led: remove
 

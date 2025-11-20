@@ -142,7 +142,7 @@ timers:
         event: mode_threemcsand1dj_started
       - action: jump
         value: 9
-        event: flipper_cancel
+        event: flipper_cancel{device.ball_holds.threemcsand1dj_scoop_hold.balls_held==1}
   threemcsand1dj_time_remaining:
     start_value: 60
     end_value: 0
@@ -180,13 +180,20 @@ shot_profiles:
 
 blinkenlight_player:
   mode_threemcsand1dj_started:
-    bl_lowerpop_smallarrow_led: red
-    bl_lowerrightpop_inside_led: red
-    bl_lowerrightpop_inside2_led: red
-    bl_upperleftpop_inside_led: red
-    bl_uppercenterpop_inside_led: red
-    bl_captiveball_smallcircle_led: red
-    bl_innerloop_arrow_led: green
+    bl_lowerpop_smallarrow_led:
+      color: red
+    bl_lowerrightpop_inside_led:
+      color: red
+    bl_lowerrightpop_inside2_led:
+      color: red
+    bl_upperleftpop_inside_led:
+      color: red
+    bl_uppercenterpop_inside_led:
+      color: red
+    bl_captiveball_smallcircle_led:
+      color: red
+    bl_innerloop_arrow_led:
+      color: green
   threemcsand1dj_scratches_counter_complete:
     bl_lowerpop_smallarrow_led: off
     bl_lowerrightpop_inside_led: off

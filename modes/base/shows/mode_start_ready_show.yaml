@@ -2,7 +2,8 @@
 
 - duration: 250ms
   lights:
-    l_scoop_arrow_led: Salmon
+    l_scoop_arrow_led:
+      color: Salmon
 - duration: 250ms
   lights:
     l_scoop_arrow_led: off

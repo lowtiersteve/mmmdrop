@@ -57,6 +57,7 @@ variable_player:
       int: 1
       action: set
 
+
 slide_player:
   mode_sabotage_started:
     current_mode_highlighted:
@@ -139,7 +140,7 @@ timers:
         event: mode_sabotage_started
       - action: jump
         value: 11
-        event: flipper_cancel
+        event: flipper_cancel{device.ball_holds.sabotage_scoop_hold.balls_held==1}
   sabotage_time_remaining:
     start_value: 60
     end_value: 0
@@ -168,7 +169,7 @@ event_player:
   right_orbit_hit: increase_perps
   increase_perps: add_sabotage_time_7s
   pop_standup_hit: add_sabotage_time_15s, decrease_perps
-  player_sabotage_perps_caught{current_player.sabotage_perps_caught==6}: sabotage_perps_counter_complete
+  player_sabotage_perps_caught{current_player.sabotage_perps_caught==4}: sabotage_perps_counter_complete
 
 
 shot_profiles:

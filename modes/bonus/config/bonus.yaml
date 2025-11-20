@@ -2,7 +2,7 @@
 
 mode_settings:
   display_delay_ms: 2.5s
-  hurry_up_delay_ms: 0
+  hurry_up_delay_ms: 3s
   hurry_up_event: flipper_cancel
   bonus_entries:
     - entry: bonus_modes_played
