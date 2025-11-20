@@ -11,6 +11,9 @@
     l_leftsling_lowergi_led: white
     l_rightsling_uppergi_led: white
     l_rightsling_lowergi_led: white
+    l_behindupperflipper_uppergi_led: white
+    l_behindupperflipper_lowergi_led: white
+    l_behinddropflasher_leftgi_led: white
 - duration: 0.8
   lights:
     l_ballsave_circle_led: off
@@ -144,6 +147,8 @@
     l_rightorbit_arrow_led: off
     l_rightorbitcombo_circle_led: off
     l_rightorbitrectangle_led: off
-
+    l_behindupperflipper_uppergi_led: off
+    l_behindupperflipper_lowergi_led: off
+    l_behinddropflasher_leftgi_led: off
 
 
