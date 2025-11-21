@@ -167,7 +167,8 @@ shot_groups:
   sg_tshirts:
     shots: tshirt_top_standup, tshirt_bottom_standup
     restart_events: bodymovin_ball_1_locked, bodymovin_ball_2_locked, multiball_bodymovin_ended, ball_started{current_player.ball==1}
-    disable_events: bodymovin_lock_1_enabled, bodymovin_lock_2_enabled, bodymovin_lock_3_enabled
+    disable_events: bodymovin_lock_1_enabled, bodymovin_lock_2_enabled, bodymovin_lock_3_enabled, mode_makesomenoise_started
+    enable_events: mode_makesomenoise_ended
 
 
 slide_player:
@@ -615,7 +616,7 @@ sound_player:
     spinner_sound:
       action: play
       bus: effects
-      volume: 0.8
+      volume: 0.6
   pop1_hit:
     pops_sound:
       action: play
@@ -760,11 +761,8 @@ sound_player:
       bus: music
       loops: 3
   multiball_bodymovin_ended{current_player.mode_blocking_flag==0}:
-    bodymovinmultiballmusic:
-      action: stop
-      bus: music
     base_game_random_music:
-      action: play
+      action: replace
       bus: music
       loops: 3
   multiball_chcheckitout_ended{current_player.mode_blocking_flag==1}:
@@ -988,6 +986,11 @@ sound_player:
     threemcsand1djmusic:
       action: stop
       bus: music
+  skillshot_lit_hit:
+    success_finish:
+      action: play
+      bus: effects
+      priority: 5000
 
 
 variable_player:
@@ -1256,13 +1259,13 @@ sequences:
     reset_events: ball_started
   enable_bodymovin_lock_1:
     events:
-      - lock_standups_complete{current_player.chcheckitout_multiball_blocking_flag==0}
+      - lock_standups_complete{current_player.chcheckitout_multiball_blocking_flag==0 and current_player.makesomenoise_multiball_blocking_flag==0}
     events_when_complete: bodymovin_lock_1_enabled
     reset_on_complete: false
     start_enabled: false
     disable_on_complete: true
     persist_state: true
-    restart_events: multiball_bodymovin_ended, ball_started{current_player.ball==1}
+    restart_events: multiball_bodymovin_ended
   bodymovin_lock_1:
     events:
       - scoop_hit{current_player.chcheckitout_multiball_blocking_flag==0}
@@ -1280,7 +1283,7 @@ sequences:
     start_enabled: false
     disable_on_complete: true
     persist_state: true
-    restart_events: bodymovin_ball_1_locked
+    restart_events: bodymovin_ball_1_locked, ball_started{current_player.ball==1}
   bodymovin_lock_2:
     events:
       - scoop_hit{current_player.chcheckitout_multiball_blocking_flag==0}
@@ -1420,6 +1423,61 @@ show_player:
   mode_makesomenoise_started:
     makesomenoise_mode_qualified_light:
       action: stop
+    GI_on:
+      action: stop
+  mode_fingerlickingood_started:
+    GI_on:
+      action: stop
+  mode_intergalactic_started:
+    GI_on:
+      action: stop
+  mode_paulrevere_started:
+    GI_on:
+      action: stop
+  mode_sabotage_started:
+    GI_on:
+      action: stop
+  mode_threemcsand1dj_started:
+    GI_on:
+      action: stop
+  mode_toomanyrappers_started:
+    GI_on:
+      action: stop
+  mode_tripletrouble_started:
+    GI_on:
+      action: stop
+  timer_makesomenoise_intro_show_complete:
+    GI_on:
+      action: play
+      priority: 10000
+  timer_fingerlickingood_intro_show_complete:
+    GI_on:
+      action: play
+      priority: 10000
+  timer_intergalactic_intro_show_complete:
+    GI_on:
+      action: play
+      priority: 10000
+  timer_paulrevere_intro_show_complete:
+    GI_on:
+      action: play
+      priority: 10000
+  timer_sabotage_intro_show_complete:
+    GI_on:
+      action: play
+      priority: 10000
+  timer_threemcsand1dj_intro_show_complete:
+    GI_on:
+      action: play
+      priority: 10000
+  timer_toomanyrappers_intro_show_complete:
+    GI_on:
+      action: play
+      priority: 10000
+  timer_tripletrouble_intro_show_complete:
+    GI_on:
+      action: play
+      priority: 10000
   ball_save_default_timer_start:
     ball_save_show:
       action: play

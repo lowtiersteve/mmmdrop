@@ -1,8 +1,8 @@
 #config_version=6
 
 mode_settings:
-  display_delay_ms: 2.5s
-  hurry_up_delay_ms: 3s
+  display_delay_ms: 2000
+  hurry_up_delay_ms: 400
   hurry_up_event: flipper_cancel
   bonus_entries:
     - entry: bonus_modes_played

@@ -168,6 +168,7 @@ lights:
     subtype: led
     type: rgb
     label: "Spinner Battery Rectangle"
+    fade_ms: 500
   l_modeindicator1_rectangle_led:
     number: lightboard-3-9
     subtype: led

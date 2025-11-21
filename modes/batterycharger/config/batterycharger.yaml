@@ -113,6 +113,9 @@ counters:
       - event: multiball_makesomenoise_ended
         action: jump
         value: 20
+      - event: scoop_hit{current_player.mode_blocking_flag==0}
+        action: add
+        value: -5
 
 
 show_player:

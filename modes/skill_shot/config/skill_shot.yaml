@@ -7,10 +7,12 @@ mode:
     - skillshot_hit
   priority: 500
 
+
 sequence_shots:
   inner_loop_skill_sequence:
     switch_sequence: s_right_orbit, s_inner_orbit
     sequence_timeout: 4.5s
+
 
 shots:
   skillshot_side_targets:
@@ -19,30 +21,30 @@ shots:
     advance_events: advance_skill_side_targets
     show_tokens:
       led: l_tshirttopcircle_led, l_tshirtbottomcircle_led
-  skillshot_drop_targets:
-    switch: s_three_bank_bottom, s_three_bank_middle, s_three_bank_top
-    profile: skill_shot_profile
-    advance_events: advance_skill_drop_targets
-    show_tokens:
-      led: l_lowerdrop_circle_led, l_middledrop_circle_led, l_upperdrop_circle_led
   skillshot_hideout_plunge:
     switch: s_scoop
     profile: skill_shot_profile
     advance_events: advance_skill_hideout
     show_tokens:
       led: l_innerloop_arrow_led, l_innerloopcombo_circle_led, l_scoop_arrow_led
-  skillshot_left_outlane:
-    switch: s_left_outlane
-    profile: skill_shot_profile
-    advance_events: advance_skill_left_outlane
-    show_tokens:
-      led: l_leftoutlane_circle_led
   skillshot_super:
     hit_events: inner_loop_skill_sequence_hit
     profile: skill_shot_profile
     advance_events: advance_skill_super
     show_tokens:
       led: l_innerloop_arrow_led, l_innerloopcombo_circle_led, l_rightorbitcombo_circle_led
+  skillshot_left_outlane:
+    switch: s_left_outlane
+    profile: skill_shot_profile
+    advance_events: advance_skill_left_outlane
+    show_tokens:
+      led: l_leftoutlane_circle_led
+  skillshot_drop_targets:
+    switch: s_three_bank_bottom, s_three_bank_middle, s_three_bank_top
+    profile: skill_shot_profile
+    advance_events: advance_skill_drop_targets
+    show_tokens:
+      led: l_lowerdrop_circle_led, l_middledrop_circle_led, l_upperdrop_circle_led
 
 
 shot_profiles:
@@ -61,7 +63,7 @@ shot_profiles:
 
 shot_groups:
   skillshot:
-    shots: skillshot_side_targets, skillshot_drop_targets, skillshot_hideout_plunge, skillshot_left_outlane, skillshot_super
+    shots: skillshot_side_targets, skillshot_hideout_plunge, skillshot_super, skillshot_left_outlane, skillshot_drop_targets
     disable_rotation_events: s_plunger_lane_inactive
     reset_events: skillshot_lit_hit
     rotate_left_events: s_left_flipper_active
@@ -114,3 +116,6 @@ random_event_player:
     - advance_skill_super
     - advance_skill_hideout
     - advance_skill_left_outlane
+
+event_player:
+  timer_skill_shot_timeout_complete: skill_failed
