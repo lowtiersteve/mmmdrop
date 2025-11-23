@@ -12,22 +12,23 @@ metadata/_custom_type_script = "uid://d15ukepy10pan"
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 23.0
-offset_top = 566.0
-offset_right = 453.0
-offset_bottom = 616.0
+offset_left = 525.0
+offset_top = 631.0
+offset_right = 809.0
+offset_bottom = 710.0
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("2_arjjm")
 theme_override_font_sizes/font_size = 36
-text = "Drops Remaining:"
+text = "Drops 
+Remaining:"
 horizontal_alignment = 1
 
 [node name="MPFVariable" type="Label" parent="."]
 layout_mode = 0
-offset_left = 144.0
-offset_top = 625.0
-offset_right = 303.0
-offset_bottom = 698.0
+offset_left = 566.0
+offset_top = 725.0
+offset_right = 725.0
+offset_bottom = 798.0
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("2_arjjm")
 theme_override_font_sizes/font_size = 71

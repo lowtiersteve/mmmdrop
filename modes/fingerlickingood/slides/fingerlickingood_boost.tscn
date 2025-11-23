@@ -12,43 +12,43 @@ script = ExtResource("1_4xtyr")
 metadata/_custom_type_script = "uid://d15ukepy10pan"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(631, 663)
-scale = Vector2(0.8, 0.8)
+position = Vector2(671.6, 570.6)
+scale = Vector2(0.4, 0.4)
 texture = ExtResource("2_gtcwr")
 
 [node name="x" type="Label" parent="."]
 layout_mode = 0
-offset_left = 1316.0
-offset_top = 603.0
-offset_right = 1410.0
-offset_bottom = 712.0
+offset_left = 1056.6
+offset_top = 548.6
+offset_right = 1131.6
+offset_bottom = 633.6
 theme_override_constants/outline_size = 30
 theme_override_fonts/font = ExtResource("3_sm1fl")
-theme_override_font_sizes/font_size = 106
+theme_override_font_sizes/font_size = 70
 text = "X"
 horizontal_alignment = 1
 
 [node name="boostvalue" type="Label" parent="."]
 layout_mode = 0
-offset_left = 995.0
-offset_top = 520.0
-offset_right = 1531.0
-offset_bottom = 607.0
+offset_left = 771.6
+offset_top = 472.6
+offset_right = 1307.6
+offset_bottom = 542.6
 theme_override_constants/outline_size = 30
 theme_override_fonts/font = ExtResource("3_sm1fl")
-theme_override_font_sizes/font_size = 61
+theme_override_font_sizes/font_size = 35
 text = "Boost Value:"
 horizontal_alignment = 1
 
 [node name="fingerlickingood_boost" type="Label" parent="."]
 layout_mode = 0
-offset_left = 1074.0
-offset_top = 608.0
-offset_right = 1263.0
-offset_bottom = 729.0
+offset_left = 890.6
+offset_top = 546.6
+offset_right = 1028.6
+offset_bottom = 632.6
 theme_override_constants/outline_size = 30
 theme_override_fonts/font = ExtResource("3_sm1fl")
-theme_override_font_sizes/font_size = 106
+theme_override_font_sizes/font_size = 70
 text = "1"
 horizontal_alignment = 1
 script = ExtResource("4_lo00d")

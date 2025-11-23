@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cov3pcd2uquw1"]
 
 [ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_fqawm"]
-[ext_resource type="VideoStream" uid="uid://dgk7piodyjym8" path="res://modes/multiball/slides/BodyMovin.ogv" id="2_fqawm"]
+[ext_resource type="VideoStream" uid="uid://dgk7piodyjym8" path="res://modes/bodymovin/slides/BodyMovin.ogv" id="2_fqawm"]
 [ext_resource type="Script" uid="uid://bf2dsnm46ji2e" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_gjxux"]
 
 [node name="chcheckitout" type="Control"]

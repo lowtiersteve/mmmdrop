@@ -9,7 +9,7 @@ mode:
 
 mode_settings:
   selectable_items: intergalactic{not device.achievements.intergalactic_mode.state=='completed'}, paulrevere{not device.achievements.paulrevere_mode.state=='completed'}, tripletrouble{not device.achievements.tripletrouble_mode.state=='completed'}, sabotage{not device.achievements.sabotage_mode.state=='completed'}, threemcsand1dj{not device.achievements.threemcsand1dj_mode.state=='completed'}, toomanyrappers{not device.achievements.toomanyrappers_mode.state=='completed'}, fingerlickingood{not device.achievements.fingerlickingood_mode.state=='completed'}
-  select_item_events: scoop_hit
+  select_item_events: scoop_hit{current_player.battery_charged_yesorno==1}
   next_item_events: pop1_hit, pop2_hit, carousel_advance, carousel_advance_2, carousel_advance_3, carousel_advance_4, carousel_advance_5, carousel_advance_6, carousel_advance_7
   previous_item_events: pop3_hit
 
@@ -45,7 +45,6 @@ variable_player:
       action: set
 
 
-
 slide_player:
   mode_carousel_started:
     current_mode_highlighted:
@@ -68,8 +67,6 @@ event_player:
   random_mode_picker_threemcsand1dj: carousel_advance, carousel_advance_2, carousel_advance_3, carousel_advance_4
   random_mode_picker_toomanyrappers: carousel_advance, carousel_advance_2, carousel_advance_3, carousel_advance_4, carousel_advance_5
   random_mode_picker_fingerlickingood: carousel_advance, carousel_advance_2, carousel_advance_3, carousel_advance_4, carousel_advance_5, carousel_advance_6
-
-
 
 
 random_event_player:

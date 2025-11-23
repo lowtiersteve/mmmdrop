@@ -9,19 +9,29 @@ anchors_preset = 0
 script = ExtResource("1_mcdkn")
 metadata/_custom_type_script = "uid://d15ukepy10pan"
 
-[node name="instructions" type="Label" parent="."]
+[node name="instructionstitle" type="Label" parent="."]
 layout_mode = 0
-offset_left = 162.0
-offset_top = 282.0
-offset_right = 1772.0
-offset_bottom = 788.0
+offset_left = 520.0
+offset_top = 320.0
+offset_right = 1432.0
+offset_bottom = 477.0
 theme_override_constants/outline_size = 30
 theme_override_fonts/font = ExtResource("2_vj7o1")
 theme_override_font_sizes/font_size = 75
 text = "History Lesson!
+"
+horizontal_alignment = 1
 
-
-Make Shots from
+[node name="instructions2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 376.0
+offset_top = 552.0
+offset_right = 1584.0
+offset_bottom = 808.0
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("2_vj7o1")
+theme_override_font_sizes/font_size = 60
+text = "Make Shots from
 Left to Right
 to Travel Through Time"
 horizontal_alignment = 1

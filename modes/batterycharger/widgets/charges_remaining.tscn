@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=3 uid="uid://dt6jeo15bi6oh"]
+
+[ext_resource type="Script" uid="uid://bp5npfvnd6fvx" path="res://addons/mpf-gmc/classes/mpf_widget.gd" id="1_rogmx"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="2_grvp4"]
+[ext_resource type="Script" uid="uid://b3ni1cjx2r6sx" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_vla77"]
+
+[node name="charges_remaining" type="Control" node_paths=PackedStringArray("animation_player")]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_rogmx")
+animation_player = NodePath("")
+metadata/_custom_type_script = "uid://bp5npfvnd6fvx"
+
+[node name="charges_remaining" type="Node2D" parent="."]
+
+[node name="chargesneeded" type="Label" parent="charges_remaining"]
+top_level = true
+offset_left = 13.0
+offset_top = 504.0
+offset_right = 215.0
+offset_bottom = 581.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_grvp4")
+theme_override_font_sizes/font_size = 35
+text = "Charges 
+Needed:"
+horizontal_alignment = 1
+
+[node name="player1_score" type="Label" parent="charges_remaining"]
+offset_left = 42.0
+offset_top = 604.0
+offset_right = 164.0
+offset_bottom = 670.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_grvp4")
+theme_override_font_sizes/font_size = 60
+text = "00"
+horizontal_alignment = 1
+script = ExtResource("3_vla77")
+variable_name = "charges_remaining_variable"
+min_digits = 1
+initialize_empty = false
+metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"

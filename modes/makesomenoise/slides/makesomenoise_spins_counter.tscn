@@ -12,22 +12,23 @@ metadata/_custom_type_script = "uid://d15ukepy10pan"
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 506.0
-offset_top = 342.0
-offset_right = 936.0
-offset_bottom = 392.0
+offset_left = 488.0
+offset_top = 306.0
+offset_right = 796.0
+offset_bottom = 385.0
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("2_whwmb")
 theme_override_font_sizes/font_size = 36
-text = "Spins Remaining:"
+text = "Spins 
+Remaining:"
 horizontal_alignment = 1
 
 [node name="MPFVariable" type="Label" parent="."]
 layout_mode = 0
-offset_left = 627.0
-offset_top = 401.0
-offset_right = 786.0
-offset_bottom = 474.0
+offset_left = 549.0
+offset_top = 412.0
+offset_right = 708.0
+offset_bottom = 485.0
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("2_whwmb")
 theme_override_font_sizes/font_size = 71

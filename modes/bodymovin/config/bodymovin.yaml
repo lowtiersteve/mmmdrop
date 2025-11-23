@@ -1,0 +1,156 @@
+#config_version=6
+
+mode:
+  start_events: bodymovin_start_multiball
+  stop_events: multiball_bodymovin_ended
+  priority: 10000
+
+
+slide_player:
+  mode_bodymovin_started:
+    current_mode_highlighted:
+      action: remove
+    base:
+      action: remove
+    basevideo1:
+      action: remove
+    basevideo2:
+      action: remove
+    basevideo3:
+      action: remove
+    basevideo4:
+      action: remove
+    bodymovin:
+      action: play
+      priority: 450000
+
+
+sound_player:
+  mode_bodymovin_started{current_player.mode_blocking_flag==0}:
+    base_game_random_music:
+      action: stop
+      bus: music
+    bodymovinmultiballmusic:
+      action: replace
+      bus: music
+      loops: 5
+
+
+variable_player:
+  mode_bodymovin_started:
+    bodymovin_multiball_blocking_flag:
+      int: 1
+      action: set
+    multiball_bodymovin_score:
+      int: 0
+      action: set
+    bodymovin_multiball_qualified_flag:
+      int: 0
+      action: set
+  bodymovin_jackpot_hit:
+    score: 500000
+    multiball_chcheckitout_score: 500000
+  bodymovin_superjackpot_hit:
+    score: 2000000
+    multiball_chcheckitout_score: 2000000
+
+
+accruals:
+  completing_bodymovin_jackpots:
+    events:
+      - bodymovin_leftorbit_jackpot_hit
+      - bodymovin_leftramp_jackpot_hit
+      - bodymovin_rightramp_jackpot_hit
+      - bodymovin_rightorbit_jackpot_hit
+    events_when_complete: bodymovin_superjackpot_lit
+    restart_events: bodymovin_superjackpot_hit
+
+
+sequences:
+  bodymovin_leftorbit_jackpot:
+    events:
+      - left_orbit_hit
+#    enable_events: multiball_bodymovin_started, bodymovin_superjackpot_hit
+    events_when_complete: bodymovin_leftorbit_jackpot_hit, bodymovin_jackpot_hit
+    reset_on_complete: true
+    restart_events: multiball_bodymovin_started, bodymovin_superjackpot_hit
+  bodymovin_leftramp_jackpot:
+    events:
+      - left_ramp_hit
+#    enable_events: multiball_bodymovin_started, bodymovin_superjackpot_hit
+    events_when_complete: bodymovin_leftramp_jackpot_hit, bodymovin_jackpot_hit
+    reset_on_complete: true
+    restart_events: multiball_bodymovin_started, bodymovin_superjackpot_hit
+  bodymovin_rightramp_jackpot:
+    events:
+      - right_ramp_hit
+#    enable_events: multiball_bodymovin_started, bodymovin_superjackpot_hit
+    events_when_complete: bodymovin_rightramp_jackpot_hit, bodymovin_jackpot_hit
+    reset_on_complete: true
+    restart_events: multiball_bodymovin_started, bodymovin_superjackpot_hit
+  bodymovin_rightorbit_jackpot:
+    events:
+      - right_orbit_hit
+#    enable_events: multiball_bodymovin_started, bodymovin_superjackpot_hit
+    events_when_complete: bodymovin_rightorbit_jackpot_hit, bodymovin_jackpot_hit
+    reset_on_complete: true
+    restart_events: multiball_bodymovin_started, bodymovin_superjackpot_hit
+  bodymovin_superjackpot:
+    events:
+      - inner_loop_hit
+#    enable_events: bodymovin_superjackpot_lit
+    events_when_complete: bodymovin_superjackpot_hit
+    reset_on_complete: True
+    restart_events: bodymovin_superjackpot_lit
+
+
+show_player:
+  bodymovin_superjackpot_lit:
+    bodymovin_inner_loop_shot:
+      action: play
+  bodymovin_superjackpot_hit:
+    bodymovin_inner_loop_shot:
+      action: stop
+  mode_bodymovin_started:
+    chcheckitout_lit_strobe:
+      action: stop
+  multiball_bodymovin_started:
+    ball_save_show:
+      action: play
+      loops: -1
+  multiball_bodymovin_shoot_again_ended:
+    ball_save_show:
+      action: stop
+
+
+
+blinkenlight_player:
+  mode_bodymovin_started:
+    bl_leftorbit_arrow_led:
+      color: 4CBB17
+    bl_leftramp_arrow_led:
+      color: 4CBB17
+    bl_rightramp_arrow_led:
+      color: 4CBB17
+    bl_rightorbit_arrow_led:
+      color: 4CBB17
+    bl_captiveball_smallcircle_led: remove
+
+  bodymovin_leftorbit_jackpot_hit:
+    bl_leftorbit_arrow_led: remove
+  bodymovin_leftramp_jackpot_hit:
+    bl_leftramp_arrow_led: remove
+  bodymovin_rightramp_jackpot_hit:
+    bl_rightramp_arrow_led: remove
+  bodymovin_rightorbit_jackpot_hit:
+    bl_rightorbit_arrow_led: remove
+  bodymovin_superjackpot_hit:
+    bl_leftorbit_arrow_led:
+      color: 4CBB17
+    bl_leftramp_arrow_led:
+      color: 4CBB17
+    bl_rightramp_arrow_led:
+      color: 4CBB17
+    bl_rightorbit_arrow_led:
+      color: 4CBB17
+

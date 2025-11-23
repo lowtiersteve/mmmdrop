@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://c2alaagu3le5k"]
+[gd_scene load_steps=10 format=3 uid="uid://c2alaagu3le5k"]
 
 [ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_j4cmf"]
 [ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="2_vwbax"]
 [ext_resource type="Texture2D" uid="uid://dy8kciiymx6b1" path="res://assets/city1080sidebarsextended.png" id="2_wln5o"]
+[ext_resource type="Texture2D" uid="uid://dt61s40ac3jrx" path="res://assets/cassetteangle.png" id="3_2oks4"]
 [ext_resource type="Script" uid="uid://b3ni1cjx2r6sx" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_6f3t8"]
 [ext_resource type="Texture2D" uid="uid://dqp1il4o7feao" path="res://assets/top left billboard.png" id="3_6mjul"]
 [ext_resource type="Texture2D" uid="uid://cjf4omvulvdhc" path="res://assets/top right billboard.png" id="4_2oks4"]
@@ -22,22 +23,23 @@ position = Vector2(960, 544)
 scale = Vector2(0.24, 0.24)
 texture = ExtResource("2_wln5o")
 
-[node name="p1billboard" type="Sprite2D" parent="."]
-position = Vector2(248, 192)
-scale = Vector2(0.24, 0.24)
-texture = ExtResource("3_6mjul")
+[node name="redtape" type="Sprite2D" parent="."]
+position = Vector2(984, 141)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("3_2oks4")
 
 [node name="currentplayer" type="Label" parent="."]
 layout_mode = 0
-offset_left = 837.0
-offset_top = 24.0
-offset_right = 1118.0
-offset_bottom = 77.0
+offset_left = 896.0
+offset_top = 96.0
+offset_right = 1104.0
+offset_bottom = 149.0
+rotation = -0.174533
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("2_vwbax")
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 30
 text = "Player 1"
 horizontal_alignment = 1
 script = ExtResource("3_6f3t8")
@@ -47,21 +49,27 @@ metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"
 
 [node name="currentball" type="Label" parent="."]
 layout_mode = 0
-offset_left = 879.0
-offset_top = 81.0
-offset_right = 1096.0
-offset_bottom = 166.0
+offset_left = 848.0
+offset_top = 72.0
+offset_right = 993.0
+offset_bottom = 118.0
+rotation = -0.174533
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("2_vwbax")
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 30
 text = "Ball 1"
 horizontal_alignment = 1
 script = ExtResource("3_6f3t8")
 variable_name = "ball"
 template_string = "Ball %s"
 metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"
+
+[node name="p1billboard" type="Sprite2D" parent="."]
+position = Vector2(248, 192)
+scale = Vector2(0.24, 0.24)
+texture = ExtResource("3_6mjul")
 
 [node name="p1name" type="Label" parent="."]
 layout_mode = 0

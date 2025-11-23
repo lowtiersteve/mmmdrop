@@ -139,13 +139,14 @@ ball_saves:
     auto_launch: true
     balls_to_save: -1
   mode_start:
-    active_time: 3s
-    hurry_up_time: 3s
+    active_time: 5s
+    hurry_up_time: 2s
     grace_period: 1s
-    enable_events: timer_fingerlickingood_intro_show_complete, timer_highplainsdrifter_intro_show_complete, timer_intergalactic_intro_show_complete, timer_paulrevere_intro_show_complete, timer_sabotage_intro_show_complete, timer_threemcsand1dj_intro_show_complete, timer_toomanyrappers_intro_show_complete, timer_tripletrouble_intro_show_complete
-    timer_start_events: ball_out
+    enable_events: ball_hold_fingerlickingood_scoop_hold_balls_released, ball_hold_highplainsdrifter_scoop_hold_balls_released, ball_hold_intergalactic_scoop_hold_balls_released, ball_hold_paulrevere_scoop_hold_balls_released, ball_hold_sabotage_scoop_hold_balls_released, ball_hold_threemcsand1dj_scoop_hold_balls_released, ball_hold_toomanyrappers_scoop_hold_balls_released, ball_hold_tripletrouble_scoop_hold_balls_released, ball_hold_makesomenoise_scoop_hold_balls_released
     auto_launch: true
     balls_to_save: -1
+
+
 
 modes:
   - base
@@ -166,6 +167,8 @@ modes:
   - fingerlickingood
   - toomanyrappers
   - threemcsand1dj
+  - chcheckitout
+  - bodymovin
 
 
 settings:
@@ -224,6 +227,7 @@ variable_player:
       action: set_machine
       int: 1
 
+
 shot_profiles:
   lit_mode_shot_profile:
     states:
@@ -232,6 +236,7 @@ shot_profiles:
       - name: unlit
         show: off
     loop: false
+
 
 keyboard:
   s:

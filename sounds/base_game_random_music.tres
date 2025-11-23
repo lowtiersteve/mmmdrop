@@ -1,13 +1,19 @@
-[gd_resource type="AudioStreamRandomizer" load_steps=5 format=3 uid="uid://cuh4on317hknk"]
+[gd_resource type="AudioStreamRandomizer" load_steps=8 format=3 uid="uid://cuh4on317hknk"]
 
 [ext_resource type="AudioStream" uid="uid://b6m2n2osh5x2j" path="res://sounds/SneakinOutTheHospital.ogg" id="3_5g7oh"]
-[ext_resource type="AudioStream" uid="uid://bjd1fcm242pjd" path="res://sounds/BodhiVow.ogg" id="6_xlcnx"]
+[ext_resource type="AudioStream" uid="uid://bcd64egns4ycu" path="res://sounds/dubthemicmusic.ogg" id="4_hbxq0"]
+[ext_resource type="AudioStream" uid="uid://be7lrylpybsyy" path="res://sounds/futtermansrulemusic.ogg" id="5_trfc1"]
+[ext_resource type="AudioStream" uid="uid://17a8v3wowsd0" path="res://sounds/grooveholmesmusic.ogg" id="6_pyudu"]
+[ext_resource type="AudioStream" uid="uid://c44wb62nafcvm" path="res://sounds/in3smusic.ogg" id="7_0aol7"]
 [ext_resource type="AudioStream" uid="uid://8vc2cnixljsn" path="res://sounds/MultilateralNuclearDisarmament.ogg" id="11_4bmwv"]
 [ext_resource type="AudioStream" uid="uid://dedptjpkx0aci" path="res://sounds/POW.ogg" id="13_sexib"]
 
 [resource]
-streams_count = 4
+streams_count = 7
 stream_0/stream = ExtResource("11_4bmwv")
 stream_1/stream = ExtResource("13_sexib")
 stream_2/stream = ExtResource("3_5g7oh")
-stream_3/stream = ExtResource("6_xlcnx")
+stream_3/stream = ExtResource("4_hbxq0")
+stream_4/stream = ExtResource("5_trfc1")
+stream_5/stream = ExtResource("6_pyudu")
+stream_6/stream = ExtResource("7_0aol7")

@@ -11,13 +11,13 @@ metadata/_custom_type_script = "uid://d15ukepy10pan"
 
 [node name="instructions" type="Label" parent="."]
 layout_mode = 0
-offset_left = 266.0
-offset_top = 336.0
-offset_right = 1719.0
-offset_bottom = 805.0
+offset_left = 416.0
+offset_top = 352.0
+offset_right = 1485.0
+offset_bottom = 729.0
 theme_override_constants/outline_size = 30
 theme_override_fonts/font = ExtResource("2_35gci")
-theme_override_font_sizes/font_size = 136
+theme_override_font_sizes/font_size = 100
 text = "Robo-Battle!
 
 Take out the Kaiju with 

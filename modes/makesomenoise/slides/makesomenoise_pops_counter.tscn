@@ -12,22 +12,23 @@ metadata/_custom_type_script = "uid://d15ukepy10pan"
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 1100.0
-offset_top = 341.0
-offset_right = 1530.0
-offset_bottom = 391.0
+offset_left = 1162.0
+offset_top = 346.0
+offset_right = 1431.0
+offset_bottom = 425.0
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("2_nsxr5")
 theme_override_font_sizes/font_size = 36
-text = "Pops Remaining:"
+text = "Pops 
+Remaining:"
 horizontal_alignment = 1
 
 [node name="MPFVariable" type="Label" parent="."]
 layout_mode = 0
-offset_left = 1221.0
-offset_top = 400.0
-offset_right = 1380.0
-offset_bottom = 473.0
+offset_left = 1200.0
+offset_top = 439.0
+offset_right = 1359.0
+offset_bottom = 512.0
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("2_nsxr5")
 theme_override_font_sizes/font_size = 71

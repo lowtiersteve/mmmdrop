@@ -11,13 +11,13 @@ metadata/_custom_type_script = "uid://d15ukepy10pan"
 
 [node name="shootrightshot" type="Label" parent="."]
 layout_mode = 0
-offset_left = 10.0
-offset_top = 467.0
-offset_right = 851.0
-offset_bottom = 718.0
+offset_left = 568.0
+offset_top = 584.0
+offset_right = 1409.0
+offset_bottom = 835.0
 theme_override_constants/outline_size = 30
 theme_override_fonts/font = ExtResource("2_15dhb")
-theme_override_font_sizes/font_size = 106
+theme_override_font_sizes/font_size = 90
 text = "Shoot the
 Left Orbit"
 horizontal_alignment = 1

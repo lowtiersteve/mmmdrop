@@ -5,6 +5,7 @@ mode:
   stop_events: mode_makesomenoise_stop, multiball_makesomenoise_ended
   priority: 5000
 
+
 counters:
   makesomenoise_spins_counter:
     count_events: spinner_hit
@@ -17,7 +18,7 @@ counters:
     disable_on_complete: false
     reset_on_complete: false
     disable_events: mode_makesomenoise_ended
-    enable_events: mode_makesomenoise_started
+#    enable_events: mode_makesomenoise_started
     restart_events: mode_makesomenoise_started, makesomenoise_final_shot_hit
     control_events:
       - event: reset_makesomenoise_spins_counter
@@ -34,7 +35,7 @@ counters:
     disable_on_complete: false
     reset_on_complete: false
     disable_events: mode_makesomenoise_ended
-    enable_events: mode_makesomenoise_started
+#    enable_events: mode_makesomenoise_started
     restart_events: mode_makesomenoise_started, makesomenoise_final_shot_hit
     control_events:
       - event: reset_makesomenoise_ramps_counter
@@ -51,7 +52,7 @@ counters:
     disable_on_complete: false
     reset_on_complete: false
     disable_events: mode_makesomenoise_ended
-    enable_events: mode_makesomenoise_started
+#    enable_events: mode_makesomenoise_started
     restart_events: mode_makesomenoise_started, makesomenoise_final_shot_hit
     control_events:
       - event: reset_makesomenoise_drops_counter
@@ -68,12 +69,13 @@ counters:
     disable_on_complete: false
     reset_on_complete: false
     disable_events: mode_makesomenoise_ended
-    enable_events: mode_makesomenoise_started
+#    enable_events: mode_makesomenoise_started
     restart_events: mode_makesomenoise_started, makesomenoise_final_shot_hit
     control_events:
       - event: reset_makesomenoise_pops_counter
         action: jump
         value: 10
+
 
 accruals:
   completing_makesomenoise_counters:
@@ -85,6 +87,7 @@ accruals:
     events_when_complete: makesomenoise_final_shot_lit
     restart_events: mode_makesomenoise_started, makesomenoise_final_shot_hit
 
+
 sequences:
   makesomenoise_final_shot:
     events:
@@ -92,6 +95,7 @@ sequences:
     enable_events: makesomenoise_final_shot_lit
     events_when_complete: makesomenoise_final_shot_hit
     reset_on_complete: True
+    start_enabled: false
     restart_events: makesomenoise_final_shot_lit
 
 
@@ -131,12 +135,15 @@ variable_player:
     mode_blocking_flag:
       int: 1
       action: set
-    chcheckitout_multiball_blocking_flag:
-      int: 1
+    mode_makesomenoise_score:
+      int: 0
       action: set
-    bodymovin_multiball_blocking_flag:
-      int: 1
-      action: set
+    modes_played: 1
+    modes_completed: 1
+    battery_charged_yesorno:
+      int: 0
+      action:
+        set
     makesomenoise_pops_remaining:
       int: 10
       action: set
@@ -188,7 +195,7 @@ slide_player:
       action: play
       priority: 500001
       expire: 8s
-  flipper_cancel:
+  flipper_cancel{device.ball_holds.makesomenoise_scoop_hold.balls_held==1}:
     makesomenoise_instructions:
       action: remove
   timer_makesomenoise_intro_show_complete:
@@ -253,8 +260,9 @@ slide_player:
 sound_player:
   mode_makesomenoise_started:
     makesomenoisemusic:
-      action: play
+      action: replace
       bus: music
+      loops: 5
   makesomenoise_drops_counter_complete:
     success_shot:
       action: play
@@ -304,6 +312,11 @@ timers:
 
 
 show_player:
+  mode_makesomenoise_started:
+    makesomenoise_mode_qualified_light:
+      action: stop
+    GI_on:
+      action: stop
   timer_makesomenoise_intro_show_complete:
     makesomenoise_ramps_shot:
       action: play
@@ -348,6 +361,13 @@ show_player:
     makesomenoise_drops_shot:
       action: play
       loops: -1
+  multiball_makesomenoise_started:
+    ball_save_show:
+      action: play
+      loops: -1
+  multiball_makesomenoise_shoot_again_ended:
+    ball_save_show:
+      action: stop
 
 
 shot_profiles:
@@ -362,3 +382,8 @@ shot_profiles:
           color: DodgerBlue
         speed: 2
     loop: false
+
+
+#blinkenlight_player:
+#  mode_makesomenoise_started:
+#    bl_dropstandup_flasher_led: remove

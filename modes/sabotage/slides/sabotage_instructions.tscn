@@ -11,33 +11,29 @@ metadata/_custom_type_script = "uid://d15ukepy10pan"
 
 [node name="instructions" type="Label" parent="."]
 layout_mode = 0
-offset_left = 408.0
-offset_top = 358.0
-offset_right = 1564.0
-offset_bottom = 955.0
+offset_left = 496.0
+offset_top = 496.0
+offset_right = 1496.0
+offset_bottom = 853.0
 theme_override_constants/outline_size = 30
 theme_override_fonts/font = ExtResource("2_k1h6l")
-theme_override_font_sizes/font_size = 45
-text = "
-catch 6 perps by hitting
+theme_override_font_sizes/font_size = 40
+text = "-catch 6 perps by hitting
 Orbits and Ramps
 
-
-clear the drop targets to
+- clear the drop targets to
 increase 'stache (Next Shot 3x)
 
-
-avoid stand-up targets -
-don't let 'em get away!
-"
+- avoid stand-up targets -
+don't let 'em get away!"
 horizontal_alignment = 1
 
 [node name="instructionsheader" type="Label" parent="."]
 layout_mode = 0
-offset_left = 417.0
-offset_top = 203.0
-offset_right = 1491.0
-offset_bottom = 358.0
+offset_left = 472.0
+offset_top = 296.0
+offset_right = 1546.0
+offset_bottom = 451.0
 theme_override_constants/outline_size = 30
 theme_override_fonts/font = ExtResource("2_k1h6l")
 theme_override_font_sizes/font_size = 65
