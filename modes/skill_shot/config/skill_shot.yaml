@@ -64,7 +64,7 @@ shot_profiles:
 shot_groups:
   skillshot:
     shots: skillshot_side_targets, skillshot_hideout_plunge, skillshot_super, skillshot_left_outlane, skillshot_drop_targets
-    disable_rotation_events: s_plunger_lane_inactive
+    disable_rotation_events: ball_out, skillshot_off_hit
     reset_events: skillshot_lit_hit
     rotate_left_events: s_left_flipper_active
     rotate_right_events: s_right_flipper_active

@@ -312,11 +312,6 @@ timers:
 
 
 show_player:
-  mode_makesomenoise_started:
-    makesomenoise_mode_qualified_light:
-      action: stop
-    GI_on:
-      action: stop
   timer_makesomenoise_intro_show_complete:
     makesomenoise_ramps_shot:
       action: play

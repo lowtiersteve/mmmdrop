@@ -49,10 +49,10 @@ variable_player:
       action: set
   bodymovin_jackpot_hit:
     score: 500000
-    multiball_chcheckitout_score: 500000
+    multiball_bodymovin_score: 500000
   bodymovin_superjackpot_hit:
     score: 2000000
-    multiball_chcheckitout_score: 2000000
+    multiball_bodymovin_score: 2000000
 
 
 accruals:

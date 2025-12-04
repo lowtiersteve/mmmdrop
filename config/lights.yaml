@@ -324,6 +324,31 @@ lights:
     subtype: led
     type: rgb
     label: "Behind Drop Flasher Left GI"
+  l_backpanel_gi1_led:
+    number: lightboard-7-1
+    subtype: led
+    type: rgb
+    label: "Back Panel GI 1"
+  l_backpanel_gi2_led:
+    number: lightboard-7-2
+    subtype: led
+    type: rgb
+    label: "Back Panel GI 2"
+  l_backpanel_gi3_led:
+    number: lightboard-7-3
+    subtype: led
+    type: rgb
+    label: "Back Panel GI 3"
+  l_backpanel_gi4_led:
+    number: lightboard-7-4
+    subtype: led
+    type: rgb
+    label: "Back Panel GI 4"
+  l_backpanel_gi5_led:
+    number: lightboard-7-5
+    subtype: led
+    type: rgb
+    label: "Back Panel GI 5"
 
 
 blinkenlights:

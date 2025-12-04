@@ -167,7 +167,7 @@ shot_groups:
   sg_tshirts:
     shots: tshirt_top_standup, tshirt_bottom_standup
     restart_events: bodymovin_ball_1_locked, bodymovin_ball_2_locked, multiball_bodymovin_ended, ball_started{current_player.ball==1}
-    disable_events: bodymovin_lock_1_enabled, bodymovin_lock_2_enabled, bodymovin_lock_3_enabled, mode_makesomenoise_started, mode_chcheckitout_started
+    disable_events: bodymovin_lock_1_enabled, bodymovin_lock_2_enabled, bodymovin_lock_3_enabled, mode_makesomenoise_started, mode_chcheckitout_started, ball_will_end
     enable_events: mode_makesomenoise_stopped, mode_chcheckitout_stopped
 
 
@@ -1494,6 +1494,11 @@ show_player:
   mode_tripletrouble_started:
     GI_on:
       action: stop
+  mode_makesomenoise_started:
+    makesomenoise_mode_qualified_light:
+      action: stop
+    GI_on:
+      action: stop
   timer_makesomenoise_intro_show_complete:
     GI_on:
       action: play
@@ -1590,6 +1595,9 @@ show_player:
       action: play
       loops: -1
       priority: 10000
+  mode_bodymovin_started:
+    chcheckitout_lit_strobe:
+      action: stop
   ball_will_end:
     chcheckitout_lit_strobe:
       action: stop
@@ -1632,6 +1640,10 @@ blinkenlight_player:
     bl_rightorbit_arrow_led: remove
   achievement_wizard1_state_enabled:
     bl_captiveball_smallcircle_led: remove
+  mode_chcheckitout_started:
+    bl_captiveball_smallcircle_led: remove
+  mode_chcheckitout_stopped{current_player.bodymovin_multiball_qualified_flag==1}:
+    bl_captiveball_smallcircle_led: 4CBB17
 
 
 widget_player:

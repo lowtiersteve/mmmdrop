@@ -263,16 +263,17 @@ variable_player:
       int: device.counters.battery_charged_status.value * 1
       action: set
 
+
 widget_player:
   battery_charged:
     charges_remaining:
       action: remove
-  logicblock_battery_charged_status_updated{device.counters.battery_charged_status.value>0 and device.achievements.wizard1.state=='disabled' and device.counters.battery_charged_status.enabled==True}:
+  logicblock_battery_charged_status_updated{device.counters.battery_charged_status.value>0 and device.achievements.wizard1.state!='enabled' and device.counters.battery_charged_status.enabled==True}:
     charges_remaining:
       action: play
       slide: score_overlay
       priority: 901000
-  ball_started{current_player.ball!=1 and device.counters.battery_charged_status.value>0 and device.achievements.wizard1.state=='disabled' and device.counters.battery_charged_status.enabled==True}:
+  ball_started{current_player.ball!=1 and device.counters.battery_charged_status.value>0 and device.achievements.wizard1.state!='enabled' and device.counters.battery_charged_status.enabled==True}:
     charges_remaining:
       action: play
       slide: score_overlay

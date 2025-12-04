@@ -16,10 +16,12 @@ switches:
   s_start:
     number: cab-11
     tags: start
+    ignore_window_ms: 100
     label: "Start Button"
   s_tilt_bob:
     number: cab-12
     tags: tilt_warning
+    ignore_window_ms: 200
     label: "Tilt Bob"
   s_trough1:
     number: 3208-0
@@ -52,98 +54,127 @@ switches:
   s_right_inlane:
     number: 3208-10
     tags: playfield_active
+    ignore_window_ms: 200
     label: "Right Inlane"
   s_left_inlane:
     number: 3208-14
     tags: playfield_active
+    ignore_window_ms: 200
     label: "Left Inlane"
   s_right_outlane:
     number: 3208-11
     tags: playfield_active
+    ignore_window_ms: 200
     label: "Right Outlane"
   s_left_outlane:
     number: 3208-13
     tags: playfield_active
+    ignore_window_ms: 200
     label: "Left Outlane"
   s_left_slingshot:
     number: 3208-15
+    ignore_window_ms: 200
     label: "Left Sling"
   s_right_slingshot:
     number: 3208-9
+    ignore_window_ms: 200
     label: "Right Sling"
   s_right_lower_pop:
     number: 0804-0
+    ignore_window_ms: 200
     label: "Lower Right Pop Bumper"
   s_captive_ball:
     number: 0804-1
+    ignore_window_ms: 200
     label: "Captive Ball Target"
   s_pop_standup:
     number: 0804-6
+    ignore_window_ms: 200
     label: "Lower Pop Standup"
   s_spinner:
     number: 0804-5
     label: "Spinner"
   s_three_bank_bottom:
     number: 0804-2
+    ignore_window_ms: 200
     label: "Lower Drop Target"
   s_three_bank_middle:
     number: 0804-3
+    ignore_window_ms: 200
     label: "Middle Drop Target"
   s_three_bank_top:
     number: 0804-4
+    ignore_window_ms: 200
     label: "Upper Drop Target"
   s_left_upper_pop:
     number: 0804b-0
+    ignore_window_ms: 200
     label: "Upper Left Pop Bumper"
   s_center_upper_pop:
     number: 0804b-1
+    ignore_window_ms: 200
     label: "Upper Right Pop Bumper"
   s_upper_pop_standup:
     number: 0804b-3
+    ignore_window_ms: 200
     label: "Upper Pop Standup"
   s_scoop:
     number: 0804b-2
+    ignore_window_ms: 500
     label: "Scoop"
   s_tshirt_top_standup:
     number: 3208-23
+    ignore_window_ms: 200
     label: "T-Shirt Top Standup"
   s_tshirt_bottom_standup:
     number: 3208-22
+    ignore_window_ms: 200
     label: "T-Shirt Bottom Standup"
   s_three_bank_standup:
     number: 3208-21
+    ignore_window_ms: 200
     label: "Standup Behind Drops"
   s_left_orbit:
     number: 0804b-4
+    ignore_window_ms: 200
     label: "Left Orbit"
   s_inner_orbit:
     number: 0804b-5
+    ignore_window_ms: 200
     label: "Inner Loop"
   s_left_ramp:
     number: 0804b-6
+    ignore_window_ms: 200
     label: "Left Ramp"
   s_right_ramp:
     number: 0804b-7
+    ignore_window_ms: 200
     label: "Right Ramp"
   s_right_orbit:
     number: 0804-7
+    ignore_window_ms: 200
     label: "Right Orbit"
   s_service_esc:
     number: 3208-16
     tags: service_esc
+    debounce: normal
     label: "Service Door Esc"
   s_service_down:
     number: 3208-17
     tags: service_down
+    debounce: normal
     label: "Service Door Down"
   s_service_up:
     number: 3208-18
     tags: service_up
+    debounce: normal
     label: "Service Door Up"
   s_service_enter:
     number: 3208-19
     tags: service_enter
+    debounce: normal
     label: "Service Door Enter"
+
 
 drop_targets:
   bottom:
@@ -160,9 +191,11 @@ drop_target_banks:
     reset_coils: c_three_bank
     reset_on_complete: 1s
 
+
 spinners:
   basic_spinner:
     switch: s_spinner
+
 
 virtual_platform_start_active_switches:
   - s_trough1
