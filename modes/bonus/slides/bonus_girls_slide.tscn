@@ -28,7 +28,7 @@ theme_override_font_sizes/font_size = 136
 text = "Girls Frenzy:"
 horizontal_alignment = 1
 
-[node name="combos_count" type="Label" parent="."]
+[node name="girls_bonus_score" type="Label" parent="."]
 layout_mode = 0
 offset_left = -3.0
 offset_top = 626.0
