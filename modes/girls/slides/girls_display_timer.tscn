@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=3 uid="uid://cg0ovql67p2px"]
+
+[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_e4owk"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="2_pmt7j"]
+[ext_resource type="Script" uid="uid://b3ni1cjx2r6sx" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_rqcs8"]
+
+[node name="GirlsTimer" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_e4owk")
+metadata/_custom_type_script = "uid://d15ukepy10pan"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 792.0
+offset_top = 272.0
+offset_right = 1209.0
+offset_bottom = 322.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_pmt7j")
+theme_override_font_sizes/font_size = 36
+text = "Time Remaining:"
+horizontal_alignment = 1
+
+[node name="MPFVariable" type="Label" parent="."]
+layout_mode = 0
+offset_left = 912.0
+offset_top = 323.0
+offset_right = 1038.0
+offset_bottom = 396.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_pmt7j")
+theme_override_font_sizes/font_size = 71
+text = "00"
+horizontal_alignment = 1
+script = ExtResource("3_rqcs8")
+variable_name = "girls_time_remaining_variable_times_1"
+min_digits = 2
+initialize_empty = false
+metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"

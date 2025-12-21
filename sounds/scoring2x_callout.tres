@@ -1,0 +1,8 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://bm3e5jgsvg4xe"]
+
+[ext_resource type="AudioStream" uid="uid://cfnc7dy02m01" path="res://sounds/scoring2xcallout.ogg" id="1_j8qvm"]
+
+[resource]
+playback_mode = 1
+streams_count = 1
+stream_0/stream = ExtResource("1_j8qvm")

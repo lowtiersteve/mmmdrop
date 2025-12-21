@@ -1,0 +1,8 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://f3n5do8by5ie"]
+
+[ext_resource type="AudioStream" uid="uid://dobmsfgqx7x44" path="res://sounds/HighPlainsDrifterVideoMusic.ogg" id="1_jsq55"]
+
+[resource]
+playback_mode = 2
+streams_count = 1
+stream_0/stream = ExtResource("1_jsq55")

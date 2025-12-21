@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://ddgwjd128m4i0"]
+
+[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_g3rnj"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="2_3tntb"]
+
+[node name="HighPlainsDrifterInstructions" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_g3rnj")
+metadata/_custom_type_script = "uid://d15ukepy10pan"
+
+[node name="instructions" type="Label" parent="."]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 430.0
+offset_right = 1908.0
+offset_bottom = 873.0
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("2_3tntb")
+theme_override_font_sizes/font_size = 50
+text = "Make like a DT 
+at any shot to
+evade the 5-0
+
+hit it again to cruise on
+
+ finish 3 shots to 
+make your getaway"
+horizontal_alignment = 1
+
+[node name="instructionsHeader" type="Label" parent="."]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 303.0
+offset_right = 1910.0
+offset_bottom = 401.0
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("2_3tntb")
+theme_override_font_sizes/font_size = 75
+text = "Drift the Land!"
+horizontal_alignment = 1

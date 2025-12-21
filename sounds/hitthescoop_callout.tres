@@ -1,0 +1,8 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://cvi3aewxdcq61"]
+
+[ext_resource type="AudioStream" uid="uid://bltcxvs2f6fy2" path="res://sounds/scoopcallout.ogg" id="1_n0qiy"]
+
+[resource]
+playback_mode = 1
+streams_count = 1
+stream_0/stream = ExtResource("1_n0qiy")

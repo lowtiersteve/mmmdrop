@@ -1,0 +1,8 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://dwdqphma44iaq"]
+
+[ext_resource type="AudioStream" uid="uid://y23l21ix4k68" path="res://sounds/ball1lockedcallout.ogg" id="1_j336s"]
+
+[resource]
+playback_mode = 1
+streams_count = 1
+stream_0/stream = ExtResource("1_j336s")

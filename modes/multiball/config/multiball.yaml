@@ -26,3 +26,15 @@ multiballs:
     enable_events: mode_makesomenoise_starting
 
 
+sound_player:
+  multiball_chcheckitout_started:
+    chcheckitout_start_callout:
+      action: play
+      bus: voice
+      priority: 10000
+  multiball_bodymovin_started:
+    bodymovin_start_callout:
+      action: play
+      bus: voice
+      priority: 10000
+

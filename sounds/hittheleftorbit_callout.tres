@@ -1,0 +1,8 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://d3gbj85hthpla"]
+
+[ext_resource type="AudioStream" uid="uid://dprvek6ya1ibk" path="res://sounds/leftorbitcallout.ogg" id="1_mettv"]
+
+[resource]
+playback_mode = 1
+streams_count = 1
+stream_0/stream = ExtResource("1_mettv")

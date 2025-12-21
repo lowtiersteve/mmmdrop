@@ -14,9 +14,9 @@ counters:
     count_complete_value: 0
     count_interval: 1
     direction: down
-    persist_state: false
-    disable_on_complete: false
-    reset_on_complete: false
+    persist_state: False
+    disable_on_complete: False
+    reset_on_complete: False
     disable_events: mode_makesomenoise_ended
 #    enable_events: mode_makesomenoise_started
     restart_events: mode_makesomenoise_started, makesomenoise_final_shot_hit
@@ -31,9 +31,9 @@ counters:
     count_complete_value: 0
     count_interval: 1
     direction: down
-    persist_state: false
-    disable_on_complete: false
-    reset_on_complete: false
+    persist_state: False
+    disable_on_complete: False
+    reset_on_complete: False
     disable_events: mode_makesomenoise_ended
 #    enable_events: mode_makesomenoise_started
     restart_events: mode_makesomenoise_started, makesomenoise_final_shot_hit
@@ -48,9 +48,9 @@ counters:
     count_complete_value: 0
     count_interval: 1
     direction: down
-    persist_state: false
-    disable_on_complete: false
-    reset_on_complete: false
+    persist_state: False
+    disable_on_complete: False
+    reset_on_complete: False
     disable_events: mode_makesomenoise_ended
 #    enable_events: mode_makesomenoise_started
     restart_events: mode_makesomenoise_started, makesomenoise_final_shot_hit
@@ -65,9 +65,9 @@ counters:
     count_complete_value: 0
     count_interval: 1
     direction: down
-    persist_state: false
-    disable_on_complete: false
-    reset_on_complete: false
+    persist_state: False
+    disable_on_complete: False
+    reset_on_complete: False
     disable_events: mode_makesomenoise_ended
 #    enable_events: mode_makesomenoise_started
     restart_events: mode_makesomenoise_started, makesomenoise_final_shot_hit
@@ -95,7 +95,7 @@ sequences:
     enable_events: makesomenoise_final_shot_lit
     events_when_complete: makesomenoise_final_shot_hit
     reset_on_complete: True
-    start_enabled: false
+    start_enabled: False
     restart_events: makesomenoise_final_shot_lit
 
 
@@ -367,7 +367,7 @@ show_player:
 
 shot_profiles:
   makesomenoise_shot:
-    advance_on_hit: false
+    advance_on_hit: False
     states:
       - name: "off"
         show: "off"
@@ -376,7 +376,7 @@ shot_profiles:
         show_tokens:
           color: DodgerBlue
         speed: 2
-    loop: false
+    loop: False
 
 
 #blinkenlight_player:

@@ -148,6 +148,7 @@ lights:
     subtype: led
     type: rgb
     label: "Scoop Rectangle - Mixmaster Mike"
+    fade_ms: 500
   l_scoopmode_circle2_led:
     number: lightboard-8-2
     subtype: led
@@ -229,26 +230,31 @@ lights:
     subtype: led
     type: rgb
     label: "Super Circle 1 - Standups"
+    fade_ms: 500
   l_supercircle2_led:
     number: lightboard-3-5
     subtype: led
     type: rgb
     label: "Super Circle 2 - Spins"
+    fade_ms: 500
   l_supercircle3_led:
     number: lightboard-3-6
     subtype: led
     type: rgb
     label: "Super Circle 3 - Pops"
+    fade_ms: 500
   l_supercircle4_led:
     number: lightboard-2-2
     subtype: led
     type: rgb
     label: "Super Circle 4 - Drops"
+    fade_ms: 500
   l_supercircle5_led:
     number: lightboard-2-3
     subtype: led
     type: rgb
     label: "Super Circle 5 - Combos"
+    fade_ms: 500
   l_cassetteleft_led:
     number: lightboard-6-7
     subtype: led
@@ -264,16 +270,19 @@ lights:
     subtype: led
     type: rgb
     label: "Left Ramp Rectangle - Mike D"
+    fade_ms: 500
   l_rightramprectangle_led:
     number: lightboard-8-5
     subtype: led
     type: rgb
     label: "Right Ramp Rectangle - Ad Roc"
+    fade_ms: 500
   l_rightorbitrectangle_led:
     number: lightboard-8-10
     subtype: led
     type: rgb
     label: "Right Orbit Rectangle - DJ Hurricane"
+    fade_ms: 500
   l_tshirttopcircle_led:
     number: lightboard-4-3
     subtype: led
@@ -289,6 +298,7 @@ lights:
     subtype: led
     type: rgb
     label: "Left Orbit Rectangle - MCA"
+    fade_ms: 500
   l_leftsling_uppergi_led:
     number: lightboard-4-16
     subtype: led

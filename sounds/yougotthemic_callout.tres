@@ -1,0 +1,8 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://dm61mxq5n6l8h"]
+
+[ext_resource type="AudioStream" uid="uid://cwg5eqtuj1mv0" path="res://sounds/yougotthemiccallout.ogg" id="1_piius"]
+
+[resource]
+playback_mode = 1
+streams_count = 1
+stream_0/stream = ExtResource("1_piius")

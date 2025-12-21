@@ -161,6 +161,12 @@ sound_player:
       action: play
       bus: effects
       max_queue_time: 1s
+  timer_intergalactic_time_remaining_tick{current_player.intergalactic_time_remaining_variable_times_1==10}:
+    ten_callout:
+      action: play
+      bus: voice
+      max_queue_time: 1s
+
 
 
 ball_holds:
@@ -249,7 +255,7 @@ blinkenlight_player:
 
 shot_profiles:
   intergalactic_shot:
-    advance_on_hit: false
+    advance_on_hit: False
     states:
       - name: "off"
         show: "off"
@@ -258,5 +264,5 @@ shot_profiles:
         show_tokens:
           color: DodgerBlue
         speed: 2
-    loop: false
+    loop: False
 

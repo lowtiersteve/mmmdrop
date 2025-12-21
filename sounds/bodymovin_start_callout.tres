@@ -1,0 +1,8 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://b2k5dlhqx21sh"]
+
+[ext_resource type="AudioStream" uid="uid://ulfewx3xfmry" path="res://sounds/bodymovinmultiballcallout.ogg" id="1_6op4k"]
+
+[resource]
+playback_mode = 1
+streams_count = 1
+stream_0/stream = ExtResource("1_6op4k")

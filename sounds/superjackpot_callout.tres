@@ -1,0 +1,8 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://cpp85qi1joxh8"]
+
+[ext_resource type="AudioStream" uid="uid://bykdsjrpvr3as" path="res://sounds/superjackpotcallout.ogg" id="1_1j5ht"]
+
+[resource]
+playback_mode = 1
+streams_count = 1
+stream_0/stream = ExtResource("1_1j5ht")

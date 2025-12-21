@@ -1,0 +1,8 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://kl0y76h53sp1"]
+
+[ext_resource type="AudioStream" uid="uid://bs034mycg8u4h" path="res://sounds/chcheckitoutmultiballcallout.ogg" id="1_8vf5w"]
+
+[resource]
+playback_mode = 1
+streams_count = 1
+stream_0/stream = ExtResource("1_8vf5w")

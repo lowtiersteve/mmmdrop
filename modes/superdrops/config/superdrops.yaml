@@ -1,0 +1,36 @@
+#config_version=6
+
+mode:
+  start_events: start_superdrops
+  stop_events: mode_superdrops_complete
+  priority: 20000
+
+variable_player:
+  top_drop_hit:
+    score: 100000
+  middle_drop_hit:
+    score: 100000
+  bottom_drop_hit:
+    score: 100000
+
+timers:
+  superdrops_timer:
+    start_value: 0
+    end_value: 30
+    tick_interval: 1s
+    start_running: True
+    control_events:
+      - event: mode_superdrops_started
+        action: restart
+      - event: ball_ending
+        action: stop
+
+event_player:
+  timer_superdrops_timer_complete: mode_superdrops_complete
+
+
+sound_player:
+  mode_superdrops_started:
+    superdrops_callout:
+      action: play
+      bus: voice

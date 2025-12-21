@@ -14,9 +14,9 @@ counters:
     count_complete_value: 0
     count_interval: 1
     direction: down
-    persist_state: false
-    disable_on_complete: false
-    reset_on_complete: false
+    persist_state: False
+    disable_on_complete: False
+    reset_on_complete: False
     disable_events: mode_tripletrouble_ended
     enable_events: mode_tripletrouble_started
     restart_events: mode_tripletrouble_started, tripletrouble_final_shot_hit
@@ -127,6 +127,12 @@ sound_player:
       action: play
       bus: effects
       max_queue_time: 1s
+  timer_tripletrouble_time_remaining_tick{current_player.tripletrouble_time_remaining_variable_times_1==10}:
+    ten_callout:
+      action: play
+      bus: voice
+      max_queue_time: 1s
+
 
 
 ball_holds:
@@ -178,11 +184,11 @@ event_player:
 
 shot_profiles:
   tripletrouble_shot:
-    advance_on_hit: false
+    advance_on_hit: False
     states:
       - name: "off"
         show: "off"
-    loop: false
+    loop: False
 
 
 show_player:

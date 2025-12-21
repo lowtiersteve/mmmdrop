@@ -42,8 +42,8 @@ sequences:
     - s_right_flipper_active
     - s_left_flipper_active
     disable_events: game_starting
-    reset_on_complete: false
-    restart_events: mode_attract_started, adr_sequence_hit, mca_sequence_hit, flipper_cancel
+    reset_on_complete: False
+    restart_events: mode_attract_started, adr_sequence_hit, mca_sequence_hit, flipper_cancel, christmas_sequence_hit
     events_when_complete: mca_sequence_hit
   adr_sequence:
     events:
@@ -74,9 +74,30 @@ sequences:
     - s_right_flipper_active
     - s_left_flipper_active
     disable_events: game_starting
-    reset_on_complete: false
-    restart_events: mode_attract_started, adr_sequence_hit, mca_sequence_hit, flipper_cancel
+    reset_on_complete: False
+    restart_events: mode_attract_started, adr_sequence_hit, mca_sequence_hit, flipper_cancel, christmas_sequence_hit
     events_when_complete: adr_sequence_hit
+  christmas_sequence:
+    events:
+      - s_right_flipper_active
+      - s_left_flipper_active
+      - s_right_flipper_active
+      - s_right_flipper_active
+      - s_left_flipper_active
+      - s_right_flipper_active
+      - s_right_flipper_active
+      - s_left_flipper_active
+      - s_right_flipper_active
+      - s_right_flipper_active
+      - s_right_flipper_active
+      - s_right_flipper_active
+      - s_right_flipper_active
+      - s_left_flipper_active
+    disable_events: game_starting
+    reset_on_complete: False
+    restart_events: mode_attract_started, adr_sequence_hit, mca_sequence_hit, flipper_cancel, christmas_sequence_hit
+    events_when_complete: christmas_sequence_hit
+
 
 slide_player:
   mode_attract_started{machine.game_just_played==0}:
@@ -125,10 +146,26 @@ slide_player:
     attract:
       action: play
       priority: 1000
+  christmas_sequence_hit:
+    attract_load:
+      action: remove
+    attract:
+      action: remove
+    jinglebells:
+      action: play
+      priority: 1100000
+  timer_christmas_attract_video_timer_complete:
+    jinglebells:
+      action: remove
+    attract:
+      action: play
+      priority: 1000
   flipper_cancel:
     friends:
       action: remove
     ghostbusters:
+      action: remove
+    jinglebells:
       action: remove
     attract:
         action: play
@@ -155,12 +192,21 @@ sound_player:
     attract_crowd:
       bus: effects
       action: play
+  christmas_sequence_hit:
+    attract_crowd:
+      action: stop
+      bus: effects
+  timer_christmas_attract_video_timer_complete:
+    attract_crowd:
+      bus: effects
+      action: play
+
 
 timers:
   attract_carousel_timer:
     end_value: 5
     tick_interval: 1s
-    start_running: false
+    start_running: False
     control_events:
       - event: item_highlighted
         action: restart
@@ -183,7 +229,7 @@ timers:
   attract_intro_timer:
     end_value: 16
     tick_interval: 1s
-    start_running: true
+    start_running: True
     control_events:
       - event: mode_attract_started
         action: restart
@@ -192,7 +238,7 @@ timers:
   mca_attract_video_timer:
     end_value: 192
     tick_interval: 1s
-    start_running: false
+    start_running: False
     control_events:
       - event: slide_ghostbusters_active
         action: start
@@ -201,9 +247,18 @@ timers:
   adr_attract_video_timer:
     end_value: 49
     tick_interval: 1s
-    start_running: false
+    start_running: False
     control_events:
       - event: slide_friends_active
+        action: start
+      - event: game_started
+        action: stop
+  christmas_attract_video_timer:
+    end_value: 54
+    tick_interval: 1s
+    start_running: False
+    control_events:
+      - event: slide_jinglebells_active
         action: start
       - event: game_started
         action: stop
@@ -331,6 +386,7 @@ widget_player:
       action: play
       slide: attract
 
+
 show_player:
   mode_attract_started:
     attract_light_show:
@@ -339,3 +395,4 @@ show_player:
   mode_attract_stopping:
     attract_light_show:
       action: stop
+

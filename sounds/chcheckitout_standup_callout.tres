@@ -1,0 +1,8 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://dphh08p2wpdvp"]
+
+[ext_resource type="AudioStream" uid="uid://bvmi3hod2kwdf" path="res://sounds/chcheckitoutstandupcallout.ogg" id="1_jji0j"]
+
+[resource]
+playback_mode = 1
+streams_count = 1
+stream_0/stream = ExtResource("1_jji0j")

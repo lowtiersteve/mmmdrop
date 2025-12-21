@@ -1,0 +1,255 @@
+#config_version=6
+
+mode:
+  start_events: start_girls
+  stop_events: mode_girls_complete
+  priority: 5000
+
+timers:
+  girls_intro_show:
+    start_value: 0
+    end_value: 8
+    control_events:
+      - action: start
+        event: mode_girls_started
+  girls_time_remaining:
+    start_value: 30
+    end_value: 0
+    direction: down
+    control_events:
+      - action: start
+        event: timer_girls_intro_show_complete
+      - action: reset
+        event: mode_girls_started
+
+
+slide_player:
+  mode_girls_started:
+    current_mode_highlighted:
+      action: remove
+    girls_instructions:
+      action: play
+      priority: 825000
+  timer_girls_intro_show_complete:
+    girls_instructions:
+      action: remove
+    girls_display_timer:
+      action: play
+      priority: 830000
+
+
+variable_player:
+  mode_girls_started:
+    girls_blocking_flag:
+      int: 1
+      action: set
+  pop1_hit:
+    score: 3000
+    girls_bonus_score: 3000
+  pop2_hit:
+    score: 3000
+    girls_bonus_score: 3000
+  pop3_hit:
+    score: 3000
+    girls_bonus_score: 3000
+  top_drop_hit:
+    score: 3000
+    girls_bonus_score: 3000
+  middle_drop_hit:
+    score: 3000
+    girls_bonus_score: 3000
+  bottom_drop_hit:
+    score: 3000
+    girls_bonus_score: 3000
+  left_outlane_hit:
+    score: 3000
+    girls_bonus_score: 3000
+  left_inlane_hit:
+    score: 3000
+    girls_bonus_score: 3000
+  right_inlane_hit:
+    score: 3000
+    girls_bonus_score: 3000
+  right_outlane_hit:
+    score: 3000
+    girls_bonus_score: 3000
+  s_left_slingshot_active:
+    score: 3000
+    girls_bonus_score: 3000
+  s_right_slingshot_active:
+    score: 3000
+    girls_bonus_score: 3000
+  upper_pop_standup_hit:
+    score: 3000
+    girls_bonus_score: 3000
+  pop_standup_hit:
+    score: 3000
+    girls_bonus_score: 3000
+  captive_ball_hit:
+    score: 3000
+    girls_bonus_score: 3000
+  spinner_hit:
+    score: 3000
+    girls_bonus_score: 3000
+  scoop_hit:
+    score: 3000
+    girls_bonus_score: 3000
+  tshirt_top_standup_hit:
+    score: 3000
+    girls_bonus_score: 3000
+  tshirt_bottom_standup_hit:
+    score: 3000
+    girls_bonus_score: 3000
+  s_left_orbit_active:
+    score: 3000
+    girls_bonus_score: 3000
+  s_right_orbit_active:
+    score: 3000
+    girls_bonus_score: 3000
+  s_inner_orbit_active:
+    score: 3000
+    girls_bonus_score: 3000
+  left_ramp_hit:
+    score: 3000
+    girls_bonus_score: 3000
+  right_ramp_hit:
+    score: 3000
+    girls_bonus_score: 3000
+  three_bank_standup_hit:
+    score: 3000
+    girls_bonus_score: 3000
+
+
+sound_player:
+  mode_girls_started:
+    girlsinstrumentalmusic:
+      action: replace
+      bus: music
+  pop1_hit:
+    girlsvocal:
+      action: play
+      bus: effects
+      max_queue_time: 100ms
+  pop2_hit:
+    girlsvocal:
+      action: play
+      bus: effects
+      max_queue_time: 100ms
+  pop3_hit:
+    girlsvocal:
+      action: play
+      bus: effects
+      max_queue_time: 100ms
+  top_drop_hit:
+    girlsvocal:
+      action: play
+      bus: effects
+      max_queue_time: 100ms
+  middle_drop_hit:
+    girlsvocal:
+      action: play
+      bus: effects
+      max_queue_time: 100ms
+  bottom_drop_hit:
+    girlsvocal:
+      action: play
+      bus: effects
+      max_queue_time: 100ms
+  left_outlane_hit:
+    girlsvocal:
+      action: play
+      bus: effects
+      max_queue_time: 100ms
+  left_inlane_hit:
+    girlsvocal:
+      action: play
+      bus: effects
+      max_queue_time: 100ms
+  right_inlane_hit:
+    girlsvocal:
+      action: play
+      bus: effects
+      max_queue_time: 100ms
+  right_outlane_hit:
+    girlsvocal:
+      action: play
+      bus: effects
+      max_queue_time: 100ms
+  s_left_slingshot_active:
+    girlsvocal:
+      action: play
+      bus: effects
+      max_queue_time: 100ms
+  s_right_slingshot_active:
+    girlsvocal:
+      action: play
+      bus: effects
+      max_queue_time: 100ms
+  upper_pop_standup_hit:
+    girlsvocal:
+      action: play
+      bus: effects
+      max_queue_time: 100ms
+  pop_standup_hit:
+    girlsvocal:
+      action: play
+      bus: effects
+      max_queue_time: 100ms
+  captive_ball_hit:
+    girlsvocal:
+      action: play
+      bus: effects
+      max_queue_time: 100ms
+  spinner_hit:
+    girlsvocal:
+      action: play
+      bus: effects
+      max_queue_time: 100ms
+  scoop_hit:
+    girlsvocal:
+      action: play
+      bus: effects
+      max_queue_time: 100ms
+  tshirt_top_standup_hit:
+    girlsvocal:
+      action: play
+      bus: effects
+      max_queue_time: 100ms
+  tshirt_bottom_standup_hit:
+    girlsvocal:
+      action: play
+      bus: effects
+      max_queue_time: 100ms
+  s_left_orbit_active:
+    girlsvocal:
+      action: play
+      bus: effects
+      max_queue_time: 100ms
+  s_right_orbit_active:
+    girlsvocal:
+      action: play
+      bus: effects
+      max_queue_time: 100ms
+  s_inner_orbit_active:
+    girlsvocal:
+      action: play
+      bus: effects
+      max_queue_time: 100ms
+  left_ramp_hit:
+    girlsvocal:
+      action: play
+      bus: effects
+      max_queue_time: 100ms
+  right_ramp_hit:
+    girlsvocal:
+      action: play
+      bus: effects
+      max_queue_time: 100ms
+  three_bank_standup_hit:
+    girlsvocal:
+      action: play
+      bus: effects
+      max_queue_time: 100ms
+
+event_player:
+  timer_girls_time_remaining_complete: mode_girls_complete

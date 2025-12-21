@@ -1,0 +1,8 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://cvknn0aq5tlpu"]
+
+[ext_resource type="AudioStream" uid="uid://e0w2w58jh40f" path="res://sounds/threecallout.ogg" id="1_ikpg3"]
+
+[resource]
+playback_mode = 1
+streams_count = 1
+stream_0/stream = ExtResource("1_ikpg3")

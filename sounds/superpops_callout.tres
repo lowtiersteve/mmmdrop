@@ -1,0 +1,8 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://c7nbw2hhbb0yl"]
+
+[ext_resource type="AudioStream" uid="uid://d6a3i84d4iei" path="res://sounds/superpopscallout.ogg" id="1_oe0rl"]
+
+[resource]
+playback_mode = 1
+streams_count = 1
+stream_0/stream = ExtResource("1_oe0rl")

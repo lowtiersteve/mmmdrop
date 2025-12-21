@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://d1n50fo4gdx27"]
+
+[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_xjux8"]
+[ext_resource type="VideoStream" uid="uid://dmfim0px8qb5j" path="res://modes/highplainsdrifter/slides/HighPlainsDrifterfinishclip.ogv" id="2_33v2v"]
+[ext_resource type="Script" uid="uid://bf2dsnm46ji2e" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_sth8x"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="4_1v2c3"]
+
+[node name="HighPlainsDrifter" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_xjux8")
+metadata/_custom_type_script = "uid://d15ukepy10pan"
+
+[node name="MPFVideoPlayer" type="VideoStreamPlayer" parent="."]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+stream = ExtResource("2_33v2v")
+autoplay = true
+expand = true
+bus = &"effects"
+script = ExtResource("3_sth8x")
+hide_behavior = 1
+preview_in_editor = true
+metadata/_custom_type_script = "uid://bf2dsnm46ji2e"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 503.0
+offset_top = 432.0
+offset_right = 1498.0
+offset_bottom = 640.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("4_1v2c3")
+theme_override_font_sizes/font_size = 116
+text = "They Got 'Ya"
+horizontal_alignment = 1

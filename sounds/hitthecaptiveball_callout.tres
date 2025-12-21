@@ -1,0 +1,8 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://cql4aqu7dhy40"]
+
+[ext_resource type="AudioStream" uid="uid://c3brne24gd7a4" path="res://sounds/captiveballcallout.ogg" id="1_ixpj8"]
+
+[resource]
+playback_mode = 1
+streams_count = 1
+stream_0/stream = ExtResource("1_ixpj8")

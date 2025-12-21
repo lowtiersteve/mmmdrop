@@ -53,6 +53,16 @@ sound_player:
       action: replace
       bus: music
       loops: 3
+  chcheckitout_jackpot_hit:
+    jackpot_callout:
+      action: play
+      bus: voice
+      max_queue_time: 1s
+  chcheckitout_superjackpot_hit:
+    superjackpot_callout:
+      action: play
+      bus: voice
+      max_queue_time: 1s
 
 
 
@@ -92,28 +102,28 @@ sequences:
       - left_orbit_hit
 #    enable_events: multiball_chcheckitout_started, chcheckitout_superjackpot_hit
     events_when_complete: chcheckitout_leftorbit_jackpot_hit, chcheckitout_jackpot_hit
-    reset_on_complete: false
+    reset_on_complete: False
     restart_events: multiball_chcheckitout_started, chcheckitout_superjackpot_hit
   chcheckitout_leftramp_jackpot:
     events:
       - left_ramp_hit
 #    enable_events: multiball_chcheckitout_started, chcheckitout_superjackpot_hit
     events_when_complete: chcheckitout_leftramp_jackpot_hit, chcheckitout_jackpot_hit
-    reset_on_complete: false
+    reset_on_complete: False
     restart_events: multiball_chcheckitout_started, chcheckitout_superjackpot_hit
   chcheckitout_rightramp_jackpot:
     events:
       - right_ramp_hit
 #    enable_events: multiball_chcheckitout_started, chcheckitout_superjackpot_hit
     events_when_complete: chcheckitout_rightramp_jackpot_hit, chcheckitout_jackpot_hit
-    reset_on_complete: false
+    reset_on_complete: False
     restart_events: multiball_chcheckitout_started, chcheckitout_superjackpot_hit
   chcheckitout_rightorbit_jackpot:
     events:
       - right_orbit_hit
 #    enable_events: multiball_chcheckitout_started, chcheckitout_superjackpot_hit
     events_when_complete: chcheckitout_rightorbit_jackpot_hit, chcheckitout_jackpot_hit
-    reset_on_complete: false
+    reset_on_complete: False
     restart_events: multiball_chcheckitout_started, chcheckitout_superjackpot_hit
   chcheckitout_superjackpot:
     events:
@@ -174,3 +184,4 @@ random_event_player:
       - play_chcheckitout_video1
       - play_chcheckitout_video2
       - play_chcheckitout_video3
+

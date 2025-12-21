@@ -1,0 +1,32 @@
+#config_version=6
+
+mode:
+  start_events: start_superspins
+  stop_events: mode_superspins_complete
+  priority: 20000
+
+variable_player:
+  spinner_hit:
+    score: 100000
+
+timers:
+  superspins_timer:
+    start_value: 0
+    end_value: 30
+    tick_interval: 1s
+    start_running: True
+    control_events:
+      - event: mode_superspins_started
+        action: restart
+      - event: ball_ending
+        action: stop
+
+event_player:
+  timer_superspins_timer_complete: mode_superspins_complete
+
+sound_player:
+  mode_superspins_started:
+    superspins_callout:
+      action: play
+      bus: voice
+

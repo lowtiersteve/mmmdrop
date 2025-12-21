@@ -45,11 +45,18 @@ shots:
     advance_events: advance_skill_drop_targets
     show_tokens:
       led: l_lowerdrop_circle_led, l_middledrop_circle_led, l_upperdrop_circle_led
+  skillshot_lower_pop:
+    switch: s_right_lower_pop
+    profile: skill_shot_profile
+    advance_events: advance_skill_lower_pop
+    show_tokens:
+      led: l_lowerrightpop_inside_led, l_lowerrightpop_inside2_led
+
 
 
 shot_profiles:
   skill_shot_profile:
-    advance_on_hit: true
+    advance_on_hit: True
     states:
       - name: off
         show: off
@@ -58,12 +65,12 @@ shot_profiles:
         show_tokens:
           color: 999999
         speed: 4
-    loop: true
+    loop: True
 
 
 shot_groups:
   skillshot:
-    shots: skillshot_side_targets, skillshot_hideout_plunge, skillshot_super, skillshot_left_outlane, skillshot_drop_targets
+    shots: skillshot_side_targets, skillshot_hideout_plunge, skillshot_super, skillshot_lower_pop, skillshot_left_outlane, skillshot_drop_targets
     disable_rotation_events: ball_out, skillshot_off_hit
     reset_events: skillshot_lit_hit
     rotate_left_events: s_left_flipper_active
@@ -85,7 +92,7 @@ timers:
     end_value: 4
     direction: up
     tick_interval: 1
-    start_running: false
+    start_running: False
     control_events:
       - action: start
         event: balldevice_bd_plunger_ball_eject_success
@@ -116,6 +123,7 @@ random_event_player:
     - advance_skill_super
     - advance_skill_hideout
     - advance_skill_left_outlane
+    - advance_skill_lower_pop
 
 event_player:
   timer_skill_shot_timeout_complete: skill_failed

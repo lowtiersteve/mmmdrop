@@ -1,0 +1,10 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=3 format=3 uid="uid://c1uly3yb4uck7"]
+
+[ext_resource type="AudioStream" uid="uid://c6tvnpppvehu0" path="res://sounds/batterychargercallout.ogg" id="1_51yjq"]
+[ext_resource type="AudioStream" uid="uid://62udw0fk2gm0" path="res://sounds/batterychargertapedeckcallout.ogg" id="2_n0iji"]
+
+[resource]
+playback_mode = 1
+streams_count = 2
+stream_0/stream = ExtResource("1_51yjq")
+stream_1/stream = ExtResource("2_n0iji")

@@ -1,0 +1,8 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://bsyph30ht3ruy"]
+
+[ext_resource type="AudioStream" uid="uid://duvq6uxu1fos4" path="res://sounds/popstandupcallout.ogg" id="1_p38tp"]
+
+[resource]
+playback_mode = 1
+streams_count = 1
+stream_0/stream = ExtResource("1_p38tp")

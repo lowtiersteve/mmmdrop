@@ -1,0 +1,8 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://tm3wbelx3ko3"]
+
+[ext_resource type="AudioStream" uid="uid://waco7nv1pr7j" path="res://sounds/supercomboscallout.ogg" id="1_70mmf"]
+
+[resource]
+playback_mode = 1
+streams_count = 1
+stream_0/stream = ExtResource("1_70mmf")

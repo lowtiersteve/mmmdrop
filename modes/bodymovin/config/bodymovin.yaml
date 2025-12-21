@@ -34,6 +34,16 @@ sound_player:
       action: replace
       bus: music
       loops: 5
+  bodymovin_jackpot_hit:
+    jackpot_callout:
+      action: play
+      bus: voice
+      max_queue_time: 1s
+  bodymovin_superjackpot_hit:
+    superjackpot_callout:
+      action: play
+      bus: voice
+      max_queue_time: 1s
 
 
 variable_player:
@@ -72,28 +82,28 @@ sequences:
       - left_orbit_hit
 #    enable_events: multiball_bodymovin_started, bodymovin_superjackpot_hit
     events_when_complete: bodymovin_leftorbit_jackpot_hit, bodymovin_jackpot_hit
-    reset_on_complete: true
+    reset_on_complete: True
     restart_events: multiball_bodymovin_started, bodymovin_superjackpot_hit
   bodymovin_leftramp_jackpot:
     events:
       - left_ramp_hit
 #    enable_events: multiball_bodymovin_started, bodymovin_superjackpot_hit
     events_when_complete: bodymovin_leftramp_jackpot_hit, bodymovin_jackpot_hit
-    reset_on_complete: true
+    reset_on_complete: True
     restart_events: multiball_bodymovin_started, bodymovin_superjackpot_hit
   bodymovin_rightramp_jackpot:
     events:
       - right_ramp_hit
 #    enable_events: multiball_bodymovin_started, bodymovin_superjackpot_hit
     events_when_complete: bodymovin_rightramp_jackpot_hit, bodymovin_jackpot_hit
-    reset_on_complete: true
+    reset_on_complete: True
     restart_events: multiball_bodymovin_started, bodymovin_superjackpot_hit
   bodymovin_rightorbit_jackpot:
     events:
       - right_orbit_hit
 #    enable_events: multiball_bodymovin_started, bodymovin_superjackpot_hit
     events_when_complete: bodymovin_rightorbit_jackpot_hit, bodymovin_jackpot_hit
-    reset_on_complete: true
+    reset_on_complete: True
     restart_events: multiball_bodymovin_started, bodymovin_superjackpot_hit
   bodymovin_superjackpot:
     events:

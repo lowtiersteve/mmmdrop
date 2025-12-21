@@ -8,25 +8,29 @@ mode_settings:
     - entry: bonus_modes_played
       score: 100000
       player_score_entry: modes_played
-      skip_if_negative: true
+      skip_if_negative: True
     - entry: bonus_modes_completed
       score: 250000
       player_score_entry: modes_completed
-      skip_if_negative: true
+      skip_if_negative: True
     - entry: bonus_time_remaining
       score: 1000
       player_score_entry: mode_time_remaining_total
-      skip_if_negative: true
+      skip_if_negative: True
     - entry: bonus_combos
       score: 25000
       player_score_entry: combos
-      skip_if_negative: true
+      skip_if_negative: True
+    - entry: bonus_girls_frenzy
+      score: 1
+      player_score_entry: girls_bonus_score
+      skip_if_negative: True
 
 
 variable_player:
   mode_bonus_started:
     mode_time_remaining_total:
-      int: current_player.intergalactic_time_remaining_variable_times_1 + current_player.paulrevere_time_remaining_variable_times_1 + current_player.tripletrouble_time_remaining_variable_times_1 + current_player.sabotage_time_remaining_variable_times_1 + current_player.fingerlickingood_time_remaining_variable_times_1 + current_player.toomanyrappers_time_remaining_variable_times_1 + current_player.threemcsand1dj_time_remaining_variable_times_1
+      int: current_player.intergalactic_time_remaining_variable_times_1 + current_player.paulrevere_time_remaining_variable_times_1 + current_player.tripletrouble_time_remaining_variable_times_1 + current_player.sabotage_time_remaining_variable_times_1 + current_player.fingerlickingood_time_remaining_variable_times_1 + current_player.toomanyrappers_time_remaining_variable_times_1 + current_player.threemcsand1dj_time_remaining_variable_times_1 + current_player.highplainsdrifter_time_remaining_variable_times_1
       action: set
 
 
@@ -71,6 +75,20 @@ slide_player:
     bonus_combos_slide:
       action: play
       priority: 1000000
+  bonus_entry{entry=="bonus_girls_frenzy"}:
+    bonus_start_slide:
+      action: remove
+    bonus_modes_played_slide:
+      action: remove
+    bonus_modes_completed_slide:
+      action: remove
+    bonus_time_remaining:
+      action: remove
+    bonus_combos_slide:
+      action: remove
+    bonus_girls_slide:
+      action: play
+      priority: 1000000
   bonus_entry{entry=="subtotal"}:
     bonus_start_slide:
       action: remove
@@ -81,6 +99,8 @@ slide_player:
     bonus_time_remaining:
       action: remove
     bonus_combos_slide:
+      action: remove
+    bonus_girls_slide:
       action: remove
     bonus_subtotal_slide:
       action: play
@@ -95,6 +115,8 @@ slide_player:
     bonus_time_remaining:
       action: remove
     bonus_combos_slide:
+      action: remove
+    bonus_girls_slide:
       action: remove
     bonus_subtotal_slide:
       action: remove
@@ -111,6 +133,8 @@ slide_player:
     bonus_time_remaining:
       action: remove
     bonus_combos_slide:
+      action: remove
+    bonus_girls_slide:
       action: remove
     bonus_subtotal_slide:
       action: remove
@@ -142,6 +166,10 @@ sound_player:
       action: play
       bus: effects
   slide_bonus_time_remaining_active:
+    bonus_sound_random:
+      action: play
+      bus: effects
+  slide_bonus_girls_slide_active:
     bonus_sound_random:
       action: play
       bus: effects

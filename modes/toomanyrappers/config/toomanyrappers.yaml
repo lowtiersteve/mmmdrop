@@ -119,6 +119,12 @@ sound_player:
       action: play
       bus: effects
       max_queue_time: 1s
+  timer_toomanyrappers_time_remaining_tick{current_player.toomanyrappers_time_remaining_variable_times_1==10}:
+    ten_callout:
+      action: play
+      bus: voice
+      max_queue_time: 1s
+
 
 
 ball_holds:
@@ -181,7 +187,7 @@ event_player:
 
 shot_profiles:
   toomanyrappers_roving_shot:
-    advance_on_hit: false
+    advance_on_hit: False
     states:
       - name: off
         show: off
@@ -190,7 +196,7 @@ shot_profiles:
         show_tokens:
           color: orange
         speed: 2
-    loop: true
+    loop: True
 
 
 shots:

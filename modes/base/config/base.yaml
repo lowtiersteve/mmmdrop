@@ -136,11 +136,11 @@ shots:
 
 shot_profiles:
   base_shot_profile:
-    advance_on_hit: false
+    advance_on_hit: False
     states:
       - name: off
         show: "off"
-    loop: false
+    loop: False
   ball_lock_profile:
     advance_on_hit: true
     states:
@@ -148,7 +148,7 @@ shot_profiles:
         show: "flash_color"
       - name: "on"
         show: "led_color"
-    loop: false
+    loop: False
   lane_profile:
     states:
       - name: unlit
@@ -167,8 +167,8 @@ shot_groups:
   sg_tshirts:
     shots: tshirt_top_standup, tshirt_bottom_standup
     restart_events: bodymovin_ball_1_locked, bodymovin_ball_2_locked, multiball_bodymovin_ended, ball_started{current_player.ball==1}
-    disable_events: bodymovin_lock_1_enabled, bodymovin_lock_2_enabled, bodymovin_lock_3_enabled, mode_makesomenoise_started, mode_chcheckitout_started, ball_will_end
-    enable_events: mode_makesomenoise_stopped, mode_chcheckitout_stopped
+    disable_events: bodymovin_lock_1_enabled, bodymovin_lock_2_enabled, bodymovin_lock_3_enabled, mode_makesomenoise_started, mode_chcheckitout_started, mode_girls_started, ball_will_end
+    enable_events: mode_makesomenoise_stopped, mode_chcheckitout_stopped, mode_girls_stopped
 
 
 slide_player:
@@ -441,6 +441,44 @@ slide_player:
       action: play
       priority: 980000
       expire: 6s
+  mode_highplainsdrifter_stop:
+    highplainsdrifter:
+      action: remove
+    highplainsdrifter_shots_remaining:
+      action: remove
+    highplainsdrifter_display_timer:
+      action: remove
+    base:
+      action: play
+      priority: 5000
+  mode_highplainsdrifter_failed:
+    highplainsdrifter:
+      action: remove
+    highplainsdrifter_shots_remaining:
+      action: remove
+    highplainsdrifter_display_timer:
+      action: remove
+    highplainsdrifterfailed:
+      action: play
+      priority: 850000
+      expire: 6s
+    base:
+      action: play
+      priority: 5000
+  mode_highplainsdrifter_success:
+    highplainsdrifter:
+      action: remove
+    highplainsdrifter_display_timer:
+      action: remove
+    highplainsdrifter_shots_remaining:
+      action: remove
+    base:
+      action: play
+      priority: 5000
+    highplainsdrifterfinish:
+      action: play
+      priority: 980000
+      expire: 6s
   skillshot_lit_hit:
     skillshot_success_overlay:
       action: play
@@ -471,6 +509,11 @@ slide_player:
       priority: 5000
   mode_bodymovin_stopped{current_player.mode_blocking_flag==1}:
     bodymovin:
+      action: remove
+  mode_girls_stopped:
+    girls_instructions:
+      action: remove
+    girls_display_timer:
       action: remove
   ball_will_end:
     multiball1:
@@ -542,6 +585,16 @@ slide_player:
     threemcsand1djfailed:
       action: remove
     threemcsand1djfinish:
+      action: remove
+    highplainsdrifter:
+      action: remove
+    highplainsdrifter_display_timer:
+      action: remove
+    highplainsdrifter_shots_remaining:
+      action: remove
+    highplainsdrifterfailed:
+      action: remove
+    highplainsdrifterfinish:
       action: remove
     intergalactic:
       action: remove
@@ -935,11 +988,53 @@ sound_player:
       action: play
       bus: music
       loops: 5
+  mode_highplainsdrifter_stopped:
+    highplainsdriftermusic:
+      action: stop
+      bus: music
+  mode_highplainsdrifter_success{current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
+    base_game_random_music:
+      action: play
+      bus: music
+      loops: 3
+  mode_highplainsdrifter_success{current_player.chcheckitout_multiball_blocking_flag==1}:
+    chcheckitoutmultiballmusic:
+      action: play
+      bus: music
+      loops: 5
+  mode_highplainsdrifter_success{current_player.bodymovin_multiball_blocking_flag==1}:
+    bodymovinmultiballmusic:
+      action: play
+      bus: music
+      loops: 5
+  mode_highplainsdrifter_failed{current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
+    base_game_random_music:
+      action: play
+      bus: music
+      loops: 3
+  mode_highplainsdrifter_failed{current_player.chcheckitout_multiball_blocking_flag==1}:
+    chcheckitoutmultiballmusic:
+      action: play
+      bus: music
+      loops: 5
+  mode_highplainsdrifter_failed{current_player.bodymovin_multiball_blocking_flag==1}:
+    bodymovinmultiballmusic:
+      action: play
+      bus: music
+      loops: 5
   mode_makesomenoise_stopped:
     makesomenoisemusic:
       action: stop
       bus: music
   mode_makesomenoise_complete:
+    base_game_random_music:
+      action: replace
+      bus: music
+      loops: 3
+  mode_girls_stopped:
+    girlsinstrumentalmusic:
+      action: stop
+      bus: music
     base_game_random_music:
       action: replace
       bus: music
@@ -978,11 +1073,70 @@ sound_player:
     threemcsand1djmusic:
       action: stop
       bus: music
+    highplainsdriftermusic:
+      action: stop
+      bus: music
+    girlsinstrumentalmusic:
+      action: stop
+      bus: music
   skillshot_lit_hit:
     success_finish:
       action: play
       bus: effects
       priority: 5000
+  ball_save_default_saving_ball:
+    ball_saved_callout:
+      action: play
+      bus: voice
+      priority: 6000
+      ducking:
+        bus: music
+        attack: 100ms
+        attenuation: 0.6
+        release_point: 100ms
+        release: 100ms
+  ball_save_mode_start_saving_ball:
+    ball_saved_callout:
+      action: play
+      bus: voice
+      priority: 6000
+      ducking:
+        bus: music
+        attack: 100ms
+        attenuation: 0.6
+        release_point: 100ms
+        release: 100ms
+  drops_standup_start_multiball:
+    chcheckitout_standup_callout:
+      action: play
+      bus: voice
+      priority: 5000
+  bodymovin_ball_1_locked:
+    ball1locked_callout:
+      action: play
+      bus: voice
+      priority: 5000
+  bodymovin_ball_2_locked:
+    ball2locked_callout:
+      action: play
+      bus: voice
+      priority: 5000
+  bodymovin_multiball_qualified:
+    bodymovin_captiveball_callout:
+      action: play
+      bus: voice
+      priority: 5000
+  logicblock_completed_modes_count_hit{device.counters.completed_modes_count.value==2}:
+    hitthescoop_callout:
+      action: play
+      bus: voice
+      ducking:
+        bus: music
+        attack: 100ms
+        attenuation: 0.6
+        release_point: 100ms
+        release: 100ms
+
 
 
 variable_player:
@@ -998,13 +1152,13 @@ variable_player:
     score: 10
   s_right_slingshot_active:
     score: 10
-  s_right_lower_pop_active:
+  pop1_hit:
     score: 1110
-  s_left_upper_pop_active:
+  pop2_hit:
     score: 1110
-  s_center_upper_pop_active:
+  pop3_hit:
     score: 1110
-  s_upper_pop_standup_active:
+  upper_pop_standup_hit:
     score: 5010
   pop_standup_hit:
     score: 5010
@@ -1012,11 +1166,11 @@ variable_player:
     score: 10010
   spinner_hit:
     score: 1010
-  s_three_bank_bottom_active:
+  bottom_drop_hit:
     score: 2220
-  s_three_bank_middle_active:
+  middle_drop_hit:
     score: 2220
-  s_three_bank_top_active:
+  top_drop_hit:
     score: 2220
   scoop_hit:
     score: 2310
@@ -1086,6 +1240,12 @@ variable_player:
     bodymovin_multiball_qualified_flag:
       int: value
       action: set
+    girls_bonus_score:
+      int: value
+      action: set
+    girls_blocking_flag:
+      int: value
+      action: set
   ball_started:
     bonus_multiplier:
       int: 1
@@ -1132,6 +1292,10 @@ variable_player:
       int: 0
       action: set
   mode_threemcsand1dj_stopped:
+    mode_blocking_flag:
+      int: 0
+      action: set
+  mode_highplainsdrifter_stopped:
     mode_blocking_flag:
       int: 0
       action: set
@@ -1205,6 +1369,14 @@ variable_player:
     battery_charged_yesorno:
       int: 0
       action: set
+  mode_highplainsdrifter_started:
+    mode_highplainsdrifter_score:
+      int: 0
+      action: set
+    modes_played: 1
+    battery_charged_yesorno:
+      int: 0
+      action: set
   game_ended:
     game_just_played:
       int: 1
@@ -1230,6 +1402,8 @@ variable_player:
   mode_toomanyrappers_success:
     modes_completed: 1
   mode_threemcsand1dj_success:
+    modes_completed: 1
+  mode_highplainsdrifter_success:
     modes_completed: 1
   combo_hit:
     combos: 1
@@ -1273,6 +1447,10 @@ variable_player:
     bodymovin_multiball_qualified_flag:
       int: 1
       action: set
+  mode_girls_stopped:
+    girls_blocking_flag:
+      int: 0
+      action: set
 
 
 sequences:
@@ -1280,81 +1458,83 @@ sequences:
     events:
       - chcheckitout_multiball_qualified
     events_when_complete: drops_standup_start_multiball
-    disable_events: achievement_wizard1_state_enabled, mode_bodymovin_started
-    reset_on_complete: true
-    disable_on_complete: true
-    persist_state: true
+    disable_events: achievement_wizard1_state_enabled, mode_bodymovin_started, mode_girls_started
+    enable_events: mode_bodymovin_stopped{current_player.chcheckitout_qualified_flag==0}, mode_makesomenoise_stopped{current_player.chcheckitout_qualified_flag==0}, mode_girls_stopped{current_player.chcheckitout_qualified_flag==0}
+    reset_on_complete: True
+    disable_on_complete: True
+    persist_state: True
     restart_events: ball_started{current_player.ball==1 or current_player.chcheckitout_qualified_flag==0}, mode_chcheckitout_stopped
   chcheckitout_multiball_ready:
     events:
       - three_bank_standup_hit{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_qualified_flag==1}
     restart_events: drops_standup_start_multiball, ball_started{current_player.chcheckitout_qualified_flag==1}, mode_makesomenoise_stopped{current_player.chcheckitout_qualified_flag==1}, multiball_bodymovin_ended{current_player.chcheckitout_qualified_flag==1}
     events_when_complete: chcheckitout_start_multiball
-    disable_events: achievement_wizard1_state_enabled, mode_bodymovin_started
-    reset_on_complete: true
-    disable_on_complete: true
-    persist_state: true
-    start_enabled: false
+    disable_events: achievement_wizard1_state_enabled, mode_bodymovin_started, mode_girls_started
+    reset_on_complete: True
+    disable_on_complete: True
+    enable_events: mode_bodymovin_stopped{current_player.chcheckitout_qualified_flag==1}, mode_makesomenoise_stopped{current_player.chcheckitout_qualified_flag==1}, mode_girls_stopped{current_player.chcheckitout_qualified_flag==1}
+    persist_state: True
+    start_enabled: False
   enable_bodymovin_lock_1:
     events:
       - lock_standups_complete{current_player.chcheckitout_multiball_blocking_flag==0}
     events_when_complete: bodymovin_lock_1_enabled
-    disable_events: achievement_wizard1_state_enabled, mode_chcheckitout_started
-    reset_on_complete: true
-    start_enabled: false
-    disable_on_complete: true
-    persist_state: true
-    restart_events: ball_started{current_player.ball!=1 and current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_bodymovin_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_chcheckitout_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_makesomenoise_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}
+    disable_events: achievement_wizard1_state_enabled, mode_chcheckitout_started, mode_girls_started
+    reset_on_complete: True
+    start_enabled: False
+    disable_on_complete: True
+    persist_state: True
+    restart_events: ball_started{current_player.ball!=1 and current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_bodymovin_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_chcheckitout_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_makesomenoise_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_girls_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}
   bodymovin_lock_1:
     events:
       - scoop_hit{current_player.chcheckitout_multiball_blocking_flag==0}
     events_when_complete: bodymovin_ball_1_locked
-    disable_events: achievement_wizard1_state_enabled, mode_chcheckitout_started
-    reset_on_complete: false
-    start_enabled: false
-    disable_on_complete: true
-    persist_state: true
-    restart_events: bodymovin_lock_1_enabled, ball_started{current_player.bodymovin_lock1_qualified_flag==1}, mode_bodymovin_stopped{current_player.bodymovin_lock1_qualified_flag==1}, mode_chcheckitout_stopped{current_player.bodymovin_lock1_qualified_flag==1}, mode_makesomenoise_stopped{current_player.bodymovin_lock1_qualified_flag==1}
+    disable_events: achievement_wizard1_state_enabled, mode_chcheckitout_started, mode_girls_started
+    reset_on_complete: False
+    start_enabled: False
+    disable_on_complete: True
+    persist_state: True
+    restart_events: bodymovin_lock_1_enabled, ball_started{current_player.bodymovin_lock1_qualified_flag==1}, mode_bodymovin_stopped{current_player.bodymovin_lock1_qualified_flag==1}, mode_chcheckitout_stopped{current_player.bodymovin_lock1_qualified_flag==1}, mode_makesomenoise_stopped{current_player.bodymovin_lock1_qualified_flag==1}, mode_girls_stopped{current_player.bodymovin_lock1_qualified_flag==1}
   enable_bodymovin_lock_2:
     events:
       - lock_standups_complete{current_player.chcheckitout_multiball_blocking_flag==0}
     events_when_complete: bodymovin_lock_2_enabled
-    disable_events: achievement_wizard1_state_enabled, mode_chcheckitout_started
-    reset_on_complete: false
-    start_enabled: false
-    disable_on_complete: true
-    persist_state: true
-    restart_events: bodymovin_ball_1_locked, ball_started{current_player.ball==1 or current_player.bodymovin_lock1_locked_flag==1}, mode_bodymovin_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_chcheckitout_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_makesomenoise_stopped{current_player.bodymovin_lock1_locked_flag==1}
+    disable_events: achievement_wizard1_state_enabled, mode_chcheckitout_started, mode_girls_started
+    reset_on_complete: False
+    start_enabled: False
+    disable_on_complete: True
+    persist_state: True
+    restart_events: bodymovin_ball_1_locked, ball_started{current_player.ball==1 or current_player.bodymovin_lock1_locked_flag==1}, mode_bodymovin_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_chcheckitout_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_makesomenoise_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_girls_stopped{current_player.bodymovin_lock1_locked_flag==1}
   bodymovin_lock_2:
     events:
       - scoop_hit{current_player.chcheckitout_multiball_blocking_flag==0}
     events_when_complete: bodymovin_ball_2_locked
-    disable_events: achievement_wizard1_state_enabled, mode_chcheckitout_started
-    reset_on_complete: false
-    start_enabled: false
-    disable_on_complete: true
-    persist_state: true
-    restart_events: bodymovin_lock_2_enabled, ball_started{current_player.bodymovin_lock2_qualified_flag==1}, mode_bodymovin_stopped{current_player.bodymovin_lock2_qualified_flag==1}, mode_chcheckitout_stopped{current_player.bodymovin_lock2_qualified_flag==1}, mode_makesomenoise_stopped{current_player.bodymovin_lock2_qualified_flag==1}
+    disable_events: achievement_wizard1_state_enabled, mode_chcheckitout_started, mode_girls_started
+    reset_on_complete: False
+    start_enabled: False
+    disable_on_complete: True
+    persist_state: True
+    restart_events: bodymovin_lock_2_enabled, ball_started{current_player.bodymovin_lock2_qualified_flag==1}, mode_bodymovin_stopped{current_player.bodymovin_lock2_qualified_flag==1}, mode_chcheckitout_stopped{current_player.bodymovin_lock2_qualified_flag==1}, mode_makesomenoise_stopped{current_player.bodymovin_lock2_qualified_flag==1}, mode_girls_stopped{current_player.bodymovin_lock2_qualified_flag==1}
   enable_bodymovin_lock_3:
     events:
       - lock_standups_complete{current_player.chcheckitout_multiball_blocking_flag==0}
     events_when_complete: bodymovin_lock_3_enabled, bodymovin_multiball_qualified
-    disable_events: achievement_wizard1_state_enabled, mode_chcheckitout_started
-    reset_on_complete: false
-    start_enabled: false
-    disable_on_complete: true
-    persist_state: true
-    restart_events: bodymovin_ball_2_locked, ball_started{current_player.bodymovin_lock2_locked_flag==1}, mode_bodymovin_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_chcheckitout_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_makesomenoise_stopped{current_player.bodymovin_lock2_locked_flag==1}
+    disable_events: achievement_wizard1_state_enabled, mode_chcheckitout_started, mode_girls_started
+    reset_on_complete: False
+    start_enabled: False
+    disable_on_complete: True
+    persist_state: True
+    restart_events: bodymovin_ball_2_locked, ball_started{current_player.bodymovin_lock2_locked_flag==1}, mode_bodymovin_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_chcheckitout_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_makesomenoise_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_girls_stopped{current_player.bodymovin_lock2_locked_flag==1}
   bodymovin_multiball_ready:
     events:
       - captive_ball_hit{current_player.chcheckitout_multiball_blocking_flag==0}
     enable_events: bodymovin_lock_3_enabled
-    disable_events: achievement_wizard1_state_enabled, mode_chcheckitout_started
+    disable_events: achievement_wizard1_state_enabled, mode_chcheckitout_started, mode_girls_started
     events_when_complete: bodymovin_start_multiball
-    reset_on_complete: true
-    disable_on_complete: true
-    persist_state: true
-    restart_events: bodymovin_lock_3_enabled, ball_started{current_player.bodymovin_multiball_qualified_flag==1}, mode_bodymovin_stopped{current_player.bodymovin_multiball_qualified_flag==1}, mode_chcheckitout_stopped{current_player.bodymovin_multiball_qualified_flag==1}, mode_makesomenoise_stopped{current_player.bodymovin_multiball_qualified_flag==1}
+    reset_on_complete: True
+    disable_on_complete: True
+    persist_state: True
+    restart_events: bodymovin_lock_3_enabled, ball_started{current_player.bodymovin_multiball_qualified_flag==1}, mode_bodymovin_stopped{current_player.bodymovin_multiball_qualified_flag==1}, mode_chcheckitout_stopped{current_player.bodymovin_multiball_qualified_flag==1}, mode_makesomenoise_stopped{current_player.bodymovin_multiball_qualified_flag==1}, mode_girls_stopped{current_player.bodymovin_multiball_qualified_flag==1}
 
 
 counters:
@@ -1365,11 +1545,11 @@ counters:
     count_complete_value: 2
     count_interval: 1
     direction: up
-    persist_state: true
-    reset_on_complete: true
-    disable_on_complete: true
-    disable_events: drops_standup_start_multiball, achievement_wizard1_state_enabled, mode_bodymovin_started
-    enable_events: ball_started{current_player.ball==1 or current_player.chcheckitout_qualified_flag==0}, mode_makesomenoise_stopped{current_player.chcheckitout_qualified_flag==0}, mode_bodymovin_stopped{current_player.chcheckitout_qualified_flag==0}
+    persist_state: True
+    reset_on_complete: True
+    disable_on_complete: True
+    disable_events: drops_standup_start_multiball, achievement_wizard1_state_enabled, mode_bodymovin_started, mode_girls_started
+    enable_events: ball_started{current_player.ball==1 or current_player.chcheckitout_qualified_flag==0}, mode_makesomenoise_stopped{current_player.chcheckitout_qualified_flag==0}, mode_bodymovin_stopped{current_player.chcheckitout_qualified_flag==0}, mode_girls_stopped{current_player.chcheckitout_qualified_flag==0}
     restart_events: mode_chcheckitout_stopped
     control_events:
       - event: reset_drop_target_bank_counter
@@ -1379,32 +1559,98 @@ counters:
         action: add
         value: 1
   completed_modes_count:
-    count_events: mode_intergalactic_success, mode_paulrevere_success, mode_tripletrouble_success, mode_sabotage_success, mode_fingerlickingood_success, mode_toomanyrappers_success, mode_threemcsand1dj_success
+    count_events: mode_intergalactic_success, mode_paulrevere_success, mode_tripletrouble_success, mode_sabotage_success, mode_fingerlickingood_success, mode_toomanyrappers_success, mode_threemcsand1dj_success, mode_highplainsdrifter_success
     starting_count: 0
     count_complete_value: 9
     count_interval: 1
     direction: up
-    persist_state: true
-    disable_on_complete: true
-    reset_on_complete: false
+    persist_state: True
+    disable_on_complete: True
+    reset_on_complete: False
   played_modes_count:
-    count_events: mode_intergalactic_started, mode_paulrevere_started, mode_tripletrouble_started, mode_sabotage_started, mode_fingerlickingood_started, mode_toomanyrappers_started, mode_threemcsand1dj_started, mode_makesomenoise_started
+    count_events: mode_intergalactic_started, mode_paulrevere_started, mode_tripletrouble_started, mode_sabotage_started, mode_fingerlickingood_started, mode_toomanyrappers_started, mode_threemcsand1dj_started, mode_highplainsdrifter_started, mode_makesomenoise_started
     starting_count: 0
     count_complete_value: -1
     count_interval: 1
     direction: up
-    persist_state: true
-    disable_on_complete: false
-    reset_on_complete: false
+    persist_state: True
+    disable_on_complete: False
+    reset_on_complete: False
   combos_count:
     count_events: combo_hit
     starting_count: 0
     count_interval: 1
     direction: up
-    persist_state: false
-    disable_on_complete: false
-    reset_on_complete: false
+    persist_state: False
+    disable_on_complete: False
+    reset_on_complete: False
     restart_events: ball_started
+  superpops_counter:
+    count_events: scoop_hit
+    starting_count: 0
+    count_interval: 1
+    count_complete_value: 7
+    direction: up
+    persist_state: False
+    disable_on_complete: True
+    reset_on_complete: False
+    restart_events: ball_started
+    events_when_complete: start_superpops
+  superdrops_counter:
+    count_events: right_ramp_hit
+    starting_count: 0
+    count_interval: 1
+    count_complete_value: 7
+    direction: up
+    persist_state: False
+    disable_on_complete: True
+    reset_on_complete: False
+    restart_events: ball_started
+    events_when_complete: start_superdrops
+  superstandups_counter:
+    count_events: left_orbit_hit
+    starting_count: 0
+    count_interval: 1
+    count_complete_value: 7
+    direction: up
+    persist_state: False
+    disable_on_complete: True
+    reset_on_complete: False
+    restart_events: ball_started
+    events_when_complete: start_superstandups
+  superspins_counter:
+    count_events: left_ramp_hit
+    starting_count: 0
+    count_interval: 1
+    count_complete_value: 7
+    direction: up
+    persist_state: False
+    disable_on_complete: True
+    reset_on_complete: False
+    restart_events: ball_started
+    events_when_complete: start_superspins
+  supercombos_counter:
+    count_events: right_orbit_hit
+    starting_count: 0
+    count_interval: 1
+    count_complete_value: 7
+    direction: up
+    persist_state: False
+    disable_on_complete: True
+    reset_on_complete: False
+    restart_events: ball_started
+    events_when_complete: start_supercombos
+  super_modes_played_counter:
+    count_events: achievement_superpops_super_mode_state_completed, achievement_superdrops_super_mode_state_completed, achievement_superspins_super_mode_state_completed, achievement_superstandups_super_mode_state_completed, achievement_supercombos_super_mode_state_completed
+    starting_count: 0
+    count_interval: 1
+    count_complete_value: 5
+    direction: up
+    persist_state: True
+    disable_on_complete: True
+    reset_on_complete: False
+    restart_events: ball_started{current_player.ball==1}
+    events_when_complete: start_girls_achievement
 
 
 random_event_player:
@@ -1461,12 +1707,21 @@ show_player:
       action: play
       loops: 4
       priority: 50000
+  mode_highplainsdrifter_success:
+    highplainsdrifter_success_show:
+      action: play
+      loops: 4
+      priority: 50000
   achievement_wizard1_state_enabled:
     makesomenoise_mode_qualified_light:
       action: play
       loops: -1
     chcheckitout_lit_strobe:
       action: stop
+  achievement_girls_frenzy_state_enabled:
+    girls_ready:
+      action: play
+      loops: -1
   mode_base_started{device.achievements.wizard1.state==enabled}:
     makesomenoise_mode_qualified_light:
       action: play
@@ -1486,6 +1741,9 @@ show_player:
     GI_on:
       action: stop
   mode_threemcsand1dj_started:
+    GI_on:
+      action: stop
+  mode_highplainsdrifter_started:
     GI_on:
       action: stop
   mode_toomanyrappers_started:
@@ -1520,6 +1778,10 @@ show_player:
       action: play
       priority: 10000
   timer_threemcsand1dj_intro_show_complete:
+    GI_on:
+      action: play
+      priority: 10000
+  timer_highplainsdrifter_intro_show_complete:
     GI_on:
       action: play
       priority: 10000
@@ -1571,6 +1833,26 @@ show_player:
       action: stop
     ball_save_hurryup_show:
       action: stop
+  ball_save_girls_frenzy_timer_start:
+    ball_save_show:
+      action: play
+      loops: -1
+  ball_save_girls_frenzy_hurry_up:
+    ball_save_show:
+      action: stop
+    ball_save_hurryup_show:
+      action: play
+      loops: -1
+  ball_save_girls_frenzy_grace_period:
+    ball_save_hurryup_show:
+      action: stop
+    ball_save_show:
+      action: stop
+  ball_save_girls_frenzy_disabled:
+    ball_save_show:
+      action: stop
+    ball_save_hurryup_show:
+      action: stop
   chcheckitout_multiball_qualified:
     chcheckitout_lit_strobe:
       action: play
@@ -1579,10 +1861,29 @@ show_player:
   chcheckitout_start_multiball:
     chcheckitout_lit_strobe:
       action: stop
+    girls_ready:
+      action: stop
   mode_chcheckitout_stopped:
     chcheckitout_inner_loop_shot:
       action: stop
+  mode_chcheckitout_stopped{device.achievements.girls_frenzy.state==enabled}:
+    girls_ready:
+      action: play
+      loops: -1
+  mode_bodymovin_stopped{device.achievements.girls_frenzy.state==enabled}:
+    girls_ready:
+      action: play
+      loops: -1
+  mode_makesomenoise_stopped{device.achievements.girls_frenzy.state==enabled}:
+    girls_ready:
+      action: play
+      loops: -1
   mode_makesomenoise_stopped{chcheckitout_qualified_flag==1}:
+    chcheckitout_lit_strobe:
+      action: play
+      loops: -1
+      priority: 10000
+  mode_girls_stopped{chcheckitout_qualified_flag==1}:
     chcheckitout_lit_strobe:
       action: play
       loops: -1
@@ -1598,11 +1899,40 @@ show_player:
   mode_bodymovin_started:
     chcheckitout_lit_strobe:
       action: stop
+    girls_ready:
+      action: stop
   ball_will_end:
     chcheckitout_lit_strobe:
       action: stop
     makesomenoise_mode_qualified_light:
       action: stop
+    girls_ready:
+      action: stop
+  start_superpops:
+    superpops_on:
+      action: play
+      loops: -1
+      priority: 10000
+  start_superdrops:
+    superdrops_on:
+      action: play
+      loops: -1
+      priority: 10000
+  start_superspins:
+    superspins_on:
+      action: play
+      loops: -1
+      priority: 10000
+  start_superstandups:
+    superstandups_on:
+      action: play
+      loops: -1
+      priority: 10000
+  start_supercombos:
+    supercombos_on:
+      action: play
+      loops: -1
+      priority: 10000
 
 
 blinkenlight_player:
@@ -1633,6 +1963,12 @@ blinkenlight_player:
     bl_scoop_arrow_led: 4CBB17
   mode_makesomenoise_stopped{current_player.bodymovin_multiball_qualified_flag==1}:
     bl_captiveball_smallcircle_led: 4CBB17
+  mode_girls_stopped{current_player.bodymovin_lock1_qualified_flag==1}:
+    bl_scoop_arrow_led: 4CBB17
+  mode_girls_stopped{current_player.bodymovin_lock2_qualified_flag==1}:
+    bl_scoop_arrow_led: 4CBB17
+  mode_girls_stopped{current_player.bodymovin_multiball_qualified_flag==1}:
+    bl_captiveball_smallcircle_led: 4CBB17
   mode_bodymovin_stopped:
     bl_leftorbit_arrow_led: remove
     bl_leftramp_arrow_led: remove
@@ -1642,8 +1978,16 @@ blinkenlight_player:
     bl_captiveball_smallcircle_led: remove
   mode_chcheckitout_started:
     bl_captiveball_smallcircle_led: remove
+    bl_scoop_arrow_led: remove
+  mode_chcheckitout_stopped{current_player.bodymovin_lock1_qualified_flag==1}:
+    bl_scoop_arrow_led: 4CBB17
+  mode_chcheckitout_stopped{current_player.bodymovin_lock2_qualified_flag==1}:
+    bl_scoop_arrow_led: 4CBB17
   mode_chcheckitout_stopped{current_player.bodymovin_multiball_qualified_flag==1}:
     bl_captiveball_smallcircle_led: 4CBB17
+  mode_girls_started:
+    bl_captiveball_smallcircle_led: remove
+    bl_scoop_arrow_led: remove
 
 
 widget_player:
@@ -1713,7 +2057,7 @@ timers:
     start_value: 0
     end_value: 4
     tick_interval: 1s
-    start_running: false
+    start_running: False
     control_events:
       - event: widget_chcheckitoutfinish_active
         action: restart
@@ -1723,7 +2067,7 @@ timers:
     start_value: 0
     end_value: 4
     tick_interval: 1
-    start_running: false
+    start_running: False
     control_events:
       - event: widget_bodymovinfinish_active
         action: restart
@@ -1733,7 +2077,7 @@ timers:
     start_value: 0
     end_value: 4
     tick_interval: 1s
-    start_running: false
+    start_running: False
     control_events:
       - event: widget_bodymovin_lock_enabled_widget_active
         action: restart
@@ -1745,7 +2089,7 @@ timers:
     start_value: 0
     end_value: 4
     tick_interval: 1s
-    start_running: false
+    start_running: False
     control_events:
       - event: widget_bodymovin_ball_1_locked_widget_active
         action: restart
@@ -1755,7 +2099,7 @@ timers:
     start_value: 0
     end_value: 4
     tick_interval: 1s
-    start_running: false
+    start_running: False
     control_events:
       - event: widget_bodymovin_ball_2_locked_widget_active
         action: restart
@@ -1770,12 +2114,12 @@ achievements:
       lights: l_wizardindicator2_rectangle_led
     show_when_started: on
     show_when_completed: on
-    start_events: scoop_hit
+    start_events: scoop_hit{device.counters.completed_modes_count.value==2}
     events_when_started: start_makesomenoise
-    restart_after_stop_possible: false
+    restart_after_stop_possible: False
     events_when_completed: makesomenoise_played
     complete_events: multiball_makesomenoise_started
-    restart_on_next_ball_when_started: true
+    restart_on_next_ball_when_started: True
   intergalactic_mode:
     show_tokens:
       lights: l_modeindicator1_rectangle_led
@@ -1784,8 +2128,8 @@ achievements:
     start_events: mode_intergalactic_started
     complete_events: mode_intergalactic_success
     reset_events: game_start_over
-    start_enabled: true
-    restart_on_next_ball_when_started: true
+    start_enabled: True
+    restart_on_next_ball_when_started: True
   paulrevere_mode:
     show_tokens:
       lights: l_modeindicator2_rectangle_led
@@ -1794,8 +2138,8 @@ achievements:
     start_events: mode_paulrevere_started
     complete_events: mode_paulrevere_success
     reset_events: game_start_over
-    start_enabled: true
-    restart_on_next_ball_when_started: true
+    start_enabled: True
+    restart_on_next_ball_when_started: True
   tripletrouble_mode:
     show_tokens:
       lights: l_modeindicator3_rectangle_led
@@ -1804,8 +2148,8 @@ achievements:
     start_events: mode_tripletrouble_started
     complete_events: mode_tripletrouble_success
     reset_events: game_start_over
-    start_enabled: true
-    restart_on_next_ball_when_started: true
+    start_enabled: True
+    restart_on_next_ball_when_started: True
   sabotage_mode:
     show_tokens:
       lights: l_modeindicator4_rectangle_led
@@ -1814,8 +2158,8 @@ achievements:
     start_events: mode_sabotage_started
     complete_events: mode_sabotage_success
     reset_events: game_start_over
-    start_enabled: true
-    restart_on_next_ball_when_started: true
+    start_enabled: True
+    restart_on_next_ball_when_started: True
   fingerlickingood_mode:
     show_tokens:
       lights: l_modeindicator5_rectangle_led
@@ -1824,8 +2168,8 @@ achievements:
     start_events: mode_fingerlickingood_started
     complete_events: mode_fingerlickingood_success
     reset_events: game_start_over
-    start_enabled: true
-    restart_on_next_ball_when_started: true
+    start_enabled: True
+    restart_on_next_ball_when_started: True
   toomanyrappers_mode:
     show_tokens:
       lights: l_modeindicator6_rectangle_led
@@ -1834,8 +2178,8 @@ achievements:
     start_events: mode_toomanyrappers_started
     complete_events: mode_toomanyrappers_success
     reset_events: game_start_over
-    start_enabled: true
-    restart_on_next_ball_when_started: true
+    start_enabled: True
+    restart_on_next_ball_when_started: True
   threemcsand1dj_mode:
     show_tokens:
       lights: l_modeindicator7_rectangle_led
@@ -1844,8 +2188,18 @@ achievements:
     start_events: mode_threemcsand1dj_started
     complete_events: mode_threemcsand1dj_success
     reset_events: game_start_over
-    start_enabled: true
-    restart_on_next_ball_when_started: true
+    start_enabled: True
+    restart_on_next_ball_when_started: True
+  highplainsdrifter_mode:
+    show_tokens:
+      lights: l_modeindicator8_rectangle_led
+    show_when_started: flash
+    show_when_completed: on
+    start_events: mode_highplainsdrifter_started
+    complete_events: mode_highplainsdrifter_success
+    reset_events: game_start_over
+    start_enabled: True
+    restart_on_next_ball_when_started: True
   chcheckitout_multiball:
     show_tokens:
       lights: l_cassetteleft_led
@@ -1854,8 +2208,8 @@ achievements:
     start_events: multiball_chcheckitout_started
     complete_events: chcheckitout_superjackpot_hit
     reset_events: game_start_over
-    start_enabled: true
-    restart_on_next_ball_when_started: true
+    start_enabled: True
+    restart_on_next_ball_when_started: True
   bodymovin_multiball:
     show_tokens:
       lights: l_cassetteright_led
@@ -1864,13 +2218,71 @@ achievements:
     start_events: multiball_bodymovin_started
     complete_events: bodymovin_superjackpot_hit
     reset_events: game_start_over
-    start_enabled: true
-    restart_on_next_ball_when_started: true
+    start_enabled: True
+    restart_on_next_ball_when_started: True
+  superpops_super_mode:
+    show_tokens:
+      lights: l_supercircle3_led
+    show_when_started: flash
+    show_when_completed: on
+    start_events: mode_superpops_started
+    complete_events: mode_superpops_stopped
+    reset_events: game_start_over
+    start_enabled: True
+    restart_on_next_ball_when_started: True
+  superdrops_super_mode:
+    show_tokens:
+      lights: l_supercircle4_led
+    show_when_started: flash
+    show_when_completed: on
+    start_events: mode_superdrops_started
+    complete_events: mode_superdrops_stopped
+    reset_events: game_start_over
+    start_enabled: True
+    restart_on_next_ball_when_started: True
+  superspins_super_mode:
+    show_tokens:
+      lights: l_supercircle2_led
+    show_when_started: flash
+    show_when_completed: on
+    start_events: mode_superspins_started
+    complete_events: mode_superspins_stopped
+    reset_events: game_start_over
+    start_enabled: True
+    restart_on_next_ball_when_started: True
+  superstandups_super_mode:
+    show_tokens:
+      lights: l_supercircle1_led
+    show_when_started: flash
+    show_when_completed: on
+    start_events: mode_superstandups_started
+    complete_events: mode_superstandups_stopped
+    reset_events: game_start_over
+    start_enabled: True
+    restart_on_next_ball_when_started: True
+  supercombos_super_mode:
+    show_tokens:
+      lights: l_supercircle5_led
+    show_when_started: flash
+    show_when_completed: on
+    start_events: mode_supercombos_started
+    complete_events: mode_supercombos_stopped
+    reset_events: game_start_over
+    start_enabled: True
+    restart_on_next_ball_when_started: True
+  girls_frenzy:
+    enable_events: start_girls_achievement
+    start_events: pop_standup_hit{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state!='enabled'}
+    complete_events: mode_girls_started
+    reset_events: game_start_over
+    start_enabled: False
+    restart_on_next_ball_when_started: False
+    events_when_started: start_girls
 
 
 event_player:
   mode_chcheckitout_stopped: reset_drop_target_bank_counter
   sg_lanes_lit_complete: add_bonus_x
   sg_tshirts_on_complete: lock_standups_complete
-  mode_makesomenoise_stopped: mode_makesomenoise_complete
+  multiball_makesomenoise_ended: mode_makesomenoise_complete
 

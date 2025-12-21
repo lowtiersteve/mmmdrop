@@ -1,0 +1,36 @@
+#config_version=6
+
+mode:
+  start_events: start_superpops
+  stop_events: mode_superpops_complete
+  priority: 20000
+
+variable_player:
+  pop1_hit:
+    score: 100000
+  pop2_hit:
+    score: 100000
+  pop3_hit:
+    score: 100000
+
+timers:
+  superpops_timer:
+    start_value: 0
+    end_value: 30
+    tick_interval: 1s
+    start_running: True
+    control_events:
+      - event: mode_superpops_started
+        action: restart
+      - event: ball_ending
+        action: stop
+
+event_player:
+  timer_superpops_timer_complete: mode_superpops_complete
+
+sound_player:
+  mode_superpops_started:
+    superpops_callout:
+      action: play
+      bus: voice
+

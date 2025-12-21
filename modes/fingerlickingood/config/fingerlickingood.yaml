@@ -82,6 +82,17 @@ sound_player:
       action: play
       bus: effects
       max_queue_time: 1s
+  timer_fingerlickingood_time_remaining_tick{current_player.fingerlickingood_time_remaining_variable_times_1==10}:
+    ten_callout:
+      action: play
+      bus: voice
+      max_queue_time: 1s
+      ducking:
+        bus: music
+        attack: 100ms
+        attenuation: 0.6
+        release_point: 100ms
+        release: 100ms
 
 
 ball_holds:
@@ -128,11 +139,11 @@ event_player:
 
 shot_profiles:
   fingerlickingood_shot:
-    advance_on_hit: false
+    advance_on_hit: False
     states:
       - name: "off"
         show: "off"
-    loop: false
+    loop: False
 
 
 blinkenlight_player:

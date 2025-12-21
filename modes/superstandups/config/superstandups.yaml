@@ -1,0 +1,41 @@
+#config_version=6
+
+mode:
+  start_events: start_superstandups
+  stop_events: mode_superstandups_complete
+  priority: 20000
+
+variable_player:
+  pop_standup_hit:
+    score: 100000
+  upper_pop_standup_hit:
+    score: 100000
+  three_bank_standup_hit:
+    score: 100000
+  tshirt_top_standup_hit:
+    score: 100000
+  tshirt_bottom_standup_hit:
+    score: 100000
+
+
+timers:
+  superstandups_timer:
+    start_value: 0
+    end_value: 30
+    tick_interval: 1s
+    start_running: True
+    control_events:
+      - event: mode_superstandups_started
+        action: restart
+      - event: ball_ending
+        action: stop
+
+event_player:
+  timer_superstandups_timer_complete: mode_superstandups_complete
+
+sound_player:
+  mode_superstandups_started:
+    superstandups_callout:
+      action: play
+      bus: voice
+

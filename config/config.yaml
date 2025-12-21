@@ -37,11 +37,11 @@ fast:
 
   aud:
     port: auto
-    debug: false
+    debug: False
 
-    main_amp_enabled: true
-    sub_amp_enabled: true
-    headphones_amp_enabled: true
+    main_amp_enabled: True
+    sub_amp_enabled: True
+    headphones_amp_enabled: True
 
     main_steps: 10
     sub_steps: 10
@@ -51,7 +51,7 @@ fast:
     default_sub_volume: 80
     default_headphones_volume: 60
 
-    persist_volume_settings: true
+    persist_volume_settings: True
 
     max_hw_volume_main: 100
     max_hw_volume_sub: 100
@@ -61,11 +61,11 @@ fast:
     sub_levels_list: None
     headphones_levels_list: None
 
-    link_sub_to_main: true
-    link_headphones_to_main: true
+    link_sub_to_main: True
+    link_headphones_to_main: True
 
     headphones_level: line
-    mute_speakers_with_headphones: true
+    mute_speakers_with_headphones: True
 
 
 displays:
@@ -94,7 +94,7 @@ playfields:
   playfield:
     tags: default
     default_source_device: bd_plunger
-    enable_ball_search: false
+    enable_ball_search: False
 
 flippers:
   left_flipper:
@@ -121,7 +121,7 @@ ball_devices:
     eject_timeouts: 3s
   bd_plunger:
     ball_switches: s_plunger
-    mechanical_eject: true
+    mechanical_eject: True
     eject_coil: c_plunger
     eject_timeouts: 3s
   bd_scoop:
@@ -136,16 +136,22 @@ ball_saves:
     grace_period: 2s
     enable_events: mode_base_started
     timer_start_events: ball_out
-    auto_launch: true
+    auto_launch: True
     balls_to_save: -1
   mode_start:
     active_time: 5s
     hurry_up_time: 2s
     grace_period: 1s
-    enable_events: ball_hold_fingerlickingood_scoop_hold_balls_released, ball_hold_highplainsdrifter_scoop_hold_balls_released, ball_hold_intergalactic_scoop_hold_balls_released, ball_hold_paulrevere_scoop_hold_balls_released, ball_hold_sabotage_scoop_hold_balls_released, ball_hold_threemcsand1dj_scoop_hold_balls_released, ball_hold_toomanyrappers_scoop_hold_balls_released, ball_hold_tripletrouble_scoop_hold_balls_released, ball_hold_makesomenoise_scoop_hold_balls_released
-    auto_launch: true
+    enable_events: ball_hold_fingerlickingood_scoop_hold_balls_released, ball_hold_highplainsdrifter_scoop_hold_balls_released, ball_hold_intergalactic_scoop_hold_balls_released, ball_hold_paulrevere_scoop_hold_balls_released, ball_hold_sabotage_scoop_hold_balls_released, ball_hold_threemcsand1dj_scoop_hold_balls_released, ball_hold_toomanyrappers_scoop_hold_balls_released, ball_hold_tripletrouble_scoop_hold_balls_released, ball_hold_makesomenoise_scoop_hold_balls_released, ball_hold_highplainsdrifter_scoop_hold_balls_released
+    auto_launch: True
     balls_to_save: -1
-
+  girls_frenzy:
+    active_time: 38s
+    hurry_up_time: 5s
+    grace_period: 1s
+    enable_events: mode_girls_started
+    auto_launch: True
+    balls_to_save: -1
 
 
 modes:
@@ -169,6 +175,13 @@ modes:
   - threemcsand1dj
   - chcheckitout
   - bodymovin
+  - highplainsdrifter
+  - superpops
+  - superdrops
+  - superspins
+  - superstandups
+  - supercombos
+  - girls
 
 
 settings:
@@ -235,7 +248,7 @@ shot_profiles:
         show: flash
       - name: unlit
         show: off
-    loop: false
+    loop: False
 
 
 keyboard:
@@ -243,38 +256,38 @@ keyboard:
     switch: s_start
   1:
     switch: s_trough1
-    toggle: true
+    toggle: True
   2:
     switch: s_trough2
-    toggle: true
+    toggle: True
   3:
     switch: s_trough3
-    toggle: true
+    toggle: True
   4:
     switch: s_trough4
-    toggle: true
+    toggle: True
   5:
     switch: s_trough5
-    toggle: true
+    toggle: True
   p:
     switch: s_plunger
-    toggle: true
+    toggle: True
   m:
     switch: s_scoop
-    toggle: true
+    toggle: True
   b:
     switch: s_right_lower_pop
   n:
     switch: s_center_upper_pop
   u:
     switch: s_three_bank_bottom
-    toggle: true
+    toggle: True
   i:
     switch: s_three_bank_middle
-    toggle: true
+    toggle: True
   o:
     switch: s_three_bank_top
-    toggle: true
+    toggle: True
   y:
     switch: s_three_bank_standup
   d:

@@ -7,18 +7,18 @@ mode:
 
 counters:
   battery_charged_status:
-    count_events: spinner_hit{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.mode_blocking_flag==0 and device.achievements.wizard1.state!='enabled'}
+    count_events: spinner_hit{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.mode_blocking_flag==0 and current_player.girls_blocking_flag==0 and device.achievements.wizard1.state!='enabled'}
     events_when_complete: battery_charged
     starting_count: 20
     count_complete_value: 0
     count_interval: 1
     direction: down
-    persist_state: true
-    disable_on_complete: true
-    reset_on_complete: false
-    disable_events: multiball_chcheckitout_started, mode_makesomenoise_started, multiball_bodymovin_started, ball_is_ending
-    enable_events: ball_started, multiball_chcheckitout_ended, multiball_bodymovin_ended, multiball_makesomenoise_ended
-    restart_events: mode_intergalactic_stopped, mode_intergalactic_success, mode_paulrevere_stopped, mode_paulrevere_success, mode_tripletrouble_stopped, mode_tripletrouble_success, mode_sabotage_stopped, mode_sabotage_success, mode_fingerlickingood_stopped, mode_fingerlickingood_success, mode_toomanyrappers_stopped, mode_toomanyrappers_success, mode_threemcsand1dj_stopped, mode_threemcsand1dj_success
+    persist_state: True
+    disable_on_complete: True
+    reset_on_complete: False
+    disable_events: multiball_chcheckitout_started, mode_makesomenoise_started, multiball_bodymovin_started, mode_girls_started, ball_is_ending
+    enable_events: ball_started, multiball_chcheckitout_ended, multiball_bodymovin_ended, multiball_makesomenoise_ended, mode_girls_stopped
+    restart_events: mode_intergalactic_stopped, mode_intergalactic_success, mode_paulrevere_stopped, mode_paulrevere_success, mode_tripletrouble_stopped, mode_tripletrouble_success, mode_sabotage_stopped, mode_sabotage_success, mode_fingerlickingood_stopped, mode_fingerlickingood_success, mode_toomanyrappers_stopped, mode_toomanyrappers_success, mode_threemcsand1dj_stopped, mode_threemcsand1dj_success, mode_highplainsdrifter_stopped, mode_highplainsdrifter_success
     control_events:
       - event: reset_drop_target_bank_counter
         action: jump
@@ -110,6 +110,18 @@ counters:
       - event: mode_threemcsand1dj_success{device.achievements.wizard1.state=='completed'}
         action: jump
         value: 20
+      - event: mode_highplainsdrifter_stopped{not device.achievements.wizard1.state=='completed'}
+        action: jump
+        value: 10
+      - event: mode_highplainsdrifter_stopped{device.achievements.wizard1.state=='completed'}
+        action: jump
+        value: 20
+      - event: mode_highplainsdrifter_success{not device.achievements.wizard1.state=='completed'}
+        action: jump
+        value: 10
+      - event: mode_highplainsdrifter_success{device.achievements.wizard1.state=='completed'}
+        action: jump
+        value: 20
       - event: multiball_makesomenoise_ended
         action: jump
         value: 20
@@ -164,6 +176,13 @@ show_player:
       action: stop
     battery_green:
       action: stop
+  mode_girls_started:
+    battery_red:
+      action: stop
+    battery_yellow:
+      action: stop
+    battery_green:
+      action: stop
   carousel_item_selected:
     battery_green:
       action: stop
@@ -171,8 +190,36 @@ show_player:
     battery_green:
       action: play
       loops: -1
+  multiball_chcheckitout_ended{current_player.mode_blocking_flag==0 and current_player.battery_charged_yesorno==0 and device.counters.battery_charged_status.value<16}:
+    battery_yellow:
+      action: play
+      loops: -1
+  multiball_chcheckitout_ended{current_player.mode_blocking_flag==0 and current_player.battery_charged_yesorno==0 and device.counters.battery_charged_status.value>15}:
+    battery_red:
+      action: play
+      loops: -1
+  mode_girls_stopped{current_player.mode_blocking_flag==0 and current_player.battery_charged_yesorno==1}:
+    battery_green:
+      action: play
+      loops: -1
+  mode_girls_stopped{current_player.mode_blocking_flag==0 and current_player.battery_charged_yesorno==0 and device.counters.battery_charged_status.value<16}:
+    battery_yellow:
+      action: play
+      loops: -1
+  mode_girls_stopped{current_player.mode_blocking_flag==0 and current_player.battery_charged_yesorno==0 and device.counters.battery_charged_status.value>15}:
+    battery_red:
+      action: play
+      loops: -1
   multiball_bodymovin_ended{current_player.mode_blocking_flag==0 and current_player.battery_charged_yesorno==1}:
     battery_green:
+      action: play
+      loops: -1
+  multiball_bodymovin_ended{current_player.mode_blocking_flag==0 and current_player.battery_charged_yesorno==0 and device.counters.battery_charged_status.value<16}:
+    battery_yellow:
+      action: play
+      loops: -1
+  multiball_bodymovin_ended{current_player.mode_blocking_flag==0 and current_player.battery_charged_yesorno==0 and device.counters.battery_charged_status.value>15}:
+    battery_red:
       action: play
       loops: -1
   mode_intergalactic_stopped{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state!='enabled'}:
@@ -231,6 +278,14 @@ show_player:
     battery_red:
       action: play
       loops: -1
+  mode_highplainsdrifter_stopped{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state!='enabled'}:
+    battery_red:
+      action: play
+      loops: -1
+  mode_highplainsdrifter_success{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state!='enabled'}:
+    battery_red:
+      action: play
+      loops: -1
   mode_makesomenoise_stopped:
     battery_red:
       action: play
@@ -257,6 +312,7 @@ show_player:
     battery_red:
       action: stop
 
+
 variable_player:
   logicblock_battery_charged_status_updated:
     charges_remaining_variable:
@@ -273,8 +329,22 @@ widget_player:
       action: play
       slide: score_overlay
       priority: 901000
+  mode_makesomenoise_started:
+    charges_remaining:
+      action: remove
+  mode_makesomenoise_stopped:
+    charges_remaining:
+      action: play
+      slide: score_overlay
+      priority: 901000
   ball_started{current_player.ball!=1 and device.counters.battery_charged_status.value>0 and device.achievements.wizard1.state!='enabled' and device.counters.battery_charged_status.enabled==True}:
     charges_remaining:
       action: play
       slide: score_overlay
       priority: 901000
+
+sound_player:
+  logicblock_battery_charged_status_updated{device.counters.battery_charged_status.enabled==True and device.counters.battery_charged_status.value>0 and device.playfields.playfield.balls>0}:
+    batterycharger_callout:
+      action: play
+      bus: voice

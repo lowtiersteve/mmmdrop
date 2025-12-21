@@ -1,0 +1,8 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://l5yhv1tb2kaq"]
+
+[ext_resource type="AudioStream" uid="uid://bopm7bad3prg6" path="res://sounds/girlsvocalonly.ogg" id="1_8rsxm"]
+
+[resource]
+playback_mode = 2
+streams_count = 1
+stream_0/stream = ExtResource("1_8rsxm")

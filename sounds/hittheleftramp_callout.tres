@@ -1,0 +1,8 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://c0mnc1cjpmg"]
+
+[ext_resource type="AudioStream" uid="uid://c17wsr1tsrfa1" path="res://sounds/leftrampcallout.ogg" id="1_ky1mh"]
+
+[resource]
+playback_mode = 1
+streams_count = 1
+stream_0/stream = ExtResource("1_ky1mh")
