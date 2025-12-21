@@ -17,8 +17,8 @@
   lights:
     l_wizardindicator_rectangle_led: off
     l_wizardindicator3_rectangle_led: pink
-    l_cassetteleft_led: pink
-    l_cassetteright_led: pink
+#    l_cassetteleft_led: pink
+#    l_cassetteright_led: pink
 - duration: 50ms
   lights:
     l_modeindicator5_rectangle_led: off
@@ -36,8 +36,8 @@
 - duration: 50ms
   lights:
     l_wizardindicator3_rectangle_led: off
-    l_cassetteleft_led: off
-    l_cassetteright_led: off
+#    l_cassetteleft_led: off
+#    l_cassetteright_led: off
     l_wizardindicator2_rectangle_led: pink
 - duration: 50ms
   lights:
@@ -54,12 +54,12 @@
     l_supercircle3_led: pink
     l_supercircle4_led: pink
     l_supercircle5_led: pink
-    l_lowerpop_smallarrow_led: pink
+#    l_lowerpop_smallarrow_led: pink
     l_lowerrightpop_inside_led: pink
     l_lowerrightpop_inside2_led: pink
     l_lowerdrop_circle_led: pink
     l_middledrop_circle_led: pink
-    l_dropbank_rectangle_led: pink
+#    l_dropbank_rectangle_led: pink
 - duration: 50ms
   lights:
     l_wizardindicator2_rectangle_led: off
@@ -73,12 +73,12 @@
     l_supercircle3_led: off
     l_supercircle4_led: off
     l_supercircle5_led: off
-    l_lowerpop_smallarrow_led: off
+#    l_lowerpop_smallarrow_led: off
     l_lowerrightpop_inside_led: off
     l_lowerrightpop_inside2_led: off
     l_lowerdrop_circle_led: off
     l_middledrop_circle_led: off
-    l_dropbank_rectangle_led: off
+#    l_dropbank_rectangle_led: off
     l_leftramp_arrow_led: pink
     l_dropstandup_flasher_led: pink
     l_leftorbitbattery_rectangle_led: pink
@@ -122,8 +122,8 @@
     l_innerloopcombo_circle_led: off
     l_leftorbit_arrow_led: off
     l_rightrampcombo_circle_led: off
-    l_upperleftpop_inside_led: pink
-    l_uppercenterpop_inside_led: pink
+#    l_upperleftpop_inside_led: pink
+#    l_uppercenterpop_inside_led: pink
     l_upperpop_smallarrow_led: pink
     l_scoopcombo_circle_led: pink
     l_rightorbit_arrow_led: pink
@@ -136,8 +136,8 @@
     l_scoop_arrow_led: pink
 - duration: 50ms
   lights:
-    l_upperleftpop_inside_led: off
-    l_uppercenterpop_inside_led: off
+#    l_upperleftpop_inside_led: off
+#    l_uppercenterpop_inside_led: off
     l_upperpop_smallarrow_led: off
     l_scoopcombo_circle_led: off
     l_rightorbit_arrow_led: off

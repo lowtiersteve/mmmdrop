@@ -2201,20 +2201,20 @@ achievements:
     start_enabled: True
     restart_on_next_ball_when_started: True
   chcheckitout_multiball:
-    show_tokens:
-      lights: l_cassetteleft_led
-    show_when_started: flash
-    show_when_completed: on
+#    show_tokens:
+#      lights: l_cassetteleft_led
+#    show_when_started: flash
+#    show_when_completed: on
     start_events: multiball_chcheckitout_started
     complete_events: chcheckitout_superjackpot_hit
     reset_events: game_start_over
     start_enabled: True
     restart_on_next_ball_when_started: True
   bodymovin_multiball:
-    show_tokens:
-      lights: l_cassetteright_led
-    show_when_started: flash
-    show_when_completed: on
+#    show_tokens:
+#      lights: l_cassetteright_led
+#    show_when_started: flash
+#    show_when_completed: on
     start_events: multiball_bodymovin_started
     complete_events: bodymovin_superjackpot_hit
     reset_events: game_start_over

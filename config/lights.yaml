@@ -27,11 +27,11 @@ lights:
     subtype: led
     type: rgb
     label: "Right Orbit Arrow"
-  l_lowerpop_smallarrow_led:
-    number: lightboard-6-1
-    subtype: led
-    type: rgb
-    label: "Lower Pop Arrow"
+#  l_lowerpop_smallarrow_led:
+#    number: lightboard-6-1
+#    subtype: led
+#    type: rgb
+#    label: "Lower Pop Arrow"
   l_lowerrightstandup_circle_led:
     number: lightboard-2-1
     subtype: led
@@ -68,16 +68,16 @@ lights:
     type: rgb
     label: "Behind Drops Standup Flasher"
     fade_ms: 500
-  l_upperleftpop_inside_led:
-    number: lightboard-6-3
-    subtype: led
-    type: rgb
-    label: "Upper Left Pop Inside"
-  l_uppercenterpop_inside_led:
-    number: lightboard-6-4
-    subtype: led
-    type: rgb
-    label: "Upper Right Pop Inside"
+#  l_upperleftpop_inside_led:
+#    number: lightboard-6-3
+#    subtype: led
+#    type: rgb
+#    label: "Upper Left Pop Inside"
+#  l_uppercenterpop_inside_led:
+#    number: lightboard-6-4
+#    subtype: led
+#    type: rgb
+#    label: "Upper Right Pop Inside"
   l_lowerrightpop_inside_led:
     number: lightboard-2-10
     subtype: led
@@ -88,11 +88,11 @@ lights:
     subtype: led
     type: rgb
     label: "Lower Right Pop Inside 2"
-  l_dropbank_rectangle_led:
-    number: lightboard-6-6
-    subtype: led
-    type: rgb
-    label: "Drops 2x Scoring Square"
+#  l_dropbank_rectangle_led:
+#    number: lightboard-6-6
+#    subtype: led
+#    type: rgb
+#    label: "Drops 2x Scoring Square"
   l_leftoutlane_circle_led:
     number: lightboard-4-18
     subtype: led
@@ -255,16 +255,16 @@ lights:
     type: rgb
     label: "Super Circle 5 - Combos"
     fade_ms: 500
-  l_cassetteleft_led:
-    number: lightboard-6-7
-    subtype: led
-    type: rgb
-    label: "Cassette Left Mini Circle"
-  l_cassetteright_led:
-    number: lightboard-6-8
-    subtype: led
-    type: rgb
-    label: "Cassette Right Mini Circle"
+#  l_cassetteleft_led:
+#    number: lightboard-6-7
+#    subtype: led
+#    type: rgb
+#    label: "Cassette Left Mini Circle"
+#  l_cassetteright_led:
+#    number: lightboard-6-8
+#    subtype: led
+#    type: rgb
+#    label: "Cassette Right Mini Circle"
   l_leftramprectangle_led:
     number: lightboard-3-3
     subtype: led
@@ -414,10 +414,10 @@ blinkenlights:
     off_when_multiple: false
     color_duration: 300ms
     light: l_ballsave_circle_led
-  bl_lowerpop_smallarrow_led:
-    off_when_multiple: false
-    color_duration: 750ms
-    light: l_lowerpop_smallarrow_led
+#  bl_lowerpop_smallarrow_led:
+#    off_when_multiple: false
+#    color_duration: 750ms
+#    light: l_lowerpop_smallarrow_led
   bl_lowerrightpop_inside_led:
     off_when_multiple: false
     color_duration: 750ms
@@ -426,12 +426,12 @@ blinkenlights:
     off_when_multiple: false
     color_duration: 750ms
     light: l_lowerrightpop_inside2_led
-  bl_upperleftpop_inside_led:
-    off_when_multiple: false
-    color_duration: 750ms
-    light: l_upperleftpop_inside_led
-  bl_uppercenterpop_inside_led:
-    off_when_multiple: false
-    color_duration: 750ms
-    light: l_uppercenterpop_inside_led
+#  bl_upperleftpop_inside_led:
+#    off_when_multiple: false
+#    color_duration: 750ms
+#    light: l_upperleftpop_inside_led
+#  bl_uppercenterpop_inside_led:
+#    off_when_multiple: false
+#    color_duration: 750ms
+#    light: l_uppercenterpop_inside_led
 

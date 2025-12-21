@@ -4,8 +4,8 @@
   lights:
     l_leftorbit_arrow_led: Blue
     l_leftramp_arrow_led: Red
-    l_upperleftpop_inside_led: Blue
-    l_uppercenterpop_inside_led: Red
+#    l_upperleftpop_inside_led: Blue
+#    l_uppercenterpop_inside_led: Red
     l_lowerrightpop_inside_led: Blue
     l_lowerrightpop_inside2_led: Red
     l_rightramp_arrow_led: Blue
@@ -14,8 +14,8 @@
   lights:
     l_leftorbit_arrow_led: Red
     l_leftramp_arrow_led: Blue
-    l_upperleftpop_inside_led: Red
-    l_uppercenterpop_inside_led: Blue
+#    l_upperleftpop_inside_led: Red
+#    l_uppercenterpop_inside_led: Blue
     l_lowerrightpop_inside_led: Red
     l_lowerrightpop_inside2_led: Blue
     l_rightramp_arrow_led: Red
