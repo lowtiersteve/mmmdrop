@@ -7,22 +7,26 @@ mode:
 sequence_shots:
   left_orbit_sequence:
     switch_sequence: s_left_orbit, s_right_orbit
-    sequence_timeout: 3s
+    sequence_timeout: 2s
+    cancel_events: right_orbit_hit
   right_orbit_sequence:
     switch_sequence: s_right_orbit, s_left_orbit
-    sequence_timeout: 3s
+    sequence_timeout: 2s
+    cancel_events: left_orbit_hit, inner_loop_hit
   inner_loop_sequence:
     switch_sequence: s_inner_orbit, s_right_orbit
     sequence_timeout: 2s
   inner_loop_backdoor_sequence:
     switch_sequence: s_inner_orbit, s_scoop
-    sequence_timeout: 3s
+    sequence_timeout: 2s
   left_orbit_backdoor_sequence:
     switch_sequence: s_left_orbit, s_scoop
-    sequence_timeout: 3s
+    sequence_timeout: 2s
+    cancel_events: right_orbit_hit
   right_orbit_backdoor_sequence:
     switch_sequence: s_right_orbit, s_scoop
-    sequence_timeout: 3s
+    sequence_timeout: 2s
+    cancel_events: left_orbit_hit
 
 
 shots:
@@ -728,7 +732,7 @@ sound_player:
     base_game_random_music:
       action: stop
       bus: music
-  scoop_hit{device.achievements.wizard1.state==enabled}:
+  scoop_hit{device.achievements.wizard1.state=="enabled"}:
     base_game_random_music:
       action: stop
       bus: music
@@ -1460,7 +1464,7 @@ sequences:
     events_when_complete: drops_standup_start_multiball
     disable_events: achievement_wizard1_state_enabled, mode_bodymovin_started, mode_girls_started
     enable_events: mode_bodymovin_stopped{current_player.chcheckitout_qualified_flag==0}, mode_makesomenoise_stopped{current_player.chcheckitout_qualified_flag==0}, mode_girls_stopped{current_player.chcheckitout_qualified_flag==0}
-    reset_on_complete: True
+    reset_on_complete: False
     disable_on_complete: True
     persist_state: True
     restart_events: ball_started{current_player.ball==1 or current_player.chcheckitout_qualified_flag==0}, mode_chcheckitout_stopped
@@ -1470,7 +1474,7 @@ sequences:
     restart_events: drops_standup_start_multiball, ball_started{current_player.chcheckitout_qualified_flag==1}, mode_makesomenoise_stopped{current_player.chcheckitout_qualified_flag==1}, multiball_bodymovin_ended{current_player.chcheckitout_qualified_flag==1}
     events_when_complete: chcheckitout_start_multiball
     disable_events: achievement_wizard1_state_enabled, mode_bodymovin_started, mode_girls_started
-    reset_on_complete: True
+    reset_on_complete: False
     disable_on_complete: True
     enable_events: mode_bodymovin_stopped{current_player.chcheckitout_qualified_flag==1}, mode_makesomenoise_stopped{current_player.chcheckitout_qualified_flag==1}, mode_girls_stopped{current_player.chcheckitout_qualified_flag==1}
     persist_state: True
@@ -1480,7 +1484,7 @@ sequences:
       - lock_standups_complete{current_player.chcheckitout_multiball_blocking_flag==0}
     events_when_complete: bodymovin_lock_1_enabled
     disable_events: achievement_wizard1_state_enabled, mode_chcheckitout_started, mode_girls_started
-    reset_on_complete: True
+    reset_on_complete: False
     start_enabled: False
     disable_on_complete: True
     persist_state: True
@@ -1531,7 +1535,7 @@ sequences:
     enable_events: bodymovin_lock_3_enabled
     disable_events: achievement_wizard1_state_enabled, mode_chcheckitout_started, mode_girls_started
     events_when_complete: bodymovin_start_multiball
-    reset_on_complete: True
+    reset_on_complete: False
     disable_on_complete: True
     persist_state: True
     restart_events: bodymovin_lock_3_enabled, ball_started{current_player.bodymovin_multiball_qualified_flag==1}, mode_bodymovin_stopped{current_player.bodymovin_multiball_qualified_flag==1}, mode_chcheckitout_stopped{current_player.bodymovin_multiball_qualified_flag==1}, mode_makesomenoise_stopped{current_player.bodymovin_multiball_qualified_flag==1}, mode_girls_stopped{current_player.bodymovin_multiball_qualified_flag==1}
@@ -1667,7 +1671,7 @@ show_player:
     GI_on:
       action: play
       priority: 10000
-  mode_base_started{current_player.chcheckitout_qualified_flag==1 and device.achievements.wizard1.state!=enabled}:
+  mode_base_started{current_player.chcheckitout_qualified_flag==1 and device.achievements.wizard1.state!="enabled"}:
     chcheckitout_lit_strobe:
       action: play
       priority: 10000
@@ -1722,7 +1726,7 @@ show_player:
     girls_ready:
       action: play
       loops: -1
-  mode_base_started{device.achievements.wizard1.state==enabled}:
+  mode_base_started{device.achievements.wizard1.state=="enabled"}:
     makesomenoise_mode_qualified_light:
       action: play
       loops: -1
@@ -1866,24 +1870,24 @@ show_player:
   mode_chcheckitout_stopped:
     chcheckitout_inner_loop_shot:
       action: stop
-  mode_chcheckitout_stopped{device.achievements.girls_frenzy.state==enabled}:
+  mode_chcheckitout_stopped{device.achievements.girls_frenzy.state=="enabled"}:
     girls_ready:
       action: play
       loops: -1
-  mode_bodymovin_stopped{device.achievements.girls_frenzy.state==enabled}:
+  mode_bodymovin_stopped{device.achievements.girls_frenzy.state=="enabled"}:
     girls_ready:
       action: play
       loops: -1
-  mode_makesomenoise_stopped{device.achievements.girls_frenzy.state==enabled}:
+  mode_makesomenoise_stopped{device.achievements.girls_frenzy.state=="enabled"}:
     girls_ready:
       action: play
       loops: -1
-  mode_makesomenoise_stopped{chcheckitout_qualified_flag==1}:
+  mode_makesomenoise_stopped{current_player.chcheckitout_qualified_flag==1}:
     chcheckitout_lit_strobe:
       action: play
       loops: -1
       priority: 10000
-  mode_girls_stopped{chcheckitout_qualified_flag==1}:
+  mode_girls_stopped{current_player.chcheckitout_qualified_flag==1}:
     chcheckitout_lit_strobe:
       action: play
       loops: -1
@@ -1891,7 +1895,7 @@ show_player:
   mode_bodymovin_stopped:
     bodymovin_inner_loop_shot:
       action: stop
-  mode_bodymovin_stopped{chcheckitout_qualified_flag==1}:
+  mode_bodymovin_stopped{current_player.chcheckitout_qualified_flag==1}:
     chcheckitout_lit_strobe:
       action: play
       loops: -1
@@ -1951,11 +1955,13 @@ blinkenlight_player:
     bl_scoop_arrow_led: remove
   bodymovin_multiball_qualified:
     bl_captiveball_smallcircle_led: 4CBB17
-  mode_base_started{current_player.bodymovin_lock1_qualified_flag==1 and device.achievements.wizard1.state!=enabled}:
+  mode_bodymovin_started:
+    bl_captiveball_smallcircle_led: remove
+  mode_base_started{current_player.bodymovin_lock1_qualified_flag==1 and device.achievements.wizard1.state!="enabled"}:
     bl_scoop_arrow_led: 4CBB17
-  mode_base_started{current_player.bodymovin_lock2_qualified_flag==1 and device.achievements.wizard1.state!=enabled}:
+  mode_base_started{current_player.bodymovin_lock2_qualified_flag==1 and device.achievements.wizard1.state!="enabled"}:
     bl_scoop_arrow_led: 4CBB17
-  mode_base_started{current_player.bodymovin_multiball_qualified_flag==1 and device.achievements.wizard1.state!=enabled}:
+  mode_base_started{current_player.bodymovin_multiball_qualified_flag==1 and device.achievements.wizard1.state!="enabled"}:
     bl_captiveball_smallcircle_led: 4CBB17
   mode_makesomenoise_stopped{current_player.bodymovin_lock1_qualified_flag==1}:
     bl_scoop_arrow_led: 4CBB17
@@ -1988,6 +1994,23 @@ blinkenlight_player:
   mode_girls_started:
     bl_captiveball_smallcircle_led: remove
     bl_scoop_arrow_led: remove
+    bl_lowerrightstandup_circle_led: remove
+  ball_will_end:
+    bl_captiveball_smallcircle_led: remove
+    bl_scoop_arrow_led: remove
+    bl_leftorbit_arrow_led: remove
+    bl_leftramp_arrow_led: remove
+    bl_rightramp_arrow_led: remove
+    bl_rightorbit_arrow_led: remove
+    bl_innerloop_arrow_led: remove
+    bl_lowerrightstandup_circle_led: remove
+    bl_dropstandup_flasher_led: remove
+    bl_upperpop_smallarrow_led: remove
+    bl_tshirttopcircle_led: remove
+    bl_tshirtbottomcircle_led: remove
+    bl_lowerrightpop_inside_led: remove
+    bl_lowerrightpop_inside2_led: remove
+
 
 
 widget_player:
@@ -2272,7 +2295,7 @@ achievements:
     restart_on_next_ball_when_started: True
   girls_frenzy:
     enable_events: start_girls_achievement
-    start_events: pop_standup_hit{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state!='enabled'}
+    start_events: pop_standup_hit{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state!="enabled"}
     complete_events: mode_girls_started
     reset_events: game_start_over
     start_enabled: False

@@ -8,7 +8,7 @@ mode:
 
 
 mode_settings:
-  selectable_items: intergalactic{not device.achievements.intergalactic_mode.state=='completed'}, paulrevere{not device.achievements.paulrevere_mode.state=='completed'}, tripletrouble{not device.achievements.tripletrouble_mode.state=='completed'}, sabotage{not device.achievements.sabotage_mode.state=='completed'}, highplainsdrifter{not device.achievements.highplainsdrifter_mode.state=='completed'}, threemcsand1dj{not device.achievements.threemcsand1dj_mode.state=='completed'}, toomanyrappers{not device.achievements.toomanyrappers_mode.state=='completed'}, fingerlickingood{not device.achievements.fingerlickingood_mode.state=='completed'}
+  selectable_items: intergalactic{not device.achievements.intergalactic_mode.state=="completed"}, paulrevere{not device.achievements.paulrevere_mode.state=="completed"}, tripletrouble{not device.achievements.tripletrouble_mode.state=="completed"}, sabotage{not device.achievements.sabotage_mode.state=="completed"}, highplainsdrifter{not device.achievements.highplainsdrifter_mode.state=="completed"}, threemcsand1dj{not device.achievements.threemcsand1dj_mode.state=="completed"}, toomanyrappers{not device.achievements.toomanyrappers_mode.state=="completed"}, fingerlickingood{not device.achievements.fingerlickingood_mode.state=="completed"}
   select_item_events: scoop_hit{current_player.battery_charged_yesorno==1}
   next_item_events: pop1_hit, pop2_hit, carousel_advance, carousel_advance_2, carousel_advance_3, carousel_advance_4, carousel_advance_5, carousel_advance_6, carousel_advance_7
   previous_item_events: pop3_hit
@@ -89,60 +89,60 @@ random_event_player:
 
 
 show_player:
-  item_highlighted{item=='intergalactic'}:
+  item_highlighted{item=="intergalactic"}:
     intergalactic_mode_lit:
       action: play
       loops: -1
-  item_highlighted{item!='intergalactic'}:
+  item_highlighted{item!="intergalactic"}:
     intergalactic_mode_lit:
       action: stop
-  item_highlighted{item=='paulrevere'}:
+  item_highlighted{item=="paulrevere"}:
     paulrevere_mode_lit:
       action: play
       loops: -1
-  item_highlighted{item!='paulrevere'}:
+  item_highlighted{item!="paulrevere"}:
     paulrevere_mode_lit:
       action: stop
-  item_highlighted{item=='tripletrouble'}:
+  item_highlighted{item=="tripletrouble"}:
     tripletrouble_mode_lit:
       action: play
       loops: -1
-  item_highlighted{item!='tripletrouble'}:
+  item_highlighted{item!="tripletrouble"}:
     tripletrouble_mode_lit:
       action: stop
-  item_highlighted{item=='sabotage'}:
+  item_highlighted{item=="sabotage"}:
     sabotage_mode_lit:
       action: play
       loops: -1
-  item_highlighted{item!='sabotage'}:
+  item_highlighted{item!="sabotage"}:
     sabotage_mode_lit:
       action: stop
-  item_highlighted{item=='fingerlickingood'}:
+  item_highlighted{item=="fingerlickingood"}:
     fingerlickingood_mode_lit:
       action: play
       loops: -1
-  item_highlighted{item!='fingerlickingood'}:
+  item_highlighted{item!="fingerlickingood"}:
     fingerlickingood_mode_lit:
       action: stop
-  item_highlighted{item=='toomanyrappers'}:
+  item_highlighted{item=="toomanyrappers"}:
     toomanyrappers_mode_lit:
       action: play
       loops: -1
-  item_highlighted{item!='toomanyrappers'}:
+  item_highlighted{item!="toomanyrappers"}:
     toomanyrappers_mode_lit:
       action: stop
-  item_highlighted{item=='threemcsand1dj'}:
+  item_highlighted{item=="threemcsand1dj"}:
     threemcsand1dj_mode_lit:
       action: play
       loops: -1
-  item_highlighted{item!='threemcsand1dj'}:
+  item_highlighted{item!="threemcsand1dj"}:
     threemcsand1dj_mode_lit:
       action: stop
-  item_highlighted{item=='highplainsdrifter'}:
+  item_highlighted{item=="highplainsdrifter"}:
     highplainsdrifter_mode_lit:
       action: play
       loops: -1
-  item_highlighted{item!='highplainsdrifter'}:
+  item_highlighted{item!="highplainsdrifter"}:
     highplainsdrifter_mode_lit:
       action: stop
 

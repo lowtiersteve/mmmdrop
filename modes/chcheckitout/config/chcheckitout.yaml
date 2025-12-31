@@ -179,7 +179,7 @@ blinkenlight_player:
       color: red
 
 random_event_player:
-  multiball_chcheckitout_started:
+  mode_chcheckitout_started:
     events:
       - play_chcheckitout_video1
       - play_chcheckitout_video2

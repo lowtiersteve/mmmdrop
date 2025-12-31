@@ -94,7 +94,7 @@ sequences:
   highplainsdrifter_right_orbit:
     events:
       - right_orbit_hit
-    events_when_complete: highplainsdrifter_left_orbit_1_done
+    events_when_complete: highplainsdrifter_right_orbit_1_done
     disable_events: left_orbit_hit, left_ramp_hit, inner_loop_hit, right_ramp_hit
     reset_on_complete: False
     restart_events: timer_highplainsdrifter_intro_show_complete, highplainsdrifter_second_shot_hit{device.counters.highplainsdrifter_shots_counter!=0}
@@ -259,13 +259,6 @@ shot_profiles:
       - name: "off"
         show: "off"
     loop: False
-
-
-show_player:
-  highplainsdrifter_shot_1_done:
-    highplainsdrifter_final_shot:
-      action: play
-      loops: -1
 
 
 blinkenlight_player:

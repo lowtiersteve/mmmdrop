@@ -27,9 +27,9 @@ slide_player:
 
 sound_player:
   mode_bodymovin_started{current_player.mode_blocking_flag==0}:
-    base_game_random_music:
-      action: stop
-      bus: music
+#    base_game_random_music:
+#      action: stop
+#      bus: music
     bodymovinmultiballmusic:
       action: replace
       bus: music
@@ -133,7 +133,6 @@ show_player:
       action: stop
 
 
-
 blinkenlight_player:
   mode_bodymovin_started:
     bl_leftorbit_arrow_led:
@@ -145,7 +144,6 @@ blinkenlight_player:
     bl_rightorbit_arrow_led:
       color: 4CBB17
     bl_captiveball_smallcircle_led: remove
-
   bodymovin_leftorbit_jackpot_hit:
     bl_leftorbit_arrow_led: remove
   bodymovin_leftramp_jackpot_hit:

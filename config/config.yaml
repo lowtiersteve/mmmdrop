@@ -247,7 +247,7 @@ shot_profiles:
       - name: flashing
         show: flash
       - name: unlit
-        show: off
+        show: "off" ##remove quotes if this breaks
     loop: False
 
 

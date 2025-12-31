@@ -10,7 +10,7 @@ counters:
   threemcsand1dj_scratches_counter:
     count_events: inner_loop_hit
     events_when_complete: threemcsand1dj_scratches_counter_complete
-    starting_count: 5
+    starting_count: 3
     count_complete_value: 0
     count_interval: 1
     direction: down
@@ -34,7 +34,7 @@ variable_player:
       int: 1
       action: set
     threemcsand1dj_scratches_remaining:
-      int: 5
+      int: 3
       action: set
   pop1_hit:
     threemcsand1dj_scratch_value:
