@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://c5h361lpjj5ro"]
+
+[ext_resource type="Script" uid="uid://bp5npfvnd6fvx" path="res://addons/mpf-gmc/classes/mpf_widget.gd" id="1_r2fuu"]
+[ext_resource type="Texture2D" uid="uid://bkefo3ypynarq" path="res://assets/mca_color.png" id="2_r2fuu"]
+
+[node name="mca_circle" type="Control"]
+top_level = true
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_r2fuu")
+metadata/_custom_type_script = "uid://bp5npfvnd6fvx"
+
+[node name="mca_color" type="Sprite2D" parent="."]
+position = Vector2(1582, 476)
+scale = Vector2(0.065, 0.065)
+texture = ExtResource("2_r2fuu")

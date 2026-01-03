@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://dc210ga061ctf"]
+
+[ext_resource type="Script" uid="uid://bp5npfvnd6fvx" path="res://addons/mpf-gmc/classes/mpf_widget.gd" id="1_riikd"]
+[ext_resource type="Script" uid="uid://b3ni1cjx2r6sx" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="2_8k5xi"]
+[ext_resource type="Texture2D" uid="uid://bobw7oi6vt4e2" path="res://assets/bonus_characters_mmm.png" id="3_riikd"]
+
+[node name="bonus_characters_mmm" type="Control"]
+top_level = true
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_riikd")
+metadata/_custom_type_script = "uid://bp5npfvnd6fvx"
+
+[node name="mmm_color" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+script = ExtResource("2_8k5xi")
+variable_name = "adroc_collected"
+min_digits = 1
+initialize_empty = false
+metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"
+
+[node name="mmm_color" type="Sprite2D" parent="mmm_color"]
+position = Vector2(948, 540)
+texture = ExtResource("3_riikd")

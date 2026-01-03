@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dn0g7wi1tkrgd"]
+
+[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_wqo4o"]
+[ext_resource type="Texture2D" uid="uid://d1vde3mswmmj1" path="res://assets/bonus_characters_base.png" id="2_wqo4o"]
+
+[node name="bonus_characters_slide" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_wqo4o")
+metadata/_custom_type_script = "uid://d15ukepy10pan"
+
+[node name="characters_bw" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("2_wqo4o")

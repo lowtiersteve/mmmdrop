@@ -1,0 +1,7 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://cvbwd5x80qf3e"]
+
+[ext_resource type="AudioStream" uid="uid://cowggd0nvhmsg" path="res://sounds/chcheckitoutremix.ogg" id="1_jugnd"]
+
+[resource]
+streams_count = 1
+stream_0/stream = ExtResource("1_jugnd")

@@ -12,10 +12,10 @@ metadata/_custom_type_script = "uid://d15ukepy10pan"
 
 [node name="ScratchValue" type="Label" parent="."]
 layout_mode = 0
-offset_left = 519.0
-offset_top = 608.0
-offset_right = 928.0
-offset_bottom = 737.0
+offset_left = 447.0
+offset_top = 496.0
+offset_right = 856.0
+offset_bottom = 625.0
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("2_x16st")
 theme_override_font_sizes/font_size = 61
@@ -25,10 +25,10 @@ horizontal_alignment = 1
 
 [node name="MPFVariable" type="Label" parent="."]
 layout_mode = 0
-offset_left = 400.0
-offset_top = 745.0
-offset_right = 1041.0
-offset_bottom = 818.0
+offset_left = 328.0
+offset_top = 633.0
+offset_right = 969.0
+offset_bottom = 706.0
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("2_x16st")
 theme_override_font_sizes/font_size = 71

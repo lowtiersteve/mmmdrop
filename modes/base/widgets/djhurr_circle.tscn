@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://gjvpvijwrtvu"]
+
+[ext_resource type="Script" uid="uid://bp5npfvnd6fvx" path="res://addons/mpf-gmc/classes/mpf_widget.gd" id="1_jvofu"]
+[ext_resource type="Texture2D" uid="uid://baeh65dhl3ctm" path="res://assets/djhurr_color.png" id="2_jvofu"]
+
+[node name="djhurr_circle" type="Control"]
+top_level = true
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_jvofu")
+metadata/_custom_type_script = "uid://bp5npfvnd6fvx"
+
+[node name="djhurr_color" type="Sprite2D" parent="."]
+position = Vector2(1779, 583)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("2_jvofu")

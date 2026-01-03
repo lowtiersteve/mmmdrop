@@ -12,10 +12,10 @@ metadata/_custom_type_script = "uid://d15ukepy10pan"
 
 [node name="DriftsRemaining" type="Label" parent="."]
 layout_mode = 0
-offset_left = 549.0
-offset_top = 483.0
-offset_right = 1413.0
-offset_bottom = 612.0
+offset_left = 1.0
+offset_top = 299.0
+offset_right = 1917.0
+offset_bottom = 428.0
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("2_lv7pm")
 theme_override_font_sizes/font_size = 61
@@ -25,10 +25,10 @@ horizontal_alignment = 1
 
 [node name="MPFVariable" type="Label" parent="."]
 layout_mode = 0
-offset_left = 888.0
-offset_top = 632.0
-offset_right = 1047.0
-offset_bottom = 705.0
+offset_left = 6.0
+offset_top = 448.0
+offset_right = 1918.0
+offset_bottom = 521.0
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("2_lv7pm")
 theme_override_font_sizes/font_size = 71

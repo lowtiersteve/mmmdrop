@@ -11,16 +11,16 @@ script = ExtResource("1_e55wh")
 metadata/_custom_type_script = "uid://d15ukepy10pan"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(984, 800)
+position = Vector2(952, 648)
 scale = Vector2(2, 2)
 texture = ExtResource("2_rahkk")
 
 [node name="mustache1x" type="Label" parent="."]
 layout_mode = 0
-offset_left = 852.0
-offset_top = 716.0
-offset_right = 1094.0
-offset_bottom = 825.0
+offset_left = 820.0
+offset_top = 564.0
+offset_right = 1062.0
+offset_bottom = 673.0
 theme_override_constants/outline_size = 30
 theme_override_fonts/font = ExtResource("2_sgdo4")
 theme_override_font_sizes/font_size = 106
@@ -29,10 +29,10 @@ horizontal_alignment = 1
 
 [node name="nextshot" type="Label" parent="."]
 layout_mode = 0
-offset_left = 744.0
-offset_top = 620.0
-offset_right = 1256.0
-offset_bottom = 707.0
+offset_left = 712.0
+offset_top = 468.0
+offset_right = 1224.0
+offset_bottom = 555.0
 theme_override_constants/outline_size = 30
 theme_override_fonts/font = ExtResource("2_sgdo4")
 theme_override_font_sizes/font_size = 61

@@ -4,19 +4,17 @@
 [ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="2_grvp4"]
 [ext_resource type="Script" uid="uid://b3ni1cjx2r6sx" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_vla77"]
 
-[node name="charges_remaining" type="Control" node_paths=PackedStringArray("animation_player")]
+[node name="charges_remaining" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_rogmx")
-animation_player = NodePath("")
 metadata/_custom_type_script = "uid://bp5npfvnd6fvx"
 
 [node name="charges_remaining" type="Node2D" parent="."]
 
 [node name="chargesneeded" type="Label" parent="charges_remaining"]
-top_level = true
 offset_left = 13.0
 offset_top = 504.0
 offset_right = 215.0

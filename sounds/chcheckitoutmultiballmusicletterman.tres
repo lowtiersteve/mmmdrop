@@ -1,0 +1,7 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://cm1aypug10ma5"]
+
+[ext_resource type="AudioStream" uid="uid://bg6dm70h1s6k0" path="res://sounds/chcheckitoutmusicletterman.ogg" id="1_by0wg"]
+
+[resource]
+streams_count = 1
+stream_0/stream = ExtResource("1_by0wg")

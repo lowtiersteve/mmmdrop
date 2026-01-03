@@ -40,7 +40,7 @@ _data = {
 &"SlideInLeft": SubResource("Animation_p77hr")
 }
 
-[node name="MPFWidget" type="Control"]
+[node name="credits" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0

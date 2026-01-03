@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://b0heygs3ok02f"]
 
 [ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_6na7y"]
-[ext_resource type="VideoStream" uid="uid://ca82rxram6lhg" path="res://modes/chcheckitout/slides/ChCheckItOutLettermanVideo066s.ogv" id="2_6na7y"]
+[ext_resource type="VideoStream" uid="uid://re5grbei7lac" path="res://modes/chcheckitout/slides/ChCheckItOutLettermanVid.ogv" id="2_p7oyy"]
 [ext_resource type="Script" uid="uid://bf2dsnm46ji2e" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_bvmtq"]
 
 [node name="chcheckitout" type="Control"]
@@ -15,7 +15,7 @@ custom_minimum_size = Vector2(1920, 1080)
 layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
-stream = ExtResource("2_6na7y")
+stream = ExtResource("2_p7oyy")
 autoplay = true
 expand = true
 script = ExtResource("3_bvmtq")

@@ -344,7 +344,18 @@ widget_player:
       priority: 901000
 
 sound_player:
-  scoop_hit{device.counters.battery_charged_status.enabled==True and device.counters.battery_charged_status.value>0}:
-    batterycharger_callout:
+  batterychargercallout1:
+    batterycharger_callout1:
       action: play
       bus: voice
+  batterychargercallout2:
+    batterycharger_callout2:
+      action: play
+      bus: voice
+
+
+random_event_player:
+  scoop_hit{device.counters.battery_charged_status.enabled==True and device.counters.battery_charged_status.value>0}:
+    events:
+      - batterychargercallout1
+      - batterychargercallout2

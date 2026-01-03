@@ -6,7 +6,7 @@
 [ext_resource type="Script" uid="uid://b3ni1cjx2r6sx" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="4_1367i"]
 [ext_resource type="Script" uid="uid://dhkurvlb7ig52" path="res://addons/mpf-gmc/classes/mpf_conditional_children.gd" id="5_x3xu8"]
 
-[node name="bonus_start_slide" type="Control"]
+[node name="bonus_combos_slide" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_kq101")
@@ -17,7 +17,7 @@ position = Vector2(944, 584)
 scale = Vector2(9, 9)
 texture = ExtResource("2_kq101")
 
-[node name="modesplayed" type="Label" parent="."]
+[node name="comboshit" type="Label" parent="."]
 layout_mode = 0
 offset_left = 432.0
 offset_top = 272.0
@@ -28,7 +28,7 @@ theme_override_fonts/font = ExtResource("3_tw2yc")
 theme_override_font_sizes/font_size = 136
 text = "Combos Hit:"
 
-[node name="modesplayed2" type="Label" parent="."]
+[node name="x25000" type="Label" parent="."]
 layout_mode = 0
 offset_left = 736.0
 offset_top = 504.0
@@ -39,7 +39,7 @@ theme_override_fonts/font = ExtResource("3_tw2yc")
 theme_override_font_sizes/font_size = 136
 text = "X 25,000 ="
 
-[node name="combos_count" type="Label" parent="."]
+[node name="combos" type="Label" parent="."]
 layout_mode = 0
 offset_left = 264.0
 offset_top = 520.0

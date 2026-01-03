@@ -143,7 +143,6 @@ shot_profiles:
     advance_on_hit: False
     states:
       - name: off
-        show: "off"
     loop: False
   ball_lock_profile:
     advance_on_hit: true
@@ -156,7 +155,6 @@ shot_profiles:
   lane_profile:
     states:
       - name: unlit
-        show: "off"
       - name: lit
         show: "lane_lit"
 
@@ -170,9 +168,8 @@ shot_groups:
       sg_lanes_lit_complete: 1s
   sg_tshirts:
     shots: tshirt_top_standup, tshirt_bottom_standup
-    restart_events: bodymovin_ball_1_locked, bodymovin_ball_2_locked, multiball_bodymovin_ended, ball_started{current_player.ball==1}
+    restart_events: bodymovin_ball_1_locked, bodymovin_ball_2_locked, multiball_bodymovin_ended, ball_started{current_player.ball!=1 and current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_bodymovin_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_chcheckitout_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_makesomenoise_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_girls_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, ball_started{current_player.ball==1 or current_player.bodymovin_lock1_locked_flag==1}, mode_bodymovin_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_chcheckitout_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_makesomenoise_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_girls_stopped{current_player.bodymovin_lock1_locked_flag==1}, ball_started{current_player.bodymovin_lock2_locked_flag==1}, mode_bodymovin_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_chcheckitout_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_makesomenoise_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_girls_stopped{current_player.bodymovin_lock2_locked_flag==1}
     disable_events: bodymovin_lock_1_enabled, bodymovin_lock_2_enabled, bodymovin_lock_3_enabled, mode_makesomenoise_started, mode_chcheckitout_started, mode_girls_started, ball_will_end
-    enable_events: mode_makesomenoise_stopped, mode_chcheckitout_stopped, mode_girls_stopped
 
 
 slide_player:
@@ -183,6 +180,9 @@ slide_player:
     score_overlay:
       action: play
       priority: 900000
+    super_circles:
+      action: play
+      priority: 900005
     attract:
       action: remove
     ghostbusters:
@@ -211,19 +211,19 @@ slide_player:
       action: play
       priority: 980000
       expire: 7s
-  mode_paulrevere_stop:
+  mode_paulrevere_stop{current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     paulrevere:
       action: remove
     base:
       action: play
       priority: 5000
-  mode_paulrevere_failed:
+  mode_paulrevere_failed{current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     paulrevere:
       action: remove
     base:
       action: play
       priority: 5000
-  mode_paulrevere_success:
+  mode_paulrevere_success{current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     paulrevere:
       action: remove
     base:
@@ -233,6 +233,24 @@ slide_player:
       action: play
       priority: 950000
       expire: 3s
+  mode_paulrevere_stop{current_player.chcheckitout_multiball_blocking_flag==1}:
+    paulrevere:
+      action: remove
+  mode_paulrevere_failed{current_player.chcheckitout_multiball_blocking_flag==1}:
+    paulrevere:
+      action: remove
+  mode_paulrevere_success{current_player.chcheckitout_multiball_blocking_flag==1}:
+    paulrevere:
+      action: remove
+  mode_paulrevere_stop{current_player.bodymovin_multiball_blocking_flag==1}:
+    paulrevere:
+      action: remove
+  mode_paulrevere_failed{current_player.bodymovin_multiball_blocking_flag==1}:
+    paulrevere:
+      action: remove
+  mode_paulrevere_success{current_player.bodymovin_multiball_blocking_flag==1}:
+    paulrevere:
+      action: remove
   mode_tripletrouble_stop:
     tripletrouble:
       action: remove
@@ -483,11 +501,11 @@ slide_player:
       action: play
       priority: 980000
       expire: 6s
-  skillshot_lit_hit:
-    skillshot_success_overlay:
-      action: play
-      priority: 1000000
-      expire: 2s
+#  skillshot_lit_hit:
+#    skillshot_success_overlay:
+#      action: play
+#      priority: 1000000
+#      expire: 2s
   mode_chcheckitout_stopped{current_player.mode_blocking_flag==0}:
     multiball1:
       action: remove
@@ -609,6 +627,8 @@ slide_player:
     intergalactic_display_timer:
       action: remove
     score_overlay:
+      action: remove
+    super_circles:
       action: remove
     current_mode_highlighted:
       action: remove
@@ -745,11 +765,6 @@ sound_player:
       action: play
       bus: music
       loops: 3
-  mode_paulrevere_success{current_player.chcheckitout_multiball_blocking_flag==1}:
-    chcheckitoutmultiballmusic:
-      action: play
-      bus: music
-      loops: 5
   mode_paulrevere_success{current_player.bodymovin_multiball_blocking_flag==1}:
     bodymovinmultiballmusic:
       action: play
@@ -760,11 +775,6 @@ sound_player:
       action: play
       bus: music
       loops: 3
-  mode_paulrevere_failed{current_player.chcheckitout_multiball_blocking_flag==1}:
-    chcheckitoutmultiballmusic:
-      action: play
-      bus: music
-      loops: 5
   mode_paulrevere_failed{current_player.bodymovin_multiball_blocking_flag==1}:
     bodymovinmultiballmusic:
       action: play
@@ -779,11 +789,6 @@ sound_player:
       action: play
       bus: music
       loops: 3
-  mode_intergalactic_success{current_player.chcheckitout_multiball_blocking_flag==1}:
-    chcheckitoutmultiballmusic:
-      action: play
-      bus: music
-      loops: 5
   mode_intergalactic_success{current_player.bodymovin_multiball_blocking_flag==1}:
     bodymovinmultiballmusic:
       action: play
@@ -794,11 +799,6 @@ sound_player:
       action: play
       bus: music
       loops: 3
-  mode_intergalactic_failed{current_player.chcheckitout_multiball_blocking_flag==1}:
-    chcheckitoutmultiballmusic:
-      action: play
-      bus: music
-      loops: 5
   mode_intergalactic_failed{current_player.bodymovin_multiball_blocking_flag==1}:
     bodymovinmultiballmusic:
       action: play
@@ -818,6 +818,12 @@ sound_player:
     chcheckitoutmultiballmusic:
       action: stop
       bus: music
+    chcheckitoutmultiballmusicremix:
+      action: stop
+      bus: music
+    chcheckitoutmultiballmusicletterman:
+      action: stop
+      bus: music
   mode_bodymovin_stopped{current_player.mode_blocking_flag==1}:
     bodymovinmultiballmusic:
       action: stop
@@ -831,11 +837,6 @@ sound_player:
       action: play
       bus: music
       loops: 3
-  mode_tripletrouble_success{current_player.chcheckitout_multiball_blocking_flag==1}:
-    chcheckitoutmultiballmusic:
-      action: play
-      bus: music
-      loops: 5
   mode_tripletrouble_success{current_player.bodymovin_multiball_blocking_flag==1}:
     bodymovinmultiballmusic:
       action: play
@@ -846,11 +847,6 @@ sound_player:
       action: play
       bus: music
       loops: 3
-  mode_tripletrouble_failed{current_player.chcheckitout_multiball_blocking_flag==1}:
-    chcheckitoutmultiballmusic:
-      action: play
-      bus: music
-      loops: 5
   mode_tripletrouble_failed{current_player.bodymovin_multiball_blocking_flag==1}:
     bodymovinmultiballmusic:
       action: play
@@ -865,11 +861,6 @@ sound_player:
       action: play
       bus: music
       loops: 3
-  mode_sabotage_success{current_player.chcheckitout_multiball_blocking_flag==1}:
-    chcheckitoutmultiballmusic:
-      action: play
-      bus: music
-      loops: 5
   mode_sabotage_success{current_player.bodymovin_multiball_blocking_flag==1}:
     bodymovinmultiballmusic:
       action: play
@@ -880,11 +871,6 @@ sound_player:
       action: play
       bus: music
       loops: 3
-  mode_sabotage_failed{current_player.chcheckitout_multiball_blocking_flag==1}:
-    chcheckitoutmultiballmusic:
-      action: play
-      bus: music
-      loops: 5
   mode_sabotage_failed{current_player.bodymovin_multiball_blocking_flag==1}:
     bodymovinmultiballmusic:
       action: play
@@ -899,11 +885,6 @@ sound_player:
       action: play
       bus: music
       loops: 3
-  mode_fingerlickingood_success{current_player.chcheckitout_multiball_blocking_flag==1}:
-    chcheckitoutmultiballmusic:
-      action: play
-      bus: music
-      loops: 5
   mode_fingerlickingood_success{current_player.bodymovin_multiball_blocking_flag==1}:
     bodymovinmultiballmusic:
       action: play
@@ -914,11 +895,6 @@ sound_player:
       action: play
       bus: music
       loops: 3
-  mode_fingerlickingood_failed{current_player.chcheckitout_multiball_blocking_flag==1}:
-    chcheckitoutmultiballmusic:
-      action: play
-      bus: music
-      loops: 5
   mode_fingerlickingood_failed{current_player.bodymovin_multiball_blocking_flag==1}:
     bodymovinmultiballmusic:
       action: play
@@ -933,11 +909,6 @@ sound_player:
       action: play
       bus: music
       loops: 3
-  mode_toomanyrappers_success{current_player.chcheckitout_multiball_blocking_flag==1}:
-    chcheckitoutmultiballmusic:
-      action: play
-      bus: music
-      loops: 5
   mode_toomanyrappers_success{current_player.bodymovin_multiball_blocking_flag==1}:
     bodymovinmultiballmusic:
       action: play
@@ -948,11 +919,6 @@ sound_player:
       action: play
       bus: music
       loops: 3
-  mode_toomanyrappers_failed{current_player.chcheckitout_multiball_blocking_flag==1}:
-    chcheckitoutmultiballmusic:
-      action: play
-      bus: music
-      loops: 5
   mode_toomanyrappers_failed{current_player.bodymovin_multiball_blocking_flag==1}:
     bodymovinmultiballmusic:
       action: play
@@ -967,11 +933,6 @@ sound_player:
       action: play
       bus: music
       loops: 3
-  mode_threemcsand1dj_success{current_player.chcheckitout_multiball_blocking_flag==1}:
-    chcheckitoutmultiballmusic:
-      action: play
-      bus: music
-      loops: 5
   mode_threemcsand1dj_success{current_player.bodymovin_multiball_blocking_flag==1}:
     bodymovinmultiballmusic:
       action: play
@@ -982,11 +943,6 @@ sound_player:
       action: play
       bus: music
       loops: 3
-  mode_threemcsand1dj_failed{current_player.chcheckitout_multiball_blocking_flag==1}:
-    chcheckitoutmultiballmusic:
-      action: play
-      bus: music
-      loops: 5
   mode_threemcsand1dj_failed{current_player.bodymovin_multiball_blocking_flag==1}:
     bodymovinmultiballmusic:
       action: play
@@ -1001,11 +957,6 @@ sound_player:
       action: play
       bus: music
       loops: 3
-  mode_highplainsdrifter_success{current_player.chcheckitout_multiball_blocking_flag==1}:
-    chcheckitoutmultiballmusic:
-      action: play
-      bus: music
-      loops: 5
   mode_highplainsdrifter_success{current_player.bodymovin_multiball_blocking_flag==1}:
     bodymovinmultiballmusic:
       action: play
@@ -1016,11 +967,6 @@ sound_player:
       action: play
       bus: music
       loops: 3
-  mode_highplainsdrifter_failed{current_player.chcheckitout_multiball_blocking_flag==1}:
-    chcheckitoutmultiballmusic:
-      action: play
-      bus: music
-      loops: 5
   mode_highplainsdrifter_failed{current_player.bodymovin_multiball_blocking_flag==1}:
     bodymovinmultiballmusic:
       action: play
@@ -1036,15 +982,18 @@ sound_player:
       bus: music
       loops: 3
   mode_girls_stopped:
-    girlsinstrumentalmusic:
-      action: stop
-      bus: music
     base_game_random_music:
       action: replace
       bus: music
       loops: 3
   ball_will_end:
     chcheckitoutmultiballmusic:
+      action: stop
+      bus: music
+    chcheckitoutmultiballmusicremix:
+      action: stop
+      bus: music
+    chcheckitoutmultiballmusicletterman:
       action: stop
       bus: music
     bodymovinmultiballmusic:
@@ -1093,23 +1042,11 @@ sound_player:
       action: play
       bus: voice
       priority: 6000
-      ducking:
-        bus: music
-        attack: 100ms
-        attenuation: 0.6
-        release_point: 100ms
-        release: 100ms
   ball_save_mode_start_saving_ball:
     ball_saved_callout:
       action: play
       bus: voice
       priority: 6000
-      ducking:
-        bus: music
-        attack: 100ms
-        attenuation: 0.6
-        release_point: 100ms
-        release: 100ms
   drops_standup_start_multiball:
     chcheckitout_standup_callout:
       action: play
@@ -1250,11 +1187,50 @@ variable_player:
     girls_blocking_flag:
       int: value
       action: set
+    characters_collected:
+      int: value
+      action: set
+    adroc_collected:
+      int: value
+      action: set
+    mca_collected:
+      int: value
+      action: set
+    miked_collected:
+      int: value
+      action: set
+    mmm_collected:
+      int: value
+      action: set
+    djhurr_collected:
+      int: value
+      action: set
+    chcheckitout_multiplier:
+      int: value
+      action: set
   ball_started:
     bonus_multiplier:
       int: 1
       action: set
     player_drop_target_bank_counter_count:
+      int: 0
+      action: set
+    characters_collected:
+      int: 0
+      action: set
+    adroc_collected:
+      int: 0
+      action: set
+    miked_collected:
+      int: 0
+      action: set
+    mca_collected:
+      int: 0
+      action: set
+    mmm_collected:
+      int: 0
+      action: set
+    djhurr_collected:
       int: 0
       action: set
   battery_charged:
@@ -1455,6 +1431,21 @@ variable_player:
     girls_blocking_flag:
       int: 0
       action: set
+  mode_superdrops_started:
+    characters_collected: 1
+    adroc_collected: 1
+  mode_superspins_started:
+    characters_collected: 1
+    miked_collected: 1
+  mode_superstandups_started:
+    characters_collected: 1
+    mca_collected: 1
+  mode_superpops_started:
+    characters_collected: 1
+    mmm_collected: 1
+  mode_supercombos_started:
+    characters_collected: 1
+    djhurr_collected: 1
 
 
 sequences:
@@ -1657,6 +1648,21 @@ counters:
     events_when_complete: start_girls_achievement
 
 
+ball_holds:
+  paulrevere_finish_scoop_hold:
+    balls_to_hold: 1
+    hold_devices: bd_scoop
+    enable_events: mode_paulrevere_success
+    disable_events: slide_paulrevere_success_removed
+    release_one_events: slide_paulrevere_success_removed
+  tripletrouble_finish_scoop_hold:
+    balls_to_hold: 1
+    hold_devices: bd_scoop
+    enable_events: mode_tripletrouble_success
+    disable_events: slide_tripletroublefinish_removed
+    release_one_events: slide_tripletroublefinish_removed
+
+
 random_event_player:
   slide_base_created:
     events:
@@ -1675,6 +1681,11 @@ show_player:
     chcheckitout_lit_strobe:
       action: play
       priority: 10000
+      loops: -1
+  mode_base_started{device.achievements.girls_frenzy.state=="enabled"}:
+    girls_ready:
+      action: play
+      priority: 1100000
       loops: -1
   mode_intergalactic_success:
     intergalactic_success_show:
@@ -1937,6 +1948,9 @@ show_player:
       action: play
       loops: -1
       priority: 10000
+  mode_girls_stopped:
+    girls_ready:
+      action: stop
 
 
 blinkenlight_player:
@@ -2012,7 +2026,6 @@ blinkenlight_player:
     bl_lowerrightpop_inside2_led: remove
 
 
-
 widget_player:
   mode_chcheckitout_stopped:
     chcheckitoutfinish:
@@ -2036,6 +2049,18 @@ widget_player:
     chcheckitoutfinish:
       action: remove
     bodymovinfinish:
+      action: remove
+    mmm_circle:
+      action: remove
+    miked_circle:
+      action: remove
+    adroc_circle:
+      action: remove
+    mca_circle:
+      action: remove
+    djhurr_circle:
+      action: remove
+    paulrevere_success:
       action: remove
   bodymovin_lock_1_enabled:
     bodymovin_lock_enabled_widget:
@@ -2073,6 +2098,31 @@ widget_player:
   timer_bodymovin_ball_2_locked_widget_timer_complete:
     bodymovin_ball_2_locked_widget:
       action: remove
+  mode_superpops_started:
+    mmm_circle:
+      action: play
+      priority: 900010
+      slide: super_circles
+  mode_superstandups_started:
+    mca_circle:
+      action: play
+      priority: 900010
+      slide: super_circles
+  mode_superspins_started:
+    miked_circle:
+      action: play
+      priority: 900010
+      slide: super_circles
+  mode_superdrops_started:
+    adroc_circle:
+      action: play
+      priority: 900010
+      slide: super_circles
+  mode_supercombos_started:
+    djhurr_circle:
+      action: play
+      priority: 900010
+      slide: super_circles
 
 
 timers:
@@ -2295,7 +2345,7 @@ achievements:
     restart_on_next_ball_when_started: True
   girls_frenzy:
     enable_events: start_girls_achievement
-    start_events: pop_standup_hit{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state!="enabled"}
+    start_events: pop_standup_hit{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.mode_blocking_flag==0 and device.achievements.wizard1.state!="enabled"}
     complete_events: mode_girls_started
     reset_events: game_start_over
     start_enabled: False

@@ -11,10 +11,10 @@ metadata/_custom_type_script = "uid://d15ukepy10pan"
 
 [node name="shootrightshot" type="Label" parent="."]
 layout_mode = 0
-offset_left = 584.0
-offset_top = 568.0
-offset_right = 1425.0
-offset_bottom = 901.0
+offset_left = 8.0
+offset_top = 320.0
+offset_right = 1912.0
+offset_bottom = 653.0
 theme_override_constants/outline_size = 30
 theme_override_fonts/font = ExtResource("2_k0wil")
 theme_override_font_sizes/font_size = 90

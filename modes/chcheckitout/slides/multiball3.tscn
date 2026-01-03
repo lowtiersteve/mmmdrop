@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cc3oae2qegjs6"]
 
 [ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_3ohlf"]
-[ext_resource type="VideoStream" uid="uid://cdnien7431fxn" path="res://modes/chcheckitout/slides/ChCheckItOutRemixVideo4s.ogv" id="2_3ohlf"]
+[ext_resource type="VideoStream" uid="uid://3jkvkdd8ebgl" path="res://modes/chcheckitout/slides/ChCheckItOutRemixVideo.ogv" id="2_auyg3"]
 [ext_resource type="Script" uid="uid://bf2dsnm46ji2e" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_31ql3"]
 
 [node name="chcheckitout" type="Control"]
@@ -15,7 +15,7 @@ custom_minimum_size = Vector2(1920, 1080)
 layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
-stream = ExtResource("2_3ohlf")
+stream = ExtResource("2_auyg3")
 autoplay = true
 expand = true
 script = ExtResource("3_31ql3")

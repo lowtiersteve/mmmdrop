@@ -5,7 +5,7 @@
 [ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="3_kooir"]
 [ext_resource type="Script" uid="uid://b3ni1cjx2r6sx" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="4_mfckg"]
 
-[node name="bonus_start_slide" type="Control"]
+[node name="bonus_multiplier_slide" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_4el81")

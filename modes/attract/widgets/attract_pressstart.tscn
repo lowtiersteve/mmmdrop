@@ -39,7 +39,7 @@ _data = {
 &"SlideInLeft": SubResource("Animation_s6eao")
 }
 
-[node name="attract_pressstart" type="Control" node_paths=PackedStringArray("animation_player")]
+[node name="pressstart" type="Control" node_paths=PackedStringArray("animation_player")]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0

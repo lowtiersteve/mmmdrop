@@ -87,7 +87,7 @@ slide_player:
       priority: 800000
     sabotage_display_timer:
       action: play
-      priority: 825000
+      priority: 1000000
     mustache1x:
       action: play
       priority: 830000
@@ -120,12 +120,29 @@ sound_player:
       action: play
       bus: effects
       max_queue_time: 1s
-  timer_sabotage_time_remaining_tick{current_player.sabotage_time_remaining_variable_times_1==10}:
-    ten_callout:
+  tencallout1:
+    ten_callout1:
+      action: play
+      bus: voice
+      max_queue_time: 1s
+  tencallout2:
+    ten_callout2:
+      action: play
+      bus: voice
+      max_queue_time: 1s
+  tencallout3:
+    ten_callout3:
       action: play
       bus: voice
       max_queue_time: 1s
 
+
+random_event_player:
+  timer_sabotage_time_remaining_tick{current_player.sabotage_time_remaining_variable_times_1==10}:
+    events:
+      - tencallout1
+      - tencallout2
+      - tencallout3
 
 
 ball_holds:

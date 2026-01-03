@@ -13,21 +13,22 @@ metadata/_custom_type_script = "uid://d15ukepy10pan"
 [node name="ScratchesRemaining" type="Label" parent="."]
 layout_mode = 0
 offset_left = -1.0
-offset_top = 423.0
-offset_right = 1911.0
-offset_bottom = 486.0
+offset_top = 329.0
+offset_right = 1916.0
+offset_bottom = 458.0
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("2_w6l5u")
 theme_override_font_sizes/font_size = 61
-text = "Scratches Remaining:"
+text = "Scratches 
+Remaining:"
 horizontal_alignment = 1
 
 [node name="MPFVariable" type="Label" parent="."]
 layout_mode = 0
-offset_left = 10.0
-offset_top = 521.0
+offset_left = 2.0
+offset_top = 471.0
 offset_right = 1909.0
-offset_bottom = 594.0
+offset_bottom = 544.0
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("2_w6l5u")
 theme_override_font_sizes/font_size = 71

@@ -39,7 +39,7 @@ _data = {
 &"SlideInLeft": SubResource("Animation_1f5vj")
 }
 
-[node name="attract_mpf_logo" type="Control" node_paths=PackedStringArray("animation_player")]
+[node name="mpf_logo" type="Control" node_paths=PackedStringArray("animation_player")]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0

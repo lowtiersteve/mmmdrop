@@ -1,0 +1,47 @@
+[gd_scene load_steps=4 format=3 uid="uid://besygi7uwj301"]
+
+[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_l50wf"]
+[ext_resource type="Texture2D" uid="uid://dt7hpexqpath5" path="res://assets/action_bubble.png" id="2_jaaog"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="3_aqcqb"]
+
+[node name="SkillshotOverlay" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_l50wf")
+metadata/_custom_type_script = "uid://d15ukepy10pan"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(256, 552)
+scale = Vector2(0.4, 0.415)
+texture = ExtResource("2_jaaog")
+
+[node name="Choose" type="Label" parent="."]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 384.0
+offset_right = 238.0
+offset_bottom = 444.0
+scale = Vector2(2.13139, 2.00571)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("3_aqcqb")
+theme_override_font_sizes/font_size = 20
+text = "Choose a
+skill shot"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="leftoutlane" type="Label" parent="."]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 552.0
+offset_right = 238.0
+offset_bottom = 624.0
+scale = Vector2(2.13139, 2.00571)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("3_aqcqb")
+theme_override_font_sizes/font_size = 20
+text = "left outlane:
+15 million 
++3x bonus"
+horizontal_alignment = 1
+vertical_alignment = 1

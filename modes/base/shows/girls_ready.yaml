@@ -1,5 +1,49 @@
 #show_version=6
 
-- time: 0
-  blinkenlights:
-    bl_lowerrightstandup_circle_led: red
+- duration: 200ms
+  lights:
+    l_supercircle1_led: Gold
+    l_supercircle2_led: off
+    l_lowerrightstandup_circle_led: red
+- duration: 200ms
+  lights:
+    l_lowerrightstandup_circle_led: off
+- duration: 200ms
+  lights:
+    l_supercircle2_led: Gold
+    l_supercircle1_led: off
+    l_lowerrightstandup_circle_led: red
+- duration: 200ms
+  lights:
+    l_supercircle3_led: Gold
+    l_supercircle2_led: off
+    l_lowerrightstandup_circle_led: off
+- duration: 200ms
+  lights:
+    l_supercircle4_led: Gold
+    l_supercircle3_led: off
+    l_lowerrightstandup_circle_led: red
+- duration: 200ms
+  lights:
+    l_supercircle5_led: Gold
+    l_supercircle4_led: off
+    l_lowerrightstandup_circle_led: off
+- duration: 200ms
+  lights:
+    l_lowerrightstandup_circle_led: red
+- duration: 200ms
+  lights:
+    l_supercircle4_led: Gold
+    l_supercircle5_led: off
+    l_lowerrightstandup_circle_led: off
+- duration: 200ms
+  lights:
+    l_supercircle3_led: Gold
+    l_supercircle4_led: off
+    l_lowerrightstandup_circle_led: red
+- duration: 200ms
+  lights:
+    l_supercircle2_led: Gold
+    l_supercircle3_led: off
+    l_lowerrightstandup_circle_led: off
+

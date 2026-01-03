@@ -12,22 +12,22 @@ metadata/_custom_type_script = "uid://d15ukepy10pan"
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 553.0
-offset_top = 552.0
-offset_right = 1455.0
-offset_bottom = 615.0
+offset_top = 327.0
+offset_right = 1917.0
+offset_bottom = 456.0
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("2_2qcn7")
 theme_override_font_sizes/font_size = 61
-text = "Stand-ups Remaining:"
+text = "Stand-ups 
+Remaining:"
 horizontal_alignment = 1
 
 [node name="MPFVariable" type="Label" parent="."]
 layout_mode = 0
-offset_left = 912.0
-offset_top = 662.0
-offset_right = 1071.0
-offset_bottom = 735.0
+offset_left = 2.0
+offset_top = 476.0
+offset_right = 1917.0
+offset_bottom = 549.0
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("2_2qcn7")
 theme_override_font_sizes/font_size = 71

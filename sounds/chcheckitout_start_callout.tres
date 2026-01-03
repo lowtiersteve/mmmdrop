@@ -1,8 +1,30 @@
-[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://kl0y76h53sp1"]
+[gd_resource type="Resource" script_class="MPFSoundAsset" load_steps=6 format=3 uid="uid://dsvuwwb0r7lmx"]
 
 [ext_resource type="AudioStream" uid="uid://bs034mycg8u4h" path="res://sounds/chcheckitoutmultiballcallout.ogg" id="1_8vf5w"]
+[ext_resource type="Script" uid="uid://dg58qg3qtrfxx" path="res://addons/mpf-gmc/classes/mpf_ducking.gd" id="1_stjdj"]
+[ext_resource type="Script" uid="uid://cigpnwwt6066m" path="res://addons/mpf-gmc/classes/mpf_sound_marker.gd" id="2_mgpu6"]
+[ext_resource type="Script" uid="uid://b5uwatwive0o2" path="res://addons/mpf-gmc/classes/mpf_sound.gd" id="3_08vh4"]
+
+[sub_resource type="Resource" id="Resource_dnknj"]
+script = ExtResource("1_stjdj")
+target_bus = "music"
+delay = 0.0
+attenuation = 0.8
+attack = 0.1
+release = 0.1
+release_from_start = 0.0
+release_point = 0.1
+metadata/_custom_type_script = "uid://dg58qg3qtrfxx"
 
 [resource]
-playback_mode = 1
-streams_count = 1
-stream_0/stream = ExtResource("1_8vf5w")
+script = ExtResource("3_08vh4")
+stream = ExtResource("1_8vf5w")
+bus = "voice"
+fade_in = 0.0
+fade_out = 0.0
+loops = 0
+start_at = 0.0
+max_queue_time = 0.0
+ducking = SubResource("Resource_dnknj")
+markers = Array[ExtResource("2_mgpu6")]([])
+metadata/_custom_type_script = "uid://b5uwatwive0o2"

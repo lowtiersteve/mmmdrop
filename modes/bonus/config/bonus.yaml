@@ -21,6 +21,10 @@ mode_settings:
       score: 25000
       player_score_entry: combos
       skip_if_negative: True
+    - entry: bonus_characters
+      score: 200000
+      player_score_entry: characters_collected
+      skip_if_negative: True
     - entry: bonus_girls_frenzy
       score: 1
       player_score_entry: girls_bonus_score
@@ -75,6 +79,20 @@ slide_player:
     bonus_combos_slide:
       action: play
       priority: 1000000
+  bonus_entry{entry=="bonus_characters"}:
+    bonus_start_slide:
+      action: remove
+    bonus_modes_played_slide:
+      action: remove
+    bonus_modes_completed_slide:
+      action: remove
+    bonus_time_remaining:
+      action: remove
+    bonus_combos_slide:
+      action: remove
+    bonus_characters_slide:
+      action: play
+      priority: 1000000
   bonus_entry{entry=="bonus_girls_frenzy"}:
     bonus_start_slide:
       action: remove
@@ -85,6 +103,8 @@ slide_player:
     bonus_time_remaining:
       action: remove
     bonus_combos_slide:
+      action: remove
+    bonus_characters_slide:
       action: remove
     bonus_girls_slide:
       action: play
@@ -99,6 +119,8 @@ slide_player:
     bonus_time_remaining:
       action: remove
     bonus_combos_slide:
+      action: remove
+    bonus_characters_slide:
       action: remove
     bonus_girls_slide:
       action: remove
@@ -115,6 +137,8 @@ slide_player:
     bonus_time_remaining:
       action: remove
     bonus_combos_slide:
+      action: remove
+    bonus_characters_slide:
       action: remove
     bonus_girls_slide:
       action: remove
@@ -134,6 +158,8 @@ slide_player:
       action: remove
     bonus_combos_slide:
       action: remove
+    bonus_characters_slide:
+      action: remove
     bonus_girls_slide:
       action: remove
     bonus_subtotal_slide:
@@ -143,6 +169,7 @@ slide_player:
     bonus_total_slide:
       action: play
       priority: 1000000
+
 
 sound_player:
   mode_bonus_started:
@@ -173,6 +200,10 @@ sound_player:
     bonus_sound_random:
       action: play
       bus: effects
+  slide_bonus_characters_slide_active:
+    bonus_sound_random:
+      action: play
+      bus: effects
   slide_bonus_multiplier_slide_active:
     bonus_sound_random:
       action: play
@@ -185,6 +216,39 @@ sound_player:
     bonus_sound_random:
       action: play
       bus: effects
+
+widget_player:
+  slide_bonus_characters_slide_active{current_player.mca_collected==1}:
+    bonus_characters_mca:
+      action: play
+      slide: bonus_characters_slide
+      priority: 1000001
+  slide_bonus_characters_slide_active{current_player.miked_collected==1}:
+    bonus_characters_miked:
+      action: play
+      slide: bonus_characters_slide
+      priority: 1000002
+  slide_bonus_characters_slide_active{current_player.mmm_collected==1}:
+    bonus_characters_mmm:
+      action: play
+      slide: bonus_characters_slide
+      priority: 1000003
+  slide_bonus_characters_slide_active{current_player.adroc_collected==1}:
+    bonus_characters_adroc:
+      action: play
+      slide: bonus_characters_slide
+      priority: 1000004
+  slide_bonus_characters_slide_active{current_player.djhurr_collected==1}:
+    bonus_characters_djhurr:
+      action: play
+      slide: bonus_characters_slide
+      priority: 1000005
+  slide_bonus_characters_slide_active:
+    bonus_characters_scoring:
+      action: play
+      slide: bonus_characters_slide
+      priority: 1000006
+
 
 random_event_player:
   mode_bonus_started:
@@ -204,39 +268,40 @@ random_event_player:
     - play_purple_show
     - play_yellow_show
 
+
 show_player:
   play_red_show:
     bonus_count_show_red:
       action: play
       loops: 0
-      priority: 1000
+      priority: 1000000
   play_blue_show:
     bonus_count_show_blue:
       action: play
       loops: 0
-      priority: 1000
+      priority: 1000000
   play_green_show:
     bonus_count_show_green:
       action: play
       loops: 0
-      priority: 1000
+      priority: 1000000
   play_yellow_show:
     bonus_count_show_yellow:
       action: play
       loops: 0
-      priority: 1000
+      priority: 1000000
   play_orange_show:
     bonus_count_show_orange:
       action: play
       loops: 0
-      priority: 1000
+      priority: 1000000
   play_pink_show:
     bonus_count_show_pink:
       action: play
       loops: 0
-      priority: 1000
+      priority: 1000000
   play_purple_show:
     bonus_count_show_purple:
       action: play
       loops: 0
-      priority: 1000
+      priority: 1000000
