@@ -3,10 +3,10 @@
 mode_settings:
   selectable_items:
     - gameover{machine.game_just_played==1}
-    - last_scores_1p{machine.player1_score and machine.game_just_played==1 and not machine.player2_score}
-    - last_scores_2p{machine.player2_score and machine.game_just_played==1 and not machine.player3_score}
-    - last_scores_3p{machine.player3_score and machine.game_just_played==1 and not machine.player4_score}
-    - last_scores_4p{machine.player4_score}
+    - last_scores_1p{machine.game_just_played==1 and not machine.player2_score>0}
+    - last_scores_2p{machine.player2_score>0 and machine.game_just_played==1 and not machine.player3_score>0}
+    - last_scores_3p{machine.player3_score>0 and machine.game_just_played==1 and not machine.player4_score>0}
+    - last_scores_4p{machine.player4_score>0}
     - mpf_logo
     - fast_logo
     - specialthanks
@@ -392,6 +392,21 @@ show_player:
     attract_light_show:
       action: play
       priority: 1000
+      loops: -1
+    bonus_count_show_blue:
+      action: stop
+    bonus_count_show_green:
+      action: stop
+    bonus_count_show_orange:
+      action: stop
+    bonus_count_show_pink:
+      action: stop
+    bonus_count_show_purple:
+      action: stop
+    bonus_count_show_red:
+      action: stop
+    bonus_count_show_yellow:
+      action: stop
   mode_attract_stopping:
     attract_light_show:
       action: stop

@@ -20,17 +20,24 @@ slide_player:
       action: remove
     basevideo4:
       action: remove
+  bodymovinmusic1:
+    bodymovin:
+      action: play
+      priority: 450000
+  bodymovinmusic2:
     bodymovin:
       action: play
       priority: 450000
 
 
 sound_player:
-  mode_bodymovin_started{current_player.mode_blocking_flag==0}:
-#    base_game_random_music:
-#      action: stop
-#      bus: music
-    bodymovinmultiballmusic:
+  bodymovinmusic1:
+    bodymovinmultiballmusic1:
+      action: replace
+      bus: music
+      loops: 5
+  bodymovinmusic2:
+    bodymovinmultiballmusic2:
       action: replace
       bus: music
       loops: 5
@@ -44,6 +51,17 @@ sound_player:
       action: play
       bus: voice
       max_queue_time: 1s
+
+
+random_event_player:
+  mode_bodymovin_started{current_player.mode_blocking_flag==0}:
+    events:
+      - bodymovinmusic1
+      - bodymovinmusic2
+  bodymovin_music_from_mode:
+    events:
+      - bodymovinmusic1
+      - bodymovinmusic2
 
 
 variable_player:
@@ -161,4 +179,22 @@ blinkenlight_player:
       color: 4CBB17
     bl_rightorbit_arrow_led:
       color: 4CBB17
+
+event_player:
+  mode_paulrevere_success{current_player.bodymovin_multiball_blocking_flag==1}: bodymovin_music_from_mode
+  mode_paulrevere_failed{current_player.bodymovin_multiball_blocking_flag==1}: bodymovin_music_from_mode
+  slide_intergalacticfinish_removed{current_player.bodymovin_multiball_blocking_flag==1}: bodymovin_music_from_mode
+  slide_intergalacticfailed_removed{current_player.bodymovin_multiball_blocking_flag==1}: bodymovin_music_from_mode
+  slide_tripletroublefinish_removed{current_player.bodymovin_multiball_blocking_flag==1}: bodymovin_music_from_mode
+  slide_tripletroublefailed_removed{current_player.bodymovin_multiball_blocking_flag==1}: bodymovin_music_from_mode
+  slide_sabotagefinish_removed{current_player.bodymovin_multiball_blocking_flag==1}: bodymovin_music_from_mode
+  slide_sabotagefailed_removed{current_player.bodymovin_multiball_blocking_flag==1}: bodymovin_music_from_mode
+  slide_fingerlickingoodfinish_removed{current_player.bodymovin_multiball_blocking_flag==1}: bodymovin_music_from_mode
+  slide_fingerlickingoodfailed_removed{current_player.bodymovin_multiball_blocking_flag==1}: bodymovin_music_from_mode
+  slide_toomanyrappersfinish_removed{current_player.bodymovin_multiball_blocking_flag==1}: bodymovin_music_from_mode
+  slide_toomanyrappersfailed_removed{current_player.bodymovin_multiball_blocking_flag==1}: bodymovin_music_from_mode
+  slide_threemcsand1djfinish_removed{current_player.bodymovin_multiball_blocking_flag==1}: bodymovin_music_from_mode
+  slide_threemcsand1djfailed_removed{current_player.bodymovin_multiball_blocking_flag==1}: bodymovin_music_from_mode
+  slide_highplainsdrifterfinish_removed{current_player.bodymovin_multiball_blocking_flag==1}: bodymovin_music_from_mode
+  slide_highplainsdrifterfailed_removed{current_player.bodymovin_multiball_blocking_flag==1}: bodymovin_music_from_mode
 

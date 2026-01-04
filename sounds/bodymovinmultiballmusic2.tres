@@ -1,0 +1,8 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://cs8rwpjvqlohj"]
+
+[ext_resource type="AudioStream" uid="uid://dfy0gj3jcmqpt" path="res://sounds/BodyMovinAlbumMusicTrimmed.ogg" id="2_6q1i4"]
+
+[resource]
+playback_mode = 1
+streams_count = 1
+stream_0/stream = ExtResource("2_6q1i4")

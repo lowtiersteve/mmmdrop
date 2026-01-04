@@ -765,21 +765,11 @@ sound_player:
       action: play
       bus: music
       loops: 3
-  mode_paulrevere_success{current_player.bodymovin_multiball_blocking_flag==1}:
-    bodymovinmultiballmusic:
-      action: play
-      bus: music
-      loops: 5
   mode_paulrevere_failed{current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     base_game_random_music:
       action: play
       bus: music
       loops: 3
-  mode_paulrevere_failed{current_player.bodymovin_multiball_blocking_flag==1}:
-    bodymovinmultiballmusic:
-      action: play
-      bus: music
-      loops: 5
   mode_intergalactic_stopped:
     intergalacticmusic:
       action: stop
@@ -789,21 +779,11 @@ sound_player:
       action: play
       bus: music
       loops: 3
-  mode_intergalactic_success{current_player.bodymovin_multiball_blocking_flag==1}:
-    bodymovinmultiballmusic:
-      action: play
-      bus: music
-      loops: 5
   mode_intergalactic_failed{current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     base_game_random_music:
       action: play
       bus: music
       loops: 3
-  mode_intergalactic_failed{current_player.bodymovin_multiball_blocking_flag==1}:
-    bodymovinmultiballmusic:
-      action: play
-      bus: music
-      loops: 5
   mode_chcheckitout_stopped{current_player.mode_blocking_flag==0}:
     base_game_random_music:
       action: replace
@@ -825,7 +805,10 @@ sound_player:
       action: stop
       bus: music
   mode_bodymovin_stopped{current_player.mode_blocking_flag==1}:
-    bodymovinmultiballmusic:
+    bodymovinmultiballmusic1:
+      action: stop
+      bus: music
+    bodymovinmultiballmusic2:
       action: stop
       bus: music
   mode_tripletrouble_stopped:
@@ -837,21 +820,11 @@ sound_player:
       action: play
       bus: music
       loops: 3
-  mode_tripletrouble_success{current_player.bodymovin_multiball_blocking_flag==1}:
-    bodymovinmultiballmusic:
-      action: play
-      bus: music
-      loops: 5
   mode_tripletrouble_failed{current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     base_game_random_music:
       action: play
       bus: music
       loops: 3
-  mode_tripletrouble_failed{current_player.bodymovin_multiball_blocking_flag==1}:
-    bodymovinmultiballmusic:
-      action: play
-      bus: music
-      loops: 5
   mode_sabotage_stopped:
     sabotagemusic:
       action: stop
@@ -861,21 +834,11 @@ sound_player:
       action: play
       bus: music
       loops: 3
-  mode_sabotage_success{current_player.bodymovin_multiball_blocking_flag==1}:
-    bodymovinmultiballmusic:
-      action: play
-      bus: music
-      loops: 5
   mode_sabotage_failed{current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     base_game_random_music:
       action: play
       bus: music
       loops: 3
-  mode_sabotage_failed{current_player.bodymovin_multiball_blocking_flag==1}:
-    bodymovinmultiballmusic:
-      action: play
-      bus: music
-      loops: 5
   mode_fingerlickingood_stopped:
     fingerlickingoodmusic:
       action: stop
@@ -885,21 +848,11 @@ sound_player:
       action: play
       bus: music
       loops: 3
-  mode_fingerlickingood_success{current_player.bodymovin_multiball_blocking_flag==1}:
-    bodymovinmultiballmusic:
-      action: play
-      bus: music
-      loops: 5
   mode_fingerlickingood_failed{current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     base_game_random_music:
       action: play
       bus: music
       loops: 3
-  mode_fingerlickingood_failed{current_player.bodymovin_multiball_blocking_flag==1}:
-    bodymovinmultiballmusic:
-      action: play
-      bus: music
-      loops: 5
   mode_toomanyrappers_stopped:
     toomanyrappersmusic:
       action: stop
@@ -909,21 +862,11 @@ sound_player:
       action: play
       bus: music
       loops: 3
-  mode_toomanyrappers_success{current_player.bodymovin_multiball_blocking_flag==1}:
-    bodymovinmultiballmusic:
-      action: play
-      bus: music
-      loops: 5
   mode_toomanyrappers_failed{current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     base_game_random_music:
       action: play
       bus: music
       loops: 3
-  mode_toomanyrappers_failed{current_player.bodymovin_multiball_blocking_flag==1}:
-    bodymovinmultiballmusic:
-      action: play
-      bus: music
-      loops: 5
   mode_threemcsand1dj_stopped:
     threemcsand1djmusic:
       action: stop
@@ -933,21 +876,11 @@ sound_player:
       action: play
       bus: music
       loops: 3
-  mode_threemcsand1dj_success{current_player.bodymovin_multiball_blocking_flag==1}:
-    bodymovinmultiballmusic:
-      action: play
-      bus: music
-      loops: 5
   mode_threemcsand1dj_failed{current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     base_game_random_music:
       action: play
       bus: music
       loops: 3
-  mode_threemcsand1dj_failed{current_player.bodymovin_multiball_blocking_flag==1}:
-    bodymovinmultiballmusic:
-      action: play
-      bus: music
-      loops: 5
   mode_highplainsdrifter_stopped:
     highplainsdriftermusic:
       action: stop
@@ -957,21 +890,11 @@ sound_player:
       action: play
       bus: music
       loops: 3
-  mode_highplainsdrifter_success{current_player.bodymovin_multiball_blocking_flag==1}:
-    bodymovinmultiballmusic:
-      action: play
-      bus: music
-      loops: 5
   mode_highplainsdrifter_failed{current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     base_game_random_music:
       action: play
       bus: music
       loops: 3
-  mode_highplainsdrifter_failed{current_player.bodymovin_multiball_blocking_flag==1}:
-    bodymovinmultiballmusic:
-      action: play
-      bus: music
-      loops: 5
   mode_makesomenoise_stopped:
     makesomenoisemusic:
       action: stop
@@ -996,7 +919,10 @@ sound_player:
     chcheckitoutmultiballmusicletterman:
       action: stop
       bus: music
-    bodymovinmultiballmusic:
+    bodymovinmultiballmusic1:
+      action: stop
+      bus: music
+    bodymovinmultiballmusic2:
       action: stop
       bus: music
     base_game_random_music:
@@ -1208,7 +1134,7 @@ variable_player:
     chcheckitout_multiplier:
       int: value
       action: set
-  ball_started:
+  ball_started{current_player.ball!=1}:
     bonus_multiplier:
       int: 1
       action: set
@@ -1636,7 +1562,7 @@ counters:
     restart_events: ball_started
     events_when_complete: start_supercombos
   super_modes_played_counter:
-    count_events: achievement_superpops_super_mode_state_completed, achievement_superdrops_super_mode_state_completed, achievement_superspins_super_mode_state_completed, achievement_superstandups_super_mode_state_completed, achievement_supercombos_super_mode_state_completed
+    count_events: achievement_superpops_super_mode_state_completed{restore==False}, achievement_superdrops_super_mode_state_completed{restore==False}, achievement_superspins_super_mode_state_completed{restore==False}, achievement_superstandups_super_mode_state_completed{restore==False}, achievement_supercombos_super_mode_state_completed{restore==False}
     starting_count: 0
     count_interval: 1
     count_complete_value: 5
