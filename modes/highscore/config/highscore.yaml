@@ -1,0 +1,76 @@
+#config_version=6
+
+mode:
+  priority: 500
+  start_events: game_ending, start_high_score
+  use_wait_queue: true
+
+high_score:
+  _overwrite: true
+  enter_initials_timeout: 60
+  award_slide_display_time: 4s
+  categories: #!!omap
+    - score:
+        - GRAND CHAMPION
+        - HIGH SCORE 1
+        - HIGH SCORE 2
+        - HIGH SCORE 3
+        - HIGH SCORE 4
+    - multiball_chcheckitout_score:
+        - CH-CHECK IT OUT MULTIBALL CHAMPION
+    - multiball_bodymovin_score:
+        - BODY MOVIN' MULTIBALL CHAMPION
+    - mode_fingerlickingood_score:
+        - FINGER LICKIN' GOOD CHAMPION
+    - mode_highplainsdrifter_score:
+        - HIGH PLAINS DRIFTER CHAMPION
+    - mode_intergalactic_score:
+        - INTERGALACTIC CHAMPION
+    - mode_paulrevere_score:
+        - PAUL REVERE CHAMPION
+    - mode_sabotage_score:
+        - SABOTAGE CHAMPION
+    - mode_threemcsand1dj_score:
+        - 3 MC'S AND 1 DJ CHAMPION
+    - mode_toomanyrappers_score:
+        - TOO MANY RAPPERS CHAMPION
+    - mode_tripletrouble_score:
+        - TRIPLE TROUBLE CHAMPION
+    - mode_makesomenoise_score:
+        - MAKE SOME NOISE CHAMPION
+  defaults:
+    score:
+      - MCA: 300000000
+      - ADR: 250000000
+      - MIK: 200000000
+      - MMM: 150000000
+      - DJH: 100000000
+    multiball_chcheckitout_score:
+      - MCA: 10000000
+    multiball_bodymovin_score:
+      - MIK: 10000000
+    mode_fingerlickingood_score:
+      - DJH: 5000000
+    mode_highplainsdrifter_score:
+      - MCA: 5000000
+    mode_intergalactic_score:
+      - MIK: 5000000
+    mode_paulrevere_score:
+      - ADR: 5000000
+    mode_sabotage_score:
+      - MIK: 5000000
+    mode_threemcsand1dj_score:
+      - MMM: 5000000
+    mode_toomanyrappers_score:
+      - DJH: 5000000
+    mode_tripletrouble_score:
+      - MCA: 5000000
+    mode_makesomenoise_score:
+      - MIK: 5000000
+
+
+slide_player:
+  _overwrite: true
+  high_score_enter_initials: high_score_enter_initials
+  high_score_award_display: high_score_award_display
+

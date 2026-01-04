@@ -198,8 +198,8 @@ random_event_player:
 
 
 event_player:
-  mode_paulrevere_success{current_player.chcheckitout_multiball_blocking_flag==1}: chcheckitout_music_from_mode
-  mode_paulrevere_failed{current_player.chcheckitout_multiball_blocking_flag==1}: chcheckitout_music_from_mode
+  slide_paulreverefinish_removed{current_player.chcheckitout_multiball_blocking_flag==1}: chcheckitout_music_from_mode
+  slide_paulreverefailed_removed{current_player.chcheckitout_multiball_blocking_flag==1}: chcheckitout_music_from_mode
   slide_intergalacticfinish_removed{current_player.chcheckitout_multiball_blocking_flag==1}: chcheckitout_music_from_mode
   slide_intergalacticfailed_removed{current_player.chcheckitout_multiball_blocking_flag==1}: chcheckitout_music_from_mode
   slide_tripletroublefinish_removed{current_player.chcheckitout_multiball_blocking_flag==1}: chcheckitout_music_from_mode

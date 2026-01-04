@@ -181,8 +181,8 @@ blinkenlight_player:
       color: 4CBB17
 
 event_player:
-  mode_paulrevere_success{current_player.bodymovin_multiball_blocking_flag==1}: bodymovin_music_from_mode
-  mode_paulrevere_failed{current_player.bodymovin_multiball_blocking_flag==1}: bodymovin_music_from_mode
+  slide_paulreverefinish_removed{current_player.bodymovin_multiball_blocking_flag==1}: bodymovin_music_from_mode
+  slide_paulreverefailed_removed{current_player.bodymovin_multiball_blocking_flag==1}: bodymovin_music_from_mode
   slide_intergalacticfinish_removed{current_player.bodymovin_multiball_blocking_flag==1}: bodymovin_music_from_mode
   slide_intergalacticfailed_removed{current_player.bodymovin_multiball_blocking_flag==1}: bodymovin_music_from_mode
   slide_tripletroublefinish_removed{current_player.bodymovin_multiball_blocking_flag==1}: bodymovin_music_from_mode

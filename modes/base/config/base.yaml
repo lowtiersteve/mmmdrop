@@ -214,49 +214,69 @@ slide_player:
   mode_paulrevere_stop{current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     paulrevere:
       action: remove
-    base:
-      action: play
-      priority: 5000
-  mode_paulrevere_failed{current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
-    paulrevere:
+    paulrevere_captive_ball_lit:
+      action: remove
+    paulrevere_display_timer:
+      action: remove
+    paulrevere_final_shot_lit:
+      action: remove
+    paulrevere_left_orbit_lit:
+      action: remove
+    paulrevere_left_ramp_lit:
+      action: remove
+    paulrevere_right_orbit_lit:
+      action: remove
+    paulrevere_right_ramp_lit:
       action: remove
     base:
       action: play
       priority: 5000
-  mode_paulrevere_success{current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
+  mode_paulrevere_failed:
     paulrevere:
+      action: remove
+    paulrevere_captive_ball_lit:
+      action: remove
+    paulrevere_display_timer:
+      action: remove
+    paulrevere_final_shot_lit:
+      action: remove
+    paulrevere_left_orbit_lit:
+      action: remove
+    paulrevere_left_ramp_lit:
+      action: remove
+    paulrevere_right_orbit_lit:
+      action: remove
+    paulrevere_right_ramp_lit:
       action: remove
     base:
       action: play
       priority: 5000
-    paulrevere_success:
+    tripletroublefailed:
+      action: play
+      priority: 850000
+      expire: 5s
+  mode_paulrevere_success:
+    paulrevere:
+      action: remove
+    paulrevere_display_timer:
+      action: remove
+    paulrevere_final_shot_lit:
+      action: remove
+    base:
+      action: play
+      priority: 5000
+    paulreverefinish:
       action: play
       priority: 950000
-      expire: 3s
-  mode_paulrevere_stop{current_player.chcheckitout_multiball_blocking_flag==1}:
-    paulrevere:
-      action: remove
-  mode_paulrevere_failed{current_player.chcheckitout_multiball_blocking_flag==1}:
-    paulrevere:
-      action: remove
-  mode_paulrevere_success{current_player.chcheckitout_multiball_blocking_flag==1}:
-    paulrevere:
-      action: remove
-  mode_paulrevere_stop{current_player.bodymovin_multiball_blocking_flag==1}:
-    paulrevere:
-      action: remove
-  mode_paulrevere_failed{current_player.bodymovin_multiball_blocking_flag==1}:
-    paulrevere:
-      action: remove
-  mode_paulrevere_success{current_player.bodymovin_multiball_blocking_flag==1}:
-    paulrevere:
-      action: remove
+      expire: 5s
   mode_tripletrouble_stop:
     tripletrouble:
       action: remove
     tripletrouble_standups_counter:
       action: remove
     tripletrouble_final_shot_lit:
+      action: remove
+    tripletrouble_display_timer:
       action: remove
     base:
       action: play
@@ -267,6 +287,8 @@ slide_player:
     tripletrouble_standups_counter:
       action: remove
     tripletrouble_final_shot_lit:
+      action: remove
+    tripletrouble_display_timer:
       action: remove
     tripletroublefailed:
       action: play
@@ -279,6 +301,8 @@ slide_player:
     tripletrouble:
       action: remove
     tripletrouble_final_shot_lit:
+      action: remove
+    tripletrouble_display_timer:
       action: remove
     base:
       action: play
@@ -552,6 +576,8 @@ slide_player:
       action: remove
     paulrevere_display_timer:
       action: remove
+    paulreverefailed:
+      action: remove
     tripletrouble:
       action: remove
     tripletrouble_display_timer:
@@ -561,8 +587,6 @@ slide_player:
     tripletrouble_final_shot_lit:
       action: remove
     tripletroublefailed:
-      action: remove
-    tripletroublefinish:
       action: remove
     sabotage:
       action: remove
@@ -760,12 +784,20 @@ sound_player:
     paulrevere_music:
       action: stop
       bus: music
-  mode_paulrevere_success{current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
+  slide_paulreverefinish_created:
+    attract_crowd:
+      action: play
+      bus: effects
+  slide_paulreverefinish_removed{current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     base_game_random_music:
       action: play
       bus: music
       loops: 3
-  mode_paulrevere_failed{current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
+  slide_paulreverefailed_created:
+    attract_crowd:
+      action: play
+      bus: effects
+  slide_paulreverefailed_removed{current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     base_game_random_music:
       action: play
       bus: music
@@ -815,12 +847,16 @@ sound_player:
     tripletroublemusic:
       action: stop
       bus: music
-  mode_tripletrouble_success{current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
+  slide_tripletroublefinish_created:
+    tripletroublesuccessmusic:
+      action: play
+      bus: music
+  slide_tripletroublefinish_removed{current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     base_game_random_music:
       action: play
       bus: music
       loops: 3
-  mode_tripletrouble_failed{current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
+  slide_tripletroublefailed_removed{current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     base_game_random_music:
       action: play
       bus: music
@@ -958,6 +994,9 @@ sound_player:
     girlsinstrumentalmusic:
       action: stop
       bus: music
+    attract_crowd:
+      action: stop
+      bus: effects
   skillshot_lit_hit:
     success_finish:
       action: play
@@ -997,13 +1036,46 @@ sound_player:
     hitthescoop_callout:
       action: play
       bus: voice
-      ducking:
-        bus: music
-        attack: 100ms
-        attenuation: 0.6
-        release_point: 100ms
-        release: 100ms
-
+  mode_fingerlickingood_failed:
+    zero_callout:
+      action: play
+      bus: voice
+      priority: 5000
+  mode_highplainsdrifter_failed:
+    zero_callout:
+      action: play
+      bus: voice
+      priority: 5000
+  mode_intergalactic_failed:
+    zero_callout:
+      action: play
+      bus: voice
+      priority: 5000
+  mode_paulrevere_failed:
+    zero_callout:
+      action: play
+      bus: voice
+      priority: 5000
+  mode_sabotage_failed:
+    zero_callout:
+      action: play
+      bus: voice
+      priority: 5000
+  mode_threemcsand1dj_failed:
+    zero_callout:
+      action: play
+      bus: voice
+      priority: 5000
+  mode_toomanyrappers_failed:
+    zero_callout:
+      action: play
+      bus: voice
+      priority: 5000
+  mode_tripletrouble_failed:
+    zero_callout:
+      action: play
+      bus: voice
+      priority: 5000
 
 
 variable_player:
@@ -1579,8 +1651,8 @@ ball_holds:
     balls_to_hold: 1
     hold_devices: bd_scoop
     enable_events: mode_paulrevere_success
-    disable_events: slide_paulrevere_success_removed
-    release_one_events: slide_paulrevere_success_removed
+    disable_events: slide_paulreverefinish_removed
+    release_one_events: slide_paulreverefinish_removed
   tripletrouble_finish_scoop_hold:
     balls_to_hold: 1
     hold_devices: bd_scoop
@@ -1596,6 +1668,12 @@ random_event_player:
       - play_base_video2
       - play_base_video3
       - play_base_video4
+  tilt:
+    events:
+      - tilt1
+      - tilt2
+      - tilt3
+      - tilt4
 
 
 show_player:
@@ -1985,8 +2063,6 @@ widget_player:
     mca_circle:
       action: remove
     djhurr_circle:
-      action: remove
-    paulrevere_success:
       action: remove
   bodymovin_lock_1_enabled:
     bodymovin_lock_enabled_widget:

@@ -2,7 +2,7 @@
 mode:
   code: mpf.modes.tilt.code.tilt.Tilt
   priority: 1000000
-  start_events: machine_reset_phase_3
+  start_events: game_started #machine_reset_phase_3
   game_mode: False
   stop_on_ball_end: False
 
@@ -35,13 +35,36 @@ slide_player:
   tilt:
     tilt_warning_2:
       action: remove
-    tilt:
+  tilt1:
+    tilt1:
       action: play
       priority: 1000000
-      expire: 6s
+      expire: 8s
+  tilt2:
+    tilt2:
+      action: play
+      priority: 1000000
+      expire: 7s
+  tilt3:
+    tilt3:
+      action: play
+      priority: 1000000
+      expire: 7s
+  tilt4:
+    tilt4:
+      action: play
+      priority: 1000000
+      expire: 22s
   tilt_clear:
-    tilt:
+    tilt1:
       action: remove
+    tilt2:
+      action: remove
+    tilt3:
+      action: remove
+    tilt4:
+      action: remove
+
 
 sound_player:
   tilt_warning_1:
@@ -52,7 +75,3 @@ sound_player:
     tilt_warning_sound_random:
       action: play
       bus: effects
-  tilt:
-    tilt_sound_random:
-      action: replace
-      bus: music

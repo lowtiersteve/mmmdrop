@@ -15,6 +15,17 @@ mode_settings:
     - version
     - makercredits
     - dedicated
+#    - highscoregrandchampion
+#    - highscore1
+#    - highscore2
+#    - highscore3
+#    - highscore4
+#    - highscoremultiballs
+#    - highscoremodes1
+#    - highscoremodes2
+#    - highscoremodes3
+#    - highscoremodes4
+#    - highscoremodes5
   next_item_events: s_right_flipper_active, timer_attract_carousel_timer_complete
   previous_item_events: s_left_flipper_active
 

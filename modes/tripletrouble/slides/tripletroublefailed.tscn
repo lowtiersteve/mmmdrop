@@ -5,7 +5,7 @@
 [ext_resource type="Script" uid="uid://bf2dsnm46ji2e" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_34rqp"]
 [ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="4_4afvc"]
 
-[node name="Intergalactic" type="Control"]
+[node name="Tripletroublefailed" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_0moum")

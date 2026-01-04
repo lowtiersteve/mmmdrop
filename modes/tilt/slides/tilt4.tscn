@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://c8o6irptx5l72"]
+
+[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_j4avn"]
+[ext_resource type="VideoStream" uid="uid://djoygw58460bv" path="res://modes/tilt/slides/tilt5piecechickendinner.ogv" id="2_j4avn"]
+[ext_resource type="Script" uid="uid://bf2dsnm46ji2e" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_upcti"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="4_120og"]
+
+[node name="tilt4" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_j4avn")
+metadata/_custom_type_script = "uid://d15ukepy10pan"
+
+[node name="MPFVideoPlayer" type="VideoStreamPlayer" parent="."]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+stream = ExtResource("2_j4avn")
+autoplay = true
+expand = true
+script = ExtResource("3_upcti")
+hide_behavior = 1
+preview_in_editor = true
+metadata/_custom_type_script = "uid://bf2dsnm46ji2e"
+
+[node name="Label" type="Label" parent="MPFVideoPlayer"]
+layout_mode = 0
+offset_left = 396.0
+offset_top = 373.0
+offset_right = 1515.0
+offset_bottom = 761.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("4_120og")
+theme_override_font_sizes/font_size = 261
+text = "tilt"
+horizontal_alignment = 1
