@@ -242,7 +242,7 @@ timers:
     tick_interval: 1s
     start_running: True
     control_events:
-      - event: mode_attract_started
+      - event: mode_attract_started{machine.game_just_played==0}
         action: restart
       - event: game_started
         action: stop
