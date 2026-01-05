@@ -21,11 +21,11 @@
     l_backpanel_gi5_led: white
 - duration: 0.8
   lights:
-    l_ballsave_circle_led: off
-    l_leftoutlane_circle_led: off
-    l_leftinlane_circle_led: off
-    l_rightinlane_circle_led: off
-    l_rightoutlane_circle_led: off
+    l_ballsave_circle_led: stop
+    l_leftoutlane_circle_led: stop
+    l_leftinlane_circle_led: stop
+    l_rightinlane_circle_led: stop
+    l_rightoutlane_circle_led: stop
     l_modeindicator1_rectangle_led: cyan
     l_modeindicator2_rectangle_led: cyan
     l_modeindicator3_rectangle_led: cyan
@@ -46,24 +46,24 @@
 #    l_cassetteright_led: cyan
 - duration: 0.8
   lights:
-    l_modeindicator1_rectangle_led: off
-    l_modeindicator2_rectangle_led: off
-    l_modeindicator3_rectangle_led: off
-    l_modeindicator4_rectangle_led: off
-    l_modeindicator5_rectangle_led: off
-    l_modeindicator6_rectangle_led: off
-    l_modeindicator7_rectangle_led: off
-    l_modeindicator8_rectangle_led: off
-    l_wizardindicator_rectangle_led: off
-    l_wizardindicator2_rectangle_led: off
-    l_wizardindicator3_rectangle_led: off
-    l_supercircle1_led: off
-    l_supercircle2_led: off
-    l_supercircle3_led: off
-    l_supercircle4_led: off
-    l_supercircle5_led: off
-#    l_cassetteleft_led: off
-#    l_cassetteright_led: off
+    l_modeindicator1_rectangle_led: stop
+    l_modeindicator2_rectangle_led: stop
+    l_modeindicator3_rectangle_led: stop
+    l_modeindicator4_rectangle_led: stop
+    l_modeindicator5_rectangle_led: stop
+    l_modeindicator6_rectangle_led: stop
+    l_modeindicator7_rectangle_led: stop
+    l_modeindicator8_rectangle_led: stop
+    l_wizardindicator_rectangle_led: stop
+    l_wizardindicator2_rectangle_led: stop
+    l_wizardindicator3_rectangle_led: stop
+    l_supercircle1_led: stop
+    l_supercircle2_led: stop
+    l_supercircle3_led: stop
+    l_supercircle4_led: stop
+    l_supercircle5_led: stop
+#    l_cassetteleft_led: stop
+#    l_cassetteright_led: stop
     l_lowerdrop_circle_led: green
     l_middledrop_circle_led: green
     l_upperdrop_circle_led: green
@@ -71,11 +71,11 @@
 #    l_dropbank_rectangle_led: green
 - duration: 0.8
   lights:
-    l_lowerdrop_circle_led: off
-    l_middledrop_circle_led: off
-    l_upperdrop_circle_led: off
-    l_dropstandup_flasher_led: off
-#    l_dropbank_rectangle_led: off
+    l_lowerdrop_circle_led: stop
+    l_middledrop_circle_led: stop
+    l_upperdrop_circle_led: stop
+    l_dropstandup_flasher_led: stop
+#    l_dropbank_rectangle_led: stop
 #    l_lowerpop_smallarrow_led: red
     l_lowerrightstandup_circle_led: red
     l_lowerrightpop_inside_led: red
@@ -88,76 +88,76 @@
     l_tshirtbottomcircle_led: red
 - duration: 0.8
   lights:
-#    l_lowerpop_smallarrow_led: off
-    l_lowerrightstandup_circle_led: off
-    l_lowerrightpop_inside_led: off
-    l_lowerrightpop_inside2_led: off
-#    l_upperleftpop_inside_led: off
-#    l_uppercenterpop_inside_led: off
-    l_upperpop_smallarrow_led: off
-    l_captiveball_smallcircle_led: off
-    l_tshirttopcircle_led: off
-    l_tshirtbottomcircle_led: off
+#    l_lowerpop_smallarrow_led: stop
+    l_lowerrightstandup_circle_led: stop
+    l_lowerrightpop_inside_led: stop
+    l_lowerrightpop_inside2_led: stop
+#    l_upperleftpop_inside_led: stop
+#    l_uppercenterpop_inside_led: stop
+    l_upperpop_smallarrow_led: stop
+    l_captiveball_smallcircle_led: stop
+    l_tshirttopcircle_led: stop
+    l_tshirtbottomcircle_led: stop
     l_leftorbit_arrow_led: orange
     l_leftorbitcombo_circle_led: orange
     l_leftorbit_rectangle_led: orange
     l_leftorbitbattery_rectangle_led: orange
 - duration: 0.8
   lights:
-    l_leftorbit_arrow_led: off
-    l_leftorbitcombo_circle_led: off
-    l_leftorbit_rectangle_led: off
-    l_leftorbitbattery_rectangle_led: off
+    l_leftorbit_arrow_led: stop
+    l_leftorbitcombo_circle_led: stop
+    l_leftorbit_rectangle_led: stop
+    l_leftorbitbattery_rectangle_led: stop
     l_leftramp_arrow_led: yellow
     l_leftrampcombo_circle_led: yellow
     l_leftramprectangle_led: yellow
 - duration: 0.8
   lights:
-    l_leftramp_arrow_led: off
-    l_leftrampcombo_circle_led: off
-    l_leftramprectangle_led: off
+    l_leftramp_arrow_led: stop
+    l_leftrampcombo_circle_led: stop
+    l_leftramprectangle_led: stop
     l_innerloop_arrow_led: blue
     l_innerloopcombo_circle_led: blue
 - duration: 0.8
   lights:
-    l_innerloop_arrow_led: off
-    l_innerloopcombo_circle_led: off
+    l_innerloop_arrow_led: stop
+    l_innerloopcombo_circle_led: stop
     l_scoop_arrow_led: indigo
     l_scoopcombo_circle_led: indigo
     l_scoopmode_circle2_led: indigo
     l_scoopmode_square_led: indigo
 - duration: 0.8
   lights:
-    l_scoop_arrow_led: off
-    l_scoopcombo_circle_led: off
-    l_scoopmode_circle2_led: off
-    l_scoopmode_square_led: off
+    l_scoop_arrow_led: stop
+    l_scoopcombo_circle_led: stop
+    l_scoopmode_circle2_led: stop
+    l_scoopmode_square_led: stop
     l_rightramp_arrow_led: violet
     l_rightrampcombo_circle_led: violet
     l_rightramprectangle_led: violet
 - duration: 0.8
   lights:
-    l_rightramp_arrow_led: off
-    l_rightrampcombo_circle_led: off
-    l_rightramprectangle_led: off
+    l_rightramp_arrow_led: stop
+    l_rightrampcombo_circle_led: stop
+    l_rightramprectangle_led: stop
     l_rightorbit_arrow_led: lime
     l_rightorbitcombo_circle_led: lime
     l_rightorbitrectangle_led: lime
 - duration: 0.8
   lights:
-    l_leftsling_uppergi_led: off
-    l_leftsling_lowergi_led: off
-    l_rightsling_uppergi_led: off
-    l_rightsling_lowergi_led: off
-    l_rightorbit_arrow_led: off
-    l_rightorbitcombo_circle_led: off
-    l_rightorbitrectangle_led: off
-    l_behindupperflipper_uppergi_led: off
-    l_behindupperflipper_lowergi_led: off
-    l_behinddropflasher_leftgi_led: off
-    l_backpanel_gi1_led: off
-    l_backpanel_gi2_led: off
-    l_backpanel_gi3_led: off
-    l_backpanel_gi4_led: off
-    l_backpanel_gi5_led: off
+    l_leftsling_uppergi_led: stop
+    l_leftsling_lowergi_led: stop
+    l_rightsling_uppergi_led: stop
+    l_rightsling_lowergi_led: stop
+    l_rightorbit_arrow_led: stop
+    l_rightorbitcombo_circle_led: stop
+    l_rightorbitrectangle_led: stop
+    l_behindupperflipper_uppergi_led: stop
+    l_behindupperflipper_lowergi_led: stop
+    l_behinddropflasher_leftgi_led: stop
+    l_backpanel_gi1_led: stop
+    l_backpanel_gi2_led: stop
+    l_backpanel_gi3_led: stop
+    l_backpanel_gi4_led: stop
+    l_backpanel_gi5_led: stop
 

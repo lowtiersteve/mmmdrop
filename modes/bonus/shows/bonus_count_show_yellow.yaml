@@ -8,23 +8,23 @@
     l_wizardindicator_rectangle_led: yellow
 - duration: 50ms
   lights:
-    l_ballsave_circle_led: off
+    l_ballsave_circle_led: stop
     l_modeindicator5_rectangle_led: yellow
     l_modeindicator6_rectangle_led: yellow
     l_modeindicator7_rectangle_led: yellow
     l_modeindicator8_rectangle_led: yellow
 - duration: 50ms
   lights:
-    l_wizardindicator_rectangle_led: off
+    l_wizardindicator_rectangle_led: stop
     l_wizardindicator3_rectangle_led: yellow
 #    l_cassetteleft_led: yellow
 #    l_cassetteright_led: yellow
 - duration: 50ms
   lights:
-    l_modeindicator5_rectangle_led: off
-    l_modeindicator6_rectangle_led: off
-    l_modeindicator7_rectangle_led: off
-    l_modeindicator8_rectangle_led: off
+    l_modeindicator5_rectangle_led: stop
+    l_modeindicator6_rectangle_led: stop
+    l_modeindicator7_rectangle_led: stop
+    l_modeindicator8_rectangle_led: stop
     l_modeindicator1_rectangle_led: yellow
     l_modeindicator2_rectangle_led: yellow
     l_modeindicator3_rectangle_led: yellow
@@ -35,20 +35,20 @@
     l_rightoutlane_circle_led: yellow
 - duration: 50ms
   lights:
-    l_wizardindicator3_rectangle_led: off
-#    l_cassetteleft_led: off
-#    l_cassetteright_led: off
+    l_wizardindicator3_rectangle_led: stop
+#    l_cassetteleft_led: stop
+#    l_cassetteright_led: stop
     l_wizardindicator2_rectangle_led: yellow
 - duration: 50ms
   lights:
-    l_modeindicator1_rectangle_led: off
-    l_modeindicator2_rectangle_led: off
-    l_modeindicator3_rectangle_led: off
-    l_modeindicator4_rectangle_led: off
-    l_leftoutlane_circle_led: off
-    l_leftinlane_circle_led: off
-    l_rightinlane_circle_led: off
-    l_rightoutlane_circle_led: off
+    l_modeindicator1_rectangle_led: stop
+    l_modeindicator2_rectangle_led: stop
+    l_modeindicator3_rectangle_led: stop
+    l_modeindicator4_rectangle_led: stop
+    l_leftoutlane_circle_led: stop
+    l_leftinlane_circle_led: stop
+    l_rightinlane_circle_led: stop
+    l_rightoutlane_circle_led: stop
     l_supercircle1_led: yellow
     l_supercircle2_led: yellow
     l_supercircle3_led: yellow
@@ -62,39 +62,39 @@
 #    l_dropbank_rectangle_led: yellow
 - duration: 50ms
   lights:
-    l_wizardindicator2_rectangle_led: off
+    l_wizardindicator2_rectangle_led: stop
     l_upperdrop_circle_led: yellow
     l_leftrampcombo_circle_led: yellow
     l_leftramprectangle_led: yellow
 - duration: 50ms
   lights:
-    l_supercircle1_led: off
-    l_supercircle2_led: off
-    l_supercircle3_led: off
-    l_supercircle4_led: off
-    l_supercircle5_led: off
-#    l_lowerpop_smallarrow_led: off
-    l_lowerrightpop_inside_led: off
-    l_lowerrightpop_inside2_led: off
-    l_lowerdrop_circle_led: off
-    l_middledrop_circle_led: off
-#    l_dropbank_rectangle_led: off
+    l_supercircle1_led: stop
+    l_supercircle2_led: stop
+    l_supercircle3_led: stop
+    l_supercircle4_led: stop
+    l_supercircle5_led: stop
+#    l_lowerpop_smallarrow_led: stop
+    l_lowerrightpop_inside_led: stop
+    l_lowerrightpop_inside2_led: stop
+    l_lowerdrop_circle_led: stop
+    l_middledrop_circle_led: stop
+#    l_dropbank_rectangle_led: stop
     l_leftramp_arrow_led: yellow
     l_dropstandup_flasher_led: yellow
     l_leftorbitbattery_rectangle_led: yellow
 - duration: 50ms
   lights:
-    l_upperdrop_circle_led: off
-    l_leftrampcombo_circle_led: off
-    l_leftramprectangle_led: off
+    l_upperdrop_circle_led: stop
+    l_leftrampcombo_circle_led: stop
+    l_leftramprectangle_led: stop
     l_tshirtbottomcircle_led: yellow
     l_rightramprectangle_led: yellow
     l_leftorbit_rectangle_led: yellow
 - duration: 50ms
   lights:
-    l_leftramp_arrow_led: off
-    l_dropstandup_flasher_led: off
-    l_leftorbitbattery_rectangle_led: off
+    l_leftramp_arrow_led: stop
+    l_dropstandup_flasher_led: stop
+    l_leftorbitbattery_rectangle_led: stop
     l_tshirttopcircle_led: yellow
     l_leftorbitcombo_circle_led: yellow
     l_scoopmode_square_led: yellow
@@ -105,23 +105,23 @@
     l_rightrampcombo_circle_led: yellow
 - duration: 50ms
   lights:
-    l_tshirtbottomcircle_led: off
-    l_rightramprectangle_led: off
-    l_leftorbit_rectangle_led: off
+    l_tshirtbottomcircle_led: stop
+    l_rightramprectangle_led: stop
+    l_leftorbit_rectangle_led: stop
     l_rightorbitcombo_circle_led: yellow
     l_rightramp_arrow_led: yellow
     l_scoopmode_circle2_led: yellow
     l_captiveball_smallcircle_led: yellow
 - duration: 50ms
   lights:
-    l_tshirttopcircle_led: off
-    l_leftorbitcombo_circle_led: off
-    l_scoopmode_square_led: off
-    l_rightorbitrectangle_led: off
-    l_innerloop_arrow_led: off
-    l_innerloopcombo_circle_led: off
-    l_leftorbit_arrow_led: off
-    l_rightrampcombo_circle_led: off
+    l_tshirttopcircle_led: stop
+    l_leftorbitcombo_circle_led: stop
+    l_scoopmode_square_led: stop
+    l_rightorbitrectangle_led: stop
+    l_innerloop_arrow_led: stop
+    l_innerloopcombo_circle_led: stop
+    l_leftorbit_arrow_led: stop
+    l_rightrampcombo_circle_led: stop
 #    l_upperleftpop_inside_led: yellow
 #    l_uppercenterpop_inside_led: yellow
     l_upperpop_smallarrow_led: yellow
@@ -129,19 +129,19 @@
     l_rightorbit_arrow_led: yellow
 - duration: 50ms
   lights:
-    l_rightorbitcombo_circle_led: off
-    l_rightramp_arrow_led: off
-    l_scoopmode_circle2_led: off
-    l_captiveball_smallcircle_led: off
+    l_rightorbitcombo_circle_led: stop
+    l_rightramp_arrow_led: stop
+    l_scoopmode_circle2_led: stop
+    l_captiveball_smallcircle_led: stop
     l_scoop_arrow_led: yellow
 - duration: 50ms
   lights:
-#    l_upperleftpop_inside_led: off
-#    l_uppercenterpop_inside_led: off
-    l_upperpop_smallarrow_led: off
-    l_scoopcombo_circle_led: off
-    l_rightorbit_arrow_led: off
+#    l_upperleftpop_inside_led: stop
+#    l_uppercenterpop_inside_led: stop
+    l_upperpop_smallarrow_led: stop
+    l_scoopcombo_circle_led: stop
+    l_rightorbit_arrow_led: stop
 - duration: 50ms
   lights:
-    l_scoop_arrow_led: off
+    l_scoop_arrow_led: stop
 
