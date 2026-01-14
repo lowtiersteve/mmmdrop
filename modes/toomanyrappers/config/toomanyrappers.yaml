@@ -5,6 +5,7 @@ mode:
   stop_events: mode_toomanyrappers_stop, mode_toomanyrappers_failed, mode_toomanyrappers_success, ball_will_end
   priority: 1000
 
+
 sequences:
   load_rhymes_once:
     events:
@@ -207,7 +208,6 @@ shot_profiles:
     advance_on_hit: False
     states:
       - name: off
-        show: off
       - name: lit
         show: flash_color
         show_tokens:
@@ -271,14 +271,14 @@ blinkenlight_player:
     bl_lowerrightpop_inside2_led:
       color: orange
   logicblock_spit_rhymes_once_hit:
-    bl_lowerrightpop_inside_led: off
-    bl_lowerrightpop_inside2_led: off
+    bl_lowerrightpop_inside_led: stop
+    bl_lowerrightpop_inside2_led: stop
   enable_spit_rhymes_twice:
     bl_lowerrightpop_inside_led:
       color: orange
     bl_lowerrightpop_inside2_led:
       color: orange
   logicblock_spit_rhymes_twice_hit:
-    bl_lowerrightpop_inside_led: off
-    bl_lowerrightpop_inside2_led: off
+    bl_lowerrightpop_inside_led: stop
+    bl_lowerrightpop_inside2_led: stop
 

@@ -5,6 +5,7 @@ mode:
   stop_events: ball_will_end
   priority: 11000
 
+
 counters:
   battery_charged_status:
     count_events: spinner_hit{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.mode_blocking_flag==0 and current_player.girls_blocking_flag==0 and device.achievements.wizard1.state!="enabled"}
@@ -20,9 +21,6 @@ counters:
     enable_events: ball_started, multiball_chcheckitout_ended, multiball_bodymovin_ended, multiball_makesomenoise_ended, mode_girls_stopped
     restart_events: mode_intergalactic_stopped, mode_intergalactic_success, mode_paulrevere_stopped, mode_paulrevere_success, mode_tripletrouble_stopped, mode_tripletrouble_success, mode_sabotage_stopped, mode_sabotage_success, mode_fingerlickingood_stopped, mode_fingerlickingood_success, mode_toomanyrappers_stopped, mode_toomanyrappers_success, mode_threemcsand1dj_stopped, mode_threemcsand1dj_success, mode_highplainsdrifter_stopped, mode_highplainsdrifter_success
     control_events:
-      - event: reset_drop_target_bank_counter
-        action: jump
-        value: 0
       - event: mode_batterycharger_started{current_player.ball==1}
         action: jump
         value: 0
@@ -125,9 +123,13 @@ counters:
       - event: multiball_makesomenoise_ended
         action: jump
         value: 20
-      - event: scoop_hit{current_player.mode_blocking_flag==0}
+      - event: scoop_hit{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.mode_blocking_flag==0 and current_player.girls_blocking_flag==0 and device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.value>0}
         action: add
         value: -5
+      - event: logicblock_battery_charged_status_updated{device.counters.battery_charged_status.value<0}
+        action: jump
+        value: 0
+
 
 
 show_player:
@@ -322,7 +324,7 @@ widget_player:
       action: play
       slide: score_overlay
       priority: 901000
-  mode_makesomenoise_started:
+  achievement_wizard1_state_enabled{device.achievements.wizard1.state=="enabled"}:
     charges_remaining:
       action: remove
   mode_makesomenoise_stopped:
@@ -330,11 +332,15 @@ widget_player:
       action: play
       slide: score_overlay
       priority: 901000
-  ball_started{current_player.ball!=1 and device.counters.battery_charged_status.value>0 and device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.enabled==True}:
+  ball_started{current_player.ball!=1 and device.counters.battery_charged_status.value>0 and device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.enabled==True and current_player.battery_charged_yesorno==0}:
     charges_remaining:
       action: play
       slide: score_overlay
       priority: 901000
+  ball_will_end:
+    charges_remaining:
+      action: remove
+
 
 sound_player:
   batterychargercallout1:

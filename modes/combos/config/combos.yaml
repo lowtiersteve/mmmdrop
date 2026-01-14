@@ -4,6 +4,7 @@ mode:
   stop_events: ball_ended
   priority: 2000
 
+
 sequence_shots:
   left_orbit_to_inner_loop_combo:
     sequence_timeout: 3s

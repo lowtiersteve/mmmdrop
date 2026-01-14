@@ -2,14 +2,14 @@
 
 - duration: 750ms
   lights:
-#    l_upperleftpop_inside_led: Aqua
-#    l_uppercenterpop_inside_led: Aqua
+    l_upperleftpop_inside_led: Aqua
+    l_uppercenterpop_inside_led: Aqua
     l_lowerrightpop_inside_led: Aqua
     l_lowerrightpop_inside2_led: Aqua
 - duration: 750ms
   lights:
-#    l_upperleftpop_inside_led: off
-#    l_uppercenterpop_inside_led: off
-    l_lowerrightpop_inside_led: off
-    l_lowerrightpop_inside2_led: off
+    l_upperleftpop_inside_led: stop
+    l_uppercenterpop_inside_led: stop
+    l_lowerrightpop_inside_led: stop
+    l_lowerrightpop_inside2_led: stop
 

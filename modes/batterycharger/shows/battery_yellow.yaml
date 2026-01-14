@@ -5,5 +5,5 @@
     l_leftorbitbattery_rectangle_led: FFEA00
 - duration: 300ms
   lights:
-    l_leftorbitbattery_rectangle_led: off
+    l_leftorbitbattery_rectangle_led: stop
 

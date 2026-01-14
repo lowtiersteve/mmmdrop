@@ -7,7 +7,7 @@
     l_upperdrop_circle_led: Aqua
 - duration: 750ms
   lights:
-    l_lowerdrop_circle_led: off
-    l_middledrop_circle_led: off
-    l_upperdrop_circle_led: off
+    l_lowerdrop_circle_led: stop
+    l_middledrop_circle_led: stop
+    l_upperdrop_circle_led: stop
 

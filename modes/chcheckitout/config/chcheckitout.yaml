@@ -65,7 +65,6 @@ sound_player:
       max_queue_time: 1s
 
 
-
 variable_player:
   mode_chcheckitout_started:
     chcheckitout_multiball_blocking_flag:
@@ -105,37 +104,42 @@ sequences:
   chcheckitout_leftorbit_jackpot:
     events:
       - left_orbit_hit
-#    enable_events: multiball_chcheckitout_started, chcheckitout_superjackpot_hit
     events_when_complete: chcheckitout_leftorbit_jackpot_hit, chcheckitout_jackpot_hit
     reset_on_complete: False
+    disable_on_complete: True
+    start_enabled: False
     restart_events: multiball_chcheckitout_started, chcheckitout_superjackpot_hit
   chcheckitout_leftramp_jackpot:
     events:
       - left_ramp_hit
-#    enable_events: multiball_chcheckitout_started, chcheckitout_superjackpot_hit
     events_when_complete: chcheckitout_leftramp_jackpot_hit, chcheckitout_jackpot_hit
     reset_on_complete: False
+    disable_on_complete: True
+    start_enabled: False
     restart_events: multiball_chcheckitout_started, chcheckitout_superjackpot_hit
   chcheckitout_rightramp_jackpot:
     events:
       - right_ramp_hit
-#    enable_events: multiball_chcheckitout_started, chcheckitout_superjackpot_hit
     events_when_complete: chcheckitout_rightramp_jackpot_hit, chcheckitout_jackpot_hit
     reset_on_complete: False
+    disable_on_complete: True
+    start_enabled: False
     restart_events: multiball_chcheckitout_started, chcheckitout_superjackpot_hit
   chcheckitout_rightorbit_jackpot:
     events:
       - right_orbit_hit
-#    enable_events: multiball_chcheckitout_started, chcheckitout_superjackpot_hit
     events_when_complete: chcheckitout_rightorbit_jackpot_hit, chcheckitout_jackpot_hit
     reset_on_complete: False
+    disable_on_complete: True
+    start_enabled: False
     restart_events: multiball_chcheckitout_started, chcheckitout_superjackpot_hit
   chcheckitout_superjackpot:
     events:
       - inner_loop_hit
-#    enable_events: chcheckitout_superjackpot_lit
     events_when_complete: chcheckitout_superjackpot_hit
-    reset_on_complete: True
+    reset_on_complete: False
+    disable_on_complete: True
+    start_enabled: False
     restart_events: chcheckitout_superjackpot_lit
 
 

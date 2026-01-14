@@ -1,15 +1,18 @@
 #config_version=6
 
 mode:
-  priority: 500
+  code: mpf.modes.high_score.code.high_score.HighScore
+  priority: 1500
   start_events: game_ending, start_high_score
+  game_mode: False
   use_wait_queue: true
+
 
 high_score:
   _overwrite: true
   enter_initials_timeout: 60
-  award_slide_display_time: 4s
-  categories: #!!omap
+  award_slide_display_time: 5s
+  categories: !!omap
     - score:
         - GRAND CHAMPION
         - HIGH SCORE 1
@@ -69,8 +72,27 @@ high_score:
       - MIK: 5000000
 
 
+event_player:
+  s_left_flipper_active:
+    text_input:
+      action: left
+  s_right_flipper_active:
+    text_input:
+      action: right
+  s_start_active:
+    text_input:
+      action: select
+
+
 slide_player:
-  _overwrite: true
-  high_score_enter_initials: high_score_enter_initials
-  high_score_award_display: high_score_award_display
+  high_score_enter_initials:
+    high_score_award:
+      action: remove
+    high_score:
+      action: play
+  high_score_award_display:
+    high_score:
+      action: remove
+    high_score_award:
+      action: play
 

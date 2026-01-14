@@ -4,6 +4,7 @@ mode:
   start_events: mode_base_started
   priority: 1000
 
+
 multiballs:
   chcheckitout:
     ball_count: 3
@@ -20,8 +21,8 @@ multiballs:
     enable_events: mode_bodymovin_starting
   makesomenoise:
     ball_count: 4
-    start_events: timer_makesomenoise_intro_show_complete
-    shoot_again: 15s
+    start_events: ball_hold_makesomenoise_scoop_hold_balls_released
+    shoot_again: 45s
     reset_events: multiball_makesomenoise_ended
     enable_events: mode_makesomenoise_starting
 

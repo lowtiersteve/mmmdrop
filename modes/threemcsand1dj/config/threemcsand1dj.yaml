@@ -197,7 +197,6 @@ shot_profiles:
     advance_on_hit: False
     states:
       - name: "off"
-        show: "off"
     loop: False
 
 
@@ -207,18 +206,18 @@ blinkenlight_player:
       color: red
     bl_lowerrightpop_inside2_led:
       color: red
-#    bl_upperleftpop_inside_led:
-#      color: red
-#    bl_uppercenterpop_inside_led:
-#      color: red
+    bl_upperleftpop_inside_led:
+      color: red
+    bl_uppercenterpop_inside_led:
+      color: red
     bl_captiveball_smallcircle_led:
       color: red
     bl_innerloop_arrow_led:
       color: green
   threemcsand1dj_scratches_counter_complete:
-    bl_lowerrightpop_inside_led: off
-    bl_lowerrightpop_inside2_led: off
-#    bl_upperleftpop_inside_led: off
-#    bl_uppercenterpop_inside_led: off
-    bl_captiveball_smallcircle_led: off
-    bl_innerloop_arrow_led: off
+    bl_lowerrightpop_inside_led: stop
+    bl_lowerrightpop_inside2_led: stop
+    bl_upperleftpop_inside_led: stop
+    bl_uppercenterpop_inside_led: stop
+    bl_captiveball_smallcircle_led: stop
+    bl_innerloop_arrow_led: stop

@@ -1,0 +1,62 @@
+[gd_scene load_steps=5 format=3 uid="uid://pj8s7on6760o"]
+
+[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_8uavx"]
+[ext_resource type="Texture2D" uid="uid://fy7wp70m04a3" path="res://assets/Beastie_Boys_-_To_the_5_Boroughs.png" id="2_06a0i"]
+[ext_resource type="Script" uid="uid://b3ni1cjx2r6sx" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="2_8uavx"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="2_fgc81"]
+
+[node name="HighScoreAward" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_8uavx")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(984, 628)
+scale = Vector2(7, 7)
+texture = ExtResource("2_06a0i")
+
+[node name="MPFVariable - Award" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 188.0
+offset_right = 1913.0
+offset_bottom = 393.0
+theme_override_constants/outline_size = 35
+theme_override_fonts/font = ExtResource("2_fgc81")
+theme_override_font_sizes/font_size = 150
+text = "Award!"
+horizontal_alignment = 1
+script = ExtResource("2_8uavx")
+variable_type = 1
+variable_name = "award"
+
+[node name="MPFVariable - Player Name" type="Label" parent="."]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 505.0
+offset_right = 1922.0
+offset_bottom = 710.0
+theme_override_constants/outline_size = 35
+theme_override_fonts/font = ExtResource("2_fgc81")
+theme_override_font_sizes/font_size = 150
+text = "NO1"
+horizontal_alignment = 1
+script = ExtResource("2_8uavx")
+variable_type = 1
+variable_name = "player_name"
+
+[node name="MPFVariable - Value" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 708.0
+offset_right = 1925.0
+offset_bottom = 913.0
+theme_override_constants/outline_size = 35
+theme_override_fonts/font = ExtResource("2_fgc81")
+theme_override_font_sizes/font_size = 150
+text = "1,000,000"
+horizontal_alignment = 1
+script = ExtResource("2_8uavx")
+variable_type = 1
+variable_name = "value"
+comma_separate = true

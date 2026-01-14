@@ -5,6 +5,7 @@ mode:
   stop_events: mode_superpops_complete
   priority: 20000
 
+
 variable_player:
   pop1_hit:
     score: 100000
@@ -12,6 +13,7 @@ variable_player:
     score: 100000
   pop3_hit:
     score: 100000
+
 
 timers:
   superpops_timer:

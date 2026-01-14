@@ -5,6 +5,7 @@ mode:
   stop_events: mode_girls_complete
   priority: 5000
 
+
 timers:
   girls_intro_show:
     start_value: 0

@@ -17,8 +17,8 @@
   lights:
     l_wizardindicator_rectangle_led: stop
     l_wizardindicator3_rectangle_led: purple
-#    l_cassetteleft_led: purple
-#    l_cassetteright_led: purple
+    l_cassetteleft_led: purple
+    l_cassetteright_led: purple
 - duration: 50ms
   lights:
     l_modeindicator5_rectangle_led: stop
@@ -36,8 +36,8 @@
 - duration: 50ms
   lights:
     l_wizardindicator3_rectangle_led: stop
-#    l_cassetteleft_led: stop
-#    l_cassetteright_led: stop
+    l_cassetteleft_led: stop
+    l_cassetteright_led: stop
     l_wizardindicator2_rectangle_led: purple
 - duration: 50ms
   lights:
@@ -54,12 +54,11 @@
     l_supercircle3_led: purple
     l_supercircle4_led: purple
     l_supercircle5_led: purple
-#    l_lowerpop_smallarrow_led: purple
     l_lowerrightpop_inside_led: purple
     l_lowerrightpop_inside2_led: purple
     l_lowerdrop_circle_led: purple
     l_middledrop_circle_led: purple
-#    l_dropbank_rectangle_led: purple
+    l_dropbank_rectangle_led: purple
 - duration: 50ms
   lights:
     l_wizardindicator2_rectangle_led: stop
@@ -73,12 +72,11 @@
     l_supercircle3_led: stop
     l_supercircle4_led: stop
     l_supercircle5_led: stop
-#    l_lowerpop_smallarrow_led: stop
     l_lowerrightpop_inside_led: stop
     l_lowerrightpop_inside2_led: stop
     l_lowerdrop_circle_led: stop
     l_middledrop_circle_led: stop
-#    l_dropbank_rectangle_led: stop
+    l_dropbank_rectangle_led: stop
     l_leftramp_arrow_led: purple
     l_dropstandup_flasher_led: purple
     l_leftorbitbattery_rectangle_led: purple
@@ -122,8 +120,8 @@
     l_innerloopcombo_circle_led: stop
     l_leftorbit_arrow_led: stop
     l_rightrampcombo_circle_led: stop
-#    l_upperleftpop_inside_led: purple
-#    l_uppercenterpop_inside_led: purple
+    l_upperleftpop_inside_led: purple
+    l_uppercenterpop_inside_led: purple
     l_upperpop_smallarrow_led: purple
     l_scoopcombo_circle_led: purple
     l_rightorbit_arrow_led: purple
@@ -136,8 +134,8 @@
     l_scoop_arrow_led: purple
 - duration: 50ms
   lights:
-#    l_upperleftpop_inside_led: stop
-#    l_uppercenterpop_inside_led: stop
+    l_upperleftpop_inside_led: stop
+    l_uppercenterpop_inside_led: stop
     l_upperpop_smallarrow_led: stop
     l_scoopcombo_circle_led: stop
     l_rightorbit_arrow_led: stop

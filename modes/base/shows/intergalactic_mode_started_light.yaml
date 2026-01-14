@@ -5,5 +5,5 @@
     l_modeindicator1_rectangle_led: white
 - duration: 750ms
   lights:
-    l_modeindicator1_rectangle_led: off
+    l_modeindicator1_rectangle_led: stop
 

@@ -2,26 +2,26 @@
 
 - duration: 200ms
   lights:
-    l_lowerdrop_circle_led: off
+    l_lowerdrop_circle_led: stop
     l_upperdrop_circle_led: Blue
 - duration: 200ms
   lights:
-    l_upperdrop_circle_led: off
+    l_upperdrop_circle_led: stop
     l_middledrop_circle_led: Blue
 - duration: 200ms
   lights:
-    l_middledrop_circle_led: off
+    l_middledrop_circle_led: stop
     l_lowerdrop_circle_led: Blue
 - duration: 200ms
   lights:
-    l_lowerdrop_circle_led: off
+    l_lowerdrop_circle_led: stop
     l_upperdrop_circle_led: Red
 - duration: 200ms
   lights:
-    l_upperdrop_circle_led: off
+    l_upperdrop_circle_led: stop
     l_middledrop_circle_led: Red
 - duration: 200ms
   lights:
-    l_middledrop_circle_led: off
+    l_middledrop_circle_led: stop
     l_lowerdrop_circle_led: Red
 

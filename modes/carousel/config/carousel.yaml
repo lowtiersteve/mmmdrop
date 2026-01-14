@@ -150,7 +150,7 @@ show_player:
 blinkenlight_player:
   mode_carousel_started:
     bl_scoop_arrow_led:
-      color: bee0ff #light blue 75%
+      color: 0000FF
       action: add
   mode_carousel_will_stop:
     bl_scoop_arrow_led: remove

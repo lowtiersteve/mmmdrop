@@ -5,6 +5,7 @@ mode:
   stop_events: mode_intergalactic_stop, mode_intergalactic_failed, mode_intergalactic_success, ball_will_end
   priority: 1000
 
+
 sequences:
   intergalactic_shot_1:
     events:
@@ -275,7 +276,6 @@ shot_profiles:
     advance_on_hit: False
     states:
       - name: "off"
-        show: "off"
       - name: lit
         show: flash_color
         show_tokens:

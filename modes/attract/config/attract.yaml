@@ -3,10 +3,10 @@
 mode_settings:
   selectable_items:
     - gameover{machine.game_just_played==1}
-    - last_scores_1p{machine.game_just_played==1 and not machine.player2_score>0}
-    - last_scores_2p{machine.player2_score>0 and machine.game_just_played==1 and not machine.player3_score>0}
-    - last_scores_3p{machine.player3_score>0 and machine.game_just_played==1 and not machine.player4_score>0}
-    - last_scores_4p{machine.player4_score>0}
+#    - last_scores_1p{machine.game_just_played==1 and not machine.player2_score>0}
+#    - last_scores_2p{machine.player2_score>0 and machine.game_just_played==1 and not machine.player3_score>0}
+#    - last_scores_3p{machine.player3_score>0 and machine.game_just_played==1 and not machine.player4_score>0}
+    - last_scores_4p{machine.game_just_played==1} # and machine.player4_score>0}
     - mpf_logo
     - fast_logo
     - specialthanks
@@ -15,17 +15,17 @@ mode_settings:
     - version
     - makercredits
     - dedicated
-#    - highscoregrandchampion
-#    - highscore1
-#    - highscore2
-#    - highscore3
-#    - highscore4
-#    - highscoremultiballs
-#    - highscoremodes1
-#    - highscoremodes2
-#    - highscoremodes3
-#    - highscoremodes4
-#    - highscoremodes5
+    - highscoregrandchampion
+    - highscore1
+    - highscore2
+    - highscore3
+    - highscore4
+    - highscoremultiballs
+    - highscoremodes1
+    - highscoremodes2
+    - highscoremodes3
+    - highscoremodes4
+    - highscoremodes5
   next_item_events: s_right_flipper_active, timer_attract_carousel_timer_complete
   previous_item_events: s_left_flipper_active
 
@@ -182,6 +182,7 @@ slide_player:
         action: play
         priority: 1000
 
+
 sound_player:
   mode_attract_started:
     attract_crowd:
@@ -277,125 +278,174 @@ timers:
 
 widget_player:
   item_highlighted{item=="gameover"}:
-    attract_dedicated:
-      action: remove
-    attract_last_scores_1p:
-      action: remove
-    attract_last_scores_2p:
-      action: remove
-    attract_last_scores_3p:
-      action: remove
-    attract_last_scores_4p:
-      action: remove
     attract_gameover:
       action: play
       slide: attract
+  item_highlighted{item!="gameover"}:
+    attract_gameover:
+      action: remove
   item_highlighted{item=="last_scores_1p"}:
-    attract_gameover:
-      action: remove
-    attract_mpf_logo:
-      action: remove
     attract_last_scores_1p:
       action: play
       slide: attract
+  item_highlighted{item!="last_scores_1p"}:
+    attract_last_scores_1p:
+      action: remove
   item_highlighted{item=="last_scores_2p"}:
-    attract_gameover:
-      action: remove
-    attract_mpf_logo:
-      action: remove
     attract_last_scores_2p:
       action: play
       slide: attract
+  item_highlighted{item!="last_scores_2p"}:
+    attract_last_scores_2p:
+      action: remove
   item_highlighted{item=="last_scores_3p"}:
-    attract_gameover:
-      action: remove
-    attract_mpf_logo:
-      action: remove
     attract_last_scores_3p:
       action: play
       slide: attract
+  item_highlighted{item!="last_scores_3p"}:
+    attract_last_scores_3p:
+      action: remove
   item_highlighted{item=="last_scores_4p"}:
-    attract_gameover:
-      action: remove
-    attract_mpf_logo:
-      action: remove
     attract_last_scores_4p:
       action: play
       slide: attract
+  item_highlighted{item!="last_scores_4p"}:
+    attract_last_scores_4p:
+      action: remove
   item_highlighted{item=="mpf_logo"}:
-    attract_dedicated:
-      action: remove
-    attract_last_scores_1p:
-      action: remove
-    attract_last_scores_2p:
-      action: remove
-    attract_last_scores_3p:
-      action: remove
-    attract_last_scores_4p:
-      action: remove
-    attract_fast_logo:
-      action: remove
     attract_mpf_logo:
       action: play
       slide: attract
+  item_highlighted{item!="mpf_logo"}:
+    attract_mpf_logo:
+      action: remove
   item_highlighted{item=="fast_logo"}:
-    attract_mpf_logo:
-      action: remove
-    attract_specialthanks:
-      action: remove
     attract_fast_logo:
       action: play
       slide: attract
+  item_highlighted{item!="fast_logo"}:
+    attract_fast_logo:
+      action: remove
   item_highlighted{item=="specialthanks"}:
-    attract_fast_logo:
-      action: remove
-    attract_credits:
-      action: remove
     attract_specialthanks:
       action: play
       slide: attract
+  item_highlighted{item!="specialthanks"}:
+    attract_specialthanks:
+      action: remove
   item_highlighted{item=="credits"}:
-    attract_specialthanks:
-      action: remove
-    attract_pressstart:
-      action: remove
     attract_credits:
       action: play
       slide: attract
+  item_highlighted{item!="credits"}:
+    attract_credits:
+      action: remove
   item_highlighted{item=="pressstart"}:
-    attract_credits:
-      action: remove
-    attract_version:
-      action: remove
     attract_pressstart:
       action: play
       slide: attract
+  item_highlighted{item!="pressstart"}:
+    attract_pressstart:
+      action: remove
   item_highlighted{item=="version"}:
-    attract_pressstart:
-      action: remove
-    attract_makercredits:
-      action: remove
     attract_version:
       action: play
       slide: attract
+  item_highlighted{item!="version"}:
+    attract_version:
+      action: remove
   item_highlighted{item=="makercredits"}:
-    attract_version:
-      action: remove
-    attract_dedicated:
-      action: remove
     attract_makercredits:
       action: play
       slide: attract
+  item_highlighted{item!="makercredits"}:
+    attract_makercredits:
+      action: remove
   item_highlighted{item=="dedicated"}:
-    attract_makercredits:
-      action: remove
-    attract_gameover:
-      action: remove
-    attract_mpf_logo:
-      action: remove
     attract_dedicated:
       action: play
       slide: attract
+  item_highlighted{item!="dedicated"}:
+    attract_dedicated:
+      action: remove
+  item_highlighted{item=="highscoregrandchampion"}:
+    attract_highscoregrandchampion:
+      action: play
+      slide: attract
+  item_highlighted{item!="highscoregrandchampion"}:
+    attract_highscoregrandchampion:
+      action: remove
+  item_highlighted{item=="highscore1"}:
+    attract_highscore1:
+      action: play
+      slide: attract
+  item_highlighted{item!="highscore1"}:
+    attract_highscore1:
+      action: remove
+  item_highlighted{item=="highscore2"}:
+    attract_highscore2:
+      action: play
+      slide: attract
+  item_highlighted{item!="highscore2"}:
+    attract_highscore2:
+      action: remove
+  item_highlighted{item=="highscore3"}:
+    attract_highscore3:
+      action: play
+      slide: attract
+  item_highlighted{item!="highscore3"}:
+    attract_highscore3:
+      action: remove
+  item_highlighted{item=="highscore4"}:
+    attract_highscore4:
+      action: play
+      slide: attract
+  item_highlighted{item!="highscore4"}:
+    attract_highscore4:
+      action: remove
+  item_highlighted{item=="highscoremultiballs"}:
+    attract_highscoremultiballs:
+      action: play
+      slide: attract
+  item_highlighted{item!="highscoremultiballs"}:
+    attract_highscoremultiballs:
+      action: remove
+  item_highlighted{item=="highscoremodes1"}:
+    attract_highscoremodes1:
+      action: play
+      slide: attract
+  item_highlighted{item!="highscoremodes1"}:
+    attract_highscoremodes1:
+      action: remove
+  item_highlighted{item=="highscoremodes2"}:
+    attract_highscoremodes2:
+      action: play
+      slide: attract
+  item_highlighted{item!="highscoremodes2"}:
+    attract_highscoremodes2:
+      action: remove
+  item_highlighted{item=="highscoremodes3"}:
+    attract_highscoremodes3:
+      action: play
+      slide: attract
+  item_highlighted{item!="highscoremodes3"}:
+    attract_highscoremodes3:
+      action: remove
+  item_highlighted{item=="highscoremodes4"}:
+    attract_highscoremodes4:
+      action: play
+      slide: attract
+  item_highlighted{item!="highscoremodes4"}:
+    attract_highscoremodes4:
+      action: remove
+  item_highlighted{item=="highscoremodes5"}:
+    attract_highscoremodes5:
+      action: play
+      slide: attract
+  item_highlighted{item!="highscoremodes5"}:
+    attract_highscoremodes5:
+      action: remove
+
 
 
 show_player:

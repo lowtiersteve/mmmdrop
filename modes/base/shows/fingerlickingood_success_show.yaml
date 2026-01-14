@@ -20,19 +20,19 @@
     l_lowerrightstandup_circle_led: Gold
 - duration: 500ms
   lights:
-    l_scoopmode_square_led: off
-    l_scoop_arrow_led: off
-    l_scoopmode_circle2_led: off
-    l_scoopcombo_circle_led: off
-    l_leftorbit_arrow_led: off
-    l_leftorbitcombo_circle_led: off
-    l_leftramp_arrow_led: off
-    l_leftrampcombo_circle_led: off
-    l_leftramprectangle_led: off
-    l_rightramp_arrow_led: off
-    l_rightrampcombo_circle_led: off
-    l_rightramprectangle_led: off
-    l_rightorbit_arrow_led: off
-    l_rightorbitcombo_circle_led: off
-    l_rightorbitrectangle_led: off
-    l_lowerrightstandup_circle_led: off
+    l_scoopmode_square_led: stop
+    l_scoop_arrow_led: stop
+    l_scoopmode_circle2_led: stop
+    l_scoopcombo_circle_led: stop
+    l_leftorbit_arrow_led: stop
+    l_leftorbitcombo_circle_led: stop
+    l_leftramp_arrow_led: stop
+    l_leftrampcombo_circle_led: stop
+    l_leftramprectangle_led: stop
+    l_rightramp_arrow_led: stop
+    l_rightrampcombo_circle_led: stop
+    l_rightramprectangle_led: stop
+    l_rightorbit_arrow_led: stop
+    l_rightorbitcombo_circle_led: stop
+    l_rightorbitrectangle_led: stop
+    l_lowerrightstandup_circle_led: stop

@@ -10,11 +10,11 @@
     l_captiveball_smallcircle_led: FFFF00
 - duration: 500ms
   lights:
-    l_leftorbitcombo_circle_led: off
-    l_leftrampcombo_circle_led: off
-    l_innerloopcombo_circle_led: off
-    l_rightrampcombo_circle_led: off
-    l_rightorbitcombo_circle_led: off
-    l_captiveball_smallcircle_led: off
+    l_leftorbitcombo_circle_led: stop
+    l_leftrampcombo_circle_led: stop
+    l_innerloopcombo_circle_led: stop
+    l_rightrampcombo_circle_led: stop
+    l_rightorbitcombo_circle_led: stop
+    l_captiveball_smallcircle_led: stop
 
 

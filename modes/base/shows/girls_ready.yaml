@@ -3,47 +3,47 @@
 - duration: 200ms
   lights:
     l_supercircle1_led: Gold
-    l_supercircle2_led: off
+    l_supercircle2_led: stop
     l_lowerrightstandup_circle_led: red
 - duration: 200ms
   lights:
-    l_lowerrightstandup_circle_led: off
+    l_lowerrightstandup_circle_led: stop
 - duration: 200ms
   lights:
     l_supercircle2_led: Gold
-    l_supercircle1_led: off
+    l_supercircle1_led: stop
     l_lowerrightstandup_circle_led: red
 - duration: 200ms
   lights:
     l_supercircle3_led: Gold
-    l_supercircle2_led: off
-    l_lowerrightstandup_circle_led: off
+    l_supercircle2_led: stop
+    l_lowerrightstandup_circle_led: stop
 - duration: 200ms
   lights:
     l_supercircle4_led: Gold
-    l_supercircle3_led: off
+    l_supercircle3_led: stop
     l_lowerrightstandup_circle_led: red
 - duration: 200ms
   lights:
     l_supercircle5_led: Gold
-    l_supercircle4_led: off
-    l_lowerrightstandup_circle_led: off
+    l_supercircle4_led: stop
+    l_lowerrightstandup_circle_led: stop
 - duration: 200ms
   lights:
     l_lowerrightstandup_circle_led: red
 - duration: 200ms
   lights:
     l_supercircle4_led: Gold
-    l_supercircle5_led: off
-    l_lowerrightstandup_circle_led: off
+    l_supercircle5_led: stop
+    l_lowerrightstandup_circle_led: stop
 - duration: 200ms
   lights:
     l_supercircle3_led: Gold
-    l_supercircle4_led: off
+    l_supercircle4_led: stop
     l_lowerrightstandup_circle_led: red
 - duration: 200ms
   lights:
     l_supercircle2_led: Gold
-    l_supercircle3_led: off
-    l_lowerrightstandup_circle_led: off
+    l_supercircle3_led: stop
+    l_lowerrightstandup_circle_led: stop
 

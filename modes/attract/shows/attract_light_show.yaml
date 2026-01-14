@@ -42,8 +42,8 @@
     l_supercircle3_led: cyan
     l_supercircle4_led: cyan
     l_supercircle5_led: cyan
-#    l_cassetteleft_led: cyan
-#    l_cassetteright_led: cyan
+    l_cassetteleft_led: cyan
+    l_cassetteright_led: cyan
 - duration: 0.8
   lights:
     l_modeindicator1_rectangle_led: stop
@@ -62,38 +62,36 @@
     l_supercircle3_led: stop
     l_supercircle4_led: stop
     l_supercircle5_led: stop
-#    l_cassetteleft_led: stop
-#    l_cassetteright_led: stop
+    l_cassetteleft_led: stop
+    l_cassetteright_led: stop
     l_lowerdrop_circle_led: green
     l_middledrop_circle_led: green
     l_upperdrop_circle_led: green
     l_dropstandup_flasher_led: green
-#    l_dropbank_rectangle_led: green
+    l_dropbank_rectangle_led: green
 - duration: 0.8
   lights:
     l_lowerdrop_circle_led: stop
     l_middledrop_circle_led: stop
     l_upperdrop_circle_led: stop
     l_dropstandup_flasher_led: stop
-#    l_dropbank_rectangle_led: stop
-#    l_lowerpop_smallarrow_led: red
+    l_dropbank_rectangle_led: stop
     l_lowerrightstandup_circle_led: red
     l_lowerrightpop_inside_led: red
     l_lowerrightpop_inside2_led: red
-#    l_upperleftpop_inside_led: red
-#    l_uppercenterpop_inside_led: red
+    l_upperleftpop_inside_led: red
+    l_uppercenterpop_inside_led: red
     l_upperpop_smallarrow_led: red
     l_captiveball_smallcircle_led: red
     l_tshirttopcircle_led: red
     l_tshirtbottomcircle_led: red
 - duration: 0.8
   lights:
-#    l_lowerpop_smallarrow_led: stop
     l_lowerrightstandup_circle_led: stop
     l_lowerrightpop_inside_led: stop
     l_lowerrightpop_inside2_led: stop
-#    l_upperleftpop_inside_led: stop
-#    l_uppercenterpop_inside_led: stop
+    l_upperleftpop_inside_led: stop
+    l_uppercenterpop_inside_led: stop
     l_upperpop_smallarrow_led: stop
     l_captiveball_smallcircle_led: stop
     l_tshirttopcircle_led: stop

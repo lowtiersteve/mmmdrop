@@ -1,5 +1,4 @@
 #config_version=6
-# lights with lightboard-6-* are not cut/wired on the IRL playfield yet
 
 lights:
   l_leftorbit_arrow_led:
@@ -27,11 +26,6 @@ lights:
     subtype: led
     type: rgb
     label: "Right Orbit Arrow"
-#  l_lowerpop_smallarrow_led:
-#    number: lightboard-6-1
-#    subtype: led
-#    type: rgb
-#    label: "Lower Pop Arrow"
   l_lowerrightstandup_circle_led:
     number: lightboard-2-1
     subtype: led
@@ -48,36 +42,36 @@ lights:
     type: rgb
     label: "Captive Ball Arrow"
   l_lowerdrop_circle_led:
-    number: lightboard-4-14
+    number: lightboard-4-15
     subtype: led
     type: rgb
     label: "Lower Drop Rectangle"
   l_middledrop_circle_led:
-    number: lightboard-4-13
+    number: lightboard-4-14
     subtype: led
     type: rgb
     label: "Middle Drop Rectangle"
   l_upperdrop_circle_led:
-    number: lightboard-4-12
+    number: lightboard-4-13
     subtype: led
     type: rgb
     label: "Upper Drop Rectangle"
   l_dropstandup_flasher_led:
-    number: lightboard-4-19
+    number: lightboard-4-20
     subtype: led
     type: rgb
     label: "Behind Drops Standup Flasher"
     fade_ms: 500
-#  l_upperleftpop_inside_led:
-#    number: lightboard-6-3
-#    subtype: led
-#    type: rgb
-#    label: "Upper Left Pop Inside"
-#  l_uppercenterpop_inside_led:
-#    number: lightboard-6-4
-#    subtype: led
-#    type: rgb
-#    label: "Upper Right Pop Inside"
+  l_upperleftpop_inside_led:
+    number: lightboard-6-1
+    subtype: led
+    type: rgb
+    label: "Upper Left Pop Inside"
+  l_uppercenterpop_inside_led:
+    number: lightboard-6-2
+    subtype: led
+    type: rgb
+    label: "Upper Right Pop Inside"
   l_lowerrightpop_inside_led:
     number: lightboard-2-10
     subtype: led
@@ -88,18 +82,18 @@ lights:
     subtype: led
     type: rgb
     label: "Lower Right Pop Inside 2"
-#  l_dropbank_rectangle_led:
-#    number: lightboard-6-6
-#    subtype: led
-#    type: rgb
-#    label: "Drops 2x Scoring Square"
+  l_dropbank_rectangle_led:
+    number: lightboard-4-12
+    subtype: led
+    type: rgb
+    label: "Drops 2x Scoring Square"
   l_leftoutlane_circle_led:
-    number: lightboard-4-18
+    number: lightboard-4-19
     subtype: led
     type: rgb
     label: "Left Outlane Circle"
   l_leftinlane_circle_led:
-    number: lightboard-4-15
+    number: lightboard-4-16
     subtype: led
     type: rgb
     label: "Left Inlane Circle"
@@ -114,7 +108,7 @@ lights:
     type: rgb
     label: "Right Outlane Circle"
   l_ballsave_circle_led:
-    number: lightboard-3-16
+    number: lightboard-3-18
     subtype: led
     type: rgb
     label: "Ball Save Circle"
@@ -191,27 +185,27 @@ lights:
     type: rgb
     label: "Mode Rectangle 4 - Sabotage"
   l_modeindicator5_rectangle_led:
-    number: lightboard-3-11
+    number: lightboard-3-13
     subtype: led
     type: rgb
     label: "Mode Rectangle 5 - Finger Lickin Good"
   l_modeindicator6_rectangle_led:
-    number: lightboard-3-12
+    number: lightboard-3-14
     subtype: led
     type: rgb
     label: "Mode Rectangle 6 - Too Many Rappers"
   l_modeindicator7_rectangle_led:
-    number: lightboard-3-13
+    number: lightboard-3-15
     subtype: led
     type: rgb
     label: "Mode Rectangle 7 - 3 MCs and One DJ"
   l_modeindicator8_rectangle_led:
-    number: lightboard-3-14
+    number: lightboard-3-16
     subtype: led
     type: rgb
     label: "Mode Rectangle 8 - High Plains Drifter"
   l_wizardindicator_rectangle_led:
-    number: lightboard-3-15
+    number: lightboard-3-17
     subtype: led
     type: rgb
     label: "Wizard 2 Bottom Square - Bodhisattva Vow"
@@ -221,7 +215,7 @@ lights:
     type: rgb
     label: "Wizard 1 Top Square - Make Some Noise"
   l_wizardindicator3_rectangle_led:
-    number: lightboard-3-10
+    number: lightboard-3-11
     subtype: led
     type: rgb
     label: "Final Wizard Middle Square - Fight!"
@@ -255,16 +249,16 @@ lights:
     type: rgb
     label: "Super Circle 5 - Combos"
     fade_ms: 500
-#  l_cassetteleft_led:
-#    number: lightboard-6-7
-#    subtype: led
-#    type: rgb
-#    label: "Cassette Left Mini Circle"
-#  l_cassetteright_led:
-#    number: lightboard-6-8
-#    subtype: led
-#    type: rgb
-#    label: "Cassette Right Mini Circle"
+  l_cassetteleft_led:
+    number: lightboard-3-12
+    subtype: led
+    type: rgb
+    label: "Cassette Left Mini Circle"
+  l_cassetteright_led:
+    number: lightboard-3-10
+    subtype: led
+    type: rgb
+    label: "Cassette Right Mini Circle"
   l_leftramprectangle_led:
     number: lightboard-3-3
     subtype: led
@@ -300,12 +294,12 @@ lights:
     label: "Left Orbit Rectangle - MCA"
     fade_ms: 500
   l_leftsling_uppergi_led:
-    number: lightboard-4-16
+    number: lightboard-4-17
     subtype: led
     type: rgb
     label: "Left Sling Upper GI"
   l_leftsling_lowergi_led:
-    number: lightboard-4-17
+    number: lightboard-4-18
     subtype: led
     type: rgb
     label: "Left Sling Lower GI"
@@ -414,10 +408,6 @@ blinkenlights:
     off_when_multiple: false
     color_duration: 300ms
     light: l_ballsave_circle_led
-#  bl_lowerpop_smallarrow_led:
-#    off_when_multiple: false
-#    color_duration: 750ms
-#    light: l_lowerpop_smallarrow_led
   bl_lowerrightpop_inside_led:
     off_when_multiple: false
     color_duration: 750ms
@@ -426,12 +416,12 @@ blinkenlights:
     off_when_multiple: false
     color_duration: 750ms
     light: l_lowerrightpop_inside2_led
-#  bl_upperleftpop_inside_led:
-#    off_when_multiple: false
-#    color_duration: 750ms
-#    light: l_upperleftpop_inside_led
-#  bl_uppercenterpop_inside_led:
-#    off_when_multiple: false
-#    color_duration: 750ms
-#    light: l_uppercenterpop_inside_led
+  bl_upperleftpop_inside_led:
+    off_when_multiple: false
+    color_duration: 750ms
+    light: l_upperleftpop_inside_led
+  bl_uppercenterpop_inside_led:
+    off_when_multiple: false
+    color_duration: 750ms
+    light: l_uppercenterpop_inside_led
 

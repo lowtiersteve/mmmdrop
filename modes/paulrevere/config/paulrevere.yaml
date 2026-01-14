@@ -288,5 +288,4 @@ shot_profiles:
     advance_on_hit: False
     states:
       - name: "off"
-        show: "off"
     loop: False

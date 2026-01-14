@@ -4,7 +4,6 @@
 # https://fastpinball.com/cookbook/lower-third/
 # https://fastpinball.com/mpf/config/net/
 
-#v0.51
 
 hardware:
   platform: fast
@@ -142,7 +141,7 @@ ball_saves:
     active_time: 5s
     hurry_up_time: 2s
     grace_period: 1s
-    enable_events: ball_hold_fingerlickingood_scoop_hold_balls_released, ball_hold_highplainsdrifter_scoop_hold_balls_released, ball_hold_intergalactic_scoop_hold_balls_released, ball_hold_paulrevere_scoop_hold_balls_released, ball_hold_sabotage_scoop_hold_balls_released, ball_hold_threemcsand1dj_scoop_hold_balls_released, ball_hold_toomanyrappers_scoop_hold_balls_released, ball_hold_tripletrouble_scoop_hold_balls_released, ball_hold_makesomenoise_scoop_hold_balls_released, ball_hold_highplainsdrifter_scoop_hold_balls_released
+    enable_events: ball_hold_fingerlickingood_scoop_hold_balls_released, ball_hold_highplainsdrifter_scoop_hold_balls_released, ball_hold_intergalactic_scoop_hold_balls_released, ball_hold_paulrevere_scoop_hold_balls_released, ball_hold_sabotage_scoop_hold_balls_released, ball_hold_threemcsand1dj_scoop_hold_balls_released, ball_hold_toomanyrappers_scoop_hold_balls_released, ball_hold_tripletrouble_scoop_hold_balls_released
     auto_launch: True
     balls_to_save: -1
   girls_frenzy:
@@ -182,7 +181,7 @@ modes:
   - superstandups
   - supercombos
   - girls
-#  - highscore
+  - highscore
 
 
 settings:
@@ -248,7 +247,6 @@ shot_profiles:
       - name: flashing
         show: flash
       - name: unlit
-        show: "off" ##remove quotes if this breaks
     loop: False
 
 
