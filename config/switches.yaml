@@ -144,11 +144,11 @@ switches:
     label: "Inner Loop"
   s_left_ramp:
     number: 0804b-6
-    ignore_window_ms: 200
+    ignore_window_ms: 400
     label: "Left Ramp"
   s_right_ramp:
     number: 0804b-7
-    ignore_window_ms: 200
+    ignore_window_ms: 400
     label: "Right Ramp"
   s_right_orbit:
     number: 0804-7

@@ -19,7 +19,7 @@ coils:
     label: "Right Lower Flipper Coil Hold Signal"
   c_trough_eject:
     number: 3208-1
-    default_pulse_ms: 20
+    default_pulse_ms: 15
     label: "Trough Eject"
   c_left_slingshot:
     number: 3208-7
@@ -61,6 +61,7 @@ coils:
     number: 3208-0
     default_pulse_ms: 20
     label: "Auto Plunger"
+
 
 autofire_coils:
   left_slingshot:

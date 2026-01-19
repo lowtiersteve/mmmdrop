@@ -33,9 +33,9 @@ variable_name = "award"
 [node name="MPFVariable - Player Name" type="Label" parent="."]
 layout_mode = 0
 offset_left = 3.0
-offset_top = 505.0
+offset_top = 580.0
 offset_right = 1922.0
-offset_bottom = 710.0
+offset_bottom = 785.0
 theme_override_constants/outline_size = 35
 theme_override_fonts/font = ExtResource("2_fgc81")
 theme_override_font_sizes/font_size = 150
@@ -48,9 +48,9 @@ variable_name = "player_name"
 [node name="MPFVariable - Value" type="Label" parent="."]
 layout_mode = 0
 offset_left = 1.0
-offset_top = 708.0
+offset_top = 783.0
 offset_right = 1925.0
-offset_bottom = 913.0
+offset_bottom = 988.0
 theme_override_constants/outline_size = 35
 theme_override_fonts/font = ExtResource("2_fgc81")
 theme_override_font_sizes/font_size = 150
