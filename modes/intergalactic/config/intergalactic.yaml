@@ -32,7 +32,7 @@ sequences:
     reset_on_complete: False
   intergalactic_shot_5:
     events:
-      - pop_standup_hit
+      - pop3_hit
     enable_events: intergalactic_shot_4_done
     events_when_complete: intergalactic_shot_5_done, mode_intergalactic_stop
     reset_on_complete: False

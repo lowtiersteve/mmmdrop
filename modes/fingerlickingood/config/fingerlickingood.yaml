@@ -30,7 +30,7 @@ variable_player:
     fingerlickingood_boost:
       int: 1
       action: add
-  pop3_hit:
+  pop_standup_hit:
     score: 3000000 * current_player.fingerlickingood_boost
     mode_fingerlickingood_score: 3000000 * current_player.fingerlickingood_boost
 
@@ -77,7 +77,7 @@ sound_player:
       action: play
       bus: effects
       max_queue_time: 500ms
-  pop3_hit:
+  pop_standup_hit:
     success_finish:
       action: play
       bus: effects
@@ -134,7 +134,7 @@ timers:
       - action: start
         event: timer_fingerlickingood_intro_show_complete
       - action: pause
-        event: pop3_hit
+        event: pop_standup_hit
       - action: reset
         event: mode_fingerlickingood_started
       - action: add
@@ -144,7 +144,7 @@ timers:
 
 event_player:
   timer_fingerlickingood_time_remaining_complete: mode_fingerlickingood_failed
-  pop3_hit: mode_fingerlickingood_success
+  pop_standup_hit: mode_fingerlickingood_success
   left_ramp_hit: finger_boost, add_fingerlickingood_time_7s
   right_ramp_hit: finger_boost, add_fingerlickingood_time_7s
 
@@ -163,8 +163,6 @@ blinkenlight_player:
       color: FF46A2
     bl_rightramp_arrow_led:
       color: FF46A2
-    bl_lowerrightpop_inside_led:
-      color: FA8072
-    bl_lowerrightpop_inside2_led:
+    bl_lowerrightstandup_circle_led:
       color: FA8072
 
