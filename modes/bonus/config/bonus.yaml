@@ -270,6 +270,21 @@ random_event_player:
 
 
 show_player:
+  bonus_entry:
+    bonus_count_show_red:
+      action: stop
+    bonus_count_show_blue:
+      action: stop
+    bonus_count_show_green:
+      action: stop
+    bonus_count_show_orange:
+      action: stop
+    bonus_count_show_pink:
+      action: stop
+    bonus_count_show_purple:
+      action: stop
+    bonus_count_show_yellow:
+      action: stop
   play_red_show:
     bonus_count_show_red:
       action: play

@@ -10,7 +10,7 @@ mode:
 
 high_score:
   _overwrite: true
-  enter_initials_timeout: 60
+  enter_initials_timeout: 200
   award_slide_display_time: 5s
   categories: !!omap
     - score:
