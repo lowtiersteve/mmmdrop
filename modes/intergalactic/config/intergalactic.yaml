@@ -1,7 +1,7 @@
 #config_version=6
 
 mode:
-  start_events: carousel_intergalactic_selected
+  start_events: carousel_item_selected{item=="intergalactic"}
   stop_events: mode_intergalactic_stop, mode_intergalactic_failed, mode_intergalactic_success, ball_will_end
   priority: 1000
 
@@ -238,6 +238,14 @@ show_player:
     intergalactic_final_shot:
       action: play
       loops: -1
+  mode_intergalactic_started:
+    intergalactic_intro_lights:
+      action: play
+      loops: -1
+  timer_intergalactic_intro_show_complete:
+    intergalactic_intro_lights:
+      action: stop
+
 
 blinkenlight_player:
   timer_intergalactic_intro_show_complete:

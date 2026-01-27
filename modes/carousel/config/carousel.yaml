@@ -89,60 +89,60 @@ random_event_player:
 
 
 show_player:
-  item_highlighted{item=="intergalactic"}:
+  carousel_item_highlighted{item=="intergalactic"}:
     intergalactic_mode_lit:
       action: play
       loops: -1
-  item_highlighted{item!="intergalactic"}:
+  carousel_item_highlighted{item!="intergalactic"}:
     intergalactic_mode_lit:
       action: stop
-  item_highlighted{item=="paulrevere"}:
+  carousel_item_highlighted{item=="paulrevere"}:
     paulrevere_mode_lit:
       action: play
       loops: -1
-  item_highlighted{item!="paulrevere"}:
+  carousel_item_highlighted{item!="paulrevere"}:
     paulrevere_mode_lit:
       action: stop
-  item_highlighted{item=="tripletrouble"}:
+  carousel_item_highlighted{item=="tripletrouble"}:
     tripletrouble_mode_lit:
       action: play
       loops: -1
-  item_highlighted{item!="tripletrouble"}:
+  carousel_item_highlighted{item!="tripletrouble"}:
     tripletrouble_mode_lit:
       action: stop
-  item_highlighted{item=="sabotage"}:
+  carousel_item_highlighted{item=="sabotage"}:
     sabotage_mode_lit:
       action: play
       loops: -1
-  item_highlighted{item!="sabotage"}:
+  carousel_item_highlighted{item!="sabotage"}:
     sabotage_mode_lit:
       action: stop
-  item_highlighted{item=="fingerlickingood"}:
+  carousel_item_highlighted{item=="fingerlickingood"}:
     fingerlickingood_mode_lit:
       action: play
       loops: -1
-  item_highlighted{item!="fingerlickingood"}:
+  carousel_item_highlighted{item!="fingerlickingood"}:
     fingerlickingood_mode_lit:
       action: stop
-  item_highlighted{item=="toomanyrappers"}:
+  carousel_item_highlighted{item=="toomanyrappers"}:
     toomanyrappers_mode_lit:
       action: play
       loops: -1
-  item_highlighted{item!="toomanyrappers"}:
+  carousel_item_highlighted{item!="toomanyrappers"}:
     toomanyrappers_mode_lit:
       action: stop
-  item_highlighted{item=="threemcsand1dj"}:
+  carousel_item_highlighted{item=="threemcsand1dj"}:
     threemcsand1dj_mode_lit:
       action: play
       loops: -1
-  item_highlighted{item!="threemcsand1dj"}:
+  carousel_item_highlighted{item!="threemcsand1dj"}:
     threemcsand1dj_mode_lit:
       action: stop
-  item_highlighted{item=="highplainsdrifter"}:
+  carousel_item_highlighted{item=="highplainsdrifter"}:
     highplainsdrifter_mode_lit:
       action: play
       loops: -1
-  item_highlighted{item!="highplainsdrifter"}:
+  carousel_item_highlighted{item!="highplainsdrifter"}:
     highplainsdrifter_mode_lit:
       action: stop
 

@@ -1,0 +1,22 @@
+#show_version=6
+
+- duration: 200ms
+  lights:
+    l_upperleftpop_inside_led: yellow
+    l_uppercenterpop_inside_led: stop
+    l_backpanel_gi1_led: yellow
+    l_backpanel_gi2_led: stop
+    l_backpanel_gi3_led: yellow
+    l_backpanel_gi4_led: stop
+    l_backpanel_gi5_led: yellow
+
+- duration: 200ms
+  lights:
+    l_upperleftpop_inside_led: stop
+    l_uppercenterpop_inside_led: yellow
+    l_backpanel_gi1_led: stop
+    l_backpanel_gi2_led: yellow
+    l_backpanel_gi3_led: stop
+    l_backpanel_gi4_led: yellow
+    l_backpanel_gi5_led: stop
+

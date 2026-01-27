@@ -96,3 +96,12 @@ slide_player:
     high_score_award:
       action: play
 
+sound_player:
+  mode_highscore_started:
+    base_game_random_music:
+      action: stop
+      bus: music
+  high_score_award_display:
+    bonus_sound_random:
+      action: play
+      bus: effects

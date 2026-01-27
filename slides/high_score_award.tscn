@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://pj8s7on6760o"]
 
-[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_8uavx"]
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_8uavx"]
 [ext_resource type="Texture2D" uid="uid://fy7wp70m04a3" path="res://assets/Beastie_Boys_-_To_the_5_Boroughs.png" id="2_06a0i"]
-[ext_resource type="Script" uid="uid://b3ni1cjx2r6sx" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="2_8uavx"]
+[ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="2_8uavx"]
 [ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="2_fgc81"]
 
 [node name="HighScoreAward" type="Control"]
@@ -29,6 +29,7 @@ horizontal_alignment = 1
 script = ExtResource("2_8uavx")
 variable_type = 1
 variable_name = "award"
+update_event = "high_score_award_display"
 
 [node name="MPFVariable - Player Name" type="Label" parent="."]
 layout_mode = 0
@@ -44,6 +45,7 @@ horizontal_alignment = 1
 script = ExtResource("2_8uavx")
 variable_type = 1
 variable_name = "player_name"
+update_event = "high_score_award_display"
 
 [node name="MPFVariable - Value" type="Label" parent="."]
 layout_mode = 0
@@ -60,3 +62,4 @@ script = ExtResource("2_8uavx")
 variable_type = 1
 variable_name = "value"
 comma_separate = true
+update_event = "high_score_award_display"

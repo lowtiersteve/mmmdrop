@@ -1027,7 +1027,7 @@ sound_player:
       action: play
       bus: voice
       priority: 5000
-  logicblock_completed_modes_count_hit{device.counters.completed_modes_count.value==2}:
+  achievement_wizard1_state_enabled:
     hitthescoop_callout:
       action: play
       bus: voice
@@ -1288,12 +1288,9 @@ variable_player:
     battery_charged_yesorno:
       int: 0
       action: set
-  achievement_wizard1_state_enabled:
+  mode_chcheckitout_stopped:
     chcheckitout_multiball_blocking_flag:
-      int: 1
-      action: set
-    bodymovin_multiball_blocking_flag:
-      int: 1
+      int: 0
       action: set
   mode_bodymovin_stopped:
     bodymovin_multiball_blocking_flag:
@@ -1384,10 +1381,6 @@ variable_player:
     chcheckitout_qualified_flag:
       int: 1
       action: set
-  mode_chcheckitout_stopped:
-    chcheckitout_multiball_blocking_flag:
-      int: 0
-      action: set
   bodymovin_lock_1_enabled:
     bodymovin_lock1_qualified_flag:
       int: 1
@@ -1439,6 +1432,13 @@ variable_player:
   mode_supercombos_started:
     characters_collected: 1
     djhurr_collected: 1
+  achievement_wizard1_state_enabled:
+    chcheckitout_multiball_blocking_flag:
+      int: 1
+      action: set
+    bodymovin_multiball_blocking_flag:
+      int: 1
+      action: set
 
 
 sequences:
@@ -1732,6 +1732,12 @@ show_player:
       loops: -1
     chcheckitout_lit_strobe:
       action: stop
+    battery_green:
+      action: stop
+    battery_yellow:
+      action: stop
+    battery_red:
+      action: stop
   achievement_girls_frenzy_state_enabled:
     girls_ready:
       action: play
@@ -1921,6 +1927,22 @@ show_player:
     makesomenoise_mode_qualified_light:
       action: stop
     girls_ready:
+      action: stop
+    fingerlickingood_success_show:
+      action: stop
+    highplainsdrifter_success_show:
+      action: stop
+    intergalactic_success_show:
+      action: stop
+    paulrevere_success_show:
+      action: stop
+    sabotage_success_show:
+      action: stop
+    threemcsand1dj_success_show:
+      action: stop
+    toomanyrappers_success_show:
+      action: stop
+    tripletrouble_success_show:
       action: stop
   start_superpops:
     superpops_on:
@@ -2179,7 +2201,7 @@ timers:
 
 achievements:
   wizard1:
-    enable_events: logicblock_completed_modes_count_hit{device.counters.completed_modes_count.value==2}
+    enable_events: logicblock_completed_modes_count_hit{device.counters.completed_modes_count.value==2 and chcheckitout_multiball_blocking_flag==0 and bodymovin_multiball_blocking_flag==0 and girls_blocking_flag==0}, multiball_chcheckitout_ended{device.counters.completed_modes_count.value==2 and device.achievements.wizard1.state=="disabled"}, multiball_bodymovin_ended{device.counters.completed_modes_count.value==2 and device.achievements.wizard1.state=="disabled"}, mode_girls_stopped{device.counters.completed_modes_count.value==2 and device.achievements.wizard1.state=="disabled"}, ball_started{device.counters.completed_modes_count.value==2 and device.achievements.wizard1.state=="disabled"}
     show_tokens:
       lights: l_wizardindicator2_rectangle_led
     show_when_started: on

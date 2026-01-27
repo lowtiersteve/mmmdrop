@@ -3,7 +3,7 @@
 mode:
   start_events: ball_starting
   stop_events: ball_will_end
-  priority: 11000
+  priority: 100
 
 
 counters:
@@ -340,6 +340,34 @@ widget_player:
   ball_will_end:
     charges_remaining:
       action: remove
+  mode_fingerlickingood_started:
+    charges_remaining:
+      action: remove
+  mode_highplainsdrifter_started:
+    charges_remaining:
+      action: remove
+  mode_intergalactic_started:
+    charges_remaining:
+      action: remove
+  mode_makesomenoise_started:
+    charges_remaining:
+      action: remove
+  mode_paulrevere_started:
+    charges_remaining:
+      action: remove
+  mode_sabotage_started:
+    charges_remaining:
+      action: remove
+  mode_threemcsand1dj_started:
+    charges_remaining:
+      action: remove
+  mode_toomanyrappers_started:
+    charges_remaining:
+      action: remove
+  mode_tripletrouble_started:
+    charges_remaining:
+      action: remove
+
 
 
 sound_player:
@@ -354,7 +382,7 @@ sound_player:
 
 
 random_event_player:
-  scoop_hit{device.counters.battery_charged_status.enabled==True and device.counters.battery_charged_status.value>0 and device.achievements.wizard1.state!="enabled"}:
+  scoop_hit{device.counters.battery_charged_status.enabled==True and device.counters.battery_charged_status.value>0 and device.achievements.wizard1.state!="enabled" and device.counters.completed_modes_count.value!=2}:
     events:
       - batterychargercallout1
       - batterychargercallout2

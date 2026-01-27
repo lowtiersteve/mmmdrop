@@ -1,10 +1,10 @@
 [gd_scene load_steps=8 format=3 uid="uid://cyrfcchefgffx"]
 
-[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_adeqt"]
-[ext_resource type="Script" uid="uid://cv8i7vubp43eb" path="res://addons/mpf-gmc/classes/mpf_text_input.gd" id="2_6uslk"]
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_adeqt"]
+[ext_resource type="Script" uid="uid://btfn6s6a0a7rg" path="res://addons/mpf-gmc/classes/mpf_text_input.gd" id="2_6uslk"]
 [ext_resource type="VideoStream" uid="uid://bdkrdeh2cp861" path="res://modes/highscore/slides/DontPlayNoGameThatICantWin.ogv" id="2_au3ls"]
-[ext_resource type="Script" uid="uid://bf2dsnm46ji2e" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_f3egr"]
-[ext_resource type="Script" uid="uid://b3ni1cjx2r6sx" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="5_5lg8l"]
+[ext_resource type="Script" uid="uid://bov7mrgxslshq" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_f3egr"]
+[ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="5_5lg8l"]
 [ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="5_w6f4i"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_5lg8l"]
@@ -30,21 +30,22 @@ loop = true
 script = ExtResource("3_f3egr")
 hide_behavior = 1
 preview_in_editor = true
-metadata/_custom_type_script = "uid://bf2dsnm46ji2e"
 
 [node name="MPFVariable - Award" type="Label" parent="."]
-offset_left = 5.0
-offset_top = 123.0
-offset_right = 1917.0
-offset_bottom = 361.0
+layout_mode = 0
+offset_left = 3.0
+offset_top = 361.0
+offset_right = 1915.0
+offset_bottom = 599.0
 theme_override_constants/outline_size = 35
 theme_override_fonts/font = ExtResource("5_w6f4i")
 theme_override_font_sizes/font_size = 110
-text = "Award!"
+text = "high score type"
 horizontal_alignment = 1
 script = ExtResource("5_5lg8l")
 variable_type = 1
 variable_name = "award"
+update_event = "high_score_enter_initials"
 
 [node name="MPFTextInput" type="HFlowContainer" parent="." node_paths=PackedStringArray("display_node")]
 layout_mode = 0
@@ -60,13 +61,41 @@ character_appearance = SubResource("LabelSettings_5lg8l")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 layout_mode = 0
-offset_left = 5.0
-offset_top = 400.0
-offset_right = 1917.0
-offset_bottom = 599.0
+offset_left = 3.0
+offset_top = 553.0
+offset_right = 1915.0
+offset_bottom = 752.0
 theme_override_constants/outline_size = 20
 theme_override_fonts/normal_font = ExtResource("5_w6f4i")
 theme_override_font_sizes/normal_font_size = 180
 bbcode_enabled = true
 text = "[pulse freq=3.0 color=#ff00ffff ease=-1.0]A[/pulse]"
 horizontal_alignment = 1
+
+[node name="MPFVariable - player number" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1074.0
+offset_top = 94.0
+offset_right = 1201.0
+offset_bottom = 238.0
+theme_override_constants/outline_size = 35
+theme_override_fonts/font = ExtResource("5_w6f4i")
+theme_override_font_sizes/font_size = 110
+text = "2"
+horizontal_alignment = 1
+script = ExtResource("5_5lg8l")
+variable_type = 1
+variable_name = "player_num"
+min_digits = 1
+update_event = "high_score_enter_initials"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 561.0
+offset_top = 101.0
+offset_right = 1037.0
+offset_bottom = 204.0
+theme_override_constants/outline_size = 35
+theme_override_fonts/font = ExtResource("5_w6f4i")
+theme_override_font_sizes/font_size = 100
+text = "player"

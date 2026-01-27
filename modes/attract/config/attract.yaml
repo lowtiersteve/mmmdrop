@@ -220,7 +220,7 @@ timers:
     tick_interval: 1s
     start_running: False
     control_events:
-      - event: item_highlighted
+      - event: carousel_item_highlighted
         action: restart
       - event: flipper_cradle
         action: stop
@@ -277,172 +277,172 @@ timers:
 
 
 widget_player:
-  item_highlighted{item=="gameover"}:
+  carousel_item_highlighted{item=="gameover"}:
     attract_gameover:
       action: play
       slide: attract
-  item_highlighted{item!="gameover"}:
+  carousel_item_highlighted{item!="gameover"}:
     attract_gameover:
       action: remove
-  item_highlighted{item=="last_scores_1p"}:
+  carousel_item_highlighted{item=="last_scores_1p"}:
     attract_last_scores_1p:
       action: play
       slide: attract
-  item_highlighted{item!="last_scores_1p"}:
+  carousel_item_highlighted{item!="last_scores_1p"}:
     attract_last_scores_1p:
       action: remove
-  item_highlighted{item=="last_scores_2p"}:
+  carousel_item_highlighted{item=="last_scores_2p"}:
     attract_last_scores_2p:
       action: play
       slide: attract
-  item_highlighted{item!="last_scores_2p"}:
+  carousel_item_highlighted{item!="last_scores_2p"}:
     attract_last_scores_2p:
       action: remove
-  item_highlighted{item=="last_scores_3p"}:
+  carousel_item_highlighted{item=="last_scores_3p"}:
     attract_last_scores_3p:
       action: play
       slide: attract
-  item_highlighted{item!="last_scores_3p"}:
+  carousel_item_highlighted{item!="last_scores_3p"}:
     attract_last_scores_3p:
       action: remove
-  item_highlighted{item=="last_scores_4p"}:
+  carousel_item_highlighted{item=="last_scores_4p"}:
     attract_last_scores_4p:
       action: play
       slide: attract
-  item_highlighted{item!="last_scores_4p"}:
+  carousel_item_highlighted{item!="last_scores_4p"}:
     attract_last_scores_4p:
       action: remove
-  item_highlighted{item=="mpf_logo"}:
+  carousel_item_highlighted{item=="mpf_logo"}:
     attract_mpf_logo:
       action: play
       slide: attract
-  item_highlighted{item!="mpf_logo"}:
+  carousel_item_highlighted{item!="mpf_logo"}:
     attract_mpf_logo:
       action: remove
-  item_highlighted{item=="fast_logo"}:
+  carousel_item_highlighted{item=="fast_logo"}:
     attract_fast_logo:
       action: play
       slide: attract
-  item_highlighted{item!="fast_logo"}:
+  carousel_item_highlighted{item!="fast_logo"}:
     attract_fast_logo:
       action: remove
-  item_highlighted{item=="specialthanks"}:
+  carousel_item_highlighted{item=="specialthanks"}:
     attract_specialthanks:
       action: play
       slide: attract
-  item_highlighted{item!="specialthanks"}:
+  carousel_item_highlighted{item!="specialthanks"}:
     attract_specialthanks:
       action: remove
-  item_highlighted{item=="credits"}:
+  carousel_item_highlighted{item=="credits"}:
     attract_credits:
       action: play
       slide: attract
-  item_highlighted{item!="credits"}:
+  carousel_item_highlighted{item!="credits"}:
     attract_credits:
       action: remove
-  item_highlighted{item=="pressstart"}:
+  carousel_item_highlighted{item=="pressstart"}:
     attract_pressstart:
       action: play
       slide: attract
-  item_highlighted{item!="pressstart"}:
+  carousel_item_highlighted{item!="pressstart"}:
     attract_pressstart:
       action: remove
-  item_highlighted{item=="version"}:
+  carousel_item_highlighted{item=="version"}:
     attract_version:
       action: play
       slide: attract
-  item_highlighted{item!="version"}:
+  carousel_item_highlighted{item!="version"}:
     attract_version:
       action: remove
-  item_highlighted{item=="makercredits"}:
+  carousel_item_highlighted{item=="makercredits"}:
     attract_makercredits:
       action: play
       slide: attract
-  item_highlighted{item!="makercredits"}:
+  carousel_item_highlighted{item!="makercredits"}:
     attract_makercredits:
       action: remove
-  item_highlighted{item=="dedicated"}:
+  carousel_item_highlighted{item=="dedicated"}:
     attract_dedicated:
       action: play
       slide: attract
-  item_highlighted{item!="dedicated"}:
+  carousel_item_highlighted{item!="dedicated"}:
     attract_dedicated:
       action: remove
-  item_highlighted{item=="highscoregrandchampion"}:
+  carousel_item_highlighted{item=="highscoregrandchampion"}:
     attract_highscoregrandchampion:
       action: play
       slide: attract
-  item_highlighted{item!="highscoregrandchampion"}:
+  carousel_item_highlighted{item!="highscoregrandchampion"}:
     attract_highscoregrandchampion:
       action: remove
-  item_highlighted{item=="highscore1"}:
+  carousel_item_highlighted{item=="highscore1"}:
     attract_highscore1:
       action: play
       slide: attract
-  item_highlighted{item!="highscore1"}:
+  carousel_item_highlighted{item!="highscore1"}:
     attract_highscore1:
       action: remove
-  item_highlighted{item=="highscore2"}:
+  carousel_item_highlighted{item=="highscore2"}:
     attract_highscore2:
       action: play
       slide: attract
-  item_highlighted{item!="highscore2"}:
+  carousel_item_highlighted{item!="highscore2"}:
     attract_highscore2:
       action: remove
-  item_highlighted{item=="highscore3"}:
+  carousel_item_highlighted{item=="highscore3"}:
     attract_highscore3:
       action: play
       slide: attract
-  item_highlighted{item!="highscore3"}:
+  carousel_item_highlighted{item!="highscore3"}:
     attract_highscore3:
       action: remove
-  item_highlighted{item=="highscore4"}:
+  carousel_item_highlighted{item=="highscore4"}:
     attract_highscore4:
       action: play
       slide: attract
-  item_highlighted{item!="highscore4"}:
+  carousel_item_highlighted{item!="highscore4"}:
     attract_highscore4:
       action: remove
-  item_highlighted{item=="highscoremultiballs"}:
+  carousel_item_highlighted{item=="highscoremultiballs"}:
     attract_highscoremultiballs:
       action: play
       slide: attract
-  item_highlighted{item!="highscoremultiballs"}:
+  carousel_item_highlighted{item!="highscoremultiballs"}:
     attract_highscoremultiballs:
       action: remove
-  item_highlighted{item=="highscoremodes1"}:
+  carousel_item_highlighted{item=="highscoremodes1"}:
     attract_highscoremodes1:
       action: play
       slide: attract
-  item_highlighted{item!="highscoremodes1"}:
+  carousel_item_highlighted{item!="highscoremodes1"}:
     attract_highscoremodes1:
       action: remove
-  item_highlighted{item=="highscoremodes2"}:
+  carousel_item_highlighted{item=="highscoremodes2"}:
     attract_highscoremodes2:
       action: play
       slide: attract
-  item_highlighted{item!="highscoremodes2"}:
+  carousel_item_highlighted{item!="highscoremodes2"}:
     attract_highscoremodes2:
       action: remove
-  item_highlighted{item=="highscoremodes3"}:
+  carousel_item_highlighted{item=="highscoremodes3"}:
     attract_highscoremodes3:
       action: play
       slide: attract
-  item_highlighted{item!="highscoremodes3"}:
+  carousel_item_highlighted{item!="highscoremodes3"}:
     attract_highscoremodes3:
       action: remove
-  item_highlighted{item=="highscoremodes4"}:
+  carousel_item_highlighted{item=="highscoremodes4"}:
     attract_highscoremodes4:
       action: play
       slide: attract
-  item_highlighted{item!="highscoremodes4"}:
+  carousel_item_highlighted{item!="highscoremodes4"}:
     attract_highscoremodes4:
       action: remove
-  item_highlighted{item=="highscoremodes5"}:
+  carousel_item_highlighted{item=="highscoremodes5"}:
     attract_highscoremodes5:
       action: play
       slide: attract
-  item_highlighted{item!="highscoremodes5"}:
+  carousel_item_highlighted{item!="highscoremodes5"}:
     attract_highscoremodes5:
       action: remove
 
