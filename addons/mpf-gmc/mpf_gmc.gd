@@ -78,7 +78,7 @@ func _init():
 			["media", preload("scripts/media.gd"), "GMCMedia", true]
 	]:
 		var script: String = self.get_config_value("gmc", s[2], '')
-		# TODO: Add logging configuration as init parameters so logging
+		# Add logging configuration as init parameters so logging
 		# is available in the _init() methods of all scripts
 		var script_inst: Resource = load(script) if script else s[1]
 		# For the main server nodes (GMCCoreScriptNode) pass this instance to the constructor

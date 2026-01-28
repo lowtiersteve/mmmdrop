@@ -14,7 +14,7 @@ var callback
 var is_focused := false
 var is_option_focused := false
 
-# TODO: Find a better way to make programattic for different service arrangements
+# Find a better way to make programattic for different service arrangements
 const IS_TOGGLE_STYLE: bool = false
 
 func populate(setting=null):

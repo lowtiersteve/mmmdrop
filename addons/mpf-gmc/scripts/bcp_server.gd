@@ -188,7 +188,7 @@ func add_event_handler(event: String, handler: Callable) -> void:
 		self.log.debug("Adding handler %s to event trigger for event '%s'", [handler, event])
 
 func remove_event_handler(event: String, handler: Callable) -> void:
-	# TODO: Any fallback logic or error catching if it's not here?
+	# Any fallback logic or error catching if it's not here?
 	self.log.debug("Removing handler %s from event trigger for event '%s'", [handler, event])
 	registered_handlers[event].erase(handler)
 	# If there are no more handlers, unsubscribe from this event
@@ -219,7 +219,7 @@ func stop(is_exiting: bool = false) -> void:
 		self.on_disconnect()
 		# Set an exit code so we know MPF is the cause of the exit
 		get_tree().quit(6)
-		# TODO: Add a configuration option to exit-on-disconnect and if false,
+		# Add a configuration option to exit-on-disconnect and if false,
 		# call self.deferred_scene("res://Main.tscn") instead of quit()
 
 # Use the BCP syntax to define the type

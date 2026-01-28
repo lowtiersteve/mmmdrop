@@ -141,7 +141,7 @@ func _on_player_added(total_players: int) -> void:
 	elif self.player_number > total_players:
 		self.hide()
 	else:
-		# TODO: There is a gap here where a min/max var that applies to the current
+		# There is a gap here where a min/max var that applies to the current
 		# player won't connect to an update signal if the range is met during play.
 		self._calculate_player_value()
 		self.show()
