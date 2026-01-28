@@ -1577,7 +1577,7 @@ counters:
     count_events: scoop_hit
     starting_count: 0
     count_interval: 1
-    count_complete_value: 7
+    count_complete_value: 5
     direction: up
     persist_state: False
     disable_on_complete: True
@@ -1588,7 +1588,7 @@ counters:
     count_events: right_ramp_hit
     starting_count: 0
     count_interval: 1
-    count_complete_value: 7
+    count_complete_value: 5
     direction: up
     persist_state: False
     disable_on_complete: True
@@ -1599,7 +1599,7 @@ counters:
     count_events: left_orbit_hit
     starting_count: 0
     count_interval: 1
-    count_complete_value: 7
+    count_complete_value: 5
     direction: up
     persist_state: False
     disable_on_complete: True
@@ -1610,7 +1610,7 @@ counters:
     count_events: left_ramp_hit
     starting_count: 0
     count_interval: 1
-    count_complete_value: 7
+    count_complete_value: 5
     direction: up
     persist_state: False
     disable_on_complete: True
@@ -1621,7 +1621,7 @@ counters:
     count_events: right_orbit_hit
     starting_count: 0
     count_interval: 1
-    count_complete_value: 7
+    count_complete_value: 5
     direction: up
     persist_state: False
     disable_on_complete: True

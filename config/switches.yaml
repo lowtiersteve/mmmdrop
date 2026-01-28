@@ -140,7 +140,7 @@ switches:
     label: "Left Orbit"
   s_inner_orbit:
     number: 0804b-5
-    ignore_window_ms: 200
+    ignore_window_ms: 100
     label: "Inner Loop"
   s_left_ramp:
     number: 0804b-6
@@ -152,7 +152,7 @@ switches:
     label: "Right Ramp"
   s_right_orbit:
     number: 0804-7
-    ignore_window_ms: 200
+    ignore_window_ms: 100
     label: "Right Orbit"
   s_service_esc:
     number: 3208-16
