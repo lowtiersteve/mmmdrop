@@ -18,8 +18,8 @@ counters:
     disable_on_complete: True
     reset_on_complete: False
     disable_events: multiball_chcheckitout_started, mode_makesomenoise_started, multiball_bodymovin_started, mode_girls_started, ball_is_ending
-    enable_events: ball_started, multiball_chcheckitout_ended, multiball_bodymovin_ended, multiball_makesomenoise_ended, mode_girls_stopped
-    restart_events: mode_intergalactic_stopped, mode_intergalactic_success, mode_paulrevere_stopped, mode_paulrevere_success, mode_tripletrouble_stopped, mode_tripletrouble_success, mode_sabotage_stopped, mode_sabotage_success, mode_fingerlickingood_stopped, mode_fingerlickingood_success, mode_toomanyrappers_stopped, mode_toomanyrappers_success, mode_threemcsand1dj_stopped, mode_threemcsand1dj_success, mode_highplainsdrifter_stopped, mode_highplainsdrifter_success
+    enable_events: multiball_chcheckitout_ended, multiball_bodymovin_ended, multiball_makesomenoise_ended, mode_girls_stopped
+    restart_events: ball_started, mode_intergalactic_stopped, mode_intergalactic_success, mode_paulrevere_stopped, mode_paulrevere_success, mode_tripletrouble_stopped, mode_tripletrouble_success, mode_sabotage_stopped, mode_sabotage_success, mode_fingerlickingood_stopped, mode_fingerlickingood_success, mode_toomanyrappers_stopped, mode_toomanyrappers_success, mode_threemcsand1dj_stopped, mode_threemcsand1dj_success, mode_highplainsdrifter_stopped, mode_highplainsdrifter_success
     control_events:
       - event: mode_batterycharger_started{current_player.ball==1}
         action: jump
