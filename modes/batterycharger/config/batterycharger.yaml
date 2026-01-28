@@ -129,6 +129,13 @@ counters:
       - event: logicblock_battery_charged_status_updated{device.counters.battery_charged_status.value<0}
         action: jump
         value: 0
+      - event: mode_batterycharger_started{current_player.ball!=1 and device.achievements.wizard1.state=="disabled"}
+        action: jump
+        value: 10
+      - event: mode_batterycharger_started{current_player.ball!=1 and device.achievements.wizard1.state=="completed"}
+        action: jump
+        value: 20
+
 
 
 
