@@ -2201,7 +2201,7 @@ timers:
 
 achievements:
   wizard1:
-    enable_events: logicblock_completed_modes_count_hit{device.counters.completed_modes_count.value==2 and chcheckitout_multiball_blocking_flag==0 and bodymovin_multiball_blocking_flag==0 and girls_blocking_flag==0}, multiball_chcheckitout_ended{device.counters.completed_modes_count.value==2 and device.achievements.wizard1.state=="disabled"}, multiball_bodymovin_ended{device.counters.completed_modes_count.value==2 and device.achievements.wizard1.state=="disabled"}, mode_girls_stopped{device.counters.completed_modes_count.value==2 and device.achievements.wizard1.state=="disabled"}, ball_started{device.counters.completed_modes_count.value==2 and device.achievements.wizard1.state=="disabled"}
+    enable_events: logicblock_completed_modes_count_hit{device.counters.completed_modes_count.value==2 and chcheckitout_multiball_blocking_flag==0 and bodymovin_multiball_blocking_flag==0 and girls_blocking_flag==0}, multiball_chcheckitout_ended{device.counters.completed_modes_count.value==2 and device.achievements.wizard1.state=="disabled"}, multiball_bodymovin_ended{device.counters.completed_modes_count.value==2 and device.achievements.wizard1.state=="disabled"}, mode_girls_stopped{device.counters.completed_modes_count.value==2 and device.achievements.wizard1.state=="disabled"}, ball_started{device.counters.completed_modes_count.value==2 and device.achievements.wizard1.state=="disabled"}, player_modes_completed{device.counters.completed_modes_count.value==2 and chcheckitout_multiball_blocking_flag==0 and bodymovin_multiball_blocking_flag==0 and girls_blocking_flag==0}
     show_tokens:
       lights: l_wizardindicator2_rectangle_led
     show_when_started: on
