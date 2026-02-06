@@ -3,7 +3,7 @@
 mode:
   start_events: carousel_item_selected{item=="highplainsdrifter"}
   stop_events: mode_highplainsdrifter_stop, mode_highplainsdrifter_failed, mode_highplainsdrifter_success, ball_will_end
-  priority: 1000
+  priority: 1001
 
 
 counters:
@@ -189,6 +189,7 @@ sound_player:
     highplainsdriftermusic:
       action: play
       bus: music
+      volume: 1.2 db
   logicblock_highplainsdrifter_shots_counter_hit:
     success_shot:
       action: play

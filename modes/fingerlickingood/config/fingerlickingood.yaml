@@ -3,7 +3,7 @@
 mode:
   start_events: carousel_item_selected{item=="fingerlickingood"}
   stop_events: mode_fingerlickingood_stop, mode_fingerlickingood_failed, mode_fingerlickingood_success, ball_will_end
-  priority: 1000
+  priority: 1001
 
 
 variable_player:

@@ -3,7 +3,7 @@
 mode:
   start_events: carousel_item_selected{item=="intergalactic"}
   stop_events: mode_intergalactic_stop, mode_intergalactic_failed, mode_intergalactic_success, ball_will_end
-  priority: 1000
+  priority: 1001
 
 
 sequences:

@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://blh0rr5n5hagu"]
 
-[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_ouj4e"]
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_ouj4e"]
 [ext_resource type="Texture2D" uid="uid://jp71gyrg5vb1" path="res://assets/mustache.png" id="2_is2bp"]
 [ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="3_hkbym"]
 
@@ -8,19 +8,18 @@
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_ouj4e")
-metadata/_custom_type_script = "uid://d15ukepy10pan"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(952, 664)
-scale = Vector2(4, 4)
+position = Vector2(986, 792)
+scale = Vector2(1.5, 1.5)
 texture = ExtResource("2_is2bp")
 
 [node name="mustache3x" type="Label" parent="."]
 layout_mode = 0
-offset_left = 726.0
-offset_top = 554.0
-offset_right = 1166.0
-offset_bottom = 733.0
+offset_left = 762.0
+offset_top = 672.0
+offset_right = 1202.0
+offset_bottom = 851.0
 theme_override_constants/outline_size = 30
 theme_override_fonts/font = ExtResource("3_hkbym")
 theme_override_font_sizes/font_size = 176
@@ -29,9 +28,9 @@ horizontal_alignment = 1
 
 [node name="nextshot" type="Label" parent="."]
 layout_mode = 0
-offset_left = 712.0
+offset_left = 8.0
 offset_top = 484.0
-offset_right = 1224.0
+offset_right = 1920.0
 offset_bottom = 571.0
 theme_override_constants/outline_size = 30
 theme_override_fonts/font = ExtResource("3_hkbym")

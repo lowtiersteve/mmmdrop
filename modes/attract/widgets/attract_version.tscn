@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://3uqv2pxseqgw"]
 
-[ext_resource type="Script" uid="uid://bp5npfvnd6fvx" path="res://addons/mpf-gmc/classes/mpf_widget.gd" id="1_pclkw"]
+[ext_resource type="Script" uid="uid://d4ky3s4bg1ouq" path="res://addons/mpf-gmc/classes/mpf_widget.gd" id="1_pclkw"]
 [ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="2_bqhhf"]
 
 [sub_resource type="Animation" id="Animation_jogaq"]
@@ -46,7 +46,6 @@ offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_pclkw")
 animation_player = NodePath("version/AnimationPlayer")
-metadata/_custom_type_script = "uid://bp5npfvnd6fvx"
 
 [node name="version" type="Label" parent="."]
 top_level = true
@@ -58,7 +57,7 @@ offset_bottom = 546.0
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("2_bqhhf")
 theme_override_font_sizes/font_size = 96
-text = "Version 0.71"
+text = "Version 0.73"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="version"]
 libraries = {

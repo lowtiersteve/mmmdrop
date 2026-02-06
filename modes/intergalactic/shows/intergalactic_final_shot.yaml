@@ -2,9 +2,11 @@
 
 - duration: 200ms
   lights:
-    l_lowerrightstandup_circle_led: yellow
+    l_lowerrightpop_inside_led: yellow
+    l_lowerrightpop_inside2_led: yellow
 - duration: 200ms
   lights:
-    l_lowerrightstandup_circle_led: stop
+    l_lowerrightpop_inside_led: stop
+    l_lowerrightpop_inside2_led: stop
 
 

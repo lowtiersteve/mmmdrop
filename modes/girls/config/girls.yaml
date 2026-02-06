@@ -131,126 +131,151 @@ sound_player:
       action: play
       bus: effects
       max_queue_time: 100ms
+      volume: 1.2 db
   pop2_hit:
     girlsvocal:
       action: play
       bus: effects
       max_queue_time: 100ms
+      volume: 1.2 db
   pop3_hit:
     girlsvocal:
       action: play
       bus: effects
       max_queue_time: 100ms
+      volume: 1.2 db
   top_drop_hit:
     girlsvocal:
       action: play
       bus: effects
       max_queue_time: 100ms
+      volume: 1.2 db
   middle_drop_hit:
     girlsvocal:
       action: play
       bus: effects
       max_queue_time: 100ms
+      volume: 1.2 db
   bottom_drop_hit:
     girlsvocal:
       action: play
       bus: effects
       max_queue_time: 100ms
+      volume: 1.2 db
   left_outlane_hit:
     girlsvocal:
       action: play
       bus: effects
       max_queue_time: 100ms
+      volume: 1.2 db
   left_inlane_hit:
     girlsvocal:
       action: play
       bus: effects
       max_queue_time: 100ms
+      volume: 1.2 db
   right_inlane_hit:
     girlsvocal:
       action: play
       bus: effects
       max_queue_time: 100ms
+      volume: 1.2 db
   right_outlane_hit:
     girlsvocal:
       action: play
       bus: effects
       max_queue_time: 100ms
+      volume: 1.2 db
   s_left_slingshot_active:
     girlsvocal:
       action: play
       bus: effects
       max_queue_time: 100ms
+      volume: 1.2 db
   s_right_slingshot_active:
     girlsvocal:
       action: play
       bus: effects
       max_queue_time: 100ms
+      volume: 1.2 db
   upper_pop_standup_hit:
     girlsvocal:
       action: play
       bus: effects
       max_queue_time: 100ms
+      volume: 1.2 db
   pop_standup_hit:
     girlsvocal:
       action: play
       bus: effects
       max_queue_time: 100ms
+      volume: 1.2 db
   captive_ball_hit:
     girlsvocal:
       action: play
       bus: effects
       max_queue_time: 100ms
+      volume: 1.2 db
   spinner_hit:
     girlsvocal:
       action: play
       bus: effects
       max_queue_time: 100ms
+      volume: 1.2 db
   scoop_hit:
     girlsvocal:
       action: play
       bus: effects
       max_queue_time: 100ms
+      volume: 1.2 db
   tshirt_top_standup_hit:
     girlsvocal:
       action: play
       bus: effects
       max_queue_time: 100ms
+      volume: 1.2 db
   tshirt_bottom_standup_hit:
     girlsvocal:
       action: play
       bus: effects
       max_queue_time: 100ms
+      volume: 1.2 db
   s_left_orbit_active:
     girlsvocal:
       action: play
       bus: effects
       max_queue_time: 100ms
+      volume: 1.2 db
   s_right_orbit_active:
     girlsvocal:
       action: play
       bus: effects
       max_queue_time: 100ms
+      volume: 1.2 db
   s_inner_orbit_active:
     girlsvocal:
       action: play
       bus: effects
       max_queue_time: 100ms
+      volume: 1.2 db
   left_ramp_hit:
     girlsvocal:
       action: play
       bus: effects
       max_queue_time: 100ms
+      volume: 1.2 db
   right_ramp_hit:
     girlsvocal:
       action: play
       bus: effects
       max_queue_time: 100ms
+      volume: 1.2 db
   three_bank_standup_hit:
     girlsvocal:
       action: play
       bus: effects
       max_queue_time: 100ms
+      volume: 1.2 db
 
 event_player:
   timer_girls_time_remaining_complete: mode_girls_complete

@@ -1,13 +1,12 @@
 [gd_scene load_steps=3 format=3 uid="uid://cr2soqt62ud77"]
 
-[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_tw08j"]
-[ext_resource type="FontFile" uid="uid://c5wtmofvonrew" path="res://fonts/countdown.ttf" id="2_kny84"]
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_tw08j"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="2_grapl"]
 
 [node name="IntergalacticRightShotLit" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_tw08j")
-metadata/_custom_type_script = "uid://d15ukepy10pan"
 
 [node name="shootrightshot" type="Label" parent="."]
 layout_mode = 0
@@ -16,9 +15,9 @@ offset_top = 334.0
 offset_right = 1907.0
 offset_bottom = 628.0
 theme_override_constants/outline_size = 30
-theme_override_fonts/font = ExtResource("2_kny84")
+theme_override_fonts/font = ExtResource("2_grapl")
 theme_override_font_sizes/font_size = 106
 text = "Shoot the
 Lower Pop
-Standup "
+ "
 horizontal_alignment = 1

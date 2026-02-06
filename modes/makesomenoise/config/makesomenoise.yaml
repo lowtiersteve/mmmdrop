@@ -3,7 +3,7 @@
 mode:
   start_events: start_makesomenoise
   stop_events: mode_makesomenoise_stop, multiball_makesomenoise_ended
-  priority: 5000
+  priority: 5001
 
 
 counters:

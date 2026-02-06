@@ -3,7 +3,7 @@
 mode:
   start_events: ball_starting
   stop_events: ball_will_end
-  priority: 100
+  priority: 200
 
 
 counters:
@@ -129,13 +129,18 @@ counters:
       - event: logicblock_battery_charged_status_updated{device.counters.battery_charged_status.value<0}
         action: jump
         value: 0
-      - event: mode_batterycharger_started{current_player.ball!=1 and device.achievements.wizard1.state=="disabled"}
+      - event: mode_batterycharger_started{current_player.ball!=1 and device.achievements.wizard1.state=="disabled" and current_player.battery_charged_yesorno==0}
         action: jump
         value: 10
-      - event: mode_batterycharger_started{current_player.ball!=1 and device.achievements.wizard1.state=="completed"}
+      - event: mode_batterycharger_started{current_player.ball!=1 and device.achievements.wizard1.state=="completed" and current_player.battery_charged_yesorno==0}
         action: jump
         value: 20
-
+      - event: mode_batterycharger_started{current_player.ball!=1 and device.achievements.wizard1.state=="disabled" and current_player.battery_charged_yesorno==1}
+        action: jump
+        value: 0
+      - event: mode_batterycharger_started{current_player.ball!=1 and device.achievements.wizard1.state=="completed" and current_player.battery_charged_yesorno==1}
+        action: jump
+        value: 0
 
 
 
@@ -195,6 +200,10 @@ show_player:
   carousel_item_selected:
     battery_green:
       action: stop
+    battery_yellow:
+      action: stop
+    battery_red:
+      action: stop
   multiball_chcheckitout_ended{current_player.mode_blocking_flag==0 and current_player.battery_charged_yesorno==1 and device.achievements.wizard1.state!="enabled"}:
     battery_green:
       action: play
@@ -203,7 +212,7 @@ show_player:
     battery_yellow:
       action: play
       loops: -1
-  multiball_chcheckitout_ended{current_player.mode_blocking_flag==0 and current_player.battery_charged_yesorno==0 and device.counters.battery_charged_status.value>15 and device.achievements.wizard1.state!="enabled"}:
+  multiball_chcheckitout_ended{current_player.mode_blocking_flag==0 and current_player.battery_charged_yesorno==0 and device.counters.battery_charged_status.value>15 and device.achievements.wizard1.state=="completed"}:
     battery_red:
       action: play
       loops: -1
@@ -215,7 +224,7 @@ show_player:
     battery_yellow:
       action: play
       loops: -1
-  mode_girls_stopped{current_player.mode_blocking_flag==0 and current_player.battery_charged_yesorno==0 and device.counters.battery_charged_status.value>15 and device.achievements.wizard1.state!="enabled"}:
+  mode_girls_stopped{current_player.mode_blocking_flag==0 and current_player.battery_charged_yesorno==0 and device.counters.battery_charged_status.value>15 and device.achievements.wizard1.state=="completed"}:
     battery_red:
       action: play
       loops: -1
@@ -227,71 +236,71 @@ show_player:
     battery_yellow:
       action: play
       loops: -1
-  multiball_bodymovin_ended{current_player.mode_blocking_flag==0 and current_player.battery_charged_yesorno==0 and device.counters.battery_charged_status.value>15 and device.achievements.wizard1.state!="enabled"}:
+  multiball_bodymovin_ended{current_player.mode_blocking_flag==0 and current_player.battery_charged_yesorno==0 and device.counters.battery_charged_status.value>15 and device.achievements.wizard1.state=="completed"}:
     battery_red:
       action: play
       loops: -1
-  mode_intergalactic_stopped{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state!="enabled"}:
+  mode_intergalactic_stopped{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state=="completed"}:
     battery_red:
       action: play
       loops: -1
-  mode_intergalactic_success{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state!="enabled"}:
+  mode_intergalactic_success{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state=="completed"}:
     battery_red:
       action: play
       loops: -1
-  mode_paulrevere_stopped{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state!="enabled"}:
+  mode_paulrevere_stopped{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state=="completed"}:
     battery_red:
       action: play
       loops: -1
-  mode_paulrevere_success{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state!="enabled"}:
+  mode_paulrevere_success{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state=="completed"}:
     battery_red:
       action: play
       loops: -1
-  mode_tripletrouble_stopped{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state!="enabled"}:
+  mode_tripletrouble_stopped{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state=="completed"}:
     battery_red:
       action: play
       loops: -1
-  mode_tripletrouble_success{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state!="enabled"}:
+  mode_tripletrouble_success{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state=="completed"}:
     battery_red:
       action: play
       loops: -1
-  mode_sabotage_stopped{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state!="enabled"}:
+  mode_sabotage_stopped{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state=="completed"}:
     battery_red:
       action: play
       loops: -1
-  mode_sabotage_success{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state!="enabled"}:
+  mode_sabotage_success{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state=="completed"}:
     battery_red:
       action: play
       loops: -1
-  mode_fingerlickingood_stopped{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state!="enabled"}:
+  mode_fingerlickingood_stopped{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state=="completed"}:
     battery_red:
       action: play
       loops: -1
-  mode_fingerlickingood_success{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state!="enabled"}:
+  mode_fingerlickingood_success{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state=="completed"}:
     battery_red:
       action: play
       loops: -1
-  mode_toomanyrappers_stopped{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state!="enabled"}:
+  mode_toomanyrappers_stopped{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state=="completed"}:
     battery_red:
       action: play
       loops: -1
-  mode_toomanyrappers_success{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state!="enabled"}:
+  mode_toomanyrappers_success{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state=="completed"}:
     battery_red:
       action: play
       loops: -1
-  mode_threemcsand1dj_stopped{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state!="enabled"}:
+  mode_threemcsand1dj_stopped{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state=="completed"}:
     battery_red:
       action: play
       loops: -1
-  mode_threemcsand1dj_success{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state!="enabled"}:
+  mode_threemcsand1dj_success{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state=="completed"}:
     battery_red:
       action: play
       loops: -1
-  mode_highplainsdrifter_stopped{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state!="enabled"}:
+  mode_highplainsdrifter_stopped{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state=="completed"}:
     battery_red:
       action: play
       loops: -1
-  mode_highplainsdrifter_success{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state!="enabled"}:
+  mode_highplainsdrifter_success{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and device.achievements.wizard1.state=="completed"}:
     battery_red:
       action: play
       loops: -1
@@ -299,7 +308,7 @@ show_player:
     battery_red:
       action: play
       loops: -1
-  logicblock_battery_charged_status_updated{device.counters.battery_charged_status.value<16 and device.counters.battery_charged_status.value>0 and device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.enabled==True}:
+  logicblock_battery_charged_status_updated{device.counters.battery_charged_status.value<11 and device.counters.battery_charged_status.value>0 and device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.enabled==True}:
     battery_red:
       action:
         stop
@@ -326,12 +335,12 @@ widget_player:
   battery_charged:
     charges_remaining:
       action: remove
-  logicblock_battery_charged_status_updated{device.counters.battery_charged_status.value>0 and device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.enabled==True}:
+  logicblock_battery_charged_status_hit{device.counters.battery_charged_status.value>0 and device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.enabled==True}:
     charges_remaining:
       action: play
       slide: score_overlay
       priority: 901000
-  achievement_wizard1_state_enabled{device.achievements.wizard1.state=="enabled"}:
+  achievement_wizard1_state_enabled:
     charges_remaining:
       action: remove
   mode_makesomenoise_stopped:
@@ -374,7 +383,6 @@ widget_player:
   mode_tripletrouble_started:
     charges_remaining:
       action: remove
-
 
 
 sound_player:

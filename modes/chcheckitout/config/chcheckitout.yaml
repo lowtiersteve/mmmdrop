@@ -48,6 +48,7 @@ sound_player:
       action: replace
       bus: music
       loops: 3
+      volume: 1.2 db
   play_chcheckitout_video3:
     chcheckitoutmultiballmusicremix:
       action: replace

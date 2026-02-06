@@ -3,7 +3,7 @@
 mode:
   start_events: carousel_item_selected{item=="sabotage"}
   stop_events: mode_sabotage_stop, mode_sabotage_failed, mode_sabotage_success, ball_will_end
-  priority: 1000
+  priority: 1001
 
 
 variable_player:
@@ -90,19 +90,19 @@ slide_player:
       priority: 1000000
     mustache1x:
       action: play
-      priority: 830000
+      priority: 1000001
   player_stache_multiplier{current_player.stache_multiplier==1 and device.timers.sabotage_time_remaining.running==True}:
     mustache3x:
       action: remove
     mustache1x:
       action: play
-      priority: 830000
+      priority: 1000001
   player_stache_multiplier{current_player.stache_multiplier==3}:
     mustache1x:
       action: remove
     mustache3x:
       action: play
-      priority: 830000
+      priority: 1000001
 
 
 sound_player:
