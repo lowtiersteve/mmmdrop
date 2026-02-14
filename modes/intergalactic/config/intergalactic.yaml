@@ -245,6 +245,9 @@ show_player:
   timer_intergalactic_intro_show_complete:
     intergalactic_intro_lights:
       action: stop
+    intergalactic_backboard_show:
+      action: play
+      loops: -1
 
 
 blinkenlight_player:

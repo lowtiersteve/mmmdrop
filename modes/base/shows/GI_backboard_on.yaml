@@ -1,0 +1,10 @@
+#show_version=6
+
+- duration: -1
+  lights:
+    l_backpanel_gi1_led: white
+    l_backpanel_gi2_led: white
+    l_backpanel_gi3_led: white
+    l_backpanel_gi4_led: white
+    l_backpanel_gi5_led: white
+

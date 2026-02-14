@@ -1174,6 +1174,9 @@ variable_player:
     bodymovin_multiball_qualified_flag:
       int: value
       action: set
+    bodymovin_round:
+      int: value
+      action: set
     girls_bonus_score:
       int: value
       action: set
@@ -1676,6 +1679,9 @@ show_player:
     GI_on:
       action: play
       priority: 10000
+    GI_backboard_on:
+      action: play
+      priority: 10000
   mode_base_started{current_player.chcheckitout_qualified_flag==1 and device.achievements.wizard1.state!="enabled"}:
     chcheckitout_lit_strobe:
       action: play
@@ -1751,6 +1757,8 @@ show_player:
   mode_fingerlickingood_started:
     GI_on:
       action: stop
+    GI_backboard_on:
+      action: stop
     battery_yellow:
       action: stop
     battery_green:
@@ -1759,6 +1767,8 @@ show_player:
       action: stop
   mode_intergalactic_started:
     GI_on:
+      action: stop
+    GI_backboard_on:
       action: stop
     battery_yellow:
       action: stop
@@ -1769,6 +1779,8 @@ show_player:
   mode_paulrevere_started:
     GI_on:
       action: stop
+    GI_backboard_on:
+      action: stop
     battery_yellow:
       action: stop
     battery_green:
@@ -1777,6 +1789,8 @@ show_player:
       action: stop
   mode_sabotage_started:
     GI_on:
+      action: stop
+    GI_backboard_on:
       action: stop
     battery_yellow:
       action: stop
@@ -1787,6 +1801,8 @@ show_player:
   mode_threemcsand1dj_started:
     GI_on:
       action: stop
+    GI_backboard_on:
+      action: stop
     battery_yellow:
       action: stop
     battery_green:
@@ -1795,6 +1811,8 @@ show_player:
       action: stop
   mode_highplainsdrifter_started:
     GI_on:
+      action: stop
+    GI_backboard_on:
       action: stop
     battery_yellow:
       action: stop
@@ -1805,6 +1823,8 @@ show_player:
   mode_toomanyrappers_started:
     GI_on:
       action: stop
+    GI_backboard_on:
+      action: stop
     battery_yellow:
       action: stop
     battery_green:
@@ -1813,6 +1833,8 @@ show_player:
       action: stop
   mode_tripletrouble_started:
     GI_on:
+      action: stop
+    GI_backboard_on:
       action: stop
     battery_yellow:
       action: stop
@@ -1825,6 +1847,8 @@ show_player:
       action: stop
     GI_on:
       action: stop
+    GI_backboard_on:
+      action: stop
     battery_yellow:
       action: stop
     battery_green:
@@ -1835,8 +1859,14 @@ show_player:
     GI_on:
       action: play
       priority: 10000
+    GI_backboard_on:
+      action: play
+      priority: 10000
   timer_fingerlickingood_intro_show_complete:
     GI_on:
+      action: play
+      priority: 10000
+    GI_backboard_on:
       action: play
       priority: 10000
   timer_intergalactic_intro_show_complete:
@@ -1847,6 +1877,9 @@ show_player:
     GI_on:
       action: play
       priority: 10000
+    GI_backboard_on:
+      action: play
+      priority: 10000
   timer_sabotage_intro_show_complete:
     GI_on:
       action: play
@@ -1855,16 +1888,36 @@ show_player:
     GI_on:
       action: play
       priority: 10000
+    GI_backboard_on:
+      action: play
+      priority: 10000
   timer_highplainsdrifter_intro_show_complete:
     GI_on:
+      action: play
+      priority: 10000
+    GI_backboard_on:
       action: play
       priority: 10000
   timer_toomanyrappers_intro_show_complete:
     GI_on:
       action: play
       priority: 10000
+    GI_backboard_on:
+      action: play
+      priority: 10000
   timer_tripletrouble_intro_show_complete:
     GI_on:
+      action: play
+      priority: 10000
+    GI_backboard_on:
+      action: play
+      priority: 10000
+  mode_sabotage_stopped:
+    GI_backboard_on:
+      action: play
+      priority: 10000
+  mode_intergalactic_stopped:
+    GI_backboard_on:
       action: play
       priority: 10000
   ball_save_default_timer_start:
