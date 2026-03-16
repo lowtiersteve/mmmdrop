@@ -45,80 +45,80 @@ variable_player:
       int: 1
       action: set
   pop1_hit:
-    score: 3000
-    girls_bonus_score: 3000
+    score: 3000 * current_player.playfield_x
+    girls_bonus_score: 3000 * current_player.playfield_x
   pop2_hit:
-    score: 3000
-    girls_bonus_score: 3000
+    score: 3000 * current_player.playfield_x
+    girls_bonus_score: 3000 * current_player.playfield_x
   pop3_hit:
-    score: 3000
-    girls_bonus_score: 3000
+    score: 3000 * current_player.playfield_x
+    girls_bonus_score: 3000 * current_player.playfield_x
   top_drop_hit:
-    score: 3000
-    girls_bonus_score: 3000
+    score: 3000 * current_player.playfield_x
+    girls_bonus_score: 3000 * current_player.playfield_x
   middle_drop_hit:
-    score: 3000
-    girls_bonus_score: 3000
+    score: 3000 * current_player.playfield_x
+    girls_bonus_score: 3000 * current_player.playfield_x
   bottom_drop_hit:
-    score: 3000
-    girls_bonus_score: 3000
+    score: 3000 * current_player.playfield_x
+    girls_bonus_score: 3000 * current_player.playfield_x
   left_outlane_hit:
-    score: 3000
-    girls_bonus_score: 3000
+    score: 3000 * current_player.playfield_x
+    girls_bonus_score: 3000 * current_player.playfield_x
   left_inlane_hit:
-    score: 3000
-    girls_bonus_score: 3000
+    score: 3000 * current_player.playfield_x
+    girls_bonus_score: 3000 * current_player.playfield_x
   right_inlane_hit:
-    score: 3000
-    girls_bonus_score: 3000
+    score: 3000 * current_player.playfield_x
+    girls_bonus_score: 3000 * current_player.playfield_x
   right_outlane_hit:
-    score: 3000
-    girls_bonus_score: 3000
+    score: 3000 * current_player.playfield_x
+    girls_bonus_score: 3000 * current_player.playfield_x
   s_left_slingshot_active:
-    score: 3000
-    girls_bonus_score: 3000
+    score: 3000 * current_player.playfield_x
+    girls_bonus_score: 3000 * current_player.playfield_x
   s_right_slingshot_active:
-    score: 3000
-    girls_bonus_score: 3000
+    score: 3000 * current_player.playfield_x
+    girls_bonus_score: 3000 * current_player.playfield_x
   upper_pop_standup_hit:
-    score: 3000
-    girls_bonus_score: 3000
+    score: 3000 * current_player.playfield_x
+    girls_bonus_score: 3000 * current_player.playfield_x
   pop_standup_hit:
-    score: 3000
-    girls_bonus_score: 3000
+    score: 3000 * current_player.playfield_x
+    girls_bonus_score: 3000 * current_player.playfield_x
   captive_ball_hit:
-    score: 3000
-    girls_bonus_score: 3000
+    score: 3000 * current_player.playfield_x
+    girls_bonus_score: 3000 * current_player.playfield_x
   spinner_hit:
-    score: 3000
-    girls_bonus_score: 3000
+    score: 3000 * current_player.playfield_x
+    girls_bonus_score: 3000 * current_player.playfield_x
   scoop_hit:
-    score: 3000
-    girls_bonus_score: 3000
+    score: 3000 * current_player.playfield_x
+    girls_bonus_score: 3000 * current_player.playfield_x
   tshirt_top_standup_hit:
-    score: 3000
-    girls_bonus_score: 3000
+    score: 3000 * current_player.playfield_x
+    girls_bonus_score: 3000 * current_player.playfield_x
   tshirt_bottom_standup_hit:
-    score: 3000
-    girls_bonus_score: 3000
+    score: 3000 * current_player.playfield_x
+    girls_bonus_score: 3000 * current_player.playfield_x
   s_left_orbit_active:
-    score: 3000
-    girls_bonus_score: 3000
+    score: 3000 * current_player.playfield_x
+    girls_bonus_score: 3000 * current_player.playfield_x
   s_right_orbit_active:
-    score: 3000
-    girls_bonus_score: 3000
+    score: 3000 * current_player.playfield_x
+    girls_bonus_score: 3000 * current_player.playfield_x
   s_inner_orbit_active:
-    score: 3000
-    girls_bonus_score: 3000
+    score: 3000 * current_player.playfield_x
+    girls_bonus_score: 3000 * current_player.playfield_x
   left_ramp_hit:
-    score: 3000
-    girls_bonus_score: 3000
+    score: 3000 * current_player.playfield_x
+    girls_bonus_score: 3000 * current_player.playfield_x
   right_ramp_hit:
-    score: 3000
-    girls_bonus_score: 3000
+    score: 3000 * current_player.playfield_x
+    girls_bonus_score: 3000 * current_player.playfield_x
   three_bank_standup_hit:
-    score: 3000
-    girls_bonus_score: 3000
+    score: 3000 * current_player.playfield_x
+    girls_bonus_score: 3000 * current_player.playfield_x
 
 
 sound_player:

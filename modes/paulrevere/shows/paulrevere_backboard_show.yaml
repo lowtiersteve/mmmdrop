@@ -2,7 +2,7 @@
 
 - duration: 200ms
   lights:
-    l_backpanel_gi1_led: yellow
+    l_backpanel_gi1_led: 7B68EE
     l_backpanel_gi2_led: stop
     l_backpanel_gi3_led: stop
     l_backpanel_gi4_led: stop
@@ -10,7 +10,7 @@
 - duration: 200ms
   lights:
     l_backpanel_gi1_led: stop
-    l_backpanel_gi2_led: yellow
+    l_backpanel_gi2_led: 7B68EE
     l_backpanel_gi3_led: stop
     l_backpanel_gi4_led: stop
     l_backpanel_gi5_led: stop
@@ -18,7 +18,7 @@
   lights:
     l_backpanel_gi1_led: stop
     l_backpanel_gi2_led: stop
-    l_backpanel_gi3_led: yellow
+    l_backpanel_gi3_led: 7B68EE
     l_backpanel_gi4_led: stop
     l_backpanel_gi5_led: stop
 - duration: 200ms
@@ -26,7 +26,7 @@
     l_backpanel_gi1_led: stop
     l_backpanel_gi2_led: stop
     l_backpanel_gi3_led: stop
-    l_backpanel_gi4_led: yellow
+    l_backpanel_gi4_led: 7B68EE
     l_backpanel_gi5_led: stop
 - duration: 200ms
   lights:
@@ -34,26 +34,4 @@
     l_backpanel_gi2_led: stop
     l_backpanel_gi3_led: stop
     l_backpanel_gi4_led: stop
-    l_backpanel_gi5_led: yellow
-- duration: 200ms
-  lights:
-    l_backpanel_gi1_led: stop
-    l_backpanel_gi2_led: stop
-    l_backpanel_gi3_led: stop
-    l_backpanel_gi4_led: yellow
-    l_backpanel_gi5_led: stop
-- duration: 200ms
-  lights:
-    l_backpanel_gi1_led: stop
-    l_backpanel_gi2_led: stop
-    l_backpanel_gi3_led: yellow
-    l_backpanel_gi4_led: stop
-    l_backpanel_gi5_led: stop
-- duration: 200ms
-  lights:
-    l_backpanel_gi1_led: stop
-    l_backpanel_gi2_led: yellow
-    l_backpanel_gi3_led: stop
-    l_backpanel_gi4_led: stop
-    l_backpanel_gi5_led: stop
-
+    l_backpanel_gi5_led: 7B68EE

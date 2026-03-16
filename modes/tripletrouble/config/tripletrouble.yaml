@@ -42,14 +42,14 @@ sequences:
 
 variable_player:
   tripletrouble_shot_1_done:
-    score: 10000000
-    mode_tripletrouble_score: 10000000
+    score: 10000000 * current_player.playfield_x
+    mode_tripletrouble_score: 10000000 * current_player.playfield_x
   tripletrouble_final_shot_hit:
-    score: 10000000
-    mode_tripletrouble_score: 10000000
+    score: 10000000 * current_player.playfield_x
+    mode_tripletrouble_score: 10000000 * current_player.playfield_x
   logicblock_tripletrouble_standups_counter_hit:
-    score: 2000000
-    mode_tripletrouble_score: 2000000
+    score: 2000000 * current_player.playfield_x
+    mode_tripletrouble_score: 2000000 * current_player.playfield_x
     tripletrouble_standups_remaining:
       int: -1
       action: add
@@ -210,6 +210,13 @@ shot_profiles:
 show_player:
   tripletrouble_shot_1_done:
     tripletrouble_final_shot:
+      action: play
+      loops: -1
+  mode_tripletrouble_started:
+    tripletrouble_backboard_show:
+      action: play
+      loops: -1
+    tripletrouble_pops_show:
       action: play
       loops: -1
 

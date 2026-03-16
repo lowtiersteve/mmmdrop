@@ -7,15 +7,15 @@ mode:
 
 variable_player:
   pop_standup_hit:
-    score: 100000
+    score: 100000 * current_player.playfield_x
   upper_pop_standup_hit:
-    score: 100000
+    score: 100000 * current_player.playfield_x
   three_bank_standup_hit:
-    score: 100000
+    score: 100000 * current_player.playfield_x
   tshirt_top_standup_hit:
-    score: 100000
+    score: 100000 * current_player.playfield_x
   tshirt_bottom_standup_hit:
-    score: 100000
+    score: 100000 * current_player.playfield_x
 
 
 timers:

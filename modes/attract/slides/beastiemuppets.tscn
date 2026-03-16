@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://cii5dcwcibocy"]
+
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_ordpk"]
+[ext_resource type="Texture2D" uid="uid://bb5nodn5nj5cm" path="res://assets/BeastieGroup1.jpg" id="2_j46fx"]
+[ext_resource type="VideoStream" uid="uid://lht88gn8pfhq" path="res://modes/attract/slides/beastiemuppets.ogv" id="3_ordpk"]
+[ext_resource type="Script" uid="uid://bov7mrgxslshq" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="4_kiu1q"]
+
+[node name="beastiemuppets" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_ordpk")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(959, 541)
+scale = Vector2(1.47846, 1.47268)
+texture = ExtResource("2_j46fx")
+
+[node name="StartupVideo" type="VideoStreamPlayer" parent="."]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+stream = ExtResource("3_ordpk")
+autoplay = true
+expand = true
+bus = &"music"
+script = ExtResource("4_kiu1q")
+hide_behavior = 1
+events_when_stopped = "remove"
+preview_in_editor = true

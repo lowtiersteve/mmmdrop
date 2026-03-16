@@ -31,8 +31,8 @@ variable_player:
       int: 1
       action: add
   pop_standup_hit:
-    score: 3000000 * current_player.fingerlickingood_boost
-    mode_fingerlickingood_score: 3000000 * current_player.fingerlickingood_boost
+    score: 3000000 * current_player.fingerlickingood_boost * current_player.playfield_x
+    mode_fingerlickingood_score: 3000000 * current_player.fingerlickingood_boost * current_player.playfield_x
 
 
 slide_player:
@@ -155,6 +155,16 @@ shot_profiles:
     states:
       - name: "off"
     loop: False
+
+
+show_player:
+  mode_fingerlickingood_started:
+    fingerlickingood_backboard_show:
+      action: play
+      loops: -1
+    fingerlickingood_pops_show:
+      action: play
+      loops: -1
 
 
 blinkenlight_player:

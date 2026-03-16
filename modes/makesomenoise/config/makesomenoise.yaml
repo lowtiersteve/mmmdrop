@@ -97,20 +97,20 @@ sequences:
 
 variable_player:
   makesomenoise_drops_counter_complete:
-    score: 10000000
-    mode_makesomenoise_score: 10000000
+    score: 10000000 * current_player.playfield_x
+    mode_makesomenoise_score: 10000000 * current_player.playfield_x
   makesomenoise_pops_counter_complete:
-    score: 10000000
-    mode_makesomenoise_score: 10000000
+    score: 10000000 * current_player.playfield_x
+    mode_makesomenoise_score: 10000000 * current_player.playfield_x
   makesomenoise_ramps_counter_complete:
-    score: 10000000
-    mode_makesomenoise_score: 10000000
+    score: 10000000 * current_player.playfield_x
+    mode_makesomenoise_score: 10000000 * current_player.playfield_x
   makesomenoise_spins_counter_complete:
-    score: 10000000
-    mode_makesomenoise_score: 10000000
+    score: 10000000 * current_player.playfield_x
+    mode_makesomenoise_score: 10000000 * current_player.playfield_x
   makesomenoise_final_shot_hit:
-    score: 20000000
-    mode_makesomenoise_score: 20000000
+    score: 20000000 * current_player.playfield_x
+    mode_makesomenoise_score: 20000000 * current_player.playfield_x
     makesomenoise_pops_remaining:
       int: 10
       action: set
@@ -309,6 +309,9 @@ timers:
 
 show_player:
   timer_makesomenoise_intro_show_complete:
+    makesomenoise_backboard_show:
+      action: play
+      loops: -1
     makesomenoise_ramps_shot:
       action: play
       loops: -1
@@ -373,7 +376,3 @@ shot_profiles:
         speed: 2
     loop: False
 
-
-#blinkenlight_player:
-#  mode_makesomenoise_started:
-#    bl_dropstandup_flasher_led: remove

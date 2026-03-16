@@ -1,0 +1,243 @@
+#config_version=6
+
+mode:
+  start_events: mode_skill_shot_stopped
+  stop_events: ball_will_end
+  priority: 750
+
+
+shot_groups:
+  instrument_drops:
+    shots: bottom_drop, middle_drop, top_drop
+    rotate_right_events: timer_instrument_rotate_complete
+    restart_events: mode_instruments_started, boombox_collected, microphone_collected, turntable_collected
+    disable_events: ball_will_end
+    enable_rotation_events: mode_instruments_started
+
+
+sequences:
+  turntable_start_sequence:
+    events:
+      - bottom_drop_flash_hit
+    events_when_complete: light_drops_for_turntable
+    reset_on_complete: False
+    enable_events: mode_instruments_started
+    start_enabled: True
+    disable_events: light_drops_for_turntable, light_drops_for_microphone, light_drops_for_boombox
+    disable_on_complete: True
+    restart_events: mode_instruments_started, reset_playfield_x, boombox_collected, turntable_collected, microphone_collected
+  turntable_collect:
+    events:
+      - drop_target_bank_three_bank_down
+    events_when_complete: turntable_collected
+    reset_on_complete: False
+    start_enabled: False
+    enable_events: light_drops_for_turntable
+    disable_events: turntable_collected
+    disable_on_complete: True
+    restart_events: light_drops_for_turntable
+  microphone_start_sequence:
+    events:
+      - middle_drop_flash_hit
+    events_when_complete: light_drops_for_microphone
+    reset_on_complete: False
+    enable_events: mode_instruments_started
+    start_enabled: True
+    disable_events: light_drops_for_turntable, light_drops_for_microphone, light_drops_for_boombox
+    disable_on_complete: True
+    restart_events: mode_instruments_started, reset_playfield_x, boombox_collected, turntable_collected, microphone_collected
+  microphone_collect:
+    events:
+      - drop_target_bank_three_bank_down
+    events_when_complete: microphone_collected
+    reset_on_complete: False
+    start_enabled: False
+    enable_events: light_drops_for_microphone
+    disable_events: microphone_collected
+    disable_on_complete: True
+    restart_events: light_drops_for_microphone
+  boombox_start_sequence:
+    events:
+      - top_drop_flash_hit
+    events_when_complete: light_drops_for_boombox
+    reset_on_complete: False
+    start_enabled: True
+    enable_events: mode_instruments_started
+    disable_events: light_drops_for_turntable, light_drops_for_microphone, light_drops_for_boombox
+    disable_on_complete: True
+    restart_events: mode_instruments_started, reset_playfield_x, boombox_collected, turntable_collected, microphone_collected
+  boombox_collect:
+    events:
+      - drop_target_bank_three_bank_down
+    events_when_complete: boombox_collected
+    reset_on_complete: False
+    start_enabled: False
+    enable_events: light_drops_for_boombox
+    disable_events: boombox_collected
+    disable_on_complete: True
+    restart_events: light_drops_for_boombox
+
+
+accruals:
+  instruments:
+    events:
+      - turntable_collected
+      - microphone_collected
+      - boombox_collected
+    events_when_complete: all_instruments_collected, start_playfield_x_timer
+    restart_events: mode_instruments_started, reset_playfield_x
+
+
+variable_player:
+  mode_instruments_started:
+    microphone_collected:
+      int: 0
+      action: set
+    turntable_collected:
+      int: 0
+      action: set
+    boombox_collected:
+      int: 0
+      action: set
+  microphone_collected:
+    microphone_collected:
+      int: 1
+      action: set
+  boombox_collected:
+    boombox_collected:
+      int: 1
+      action: set
+  turntable_collected:
+    turntable_collected:
+      int: 1
+      action: set
+  all_instruments_collected:
+    playfield_x:
+      int: 2
+      action: set
+  reset_playfield_x:
+    playfield_x:
+      int: 1
+      action: set
+    microphone_collected:
+      int: 0
+      action: set
+    turntable_collected:
+      int: 0
+      action: set
+    boombox_collected:
+      int: 0
+      action: set
+
+
+timers:
+  instrument_rotate:
+    start_value: 0
+    end_value: 1
+    control_events:
+      - action: start
+        event: mode_instruments_started
+      - action: restart
+        event: timer_instrument_rotate_complete
+      - action: pause
+        event: ball_will_end
+      - action: pause
+        event: bottom_drop_flash_hit
+      - action: pause
+        event: middle_drop_flash_hit
+      - action: pause
+        event: top_drop_flash_hit
+      - action: restart
+        event: boombox_collected
+      - action: restart
+        event: turntable_collected
+      - action: restart
+        event: microphone_collected
+  playfield_x_timer:
+    start_value: 30
+    end_value: 0
+    direction: down
+    control_events:
+      - action: start
+        event: start_playfield_x_timer
+      - action: pause
+        event: ball_will_end
+      - action: restart
+        event: start_playfield_x_timer
+      - action: jump
+        value: 30
+        event: timer_playfield_x_timer_complete
+      - action: jump
+        value: 30
+        event: ball_will_end
+
+
+sound_player:
+  boombox_collected:
+    yougottheboombox_callout:
+      action: play
+      bus: voice
+      priority: 5000
+  microphone_collected:
+    yougotthemic_callout:
+      action: play
+      bus: voice
+      priority: 5000
+  turntable_collected:
+    yougottheturntable_callout:
+      action: play
+      bus: voice
+      priority: 5000
+  start_playfield_x_timer:
+    scoring2x_callout:
+      action: play
+      bus: voice
+      priority: 5000
+
+
+show_player:
+  boombox_collected:
+    boombox_collected_show:
+      action: play
+      loops: -1
+      priority: 10000
+  turntable_collected:
+    turntable_collected_show:
+      action: play
+      loops: -1
+      priority: 10000
+  microphone_collected:
+    microphone_collected_show:
+      action: play
+      loops: -1
+      priority: 10000
+  reset_playfield_x:
+    boombox_collected_show:
+      action: stop
+    turntable_collected_show:
+      action: stop
+    microphone_collected_show:
+      action: stop
+
+
+blinkenlight_player:
+  start_playfield_x_timer:
+    bl_dropbank_rectangle_led: yellow
+  reset_playfield_x:
+    bl_dropbank_rectangle_led: remove
+
+
+event_player:
+  timer_playfield_x_timer_complete: reset_playfield_x
+  mode_instruments_started: pick_instrument_start
+  boombox_collected: advance_instrument_top
+  turntable_collected: advance_instrument_bottom
+  microphone_collected: advance_instrument_middle
+
+
+random_event_player:
+  pick_instrument_start:
+    events:
+    - advance_instrument_bottom
+    - advance_instrument_middle
+    - advance_instrument_top

@@ -1,0 +1,15 @@
+#show_version=6
+
+- duration: 300ms
+  lights:
+    l_upperleftpop_inside_led: FF46A2
+- duration: 300ms
+  lights:
+    l_upperleftpop_inside_led: stop
+- duration: 300ms
+  lights:
+    l_uppercenterpop_inside_led: FF46A2
+- duration: 300ms
+  lights:
+    l_uppercenterpop_inside_led: stop
+

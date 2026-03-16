@@ -1,0 +1,27 @@
+[gd_scene load_steps=6 format=3 uid="uid://dutuv7l1pr2fd"]
+
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_ysu8u"]
+[ext_resource type="Script" uid="uid://dsqx7p0qwf1p6" path="res://addons/mpf-gmc/classes/mpf_scene_base.gd" id="2_7wo3b"]
+[ext_resource type="Shader" uid="uid://c1nauspnnhcpw" path="res://modes/base/slides/Grey.gdshader" id="3_rj7to"]
+[ext_resource type="Texture2D" uid="uid://db8ykxp2xvmim" path="res://assets/middle right billboard.png" id="4_eurkl"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_d38y8"]
+shader = ExtResource("3_rj7to")
+
+[node name="instrument_blocks" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_ysu8u")
+
+[node name="MPFSceneBase" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_7wo3b")
+
+[node name="p2billboard" type="Sprite2D" parent="MPFSceneBase"]
+show_behind_parent = true
+material = SubResource("ShaderMaterial_d38y8")
+position = Vector2(274, 544)
+scale = Vector2(0.27, 0.27)
+texture = ExtResource("4_eurkl")

@@ -28,6 +28,10 @@ slide_player:
     bodymovin:
       action: play
       priority: 450000
+  slide_bodymovin_created:
+    bodymovin_round_slide:
+      action: play
+      priority: 1000001
 
 
 sound_player:
@@ -87,11 +91,11 @@ variable_player:
       int: 1
       action: set
   bodymovin_jackpot_hit:
-    score: 500000 * current_player.bodymovin_round
-    multiball_bodymovin_score: 500000 * current_player.bodymovin_round
+    score: 500000 * current_player.bodymovin_round * current_player.playfield_x
+    multiball_bodymovin_score: 500000 * current_player.bodymovin_round * current_player.playfield_x
   bodymovin_superjackpot_hit:
-    score: 2000000 * current_player.bodymovin_round
-    multiball_bodymovin_score: 2000000 * current_player.bodymovin_round
+    score: 2000000 * current_player.bodymovin_round * current_player.playfield_x
+    multiball_bodymovin_score: 2000000 * current_player.bodymovin_round * current_player.playfield_x
     bodymovin_round: 1
 
 

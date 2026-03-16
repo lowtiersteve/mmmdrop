@@ -353,6 +353,278 @@ lights:
     subtype: led
     type: rgb
     label: "Back Panel GI 5"
+  l_stadium_left_1:
+    number: lightboard-1-1
+    subtype: led
+    type: rgb
+    label: "Stadium Left 1"
+  l_stadium_left_2:
+    number: lightboard-1-2
+    subtype: led
+    type: rgb
+    label: "Stadium Left 2"
+  l_stadium_left_3:
+    number: lightboard-1-3
+    subtype: led
+    type: rgb
+    label: "Stadium Left 3"
+  l_stadium_left_4:
+    number: lightboard-1-4
+    subtype: led
+    type: rgb
+    label: "Stadium Left 4"
+  l_stadium_left_5:
+    number: lightboard-1-5
+    subtype: led
+    type: rgb
+    label: "Stadium Left 5"
+  l_stadium_left_6:
+    number: lightboard-1-6
+    subtype: led
+    type: rgb
+    label: "Stadium Left 6"
+  l_stadium_left_7:
+    number: lightboard-1-7
+    subtype: led
+    type: rgb
+    label: "Stadium Left 7"
+  l_stadium_left_8:
+    number: lightboard-1-8
+    subtype: led
+    type: rgb
+    label: "Stadium Left 8"
+  l_stadium_left_9:
+    number: lightboard-1-9
+    subtype: led
+    type: rgb
+    label: "Stadium Left 9"
+  l_stadium_left_10:
+    number: lightboard-1-10
+    subtype: led
+    type: rgb
+    label: "Stadium Left 10"
+  l_stadium_left_11:
+    number: lightboard-1-11
+    subtype: led
+    type: rgb
+    label: "Stadium Left 11"
+  l_stadium_left_12:
+    number: lightboard-1-12
+    subtype: led
+    type: rgb
+    label: "Stadium Left 12"
+  l_stadium_left_13:
+    number: lightboard-1-13
+    subtype: led
+    type: rgb
+    label: "Stadium Left 13"
+  l_stadium_left_14:
+    number: lightboard-1-14
+    subtype: led
+    type: rgb
+    label: "Stadium Left 14"
+  l_stadium_left_15:
+    number: lightboard-1-15
+    subtype: led
+    type: rgb
+    label: "Stadium Left 15"
+  l_stadium_left_16:
+    number: lightboard-1-16
+    subtype: led
+    type: rgb
+    label: "Stadium Left 16"
+  l_stadium_left_17:
+    number: lightboard-1-17
+    subtype: led
+    type: rgb
+    label: "Stadium Left 17"
+  l_stadium_left_18:
+    number: lightboard-1-18
+    subtype: led
+    type: rgb
+    label: "Stadium Left 18"
+  l_stadium_left_19:
+    number: lightboard-1-19
+    subtype: led
+    type: rgb
+    label: "Stadium Left 19"
+  l_stadium_left_20:
+    number: lightboard-1-20
+    subtype: led
+    type: rgb
+    label: "Stadium Left 20"
+  l_stadium_left_21:
+    number: lightboard-1-21
+    subtype: led
+    type: rgb
+    label: "Stadium Left 21"
+  l_stadium_left_22:
+    number: lightboard-1-22
+    subtype: led
+    type: rgb
+    label: "Stadium Left 22"
+  l_stadium_left_23:
+    number: lightboard-1-23
+    subtype: led
+    type: rgb
+    label: "Stadium Left 23"
+  l_stadium_left_24:
+    number: lightboard-1-24
+    subtype: led
+    type: rgb
+    label: "Stadium Left 24"
+  l_stadium_left_25:
+    number: lightboard-1-25
+    subtype: led
+    type: rgb
+    label: "Stadium Left 25"
+  l_stadium_left_26:
+    number: lightboard-1-26
+    subtype: led
+    type: rgb
+    label: "Stadium Left 26"
+  l_stadium_left_27:
+    number: lightboard-1-27
+    subtype: led
+    type: rgb
+    label: "Stadium Left 27"
+  l_stadium_right_1:
+    number: lightboard-5-1
+    subtype: led
+    type: rgb
+    label: "Stadium Right 1"
+  l_stadium_right_2:
+    number: lightboard-5-2
+    subtype: led
+    type: rgb
+    label: "Stadium Right 2"
+  l_stadium_right_3:
+    number: lightboard-5-3
+    subtype: led
+    type: rgb
+    label: "Stadium Right 3"
+  l_stadium_right_4:
+    number: lightboard-5-4
+    subtype: led
+    type: rgb
+    label: "Stadium Right 4"
+  l_stadium_right_5:
+    number: lightboard-5-5
+    subtype: led
+    type: rgb
+    label: "Stadium Right 5"
+  l_stadium_right_6:
+    number: lightboard-5-6
+    subtype: led
+    type: rgb
+    label: "Stadium Right 6"
+  l_stadium_right_7:
+    number: lightboard-5-7
+    subtype: led
+    type: rgb
+    label: "Stadium Right 7"
+  l_stadium_right_8:
+    number: lightboard-5-8
+    subtype: led
+    type: rgb
+    label: "Stadium Right 8"
+  l_stadium_right_9:
+    number: lightboard-5-9
+    subtype: led
+    type: rgb
+    label: "Stadium Right 9"
+  l_stadium_right_10:
+    number: lightboard-5-10
+    subtype: led
+    type: rgb
+    label: "Stadium Right 10"
+  l_stadium_right_11:
+    number: lightboard-5-11
+    subtype: led
+    type: rgb
+    label: "Stadium Right 11"
+  l_stadium_right_12:
+    number: lightboard-5-12
+    subtype: led
+    type: rgb
+    label: "Stadium Right 12"
+  l_stadium_right_13:
+    number: lightboard-5-13
+    subtype: led
+    type: rgb
+    label: "Stadium Right 13"
+  l_stadium_right_14:
+    number: lightboard-5-14
+    subtype: led
+    type: rgb
+    label: "Stadium Right 14"
+  l_stadium_right_15:
+    number: lightboard-5-15
+    subtype: led
+    type: rgb
+    label: "Stadium Right 15"
+  l_stadium_right_16:
+    number: lightboard-5-16
+    subtype: led
+    type: rgb
+    label: "Stadium Right 16"
+  l_stadium_right_17:
+    number: lightboard-5-17
+    subtype: led
+    type: rgb
+    label: "Stadium Right 17"
+  l_stadium_right_18:
+    number: lightboard-5-18
+    subtype: led
+    type: rgb
+    label: "Stadium Right 18"
+  l_stadium_right_19:
+    number: lightboard-5-19
+    subtype: led
+    type: rgb
+    label: "Stadium Right 19"
+  l_stadium_right_20:
+    number: lightboard-5-20
+    subtype: led
+    type: rgb
+    label: "Stadium Right 20"
+  l_stadium_right_21:
+    number: lightboard-5-21
+    subtype: led
+    type: rgb
+    label: "Stadium Right 21"
+  l_stadium_right_22:
+    number: lightboard-5-22
+    subtype: led
+    type: rgb
+    label: "Stadium Right 22"
+  l_stadium_right_23:
+    number: lightboard-5-23
+    subtype: led
+    type: rgb
+    label: "Stadium Right 23"
+  l_stadium_right_24:
+    number: lightboard-5-24
+    subtype: led
+    type: rgb
+    label: "Stadium Right 24"
+  l_stadium_right_25:
+    number: lightboard-5-25
+    subtype: led
+    type: rgb
+    label: "Stadium Right 25"
+  l_stadium_right_26:
+    number: lightboard-5-26
+    subtype: led
+    type: rgb
+    label: "Stadium Right 26"
+  l_stadium_right_27:
+    number: lightboard-5-27
+    subtype: led
+    type: rgb
+    label: "Stadium Right 27"
+
+
 
 
 blinkenlights:
@@ -424,4 +696,8 @@ blinkenlights:
     off_when_multiple: false
     color_duration: 750ms
     light: l_uppercenterpop_inside_led
+  bl_dropbank_rectangle_led:
+    off_when_multiple: false
+    color_duration: 300ms
+    light: l_dropbank_rectangle_led
 

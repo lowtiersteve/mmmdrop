@@ -8,11 +8,11 @@ mode:
 
 variable_player:
   pop1_hit:
-    score: 100000
+    score: 100000 * current_player.playfield_x
   pop2_hit:
-    score: 100000
+    score: 100000 * current_player.playfield_x
   pop3_hit:
-    score: 100000
+    score: 100000 * current_player.playfield_x
 
 
 timers:

@@ -144,6 +144,13 @@ ball_saves:
     enable_events: ball_hold_fingerlickingood_scoop_hold_balls_released, ball_hold_highplainsdrifter_scoop_hold_balls_released, ball_hold_intergalactic_scoop_hold_balls_released, ball_hold_paulrevere_scoop_hold_balls_released, ball_hold_sabotage_scoop_hold_balls_released, ball_hold_threemcsand1dj_scoop_hold_balls_released, ball_hold_toomanyrappers_scoop_hold_balls_released, ball_hold_tripletrouble_scoop_hold_balls_released
     auto_launch: True
     balls_to_save: -1
+  instrument_collect:
+    active_time: 4s
+    hurry_up_time: 2s
+    grace_period: 1s
+    enable_events: microphone_collected, boombox_collected, turntable_collected
+    auto_launch: True
+    balls_to_save: -1
   girls_frenzy:
     active_time: 38s
     hurry_up_time: 5s
@@ -182,6 +189,7 @@ modes:
   - supercombos
   - girls
   - highscore
+  - instruments
 
 
 settings:

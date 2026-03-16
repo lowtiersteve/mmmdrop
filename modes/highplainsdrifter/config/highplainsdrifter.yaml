@@ -111,26 +111,26 @@ sequences:
 
 variable_player:
   logicblock_highplainsdrifter_shots_counter_hit:
-    score: 3000000
-    mode_highplainsdrifter_score: 3000000
+    score: 3000000 * current_player.playfield_x
+    mode_highplainsdrifter_score: 3000000 * current_player.playfield_x
     highplainsdrifter_shots_remaining:
       int: -1
       action: add
   highplainsdrifter_left_orbit_1_done:
-    score: 1500000
-    mode_highplainsdrifter_score: 1500000
+    score: 1500000 * current_player.playfield_x
+    mode_highplainsdrifter_score: 1500000 * current_player.playfield_x
   highplainsdrifter_left_ramp_1_done:
-    score: 1500000
-    mode_highplainsdrifter_score: 1500000
+    score: 1500000 * current_player.playfield_x
+    mode_highplainsdrifter_score: 1500000 * current_player.playfield_x
   highplainsdrifter_inner_loop_1_done:
-    score: 1500000
-    mode_highplainsdrifter_score: 1500000
+    score: 1500000 * current_player.playfield_x
+    mode_highplainsdrifter_score: 1500000 * current_player.playfield_x
   highplainsdrifter_right_ramp_1_done:
-    score: 1500000
-    mode_highplainsdrifter_score: 1500000
+    score: 1500000 * current_player.playfield_x
+    mode_highplainsdrifter_score: 1500000 * current_player.playfield_x
   highplainsdrifter_right_orbit_1_done:
-    score: 1500000
-    mode_highplainsdrifter_score: 1500000
+    score: 1500000 * current_player.playfield_x
+    mode_highplainsdrifter_score: 1500000 * current_player.playfield_x
   timer_highplainsdrifter_intro_show_tick:
     highplainsdrifter_intro_show_variable_times_100:
       int: device.timers.highplainsdrifter_intro_show.ticks * 100
@@ -276,6 +276,16 @@ shot_profiles:
     states:
       - name: "off"
     loop: False
+
+
+show_player:
+  mode_highplainsdrifter_started:
+    highplainsdrifter_backboard_show:
+      action: play
+      loops: -1
+    highplainsdrifter_pops_show:
+      action: play
+      loops: -1
 
 
 blinkenlight_player:

@@ -1,0 +1,14 @@
+#show_version=6
+
+- duration: 400ms
+  lights:
+    l_upperleftpop_inside_led: 7B68EE
+    l_uppercenterpop_inside_led: stop
+- duration: 400ms
+  lights:
+    l_upperleftpop_inside_led: stop
+    l_uppercenterpop_inside_led: 7B68EE
+- duration: 400ms
+  lights:
+    l_upperleftpop_inside_led: stop
+    l_uppercenterpop_inside_led: stop

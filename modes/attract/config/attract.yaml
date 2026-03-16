@@ -54,7 +54,7 @@ sequences:
     - s_left_flipper_active
     disable_events: game_starting
     reset_on_complete: False
-    restart_events: mode_attract_started, adr_sequence_hit, mca_sequence_hit, flipper_cancel, christmas_sequence_hit
+    restart_events: mode_attract_started, adr_sequence_hit, mca_sequence_hit, flipper_cancel, christmas_sequence_hit, muppets_sequence_hit
     events_when_complete: mca_sequence_hit
   adr_sequence:
     events:
@@ -86,7 +86,7 @@ sequences:
     - s_left_flipper_active
     disable_events: game_starting
     reset_on_complete: False
-    restart_events: mode_attract_started, adr_sequence_hit, mca_sequence_hit, flipper_cancel, christmas_sequence_hit
+    restart_events: mode_attract_started, adr_sequence_hit, mca_sequence_hit, flipper_cancel, christmas_sequence_hit, muppets_sequence_hit
     events_when_complete: adr_sequence_hit
   christmas_sequence:
     events:
@@ -106,8 +106,28 @@ sequences:
       - s_left_flipper_active
     disable_events: game_starting
     reset_on_complete: False
-    restart_events: mode_attract_started, adr_sequence_hit, mca_sequence_hit, flipper_cancel, christmas_sequence_hit
+    restart_events: mode_attract_started, adr_sequence_hit, mca_sequence_hit, flipper_cancel, christmas_sequence_hit, muppets_sequence_hit
     events_when_complete: christmas_sequence_hit
+  muppets_sequence:
+    events:
+      - s_right_flipper_active
+      - s_right_flipper_active
+      - s_right_flipper_active
+      - s_left_flipper_active
+      - s_right_flipper_active
+      - s_left_flipper_active
+      - s_right_flipper_active
+      - s_right_flipper_active
+      - s_right_flipper_active
+      - s_right_flipper_active
+      - s_right_flipper_active
+      - s_right_flipper_active
+      - s_right_flipper_active
+      - s_left_flipper_active
+    disable_events: game_starting
+    reset_on_complete: False
+    restart_events: mode_attract_started, adr_sequence_hit, mca_sequence_hit, flipper_cancel, christmas_sequence_hit, muppets_sequence_hit
+    events_when_complete: muppets_sequence_hit
 
 
 slide_player:
@@ -171,12 +191,28 @@ slide_player:
     attract:
       action: play
       priority: 1000
+  muppets_sequence_hit:
+    attract_load:
+      action: remove
+    attract:
+      action: remove
+    beastiemuppets:
+      action: play
+      priority: 1100000
+  timer_muppets_attract_video_timer_complete:
+    beastiemuppets:
+      action: remove
+    attract:
+      action: play
+      priority: 1000
   flipper_cancel:
     friends:
       action: remove
     ghostbusters:
       action: remove
     jinglebells:
+      action: remove
+    beastiemuppets:
       action: remove
     attract:
         action: play
@@ -212,6 +248,14 @@ sound_player:
     attract_crowd:
       bus: effects
       action: play
+  muppets_sequence_hit:
+    attract_crowd:
+      action: stop
+      bus: effects
+  timer_muppets_attract_video_timer_complete:
+    attract_crowd:
+      bus: effects
+      action: play
 
 
 timers:
@@ -234,9 +278,17 @@ timers:
         action: pause
       - event: adr_sequence_hit
         action: pause
+      - event: christmas_sequence_hit
+        action: pause
+      - event: muppets_sequence_hit
+        action: pause
       - event: slide_ghostbusters_removed
         action: restart
       - event: slide_friends_removed
+        action: restart
+      - event: slide_beastiemuppets_removed
+        action: restart
+      - event: slide_jinglebells_removed
         action: restart
   attract_intro_timer:
     end_value: 16
@@ -271,6 +323,15 @@ timers:
     start_running: False
     control_events:
       - event: slide_jinglebells_active
+        action: start
+      - event: game_started
+        action: stop
+  muppets_attract_video_timer:
+    end_value: 54
+    tick_interval: 1s
+    start_running: False
+    control_events:
+      - event: slide_beastiemuppets_active
         action: start
       - event: game_started
         action: stop
@@ -454,6 +515,10 @@ show_player:
       action: play
       priority: 1000
       loops: -1
+    attract_stadium_light_show:
+      action: play
+      priority: 1000
+      loops: -1
     bonus_count_show_blue:
       action: stop
     bonus_count_show_green:
@@ -470,5 +535,7 @@ show_player:
       action: stop
   mode_attract_stopping:
     attract_light_show:
+      action: stop
+    attract_stadium_light_show:
       action: stop
 

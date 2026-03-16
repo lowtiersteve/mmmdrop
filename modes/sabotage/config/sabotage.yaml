@@ -18,14 +18,14 @@ variable_player:
       int: 1
       action: set
   increase_perps{current_player.stache_multiplier==1}:
-    score: 2000000
-    mode_sabotage_score: 2000000
+    score: 2000000 * current_player.playfield_x
+    mode_sabotage_score: 2000000 * current_player.playfield_x
     sabotage_perps_caught:
       int: 1
       action: add
   increase_perps{current_player.stache_multiplier==3}:
-    score: 6000000
-    mode_sabotage_score: 6000000
+    score: 6000000 * current_player.playfield_x
+    mode_sabotage_score: 6000000 * current_player.playfield_x
     sabotage_perps_caught:
       int: 1
       action: add

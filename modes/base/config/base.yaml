@@ -87,19 +87,22 @@ shots:
     show_tokens:
       led: l_lowerdrop_circle_led
       color: SkyBlue
-    profile: base_shot_profile
+    profile: instrument_profile
+    advance_events: advance_instrument_bottom
   middle_drop:
     switch: s_three_bank_middle
     show_tokens:
       led: l_middledrop_circle_led
       color: SkyBlue
-    profile: base_shot_profile
+    profile: instrument_profile
+    advance_events: advance_instrument_middle
   top_drop:
     switch: s_three_bank_top
     show_tokens:
       led: l_upperdrop_circle_led
       color: SkyBlue
-    profile: base_shot_profile
+    profile: instrument_profile
+    advance_events: advance_instrument_top
   tshirt_top_standup:
     switch: s_tshirt_top_standup
     show_tokens:
@@ -157,6 +160,14 @@ shot_profiles:
       - name: unlit
       - name: lit
         show: "lane_lit"
+  instrument_profile:
+    states:
+      - name: "off"
+      - name: "flash"
+        show: "flash_color"
+        priority: 50000
+    loop: True
+    advance_on_hit: False
 
 
 shot_groups:
@@ -543,12 +554,16 @@ slide_player:
     multiball3:
       action: remove
   mode_bodymovin_stopped{current_player.mode_blocking_flag==0}:
+    bodymovin_round_slide:
+      action: remove
     bodymovin:
       action: remove
     base:
       action: play
       priority: 5000
   mode_bodymovin_stopped{current_player.mode_blocking_flag==1}:
+    bodymovin_round_slide:
+      action: remove
     bodymovin:
       action: remove
   mode_girls_stopped:
@@ -650,6 +665,8 @@ slide_player:
     super_circles:
       action: remove
     current_mode_highlighted:
+      action: remove
+    bodymovin_round_slide:
       action: remove
   play_base_video1:
     basevideo1:
@@ -1075,61 +1092,61 @@ sound_player:
 
 variable_player:
   right_inlane_hit:
-    score: 110
+    score: 110 * current_player.playfield_x
   left_inlane_hit:
-    score: 110
+    score: 110 * current_player.playfield_x
   right_outlane_hit:
-    score: 1110
+    score: 1110 * current_player.playfield_x
   left_outlane_hit:
-    score: 1110
+    score: 1110 * current_player.playfield_x
   s_left_slingshot_active:
-    score: 10
+    score: 10 * current_player.playfield_x
   s_right_slingshot_active:
-    score: 10
+    score: 10 * current_player.playfield_x
   pop1_hit:
-    score: 1110
+    score: 1110 * current_player.playfield_x
   pop2_hit:
-    score: 1110
+    score: 1110 * current_player.playfield_x
   pop3_hit:
-    score: 1110
+    score: 1110 * current_player.playfield_x
   upper_pop_standup_hit:
-    score: 5010
+    score: 5010 * current_player.playfield_x
   pop_standup_hit:
-    score: 5010
+    score: 5010 * current_player.playfield_x
   captive_ball_hit:
-    score: 10010
+    score: 10010 * current_player.playfield_x
   spinner_hit:
-    score: 1010
+    score: 1010 * current_player.playfield_x
   bottom_drop_hit:
-    score: 2220
+    score: 2220 * current_player.playfield_x
   middle_drop_hit:
-    score: 2220
+    score: 2220 * current_player.playfield_x
   top_drop_hit:
-    score: 2220
+    score: 2220 * current_player.playfield_x
   scoop_hit:
-    score: 2310
+    score: 2310 * current_player.playfield_x
   tshirt_top_standup_hit:
-    score: 5010
+    score: 5010 * current_player.playfield_x
   tshirt_bottom_standup_hit:
-    score: 5010
+    score: 5010 * current_player.playfield_x
   three_bank_standup_hit:
-    score: 20010
+    score: 20010 * current_player.playfield_x
   s_left_orbit_active:
-    score: 110
+    score: 110 * current_player.playfield_x
   s_right_orbit_active:
-    score: 110
+    score: 110 * current_player.playfield_x
   s_inner_orbit_active:
-    score: 1010
+    score: 1010 * current_player.playfield_x
   left_ramp_hit:
-    score: 3010
+    score: 3010 * current_player.playfield_x
   right_ramp_hit:
-    score: 3010
+    score: 3010 * current_player.playfield_x
   left_orbit_hit:
-    score: 1010
+    score: 1010 * current_player.playfield_x
   right_orbit_hit:
-    score: 1010
+    score: 1010 * current_player.playfield_x
   inner_loop_hit:
-    score: 2010
+    score: 2010 * current_player.playfield_x
   logicblock_drop_target_bank_counter_updated:
     drop_target_bank_counter_count:
       int: value
@@ -1204,6 +1221,18 @@ variable_player:
     chcheckitout_multiplier:
       int: value
       action: set
+    microphone_collected:
+      int: value
+      action: set
+    turntable_collected:
+      int: value
+      action: set
+    boombox_collected:
+      int: value
+      action: set
+    playfield_x:
+      int: 1
+      action: set
   ball_started{current_player.ball!=1}:
     bonus_multiplier:
       int: 1
@@ -1228,6 +1257,18 @@ variable_player:
       action: set
     djhurr_collected:
       int: 0
+      action: set
+    microphone_collected:
+      int: 0
+      action: set
+    turntable_collected:
+      int: 0
+      action: set
+    boombox_collected:
+      int: 0
+      action: set
+    playfield_x:
+      int: 1
       action: set
   battery_charged:
     battery_charged_yesorno:
@@ -1682,6 +1723,9 @@ show_player:
     GI_backboard_on:
       action: play
       priority: 10000
+    stadium_GI_on:
+      action: play
+      priority: 10000
   mode_base_started{current_player.chcheckitout_qualified_flag==1 and device.achievements.wizard1.state!="enabled"}:
     chcheckitout_lit_strobe:
       action: play
@@ -1759,6 +1803,8 @@ show_player:
       action: stop
     GI_backboard_on:
       action: stop
+    stadium_GI_on:
+      action: stop
     battery_yellow:
       action: stop
     battery_green:
@@ -1769,6 +1815,8 @@ show_player:
     GI_on:
       action: stop
     GI_backboard_on:
+      action: stop
+    stadium_GI_on:
       action: stop
     battery_yellow:
       action: stop
@@ -1781,6 +1829,8 @@ show_player:
       action: stop
     GI_backboard_on:
       action: stop
+    stadium_GI_on:
+      action: stop
     battery_yellow:
       action: stop
     battery_green:
@@ -1791,6 +1841,8 @@ show_player:
     GI_on:
       action: stop
     GI_backboard_on:
+      action: stop
+    stadium_GI_on:
       action: stop
     battery_yellow:
       action: stop
@@ -1803,6 +1855,8 @@ show_player:
       action: stop
     GI_backboard_on:
       action: stop
+    stadium_GI_on:
+      action: stop
     battery_yellow:
       action: stop
     battery_green:
@@ -1813,6 +1867,8 @@ show_player:
     GI_on:
       action: stop
     GI_backboard_on:
+      action: stop
+    stadium_GI_on:
       action: stop
     battery_yellow:
       action: stop
@@ -1825,6 +1881,8 @@ show_player:
       action: stop
     GI_backboard_on:
       action: stop
+    stadium_GI_on:
+      action: stop
     battery_yellow:
       action: stop
     battery_green:
@@ -1835,6 +1893,8 @@ show_player:
     GI_on:
       action: stop
     GI_backboard_on:
+      action: stop
+    stadium_GI_on:
       action: stop
     battery_yellow:
       action: stop
@@ -1849,6 +1909,8 @@ show_player:
       action: stop
     GI_backboard_on:
       action: stop
+    stadium_GI_on:
+      action: stop
     battery_yellow:
       action: stop
     battery_green:
@@ -1859,64 +1921,128 @@ show_player:
     GI_on:
       action: play
       priority: 10000
-    GI_backboard_on:
+    stadium_GI_on:
       action: play
       priority: 10000
   timer_fingerlickingood_intro_show_complete:
     GI_on:
       action: play
       priority: 10000
-    GI_backboard_on:
+    stadium_GI_on:
       action: play
       priority: 10000
   timer_intergalactic_intro_show_complete:
     GI_on:
       action: play
       priority: 10000
+    stadium_GI_on:
+      action: play
+      priority: 10000
   timer_paulrevere_intro_show_complete:
     GI_on:
       action: play
       priority: 10000
-    GI_backboard_on:
+    stadium_GI_on:
       action: play
       priority: 10000
   timer_sabotage_intro_show_complete:
     GI_on:
       action: play
       priority: 10000
+    stadium_GI_on:
+      action: play
+      priority: 10000
   timer_threemcsand1dj_intro_show_complete:
     GI_on:
       action: play
       priority: 10000
-    GI_backboard_on:
+    stadium_GI_on:
       action: play
       priority: 10000
   timer_highplainsdrifter_intro_show_complete:
     GI_on:
       action: play
       priority: 10000
-    GI_backboard_on:
+    stadium_GI_on:
       action: play
       priority: 10000
   timer_toomanyrappers_intro_show_complete:
     GI_on:
       action: play
       priority: 10000
-    GI_backboard_on:
+    stadium_GI_on:
       action: play
       priority: 10000
   timer_tripletrouble_intro_show_complete:
     GI_on:
       action: play
       priority: 10000
-    GI_backboard_on:
+    stadium_GI_on:
       action: play
       priority: 10000
   mode_sabotage_stopped:
+    sirens_show:
+      action: stop
+    stache_show:
+      action: stop
     GI_backboard_on:
       action: play
       priority: 10000
   mode_intergalactic_stopped:
+    intergalactic_backboard_show:
+      action: stop
+    GI_backboard_on:
+      action: play
+      priority: 10000
+  mode_fingerlickingood_stopped:
+    fingerlickingood_backboard_show:
+      action: stop
+    fingerlickingood_pops_show:
+      action: stop
+    GI_backboard_on:
+      action: play
+      priority: 10000
+  mode_highplainsdrifter_stopped:
+    highplainsdrifter_backboard_show:
+      action: stop
+    highplainsdrifter_pops_show:
+      action: stop
+    GI_backboard_on:
+      action: play
+      priority: 10000
+  mode_makesomenoise_stopped:
+    makesomenoise_backboard_show:
+      action: stop
+    GI_backboard_on:
+      action: play
+      priority: 10000
+  mode_paulrevere_stopped:
+    paulrevere_backboard_show:
+      action: stop
+    paulrevere_pops_show:
+      action: stop
+    GI_backboard_on:
+      action: play
+      priority: 10000
+  mode_threemcsand1dj_stopped:
+    threemcsand1dj_backboard_show:
+      action: stop
+    GI_backboard_on:
+      action: play
+      priority: 10000
+  mode_toomanyrappers_stopped:
+    toomanyrappers_backboard_show:
+      action: stop
+    toomanyrappers_pops_show:
+      action: stop
+    GI_backboard_on:
+      action: play
+      priority: 10000
+  mode_tripletrouble_stopped:
+    tripletrouble_backboard_show:
+      action: stop
+    tripletrouble_pops_show:
+      action: stop
     GI_backboard_on:
       action: play
       priority: 10000
@@ -2051,6 +2177,44 @@ show_player:
       action: stop
     tripletrouble_success_show:
       action: stop
+    fingerlickingood_backboard_show:
+      action: stop
+    fingerlickingood_pops_show:
+      action: stop
+    highplainsdrifter_backboard_show:
+      action: stop
+    highplainsdrifter_pops_show:
+      action: stop
+    intergalactic_backboard_show:
+      action: stop
+    intergalactic_pops_show:
+      action: stop
+    makesomenoise_backboard_show:
+      action: stop
+    paulrevere_backboard_show:
+      action: stop
+    paulrevere_pops_show:
+      action: stop
+    sirens_show:
+      action: stop
+    stache_show:
+      action: stop
+    threemcsand1dj_backboard_show:
+      action: stop
+    toomanyrappers_backboard_show:
+      action: stop
+    toomanyrappers_pops_show:
+      action: stop
+    tripletrouble_backboard_show:
+      action: stop
+    tripletrouble_pops_show:
+      action: stop
+    boombox_collected_show:
+      action: stop
+    microphone_collected_show:
+      action: stop
+    turntable_collected_show:
+      action: stop
   start_superpops:
     superpops_on:
       action: play
@@ -2152,6 +2316,7 @@ blinkenlight_player:
     bl_tshirtbottomcircle_led: remove
     bl_lowerrightpop_inside_led: remove
     bl_lowerrightpop_inside2_led: remove
+    bl_dropbank_rectangle_led: remove
 
 
 widget_player:

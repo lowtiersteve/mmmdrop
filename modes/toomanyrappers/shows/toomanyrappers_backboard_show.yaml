@@ -1,0 +1,9 @@
+#show_version=6
+
+- duration: 200ms
+  lights:
+    l_backpanel_gi1_led: orange
+    l_backpanel_gi2_led: orange
+    l_backpanel_gi3_led: orange
+    l_backpanel_gi4_led: orange
+    l_backpanel_gi5_led: orange

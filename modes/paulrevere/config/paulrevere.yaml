@@ -46,23 +46,23 @@ sequences:
 
 variable_player:
   paulrevere_shot_1_done:
-    score: 1000000
-    mode_paulrevere_score: 1000000
+    score: 1000000 * current_player.playfield_x
+    mode_paulrevere_score: 1000000 * current_player.playfield_x
   paulrevere_shot_2_done:
-    score: 2000000
-    mode_paulrevere_score: 2000000
+    score: 2000000 * current_player.playfield_x
+    mode_paulrevere_score: 2000000 * current_player.playfield_x
   paulrevere_shot_3_done:
-    score: 5000000
-    mode_paulrevere_score: 5000000
+    score: 5000000 * current_player.playfield_x
+    mode_paulrevere_score: 5000000 * current_player.playfield_x
   paulrevere_shot_4_done:
-    score: 3000000
-    mode_paulrevere_score: 3000000
+    score: 3000000 * current_player.playfield_x
+    mode_paulrevere_score: 3000000 * current_player.playfield_x
   paulrevere_shot_5_done:
-    score: 5000000
-    mode_paulrevere_score: 5000000
+    score: 5000000 * current_player.playfield_x
+    mode_paulrevere_score: 5000000 * current_player.playfield_x
   paulrevere_shot_6_done:
-    score: 10000000
-    mode_paulrevere_score: 10000000
+    score: 10000000 * current_player.playfield_x
+    mode_paulrevere_score: 10000000 * current_player.playfield_x
   timer_paulrevere_intro_show_tick:
     paulrevere_intro_show_variable_times_100:
       int: device.timers.paulrevere_intro_show.ticks * 100
@@ -257,28 +257,35 @@ show_player:
     paulrevere_final_shot:
       action: play
       loops: -1
+  mode_paulrevere_started:
+    paulrevere_backboard_show:
+      action: play
+      loops: -1
+    paulrevere_pops_show:
+      action: play
+      loops: -1
 
 
 blinkenlight_player:
   timer_paulrevere_intro_show_complete:
     bl_leftorbit_arrow_led:
-      color: gold
+      color: 7B68EE
   paulrevere_shot_1_done:
     bl_leftorbit_arrow_led: remove
     bl_leftramp_arrow_led:
-      color: gold
+      color: 7B68EE
   paulrevere_shot_2_done:
     bl_leftramp_arrow_led: remove
     bl_captiveball_smallcircle_led:
-      color: gold
+      color: 7B68EE
   paulrevere_shot_3_done:
     bl_captiveball_smallcircle_led: remove
     bl_rightramp_arrow_led:
-      color: gold
+      color: 7B68EE
   paulrevere_shot_4_done:
     bl_rightramp_arrow_led: remove
     bl_rightorbit_arrow_led:
-      color: gold
+      color: 7B68EE
   paulrevere_shot_5_done:
     bl_rightorbit_arrow_led: remove
 
