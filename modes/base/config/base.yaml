@@ -1147,99 +1147,6 @@ variable_player:
     score: 1010 * current_player.playfield_x
   inner_loop_hit:
     score: 2010 * current_player.playfield_x
-  logicblock_drop_target_bank_counter_updated:
-    drop_target_bank_counter_count:
-      int: value
-      action: set
-  ball_started{current_player.ball==1}:
-    chcheckitout_multiball_blocking_flag:
-      int: value
-      action: set
-    bodymovin_multiball_blocking_flag:
-      int: value
-      action: set
-    mode_blocking_flag:
-      int: value
-      action: set
-    battery_charged_yesorno:
-      int: value
-      action: set
-    combos:
-      int: value
-      action: set
-    modes_played:
-      int: value
-      action: set
-    modes_completed:
-      int: value
-      action: set
-    chcheckitout_qualified_flag:
-      int: value
-      action: set
-    bodymovin_lock1_qualified_flag:
-      int: value
-      action: set
-    bodymovin_lock2_qualified_flag:
-      int: value
-      action: set
-    bodymovin_lock1_locked_flag:
-      int: value
-      action: set
-    bodymovin_lock2_locked_flag:
-      int: value
-      action: set
-    bodymovin_multiball_qualified_flag:
-      int: value
-      action: set
-    bodymovin_round:
-      int: value
-      action: set
-    girls_bonus_score:
-      int: value
-      action: set
-    girls_blocking_flag:
-      int: value
-      action: set
-    characters_collected:
-      int: value
-      action: set
-    adroc_collected:
-      int: value
-      action: set
-    mca_collected:
-      int: value
-      action: set
-    miked_collected:
-      int: value
-      action: set
-    mmm_collected:
-      int: value
-      action: set
-    djhurr_collected:
-      int: value
-      action: set
-    chcheckitout_multiplier:
-      int: value
-      action: set
-    microphone_collected:
-      int: value
-      action: set
-    turntable_collected:
-      int: value
-      action: set
-    boombox_collected:
-      int: value
-      action: set
-    playfield_x:
-      int: value
-      action: set
-  start_of_ball_events:
-    playfield_x:
-      int: 1
-      action: set
-    bodymovin_lock1_locked_flag:
-      int: 1
-      action: set
   ball_started{current_player.ball!=1}:
     bonus_multiplier:
       int: 1
@@ -2656,5 +2563,5 @@ event_player:
   sg_lanes_lit_complete: add_bonus_x
   sg_tshirts_on_complete: lock_standups_complete
   multiball_makesomenoise_ended: mode_makesomenoise_complete
-  ball_started{current_player.ball==1}: battery_charged, start_of_ball_events
+  ball_started{current_player.ball==1}: battery_charged
 

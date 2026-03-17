@@ -257,4 +257,60 @@ shot_profiles:
       - name: unlit
     loop: False
 
-
+player_vars:
+  chcheckitout_multiball_blocking_flag:
+    initial_value: 0
+  bodymovin_multiball_blocking_flag:
+    initial_value: 0
+  mode_blocking_flag:
+    initial_value: 0
+  battery_charged_yesorno:
+    initial_value: 0
+  combos:
+    initial_value: 0
+  modes_played:
+    initial_value: 0
+  modes_completed:
+    initial_value: 0
+  chcheckitout_qualified_flag:
+    initial_value: 0
+  bodymovin_lock1_qualified_flag:
+    initial_value: 0
+  bodymovin_lock2_qualified_flag:
+    initial_value: 0
+  bodymovin_lock1_locked_flag:
+    initial_value: 1
+  bodymovin_lock2_locked_flag:
+    initial_value: 0
+  bodymovin_multiball_qualified_flag:
+    initial_value: 0
+  bodymovin_round:
+    initial_value: 0
+  girls_bonus_score:
+    initial_value: 0
+  girls_blocking_flag:
+    initial_value: 0
+  characters_collected:
+    initial_value: 0
+  adroc_collected:
+    initial_value: 0
+  mca_collected:
+    initial_value: 0
+  miked_collected:
+    initial_value: 0
+  mmm_collected:
+    initial_value: 0
+  djhurr_collected:
+    initial_value: 0
+  chcheckitout_multiplier:
+    initial_value: 0
+  microphone_collected:
+    initial_value: 0
+  turntable_collected:
+    initial_value: 0
+  boombox_collected:
+    initial_value: 0
+  playfield_x:
+    initial_value: 1
+  drop_target_bank_counter_count:
+    initial_value: 0
