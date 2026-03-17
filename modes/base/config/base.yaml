@@ -1183,7 +1183,7 @@ variable_player:
       int: value
       action: set
     bodymovin_lock1_locked_flag:
-      int: set
+      int: value
       action: set
     bodymovin_lock2_locked_flag:
       int: value
@@ -1231,7 +1231,7 @@ variable_player:
       int: value
       action: set
     playfield_x:
-      int: set
+      int: value
       action: set
   start_of_ball_events:
     playfield_x:
