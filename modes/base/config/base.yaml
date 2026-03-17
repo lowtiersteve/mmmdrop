@@ -1183,7 +1183,7 @@ variable_player:
       int: value
       action: set
     bodymovin_lock1_locked_flag:
-      int: 1
+      int: set
       action: set
     bodymovin_lock2_locked_flag:
       int: value
@@ -1231,6 +1231,13 @@ variable_player:
       int: value
       action: set
     playfield_x:
+      int: set
+      action: set
+  start_of_ball_events:
+    playfield_x:
+      int: 1
+      action: set
+    bodymovin_lock1_locked_flag:
       int: 1
       action: set
   ball_started{current_player.ball!=1}:
@@ -2649,5 +2656,5 @@ event_player:
   sg_lanes_lit_complete: add_bonus_x
   sg_tshirts_on_complete: lock_standups_complete
   multiball_makesomenoise_ended: mode_makesomenoise_complete
-  ball_started{current_player.ball==1}: battery_charged
+  ball_started{current_player.ball==1}: battery_charged, start_of_ball_events
 
