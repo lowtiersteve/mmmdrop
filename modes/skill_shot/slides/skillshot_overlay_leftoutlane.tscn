@@ -1,19 +1,18 @@
 [gd_scene load_steps=4 format=3 uid="uid://besygi7uwj301"]
 
-[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_l50wf"]
-[ext_resource type="Texture2D" uid="uid://dt7hpexqpath5" path="res://assets/action_bubble.png" id="2_jaaog"]
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_l50wf"]
+[ext_resource type="Texture2D" uid="uid://dtodnmwfxtclr" path="res://assets/burstbacking.png" id="2_l50wf"]
 [ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="3_aqcqb"]
 
 [node name="SkillshotOverlay" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_l50wf")
-metadata/_custom_type_script = "uid://d15ukepy10pan"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(256, 552)
-scale = Vector2(0.4, 0.415)
-texture = ExtResource("2_jaaog")
+position = Vector2(210, 600)
+scale = Vector2(0.55, 0.571)
+texture = ExtResource("2_l50wf")
 
 [node name="Choose" type="Label" parent="."]
 layout_mode = 0

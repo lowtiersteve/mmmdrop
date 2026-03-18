@@ -1,10 +1,10 @@
 [gd_scene load_steps=10 format=3 uid="uid://c2alaagu3le5k"]
 
-[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_j4cmf"]
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_j4cmf"]
 [ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="2_vwbax"]
 [ext_resource type="Texture2D" uid="uid://dy8kciiymx6b1" path="res://assets/city1080sidebarsextended.png" id="2_wln5o"]
-[ext_resource type="Texture2D" uid="uid://dt61s40ac3jrx" path="res://assets/cassetteangle.png" id="3_2oks4"]
-[ext_resource type="Script" uid="uid://b3ni1cjx2r6sx" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_6f3t8"]
+[ext_resource type="Texture2D" uid="uid://cmipgf0qwd7y6" path="res://assets/playerball.png" id="3_2oks4"]
+[ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_6f3t8"]
 [ext_resource type="Texture2D" uid="uid://dqp1il4o7feao" path="res://assets/top left billboard.png" id="3_6mjul"]
 [ext_resource type="Texture2D" uid="uid://cjf4omvulvdhc" path="res://assets/top right billboard.png" id="4_2oks4"]
 [ext_resource type="Texture2D" uid="uid://dchxw562eqylx" path="res://assets/bottom left billboard.png" id="5_t0mvq"]
@@ -14,7 +14,6 @@
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_j4cmf")
-metadata/_custom_type_script = "uid://d15ukepy10pan"
 
 [node name="background" type="Sprite2D" parent="."]
 
@@ -23,18 +22,18 @@ position = Vector2(960, 544)
 scale = Vector2(0.24, 0.24)
 texture = ExtResource("2_wln5o")
 
-[node name="redtape" type="Sprite2D" parent="."]
-position = Vector2(984, 141)
-scale = Vector2(0.3, 0.3)
+[node name="spraypaintballplayer" type="Sprite2D" parent="."]
+position = Vector2(984, 130)
+scale = Vector2(0.6, 0.6)
 texture = ExtResource("3_2oks4")
 
 [node name="currentplayer" type="Label" parent="."]
 layout_mode = 0
-offset_left = 896.0
-offset_top = 96.0
-offset_right = 1104.0
-offset_bottom = 149.0
-rotation = -0.174533
+offset_left = 876.0
+offset_top = 51.000008
+offset_right = 1084.0
+offset_bottom = 104.0
+rotation = -0.18189362
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -45,15 +44,14 @@ horizontal_alignment = 1
 script = ExtResource("3_6f3t8")
 variable_name = "number"
 template_string = "Player %s"
-metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"
 
 [node name="currentball" type="Label" parent="."]
 layout_mode = 0
-offset_left = 848.0
-offset_top = 72.0
-offset_right = 993.0
-offset_bottom = 118.0
-rotation = -0.174533
+offset_left = 828.0
+offset_top = 27.000002
+offset_right = 973.0
+offset_bottom = 73.0
+rotation = -0.18189362
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -64,7 +62,6 @@ horizontal_alignment = 1
 script = ExtResource("3_6f3t8")
 variable_name = "ball"
 template_string = "Ball %s"
-metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"
 
 [node name="p1billboard" type="Sprite2D" parent="."]
 position = Vector2(248, 192)
@@ -91,7 +88,6 @@ template_string = "Player 1"
 format_string = "Player 1"
 initialize_empty = false
 min_players = 1
-metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"
 
 [node name="p1score" type="Label" parent="."]
 layout_mode = 0
@@ -113,7 +109,6 @@ comma_separate = true
 min_digits = 2
 initialize_empty = false
 min_players = 1
-metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"
 
 [node name="p2score" type="Label" parent="."]
 layout_mode = 0
@@ -135,7 +130,6 @@ comma_separate = true
 min_digits = 2
 initialize_empty = false
 min_players = 2
-metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"
 
 [node name="p2billboard" type="Sprite2D" parent="p2score"]
 show_behind_parent = true
@@ -163,7 +157,6 @@ template_string = "Player 2"
 format_string = "Player 2"
 initialize_empty = false
 min_players = 2
-metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"
 
 [node name="p3score" type="Label" parent="."]
 layout_mode = 0
@@ -185,7 +178,6 @@ comma_separate = true
 min_digits = 2
 initialize_empty = false
 min_players = 3
-metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"
 
 [node name="p3billboard" type="Sprite2D" parent="p3score"]
 show_behind_parent = true
@@ -212,7 +204,6 @@ template_string = "Player 3"
 format_string = "Player 3"
 initialize_empty = false
 min_players = 3
-metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"
 
 [node name="p4score" type="Label" parent="."]
 layout_mode = 0
@@ -234,7 +225,6 @@ comma_separate = true
 min_digits = 2
 initialize_empty = false
 min_players = 4
-metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"
 
 [node name="p4billboard" type="Sprite2D" parent="p4score"]
 show_behind_parent = true
@@ -263,4 +253,3 @@ template_string = "Player 4"
 format_string = "Player 4"
 initialize_empty = false
 min_players = 4
-metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"
