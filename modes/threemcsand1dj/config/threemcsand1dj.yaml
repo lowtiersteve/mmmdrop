@@ -205,6 +205,12 @@ show_player:
     threemcsand1dj_backboard_show:
       action: play
       loops: -1
+    threemcsand1dj_stadium_intro_lights:
+      action: play
+      loops: -1
+  timer_threemcsand1dj_intro_show_complete:
+    threemcsand1dj_stadium_intro_lights:
+      action: stop
 
 
 blinkenlight_player:

@@ -264,6 +264,12 @@ show_player:
     paulrevere_pops_show:
       action: play
       loops: -1
+    paulrevere_stadium_intro_lights:
+      action: play
+      loops: -1
+  timer_paulrevere_intro_show_complete:
+    paulrevere_stadium_intro_lights:
+      action: stop
 
 
 blinkenlight_player:

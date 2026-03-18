@@ -2252,6 +2252,12 @@ widget_player:
   timer_bodymovin_widget_timer_complete:
     bodymovinfinish:
       action: remove
+  skillshot_lit_hit:
+    skillshot_success_overlay:
+      action: play
+      slide: score_overlay
+      priority: 970000
+      expire: 2s
   ball_will_end:
     chcheckitoutfinish:
       action: remove
@@ -2266,6 +2272,16 @@ widget_player:
     mca_circle:
       action: remove
     djhurr_circle:
+      action: remove
+    playfield_2x_scoring:
+      action: remove
+    microphone_color:
+      action: remove
+    boombox_color:
+      action: remove
+    turntable_color:
+      action: remove
+    instrument_blocks:
       action: remove
   bodymovin_lock_1_enabled:
     bodymovin_lock_enabled_widget:

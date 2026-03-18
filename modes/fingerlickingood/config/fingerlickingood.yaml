@@ -162,9 +162,16 @@ show_player:
     fingerlickingood_backboard_show:
       action: play
       loops: -1
+    fingerlickingood_stadium_intro_lights:
+      action: play
+      loops: -1
     fingerlickingood_pops_show:
       action: play
       loops: -1
+  timer_fingerlickingood_intro_show_complete:
+    fingerlickingood_stadium_intro_lights:
+      action: stop
+
 
 
 blinkenlight_player:

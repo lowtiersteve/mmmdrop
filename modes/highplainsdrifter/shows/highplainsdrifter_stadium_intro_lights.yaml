@@ -1,0 +1,59 @@
+#show_version=6
+
+- duration: 1.0
+  lights:
+    l_stadium_left_1: stop
+    l_stadium_left_2: stop
+    l_stadium_left_3: stop
+    l_stadium_left_4: stop
+    l_stadium_left_5: stop
+    l_stadium_left_6: stop
+    l_stadium_left_7: stop
+    l_stadium_left_8: stop
+    l_stadium_left_9: stop
+    l_stadium_left_10: stop
+    l_stadium_left_11: stop
+    l_stadium_left_12: stop
+    l_stadium_left_13: stop
+    l_stadium_right_1: white
+    l_stadium_right_2: white
+    l_stadium_right_3: white
+    l_stadium_right_4: white
+    l_stadium_right_5: white
+    l_stadium_right_6: white
+    l_stadium_right_7: white
+    l_stadium_right_8: white
+    l_stadium_right_9: white
+    l_stadium_right_10: white
+    l_stadium_right_11: white
+    l_stadium_right_12: white
+    l_stadium_right_13: white
+- duration: 1.0
+  lights:
+    l_stadium_left_1: white
+    l_stadium_left_2: white
+    l_stadium_left_3: white
+    l_stadium_left_4: white
+    l_stadium_left_5: white
+    l_stadium_left_6: white
+    l_stadium_left_7: white
+    l_stadium_left_8: white
+    l_stadium_left_9: white
+    l_stadium_left_10: white
+    l_stadium_left_11: white
+    l_stadium_left_12: white
+    l_stadium_left_13: white
+    l_stadium_right_1: stop
+    l_stadium_right_2: stop
+    l_stadium_right_3: stop
+    l_stadium_right_4: stop
+    l_stadium_right_5: stop
+    l_stadium_right_6: stop
+    l_stadium_right_7: stop
+    l_stadium_right_8: stop
+    l_stadium_right_9: stop
+    l_stadium_right_10: stop
+    l_stadium_right_11: stop
+    l_stadium_right_12: stop
+    l_stadium_right_13: stop
+

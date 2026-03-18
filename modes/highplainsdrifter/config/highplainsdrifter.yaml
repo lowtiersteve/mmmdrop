@@ -286,6 +286,12 @@ show_player:
     highplainsdrifter_pops_show:
       action: play
       loops: -1
+    highplainsdrifter_stadium_intro_lights:
+      action: play
+      loops: -1
+  timer_highplainsdrifter_intro_show_complete:
+    highplainsdrifter_stadium_intro_lights:
+      action: stop
 
 
 blinkenlight_player:

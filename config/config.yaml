@@ -314,3 +314,97 @@ player_vars:
     initial_value: 1
   drop_target_bank_counter_count:
     initial_value: 0
+  charges_remaining_variable:
+    initial_value: 0
+  multiball_bodymovin_score:
+    initial_value: 0
+  bonus_multiplier:
+    initial_value: 1
+  player_drop_target_bank_counter_count:
+    initial_value: 1
+  mode_intergalactic_score:
+    initial_value: 1
+  mode_fingerlickingood_score:
+    initial_value: 1
+  mode_highplainsdrifter_score:
+    initial_value: 1
+  mode_makesomenoise_score:
+    initial_value: 1
+  mode_paulrevere_score:
+    initial_value: 1
+  mode_sabotage_score:
+    initial_value: 1
+  mode_threemcsand1dj_score:
+    initial_value: 1
+  mode_toomanyrappers_score:
+    initial_value: 1
+  mode_tripletrouble_score:
+    initial_value: 1
+  mode_time_remaining_total:
+    initial_value: 0
+  selected_mode:
+    value_type: str
+    initial_value: "Triple Trouble"
+  multiball_chcheckitout_score:
+    initial_value: 0
+  fingerlickingood_boost:
+    initial_value: 1
+  fingerlickingood_intro_show_variable_times_100:
+    initial_value: 0
+  fingerlickingood_time_remaining_variable_times_1:
+    initial_value: 60
+  highplainsdrifter_intro_show_variable_times_100:
+    initial_value: 0
+  highplainsdrifter_time_remaining_variable_times_1:
+    initial_value: 60
+  intergalactic_intro_show_variable_times_100:
+    initial_value: 0
+  intergalactic_time_remaining_variable_times_1:
+    initial_value: 60
+  paulrevere_intro_show_variable_times_100:
+    initial_value: 0
+  paulrevere_time_remaining_variable_times_1:
+    initial_value: 60
+  sabotage_intro_show_variable_times_100:
+    initial_value: 0
+  sabotage_time_remaining_variable_times_1:
+    initial_value: 60
+  threemcsand1dj_intro_show_variable_times_100:
+    initial_value: 0
+  threemcsand1dj_time_remaining_variable_times_1:
+    initial_value: 60
+  toomanyrappers_intro_show_variable_times_100:
+    initial_value: 0
+  toomanyrappers_time_remaining_variable_times_1:
+    initial_value: 60
+  tripletrouble_intro_show_variable_times_100:
+    initial_value: 0
+  tripletrouble_time_remaining_variable_times_1:
+    initial_value: 60
+  makesomenoise_intro_show_variable_times_100:
+    initial_value: 0
+  highplainsdrifter_shots_remaining:
+    initial_value: 3
+  makesomenoise_pops_remaining:
+    initial_value: 10
+  makesomenoise_spins_remaining:
+    initial_value: 40
+  makesomenoise_drops_remaining:
+    initial_value: 6
+  makesomenoise_ramps_remaining:
+    initial_value: 4
+  sabotage_perps_caught:
+    initial_value: 0
+  stache_multiplier:
+    initial_value: 1
+  threemcsand1dj_scratch_value:
+    initial_value: 100000
+  threemcsand1dj_mix_multiplier:
+    initial_value: 1
+  threemcsand1dj_scratches_remaining:
+    initial_value: 3
+  toomanyrappers_rhymes_loaded:
+    initial_value: 0
+  tripletrouble_standups_remaining:
+    initial_value: 7
+

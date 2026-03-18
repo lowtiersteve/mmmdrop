@@ -308,7 +308,13 @@ timers:
 
 
 show_player:
+  mode_makesomenoise_started:
+    makesomenoise_stadium_intro_lights:
+      action: play
+      loops: -1
   timer_makesomenoise_intro_show_complete:
+    makesomenoise_stadium_intro_lights:
+      action: stop
     makesomenoise_backboard_show:
       action: play
       loops: -1

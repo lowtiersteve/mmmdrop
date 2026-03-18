@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bub43v210bi0t"]
+
+[ext_resource type="Script" uid="uid://d4ky3s4bg1ouq" path="res://addons/mpf-gmc/classes/mpf_widget.gd" id="1_h70wy"]
+[ext_resource type="Texture2D" uid="uid://jdnmssv87id2" path="res://assets/boombox_color.png" id="2_ftmbw"]
+
+[node name="boombox_color" type="Control"]
+top_level = true
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_h70wy")
+
+[node name="Boomboxcolor" type="Sprite2D" parent="."]
+position = Vector2(112, 504)
+rotation = 1.5707964
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("2_ftmbw")

@@ -219,6 +219,12 @@ show_player:
     tripletrouble_pops_show:
       action: play
       loops: -1
+    tripletrouble_stadium_intro_lights:
+      action: play
+      loops: -1
+  timer_tripletrouble_intro_show_complete:
+    tripletrouble_stadium_intro_lights:
+      action: stop
 
 
 blinkenlight_player:

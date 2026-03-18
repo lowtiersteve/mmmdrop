@@ -272,6 +272,13 @@ show_player:
     toomanyrappers_pops_show:
       action: play
       loops: -1
+    toomanyrappers_stadium_intro_lights:
+      action: play
+      loops: -1
+  timer_toomanyrappers_intro_show_complete:
+    toomanyrappers_stadium_intro_lights:
+      action: stop
+
 
 
 blinkenlight_player:

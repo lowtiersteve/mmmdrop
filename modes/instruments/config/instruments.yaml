@@ -241,3 +241,43 @@ random_event_player:
     - advance_instrument_bottom
     - advance_instrument_middle
     - advance_instrument_top
+
+
+slide_player:
+  mode_instruments_started:
+    instrument_blocks:
+      action: play
+      priority: 901000
+
+
+widget_player:
+  microphone_collected:
+    microphone_color:
+      action: play
+      slide: instrument_blocks
+      priority: 902001
+  boombox_collected:
+    boombox_color:
+      action: play
+      slide: instrument_blocks
+      priority: 902002
+  turntable_collected:
+    turntable_color:
+      action: play
+      slide: instrument_blocks
+      priority: 902003
+  start_playfield_x_timer:
+    playfield_2x_scoring:
+      action: play
+      slide: instrument_blocks
+      priority: 903000
+  reset_playfield_x:
+    playfield_2x_scoring:
+      action: remove
+    turntable_color:
+      action: remove
+    microphone_color:
+      action: remove
+    boombox_color:
+      action: remove
+

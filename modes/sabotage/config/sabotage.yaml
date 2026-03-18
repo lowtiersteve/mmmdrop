@@ -208,10 +208,15 @@ show_player:
     sirens_show:
       action: play
       loops: -1
+    sabotage_stadium_intro_lights:
+      action: play
+      loops: -1
   timer_sabotage_intro_show_complete:
     stache_show:
       action: play
       loops: -1
+    sabotage_stadium_intro_lights:
+      action: stop
   player_stache_multiplier{current_player.stache_multiplier==1 and device.timers.sabotage_time_remaining.running==True}:
     stache_show:
       action: play

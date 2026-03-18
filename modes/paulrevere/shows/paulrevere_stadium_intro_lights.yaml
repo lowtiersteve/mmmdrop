@@ -1,0 +1,220 @@
+#show_version=6
+
+- duration: 0.02
+  lights:
+    l_stadium_left_27: stop
+    l_stadium_right_27: gold
+- duration: 0.02
+  lights:
+    l_stadium_right_27: stop
+    l_stadium_right_26: gold
+- duration: 0.02
+  lights:
+    l_stadium_right_26: stop
+    l_stadium_right_25: gold
+- duration: 0.02
+  lights:
+    l_stadium_right_25: stop
+    l_stadium_right_24: gold
+- duration: 0.02
+  lights:
+    l_stadium_right_24: stop
+    l_stadium_right_23: gold
+- duration: 0.02
+  lights:
+    l_stadium_right_23: stop
+    l_stadium_right_22: gold
+- duration: 0.02
+  lights:
+    l_stadium_right_22: stop
+    l_stadium_right_21: gold
+- duration: 0.02
+  lights:
+    l_stadium_right_21: stop
+    l_stadium_right_20: gold
+- duration: 0.02
+  lights:
+    l_stadium_right_20: stop
+    l_stadium_right_19: gold
+- duration: 0.02
+  lights:
+    l_stadium_right_19: stop
+    l_stadium_right_18: gold
+- duration: 0.02
+  lights:
+    l_stadium_right_18: stop
+    l_stadium_right_17: gold
+- duration: 0.02
+  lights:
+    l_stadium_right_17: stop
+    l_stadium_right_16: gold
+- duration: 0.02
+  lights:
+    l_stadium_right_16: stop
+    l_stadium_right_15: gold
+- duration: 0.02
+  lights:
+    l_stadium_right_15: stop
+    l_stadium_right_14: gold
+- duration: 0.02
+  lights:
+    l_stadium_right_14: stop
+    l_stadium_right_13: gold
+- duration: 0.02
+  lights:
+    l_stadium_right_13: stop
+    l_stadium_right_12: gold
+- duration: 0.02
+  lights:
+    l_stadium_right_12: stop
+    l_stadium_right_11: gold
+- duration: 0.02
+  lights:
+    l_stadium_right_11: stop
+    l_stadium_right_10: gold
+- duration: 0.02
+  lights:
+    l_stadium_right_10: stop
+    l_stadium_right_9: gold
+- duration: 0.02
+  lights:
+    l_stadium_right_9: stop
+    l_stadium_right_8: gold
+- duration: 0.02
+  lights:
+    l_stadium_right_8: stop
+    l_stadium_right_7: gold
+- duration: 0.02
+  lights:
+    l_stadium_right_7: stop
+    l_stadium_right_6: gold
+- duration: 0.02
+  lights:
+    l_stadium_right_6: stop
+    l_stadium_right_5: gold
+- duration: 0.02
+  lights:
+    l_stadium_right_5: stop
+    l_stadium_right_4: gold
+- duration: 0.02
+  lights:
+    l_stadium_right_4: stop
+    l_stadium_right_3: gold
+- duration: 0.02
+  lights:
+    l_stadium_right_3: stop
+    l_stadium_right_2: gold
+- duration: 0.02
+  lights:
+    l_stadium_right_2: stop
+    l_stadium_right_1: gold
+- duration: 0.02
+  lights:
+    l_stadium_right_1: stop
+    l_stadium_left_1: gold
+- duration: 0.02
+  lights:
+    l_stadium_left_1: stop
+    l_stadium_left_2: gold
+- duration: 0.02
+  lights:
+    l_stadium_left_2: stop
+    l_stadium_left_3: gold
+- duration: 0.02
+  lights:
+    l_stadium_left_3: stop
+    l_stadium_left_4: gold
+- duration: 0.02
+  lights:
+    l_stadium_left_4: stop
+    l_stadium_left_5: gold
+- duration: 0.02
+  lights:
+    l_stadium_left_5: stop
+    l_stadium_left_6: gold
+- duration: 0.02
+  lights:
+    l_stadium_left_6: stop
+    l_stadium_left_7: gold
+- duration: 0.02
+  lights:
+    l_stadium_left_7: stop
+    l_stadium_left_8: gold
+- duration: 0.02
+  lights:
+    l_stadium_left_8: stop
+    l_stadium_left_9: gold
+- duration: 0.02
+  lights:
+    l_stadium_left_9: stop
+    l_stadium_left_10: gold
+- duration: 0.02
+  lights:
+    l_stadium_left_10: stop
+    l_stadium_left_11: gold
+- duration: 0.02
+  lights:
+    l_stadium_left_11: stop
+    l_stadium_left_12: gold
+- duration: 0.02
+  lights:
+    l_stadium_left_12: stop
+    l_stadium_left_13: gold
+- duration: 0.02
+  lights:
+    l_stadium_left_13: stop
+    l_stadium_left_14: gold
+- duration: 0.02
+  lights:
+    l_stadium_left_14: stop
+    l_stadium_left_15: gold
+- duration: 0.02
+  lights:
+    l_stadium_left_15: stop
+    l_stadium_left_16: gold
+- duration: 0.02
+  lights:
+    l_stadium_left_16: stop
+    l_stadium_left_17: gold
+- duration: 0.02
+  lights:
+    l_stadium_left_17: stop
+    l_stadium_left_18: gold
+- duration: 0.02
+  lights:
+    l_stadium_left_18: stop
+    l_stadium_left_19: gold
+- duration: 0.02
+  lights:
+    l_stadium_left_19: stop
+    l_stadium_left_20: gold
+- duration: 0.02
+  lights:
+    l_stadium_left_20: stop
+    l_stadium_left_21: gold
+- duration: 0.02
+  lights:
+    l_stadium_left_21: stop
+    l_stadium_left_22: gold
+- duration: 0.02
+  lights:
+    l_stadium_left_22: stop
+    l_stadium_left_23: gold
+- duration: 0.02
+  lights:
+    l_stadium_left_23: stop
+    l_stadium_left_24: gold
+- duration: 0.02
+  lights:
+    l_stadium_left_24: stop
+    l_stadium_left_25: gold
+- duration: 0.02
+  lights:
+    l_stadium_left_25: stop
+    l_stadium_left_26: gold
+- duration: 0.02
+  lights:
+    l_stadium_left_26: stop
+    l_stadium_left_27: gold
+
+

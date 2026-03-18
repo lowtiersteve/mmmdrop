@@ -243,8 +243,13 @@ show_player:
     intergalactic_intro_lights:
       action: play
       loops: -1
+    intergalactic_stadium_intro_lights:
+      action: play
+      loops: -1
   timer_intergalactic_intro_show_complete:
     intergalactic_intro_lights:
+      action: stop
+    intergalactic_stadium_intro_lights:
       action: stop
     intergalactic_backboard_show:
       action: play

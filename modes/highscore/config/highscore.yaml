@@ -41,6 +41,8 @@ high_score:
         - TRIPLE TROUBLE CHAMPION
     - mode_makesomenoise_score:
         - MAKE SOME NOISE CHAMPION
+    - girls_bonus_score:
+        - GIRLS FRENZY CHAMPION
   defaults:
     score:
       - MCA: 300000000
@@ -70,6 +72,8 @@ high_score:
       - MCA: 5000000
     mode_makesomenoise_score:
       - MIK: 5000000
+    girls_bonus_score:
+      - GRL: 50000
 
 
 event_player:
@@ -95,6 +99,7 @@ slide_player:
       action: remove
     high_score_award:
       action: play
+
 
 sound_player:
   mode_highscore_started:

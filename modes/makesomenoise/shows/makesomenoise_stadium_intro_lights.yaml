@@ -1,0 +1,86 @@
+#show_version=6
+
+
+- duration: 0.4
+  lights:
+    l_stadium_left_26: stop
+- duration: 0.9
+  lights:
+    l_stadium_left_26: Aqua
+    l_stadium_left_27: Aqua
+    l_stadium_right_26: Aqua
+    l_stadium_right_27: Aqua
+- duration: 0.7
+  lights:
+    l_stadium_left_24: Aqua
+    l_stadium_left_25: Aqua
+    l_stadium_right_24: Aqua
+    l_stadium_right_25: Aqua
+- duration: 0.4
+  lights:
+    l_stadium_left_22: Aqua
+    l_stadium_left_23: Aqua
+    l_stadium_right_22: Aqua
+    l_stadium_right_23: Aqua
+- duration: 0.9
+  lights:
+    l_stadium_left_20: Aqua
+    l_stadium_left_21: Aqua
+    l_stadium_right_20: Aqua
+    l_stadium_right_21: Aqua
+- duration: 0.9
+  lights:
+    l_stadium_left_18: Aqua
+    l_stadium_left_19: Aqua
+    l_stadium_right_18: Aqua
+    l_stadium_right_19: Aqua
+- duration: 0.5
+  lights:
+    l_stadium_left_16: Aqua
+    l_stadium_left_17: Aqua
+    l_stadium_right_16: Aqua
+    l_stadium_right_17: Aqua
+- duration: 0.9
+  lights:
+    l_stadium_left_14: Aqua
+    l_stadium_left_15: Aqua
+    l_stadium_right_14: Aqua
+    l_stadium_right_15: Aqua
+- duration: 0.9
+  lights:
+    l_stadium_left_12: Aqua
+    l_stadium_left_13: Aqua
+    l_stadium_right_12: Aqua
+    l_stadium_right_13: Aqua
+- duration: 0.6
+  lights:
+    l_stadium_left_10: Aqua
+    l_stadium_left_11: Aqua
+    l_stadium_right_10: Aqua
+    l_stadium_right_11: Aqua
+- duration: 0.9
+  lights:
+    l_stadium_left_8: Aqua
+    l_stadium_left_9: Aqua
+    l_stadium_right_8: Aqua
+    l_stadium_right_9: Aqua
+- duration: 0.8
+  lights:
+    l_stadium_left_6: Aqua
+    l_stadium_left_7: Aqua
+    l_stadium_right_6: Aqua
+    l_stadium_right_7: Aqua
+- duration: 0.8
+  lights:
+    l_stadium_left_4: Aqua
+    l_stadium_left_5: Aqua
+    l_stadium_right_4: Aqua
+    l_stadium_right_5: Aqua
+- duration: 7.0
+  lights:
+    l_stadium_left_1: Aqua
+    l_stadium_left_2: Aqua
+    l_stadium_left_3: Aqua
+    l_stadium_right_1: Aqua
+    l_stadium_right_2: Aqua
+    l_stadium_right_3: Aqua

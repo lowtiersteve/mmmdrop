@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://b6memgs4fw0vv"]
+
+[ext_resource type="Script" uid="uid://d4ky3s4bg1ouq" path="res://addons/mpf-gmc/classes/mpf_widget.gd" id="1_3qnh0"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="3_chwd3"]
+
+[node name="playfield_2x_scoring" type="Control"]
+top_level = true
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_3qnh0")
+
+[node name="scoring2x" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 533.0
+offset_right = 236.0
+offset_bottom = 644.0
+theme_override_constants/line_spacing = 1
+theme_override_constants/outline_size = 23
+theme_override_fonts/font = ExtResource("3_chwd3")
+theme_override_font_sizes/font_size = 40
+text = "2x
+Scoring!"
+horizontal_alignment = 1
+vertical_alignment = 1
