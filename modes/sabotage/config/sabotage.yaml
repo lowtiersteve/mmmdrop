@@ -215,12 +215,14 @@ show_player:
     stache_show:
       action: play
       loops: -1
+      priority: 50000
     sabotage_stadium_intro_lights:
       action: stop
   player_stache_multiplier{current_player.stache_multiplier==1 and device.timers.sabotage_time_remaining.running==True}:
     stache_show:
       action: play
       loops: -1
+      priority: 50000
   player_stache_multiplier{current_player.stache_multiplier==3}:
     stache_show:
       action: stop

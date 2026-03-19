@@ -2,26 +2,15 @@
 
 - duration: 200ms
   lights:
-    l_lowerdrop_circle_led: stop
-    l_upperdrop_circle_led: Blue
+    l_stadium_left_16: Blue
+    l_stadium_left_17: Blue
+    l_stadium_left_18: Blue
+    l_stadium_left_19: Blue
+    l_stadium_left_20: Blue
 - duration: 200ms
   lights:
-    l_upperdrop_circle_led: stop
-    l_middledrop_circle_led: Blue
-- duration: 200ms
-  lights:
-    l_middledrop_circle_led: stop
-    l_lowerdrop_circle_led: Blue
-- duration: 200ms
-  lights:
-    l_lowerdrop_circle_led: stop
-    l_upperdrop_circle_led: Red
-- duration: 200ms
-  lights:
-    l_upperdrop_circle_led: stop
-    l_middledrop_circle_led: Red
-- duration: 200ms
-  lights:
-    l_middledrop_circle_led: stop
-    l_lowerdrop_circle_led: Red
-
+    l_stadium_left_16: Red
+    l_stadium_left_17: Red
+    l_stadium_left_18: Red
+    l_stadium_left_19: Red
+    l_stadium_left_20: Red
