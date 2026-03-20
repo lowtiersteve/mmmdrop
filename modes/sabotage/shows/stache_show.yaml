@@ -2,6 +2,7 @@
 
 - duration: 200ms
   lights:
+    l_stadium_left_15: Blue
     l_stadium_left_16: Blue
     l_stadium_left_17: Blue
     l_stadium_left_18: Blue
@@ -9,6 +10,7 @@
     l_stadium_left_20: Blue
 - duration: 200ms
   lights:
+    l_stadium_left_15: Red
     l_stadium_left_16: Red
     l_stadium_left_17: Red
     l_stadium_left_18: Red
