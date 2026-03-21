@@ -2283,6 +2283,12 @@ widget_player:
       slide: score_overlay
       priority: 970000
       expire: 2s
+  mode_base_started{current_player.ball!=1 and current_player.battery_charged_yesorno==0}:
+    charges_remaining:
+      action: play
+      slide: score_overlay
+      priority: 925000
+      key: "battery"
   ball_will_end:
     chcheckitoutfinish:
       action: remove
