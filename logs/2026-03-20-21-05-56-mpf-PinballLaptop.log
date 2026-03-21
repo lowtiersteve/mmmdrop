@@ -1,0 +1,917 @@
+2026-03-20 21:05:56,612 : INFO : root : Loading config.
+2026-03-20 21:05:56,617 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2026-03-20 21:05:56,618 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\3b8fca15c900b8c5017593b227e0c010.mpf_cache
+2026-03-20 21:05:56,781 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\f6660a7d6ef93b3364a89f3863bac82d.mpf_cache
+2026-03-20 21:05:56,782 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\63a1edb72ce8f5a08e3b0bd829aa2a0d.mpf_cache
+2026-03-20 21:05:56,783 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\c340ec0033d1055cd797ffd5447ef414.mpf_cache
+2026-03-20 21:05:56,785 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\f6660a7d6ef93b3364a89f3863bac82d.mpf_cache
+2026-03-20 21:05:56,786 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\8c11a28e3c38d4ad47947b6a126f2ee9.mpf_cache
+2026-03-20 21:05:56,787 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\e391083cdc9e667060411fe5838e93f2.mpf_cache
+2026-03-20 21:05:56,788 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\f0c219a993d891ee86dcb7eae47dde67.mpf_cache
+2026-03-20 21:05:56,789 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\96aa58108928490b129531848cd9b506.mpf_cache
+2026-03-20 21:05:56,789 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\567636b9d9766e3361204e954a8382da.mpf_cache
+2026-03-20 21:05:56,790 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\8f47ddcaffd9506a6ab610332e5e93e6.mpf_cache
+2026-03-20 21:05:56,791 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\112f935d1c2002cb40d3e6e497be9e7c.mpf_cache
+2026-03-20 21:05:56,792 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\a4c67531f25fc6af6ec97b4ab4b5e0a4.mpf_cache
+2026-03-20 21:05:56,793 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\de8ed6c6d4c48d1b5b054ff74222cb35.mpf_cache
+2026-03-20 21:05:56,794 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\0511702d1aff7294933b3415dcc6bcd8.mpf_cache
+2026-03-20 21:05:56,795 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\3eebd8fc985a6907aa555c0256177d6c.mpf_cache
+2026-03-20 21:05:56,796 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\7f047f20ee2604e573d0056474eb225c.mpf_cache
+2026-03-20 21:05:56,797 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\7cbf965458447bfe6339fd0c6d804285.mpf_cache
+2026-03-20 21:05:56,797 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\c09cbc2eb967f07064f0c7aeb253df93.mpf_cache
+2026-03-20 21:05:56,798 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\3e3e819377c518a390ee259f491dfb06.mpf_cache
+2026-03-20 21:05:56,799 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\1bbdf2c973c297bc3add8824c296f9ca.mpf_cache
+2026-03-20 21:05:56,800 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\8743abc5a0185ade0d9653d9d4dd60e6.mpf_cache
+2026-03-20 21:05:56,801 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\bc1a93e04317e488751dae7b5251780b.mpf_cache
+2026-03-20 21:05:56,802 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\8a267c6d1ad3bd205388d8363e4a5749.mpf_cache
+2026-03-20 21:05:56,803 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\507fc1d02e2e92e18a6830a59c5dcf80.mpf_cache
+2026-03-20 21:05:56,804 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\1d2961d421c758b6953fd569505e4b2d.mpf_cache
+2026-03-20 21:05:56,804 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\9e72e5fa0fd05160f49186c6524c14c9.mpf_cache
+2026-03-20 21:05:56,805 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\f7ea71975115b23719e8d60bf22b5425.mpf_cache
+2026-03-20 21:05:56,806 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\56c9cddbcff0d1410386b266159a0775.mpf_cache
+2026-03-20 21:05:56,807 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\6c385f71891889a392ac696568578c7f.mpf_cache
+2026-03-20 21:05:56,808 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\8bff58349a5bdf4b88bcb50c5fc898e7.mpf_cache
+2026-03-20 21:05:56,808 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\d3db07b89a5b253150cba0100f357975.mpf_cache
+2026-03-20 21:05:56,810 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\e6b55d6a1c06b0dd6369c964181bf8d3.mpf_cache
+2026-03-20 21:05:56,811 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\3ca5ed94cee484bbd3980c38d47f8b3d.mpf_cache
+2026-03-20 21:05:56,812 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\c400bf69dd848f9ec4f3356496b25a78.mpf_cache
+2026-03-20 21:05:56,813 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\b5a54abfbba58cd6005650aabe85cb35.mpf_cache
+2026-03-20 21:05:56,813 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\b9cf3f1e934d5266c0035de47faec02b.mpf_cache
+2026-03-20 21:05:56,814 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\67d6cae7afaea6fe987e87f8d3a3ea21.mpf_cache
+2026-03-20 21:05:56,815 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\e4c5b832148a7d383976fcf70408e8af.mpf_cache
+2026-03-20 21:05:56,815 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\3dc9c0f3b8def4f05bfb99cee3b83b66.mpf_cache
+2026-03-20 21:05:56,816 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\dce98d0c8129174f78168c3f3b9d3db8.mpf_cache
+2026-03-20 21:05:56,816 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\141b19e6c0168c485bbb38b6543175a8.mpf_cache
+2026-03-20 21:05:56,817 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\ada3b5b562837d919d62b9df0d0de8d3.mpf_cache
+2026-03-20 21:05:56,818 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\4e6dd3b0a361d042ad5ab93a8cc8b437.mpf_cache
+2026-03-20 21:05:56,819 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\e97c871403fe82070ff249d62d7cfe22.mpf_cache
+2026-03-20 21:05:56,820 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\64b6da5876f56fc970400d85dfe882ec.mpf_cache
+2026-03-20 21:05:56,820 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\c5a11fc9367393a964e333a780e846f7.mpf_cache
+2026-03-20 21:05:56,821 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\2816335dd466496617c9461f091e66f7.mpf_cache
+2026-03-20 21:05:56,821 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\6359f7257429add2d261e94bcafd60d5.mpf_cache
+2026-03-20 21:05:56,822 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\e1f034e230342bd5fff9d9c9df707a6d.mpf_cache
+2026-03-20 21:05:56,822 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\bed2bac5ea254e8ca98f6dd45e865fd8.mpf_cache
+2026-03-20 21:05:56,823 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\48e8797b77339ec89f8005d20046fbbb.mpf_cache
+2026-03-20 21:05:56,824 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\b0b8ed4dbd306ac2f063788d81ec6bc4.mpf_cache
+2026-03-20 21:05:56,824 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\98b42cbd2eba7845afea8d7862634639.mpf_cache
+2026-03-20 21:05:56,825 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\44893055a228bb5e0381bfc6f9c0abd7.mpf_cache
+2026-03-20 21:05:56,825 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\2042660f443afc84f0703d0905ba54ee.mpf_cache
+2026-03-20 21:05:56,826 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\b7377a92c3675f0a1d484d3ce048d2dc.mpf_cache
+2026-03-20 21:05:56,827 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\dd7647dd44793170b37285bb75f4ccd8.mpf_cache
+2026-03-20 21:05:56,828 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\e2d7f53c0c71e4d0bd9bdd0119e59cc4.mpf_cache
+2026-03-20 21:05:56,829 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\8c6fac435f6ad554a9aceeec6bf90d60.mpf_cache
+2026-03-20 21:05:56,830 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\189e01913405dcf21368edf880785f17.mpf_cache
+2026-03-20 21:05:56,830 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\9c2447d5008e5c2337580412edd81bce.mpf_cache
+2026-03-20 21:05:56,831 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\ecb35127b61fe2c3f803378f52b53af8.mpf_cache
+2026-03-20 21:05:56,832 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\a453bc519324a010fc5f97d23b1d6283.mpf_cache
+2026-03-20 21:05:56,832 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\e134e8f85ba8fa9c3d7f1500ca292437.mpf_cache
+2026-03-20 21:05:56,833 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\b24b6909ee6e0520126bbce60d1ed210.mpf_cache
+2026-03-20 21:05:56,834 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\cba807ea4a81180f6dd01afffacec8ed.mpf_cache
+2026-03-20 21:05:56,835 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\1ea2aa0876194c7260510f0845fe4bfe.mpf_cache
+2026-03-20 21:05:56,836 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\a173d53041ed6761e8719c2951eee9e5.mpf_cache
+2026-03-20 21:05:56,836 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\f071e720e1ef2a753ced60502153911a.mpf_cache
+2026-03-20 21:05:56,837 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\a464c65b0880a71dbe3e02b1f7271abd.mpf_cache
+2026-03-20 21:05:56,837 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\b4bf5fa77bdb26872f42159f572a3499.mpf_cache
+2026-03-20 21:05:56,838 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\cd6f6abb19272a94675a232f8f899ac9.mpf_cache
+2026-03-20 21:05:56,839 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\5c997126cef538283363f6706780c8e5.mpf_cache
+2026-03-20 21:05:56,839 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\51c405745738281c3f5e2edc082329f1.mpf_cache
+2026-03-20 21:05:56,840 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\cbc61a9ec21d345237ebbced62572970.mpf_cache
+2026-03-20 21:05:56,841 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\9cc025b47f8f9d3c347b30180674086b.mpf_cache
+2026-03-20 21:05:56,841 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\c25e7c71bc90546538d4e68911be6658.mpf_cache
+2026-03-20 21:05:56,842 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\3f778658fc8e6107c1e17d48b06d7ee6.mpf_cache
+2026-03-20 21:05:56,843 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\b7a51086f1e3c926b3977a0d025a1faa.mpf_cache
+2026-03-20 21:05:56,844 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\ec4132b455be94a0d574302cefc63c5b.mpf_cache
+2026-03-20 21:05:56,844 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\479eb3ca656e084fa2e092204a5b8039.mpf_cache
+2026-03-20 21:05:56,845 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\f7d8a29372dcc7b0bd71dfedef2e2b6e.mpf_cache
+2026-03-20 21:05:56,846 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\72c6471bcc79f7fe09ca74bb815a63d2.mpf_cache
+2026-03-20 21:05:56,847 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\bdb81eccbf19551abd8bea5fafeca7c0.mpf_cache
+2026-03-20 21:05:56,847 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\8f065719b93e886777277178babee650.mpf_cache
+2026-03-20 21:05:56,848 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\7fef0463a0df344c3146c845257ec616.mpf_cache
+2026-03-20 21:05:56,849 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\a4f333ad36a077996c49298642b6bdcf.mpf_cache
+2026-03-20 21:05:56,849 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\0d8a36344103e35d76354a371e334b3c.mpf_cache
+2026-03-20 21:05:56,850 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\e8d69d74f27089cda2650299e9916804.mpf_cache
+2026-03-20 21:05:56,851 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\05530f35bd950f18d27d3fd571d96823.mpf_cache
+2026-03-20 21:05:56,851 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\2c80f9b381dfccba47cb091e63ba042c.mpf_cache
+2026-03-20 21:05:56,852 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\4e4d5acb898bd12d08de71e0e289ff70.mpf_cache
+2026-03-20 21:05:56,853 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\fc1e3f85304c911eb844eb65d36e61be.mpf_cache
+2026-03-20 21:05:56,854 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\53223d3922288729ee504c1b2a98bb55.mpf_cache
+2026-03-20 21:05:56,854 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\8d20136ddb274338050d1d1ccc1a5e4f.mpf_cache
+2026-03-20 21:05:56,855 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\1254d50720d6d5d0da0e84e29cdbaa7a.mpf_cache
+2026-03-20 21:05:56,855 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\1a7ae31e9f779b1261e3d1eee1831b27.mpf_cache
+2026-03-20 21:05:56,856 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\e8cc67781cd419ce5b22f57993d4060f.mpf_cache
+2026-03-20 21:05:56,857 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\692e0c43627147fbc0fcd151f5f74c28.mpf_cache
+2026-03-20 21:05:56,857 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\8e3ea42c38f2105e0d9462648474c540.mpf_cache
+2026-03-20 21:05:56,858 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\5b32fc835ab7d8baac196d503e431901.mpf_cache
+2026-03-20 21:05:56,859 : WARNING : ConfigProcessor : Config file in cache changed: C:\venv\mpf\mmmdrop\modes\tripletrouble\shows\.\tripletrouble_stadium_intro_lights.yaml
+2026-03-20 21:05:56,859 : INFO : ConfigProcessor : Loading config from file C:\venv\mpf\mmmdrop\modes\tripletrouble\shows\.\tripletrouble_stadium_intro_lights.yaml.
+2026-03-20 21:05:56,869 : INFO : ConfigProcessor : Loading config: C:\venv\mpf\mmmdrop\modes\tripletrouble\shows\.\tripletrouble_stadium_intro_lights.yaml
+2026-03-20 21:05:56,870 : INFO : ConfigProcessor : Config file cache created: C:\Users\sdona\AppData\Local\Temp\bceb66cfdc57530fd488d82ab9baf823.mpf_cache
+2026-03-20 21:05:56,871 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\a61b86d39bcc5a5ea0a5885549542355.mpf_cache
+2026-03-20 21:05:56,872 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\0be197154604f4b199c224fe0066296a.mpf_cache
+2026-03-20 21:05:56,873 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\8be1835d379617cb3def36e5084020f6.mpf_cache
+2026-03-20 21:05:56,874 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\600d86d9f0ce58b92a4c456466b707cc.mpf_cache
+2026-03-20 21:05:56,874 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\3b8a30babd008550b0699281f52ed27a.mpf_cache
+2026-03-20 21:05:56,875 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\1605f6efa0d082cac196fbacc374bc42.mpf_cache
+2026-03-20 21:05:56,876 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\7e2767447a32b13b699b93d64e0ad4e1.mpf_cache
+2026-03-20 21:05:56,877 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\2afc3d032f598172139245ac02c70f84.mpf_cache
+2026-03-20 21:05:56,879 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\ec387031d703ca01cd1e512f54ea45a6.mpf_cache
+2026-03-20 21:05:56,880 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\6060c5cf25a8bbaedfcd18b580aef368.mpf_cache
+2026-03-20 21:05:56,880 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\62ef5d872b70fca48f955a2e25312807.mpf_cache
+2026-03-20 21:05:56,881 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\c52aca253ccfb6abe708ff6ee9d67c14.mpf_cache
+2026-03-20 21:05:56,882 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\f4a78d1a7bce952f8a932d586083fdd8.mpf_cache
+2026-03-20 21:05:56,882 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\bb94c9c1e15d87765c90f1ffc77705c9.mpf_cache
+2026-03-20 21:05:56,883 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\9d4ee1bead7c17d1b5b361b9a86c5113.mpf_cache
+2026-03-20 21:05:56,884 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\9eeb681ca391f55fc1b328483a35afc6.mpf_cache
+2026-03-20 21:05:56,885 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\019a5133c8eb0a0be84c7200575a8bf2.mpf_cache
+2026-03-20 21:05:56,886 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\babefbade82fd364e89e68c8e8fd23aa.mpf_cache
+2026-03-20 21:05:56,886 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\ce0801e7c3c55e24fe9cf2e243ba629e.mpf_cache
+2026-03-20 21:05:56,887 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\1ecbcaf9f778e10bebb5864384a052b1.mpf_cache
+2026-03-20 21:05:56,888 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\3e3112b90b19809ee2bd61b31a556fec.mpf_cache
+2026-03-20 21:05:56,889 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\a34cd612c3896eec02ac2e9f2e3a7c0d.mpf_cache
+2026-03-20 21:05:56,889 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\970ac1fb5b9262a5e94a967ab02ecd45.mpf_cache
+2026-03-20 21:05:56,890 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\56517da7e9d99d554e319ce0801be25b.mpf_cache
+2026-03-20 21:05:56,891 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\a9d290bb07feb2ddcedb63fa81b4a7f4.mpf_cache
+2026-03-20 21:05:56,891 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\9f3eeff7d0ac78c14363656d1dd5b5e7.mpf_cache
+2026-03-20 21:05:56,893 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\965f4f60d3740a8c83f2d2eb1f4c8cfc.mpf_cache
+2026-03-20 21:05:56,893 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\0f145c9d1879a8ace9b7c744e03a7ad5.mpf_cache
+2026-03-20 21:05:56,895 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\9b344eb280fe382fefe59edea2f1176a.mpf_cache
+2026-03-20 21:05:56,896 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\ac821f52899dc68030dd952fdacc88a6.mpf_cache
+2026-03-20 21:05:56,896 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\6ba912a63b7c348f0f92fd7751916e09.mpf_cache
+2026-03-20 21:05:56,897 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\dd9dffa1d18960178033f021f1e04e5f.mpf_cache
+2026-03-20 21:05:56,897 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\5405df938f7ef9af99b1c654cacd899d.mpf_cache
+2026-03-20 21:05:56,898 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\856582d286ed2569cf4ebe5e0a18a6ab.mpf_cache
+2026-03-20 21:05:56,899 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\b6358a411d905a5cd182acc999f35ce1.mpf_cache
+2026-03-20 21:05:56,900 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\f2a5eaa34f5d1ecac89f455f052ead1d.mpf_cache
+2026-03-20 21:05:56,901 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\210f92d1ff4292e9bcc7b50552b6ba4d.mpf_cache
+2026-03-20 21:05:56,902 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\a1de2d1ed186be80b98325271562433f.mpf_cache
+2026-03-20 21:05:56,903 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\ec27e73423a3a2d10d6ef7f0c927ff8b.mpf_cache
+2026-03-20 21:05:56,904 : INFO : ConfigProcessor : Loading config from cache: C:\Users\sdona\AppData\Local\Temp\b0dcc6e235c149859bee863082d5c857.mpf_cache
+2026-03-20 21:05:56,904 : INFO : Machine : Mission Pinball Framework Core Engine v0.80.0.dev12
+2026-03-20 21:05:56,904 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'force_assets_load': False, 'platform_integration_test': False, 'jsonlogging': False, 'logfile': 'logs\\2026-03-20-21-05-56-mpf-PinballLaptop.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': 'smart_virtual', 'syslog_address': None, 'full_logfile_path': 'C:\\venv\\mpf\\mmmdrop\\logs\\2026-03-20-21-05-56-mpf-PinballLaptop.log'}
+2026-03-20 21:05:56,904 : INFO : Machine : MPF path: c:\venv\mpf\Lib\site-packages\mpf
+2026-03-20 21:05:56,904 : INFO : Machine : Machine path: C:\venv\mpf\mmmdrop
+2026-03-20 21:05:56,904 : INFO : Machine : Platform: win32
+2026-03-20 21:05:56,904 : INFO : Machine : Python executable location: c:\venv\mpf\Scripts\python.exe
+2026-03-20 21:05:56,904 : INFO : Machine : Python version: 3.13.11 (64-bit)
+2026-03-20 21:05:56,907 : INFO : Machine : Initializing MPF...
+2026-03-20 21:05:57,008 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,049 : INFO : EventManager : Event: ======'machine_var_fast_audio_headphones_volume'====== Args={'value': 10, 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,049 : INFO : EventManager : Event: ======'machine_var_fast_audio_main_volume'====== Args={'value': 44, 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,049 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.65, 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,049 : INFO : EventManager : Event: ======'machine_var_player1_score'====== Args={'value': 43929730, 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,049 : INFO : EventManager : Event: ======'machine_var_game_just_played'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,049 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'Mission Pinball Framework v0.80.0.dev12', 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,049 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'Mission Pinball Framework v0.80.0.dev12, Config version:6, Show version: 6, BCP version:1.1', 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,049 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.13.11', 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,094 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-11-10.0.26200-SP0', 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,094 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,094 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '11', 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,094 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.26200', 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,094 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,094 : INFO : EventManager : Event: ======'machine_var_log_file_path'====== Args={'value': 'C:\\venv\\mpf\\mmmdrop\\logs\\2026-03-20-21-05-56-mpf-PinballLaptop.log', 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,094 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2026-03-20 21:05:57,240 : INFO : EventManager : Event: ======'drop_target_bank_three_bank_up'====== Args={}
+2026-03-20 21:05:57,242 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2026-03-20 21:05:57,242 : INFO : SwitchController : Found active switch: ('3208-0', <Platform.SmartVirtual>) <switch.s_trough1>
+2026-03-20 21:05:57,242 : INFO : SwitchController : Found active switch: ('3208-1', <Platform.SmartVirtual>) <switch.s_trough2>
+2026-03-20 21:05:57,242 : INFO : SwitchController : Found active switch: ('3208-2', <Platform.SmartVirtual>) <switch.s_trough3>
+2026-03-20 21:05:57,243 : INFO : SwitchController : Found active switch: ('3208-3', <Platform.SmartVirtual>) <switch.s_trough4>
+2026-03-20 21:05:57,243 : INFO : SwitchController : Found active switch: ('3208-4', <Platform.SmartVirtual>) <switch.s_trough5>
+2026-03-20 21:05:57,243 : INFO : SwitchController : Found active switch: ('3208-5', <Platform.SmartVirtual>) <switch.s_trough6>
+2026-03-20 21:05:57,367 : INFO : EventManager : Event: ======'machine_var_score1_label'====== Args={'value': 'GRAND CHAMPION', 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,367 : INFO : EventManager : Event: ======'machine_var_score1_name'====== Args={'value': 'MCA', 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,367 : INFO : EventManager : Event: ======'machine_var_score1_value'====== Args={'value': 300000000, 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,367 : INFO : EventManager : Event: ======'machine_var_score2_label'====== Args={'value': 'HIGH SCORE 1', 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,367 : INFO : EventManager : Event: ======'machine_var_score2_name'====== Args={'value': 'ADR', 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,367 : INFO : EventManager : Event: ======'machine_var_score2_value'====== Args={'value': 250000000, 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,367 : INFO : EventManager : Event: ======'machine_var_score3_label'====== Args={'value': 'HIGH SCORE 2', 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,367 : INFO : EventManager : Event: ======'machine_var_score3_name'====== Args={'value': 'MIK', 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,367 : INFO : EventManager : Event: ======'machine_var_score3_value'====== Args={'value': 200000000, 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,367 : INFO : EventManager : Event: ======'machine_var_score4_label'====== Args={'value': 'HIGH SCORE 3', 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,367 : INFO : EventManager : Event: ======'machine_var_score4_name'====== Args={'value': 'MMM', 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,367 : INFO : EventManager : Event: ======'machine_var_score4_value'====== Args={'value': 150000000, 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,368 : INFO : EventManager : Event: ======'machine_var_score5_label'====== Args={'value': 'HIGH SCORE 4', 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,368 : INFO : EventManager : Event: ======'machine_var_score5_name'====== Args={'value': 'DJH', 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,368 : INFO : EventManager : Event: ======'machine_var_score5_value'====== Args={'value': 100000000, 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,368 : INFO : EventManager : Event: ======'machine_var_multiball_chcheckitout_score1_label'====== Args={'value': 'CH-CHECK IT OUT MULTIBALL CHAMPION', 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,368 : INFO : EventManager : Event: ======'machine_var_multiball_chcheckitout_score1_name'====== Args={'value': 'MCA', 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,368 : INFO : EventManager : Event: ======'machine_var_multiball_chcheckitout_score1_value'====== Args={'value': 10000000, 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,368 : INFO : EventManager : Event: ======'machine_var_multiball_bodymovin_score1_label'====== Args={'value': "BODY MOVIN' MULTIBALL CHAMPION", 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,368 : INFO : EventManager : Event: ======'machine_var_multiball_bodymovin_score1_name'====== Args={'value': 'MIK', 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,368 : INFO : EventManager : Event: ======'machine_var_multiball_bodymovin_score1_value'====== Args={'value': 10000000, 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,368 : INFO : EventManager : Event: ======'machine_var_mode_fingerlickingood_score1_label'====== Args={'value': "FINGER LICKIN' GOOD CHAMPION", 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,368 : INFO : EventManager : Event: ======'machine_var_mode_fingerlickingood_score1_name'====== Args={'value': 'DJH', 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,368 : INFO : EventManager : Event: ======'machine_var_mode_fingerlickingood_score1_value'====== Args={'value': 5000000, 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,368 : INFO : EventManager : Event: ======'machine_var_mode_highplainsdrifter_score1_label'====== Args={'value': 'HIGH PLAINS DRIFTER CHAMPION', 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,368 : INFO : EventManager : Event: ======'machine_var_mode_highplainsdrifter_score1_name'====== Args={'value': 'MCA', 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,368 : INFO : EventManager : Event: ======'machine_var_mode_highplainsdrifter_score1_value'====== Args={'value': 5000000, 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,368 : INFO : EventManager : Event: ======'machine_var_mode_intergalactic_score1_label'====== Args={'value': 'INTERGALACTIC CHAMPION', 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,368 : INFO : EventManager : Event: ======'machine_var_mode_intergalactic_score1_name'====== Args={'value': 'SLD', 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,369 : INFO : EventManager : Event: ======'machine_var_mode_intergalactic_score1_value'====== Args={'value': 21000000, 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,369 : INFO : EventManager : Event: ======'machine_var_mode_paulrevere_score1_label'====== Args={'value': 'PAUL REVERE CHAMPION', 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,369 : INFO : EventManager : Event: ======'machine_var_mode_paulrevere_score1_name'====== Args={'value': 'ADR', 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,369 : INFO : EventManager : Event: ======'machine_var_mode_paulrevere_score1_value'====== Args={'value': 5000000, 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,369 : INFO : EventManager : Event: ======'machine_var_mode_sabotage_score1_label'====== Args={'value': 'SABOTAGE CHAMPION', 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,369 : INFO : EventManager : Event: ======'machine_var_mode_sabotage_score1_name'====== Args={'value': 'SLD', 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,369 : INFO : EventManager : Event: ======'machine_var_mode_sabotage_score1_value'====== Args={'value': 12000000, 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,369 : INFO : EventManager : Event: ======'machine_var_mode_threemcsand1dj_score1_label'====== Args={'value': "3 MC'S AND 1 DJ CHAMPION", 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,369 : INFO : EventManager : Event: ======'machine_var_mode_threemcsand1dj_score1_name'====== Args={'value': 'MMM', 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,369 : INFO : EventManager : Event: ======'machine_var_mode_threemcsand1dj_score1_value'====== Args={'value': 5000000, 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,369 : INFO : EventManager : Event: ======'machine_var_mode_toomanyrappers_score1_label'====== Args={'value': 'TOO MANY RAPPERS CHAMPION', 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,369 : INFO : EventManager : Event: ======'machine_var_mode_toomanyrappers_score1_name'====== Args={'value': 'DJH', 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,369 : INFO : EventManager : Event: ======'machine_var_mode_toomanyrappers_score1_value'====== Args={'value': 5000000, 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,369 : INFO : EventManager : Event: ======'machine_var_mode_tripletrouble_score1_label'====== Args={'value': 'TRIPLE TROUBLE CHAMPION', 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,369 : INFO : EventManager : Event: ======'machine_var_mode_tripletrouble_score1_name'====== Args={'value': 'MCA', 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,369 : INFO : EventManager : Event: ======'machine_var_mode_tripletrouble_score1_value'====== Args={'value': 5000000, 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,369 : INFO : EventManager : Event: ======'machine_var_mode_makesomenoise_score1_label'====== Args={'value': 'MAKE SOME NOISE CHAMPION', 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,369 : INFO : EventManager : Event: ======'machine_var_mode_makesomenoise_score1_name'====== Args={'value': 'MIK', 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,370 : INFO : EventManager : Event: ======'machine_var_mode_makesomenoise_score1_value'====== Args={'value': 5000000, 'prev_value': None, 'change': True}
+2026-03-20 21:05:57,370 : INFO : EventManager : Event: ======'bcp_connection_attempt'====== Args={'name': 'local_display', 'host': 'localhost', 'port': 5050}
+2026-03-20 21:05:57,373 : INFO : BCPClientSocket : Connecting BCP to 'local_display' at localhost:5050...
+2026-03-20 21:05:59,911 : INFO : BCPClientSocket : Connected BCP to 'local_display' localhost:5050
+2026-03-20 21:05:59,912 : INFO : EventManager : Event: ======'bcp_clients_connected'====== Args={}
+2026-03-20 21:05:59,913 : INFO : ball_device.bd_trough : BCH: Initial count: 6
+2026-03-20 21:05:59,914 : INFO : ball_device.bd_trough : State: idle
+2026-03-20 21:05:59,915 : INFO : ball_device.bd_plunger : BCH: Initial count: 0
+2026-03-20 21:05:59,915 : INFO : ball_device.bd_plunger : State: idle
+2026-03-20 21:05:59,915 : INFO : ball_device.bd_scoop : BCH: Initial count: 0
+2026-03-20 21:05:59,915 : INFO : ball_device.bd_scoop : State: idle
+2026-03-20 21:05:59,958 : INFO : EventManager : Event: ======'init_phase_3'====== Args={}
+2026-03-20 21:06:00,045 : INFO : EventManager : Event: ======'init_phase_4'====== Args={}
+2026-03-20 21:06:00,046 : INFO : BallController : Initial balls found: 6
+2026-03-20 21:06:00,047 : INFO : EventManager : Event: ======'machine_var_audits_events_game_ended'====== Args={'value': 68, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,047 : INFO : EventManager : Event: ======'machine_var_audits_events_game_started'====== Args={'value': 1008, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,048 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_captive_ball'====== Args={'value': 6, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,048 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_center_upper_pop'====== Args={'value': 23, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,048 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_inner_orbit'====== Args={'value': 6, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,048 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_left_flipper'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,048 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_left_inlane'====== Args={'value': 23, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,048 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_left_orbit'====== Args={'value': 5, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,048 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_left_outlane'====== Args={'value': 23, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,048 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_left_ramp'====== Args={'value': 4, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,048 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_left_slingshot'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,048 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_left_upper_pop'====== Args={'value': 23, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,048 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_pop_standup'====== Args={'value': 39, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,048 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_right_flipper'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,048 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_right_inlane'====== Args={'value': 23, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,048 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_right_orbit'====== Args={'value': 5, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,048 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_right_outlane'====== Args={'value': 23, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,048 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_right_ramp'====== Args={'value': 4, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,048 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_right_slingshot'====== Args={'value': 23, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,049 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_service_down'====== Args={'value': 653, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,049 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_service_enter'====== Args={'value': 402, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,049 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_service_esc'====== Args={'value': 653, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,049 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_service_up'====== Args={'value': 221, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,049 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_spinner'====== Args={'value': 4, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,049 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_start'====== Args={'value': 4, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,049 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_three_bank_bottom'====== Args={'value': 4, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,049 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_three_bank_middle'====== Args={'value': 4, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,049 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_three_bank_standup'====== Args={'value': 39, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,049 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_three_bank_top'====== Args={'value': 4, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,049 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_tilt_bob'====== Args={'value': 4, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,049 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_top_right_flipper'====== Args={'value': 934, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,049 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_trough1'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,049 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_trough2'====== Args={'value': 4, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,049 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_trough3'====== Args={'value': 4, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,050 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_trough4'====== Args={'value': 4, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,050 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_trough5'====== Args={'value': 251, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,050 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_trough6'====== Args={'value': 783, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,050 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_trough_jam'====== Args={'value': 934, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,050 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_tshirt_bottom_standup'====== Args={'value': 23, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,050 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_tshirt_top_standup'====== Args={'value': 23, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,050 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_upper_pop_standup'====== Args={'value': 23, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,050 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_service_esc'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,050 : INFO : EventManager : Event: ======'machine_var_audits_player_score'====== Args={'value': {'average': 12143502, 'top': [179589170, 147275560, 142237180, 85092890, 49818280, 43929730, 38155360, 32035610, 25030460, 20034230], 'total': 72}, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,050 : INFO : EventManager : Event: ======'machine_var_audits_shots_bodymovin_captiveball'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,050 : INFO : EventManager : Event: ======'machine_var_audits_shots_bodymovin_inner_loop'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,050 : INFO : EventManager : Event: ======'machine_var_audits_shots_bodymovin_leftorbit'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,050 : INFO : EventManager : Event: ======'machine_var_audits_shots_bodymovin_leftramp'====== Args={'value': 12, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,050 : INFO : EventManager : Event: ======'machine_var_audits_shots_bodymovin_rightorbit'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,050 : INFO : EventManager : Event: ======'machine_var_audits_shots_bodymovin_rightramp'====== Args={'value': 12, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,050 : INFO : EventManager : Event: ======'machine_var_audits_shots_bottom_drop'====== Args={'value': 243, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,051 : INFO : EventManager : Event: ======'machine_var_audits_shots_captive_ball'====== Args={'value': 138, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,051 : INFO : EventManager : Event: ======'machine_var_audits_shots_inner_loop'====== Args={'value': 106, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,051 : INFO : EventManager : Event: ======'machine_var_audits_shots_inner_loop_backdoor'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,051 : INFO : EventManager : Event: ======'machine_var_audits_shots_left_inlane'====== Args={'value': 41, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,051 : INFO : EventManager : Event: ======'machine_var_audits_shots_left_orbit'====== Args={'value': 167, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,051 : INFO : EventManager : Event: ======'machine_var_audits_shots_left_orbit_backdoor'====== Args={'value': 11, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,051 : INFO : EventManager : Event: ======'machine_var_audits_shots_left_outlane'====== Args={'value': 32, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,051 : INFO : EventManager : Event: ======'machine_var_audits_shots_left_ramp'====== Args={'value': 521, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,051 : INFO : EventManager : Event: ======'machine_var_audits_shots_middle_drop'====== Args={'value': 265, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,051 : INFO : EventManager : Event: ======'machine_var_audits_shots_pop1'====== Args={'value': 43, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,051 : INFO : EventManager : Event: ======'machine_var_audits_shots_pop2'====== Args={'value': 84, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,051 : INFO : EventManager : Event: ======'machine_var_audits_shots_pop3'====== Args={'value': 1237, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,052 : INFO : EventManager : Event: ======'machine_var_audits_shots_pop_standup'====== Args={'value': 502, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,052 : INFO : EventManager : Event: ======'machine_var_audits_shots_right_inlane'====== Args={'value': 37, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,052 : INFO : EventManager : Event: ======'machine_var_audits_shots_right_orbit'====== Args={'value': 170, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,052 : INFO : EventManager : Event: ======'machine_var_audits_shots_right_orbit_backdoor'====== Args={'value': 7, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,052 : INFO : EventManager : Event: ======'machine_var_audits_shots_right_outlane'====== Args={'value': 23, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,052 : INFO : EventManager : Event: ======'machine_var_audits_shots_right_ramp'====== Args={'value': 849, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,052 : INFO : EventManager : Event: ======'machine_var_audits_shots_scoop'====== Args={'value': 736, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,052 : INFO : EventManager : Event: ======'machine_var_audits_shots_skill_captive'====== Args={'value': 16, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,052 : INFO : EventManager : Event: ======'machine_var_audits_shots_skill_drop_targets'====== Args={'value': 240, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,052 : INFO : EventManager : Event: ======'machine_var_audits_shots_skill_side_targets'====== Args={'value': 27, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,052 : INFO : EventManager : Event: ======'machine_var_audits_shots_skillshot_drop_targets'====== Args={'value': 550, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,052 : INFO : EventManager : Event: ======'machine_var_audits_shots_skillshot_hideout_plunge'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,052 : INFO : EventManager : Event: ======'machine_var_audits_shots_skillshot_left_outlane'====== Args={'value': 3, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,052 : INFO : EventManager : Event: ======'machine_var_audits_shots_skillshot_lower_pop'====== Args={'value': 42, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,052 : INFO : EventManager : Event: ======'machine_var_audits_shots_skillshot_side_targets'====== Args={'value': 17, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,053 : INFO : EventManager : Event: ======'machine_var_audits_shots_skillshot_super'====== Args={'value': 5, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,053 : INFO : EventManager : Event: ======'machine_var_audits_shots_spinner'====== Args={'value': 2706, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,053 : INFO : EventManager : Event: ======'machine_var_audits_shots_three_bank_standup'====== Args={'value': 94, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,053 : INFO : EventManager : Event: ======'machine_var_audits_shots_toomanyrappers_captiveball'====== Args={'value': 3, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,053 : INFO : EventManager : Event: ======'machine_var_audits_shots_toomanyrappers_leftorbit'====== Args={'value': 8, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,053 : INFO : EventManager : Event: ======'machine_var_audits_shots_toomanyrappers_leftramp'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,053 : INFO : EventManager : Event: ======'machine_var_audits_shots_toomanyrappers_rightorbit'====== Args={'value': 29, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,053 : INFO : EventManager : Event: ======'machine_var_audits_shots_toomanyrappers_rightramp'====== Args={'value': 68, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,053 : INFO : EventManager : Event: ======'machine_var_audits_shots_toomanyrappers_scoop'====== Args={'value': 22, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,053 : INFO : EventManager : Event: ======'machine_var_audits_shots_top_drop'====== Args={'value': 668, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,053 : INFO : EventManager : Event: ======'machine_var_audits_shots_tshirt_bottom_standup'====== Args={'value': 146, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,053 : INFO : EventManager : Event: ======'machine_var_audits_shots_tshirt_top_standup'====== Args={'value': 150, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,053 : INFO : EventManager : Event: ======'machine_var_audits_shots_upper_pop_standup'====== Args={'value': 41, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,053 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_captive_ball'====== Args={'value': 345, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,053 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_center_upper_pop'====== Args={'value': 323, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,053 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_inner_orbit'====== Args={'value': 120, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,053 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 1796, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,054 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_inlane'====== Args={'value': 152, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,054 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_orbit'====== Args={'value': 366, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,054 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_outlane'====== Args={'value': 89, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,054 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_ramp'====== Args={'value': 662, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,054 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_slingshot'====== Args={'value': 262, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,054 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_upper_pop'====== Args={'value': 218, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,054 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_plunger'====== Args={'value': 2206, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,054 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_pop_standup'====== Args={'value': 626, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,054 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 2689, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,054 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_inlane'====== Args={'value': 145, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,054 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_lower_pop'====== Args={'value': 2022, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,054 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_orbit'====== Args={'value': 483, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,054 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_outlane'====== Args={'value': 76, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,054 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_ramp'====== Args={'value': 1018, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,054 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_slingshot'====== Args={'value': 367, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,054 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_scoop'====== Args={'value': 1081, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,054 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_service_down'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,055 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_service_enter'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,055 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_service_esc'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,055 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_service_up'====== Args={'value': 3, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,055 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_spinner'====== Args={'value': 4766, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,055 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_start'====== Args={'value': 98, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,055 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_three_bank_bottom'====== Args={'value': 738, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,055 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_three_bank_middle'====== Args={'value': 800, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,055 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_three_bank_standup'====== Args={'value': 336, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,055 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_three_bank_top'====== Args={'value': 1209, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,055 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_tilt_bob'====== Args={'value': 65, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,055 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_top_right_flipper'====== Args={'value': 1294, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,055 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough1'====== Args={'value': 568, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,055 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough2'====== Args={'value': 387, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,055 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough3'====== Args={'value': 314, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,055 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough4'====== Args={'value': 194, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,055 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough5'====== Args={'value': 162, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,055 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough6'====== Args={'value': 161, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,055 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_trough_jam'====== Args={'value': 206, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,056 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_tshirt_bottom_standup'====== Args={'value': 209, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,056 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_tshirt_top_standup'====== Args={'value': 243, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,056 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_upper_pop_standup'====== Args={'value': 216, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,056 : INFO : EventManager : Event: ======'machine_var_audits_switches_service_down'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,056 : INFO : EventManager : Event: ======'machine_var_audits_switches_service_enter'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,056 : INFO : EventManager : Event: ======'machine_var_audits_switches_service_esc'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,056 : INFO : EventManager : Event: ======'machine_var_audits_switches_service_up'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2026-03-20 21:06:00,056 : INFO : EventManager : Event: ======'init_phase_5'====== Args={}
+2026-03-20 21:06:00,058 : INFO : EventManager : Event: ======'init_done'====== Args={}
+2026-03-20 21:06:00,059 : INFO : EventManager : Event: ======'machine_reset_phase_1'====== Args={}
+2026-03-20 21:06:00,067 : INFO : EventManager : Event: ======'machine_reset_phase_2'====== Args={}
+2026-03-20 21:06:00,068 : INFO : EventManager : Event: ======'game_just_played'====== Args={'priority': 0, 'action': 'set_machine', 'int': 0}
+2026-03-20 21:06:00,068 : INFO : EventManager : Event: ======'machine_reset_phase_3'====== Args={}
+2026-03-20 21:06:00,068 : INFO : drop_target_bank.three_bank : All targets are already up. Will not reset bank.
+2026-03-20 21:06:00,068 : INFO : EventManager : Event: ======'reset_complete'====== Args={}
+2026-03-20 21:06:00,068 : INFO : EventManager : Event: ======'mode_service_will_start'====== Args={}
+2026-03-20 21:06:00,070 : INFO : EventManager : Event: ======'mode_service_starting'====== Args={}
+2026-03-20 21:06:00,070 : INFO : EventManager : Event: ======'mode_attract_will_start'====== Args={}
+2026-03-20 21:06:00,072 : INFO : Timer.attract_intro_timer : Starting Timer.
+2026-03-20 21:06:00,072 : INFO : EventManager : Event: ======'timer_attract_intro_timer_started'====== Args={'ticks': 0, 'ticks_remaining': 16}
+2026-03-20 21:06:00,072 : INFO : EventManager : Event: ======'timer_attract_intro_timer_tick'====== Args={'ticks': 0, 'ticks_remaining': 16}
+2026-03-20 21:06:00,085 : INFO : EventManager : Event: ======'mode_attract_starting'====== Args={}
+2026-03-20 21:06:00,085 : INFO : Mode.service : Started. Priority: 100000
+2026-03-20 21:06:00,085 : INFO : EventManager : Event: ======'modes_active_modes_changed'====== Args={}
+2026-03-20 21:06:00,085 : INFO : EventManager : Event: ======'mode_service_started'====== Args={}
+2026-03-20 21:06:00,086 : INFO : EventManager : Event: ======'logicblock_mca_sequence_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:00,086 : INFO : EventManager : Event: ======'logicblock_adr_sequence_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:00,086 : INFO : EventManager : Event: ======'logicblock_christmas_sequence_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:00,086 : INFO : EventManager : Event: ======'logicblock_muppets_sequence_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:00,087 : INFO : EventManager : Event: ======'logicblock_mca_sequence_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:00,087 : INFO : EventManager : Event: ======'logicblock_adr_sequence_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:00,087 : INFO : EventManager : Event: ======'logicblock_christmas_sequence_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:00,087 : INFO : EventManager : Event: ======'logicblock_muppets_sequence_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:00,087 : INFO : Mode.attract : Started. Priority: 10
+2026-03-20 21:06:00,087 : INFO : EventManager : Event: ======'modes_active_modes_changed'====== Args={}
+2026-03-20 21:06:00,087 : INFO : EventManager : Event: ======'mode_attract_started'====== Args={}
+2026-03-20 21:06:00,087 : INFO : EventManager : Event: ======'logicblock_mca_sequence_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:00,087 : INFO : EventManager : Event: ======'logicblock_mca_sequence_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:00,087 : INFO : EventManager : Event: ======'logicblock_adr_sequence_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:00,087 : INFO : EventManager : Event: ======'logicblock_adr_sequence_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:00,088 : INFO : EventManager : Event: ======'logicblock_christmas_sequence_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:00,088 : INFO : EventManager : Event: ======'logicblock_christmas_sequence_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:00,088 : INFO : EventManager : Event: ======'logicblock_muppets_sequence_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:00,088 : INFO : EventManager : Event: ======'logicblock_muppets_sequence_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:00,090 : INFO : EventManager : Event: ======'timer_attract_intro_timer_tick'====== Args={'ticks': 0, 'ticks_remaining': 16}
+2026-03-20 21:06:00,091 : INFO : EventManager : Event: ======'collecting_balls_complete'====== Args={}
+2026-03-20 21:06:00,091 : INFO : EventManager : Event: ======'carousel_item_highlighted'====== Args={'carousel': 'attract', 'direction': None, 'item': 'mpf_logo'}
+2026-03-20 21:06:00,094 : INFO : Timer.attract_carousel_timer : Starting Timer.
+2026-03-20 21:06:00,094 : INFO : EventManager : Event: ======'timer_attract_carousel_timer_started'====== Args={'ticks': 0, 'ticks_remaining': 5}
+2026-03-20 21:06:00,094 : INFO : EventManager : Event: ======'timer_attract_carousel_timer_tick'====== Args={'ticks': 0, 'ticks_remaining': 5}
+2026-03-20 21:06:00,099 : INFO : EventManager : Event: ======'slide_loading_created'====== Args={'_from_bcp': True}
+2026-03-20 21:06:00,100 : INFO : EventManager : Event: ======'slide__removed'====== Args={'_from_bcp': True}
+2026-03-20 21:06:00,100 : INFO : EventManager : Event: ======'slide_loading_active'====== Args={'original_context': '_global', 'original_calling_context': 'init_done', 'priority': 0.0, 'cmd': 'slides_play', '_from_bcp': True}
+2026-03-20 21:06:00,100 : INFO : Machine : Starting the main run loop with active modes: [<Mode.service>, <Mode.attract>]
+2026-03-20 21:06:00,184 : INFO : EventManager : Event: ======'slide_attract_load_created'====== Args={'_from_bcp': True}
+2026-03-20 21:06:00,184 : INFO : EventManager : Event: ======'slide_loading_inactive'====== Args={'is_removing': True, '_from_bcp': True}
+2026-03-20 21:06:00,184 : INFO : EventManager : Event: ======'slide_attract_load_active'====== Args={'original_context': 'attract', 'original_calling_context': 'mode_attract_started{machine.game_just_played==0}', 'priority': 10.0, 'cmd': 'slides_play', '_from_bcp': True}
+2026-03-20 21:06:00,185 : INFO : EventManager : Event: ======'slide_loading_removed'====== Args={'_from_bcp': True}
+2026-03-20 21:06:00,267 : INFO : BcpServer : New client connected.
+2026-03-20 21:06:01,100 : INFO : EventManager : Event: ======'timer_attract_intro_timer_tick'====== Args={'ticks': 1, 'ticks_remaining': 15}
+2026-03-20 21:06:01,101 : INFO : EventManager : Event: ======'timer_attract_carousel_timer_tick'====== Args={'ticks': 1, 'ticks_remaining': 4}
+2026-03-20 21:06:02,098 : INFO : EventManager : Event: ======'timer_attract_intro_timer_tick'====== Args={'ticks': 2, 'ticks_remaining': 14}
+2026-03-20 21:06:02,099 : INFO : EventManager : Event: ======'timer_attract_carousel_timer_tick'====== Args={'ticks': 2, 'ticks_remaining': 3}
+2026-03-20 21:06:03,096 : INFO : EventManager : Event: ======'timer_attract_intro_timer_tick'====== Args={'ticks': 3, 'ticks_remaining': 13}
+2026-03-20 21:06:03,096 : INFO : EventManager : Event: ======'timer_attract_carousel_timer_tick'====== Args={'ticks': 3, 'ticks_remaining': 2}
+2026-03-20 21:06:04,112 : INFO : EventManager : Event: ======'timer_attract_intro_timer_tick'====== Args={'ticks': 4, 'ticks_remaining': 12}
+2026-03-20 21:06:04,113 : INFO : EventManager : Event: ======'timer_attract_carousel_timer_tick'====== Args={'ticks': 4, 'ticks_remaining': 1}
+2026-03-20 21:06:05,098 : INFO : EventManager : Event: ======'timer_attract_intro_timer_tick'====== Args={'ticks': 5, 'ticks_remaining': 11}
+2026-03-20 21:06:05,099 : INFO : Timer.attract_carousel_timer : Timer Complete
+2026-03-20 21:06:05,099 : INFO : Timer.attract_carousel_timer : Stopping Timer
+2026-03-20 21:06:05,099 : INFO : EventManager : Event: ======'timer_attract_carousel_timer_stopped'====== Args={'ticks': 5, 'ticks_remaining': 1}
+2026-03-20 21:06:05,099 : INFO : EventManager : Event: ======'timer_attract_carousel_timer_complete'====== Args={'ticks': 5, 'ticks_remaining': 1}
+2026-03-20 21:06:05,100 : INFO : EventManager : Event: ======'carousel_item_highlighted'====== Args={'carousel': 'attract', 'direction': 'forwards', 'item': 'fast_logo'}
+2026-03-20 21:06:05,105 : INFO : Timer.attract_carousel_timer : Starting Timer.
+2026-03-20 21:06:05,105 : INFO : EventManager : Event: ======'timer_attract_carousel_timer_started'====== Args={'ticks': 0, 'ticks_remaining': 5}
+2026-03-20 21:06:05,105 : INFO : EventManager : Event: ======'timer_attract_carousel_timer_tick'====== Args={'ticks': 0, 'ticks_remaining': 5}
+2026-03-20 21:06:06,102 : INFO : EventManager : Event: ======'timer_attract_intro_timer_tick'====== Args={'ticks': 6, 'ticks_remaining': 10}
+2026-03-20 21:06:06,116 : INFO : EventManager : Event: ======'timer_attract_carousel_timer_tick'====== Args={'ticks': 1, 'ticks_remaining': 4}
+2026-03-20 21:06:07,104 : INFO : EventManager : Event: ======'timer_attract_intro_timer_tick'====== Args={'ticks': 7, 'ticks_remaining': 9}
+2026-03-20 21:06:07,106 : INFO : EventManager : Event: ======'timer_attract_carousel_timer_tick'====== Args={'ticks': 2, 'ticks_remaining': 3}
+2026-03-20 21:06:08,091 : INFO : EventManager : Event: ======'timer_attract_intro_timer_tick'====== Args={'ticks': 8, 'ticks_remaining': 8}
+2026-03-20 21:06:08,106 : INFO : EventManager : Event: ======'timer_attract_carousel_timer_tick'====== Args={'ticks': 3, 'ticks_remaining': 2}
+2026-03-20 21:06:09,092 : INFO : EventManager : Event: ======'timer_attract_intro_timer_tick'====== Args={'ticks': 9, 'ticks_remaining': 7}
+2026-03-20 21:06:09,107 : INFO : EventManager : Event: ======'timer_attract_carousel_timer_tick'====== Args={'ticks': 4, 'ticks_remaining': 1}
+2026-03-20 21:06:10,103 : INFO : EventManager : Event: ======'timer_attract_intro_timer_tick'====== Args={'ticks': 10, 'ticks_remaining': 6}
+2026-03-20 21:06:10,120 : INFO : Timer.attract_carousel_timer : Timer Complete
+2026-03-20 21:06:10,121 : INFO : Timer.attract_carousel_timer : Stopping Timer
+2026-03-20 21:06:10,121 : INFO : EventManager : Event: ======'timer_attract_carousel_timer_stopped'====== Args={'ticks': 5, 'ticks_remaining': 1}
+2026-03-20 21:06:10,122 : INFO : EventManager : Event: ======'timer_attract_carousel_timer_complete'====== Args={'ticks': 5, 'ticks_remaining': 1}
+2026-03-20 21:06:10,122 : INFO : EventManager : Event: ======'carousel_item_highlighted'====== Args={'carousel': 'attract', 'direction': 'forwards', 'item': 'specialthanks'}
+2026-03-20 21:06:10,127 : INFO : Timer.attract_carousel_timer : Starting Timer.
+2026-03-20 21:06:10,127 : INFO : EventManager : Event: ======'timer_attract_carousel_timer_started'====== Args={'ticks': 0, 'ticks_remaining': 5}
+2026-03-20 21:06:10,127 : INFO : EventManager : Event: ======'timer_attract_carousel_timer_tick'====== Args={'ticks': 0, 'ticks_remaining': 5}
+2026-03-20 21:06:11,091 : INFO : EventManager : Event: ======'timer_attract_intro_timer_tick'====== Args={'ticks': 11, 'ticks_remaining': 5}
+2026-03-20 21:06:11,138 : INFO : EventManager : Event: ======'timer_attract_carousel_timer_tick'====== Args={'ticks': 1, 'ticks_remaining': 4}
+2026-03-20 21:06:12,092 : INFO : EventManager : Event: ======'timer_attract_intro_timer_tick'====== Args={'ticks': 12, 'ticks_remaining': 4}
+2026-03-20 21:06:12,137 : INFO : EventManager : Event: ======'timer_attract_carousel_timer_tick'====== Args={'ticks': 2, 'ticks_remaining': 3}
+2026-03-20 21:06:12,870 : INFO : SwitchController : <<<<<<< 's_start' active >>>>>>>
+2026-03-20 21:06:13,005 : INFO : SwitchController : <<<<<<< 's_start' inactive >>>>>>>
+2026-03-20 21:06:13,005 : INFO : EventManager : Event: ======'sw_start_inactive'====== Args={}
+2026-03-20 21:06:13,005 : INFO : EventManager : Event: ======'request_to_start_game'====== Args={}
+2026-03-20 21:06:13,006 : INFO : EventManager : Event: ======'game_start'====== Args={'buttons': [], 'hold_time': 0.13559250003891066}
+2026-03-20 21:06:13,007 : INFO : EventManager : Event: ======'mode_game_will_start'====== Args={'buttons': [], 'hold_time': 0.13559250003891066}
+2026-03-20 21:06:13,008 : INFO : EventManager : Event: ======'mode_game_starting'====== Args={'buttons': [], 'hold_time': 0.13559250003891066}
+2026-03-20 21:06:13,008 : INFO : EventManager : Event: ======'mode_attract_will_stop'====== Args={}
+2026-03-20 21:06:13,008 : INFO : EventManager : Event: ======'mode_attract_stopping'====== Args={}
+2026-03-20 21:06:13,009 : INFO : Mode.game : Started. Priority: 20
+2026-03-20 21:06:13,009 : INFO : EventManager : Event: ======'modes_active_modes_changed'====== Args={}
+2026-03-20 21:06:13,009 : INFO : EventManager : Event: ======'mode_game_started'====== Args={'buttons': [], 'hold_time': 0.13559250003891066}
+2026-03-20 21:06:13,010 : INFO : Mode.attract : Stopped.
+2026-03-20 21:06:13,010 : INFO : EventManager : Event: ======'modes_active_modes_changed'====== Args={}
+2026-03-20 21:06:13,011 : INFO : EventManager : Event: ======'mode_attract_stopped'====== Args={}
+2026-03-20 21:06:13,011 : INFO : EventManager : Event: ======'clear'====== Args={'key': 'attract'}
+2026-03-20 21:06:13,012 : INFO : Timer.mca_attract_video_timer : Stopping Timer
+2026-03-20 21:06:13,012 : INFO : EventManager : Event: ======'timer_mca_attract_video_timer_stopped'====== Args={'ticks': 0, 'ticks_remaining': 0}
+2026-03-20 21:06:13,012 : INFO : Timer.muppets_attract_video_timer : Stopping Timer
+2026-03-20 21:06:13,012 : INFO : EventManager : Event: ======'timer_muppets_attract_video_timer_stopped'====== Args={'ticks': 0, 'ticks_remaining': 0}
+2026-03-20 21:06:13,013 : INFO : Timer.attract_carousel_timer : Stopping Timer
+2026-03-20 21:06:13,013 : INFO : EventManager : Event: ======'timer_attract_carousel_timer_stopped'====== Args={'ticks': 2, 'ticks_remaining': 3}
+2026-03-20 21:06:13,013 : INFO : Timer.adr_attract_video_timer : Stopping Timer
+2026-03-20 21:06:13,013 : INFO : EventManager : Event: ======'timer_adr_attract_video_timer_stopped'====== Args={'ticks': 0, 'ticks_remaining': 0}
+2026-03-20 21:06:13,013 : INFO : Timer.attract_intro_timer : Stopping Timer
+2026-03-20 21:06:13,014 : INFO : EventManager : Event: ======'timer_attract_intro_timer_stopped'====== Args={'ticks': 12, 'ticks_remaining': 4}
+2026-03-20 21:06:13,014 : INFO : Timer.christmas_attract_video_timer : Stopping Timer
+2026-03-20 21:06:13,014 : INFO : EventManager : Event: ======'timer_christmas_attract_video_timer_stopped'====== Args={'ticks': 0, 'ticks_remaining': 0}
+2026-03-20 21:06:13,014 : INFO : EventManager : Event: ======'game_will_start'====== Args={}
+2026-03-20 21:06:13,017 : INFO : EventManager : Event: ======'game_starting'====== Args={'game': <Mode.game>}
+2026-03-20 21:06:13,020 : INFO : EventManager : Unordered handler for class <Auditor> on event game_ended with priority 1. Handlers: [RegisteredHandler(callback=<bound method Auditor.disable of <Auditor>>, priority=1, kwargs={}, key=UUID('8c48478a-ed75-4dc9-ad79-9c53e8ca61cd'), condition=None, blocking_facility=None), RegisteredHandler(callback=<bound method Auditor._save_audits of <Auditor>>, priority=1, kwargs={}, key=UUID('0ef1574d-e03a-42cb-af35-497eb54305cc'), condition=None, blocking_facility=None)]. The order of those handlers is not defined and they will be executed in random order. This might lead to race conditions and potential bugs.
+2026-03-20 21:06:13,021 : INFO : EventManager : Event: ======'player_add_request'====== Args={}
+2026-03-20 21:06:13,022 : INFO : EventManager : Event: ======'player_will_add'====== Args={'number': 1}
+2026-03-20 21:06:13,024 : INFO : EventManager : Event: ======'player_adding'====== Args={'player': <Player 1>, 'number': 1}
+2026-03-20 21:06:13,024 : INFO : EventManager : Event: ======'player_added'====== Args={'player': <Player 1>, 'num': 1}
+2026-03-20 21:06:13,024 : INFO : Mode.game : Player added successfully. Total players: 1
+2026-03-20 21:06:13,025 : INFO : EventManager : Event: ======'player_index'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,025 : INFO : EventManager : Event: ======'player_number'====== Args={'value': 1, 'prev_value': 1, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,025 : INFO : EventManager : Event: ======'player_chcheckitout_multiball_blocking_flag'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,025 : INFO : EventManager : Event: ======'player_bodymovin_multiball_blocking_flag'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,026 : INFO : EventManager : Event: ======'player_mode_blocking_flag'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,026 : INFO : EventManager : Event: ======'player_battery_charged_yesorno'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,026 : INFO : EventManager : Event: ======'player_combos'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,026 : INFO : EventManager : Event: ======'player_modes_played'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,026 : INFO : EventManager : Event: ======'player_modes_completed'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,026 : INFO : EventManager : Event: ======'player_chcheckitout_qualified_flag'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,026 : INFO : EventManager : Event: ======'player_bodymovin_lock1_qualified_flag'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,027 : INFO : EventManager : Event: ======'player_bodymovin_lock2_qualified_flag'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,027 : INFO : EventManager : Event: ======'player_bodymovin_lock1_locked_flag'====== Args={'value': 1, 'prev_value': 1, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,027 : INFO : EventManager : Event: ======'player_bodymovin_lock2_locked_flag'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,027 : INFO : EventManager : Event: ======'player_bodymovin_multiball_qualified_flag'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,028 : INFO : EventManager : Event: ======'player_bodymovin_round'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,028 : INFO : EventManager : Event: ======'player_girls_bonus_score'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,028 : INFO : EventManager : Event: ======'player_girls_blocking_flag'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,028 : INFO : EventManager : Event: ======'player_characters_collected'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,029 : INFO : EventManager : Event: ======'player_adroc_collected'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,029 : INFO : EventManager : Event: ======'player_mca_collected'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,029 : INFO : EventManager : Event: ======'player_miked_collected'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,030 : INFO : EventManager : Event: ======'player_mmm_collected'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,031 : INFO : EventManager : Event: ======'player_djhurr_collected'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,031 : INFO : EventManager : Event: ======'player_chcheckitout_multiplier'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,031 : INFO : EventManager : Event: ======'player_microphone_collected'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,031 : INFO : EventManager : Event: ======'player_turntable_collected'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,031 : INFO : EventManager : Event: ======'player_boombox_collected'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,031 : INFO : EventManager : Event: ======'player_playfield_x'====== Args={'value': 1, 'prev_value': 1, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,032 : INFO : EventManager : Event: ======'player_drop_target_bank_counter_count'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,032 : INFO : EventManager : Event: ======'player_charges_remaining_variable'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,032 : INFO : EventManager : Event: ======'player_multiball_bodymovin_score'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,032 : INFO : EventManager : Event: ======'player_bonus_multiplier'====== Args={'value': 1, 'prev_value': 1, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,032 : INFO : EventManager : Event: ======'player_player_drop_target_bank_counter_count'====== Args={'value': 1, 'prev_value': 1, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,033 : INFO : EventManager : Event: ======'player_mode_intergalactic_score'====== Args={'value': 1, 'prev_value': 1, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,033 : INFO : EventManager : Event: ======'player_mode_fingerlickingood_score'====== Args={'value': 1, 'prev_value': 1, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,033 : INFO : EventManager : Event: ======'player_mode_highplainsdrifter_score'====== Args={'value': 1, 'prev_value': 1, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,034 : INFO : EventManager : Event: ======'player_mode_makesomenoise_score'====== Args={'value': 1, 'prev_value': 1, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,034 : INFO : EventManager : Event: ======'player_mode_paulrevere_score'====== Args={'value': 1, 'prev_value': 1, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,034 : INFO : EventManager : Event: ======'player_mode_sabotage_score'====== Args={'value': 1, 'prev_value': 1, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,034 : INFO : EventManager : Event: ======'player_mode_threemcsand1dj_score'====== Args={'value': 1, 'prev_value': 1, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,035 : INFO : EventManager : Event: ======'player_mode_toomanyrappers_score'====== Args={'value': 1, 'prev_value': 1, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,035 : INFO : EventManager : Event: ======'player_mode_tripletrouble_score'====== Args={'value': 1, 'prev_value': 1, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,035 : INFO : EventManager : Event: ======'player_mode_time_remaining_total'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,036 : INFO : EventManager : Event: ======'player_selected_mode'====== Args={'value': 'Triple Trouble', 'prev_value': 'Triple Trouble', 'change': False, 'player_num': 1}
+2026-03-20 21:06:13,036 : INFO : EventManager : Event: ======'player_multiball_chcheckitout_score'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,036 : INFO : EventManager : Event: ======'player_fingerlickingood_boost'====== Args={'value': 1, 'prev_value': 1, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,036 : INFO : EventManager : Event: ======'player_fingerlickingood_intro_show_variable_times_100'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,037 : INFO : EventManager : Event: ======'player_fingerlickingood_time_remaining_variable_times_1'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,037 : INFO : EventManager : Event: ======'player_highplainsdrifter_intro_show_variable_times_100'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,037 : INFO : EventManager : Event: ======'player_highplainsdrifter_time_remaining_variable_times_1'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,037 : INFO : EventManager : Event: ======'player_intergalactic_intro_show_variable_times_100'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,038 : INFO : EventManager : Event: ======'player_intergalactic_time_remaining_variable_times_1'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,038 : INFO : EventManager : Event: ======'player_paulrevere_intro_show_variable_times_100'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,038 : INFO : EventManager : Event: ======'player_paulrevere_time_remaining_variable_times_1'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,038 : INFO : EventManager : Event: ======'player_sabotage_intro_show_variable_times_100'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,039 : INFO : EventManager : Event: ======'player_sabotage_time_remaining_variable_times_1'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,039 : INFO : EventManager : Event: ======'player_threemcsand1dj_intro_show_variable_times_100'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,039 : INFO : EventManager : Event: ======'player_threemcsand1dj_time_remaining_variable_times_1'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,039 : INFO : EventManager : Event: ======'player_toomanyrappers_intro_show_variable_times_100'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,040 : INFO : EventManager : Event: ======'player_toomanyrappers_time_remaining_variable_times_1'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,040 : INFO : EventManager : Event: ======'player_tripletrouble_intro_show_variable_times_100'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,040 : INFO : EventManager : Event: ======'player_tripletrouble_time_remaining_variable_times_1'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,041 : INFO : EventManager : Event: ======'player_makesomenoise_intro_show_variable_times_100'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,042 : INFO : EventManager : Event: ======'player_highplainsdrifter_shots_remaining'====== Args={'value': 3, 'prev_value': 3, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,042 : INFO : EventManager : Event: ======'player_makesomenoise_pops_remaining'====== Args={'value': 10, 'prev_value': 10, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,042 : INFO : EventManager : Event: ======'player_makesomenoise_spins_remaining'====== Args={'value': 40, 'prev_value': 40, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,042 : INFO : EventManager : Event: ======'player_makesomenoise_drops_remaining'====== Args={'value': 6, 'prev_value': 6, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,042 : INFO : EventManager : Event: ======'player_makesomenoise_ramps_remaining'====== Args={'value': 4, 'prev_value': 4, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,042 : INFO : EventManager : Event: ======'player_sabotage_perps_caught'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,043 : INFO : EventManager : Event: ======'player_stache_multiplier'====== Args={'value': 1, 'prev_value': 1, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,043 : INFO : EventManager : Event: ======'player_threemcsand1dj_scratch_value'====== Args={'value': 100000, 'prev_value': 100000, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,043 : INFO : EventManager : Event: ======'player_threemcsand1dj_mix_multiplier'====== Args={'value': 1, 'prev_value': 1, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,043 : INFO : EventManager : Event: ======'player_threemcsand1dj_scratches_remaining'====== Args={'value': 3, 'prev_value': 3, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,043 : INFO : EventManager : Event: ======'player_toomanyrappers_rhymes_loaded'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,044 : INFO : EventManager : Event: ======'player_tripletrouble_standups_remaining'====== Args={'value': 7, 'prev_value': 7, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,044 : INFO : EventManager : Event: ======'player_score'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,045 : INFO : EventManager : Event: ======'game_started'====== Args={}
+2026-03-20 21:06:13,045 : INFO : EventManager : Event: ======'mode_tilt_will_start'====== Args={}
+2026-03-20 21:06:13,047 : INFO : EventManager : Event: ======'mode_tilt_starting'====== Args={}
+2026-03-20 21:06:13,047 : INFO : EventManager : Event: ======'machine_var_game_just_played'====== Args={'value': 1, 'prev_value': 0, 'change': 1}
+2026-03-20 21:06:13,047 : INFO : Mode.tilt : Started. Priority: 1000000
+2026-03-20 21:06:13,048 : INFO : EventManager : Event: ======'modes_active_modes_changed'====== Args={}
+2026-03-20 21:06:13,048 : INFO : EventManager : Event: ======'mode_tilt_started'====== Args={}
+2026-03-20 21:06:13,050 : INFO : EventManager : Event: ======'player_turn_will_start'====== Args={'player': <Player 1>, 'number': 1}
+2026-03-20 21:06:13,078 : INFO : EventManager : Event: ======'player_turn_starting'====== Args={'player': <Player 1>, 'number': 1}
+2026-03-20 21:06:13,080 : INFO : EventManager : Event: ======'player_ball'====== Args={'value': 1, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2026-03-20 21:06:13,081 : INFO : EventManager : Event: ======'player_turn_started'====== Args={'player': <Player 1>, 'number': 1}
+2026-03-20 21:06:13,082 : INFO : EventManager : Event: ======'ball_will_start'====== Args={'player': 1, 'ball': 1, 'balls_remaining': 2, 'is_extra_ball': False}
+2026-03-20 21:06:13,083 : INFO : EventManager : Event: ======'ball_starting'====== Args={'player': 1, 'ball': 1, 'balls_remaining': 2, 'is_extra_ball': False}
+2026-03-20 21:06:13,083 : INFO : EventManager : Event: ======'mode_batterycharger_will_start'====== Args={'queue': <QueuedEvent>, 'player': 1, 'ball': 1, 'balls_remaining': 2, 'is_extra_ball': False}
+2026-03-20 21:06:13,101 : INFO : EventManager : Event: ======'mode_batterycharger_starting'====== Args={'queue': <QueuedEvent>, 'player': 1, 'ball': 1, 'balls_remaining': 2, 'is_extra_ball': False}
+2026-03-20 21:06:13,101 : INFO : EventManager : Event: ======'mode_base_will_start'====== Args={'queue': <QueuedEvent>, 'player': 1, 'ball': 1, 'balls_remaining': 2, 'is_extra_ball': False}
+2026-03-20 21:06:13,103 : INFO : EventManager : Event: ======'player_shot_left_orbit_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2026-03-20 21:06:13,103 : INFO : EventManager : Event: ======'player_shot_right_orbit_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2026-03-20 21:06:13,104 : INFO : EventManager : Event: ======'player_shot_inner_loop_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2026-03-20 21:06:13,104 : INFO : EventManager : Event: ======'player_shot_left_orbit_backdoor_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2026-03-20 21:06:13,105 : INFO : EventManager : Event: ======'player_shot_right_orbit_backdoor_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2026-03-20 21:06:13,105 : INFO : EventManager : Event: ======'player_shot_inner_loop_backdoor_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2026-03-20 21:06:13,106 : INFO : EventManager : Event: ======'player_shot_right_ramp_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2026-03-20 21:06:13,106 : INFO : EventManager : Event: ======'player_shot_left_ramp_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2026-03-20 21:06:13,107 : INFO : EventManager : Event: ======'player_shot_pop_standup_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2026-03-20 21:06:13,107 : INFO : EventManager : Event: ======'player_shot_upper_pop_standup_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2026-03-20 21:06:13,107 : INFO : EventManager : Event: ======'player_shot_scoop_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2026-03-20 21:06:13,107 : INFO : EventManager : Event: ======'player_shot_captive_ball_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2026-03-20 21:06:13,108 : INFO : EventManager : Event: ======'player_shot_three_bank_standup_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2026-03-20 21:06:13,108 : INFO : EventManager : Event: ======'player_shot_spinner_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2026-03-20 21:06:13,108 : INFO : EventManager : Event: ======'player_shot_pop1_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2026-03-20 21:06:13,109 : INFO : EventManager : Event: ======'player_shot_pop2_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2026-03-20 21:06:13,109 : INFO : EventManager : Event: ======'player_shot_pop3_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2026-03-20 21:06:13,109 : INFO : EventManager : Event: ======'player_shot_bottom_drop_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2026-03-20 21:06:13,110 : INFO : EventManager : Event: ======'player_shot_middle_drop_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2026-03-20 21:06:13,111 : INFO : EventManager : Event: ======'player_shot_top_drop_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2026-03-20 21:06:13,111 : INFO : EventManager : Event: ======'player_shot_tshirt_top_standup_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2026-03-20 21:06:13,112 : INFO : EventManager : Event: ======'player_shot_tshirt_bottom_standup_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2026-03-20 21:06:13,112 : INFO : EventManager : Event: ======'player_shot_left_outlane_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2026-03-20 21:06:13,113 : INFO : EventManager : Event: ======'player_shot_left_inlane_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2026-03-20 21:06:13,113 : INFO : EventManager : Event: ======'player_shot_right_inlane_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2026-03-20 21:06:13,114 : INFO : EventManager : Event: ======'player_shot_right_outlane_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2026-03-20 21:06:13,114 : INFO : EventManager : Event: ======'sg_lanes_complete'====== Args={'state': 'unlit'}
+2026-03-20 21:06:13,114 : INFO : EventManager : Event: ======'sg_lanes_unlit_complete'====== Args={}
+2026-03-20 21:06:13,115 : INFO : EventManager : Event: ======'sg_tshirts_complete'====== Args={'state': 'flash'}
+2026-03-20 21:06:13,115 : INFO : EventManager : Event: ======'sg_tshirts_flash_complete'====== Args={}
+2026-03-20 21:06:13,121 : INFO : EventManager : Event: ======'player_base_chcheckitoutfinish_widget_timer_tick'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,122 : INFO : EventManager : Event: ======'player_base_bodymovin_widget_timer_tick'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,123 : INFO : EventManager : Event: ======'player_base_bodymovin_lock_enabled_widget_timer_tick'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,123 : INFO : EventManager : Event: ======'player_base_bodymovin_ball_1_locked_widget_timer_tick'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,124 : INFO : EventManager : Event: ======'player_base_bodymovin_ball_2_locked_widget_timer_tick'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,124 : INFO : EventManager : Event: ======'achievement_wizard1_changed_state'====== Args={'restore': False, 'state': 'disabled', 'selected': False}
+2026-03-20 21:06:13,125 : INFO : EventManager : Event: ======'achievement_wizard1_state_disabled'====== Args={'restore': False, 'state': 'disabled', 'selected': False}
+2026-03-20 21:06:13,125 : INFO : EventManager : Event: ======'achievement_intergalactic_mode_changed_state'====== Args={'restore': False, 'state': 'enabled', 'selected': False}
+2026-03-20 21:06:13,125 : INFO : EventManager : Event: ======'achievement_intergalactic_mode_state_enabled'====== Args={'restore': False, 'state': 'enabled', 'selected': False}
+2026-03-20 21:06:13,125 : INFO : EventManager : Event: ======'achievement_paulrevere_mode_changed_state'====== Args={'restore': False, 'state': 'enabled', 'selected': False}
+2026-03-20 21:06:13,126 : INFO : EventManager : Event: ======'achievement_paulrevere_mode_state_enabled'====== Args={'restore': False, 'state': 'enabled', 'selected': False}
+2026-03-20 21:06:13,126 : INFO : EventManager : Event: ======'achievement_tripletrouble_mode_changed_state'====== Args={'restore': False, 'state': 'enabled', 'selected': False}
+2026-03-20 21:06:13,126 : INFO : EventManager : Event: ======'achievement_tripletrouble_mode_state_enabled'====== Args={'restore': False, 'state': 'enabled', 'selected': False}
+2026-03-20 21:06:13,127 : INFO : EventManager : Event: ======'achievement_sabotage_mode_changed_state'====== Args={'restore': False, 'state': 'enabled', 'selected': False}
+2026-03-20 21:06:13,127 : INFO : EventManager : Event: ======'achievement_sabotage_mode_state_enabled'====== Args={'restore': False, 'state': 'enabled', 'selected': False}
+2026-03-20 21:06:13,127 : INFO : EventManager : Event: ======'achievement_fingerlickingood_mode_changed_state'====== Args={'restore': False, 'state': 'enabled', 'selected': False}
+2026-03-20 21:06:13,127 : INFO : EventManager : Event: ======'achievement_fingerlickingood_mode_state_enabled'====== Args={'restore': False, 'state': 'enabled', 'selected': False}
+2026-03-20 21:06:13,127 : INFO : EventManager : Event: ======'achievement_toomanyrappers_mode_changed_state'====== Args={'restore': False, 'state': 'enabled', 'selected': False}
+2026-03-20 21:06:13,128 : INFO : EventManager : Event: ======'achievement_toomanyrappers_mode_state_enabled'====== Args={'restore': False, 'state': 'enabled', 'selected': False}
+2026-03-20 21:06:13,128 : INFO : EventManager : Event: ======'achievement_threemcsand1dj_mode_changed_state'====== Args={'restore': False, 'state': 'enabled', 'selected': False}
+2026-03-20 21:06:13,128 : INFO : EventManager : Event: ======'achievement_threemcsand1dj_mode_state_enabled'====== Args={'restore': False, 'state': 'enabled', 'selected': False}
+2026-03-20 21:06:13,128 : INFO : EventManager : Event: ======'achievement_highplainsdrifter_mode_changed_state'====== Args={'restore': False, 'state': 'enabled', 'selected': False}
+2026-03-20 21:06:13,129 : INFO : EventManager : Event: ======'achievement_highplainsdrifter_mode_state_enabled'====== Args={'restore': False, 'state': 'enabled', 'selected': False}
+2026-03-20 21:06:13,129 : INFO : EventManager : Event: ======'achievement_chcheckitout_multiball_changed_state'====== Args={'restore': False, 'state': 'enabled', 'selected': False}
+2026-03-20 21:06:13,129 : INFO : EventManager : Event: ======'achievement_chcheckitout_multiball_state_enabled'====== Args={'restore': False, 'state': 'enabled', 'selected': False}
+2026-03-20 21:06:13,129 : INFO : EventManager : Event: ======'achievement_bodymovin_multiball_changed_state'====== Args={'restore': False, 'state': 'enabled', 'selected': False}
+2026-03-20 21:06:13,129 : INFO : EventManager : Event: ======'achievement_bodymovin_multiball_state_enabled'====== Args={'restore': False, 'state': 'enabled', 'selected': False}
+2026-03-20 21:06:13,129 : INFO : EventManager : Event: ======'achievement_superpops_super_mode_changed_state'====== Args={'restore': False, 'state': 'enabled', 'selected': False}
+2026-03-20 21:06:13,130 : INFO : EventManager : Event: ======'achievement_superpops_super_mode_state_enabled'====== Args={'restore': False, 'state': 'enabled', 'selected': False}
+2026-03-20 21:06:13,130 : INFO : EventManager : Event: ======'achievement_superdrops_super_mode_changed_state'====== Args={'restore': False, 'state': 'enabled', 'selected': False}
+2026-03-20 21:06:13,130 : INFO : EventManager : Event: ======'achievement_superdrops_super_mode_state_enabled'====== Args={'restore': False, 'state': 'enabled', 'selected': False}
+2026-03-20 21:06:13,131 : INFO : EventManager : Event: ======'achievement_superspins_super_mode_changed_state'====== Args={'restore': False, 'state': 'enabled', 'selected': False}
+2026-03-20 21:06:13,131 : INFO : EventManager : Event: ======'achievement_superspins_super_mode_state_enabled'====== Args={'restore': False, 'state': 'enabled', 'selected': False}
+2026-03-20 21:06:13,131 : INFO : EventManager : Event: ======'achievement_superstandups_super_mode_changed_state'====== Args={'restore': False, 'state': 'enabled', 'selected': False}
+2026-03-20 21:06:13,131 : INFO : EventManager : Event: ======'achievement_superstandups_super_mode_state_enabled'====== Args={'restore': False, 'state': 'enabled', 'selected': False}
+2026-03-20 21:06:13,131 : INFO : EventManager : Event: ======'achievement_supercombos_super_mode_changed_state'====== Args={'restore': False, 'state': 'enabled', 'selected': False}
+2026-03-20 21:06:13,132 : INFO : EventManager : Event: ======'achievement_supercombos_super_mode_state_enabled'====== Args={'restore': False, 'state': 'enabled', 'selected': False}
+2026-03-20 21:06:13,132 : INFO : EventManager : Event: ======'achievement_girls_frenzy_changed_state'====== Args={'restore': False, 'state': 'disabled', 'selected': False}
+2026-03-20 21:06:13,132 : INFO : EventManager : Event: ======'achievement_girls_frenzy_state_disabled'====== Args={'restore': False, 'state': 'disabled', 'selected': False}
+2026-03-20 21:06:13,145 : INFO : EventManager : Unordered handler for class <Auditor> on event game_ended with priority 1. Handlers: [RegisteredHandler(callback=<bound method Auditor.disable of <Auditor>>, priority=1, kwargs={}, key=UUID('8c48478a-ed75-4dc9-ad79-9c53e8ca61cd'), condition=None, blocking_facility=None), RegisteredHandler(callback=<bound method Auditor._save_audits of <Auditor>>, priority=1, kwargs={}, key=UUID('0ef1574d-e03a-42cb-af35-497eb54305cc'), condition=None, blocking_facility=None)]. The order of those handlers is not defined and they will be executed in random order. This might lead to race conditions and potential bugs.
+2026-03-20 21:06:13,192 : INFO : EventManager : Event: ======'mode_base_starting'====== Args={'queue': <QueuedEvent>, 'player': 1, 'ball': 1, 'balls_remaining': 2, 'is_extra_ball': False}
+2026-03-20 21:06:13,193 : INFO : drop_target_bank.three_bank : All targets are already up. Will not reset bank.
+2026-03-20 21:06:13,195 : INFO : EventManager : Event: ======'balls_in_play'====== Args={'balls': 1}
+2026-03-20 21:06:13,195 : INFO : EventManager : Event: ======'ball_started'====== Args={'player': 1, 'ball': 1, 'balls_remaining': 2, 'is_extra_ball': False}
+2026-03-20 21:06:13,196 : INFO : EventManager : Event: ======'logicblock_battery_charged_status_updated'====== Args={'value': 20, 'enabled': False}
+2026-03-20 21:06:13,197 : INFO : Mode.batterycharger : Started. Priority: 200
+2026-03-20 21:06:13,197 : INFO : EventManager : Event: ======'modes_active_modes_changed'====== Args={}
+2026-03-20 21:06:13,197 : INFO : EventManager : Event: ======'mode_batterycharger_started'====== Args={'queue': <QueuedEvent>, 'player': 1, 'ball': 1, 'balls_remaining': 2, 'is_extra_ball': False}
+2026-03-20 21:06:13,198 : INFO : EventManager : Event: ======'logicblock_completed_modes_count_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:13,198 : INFO : EventManager : Event: ======'logicblock_played_modes_count_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:13,198 : INFO : EventManager : Event: ======'logicblock_combos_count_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:13,198 : INFO : EventManager : Event: ======'logicblock_superpops_counter_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:13,199 : INFO : EventManager : Event: ======'logicblock_superdrops_counter_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:13,199 : INFO : EventManager : Event: ======'logicblock_superstandups_counter_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:13,199 : INFO : EventManager : Event: ======'logicblock_superspins_counter_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:13,199 : INFO : EventManager : Event: ======'logicblock_supercombos_counter_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:13,199 : INFO : EventManager : Event: ======'logicblock_super_modes_played_counter_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:13,200 : INFO : EventManager : Event: ======'logicblock_qualify_chcheckitout_multiball_updated'====== Args={'value': 0, 'enabled': False}
+2026-03-20 21:06:13,200 : INFO : EventManager : Event: ======'logicblock_chcheckitout_multiball_ready_updated'====== Args={'value': 0, 'enabled': False}
+2026-03-20 21:06:13,200 : INFO : EventManager : Event: ======'logicblock_enable_bodymovin_lock_1_updated'====== Args={'value': 0, 'enabled': False}
+2026-03-20 21:06:13,200 : INFO : EventManager : Event: ======'logicblock_bodymovin_lock_1_updated'====== Args={'value': 0, 'enabled': False}
+2026-03-20 21:06:13,200 : INFO : EventManager : Event: ======'logicblock_enable_bodymovin_lock_2_updated'====== Args={'value': 0, 'enabled': False}
+2026-03-20 21:06:13,200 : INFO : EventManager : Event: ======'logicblock_bodymovin_lock_2_updated'====== Args={'value': 0, 'enabled': False}
+2026-03-20 21:06:13,200 : INFO : EventManager : Event: ======'logicblock_enable_bodymovin_lock_3_updated'====== Args={'value': 0, 'enabled': False}
+2026-03-20 21:06:13,201 : INFO : EventManager : Event: ======'logicblock_bodymovin_multiball_ready_updated'====== Args={'value': 0, 'enabled': False}
+2026-03-20 21:06:13,201 : INFO : EventManager : Event: ======'logicblock_drop_target_bank_counter_updated'====== Args={'value': 0, 'enabled': False}
+2026-03-20 21:06:13,201 : INFO : EventManager : Event: ======'logicblock_completed_modes_count_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:13,201 : INFO : EventManager : Event: ======'logicblock_played_modes_count_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:13,201 : INFO : EventManager : Event: ======'logicblock_combos_count_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:13,201 : INFO : EventManager : Event: ======'logicblock_superpops_counter_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:13,202 : INFO : EventManager : Event: ======'logicblock_superdrops_counter_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:13,202 : INFO : EventManager : Event: ======'logicblock_superstandups_counter_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:13,202 : INFO : EventManager : Event: ======'logicblock_superspins_counter_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:13,202 : INFO : EventManager : Event: ======'logicblock_supercombos_counter_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:13,202 : INFO : EventManager : Event: ======'logicblock_super_modes_played_counter_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:13,202 : INFO : Mode.base : Started. Priority: 100
+2026-03-20 21:06:13,202 : INFO : EventManager : Event: ======'modes_active_modes_changed'====== Args={}
+2026-03-20 21:06:13,203 : INFO : EventManager : Event: ======'mode_base_started'====== Args={'queue': <QueuedEvent>, 'player': 1, 'ball': 1, 'balls_remaining': 2, 'is_extra_ball': False}
+2026-03-20 21:06:13,204 : INFO : EventManager : Event: ======'mode_combos_will_start'====== Args={'player': 1, 'ball': 1, 'balls_remaining': 2, 'is_extra_ball': False}
+2026-03-20 21:06:13,218 : INFO : EventManager : Event: ======'mode_combos_starting'====== Args={'player': 1, 'ball': 1, 'balls_remaining': 2, 'is_extra_ball': False}
+2026-03-20 21:06:13,219 : INFO : EventManager : Event: ======'mode_skill_shot_will_start'====== Args={'player': 1, 'ball': 1, 'balls_remaining': 2, 'is_extra_ball': False}
+2026-03-20 21:06:13,219 : INFO : EventManager : Event: ======'player_shot_skillshot_side_targets_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2026-03-20 21:06:13,220 : INFO : EventManager : Event: ======'player_shot_skillshot_hideout_plunge_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2026-03-20 21:06:13,220 : INFO : EventManager : Event: ======'player_shot_skillshot_super_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2026-03-20 21:06:13,221 : INFO : EventManager : Event: ======'player_shot_skillshot_left_outlane_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2026-03-20 21:06:13,222 : INFO : EventManager : Event: ======'player_shot_skillshot_drop_targets_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2026-03-20 21:06:13,222 : INFO : EventManager : Event: ======'player_shot_skillshot_lower_pop_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2026-03-20 21:06:13,223 : INFO : EventManager : Event: ======'skillshot_complete'====== Args={'state': 'off'}
+2026-03-20 21:06:13,223 : INFO : EventManager : Event: ======'skillshot_off_complete'====== Args={}
+2026-03-20 21:06:13,224 : INFO : EventManager : Event: ======'player_skill_shot_skill_shot_timeout_tick'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:13,225 : INFO : EventManager : Unordered handler for class <timer.skill_shot_timeout> on event ball_starting with priority 1. Handlers: [RegisteredHandler(callback=<bound method Timer.reset of <timer.skill_shot_timeout>>, priority=1, kwargs={}, key=UUID('cc0417d3-f440-4991-a2d0-45db3a18583d'), condition=None, blocking_facility=None), RegisteredHandler(callback=<bound method Timer.pause of <timer.skill_shot_timeout>>, priority=1, kwargs={'timer_value': None}, key=UUID('fc3d16e2-2fb3-4f95-bd46-678e17aed9d0'), condition=None, blocking_facility=None)]. The order of those handlers is not defined and they will be executed in random order. This might lead to race conditions and potential bugs.
+2026-03-20 21:06:13,230 : INFO : EventManager : Event: ======'mode_skill_shot_starting'====== Args={'player': 1, 'ball': 1, 'balls_remaining': 2, 'is_extra_ball': False}
+2026-03-20 21:06:13,230 : INFO : EventManager : Event: ======'logicblock_battery_charged_status_updated'====== Args={'value': 20, 'enabled': False}
+2026-03-20 21:06:13,231 : INFO : EventManager : Event: ======'logicblock_battery_charged_status_updated'====== Args={'value': 20, 'enabled': True}
+2026-03-20 21:06:13,231 : INFO : EventManager : Event: ======'logicblock_drop_target_bank_counter_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:13,231 : INFO : EventManager : Event: ======'logicblock_combos_count_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:13,232 : INFO : EventManager : Event: ======'logicblock_combos_count_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:13,232 : INFO : EventManager : Event: ======'logicblock_superpops_counter_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:13,232 : INFO : EventManager : Event: ======'logicblock_superpops_counter_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:13,232 : INFO : EventManager : Event: ======'logicblock_superdrops_counter_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:13,232 : INFO : EventManager : Event: ======'logicblock_superdrops_counter_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:13,232 : INFO : EventManager : Event: ======'logicblock_superstandups_counter_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:13,232 : INFO : EventManager : Event: ======'logicblock_superstandups_counter_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:13,232 : INFO : EventManager : Event: ======'logicblock_superspins_counter_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:13,232 : INFO : EventManager : Event: ======'logicblock_superspins_counter_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:13,232 : INFO : EventManager : Event: ======'logicblock_supercombos_counter_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:13,233 : INFO : EventManager : Event: ======'logicblock_supercombos_counter_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:13,233 : INFO : EventManager : Event: ======'logicblock_super_modes_played_counter_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:13,233 : INFO : EventManager : Event: ======'logicblock_super_modes_played_counter_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:13,233 : INFO : EventManager : Event: ======'logicblock_qualify_chcheckitout_multiball_updated'====== Args={'value': 0, 'enabled': False}
+2026-03-20 21:06:13,233 : INFO : EventManager : Event: ======'logicblock_qualify_chcheckitout_multiball_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:13,234 : INFO : EventManager : Event: ======'logicblock_enable_bodymovin_lock_2_updated'====== Args={'value': 0, 'enabled': False}
+2026-03-20 21:06:13,234 : INFO : EventManager : Event: ======'logicblock_enable_bodymovin_lock_2_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:13,234 : INFO : EventManager : Event: ======'battery_charged'====== Args={'priority': 0}
+2026-03-20 21:06:13,235 : INFO : EventManager : Event: ======'logicblock_drop_target_bank_counter_updated'====== Args={'value': 1, 'enabled': True}
+2026-03-20 21:06:13,236 : INFO : EventManager : Event: ======'player_charges_remaining_variable'====== Args={'value': 20, 'prev_value': 0, 'change': 20, 'player_num': 1, 'source': 'batterycharger'}
+2026-03-20 21:06:13,237 : INFO : EventManager : Event: ======'mode_carousel_will_start'====== Args={'priority': 0}
+2026-03-20 21:06:13,243 : INFO : EventManager : Event: ======'mode_carousel_starting'====== Args={'priority': 0}
+2026-03-20 21:06:13,244 : INFO : EventManager : Event: ======'player_battery_charged_yesorno'====== Args={'value': 1, 'prev_value': 0, 'change': 1, 'player_num': 1, 'source': 'base'}
+2026-03-20 21:06:13,245 : INFO : EventManager : Event: ======'logicblock_battery_charged_status_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:13,245 : INFO : EventManager : Event: ======'battery_charged'====== Args={}
+2026-03-20 21:06:13,245 : INFO : EventManager : Event: ======'logicblock_battery_charged_status_updated'====== Args={'value': 0, 'enabled': False}
+2026-03-20 21:06:13,246 : INFO : EventManager : Event: ======'player_charges_remaining_variable'====== Args={'value': 0, 'prev_value': 20, 'change': -20, 'player_num': 1, 'source': 'batterycharger'}
+2026-03-20 21:06:13,247 : INFO : EventManager : Event: ======'mode_multiball_will_start'====== Args={'queue': <QueuedEvent>, 'player': 1, 'ball': 1, 'balls_remaining': 2, 'is_extra_ball': False}
+2026-03-20 21:06:13,249 : INFO : EventManager : Event: ======'mode_multiball_starting'====== Args={'queue': <QueuedEvent>, 'player': 1, 'ball': 1, 'balls_remaining': 2, 'is_extra_ball': False}
+2026-03-20 21:06:13,252 : INFO : EventManager : Event: ======'ball_save_default_enabled'====== Args={}
+2026-03-20 21:06:13,252 : INFO : Mode.multiball : Started. Priority: 1000
+2026-03-20 21:06:13,252 : INFO : EventManager : Event: ======'modes_active_modes_changed'====== Args={}
+2026-03-20 21:06:13,252 : INFO : EventManager : Event: ======'mode_multiball_started'====== Args={'queue': <QueuedEvent>, 'player': 1, 'ball': 1, 'balls_remaining': 2, 'is_extra_ball': False}
+2026-03-20 21:06:13,253 : INFO : Mode.carousel : Started. Priority: 200
+2026-03-20 21:06:13,253 : INFO : EventManager : Event: ======'modes_active_modes_changed'====== Args={}
+2026-03-20 21:06:13,253 : INFO : EventManager : Event: ======'mode_carousel_started'====== Args={'priority': 0}
+2026-03-20 21:06:13,253 : INFO : blinkenlight.bl_scoop_arrow_led : Color (0, 0, 255) with key carousel added
+2026-03-20 21:06:13,254 : INFO : EventManager : Event: ======'carousel_item_highlighted'====== Args={'carousel': 'carousel', 'direction': None, 'item': 'intergalactic'}
+2026-03-20 21:06:13,256 : INFO : Mode.skill_shot : Started. Priority: 500
+2026-03-20 21:06:13,256 : INFO : EventManager : Event: ======'modes_active_modes_changed'====== Args={}
+2026-03-20 21:06:13,256 : INFO : EventManager : Event: ======'mode_skill_shot_started'====== Args={'player': 1, 'ball': 1, 'balls_remaining': 2, 'is_extra_ball': False}
+2026-03-20 21:06:13,257 : INFO : EventManager : Event: ======'advance_skill_left_outlane'====== Args={'player': 1, 'ball': 1, 'balls_remaining': 2, 'is_extra_ball': False}
+2026-03-20 21:06:13,257 : INFO : EventManager : Event: ======'player_shot_skillshot_left_outlane'====== Args={'value': 1, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2026-03-20 21:06:13,258 : INFO : Mode.combos : Started. Priority: 2000
+2026-03-20 21:06:13,258 : INFO : EventManager : Event: ======'modes_active_modes_changed'====== Args={}
+2026-03-20 21:06:13,259 : INFO : EventManager : Event: ======'mode_combos_started'====== Args={'player': 1, 'ball': 1, 'balls_remaining': 2, 'is_extra_ball': False}
+2026-03-20 21:06:13,264 : INFO : EventManager : Event: ======'single_player_ball_started'====== Args={}
+2026-03-20 21:06:13,265 : INFO : EventManager : Event: ======'ball_start_target'====== Args={'target': 'playfield'}
+2026-03-20 21:06:13,266 : INFO : ball_device.bd_plunger : Setting up player-controlled eject. Balls: 1, Target: <playfield.playfield>, player_controlled_eject_event: None
+2026-03-20 21:06:13,267 : INFO : EventManager : Event: ======'balldevice_balls_available'====== Args={}
+2026-03-20 21:06:13,268 : INFO : ball_device.bd_trough : State: waiting_for_target_ready
+2026-03-20 21:06:13,269 : INFO : EventManager : Event: ======'balldevice_bd_trough_ball_eject_attempt'====== Args={'balls': 1, 'target': <ball_device.bd_plunger>, 'source': <ball_device.bd_trough>, 'mechanical_eject': True, 'num_attempts': 0}
+2026-03-20 21:06:13,269 : INFO : ball_device.bd_plunger : State: waiting_for_ball
+2026-03-20 21:06:13,271 : INFO : ball_device.bd_trough : State: ejecting
+2026-03-20 21:06:13,271 : INFO : ball_device.bd_trough : Ejecting ball to <ball_device.bd_plunger>
+2026-03-20 21:06:13,272 : INFO : EventManager : Event: ======'balldevice_bd_trough_ejecting_ball'====== Args={'balls': 1, 'target': <ball_device.bd_plunger>, 'source': <ball_device.bd_trough>, 'mechanical_eject': True, 'num_attempts': 0}
+2026-03-20 21:06:13,273 : INFO : ball_device.bd_trough : Wait for ball to leave device
+2026-03-20 21:06:13,274 : INFO : coil.c_trough_eject : Pulsing Driver for 15ms (1.0 pulse_power)
+2026-03-20 21:06:13,274 : INFO : SwitchController : <<<<<<< 's_trough1' inactive >>>>>>>
+2026-03-20 21:06:13,275 : INFO : ball_device.bd_trough : State: ball_left
+2026-03-20 21:06:13,276 : INFO : ball_device.bd_trough : Ball left
+2026-03-20 21:06:13,276 : INFO : ball_device.bd_trough : Wait for confirm with timeout 3.0
+2026-03-20 21:06:13,277 : INFO : EventManager : Event: ======'slide_base_created'====== Args={'_from_bcp': True}
+2026-03-20 21:06:13,278 : INFO : EventManager : Event: ======'play_base_video2'====== Args={'_from_bcp': True}
+2026-03-20 21:06:13,384 : INFO : SwitchController : <<<<<<< 's_plunger' active >>>>>>>
+2026-03-20 21:06:13,385 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_plunger'====== Args={'value': 2207, 'prev_value': 2206, 'change': 1}
+2026-03-20 21:06:13,818 : INFO : EventManager : Event: ======'slide_score_overlay_created'====== Args={'_from_bcp': True}
+2026-03-20 21:06:13,887 : INFO : ball_device.bd_plunger : Received ball from <ball_device.bd_trough>
+2026-03-20 21:06:13,887 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ball_enter'====== Args={'new_balls': 1, 'unclaimed_balls': 0, 'new_available_balls': 0, 'device': <ball_device.bd_plunger>}
+2026-03-20 21:06:13,888 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ball_entered'====== Args={'new_balls': 0, 'device': <ball_device.bd_plunger>}
+2026-03-20 21:06:13,889 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ball_count_changed'====== Args={'balls': 1}
+2026-03-20 21:06:13,889 : INFO : ball_device.bd_trough : Got eject confirm
+2026-03-20 21:06:13,889 : INFO : ball_device.bd_trough : Eject successful
+2026-03-20 21:06:13,889 : INFO : EventManager : Event: ======'balldevice_bd_trough_ball_eject_success'====== Args={'balls': 1, 'target': <ball_device.bd_plunger>}
+2026-03-20 21:06:13,890 : INFO : EventManager : Event: ======'balldevice_bd_trough_ball_count_changed'====== Args={'balls': 5}
+2026-03-20 21:06:13,891 : INFO : ball_device.bd_trough : State: idle
+2026-03-20 21:06:13,891 : INFO : ball_device.bd_plunger : State: waiting_for_target_ready
+2026-03-20 21:06:13,891 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ball_eject_attempt'====== Args={'balls': 1, 'target': <playfield.playfield>, 'source': <ball_device.bd_plunger>, 'mechanical_eject': True, 'num_attempts': 0}
+2026-03-20 21:06:13,892 : INFO : ball_device.bd_plunger : State: ejecting
+2026-03-20 21:06:13,892 : INFO : ball_device.bd_plunger : Ejecting ball to <playfield.playfield>
+2026-03-20 21:06:13,893 : INFO : EventManager : Event: ======'balldevice_bd_plunger_ejecting_ball'====== Args={'balls': 1, 'target': <playfield.playfield>, 'source': <ball_device.bd_plunger>, 'mechanical_eject': True, 'num_attempts': 0}
+2026-03-20 21:06:13,894 : INFO : ball_device.bd_plunger : Wait for ball to leave device
+2026-03-20 21:06:14,410 : INFO : EventManager : Event: ======'slide_super_circles_created'====== Args={'_from_bcp': True}
+2026-03-20 21:06:14,411 : INFO : EventManager : Event: ======'slide_attract_load_inactive'====== Args={'is_removing': True, '_from_bcp': True}
+2026-03-20 21:06:14,412 : INFO : EventManager : Event: ======'slide_super_circles_active'====== Args={'original_context': 'base', 'original_calling_context': 'mode_base_started', 'priority': 100.0, 'queue': '<QueuedEvent>', 'player': 1.0, 'ball': 1.0, 'balls_remaining': 2.0, 'is_extra_ball': False, 'cmd': 'slides_play', '_from_bcp': True}
+2026-03-20 21:06:14,423 : INFO : EventManager : Event: ======'slide_attract_load_removed'====== Args={'_from_bcp': True}
+2026-03-20 21:06:14,614 : INFO : EventManager : Event: ======'slide_current_mode_highlighted_created'====== Args={'_from_bcp': True}
+2026-03-20 21:06:14,615 : INFO : EventManager : Event: ======'random_mode_picker_fingerlickingood'====== Args={'_from_bcp': True}
+2026-03-20 21:06:14,616 : INFO : EventManager : Event: ======'carousel_advance'====== Args={'priority': 0}
+2026-03-20 21:06:14,616 : INFO : EventManager : Event: ======'carousel_advance_2'====== Args={'priority': 0}
+2026-03-20 21:06:14,616 : INFO : EventManager : Event: ======'carousel_advance_3'====== Args={'priority': 0}
+2026-03-20 21:06:14,616 : INFO : EventManager : Event: ======'carousel_advance_4'====== Args={'priority': 0}
+2026-03-20 21:06:14,616 : INFO : EventManager : Event: ======'carousel_advance_5'====== Args={'priority': 0}
+2026-03-20 21:06:14,617 : INFO : EventManager : Event: ======'carousel_advance_6'====== Args={'priority': 0}
+2026-03-20 21:06:14,617 : INFO : EventManager : Event: ======'carousel_advance_7'====== Args={'priority': 0}
+2026-03-20 21:06:14,617 : INFO : EventManager : Event: ======'carousel_item_highlighted'====== Args={'carousel': 'carousel', 'direction': 'forwards', 'item': 'paulrevere'}
+2026-03-20 21:06:14,619 : INFO : EventManager : Event: ======'carousel_item_highlighted'====== Args={'carousel': 'carousel', 'direction': 'forwards', 'item': 'tripletrouble'}
+2026-03-20 21:06:14,621 : INFO : EventManager : Event: ======'carousel_item_highlighted'====== Args={'carousel': 'carousel', 'direction': 'forwards', 'item': 'sabotage'}
+2026-03-20 21:06:14,623 : INFO : EventManager : Event: ======'carousel_item_highlighted'====== Args={'carousel': 'carousel', 'direction': 'forwards', 'item': 'highplainsdrifter'}
+2026-03-20 21:06:14,626 : INFO : EventManager : Event: ======'carousel_item_highlighted'====== Args={'carousel': 'carousel', 'direction': 'forwards', 'item': 'threemcsand1dj'}
+2026-03-20 21:06:14,630 : INFO : EventManager : Event: ======'carousel_item_highlighted'====== Args={'carousel': 'carousel', 'direction': 'forwards', 'item': 'toomanyrappers'}
+2026-03-20 21:06:14,633 : INFO : EventManager : Event: ======'carousel_item_highlighted'====== Args={'carousel': 'carousel', 'direction': 'forwards', 'item': 'fingerlickingood'}
+2026-03-20 21:06:14,651 : INFO : EventManager : Event: ======'slide_skillshot_overlay_leftoutlane_created'====== Args={'_from_bcp': True}
+2026-03-20 21:06:14,652 : INFO : EventManager : Event: ======'slide_super_circles_inactive'====== Args={'is_removing': False, '_from_bcp': True}
+2026-03-20 21:06:14,653 : INFO : EventManager : Event: ======'slide_skillshot_overlay_leftoutlane_active'====== Args={'original_context': 'skill_shot', 'original_calling_context': 'player_shot_skillshot_left_outlane{device.shots.skillshot_left_outlane.state==1}', 'priority': 500.0, 'value': 1.0, 'prev_value': 0.0, 'change': 1.0, 'player_num': 1.0, 'cmd': 'slides_play', '_from_bcp': True}
+2026-03-20 21:06:14,665 : INFO : EventManager : Event: ======'slide_basevideo2_created'====== Args={'_from_bcp': True}
+2026-03-20 21:06:28,601 : INFO : Machine : Shutting down...
+2026-03-20 21:06:28,601 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2026-03-20 21:06:28,602 : INFO : EventManager : Event: ======'mode_service_will_stop'====== Args={}
+2026-03-20 21:06:28,602 : INFO : EventManager : Event: ======'mode_service_stopping'====== Args={}
+2026-03-20 21:06:28,603 : INFO : Mode.service : Stopped.
+2026-03-20 21:06:28,603 : INFO : EventManager : Event: ======'modes_active_modes_changed'====== Args={}
+2026-03-20 21:06:28,603 : INFO : EventManager : Event: ======'mode_service_stopped'====== Args={}
+2026-03-20 21:06:28,603 : INFO : EventManager : Event: ======'clear'====== Args={'key': 'service'}
+2026-03-20 21:06:28,605 : INFO : EventManager : Event: ======'mode_game_will_stop'====== Args={}
+2026-03-20 21:06:28,605 : INFO : EventManager : Event: ======'mode_game_stopping'====== Args={}
+2026-03-20 21:06:28,606 : INFO : EventManager : Event: ======'mode_combos_will_stop'====== Args={}
+2026-03-20 21:06:28,606 : INFO : EventManager : Event: ======'mode_combos_stopping'====== Args={}
+2026-03-20 21:06:28,606 : INFO : EventManager : Event: ======'mode_batterycharger_will_stop'====== Args={}
+2026-03-20 21:06:28,606 : INFO : EventManager : Event: ======'mode_batterycharger_stopping'====== Args={}
+2026-03-20 21:06:28,607 : INFO : EventManager : Event: ======'mode_carousel_will_stop'====== Args={}
+2026-03-20 21:06:28,607 : INFO : EventManager : Event: ======'mode_carousel_stopping'====== Args={}
+2026-03-20 21:06:28,607 : INFO : EventManager : Event: ======'mode_multiball_will_stop'====== Args={}
+2026-03-20 21:06:28,607 : INFO : EventManager : Event: ======'mode_multiball_stopping'====== Args={}
+2026-03-20 21:06:28,607 : INFO : EventManager : Event: ======'mode_skill_shot_will_stop'====== Args={}
+2026-03-20 21:06:28,607 : INFO : EventManager : Event: ======'mode_skill_shot_stopping'====== Args={}
+2026-03-20 21:06:28,607 : INFO : EventManager : Event: ======'mode_base_will_stop'====== Args={}
+2026-03-20 21:06:28,607 : INFO : EventManager : Event: ======'mode_base_stopping'====== Args={}
+2026-03-20 21:06:28,608 : INFO : blinkenlight.bl_scoop_arrow_led : Color removed with key carousel
+2026-03-20 21:06:28,608 : INFO : Mode.base : Stopped.
+2026-03-20 21:06:28,608 : INFO : EventManager : Event: ======'modes_active_modes_changed'====== Args={}
+2026-03-20 21:06:28,612 : INFO : EventManager : Event: ======'mode_base_stopped'====== Args={}
+2026-03-20 21:06:28,612 : INFO : EventManager : Event: ======'clear'====== Args={'key': 'base'}
+2026-03-20 21:06:28,617 : INFO : Timer.chcheckitoutfinish_widget_timer : Stopping Timer
+2026-03-20 21:06:28,618 : INFO : EventManager : Event: ======'timer_chcheckitoutfinish_widget_timer_stopped'====== Args={'ticks': 0, 'ticks_remaining': 0}
+2026-03-20 21:06:28,619 : INFO : Timer.bodymovin_widget_timer : Stopping Timer
+2026-03-20 21:06:28,619 : INFO : EventManager : Event: ======'timer_bodymovin_widget_timer_stopped'====== Args={'ticks': 0, 'ticks_remaining': 0}
+2026-03-20 21:06:28,620 : INFO : Timer.bodymovin_lock_enabled_widget_timer : Stopping Timer
+2026-03-20 21:06:28,620 : INFO : EventManager : Event: ======'timer_bodymovin_lock_enabled_widget_timer_stopped'====== Args={'ticks': 0, 'ticks_remaining': 0}
+2026-03-20 21:06:28,620 : INFO : Timer.bodymovin_ball_1_locked_widget_timer : Stopping Timer
+2026-03-20 21:06:28,621 : INFO : EventManager : Event: ======'timer_bodymovin_ball_1_locked_widget_timer_stopped'====== Args={'ticks': 0, 'ticks_remaining': 0}
+2026-03-20 21:06:28,621 : INFO : Timer.bodymovin_ball_2_locked_widget_timer : Stopping Timer
+2026-03-20 21:06:28,622 : INFO : EventManager : Event: ======'timer_bodymovin_ball_2_locked_widget_timer_stopped'====== Args={'ticks': 0, 'ticks_remaining': 0}
+2026-03-20 21:06:28,622 : INFO : Mode.skill_shot : Stopped.
+2026-03-20 21:06:28,623 : INFO : EventManager : Event: ======'modes_active_modes_changed'====== Args={}
+2026-03-20 21:06:28,623 : INFO : EventManager : Event: ======'mode_skill_shot_stopped'====== Args={}
+2026-03-20 21:06:28,623 : INFO : EventManager : Event: ======'clear'====== Args={'key': 'skill_shot'}
+2026-03-20 21:06:28,623 : INFO : EventManager : Event: ======'mode_instruments_will_start'====== Args={}
+2026-03-20 21:06:28,623 : INFO : EventManager : Event: ======'instrument_drops_complete'====== Args={'state': 'None'}
+2026-03-20 21:06:28,623 : INFO : EventManager : Event: ======'instrument_drops_None_complete'====== Args={}
+2026-03-20 21:06:28,625 : INFO : EventManager : Event: ======'player_instruments_instrument_rotate_tick'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2026-03-20 21:06:28,626 : INFO : EventManager : Event: ======'player_instruments_playfield_x_timer_tick'====== Args={'value': 30, 'prev_value': 0, 'change': 30, 'player_num': 1}
+2026-03-20 21:06:28,626 : INFO : EventManager : Unordered handler for class <timer.playfield_x_timer> on event start_playfield_x_timer with priority 1. Handlers: [RegisteredHandler(callback=<bound method Timer.start of <timer.playfield_x_timer>>, priority=1, kwargs={}, key=UUID('31fbacd0-3c3c-415f-9a91-4f088f588289'), condition=None, blocking_facility=None), RegisteredHandler(callback=<bound method Timer.restart of <timer.playfield_x_timer>>, priority=1, kwargs={}, key=UUID('0fba3328-3cac-4d37-99c5-6a706833e8b7'), condition=None, blocking_facility=None)]. The order of those handlers is not defined and they will be executed in random order. This might lead to race conditions and potential bugs.
+2026-03-20 21:06:28,626 : INFO : EventManager : Unordered handler for class <timer.playfield_x_timer> on event ball_will_end with priority 1. Handlers: [RegisteredHandler(callback=<bound method Timer.pause of <timer.playfield_x_timer>>, priority=1, kwargs={'timer_value': None}, key=UUID('46d86c04-f61f-42d2-9c79-237597c0d86c'), condition=None, blocking_facility=None), RegisteredHandler(callback=<bound method Timer.jump of <timer.playfield_x_timer>>, priority=1, kwargs={'timer_value': <NativeTemplate 30.0>}, key=UUID('4c4d404a-8231-4656-be2d-2f4b76939076'), condition=None, blocking_facility=None)]. The order of those handlers is not defined and they will be executed in random order. This might lead to race conditions and potential bugs.
+2026-03-20 21:06:28,627 : INFO : EventManager : Unordered handler for class <timer.playfield_x_timer> on event ball_will_end with priority 1. Handlers: [RegisteredHandler(callback=<bound method Timer.pause of <timer.playfield_x_timer>>, priority=1, kwargs={'timer_value': None}, key=UUID('46d86c04-f61f-42d2-9c79-237597c0d86c'), condition=None, blocking_facility=None), RegisteredHandler(callback=<bound method Timer.jump of <timer.playfield_x_timer>>, priority=1, kwargs={'timer_value': <NativeTemplate 30.0>}, key=UUID('4c4d404a-8231-4656-be2d-2f4b76939076'), condition=None, blocking_facility=None)]. The order of those handlers is not defined and they will be executed in random order. This might lead to race conditions and potential bugs.
+2026-03-20 21:06:28,628 : INFO : EventManager : Unordered handler for class <timer.playfield_x_timer> on event start_playfield_x_timer with priority 1. Handlers: [RegisteredHandler(callback=<bound method Timer.start of <timer.playfield_x_timer>>, priority=1, kwargs={}, key=UUID('31fbacd0-3c3c-415f-9a91-4f088f588289'), condition=None, blocking_facility=None), RegisteredHandler(callback=<bound method Timer.restart of <timer.playfield_x_timer>>, priority=1, kwargs={}, key=UUID('0fba3328-3cac-4d37-99c5-6a706833e8b7'), condition=None, blocking_facility=None)]. The order of those handlers is not defined and they will be executed in random order. This might lead to race conditions and potential bugs.
+2026-03-20 21:06:28,629 : INFO : EventManager : Unordered handler for class <timer.playfield_x_timer> on event start_playfield_x_timer with priority 1. Handlers: [RegisteredHandler(callback=<bound method Timer.start of <timer.playfield_x_timer>>, priority=1, kwargs={}, key=UUID('31fbacd0-3c3c-415f-9a91-4f088f588289'), condition=None, blocking_facility=None), RegisteredHandler(callback=<bound method Timer.restart of <timer.playfield_x_timer>>, priority=1, kwargs={}, key=UUID('0fba3328-3cac-4d37-99c5-6a706833e8b7'), condition=None, blocking_facility=None)]. The order of those handlers is not defined and they will be executed in random order. This might lead to race conditions and potential bugs.
+2026-03-20 21:06:28,629 : INFO : EventManager : Unordered handler for class <timer.playfield_x_timer> on event start_playfield_x_timer with priority 1. Handlers: [RegisteredHandler(callback=<bound method Timer.start of <timer.playfield_x_timer>>, priority=1, kwargs={}, key=UUID('31fbacd0-3c3c-415f-9a91-4f088f588289'), condition=None, blocking_facility=None), RegisteredHandler(callback=<bound method Timer.restart of <timer.playfield_x_timer>>, priority=1, kwargs={}, key=UUID('0fba3328-3cac-4d37-99c5-6a706833e8b7'), condition=None, blocking_facility=None)]. The order of those handlers is not defined and they will be executed in random order. This might lead to race conditions and potential bugs.
+2026-03-20 21:06:28,630 : INFO : EventManager : Unordered handler for class <timer.playfield_x_timer> on event ball_will_end with priority 1. Handlers: [RegisteredHandler(callback=<bound method Timer.pause of <timer.playfield_x_timer>>, priority=1, kwargs={'timer_value': None}, key=UUID('46d86c04-f61f-42d2-9c79-237597c0d86c'), condition=None, blocking_facility=None), RegisteredHandler(callback=<bound method Timer.jump of <timer.playfield_x_timer>>, priority=1, kwargs={'timer_value': <NativeTemplate 30.0>}, key=UUID('4c4d404a-8231-4656-be2d-2f4b76939076'), condition=None, blocking_facility=None)]. The order of those handlers is not defined and they will be executed in random order. This might lead to race conditions and potential bugs.
+2026-03-20 21:06:28,641 : INFO : EventManager : Event: ======'mode_instruments_starting'====== Args={}
+2026-03-20 21:06:28,648 : INFO : Timer.skill_shot_timeout : Stopping Timer
+2026-03-20 21:06:28,648 : INFO : EventManager : Event: ======'timer_skill_shot_timeout_stopped'====== Args={'ticks': 0, 'ticks_remaining': 0}
+2026-03-20 21:06:28,648 : INFO : Mode.multiball : Stopped.
+2026-03-20 21:06:28,649 : INFO : EventManager : Event: ======'modes_active_modes_changed'====== Args={}
+2026-03-20 21:06:28,649 : INFO : EventManager : Event: ======'mode_multiball_stopped'====== Args={}
+2026-03-20 21:06:28,649 : INFO : EventManager : Event: ======'clear'====== Args={'key': 'multiball'}
+2026-03-20 21:06:28,650 : INFO : Mode.carousel : Stopped.
+2026-03-20 21:06:28,650 : INFO : EventManager : Event: ======'modes_active_modes_changed'====== Args={}
+2026-03-20 21:06:28,651 : INFO : EventManager : Event: ======'mode_carousel_stopped'====== Args={}
+2026-03-20 21:06:28,652 : INFO : EventManager : Event: ======'clear'====== Args={'key': 'carousel'}
+2026-03-20 21:06:28,652 : INFO : Mode.batterycharger : Stopped.
+2026-03-20 21:06:28,652 : INFO : EventManager : Event: ======'modes_active_modes_changed'====== Args={}
+2026-03-20 21:06:28,654 : INFO : EventManager : Event: ======'mode_batterycharger_stopped'====== Args={}
+2026-03-20 21:06:28,654 : INFO : EventManager : Event: ======'clear'====== Args={'key': 'batterycharger'}
+2026-03-20 21:06:28,655 : INFO : Mode.combos : Stopped.
+2026-03-20 21:06:28,655 : INFO : EventManager : Event: ======'modes_active_modes_changed'====== Args={}
+2026-03-20 21:06:28,656 : INFO : EventManager : Event: ======'mode_combos_stopped'====== Args={}
+2026-03-20 21:06:28,656 : INFO : EventManager : Event: ======'clear'====== Args={'key': 'combos'}
+2026-03-20 21:06:28,665 : INFO : EventManager : Event: ======'logicblock_turntable_start_sequence_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:28,665 : INFO : EventManager : Event: ======'logicblock_microphone_start_sequence_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:28,665 : INFO : EventManager : Event: ======'logicblock_boombox_start_sequence_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:28,665 : INFO : EventManager : Event: ======'logicblock_instruments_updated'====== Args={'value': [False, False, False], 'enabled': True}
+2026-03-20 21:06:28,666 : INFO : EventManager : Event: ======'logicblock_turntable_start_sequence_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:28,666 : INFO : EventManager : Event: ======'logicblock_turntable_collect_updated'====== Args={'value': 0, 'enabled': False}
+2026-03-20 21:06:28,666 : INFO : EventManager : Event: ======'logicblock_microphone_start_sequence_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:28,666 : INFO : EventManager : Event: ======'logicblock_microphone_collect_updated'====== Args={'value': 0, 'enabled': False}
+2026-03-20 21:06:28,666 : INFO : EventManager : Event: ======'logicblock_boombox_start_sequence_updated'====== Args={'value': 0, 'enabled': True}
+2026-03-20 21:06:28,666 : INFO : EventManager : Event: ======'logicblock_boombox_collect_updated'====== Args={'value': 0, 'enabled': False}
+2026-03-20 21:06:28,666 : INFO : EventManager : Event: ======'logicblock_instruments_updated'====== Args={'value': [False, False, False], 'enabled': True}
+2026-03-20 21:06:28,666 : INFO : Mode.instruments : Will not start because machine is shutting down.
+2026-03-20 21:06:28,666 : INFO : Mode.game : Stopped.
+2026-03-20 21:06:28,666 : INFO : EventManager : Event: ======'modes_active_modes_changed'====== Args={}
+2026-03-20 21:06:28,667 : INFO : EventManager : Event: ======'mode_game_stopped'====== Args={}
+2026-03-20 21:06:28,667 : INFO : EventManager : Event: ======'clear'====== Args={'key': 'game'}
+2026-03-20 21:06:28,677 : INFO : root : MPF run loop ended.

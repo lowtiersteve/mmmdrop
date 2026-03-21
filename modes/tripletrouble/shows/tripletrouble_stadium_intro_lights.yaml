@@ -1,6 +1,28 @@
 #show_version=6
 
-- duration: -1
+- duration: 500ms
+  lights:
+    l_stadium_left_1: stop
+    l_stadium_left_2: stop
+    l_stadium_left_3: stop
+    l_stadium_left_4: stop
+    l_stadium_left_5: stop
+    l_stadium_left_6: stop
+    l_stadium_left_7: stop
+    l_stadium_left_8: stop
+    l_stadium_left_9: stop
+    l_stadium_left_10: stop
+    l_stadium_right_1: stop
+    l_stadium_right_2: stop
+    l_stadium_right_3: stop
+    l_stadium_right_4: stop
+    l_stadium_right_5: stop
+    l_stadium_right_6: stop
+    l_stadium_right_7: stop
+    l_stadium_right_8: stop
+    l_stadium_right_9: stop
+    l_stadium_right_10: stop
+- duration: 500ms
   lights:
     l_stadium_left_1: 32CD32
     l_stadium_left_2: 32CD32
@@ -12,23 +34,6 @@
     l_stadium_left_8: 32CD32
     l_stadium_left_9: 32CD32
     l_stadium_left_10: 32CD32
-    l_stadium_left_11: 32CD32
-    l_stadium_left_12: 32CD32
-    l_stadium_left_13: 32CD32
-    l_stadium_left_14: 32CD32
-    l_stadium_left_15: 32CD32
-    l_stadium_left_16: 32CD32
-    l_stadium_left_17: 32CD32
-    l_stadium_left_18: 32CD32
-    l_stadium_left_19: 32CD32
-    l_stadium_left_20: 32CD32
-    l_stadium_left_21: 32CD32
-    l_stadium_left_22: 32CD32
-    l_stadium_left_23: 32CD32
-    l_stadium_left_24: 32CD32
-    l_stadium_left_25: 32CD32
-    l_stadium_left_26: 32CD32
-    l_stadium_left_27: 32CD32
     l_stadium_right_1: 32CD32
     l_stadium_right_2: 32CD32
     l_stadium_right_3: 32CD32
@@ -39,21 +44,4 @@
     l_stadium_right_8: 32CD32
     l_stadium_right_9: 32CD32
     l_stadium_right_10: 32CD32
-    l_stadium_right_11: 32CD32
-    l_stadium_right_12: 32CD32
-    l_stadium_right_13: 32CD32
-    l_stadium_right_14: 32CD32
-    l_stadium_right_15: 32CD32
-    l_stadium_right_16: 32CD32
-    l_stadium_right_17: 32CD32
-    l_stadium_right_18: 32CD32
-    l_stadium_right_19: 32CD32
-    l_stadium_right_20: 32CD32
-    l_stadium_right_21: 32CD32
-    l_stadium_right_22: 32CD32
-    l_stadium_right_23: 32CD32
-    l_stadium_right_24: 32CD32
-    l_stadium_right_25: 32CD32
-    l_stadium_right_26: 32CD32
-    l_stadium_right_27: 32CD32
 

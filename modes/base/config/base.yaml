@@ -210,7 +210,7 @@ slide_player:
       priority: 5000
     intergalacticfailed:
       action: play
-      priority: 950000
+      priority: 850000
       expire: 3s
   intergalactic_shot_5_done:
     intergalactic:
@@ -220,7 +220,7 @@ slide_player:
       priority: 5000
     intergalacticfinish:
       action: play
-      priority: 980000
+      priority: 850000
       expire: 7s
   mode_paulrevere_stop{current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     paulrevere:
@@ -262,7 +262,7 @@ slide_player:
     base:
       action: play
       priority: 5000
-    tripletroublefailed:
+    paulreverefailed:
       action: play
       priority: 850000
       expire: 5s
@@ -278,7 +278,7 @@ slide_player:
       priority: 5000
     paulreverefinish:
       action: play
-      priority: 950000
+      priority: 850000
       expire: 5s
   mode_tripletrouble_stop:
     tripletrouble:
@@ -320,7 +320,7 @@ slide_player:
       priority: 5000
     tripletroublefinish:
       action: play
-      priority: 980000
+      priority: 850000
       expire: 6s
   mode_sabotage_stop:
     sabotage:
@@ -370,7 +370,7 @@ slide_player:
       priority: 5000
     sabotagefinish:
       action: play
-      priority: 980000
+      priority: 850000
       expire: 6s
   mode_fingerlickingood_stop:
     fingerlickingood:
@@ -408,7 +408,7 @@ slide_player:
       priority: 5000
     fingerlickingoodfinish:
       action: play
-      priority: 980000
+      priority: 850000
       expire: 6s
   mode_toomanyrappers_stop:
     toomanyrappers:
@@ -446,7 +446,7 @@ slide_player:
       priority: 5000
     toomanyrappersfinish:
       action: play
-      priority: 980000
+      priority: 850000
       expire: 6s
   mode_threemcsand1dj_stop:
     threemcsand1dj:
@@ -496,7 +496,7 @@ slide_player:
       priority: 5000
     threemcsand1djfinish:
       action: play
-      priority: 980000
+      priority: 850000
       expire: 6s
   mode_highplainsdrifter_stop:
     highplainsdrifter:
@@ -534,7 +534,7 @@ slide_player:
       priority: 5000
     highplainsdrifterfinish:
       action: play
-      priority: 980000
+      priority: 850000
       expire: 6s
   mode_chcheckitout_stopped{current_player.mode_blocking_flag==0}:
     multiball1:
@@ -2234,6 +2234,26 @@ blinkenlight_player:
 
 
 widget_player:
+  player_1_ball_started:
+    player_1_billboard_active:
+      action: play
+      slide: score_overlay
+      priority: 925000
+  player_2_ball_started:
+    player_2_billboard_active:
+      action: play
+      slide: score_overlay
+      priority: 925000
+  player_3_ball_started:
+    player_3_billboard_active:
+      action: play
+      slide: score_overlay
+      priority: 925000
+  player_4_ball_started:
+    player_4_billboard_active:
+      action: play
+      slide: score_overlay
+      priority: 925000
   mode_chcheckitout_stopped:
     chcheckitoutfinish:
       action: play
@@ -2282,6 +2302,14 @@ widget_player:
     turntable_color:
       action: remove
     instrument_blocks:
+      action: remove
+    player_1_billboard_active:
+      action: remove
+    player_2_billboard_active:
+      action: remove
+    player_3_billboard_active:
+      action: remove
+    player_4_billboard_active:
       action: remove
   bodymovin_lock_1_enabled:
     bodymovin_lock_enabled_widget:

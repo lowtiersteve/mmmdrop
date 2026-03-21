@@ -1,0 +1,62 @@
+[gd_scene load_steps=5 format=3 uid="uid://dv5bpqxgqs7xv"]
+
+[ext_resource type="Script" uid="uid://d4ky3s4bg1ouq" path="res://addons/mpf-gmc/classes/mpf_widget.gd" id="1_ixm2g"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="3_wfghp"]
+[ext_resource type="Texture2D" uid="uid://rhu07qjxbyrm" path="res://assets/player_2_light.png" id="4_ixm2g"]
+[ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="4_llbbb"]
+
+[node name="player_2_billboard_active" type="Control"]
+top_level = true
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_ixm2g")
+
+[node name="p2score" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1464.0
+offset_top = 167.0
+offset_right = 1908.0
+offset_bottom = 231.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("3_wfghp")
+theme_override_font_sizes/font_size = 40
+text = "2,000,000,000"
+horizontal_alignment = 1
+script = ExtResource("4_llbbb")
+variable_type = 5
+variable_name = "score"
+comma_separate = true
+min_digits = 2
+initialize_empty = false
+min_players = 2
+
+[node name="p2billboard" type="Sprite2D" parent="p2score"]
+show_behind_parent = true
+position = Vector2(-503.99994, 376.99997)
+scale = Vector2(0.88, 0.88)
+texture = ExtResource("4_ixm2g")
+
+[node name="p2name" type="Label" parent="p2score"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = -98.0
+offset_right = 424.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("3_wfghp")
+theme_override_font_sizes/font_size = 40
+text = "Player 2"
+horizontal_alignment = 1
+script = ExtResource("4_llbbb")
+variable_type = 5
+min_digits = 0
+template_string = "Player 2"
+format_string = "Player 2"
+initialize_empty = false
+min_players = 2

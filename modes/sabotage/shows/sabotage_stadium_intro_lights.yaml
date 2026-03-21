@@ -1,6 +1,6 @@
 #show_version=6
 
-- duration: 1.0
+- duration: 600ms
   lights:
     l_stadium_left_1: red
     l_stadium_left_2: red
@@ -56,7 +56,7 @@
     l_stadium_right_25: blue
     l_stadium_right_26: blue
     l_stadium_right_27: blue
-- duration: 1.0
+- duration: 600ms
   lights:
     l_stadium_left_1: blue
     l_stadium_left_2: blue

@@ -1,14 +1,14 @@
 [gd_scene load_steps=10 format=3 uid="uid://c2alaagu3le5k"]
 
 [ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_j4cmf"]
+[ext_resource type="Texture2D" uid="uid://b8gyf8dxfaaoo" path="res://assets/newcitystretched.png" id="2_6mjul"]
 [ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="2_vwbax"]
-[ext_resource type="Texture2D" uid="uid://dy8kciiymx6b1" path="res://assets/city1080sidebarsextended.png" id="2_wln5o"]
 [ext_resource type="Texture2D" uid="uid://cmipgf0qwd7y6" path="res://assets/playerball.png" id="3_2oks4"]
 [ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_6f3t8"]
-[ext_resource type="Texture2D" uid="uid://dqp1il4o7feao" path="res://assets/top left billboard.png" id="3_6mjul"]
-[ext_resource type="Texture2D" uid="uid://cjf4omvulvdhc" path="res://assets/top right billboard.png" id="4_2oks4"]
-[ext_resource type="Texture2D" uid="uid://dchxw562eqylx" path="res://assets/bottom left billboard.png" id="5_t0mvq"]
-[ext_resource type="Texture2D" uid="uid://ojb24pm44b5t" path="res://assets/bottom right billboard.png" id="6_rfrpn"]
+[ext_resource type="Texture2D" uid="uid://rbubedfq5x75" path="res://assets/player_1_dark.png" id="6_6mjul"]
+[ext_resource type="Texture2D" uid="uid://bu8vfumb0u4ff" path="res://assets/player_2_dark.png" id="7_2oks4"]
+[ext_resource type="Texture2D" uid="uid://yossu5cu27w7" path="res://assets/player_3_Dark.png" id="8_t0mvq"]
+[ext_resource type="Texture2D" uid="uid://csjjcckm3sbkb" path="res://assets/player_4_dark.png" id="9_rfrpn"]
 
 [node name="scoreoverlay" type="Control"]
 layout_mode = 3
@@ -19,26 +19,26 @@ script = ExtResource("1_j4cmf")
 
 [node name="city" type="Sprite2D" parent="."]
 position = Vector2(960, 544)
-scale = Vector2(0.24, 0.24)
-texture = ExtResource("2_wln5o")
+scale = Vector2(0.451, 0.451)
+texture = ExtResource("2_6mjul")
 
 [node name="spraypaintballplayer" type="Sprite2D" parent="."]
-position = Vector2(984, 130)
-scale = Vector2(0.6, 0.6)
+position = Vector2(984, 178)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("3_2oks4")
 
 [node name="currentplayer" type="Label" parent="."]
 layout_mode = 0
-offset_left = 876.0
-offset_top = 51.000008
-offset_right = 1084.0
-offset_bottom = 104.0
+offset_left = 818.9999
+offset_top = 80.0
+offset_right = 1108.0
+offset_bottom = 133.0
 rotation = -0.18189362
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_vwbax")
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 50
 text = "Player 1"
 horizontal_alignment = 1
 script = ExtResource("3_6f3t8")
@@ -47,16 +47,16 @@ template_string = "Player %s"
 
 [node name="currentball" type="Label" parent="."]
 layout_mode = 0
-offset_left = 828.0
-offset_top = 27.000002
-offset_right = 973.0
-offset_bottom = 73.0
+offset_left = 785.99994
+offset_top = 31.000015
+offset_right = 994.99994
+offset_bottom = 83.000015
 rotation = -0.18189362
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_vwbax")
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 50
 text = "Ball 1"
 horizontal_alignment = 1
 script = ExtResource("3_6f3t8")
@@ -64,16 +64,16 @@ variable_name = "ball"
 template_string = "Ball %s"
 
 [node name="p1billboard" type="Sprite2D" parent="."]
-position = Vector2(248, 192)
-scale = Vector2(0.24, 0.24)
-texture = ExtResource("3_6mjul")
+position = Vector2(960, 544)
+scale = Vector2(0.88, 0.88)
+texture = ExtResource("6_6mjul")
 
 [node name="p1name" type="Label" parent="."]
 layout_mode = 0
 offset_left = 32.0
-offset_top = 77.0
+offset_top = 61.0
 offset_right = 464.0
-offset_bottom = 141.0
+offset_bottom = 125.0
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 20
@@ -99,8 +99,8 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("2_vwbax")
-theme_override_font_sizes/font_size = 30
-text = "00"
+theme_override_font_sizes/font_size = 40
+text = "2,000,000,000"
 horizontal_alignment = 1
 script = ExtResource("3_6f3t8")
 variable_type = 4
@@ -120,8 +120,8 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("2_vwbax")
-theme_override_font_sizes/font_size = 30
-text = "00"
+theme_override_font_sizes/font_size = 40
+text = "2,000,000,000"
 horizontal_alignment = 1
 script = ExtResource("3_6f3t8")
 variable_type = 5
@@ -133,16 +133,16 @@ min_players = 2
 
 [node name="p2billboard" type="Sprite2D" parent="p2score"]
 show_behind_parent = true
-position = Vector2(216, 25)
-scale = Vector2(0.24, 0.24)
-texture = ExtResource("4_2oks4")
+position = Vector2(-503.99994, 376.99997)
+scale = Vector2(0.88, 0.88)
+texture = ExtResource("7_2oks4")
 
 [node name="p2name" type="Label" parent="p2score"]
 layout_mode = 0
 offset_left = 16.0
-offset_top = -83.0
+offset_top = -98.0
 offset_right = 424.0
-offset_bottom = -19.0
+offset_bottom = -34.0
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 20
@@ -161,15 +161,15 @@ min_players = 2
 [node name="p3score" type="Label" parent="."]
 layout_mode = 0
 offset_left = 16.0
-offset_top = 884.0
+offset_top = 950.0
 offset_right = 448.0
-offset_bottom = 948.0
+offset_bottom = 1014.0
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("2_vwbax")
-theme_override_font_sizes/font_size = 30
-text = "00"
+theme_override_font_sizes/font_size = 40
+text = "2,000,000,000"
 horizontal_alignment = 1
 script = ExtResource("3_6f3t8")
 variable_type = 6
@@ -181,15 +181,16 @@ min_players = 3
 
 [node name="p3billboard" type="Sprite2D" parent="p3score"]
 show_behind_parent = true
-position = Vector2(224, 20)
-scale = Vector2(0.24, 0.24)
-texture = ExtResource("5_t0mvq")
+position = Vector2(947, -340)
+scale = Vector2(0.88, 0.88)
+texture = ExtResource("8_t0mvq")
 
 [node name="p3name" type="Label" parent="p3score"]
 layout_mode = 0
-offset_top = -76.0
-offset_right = 432.0
-offset_bottom = -12.0
+offset_left = 3.0
+offset_top = -101.0
+offset_right = 435.0
+offset_bottom = -37.0
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 20
@@ -208,15 +209,15 @@ min_players = 3
 [node name="p4score" type="Label" parent="."]
 layout_mode = 0
 offset_left = 1472.0
-offset_top = 884.0
+offset_top = 950.0
 offset_right = 1908.0
-offset_bottom = 948.0
+offset_bottom = 1014.0
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("2_vwbax")
-theme_override_font_sizes/font_size = 30
-text = "00"
+theme_override_font_sizes/font_size = 40
+text = "2,000,000,000"
 horizontal_alignment = 1
 script = ExtResource("3_6f3t8")
 variable_type = 7
@@ -228,16 +229,16 @@ min_players = 4
 
 [node name="p4billboard" type="Sprite2D" parent="p4score"]
 show_behind_parent = true
-position = Vector2(208, 20)
-scale = Vector2(0.24, 0.24)
-texture = ExtResource("6_rfrpn")
+position = Vector2(-511.99994, -340)
+scale = Vector2(0.88, 0.88)
+texture = ExtResource("9_rfrpn")
 
 [node name="p4name" type="Label" parent="p4score"]
 layout_mode = 0
-offset_left = 8.0
-offset_top = -76.0
-offset_right = 422.0
-offset_bottom = -12.0
+offset_left = -5.0
+offset_top = -89.0
+offset_right = 409.0
+offset_bottom = -25.0
 scale = Vector2(1.00845, 0.984678)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)

@@ -6,110 +6,171 @@
 - duration: 0.2
   lights:
     l_stadium_left_15: red
+    l_stadium_left_16: red
 - duration: 0.2
   lights:
     l_stadium_left_15: stop
+    l_stadium_left_16: stop
     l_stadium_right_4: red
-- duration: 0.2
-  lights:
-    l_stadium_right_4: stop
-    l_stadium_left_26: red
-- duration: 0.2
-  lights:
-    l_stadium_left_26: stop
-    l_stadium_right_19: red
-- duration: 0.2
-  lights:
-    l_stadium_right_19: stop
-    l_stadium_left_7: red
-- duration: 0.2
-  lights:
-    l_stadium_left_7: stop
-    l_stadium_right_10: red
-- duration: 0.2
-  lights:
-    l_stadium_right_10: stop
-    l_stadium_left_25: red
-- duration: 0.2
-  lights:
-    l_stadium_left_25: stop
-    l_stadium_right_26: red
-- duration: 0.2
-  lights:
-    l_stadium_right_26: stop
-    l_stadium_left_13: red
-- duration: 0.2
-  lights:
-    l_stadium_left_13: stop
-    l_stadium_right_2: red
-- duration: 0.2
-  lights:
-    l_stadium_right_2: stop
-    l_stadium_left_15: red
-- duration: 0.2
-  lights:
-    l_stadium_left_15: stop
     l_stadium_right_5: red
 - duration: 0.2
   lights:
+    l_stadium_right_4: stop
     l_stadium_right_5: stop
+    l_stadium_left_26: red
+    l_stadium_left_27: red
+- duration: 0.2
+  lights:
+    l_stadium_left_26: stop
+    l_stadium_left_27: stop
+    l_stadium_right_19: red
+    l_stadium_right_20: red
+- duration: 0.2
+  lights:
+    l_stadium_right_19: stop
+    l_stadium_right_20: stop
+    l_stadium_left_7: red
+    l_stadium_left_8: red
+- duration: 0.2
+  lights:
+    l_stadium_left_7: stop
+    l_stadium_left_8: stop
+    l_stadium_right_10: red
+    l_stadium_right_11: red
+- duration: 0.2
+  lights:
+    l_stadium_right_10: stop
+    l_stadium_right_11: stop
+    l_stadium_left_24: red
+    l_stadium_left_25: red
+- duration: 0.2
+  lights:
+    l_stadium_left_24: stop
+    l_stadium_left_25: stop
+    l_stadium_right_26: red
+    l_stadium_right_27: red
+- duration: 0.2
+  lights:
+    l_stadium_right_26: stop
+    l_stadium_right_27: stop
+    l_stadium_left_13: red
+    l_stadium_left_14: red
+- duration: 0.2
+  lights:
+    l_stadium_left_13: stop
+    l_stadium_left_14: stop
+    l_stadium_right_2: red
+    l_stadium_right_3: red
+- duration: 0.2
+  lights:
+    l_stadium_right_2: stop
+    l_stadium_right_3: stop
+    l_stadium_left_15: red
+    l_stadium_left_16: red
+- duration: 0.2
+  lights:
+    l_stadium_left_15: stop
+    l_stadium_left_16: stop
+    l_stadium_right_5: red
+    l_stadium_right_6: red
+- duration: 0.2
+  lights:
+    l_stadium_right_5: stop
+    l_stadium_right_6: stop
     l_stadium_left_6: red
+    l_stadium_left_7: red
 - duration: 0.35
   lights:
     l_stadium_left_6: stop
+    l_stadium_left_7: stop
     l_stadium_left_18: red
     l_stadium_right_18: red
+    l_stadium_left_19: red
+    l_stadium_right_19: red
 - duration: 0.7
   lights:
     l_stadium_left_18: stop
     l_stadium_right_18: stop
+    l_stadium_left_19: stop
+    l_stadium_right_19: stop
     l_stadium_left_13: red
     l_stadium_right_13: red
+    l_stadium_left_14: red
+    l_stadium_right_14: red
 - duration: 0.7
   lights:
     l_stadium_left_13: stop
     l_stadium_right_13: stop
+    l_stadium_left_14: stop
+    l_stadium_right_14: stop
     l_stadium_left_7: red
     l_stadium_right_7: red
+    l_stadium_left_8: red
+    l_stadium_right_8: red
 - duration: 0.7
   lights:
     l_stadium_left_7: stop
     l_stadium_right_7: stop
+    l_stadium_left_8: stop
+    l_stadium_right_8: stop
     l_stadium_left_24: red
     l_stadium_right_24: red
+    l_stadium_left_25: red
+    l_stadium_right_25: red
 - duration: 0.7
   lights:
     l_stadium_left_24: stop
     l_stadium_right_24: stop
+    l_stadium_left_25: stop
+    l_stadium_right_25: stop
     l_stadium_left_13: red
     l_stadium_right_13: red
+    l_stadium_left_14: red
+    l_stadium_right_14: red
 - duration: 0.7
   lights:
     l_stadium_left_13: stop
     l_stadium_right_13: stop
+    l_stadium_left_14: stop
+    l_stadium_right_14: stop
     l_stadium_left_3: red
     l_stadium_right_3: red
+    l_stadium_left_4: red
+    l_stadium_right_4: red
 - duration: 0.7
   lights:
     l_stadium_left_3: stop
     l_stadium_right_3: stop
+    l_stadium_left_4: stop
+    l_stadium_right_4: stop
     l_stadium_left_20: red
     l_stadium_right_20: red
+    l_stadium_left_21: red
+    l_stadium_right_21: red
 - duration: 0.7
   lights:
     l_stadium_left_20: stop
     l_stadium_right_20: stop
+    l_stadium_left_21: stop
+    l_stadium_right_21: stop
     l_stadium_left_10: red
     l_stadium_right_10: red
+    l_stadium_left_11: red
+    l_stadium_right_11: red
 - duration: 0.7
   lights:
     l_stadium_left_10: stop
     l_stadium_right_10: stop
+    l_stadium_left_11: stop
+    l_stadium_right_11: stop
     l_stadium_left_17: red
     l_stadium_right_17: red
+    l_stadium_left_18: red
+    l_stadium_right_18: red
 - duration: 7.0
   lights:
     l_stadium_left_17: stop
     l_stadium_right_17: stop
-
+    l_stadium_left_18: stop
+    l_stadium_right_18: stop
 

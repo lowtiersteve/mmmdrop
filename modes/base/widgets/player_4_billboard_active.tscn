@@ -1,0 +1,63 @@
+[gd_scene load_steps=5 format=3 uid="uid://in7wliselo5j"]
+
+[ext_resource type="Script" uid="uid://d4ky3s4bg1ouq" path="res://addons/mpf-gmc/classes/mpf_widget.gd" id="1_y1ou5"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="3_wc6xm"]
+[ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="4_3v5eo"]
+[ext_resource type="Texture2D" uid="uid://crnic3hl8levq" path="res://assets/player_4_light.png" id="4_y1ou5"]
+
+[node name="player_4_billboard_active" type="Control"]
+top_level = true
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_y1ou5")
+
+[node name="p4score" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1472.0
+offset_top = 950.0
+offset_right = 1908.0
+offset_bottom = 1014.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("3_wc6xm")
+theme_override_font_sizes/font_size = 40
+text = "2,000,000,000"
+horizontal_alignment = 1
+script = ExtResource("4_3v5eo")
+variable_type = 7
+variable_name = "score"
+comma_separate = true
+min_digits = 2
+initialize_empty = false
+min_players = 4
+
+[node name="p4billboard" type="Sprite2D" parent="p4score"]
+show_behind_parent = true
+position = Vector2(-511.99994, -340)
+scale = Vector2(0.88, 0.88)
+texture = ExtResource("4_y1ou5")
+
+[node name="p4name" type="Label" parent="p4score"]
+layout_mode = 0
+offset_left = -5.0
+offset_top = -89.0
+offset_right = 409.0
+offset_bottom = -25.0
+scale = Vector2(1.00845, 0.984678)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("3_wc6xm")
+theme_override_font_sizes/font_size = 40
+text = "Player 4"
+horizontal_alignment = 1
+script = ExtResource("4_3v5eo")
+variable_type = 7
+min_digits = 0
+template_string = "Player 4"
+format_string = "Player 4"
+initialize_empty = false
+min_players = 4

@@ -296,62 +296,62 @@ lights:
   l_leftsling_uppergi_led:
     number: lightboard-4-17
     subtype: led
-    type: rgb
+    type: grb
     label: "Left Sling Upper GI"
   l_leftsling_lowergi_led:
     number: lightboard-4-18
     subtype: led
-    type: rgb
+    type: grb
     label: "Left Sling Lower GI"
   l_rightsling_uppergi_led:
     number: lightboard-2-6
     subtype: led
-    type: rgb
+    type: grb
     label: "Right Sling Upper GI"
   l_rightsling_lowergi_led:
     number: lightboard-2-7
     subtype: led
-    type: rgb
+    type: grb
     label: "Right Sling Lower GI"
   l_behindupperflipper_uppergi_led:
     number: lightboard-8-11
     subtype: led
-    type: rgb
+    type: grb
     label: "Behind Top Right Flipper Upper GI"
   l_behindupperflipper_lowergi_led:
     number: lightboard-8-12
     subtype: led
-    type: rgb
+    type: grb
     label: "Behind Top Right Flipper Lower GI"
   l_behinddropflasher_leftgi_led:
     number: lightboard-4-10
     subtype: led
-    type: rgb
+    type: grb
     label: "Behind Drop Flasher Left GI"
   l_backpanel_gi1_led:
     number: lightboard-7-1
     subtype: led
-    type: rgb
+    type: grb
     label: "Back Panel GI 1"
   l_backpanel_gi2_led:
     number: lightboard-7-2
     subtype: led
-    type: rgb
+    type: grb
     label: "Back Panel GI 2"
   l_backpanel_gi3_led:
     number: lightboard-7-3
     subtype: led
-    type: rgb
+    type: grb
     label: "Back Panel GI 3"
   l_backpanel_gi4_led:
     number: lightboard-7-4
     subtype: led
-    type: rgb
+    type: grb
     label: "Back Panel GI 4"
   l_backpanel_gi5_led:
     number: lightboard-7-5
     subtype: led
-    type: rgb
+    type: grb
     label: "Back Panel GI 5"
   l_stadium_left_1:
     number: lightboard-1-1

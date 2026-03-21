@@ -1,0 +1,61 @@
+[gd_scene load_steps=5 format=3 uid="uid://bdnth2ymb4rid"]
+
+[ext_resource type="Script" uid="uid://d4ky3s4bg1ouq" path="res://addons/mpf-gmc/classes/mpf_widget.gd" id="1_wqto6"]
+[ext_resource type="Texture2D" uid="uid://bmw74x5jjqphc" path="res://assets/player_1_light.png" id="2_hf662"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="3_tduhj"]
+[ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="4_bucce"]
+
+[node name="player_1_billboard_active" type="Control"]
+top_level = true
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_wqto6")
+
+[node name="p1billboard" type="Sprite2D" parent="."]
+position = Vector2(960, 544)
+scale = Vector2(0.88, 0.88)
+texture = ExtResource("2_hf662")
+
+[node name="p1name" type="Label" parent="."]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 61.0
+offset_right = 464.0
+offset_bottom = 125.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("3_tduhj")
+theme_override_font_sizes/font_size = 40
+text = "Player 1"
+horizontal_alignment = 1
+script = ExtResource("4_bucce")
+variable_type = 4
+min_digits = 0
+template_string = "Player 1"
+format_string = "Player 1"
+initialize_empty = false
+min_players = 1
+
+[node name="p1score" type="Label" parent="."]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 159.0
+offset_right = 464.0
+offset_bottom = 223.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("3_tduhj")
+theme_override_font_sizes/font_size = 40
+text = "2,000,000,000"
+horizontal_alignment = 1
+script = ExtResource("4_bucce")
+variable_type = 4
+variable_name = "score"
+comma_separate = true
+min_digits = 2
+initialize_empty = false
+min_players = 1

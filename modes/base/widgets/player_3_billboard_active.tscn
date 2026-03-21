@@ -1,0 +1,62 @@
+[gd_scene load_steps=5 format=3 uid="uid://bslu6be65a7sf"]
+
+[ext_resource type="Script" uid="uid://d4ky3s4bg1ouq" path="res://addons/mpf-gmc/classes/mpf_widget.gd" id="1_n4iy2"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="3_ovmu4"]
+[ext_resource type="Texture2D" uid="uid://beqynxjajf7w3" path="res://assets/player_3_light.png" id="4_n4iy2"]
+[ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="4_xio6s"]
+
+[node name="player_3_billboard_active" type="Control"]
+top_level = true
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_n4iy2")
+
+[node name="p3score" type="Label" parent="."]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 950.0
+offset_right = 448.0
+offset_bottom = 1014.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("3_ovmu4")
+theme_override_font_sizes/font_size = 40
+text = "2,000,000,000"
+horizontal_alignment = 1
+script = ExtResource("4_xio6s")
+variable_type = 6
+variable_name = "score"
+comma_separate = true
+min_digits = 2
+initialize_empty = false
+min_players = 3
+
+[node name="p3billboard" type="Sprite2D" parent="p3score"]
+show_behind_parent = true
+position = Vector2(947, -340)
+scale = Vector2(0.88, 0.88)
+texture = ExtResource("4_n4iy2")
+
+[node name="p3name" type="Label" parent="p3score"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = -101.0
+offset_right = 435.0
+offset_bottom = -37.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("3_ovmu4")
+theme_override_font_sizes/font_size = 40
+text = "Player 3"
+horizontal_alignment = 1
+script = ExtResource("4_xio6s")
+variable_type = 6
+min_digits = 0
+template_string = "Player 3"
+format_string = "Player 3"
+initialize_empty = false
+min_players = 3
