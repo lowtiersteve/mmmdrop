@@ -17,15 +17,16 @@ texture = ExtResource("2_06a0i")
 
 [node name="MPFVariable - Award" type="Label" parent="."]
 layout_mode = 0
-offset_left = 1.0
-offset_top = 188.0
-offset_right = 1913.0
-offset_bottom = 393.0
+offset_left = 6.0
+offset_top = 77.0
+offset_right = 1918.0
+offset_bottom = 386.0
 theme_override_constants/outline_size = 35
 theme_override_fonts/font = ExtResource("2_fgc81")
-theme_override_font_sizes/font_size = 150
-text = "Award!"
+theme_override_font_sizes/font_size = 130
+text = "3 mcs and 1 dj champion"
 horizontal_alignment = 1
+autowrap_mode = 3
 script = ExtResource("2_8uavx")
 variable_type = 1
 variable_name = "award"

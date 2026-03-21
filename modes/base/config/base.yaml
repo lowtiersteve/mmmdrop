@@ -2234,6 +2234,11 @@ blinkenlight_player:
 
 
 widget_player:
+  single_player_ball_started:
+    player_1_billboard_active:
+      action: play
+      slide: score_overlay
+      priority: 925000
   player_1_ball_started:
     player_1_billboard_active:
       action: play
