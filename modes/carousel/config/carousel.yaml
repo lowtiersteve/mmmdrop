@@ -154,3 +154,9 @@ blinkenlight_player:
       action: add
   mode_carousel_will_stop:
     bl_scoop_arrow_led: remove
+
+widget_player:
+  mode_carousel_started:
+    charges_remaining:
+      action: remove
+      key: "battery"

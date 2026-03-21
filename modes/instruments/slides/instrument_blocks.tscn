@@ -1,10 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://dutuv7l1pr2fd"]
+[gd_scene load_steps=4 format=3 uid="uid://dutuv7l1pr2fd"]
 
 [ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_ysu8u"]
 [ext_resource type="Script" uid="uid://dsqx7p0qwf1p6" path="res://addons/mpf-gmc/classes/mpf_scene_base.gd" id="2_7wo3b"]
-[ext_resource type="Texture2D" uid="uid://b3vythmqc21e2" path="res://assets/boombox_bw.png" id="3_xhmla"]
-[ext_resource type="Texture2D" uid="uid://cxoda6edacejp" path="res://assets/microphone_bw.png" id="4_1lkqx"]
-[ext_resource type="Texture2D" uid="uid://b0fw7gwtq8pgm" path="res://assets/turntable_bw.png" id="5_mqpn3"]
+[ext_resource type="Texture2D" uid="uid://bal6gwnd34efw" path="res://assets/instruments_billboard.png" id="3_xhmla"]
 
 [node name="instrument_blocks" type="Control"]
 layout_mode = 3
@@ -17,20 +15,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("2_7wo3b")
 
-[node name="BoomboxBw" type="Sprite2D" parent="MPFSceneBase"]
-position = Vector2(112, 504)
-rotation = 1.5707964
-scale = Vector2(0.12, 0.12)
+[node name="instruments_billboard" type="Sprite2D" parent="MPFSceneBase"]
+position = Vector2(330.99997, 650.99994)
+scale = Vector2(0.59, 0.59)
 texture = ExtResource("3_xhmla")
-
-[node name="MicrophoneBw" type="Sprite2D" parent="MPFSceneBase"]
-position = Vector2(112, 600)
-rotation = 1.5707964
-scale = Vector2(0.12, 0.12)
-texture = ExtResource("4_1lkqx")
-
-[node name="TurntableBw" type="Sprite2D" parent="MPFSceneBase"]
-position = Vector2(112.00001, 698.00006)
-rotation = 1.5707964
-scale = Vector2(0.12, 0.12)
-texture = ExtResource("5_mqpn3")

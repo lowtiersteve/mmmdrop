@@ -12,7 +12,7 @@ offset_bottom = 40.0
 script = ExtResource("1_yacpr")
 
 [node name="Microphonecolor" type="Sprite2D" parent="."]
-position = Vector2(112, 600)
+position = Vector2(131.00002, 565)
 rotation = 1.5707964
 scale = Vector2(0.12, 0.12)
 texture = ExtResource("2_yacpr")

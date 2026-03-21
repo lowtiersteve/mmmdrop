@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://b6memgs4fw0vv"]
+[gd_scene load_steps=4 format=3 uid="uid://b6memgs4fw0vv"]
 
 [ext_resource type="Script" uid="uid://d4ky3s4bg1ouq" path="res://addons/mpf-gmc/classes/mpf_widget.gd" id="1_3qnh0"]
+[ext_resource type="Texture2D" uid="uid://dtodnmwfxtclr" path="res://assets/burstbacking.png" id="2_chwd3"]
 [ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="3_chwd3"]
 
 [node name="playfield_2x_scoring" type="Control"]
@@ -11,12 +12,17 @@ offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_3qnh0")
 
+[node name="spraypaint" type="Sprite2D" parent="."]
+position = Vector2(135, 615)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_chwd3")
+
 [node name="scoring2x" type="Label" parent="."]
 layout_mode = 0
-offset_left = 1.0
-offset_top = 533.0
-offset_right = 236.0
-offset_bottom = 644.0
+offset_left = 27.0
+offset_top = 527.0
+offset_right = 262.0
+offset_bottom = 638.0
 theme_override_constants/line_spacing = 1
 theme_override_constants/outline_size = 23
 theme_override_fonts/font = ExtResource("3_chwd3")

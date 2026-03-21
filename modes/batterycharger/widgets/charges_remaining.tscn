@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://dt6jeo15bi6oh"]
+[gd_scene load_steps=5 format=3 uid="uid://dt6jeo15bi6oh"]
 
 [ext_resource type="Script" uid="uid://d4ky3s4bg1ouq" path="res://addons/mpf-gmc/classes/mpf_widget.gd" id="1_rogmx"]
 [ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="2_grvp4"]
+[ext_resource type="Texture2D" uid="uid://0ccrbxmggkpu" path="res://assets/battery_duracell.png" id="2_mpp4c"]
 [ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_vla77"]
 
 [node name="charges_remaining" type="Control"]
@@ -13,23 +14,28 @@ script = ExtResource("1_rogmx")
 
 [node name="charges_remaining" type="Node2D" parent="."]
 
+[node name="battery" type="Sprite2D" parent="charges_remaining"]
+position = Vector2(960, 967)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_mpp4c")
+
 [node name="chargesneeded" type="Label" parent="charges_remaining"]
-offset_left = 35.0
-offset_top = 285.0
-offset_right = 242.0
-offset_bottom = 362.0
+offset_left = 750.00006
+offset_top = 919.00006
+offset_right = 957.00006
+offset_bottom = 996.00006
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("2_grvp4")
 theme_override_font_sizes/font_size = 35
 text = "Charges 
-Needed:"
+Needed"
 horizontal_alignment = 1
 
-[node name="player1_score" type="Label" parent="charges_remaining"]
-offset_left = 64.0
-offset_top = 385.0
-offset_right = 186.0
-offset_bottom = 451.0
+[node name="charges_remaining_variable" type="Label" parent="charges_remaining"]
+offset_left = 944.00006
+offset_top = 927.00006
+offset_right = 1066.0
+offset_bottom = 993.00006
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("2_grvp4")
 theme_override_font_sizes/font_size = 60
@@ -38,4 +44,3 @@ horizontal_alignment = 1
 script = ExtResource("3_vla77")
 variable_name = "charges_remaining_variable"
 min_digits = 1
-initialize_empty = false

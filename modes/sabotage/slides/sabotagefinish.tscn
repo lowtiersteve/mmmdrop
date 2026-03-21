@@ -1,11 +1,11 @@
 [gd_scene load_steps=10 format=3 uid="uid://yibd7npc6gka"]
 
-[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_24npc"]
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_24npc"]
 [ext_resource type="VideoStream" uid="uid://faep0iq48djy" path="res://modes/sabotage/slides/SabotageSuccessVideo.ogv" id="2_6rgrb"]
-[ext_resource type="Script" uid="uid://bf2dsnm46ji2e" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_7ofjb"]
+[ext_resource type="Script" uid="uid://bov7mrgxslshq" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_7ofjb"]
 [ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="4_3u24p"]
 [ext_resource type="Texture2D" uid="uid://dt7hpexqpath5" path="res://assets/action_bubble.png" id="5_limro"]
-[ext_resource type="Script" uid="uid://b3ni1cjx2r6sx" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="6_nxgwm"]
+[ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="6_nxgwm"]
 
 [sub_resource type="Animation" id="Animation_swyhi"]
 resource_name = "Blinking"
@@ -48,7 +48,6 @@ _data = {
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_24npc")
-metadata/_custom_type_script = "uid://d15ukepy10pan"
 
 [node name="MPFVideoPlayer" type="VideoStreamPlayer" parent="."]
 custom_minimum_size = Vector2(1920, 1080)
@@ -62,7 +61,7 @@ bus = &"effects"
 script = ExtResource("3_7ofjb")
 hide_behavior = 1
 preview_in_editor = true
-metadata/_custom_type_script = "uid://bf2dsnm46ji2e"
+metadata/_edit_lock_ = true
 
 [node name="Label" type="Label" parent="."]
 visible = false
@@ -87,16 +86,16 @@ autoplay = "Blinking"
 playback_auto_capture = false
 
 [node name="ActionImage" type="Sprite2D" parent="."]
-position = Vector2(415.671, 843.25)
+position = Vector2(921.3288, 874.24963)
 scale = Vector2(0.444077, 0.267791)
 texture = ExtResource("5_limro")
 
 [node name="ModeTotal" type="Label" parent="."]
 layout_mode = 0
-offset_left = 33.0
-offset_top = 721.0
-offset_right = 442.0
-offset_bottom = 798.0
+offset_left = 538.65784
+offset_top = 751.99963
+offset_right = 947.65784
+offset_bottom = 828.99963
 scale = Vector2(1.87781, 1.71507)
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("4_3u24p")
@@ -108,10 +107,10 @@ clip_text = true
 
 [node name="SabotageScore" type="Label" parent="."]
 layout_mode = 0
-offset_left = 43.0
-offset_top = 838.0
-offset_right = 774.0
-offset_bottom = 908.0
+offset_left = 548.65784
+offset_top = 868.99963
+offset_right = 1279.6578
+offset_bottom = 938.99963
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("4_3u24p")
 theme_override_font_sizes/font_size = 50
@@ -121,4 +120,3 @@ script = ExtResource("6_nxgwm")
 variable_name = "mode_sabotage_score"
 comma_separate = true
 min_digits = 1
-metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"

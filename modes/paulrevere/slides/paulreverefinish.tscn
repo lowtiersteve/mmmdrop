@@ -1,17 +1,16 @@
 [gd_scene load_steps=7 format=3 uid="uid://dqsdp2loe5252"]
 
-[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_6vge2"]
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_6vge2"]
 [ext_resource type="VideoStream" uid="uid://bwux1ij2lsv0m" path="res://modes/paulrevere/slides/PaulRevereSuccessVid.ogv" id="2_tiwtq"]
-[ext_resource type="Script" uid="uid://bf2dsnm46ji2e" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_jqyyq"]
+[ext_resource type="Script" uid="uid://bov7mrgxslshq" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_jqyyq"]
 [ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="4_issq2"]
 [ext_resource type="Texture2D" uid="uid://dt7hpexqpath5" path="res://assets/action_bubble.png" id="5_7hien"]
-[ext_resource type="Script" uid="uid://b3ni1cjx2r6sx" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="6_s0rs4"]
+[ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="6_s0rs4"]
 
 [node name="paulreverefinish" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_6vge2")
-metadata/_custom_type_script = "uid://d15ukepy10pan"
 
 [node name="MPFVideoPlayer" type="VideoStreamPlayer" parent="."]
 custom_minimum_size = Vector2(1920, 1080)
@@ -25,14 +24,14 @@ bus = &"effects"
 script = ExtResource("3_jqyyq")
 hide_behavior = 1
 preview_in_editor = true
-metadata/_custom_type_script = "uid://bf2dsnm46ji2e"
+metadata/_edit_lock_ = true
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
 offset_left = 4.0
 offset_top = 399.0
 offset_right = 1920.0
-offset_bottom = 640.0
+offset_bottom = 554.0
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("4_issq2")
 theme_override_font_sizes/font_size = 116
@@ -40,16 +39,16 @@ text = "made it back!"
 horizontal_alignment = 1
 
 [node name="ActionImage" type="Sprite2D" parent="."]
-position = Vector2(415.671, 843.25)
+position = Vector2(938.32886, 873.24963)
 scale = Vector2(0.444077, 0.267791)
 texture = ExtResource("5_7hien")
 
 [node name="ModeTotal" type="Label" parent="."]
 layout_mode = 0
-offset_left = 59.0
-offset_top = 730.0
-offset_right = 468.0
-offset_bottom = 807.0
+offset_left = 581.65784
+offset_top = 759.99963
+offset_right = 990.65784
+offset_bottom = 836.99963
 scale = Vector2(1.87781, 1.71507)
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("4_issq2")
@@ -60,10 +59,11 @@ vertical_alignment = 1
 clip_text = true
 
 [node name="PaulRevereScore" type="Label" parent="."]
-offset_left = 130.0
-offset_top = 863.0
-offset_right = 705.0
-offset_bottom = 919.0
+layout_mode = 0
+offset_left = 652.65784
+offset_top = 892.99963
+offset_right = 1227.6578
+offset_bottom = 948.99963
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("4_issq2")
 theme_override_font_sizes/font_size = 30
@@ -73,4 +73,3 @@ script = ExtResource("6_s0rs4")
 variable_name = "mode_paulrevere_score"
 comma_separate = true
 min_digits = 1
-metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"
