@@ -1,0 +1,119 @@
+#config_version=6
+
+mode:
+  start_events: start_wizardcarousel
+  stop_events: carousel_item_selected
+  code: mpf.modes.carousel.code.carousel.Carousel
+  priority: 200
+
+
+mode_settings:
+  selectable_items: makesomenoise{not device.achievements.makesomenoise_mode.state=="completed"}, sureshot{not device.achievements.sureshot_mode.state=="completed"}, bodhisattvavow{not device.achievements.bodhisattvavow_mode.state=="completed"}
+  select_item_events: flipper_cancel, timer_wizard_choice_select_complete
+  next_item_events: s_right_flipper_active
+  previous_item_events: s_left_flipper_active
+
+
+variable_player:
+  carousel_makesomenoise_selected:
+    selected_mode:
+      string: "Make Some Noise"
+      action: set
+  carousel_sureshot_selected:
+    selected_mode:
+      string: "Sure Shot"
+      action: set
+  carousel_bodhisattvavow_selected:
+    selected_mode:
+      string: "Bodhisattva Vow"
+      action: set
+  timer_wizard_choice_select_tick:
+    wizard_choice_select_variable_times_1:
+      int: device.timers.wizard_choice_select.ticks * 1
+      action: set
+
+
+slide_player:
+  mode_wizardcarousel_started:
+    current_mode_highlighted:
+      action: remove
+    base:
+      action: remove
+    basevideo1:
+      action: remove
+    basevideo2:
+      action: remove
+    basevideo3:
+      action: remove
+    basevideo4:
+      action: remove
+    current_wizard_mode_highlighted:
+      action: play
+      priority: 500000
+
+
+timers:
+  wizard_choice_select:
+    start_value: 10
+    end_value: 0
+    direction: down
+    start_running: True
+    restart_on_complete: True
+    control_events:
+      - action: start
+        event: mode_wizardcarousel_started
+      - action: jump
+        value: 10
+        event: carousel_item_highlighted
+
+
+event_player:
+  random_mode_picker_sureshot: carousel_advance
+  random_mode_picker_bodhisattvavow: carousel_advance, carousel_advance_2
+
+
+random_event_player:
+  slide_current_wizard_mode_highlighted_created:
+    events:
+    - random_mode_picker_makesomenoise
+    - random_mode_picker_sureshot
+    - random_mode_picker_bodhisattvavow
+
+
+sound_player:
+  mode_wizardcarousel_started:
+    holditnowhitit:
+      action: replace
+      bus: music
+      loops: 5
+
+
+show_player:
+  carousel_item_highlighted{item=="makesomenoise"}:
+    makesomenoise_mode_lit:
+      action: play
+      loops: -1
+  carousel_item_highlighted{item!="makesomenoise"}:
+    makesomenoise_mode_lit:
+      action: stop
+  carousel_item_highlighted{item=="sureshot"}:
+    sureshot_mode_lit:
+      action: play
+      loops: -1
+  carousel_item_highlighted{item!="sureshot"}:
+    sureshot_mode_lit:
+      action: stop
+  carousel_item_highlighted{item=="bodhisattvavow"}:
+    bodhisattvavow_mode_lit:
+      action: play
+      loops: -1
+  carousel_item_highlighted{item!="bodhisattvavow"}:
+    bodhisattvavow_mode_lit:
+      action: stop
+
+
+widget_player:
+  mode_wizardcarousel_started:
+    charges_remaining:
+      action: remove
+      key: "battery"

@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bq3uv62ni4g2k"]
 
 [ext_resource type="Script" uid="uid://d4ky3s4bg1ouq" path="res://addons/mpf-gmc/classes/mpf_widget.gd" id="1_fy1s4"]
-[ext_resource type="Texture2D" uid="uid://01l1cco457oo" path="res://assets/skillshot_success.png" id="2_lvk3a"]
+[ext_resource type="Texture2D" uid="uid://djv7ec65dq80j" path="res://assets/skill_shot_success_new.png" id="2_fy1s4"]
 
 [node name="skillshot_success_overlay" type="Control"]
 layout_mode = 3
@@ -12,6 +12,6 @@ script = ExtResource("1_fy1s4")
 metadata/_custom_type_script = "uid://d4ky3s4bg1ouq"
 
 [node name="skillshotsuccess" type="Sprite2D" parent="."]
-position = Vector2(968, 556.252)
-scale = Vector2(0.6, 0.623)
-texture = ExtResource("2_lvk3a")
+position = Vector2(1026.0001, 667)
+scale = Vector2(1.1, 1.143)
+texture = ExtResource("2_fy1s4")

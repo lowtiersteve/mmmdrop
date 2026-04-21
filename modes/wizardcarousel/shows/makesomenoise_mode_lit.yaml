@@ -2,7 +2,7 @@
 
 - duration: 200ms
   lights:
-    l_wizardindicator2_rectangle_led: white
+    l_wizardindicator2_rectangle_led: yellow
 - duration: 200ms
   lights:
     l_wizardindicator2_rectangle_led: stop

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="MPFSoundAsset" load_steps=6 format=3 uid="uid://xxvlip76w6yv"]
+
+[ext_resource type="Script" uid="uid://8w1dn35u20tw" path="res://addons/mpf-gmc/classes/mpf_ducking.gd" id="1_a8xgx"]
+[ext_resource type="Script" uid="uid://bsvo8cxf10088" path="res://addons/mpf-gmc/classes/mpf_sound_marker.gd" id="2_jamkn"]
+[ext_resource type="Script" uid="uid://e2h352i1jeqi" path="res://addons/mpf-gmc/classes/mpf_sound.gd" id="3_xvhep"]
+[ext_resource type="AudioStream" uid="uid://d01bwyrhhgx6a" path="res://sounds/player2_start_sound.ogg" id="4_a8xgx"]
+
+[sub_resource type="Resource" id="Resource_dnknj"]
+script = ExtResource("1_a8xgx")
+target_bus = "music"
+attenuation = 0.8
+attack = 0.1
+release = 0.1
+release_point = 0.1
+metadata/_custom_type_script = "uid://dg58qg3qtrfxx"
+
+[resource]
+script = ExtResource("3_xvhep")
+stream = ExtResource("4_a8xgx")
+bus = "voice"
+ducking = SubResource("Resource_dnknj")

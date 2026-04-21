@@ -64,6 +64,7 @@ variable_name = "ball"
 template_string = "Ball %s"
 
 [node name="p1billboard" type="Sprite2D" parent="."]
+z_as_relative = false
 position = Vector2(960, 544)
 scale = Vector2(0.88, 0.88)
 texture = ExtResource("6_6mjul")

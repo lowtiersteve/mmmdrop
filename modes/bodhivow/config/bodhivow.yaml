@@ -1,0 +1,378 @@
+#config_version=6
+
+mode:
+  start_events: carousel_item_selected{item=="bodhisattvavow"}
+  stop_events: mode_bodhisattvavow_stop, multiball_bodhisattvavow_ended
+  priority: 5001
+
+
+counters:
+  bodhisattvavow_spins_counter:
+    count_events: spinner_hit
+    events_when_complete: bodhisattvavow_spins_counter_complete
+    starting_count: 40
+    count_complete_value: 0
+    count_interval: 1
+    direction: down
+    persist_state: False
+    disable_on_complete: False
+    reset_on_complete: False
+    disable_events: mode_bodhisattvavow_ended
+    restart_events: mode_bodhisattvavow_started, bodhisattvavow_final_shot_hit
+    control_events:
+      - event: reset_bodhisattvavow_spins_counter
+        action: jump
+        value: 40
+  bodhisattvavow_ramps_counter:
+    count_events: left_ramp_hit, right_ramp_hit
+    events_when_complete: bodhisattvavow_ramps_counter_complete
+    starting_count: 4
+    count_complete_value: 0
+    count_interval: 1
+    direction: down
+    persist_state: False
+    disable_on_complete: False
+    reset_on_complete: False
+    disable_events: mode_bodhisattvavow_ended
+    restart_events: mode_bodhisattvavow_started, bodhisattvavow_final_shot_hit
+    control_events:
+      - event: reset_bodhisattvavow_ramps_counter
+        action: jump
+        value: 4
+  bodhisattvavow_drops_counter:
+    count_events: bottom_drop_hit, middle_drop_hit, top_drop_hit
+    events_when_complete: bodhisattvavow_drops_counter_complete
+    starting_count: 6
+    count_complete_value: 0
+    count_interval: 1
+    direction: down
+    persist_state: False
+    disable_on_complete: False
+    reset_on_complete: False
+    disable_events: mode_bodhisattvavow_ended
+    restart_events: mode_bodhisattvavow_started, bodhisattvavow_final_shot_hit
+    control_events:
+      - event: reset_bodhisattvavow_drops_counter
+        action: jump
+        value: 6
+  bodhisattvavow_pops_counter:
+    count_events: pop1_hit, pop2_hit, pop3_hit
+    events_when_complete: bodhisattvavow_pops_counter_complete
+    starting_count: 10
+    count_complete_value: 0
+    count_interval: 1
+    direction: down
+    persist_state: False
+    disable_on_complete: False
+    reset_on_complete: False
+    disable_events: mode_bodhisattvavow_ended
+    restart_events: mode_bodhisattvavow_started, bodhisattvavow_final_shot_hit
+    control_events:
+      - event: reset_bodhisattvavow_pops_counter
+        action: jump
+        value: 10
+
+
+accruals:
+  completing_bodhisattvavow_counters:
+    events:
+      - bodhisattvavow_pops_counter_complete
+      - bodhisattvavow_ramps_counter_complete
+      - bodhisattvavow_drops_counter_complete
+      - bodhisattvavow_spins_counter_complete
+    events_when_complete: bodhisattvavow_final_shot_lit
+    restart_events: mode_bodhisattvavow_started, bodhisattvavow_final_shot_hit
+
+
+sequences:
+  bodhisattvavow_final_shot:
+    events:
+      - scoop_hit
+    enable_events: bodhisattvavow_final_shot_lit
+    events_when_complete: bodhisattvavow_final_shot_hit
+    reset_on_complete: True
+    start_enabled: False
+    restart_events: bodhisattvavow_final_shot_lit
+
+
+variable_player:
+  bodhisattvavow_drops_counter_complete:
+    score: 10000000 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier
+    mode_bodhisattvavow_score: 10000000 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier
+  bodhisattvavow_pops_counter_complete:
+    score: 10000000 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier
+    mode_bodhisattvavow_score: 10000000 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier
+  bodhisattvavow_ramps_counter_complete:
+    score: 10000000 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier
+    mode_bodhisattvavow_score: 10000000 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier
+  bodhisattvavow_spins_counter_complete:
+    score: 10000000 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier
+    mode_bodhisattvavow_score: 10000000 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier
+  bodhisattvavow_final_shot_hit:
+    score: 20000000 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier
+    mode_bodhisattvavow_score: 20000000 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier
+    bodhisattvavow_pops_remaining:
+      int: 10
+      action: set
+    bodhisattvavow_spins_remaining:
+      int: 40
+      action: set
+    bodhisattvavow_drops_remaining:
+      int: 6
+      action: set
+    bodhisattvavow_ramps_remaining:
+      int: 4
+      action: set
+  timer_bodhisattvavow_intro_show_tick:
+    bodhisattvavow_intro_show_variable_times_100:
+      int: device.timers.bodhisattvavow_intro_show.ticks * 100
+      action: set
+  mode_bodhisattvavow_started:
+    mode_blocking_flag:
+      int: 1
+      action: set
+    mode_bodhisattvavow_score:
+      int: 0
+      action: set
+    modes_played: 1
+    modes_completed: 1
+    battery_charged_yesorno:
+      int: 0
+      action:
+        set
+    bodhisattvavow_pops_remaining:
+      int: 10
+      action: set
+    bodhisattvavow_spins_remaining:
+      int: 40
+      action: set
+    bodhisattvavow_drops_remaining:
+      int: 6
+      action: set
+    bodhisattvavow_ramps_remaining:
+      int: 4
+      action: set
+  logicblock_bodhisattvavow_spins_counter_hit:
+    bodhisattvavow_spins_remaining:
+      int: -1
+      action: add
+  logicblock_bodhisattvavow_pops_counter_hit:
+    bodhisattvavow_pops_remaining:
+      int: -1
+      action: add
+  logicblock_bodhisattvavow_ramps_counter_hit:
+    bodhisattvavow_ramps_remaining:
+      int: -1
+      action: add
+  logicblock_bodhisattvavow_drops_counter_hit:
+    bodhisattvavow_drops_remaining:
+      int: -1
+      action: add
+
+
+slide_player:
+  mode_bodhisattvavow_started:
+    current_mode_highlighted:
+      action: remove
+    base:
+      action: remove
+    basevideo1:
+      action: remove
+    basevideo2:
+      action: remove
+    basevideo3:
+      action: remove
+    basevideo4:
+      action: remove
+    current_wizard_mode_highlighted:
+      action: remove
+    bodhisattvavow:
+      action: play
+      priority: 500000
+    bodhisattvavow_instructions:
+      action: play
+      priority: 500001
+      expire: 8s
+  flipper_cancel{device.ball_holds.bodhisattvavow_scoop_hold.balls_held==1}:
+    bodhisattvavow_instructions:
+      action: remove
+  timer_bodhisattvavow_intro_show_complete:
+    bodhisattvavow_drops_counter:
+      action: play
+      priority: 800000
+    bodhisattvavow_pops_counter:
+      action: play
+      priority: 800000
+    bodhisattvavow_spins_counter:
+      action: play
+      priority: 800000
+    bodhisattvavow_ramps_counter:
+      action: play
+      priority: 800000
+  bodhisattvavow_final_shot_lit:
+    bodhisattvavow_final_shot_lit:
+      action: play
+      priority: 800000
+    bodhisattvavow_spins_counter:
+      action: remove
+    bodhisattvavow_ramps_counter:
+      action: remove
+    bodhisattvavow_drops_counter:
+      action: remove
+    bodhisattvavow_pops_counter:
+      action: remove
+  bodhisattvavow_final_shot_hit:
+    bodhisattvavow_final_shot_lit:
+      action: remove
+    bodhisattvavow_superjackpot:
+      action: play
+      expire: 3s
+      priority: 800000
+  slide_bodhisattvavow_superjackpot_removed:
+    bodhisattvavow_drops_counter:
+      action: play
+      priority: 800000
+    bodhisattvavow_pops_counter:
+      action: play
+      priority: 800000
+    bodhisattvavow_spins_counter:
+      action: play
+      priority: 800000
+    bodhisattvavow_ramps_counter:
+      action: play
+      priority: 800000
+  bodhisattvavow_drops_counter_complete:
+    bodhisattvavow_drops_counter:
+      action: remove
+  bodhisattvavow_spins_counter_complete:
+    bodhisattvavow_spins_counter:
+      action: remove
+  bodhisattvavow_pops_counter_complete:
+    bodhisattvavow_pops_counter:
+      action: remove
+  bodhisattvavow_ramps_counter_complete:
+    bodhisattvavow_ramps_counter:
+      action: remove
+
+
+sound_player:
+  mode_bodhisattvavow_started:
+    bodhisattvavowmusic:
+      action: replace
+      bus: music
+      loops: 5
+  bodhisattvavow_drops_counter_complete:
+    success_shot:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  bodhisattvavow_pops_counter_complete:
+    success_shot:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  bodhisattvavow_ramps_counter_complete:
+    success_shot:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  bodhisattvavow_spins_counter_complete:
+    success_shot:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  bodhisattvavow_final_shot_hit:
+    success_finish:
+      action: play
+      bus: effects
+      max_queue_time: 1s
+
+
+
+timers:
+  bodhisattvavow_intro_show:
+    start_value: 0
+    end_value: 10
+    control_events:
+      - action: start
+        event: mode_bodhisattvavow_started
+      - action: jump
+        value: 10
+        event: flipper_cancel{device.ball_holds.bodhisattvavow_scoop_hold.balls_held==1}
+
+
+show_player:
+  mode_bodhisattvavow_started:
+    bodhisattvavow_stadium_intro_lights:
+      action: play
+      loops: -1
+  timer_bodhisattvavow_intro_show_complete:
+    bodhisattvavow_stadium_intro_lights:
+      action: stop
+    bodhisattvavow_backboard_show:
+      action: play
+      loops: -1
+    bodhisattvavow_ramps_shot:
+      action: play
+      loops: -1
+    bodhisattvavow_spins_shot:
+      action: play
+      loops: -1
+    bodhisattvavow_pops_shot:
+      action: play
+      loops: -1
+    bodhisattvavow_drops_shot:
+      action: play
+      loops: -1
+  bodhisattvavow_ramps_counter_complete:
+    bodhisattvavow_ramps_shot:
+      action: stop
+  bodhisattvavow_spins_counter_complete:
+    bodhisattvavow_spins_shot:
+      action: stop
+  bodhisattvavow_pops_counter_complete:
+    bodhisattvavow_pops_shot:
+      action: stop
+  bodhisattvavow_drops_counter_complete:
+    bodhisattvavow_drops_shot:
+      action: stop
+  bodhisattvavow_final_shot_lit:
+    bodhisattvavow_final_shot:
+      action: play
+      loops: -1
+  bodhisattvavow_final_shot_hit:
+    bodhisattvavow_final_shot:
+      action: stop
+    bodhisattvavow_ramps_shot:
+      action: play
+      loops: -1
+    bodhisattvavow_spins_shot:
+      action: play
+      loops: -1
+    bodhisattvavow_pops_shot:
+      action: play
+      loops: -1
+    bodhisattvavow_drops_shot:
+      action: play
+      loops: -1
+  ball_hold_bodhisattvavow_scoop_hold_balls_released:
+    ball_save_show:
+      action: play
+      loops: -1
+  multiball_bodhisattvavow_shoot_again_ended:
+    ball_save_show:
+      action: stop
+
+
+shot_profiles:
+  bodhisattvavow_shot:
+    advance_on_hit: False
+    states:
+      - name: "off"
+      - name: lit
+        show: flash_color
+        show_tokens:
+          color: DodgerBlue
+        speed: 2
+    loop: False
+

@@ -107,6 +107,12 @@ variable_player:
     bonus_multiplier:
       int: 1
       action: add
+    instruments_collected_this_ball:
+      int: 1
+      action: add
+    instruments_collected_total:
+      int: 1
+      action: add
   boombox_collected:
     boombox_collected:
       int: 1
@@ -115,12 +121,24 @@ variable_player:
     bonus_multiplier:
       int: 1
       action: add
+    instruments_collected_this_ball:
+      int: 1
+      action: add
+    instruments_collected_total:
+      int: 1
+      action: add
   turntable_collected:
     turntable_collected:
       int: 1
       action: set
     score: 500000 * current_player.playfield_x
     bonus_multiplier:
+      int: 1
+      action: add
+    instruments_collected_this_ball:
+      int: 1
+      action: add
+    instruments_collected_total:
       int: 1
       action: add
   all_instruments_collected:

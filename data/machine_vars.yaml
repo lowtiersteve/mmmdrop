@@ -1,3 +1,7 @@
+balls_per_game:
+  expire: null
+  expire_secs: null
+  value: 3
 fast_audio_headphones_volume:
   expire: null
   expire_secs: null
@@ -9,7 +13,11 @@ fast_audio_main_volume:
 master_volume:
   expire: null
   expire_secs: null
-  value: 0.65
+  value: 0.75
+max_players:
+  expire: null
+  expire_secs: null
+  value: 4
 player1_score:
   expire: null
   expire_secs: null

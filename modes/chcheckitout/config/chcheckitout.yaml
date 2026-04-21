@@ -219,4 +219,6 @@ event_player:
   slide_threemcsand1djfailed_removed{current_player.chcheckitout_multiball_blocking_flag==1}: chcheckitout_music_from_mode
   slide_highplainsdrifterfinish_removed{current_player.chcheckitout_multiball_blocking_flag==1}: chcheckitout_music_from_mode
   slide_highplainsdrifterfailed_removed{current_player.chcheckitout_multiball_blocking_flag==1}: chcheckitout_music_from_mode
+  s_right_orbit_active{device.diverters.up_post.active==False and device.sequences.chcheckitout_superjackpot.enabled==True}: uppost_up
+  inner_loop_hit: uppost_down
 

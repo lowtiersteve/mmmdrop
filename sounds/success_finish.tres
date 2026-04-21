@@ -1,8 +1,21 @@
-[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://celywxd7scl7f"]
+[gd_resource type="Resource" script_class="MPFSoundAsset" load_steps=6 format=3 uid="uid://3k2u65vwkp5b"]
 
-[ext_resource type="AudioStream" uid="uid://beveb24oo7hxu" path="res://sounds/success.wav" id="1_bdgv7"]
+[ext_resource type="Script" uid="uid://8w1dn35u20tw" path="res://addons/mpf-gmc/classes/mpf_ducking.gd" id="1_i5a3o"]
+[ext_resource type="Script" uid="uid://bsvo8cxf10088" path="res://addons/mpf-gmc/classes/mpf_sound_marker.gd" id="2_vbrnh"]
+[ext_resource type="Script" uid="uid://e2h352i1jeqi" path="res://addons/mpf-gmc/classes/mpf_sound.gd" id="3_4o224"]
+[ext_resource type="AudioStream" uid="uid://ddosajan7pn1d" path="res://sounds/yeah.ogg" id="4_i5a3o"]
+
+[sub_resource type="Resource" id="Resource_dnknj"]
+script = ExtResource("1_i5a3o")
+target_bus = "music"
+attenuation = 0.8
+attack = 0.1
+release = 0.1
+release_point = 0.1
+metadata/_custom_type_script = "uid://dg58qg3qtrfxx"
 
 [resource]
-playback_mode = 2
-streams_count = 1
-stream_0/stream = ExtResource("1_bdgv7")
+script = ExtResource("3_4o224")
+stream = ExtResource("4_i5a3o")
+bus = "voice"
+ducking = SubResource("Resource_dnknj")

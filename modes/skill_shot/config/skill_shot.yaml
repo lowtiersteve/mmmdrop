@@ -136,42 +136,42 @@ slide_player:
   player_shot_skillshot_hideout_plunge{device.shots.skillshot_hideout_plunge.state==1}:
     skillshot_overlay_hideout:
       action: play
-      priority: 950000
+      priority: 990000
   player_shot_skillshot_hideout_plunge{device.shots.skillshot_hideout_plunge.state!=1}:
     skillshot_overlay_hideout:
       action: remove
   player_shot_skillshot_side_targets{device.shots.skillshot_side_targets.state==1}:
     skillshot_overlay_sidetargets:
       action: play
-      priority: 950000
+      priority: 990000
   player_shot_skillshot_side_targets{device.shots.skillshot_side_targets.state!=1}:
     skillshot_overlay_sidetargets:
       action: remove
   player_shot_skillshot_super{device.shots.skillshot_super.state==1}:
     skillshot_overlay_super:
       action: play
-      priority: 950000
+      priority: 990000
   player_shot_skillshot_super{device.shots.skillshot_super.state!=1}:
     skillshot_overlay_super:
       action: remove
   player_shot_skillshot_lower_pop{device.shots.skillshot_lower_pop.state==1}:
     skillshot_overlay_lowerpop:
       action: play
-      priority: 950000
+      priority: 990000
   player_shot_skillshot_lower_pop{device.shots.skillshot_lower_pop.state!=1}:
     skillshot_overlay_lowerpop:
       action: remove
   player_shot_skillshot_left_outlane{device.shots.skillshot_left_outlane.state==1}:
     skillshot_overlay_leftoutlane:
       action: play
-      priority: 950000
+      priority: 990000
   player_shot_skillshot_left_outlane{device.shots.skillshot_left_outlane.state!=1}:
     skillshot_overlay_leftoutlane:
       action: remove
   player_shot_skillshot_drop_targets{device.shots.skillshot_drop_targets.state==1}:
     skillshot_overlay_droptargets:
       action: play
-      priority: 950000
+      priority: 990000
   player_shot_skillshot_drop_targets{device.shots.skillshot_drop_targets.state!=1}:
     skillshot_overlay_droptargets:
       action: remove

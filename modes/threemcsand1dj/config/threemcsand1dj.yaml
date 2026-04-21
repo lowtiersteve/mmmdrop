@@ -190,6 +190,8 @@ event_player:
   threemcsand1dj_scratches_counter_complete: mode_threemcsand1dj_success
   logicblock_threemcsand1dj_scratches_counter_hit: add_threemcsand1dj_time_5s
   pop_standup_hit: add_threemcsand1dj_time_15s, decrease_perps
+  s_right_orbit_active{device.diverters.up_post.active==False}: uppost_up
+  inner_loop_hit: uppost_down
 
 
 shot_profiles:

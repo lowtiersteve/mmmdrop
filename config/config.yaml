@@ -82,6 +82,7 @@ config:
   - switches.yaml
   - lights.yaml
 
+
 machine_vars:
   game_just_played:
     initial_value: 0
@@ -89,11 +90,18 @@ machine_vars:
     value_type: int
 
 
+
 playfields:
   playfield:
     tags: default
     default_source_device: bd_plunger
     enable_ball_search: False
+
+
+game:
+  balls_per_game: settings.balls_per_game
+  max_players: settings.max_players
+
 
 flippers:
   left_flipper:
@@ -128,6 +136,17 @@ ball_devices:
     eject_coil: c_scoop_eject
     eject_timeouts: 3s
 
+
+diverters:
+  up_post:
+    activation_coil: c_uppost
+    activate_events: uppost_up
+    deactivate_events: uppost_down, inner_loop_hit, left_orbit_hit, right_orbit_hit
+    activation_time: 1s
+    enable_events: ball_started
+    disable_events: ball_ending
+    type: hold
+
 ball_saves:
   default:
     active_time: 10s
@@ -145,8 +164,8 @@ ball_saves:
     auto_launch: True
     balls_to_save: -1
   instrument_collect:
-    active_time: 4s
-    hurry_up_time: 2s
+    active_time: 10s
+    hurry_up_time: 3s
     grace_period: 1s
     enable_events: microphone_collected, boombox_collected, turntable_collected
     auto_launch: True
@@ -190,6 +209,7 @@ modes:
   - girls
   - highscore
   - instruments
+  - wizardcarousel
 
 
 settings:
@@ -201,7 +221,7 @@ settings:
       200000000: "200,000,000"
     default: 100000000
     key_type: int
-    sort: 100
+    sort: 300
   warnings_to_tilt:
     label: "Number of Tilts to Tilt"
     values:
@@ -233,6 +253,27 @@ settings:
     default: 300
     key_type: int
     sort: 620
+  balls_per_game:
+    label: "Balls Per Game"
+    values:
+      1: "1"
+      3: "3 (Default)"
+      5: "5"
+      7: "7"
+      9: "9"
+    default: 3
+    key_type: int
+    sort: 100
+  max_players:
+    label: "Max Number of Players"
+    values:
+      1: "1"
+      2: "2"
+      3: "3"
+      4: "4 (Default)"
+    default: 4
+    key_type: int
+    sort: 150
 
 
 event_player:
@@ -407,4 +448,37 @@ player_vars:
     initial_value: 0
   tripletrouble_standups_remaining:
     initial_value: 7
+  instruments_collected_this_ball:
+    initial_value: 0
+  instruments_collected_total:
+    initial_value: 0
+  fingerlickingood_played:
+    initial_value: 0
+  highplainsdrifter_played:
+    initial_value: 0
+  intergalactic_played:
+    initial_value: 0
+  paulrevere_played:
+    initial_value: 0
+  sabotage_played:
+    initial_value: 0
+  threemcsand1dj_played:
+    initial_value: 0
+  toomanyrappers_played:
+    initial_value: 0
+  tripletrouble_played:
+    initial_value: 0
+  all_modes_played:
+    initial_value: 0
+  makesomenoise_mode_multiplier:
+    initial_value: 1
+  sureshot_mode_multiplier:
+    initial_value: 1
+  bodhisattvavow_mode_multiplier:
+    initial_value: 1
+  wizard_choice_select_variable_times_1:
+    initial_value: 10
+
+
+
 

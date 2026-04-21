@@ -8,7 +8,7 @@ mode:
 
 
 mode_settings:
-  selectable_items: intergalactic{not device.achievements.intergalactic_mode.state=="completed"}, paulrevere{not device.achievements.paulrevere_mode.state=="completed"}, tripletrouble{not device.achievements.tripletrouble_mode.state=="completed"}, sabotage{not device.achievements.sabotage_mode.state=="completed"}, highplainsdrifter{not device.achievements.highplainsdrifter_mode.state=="completed"}, threemcsand1dj{not device.achievements.threemcsand1dj_mode.state=="completed"}, toomanyrappers{not device.achievements.toomanyrappers_mode.state=="completed"}, fingerlickingood{not device.achievements.fingerlickingood_mode.state=="completed"}
+  selectable_items: intergalactic{not device.achievements.intergalactic_mode.state=="completed" and current_player.intergalactic_played==current_player.all_modes_played}, paulrevere{not device.achievements.paulrevere_mode.state=="completed" and current_player.paulrevere_played==current_player.all_modes_played}, tripletrouble{not device.achievements.tripletrouble_mode.state=="completed" and current_player.tripletrouble_played==current_player.all_modes_played}, sabotage{not device.achievements.sabotage_mode.state=="completed" and current_player.sabotage_played==current_player.all_modes_played}, highplainsdrifter{not device.achievements.highplainsdrifter_mode.state=="completed" and current_player.highplainsdrifter_played==current_player.all_modes_played}, threemcsand1dj{not device.achievements.threemcsand1dj_mode.state=="completed" and current_player.threemcsand1dj_played==current_player.all_modes_played}, toomanyrappers{not device.achievements.toomanyrappers_mode.state=="completed" and current_player.toomanyrappers_played==current_player.all_modes_played}, fingerlickingood{not device.achievements.fingerlickingood_mode.state=="completed" and current_player.fingerlickingood_played==current_player.all_modes_played}
   select_item_events: scoop_hit{current_player.battery_charged_yesorno==1}
   next_item_events: pop1_hit, pop2_hit, carousel_advance, carousel_advance_2, carousel_advance_3, carousel_advance_4, carousel_advance_5, carousel_advance_6, carousel_advance_7
   previous_item_events: pop3_hit
@@ -57,14 +57,14 @@ slide_player:
 
 
 event_player:
-  select_intergalactic: mode_intergalactic_start
-  select_paulrevere: mode_paulrevere_start
-  select_tripletrouble: mode_tripletrouble_start
-  select_sabotage: mode_sabotage_start
-  select_fingerlickingood: mode_fingerlickingood_start
-  select_toomanyrappers: mode_toomanyrappers_start
-  select_threemcsand1dj: mode_threemcsand1dj_start
-  select_highplainsdrifter: mode_highplainsdrifter_start
+#  select_intergalactic: mode_intergalactic_start
+#  select_paulrevere: mode_paulrevere_start
+#  select_tripletrouble: mode_tripletrouble_start
+#  select_sabotage: mode_sabotage_start
+#  select_fingerlickingood: mode_fingerlickingood_start
+#  select_toomanyrappers: mode_toomanyrappers_start
+#  select_threemcsand1dj: mode_threemcsand1dj_start
+#  select_highplainsdrifter: mode_highplainsdrifter_start
   achievement_wizard1_state_enabled: stop_carousel
   random_mode_picker_paulrevere: carousel_advance
   random_mode_picker_tripletrouble: carousel_advance, carousel_advance_2

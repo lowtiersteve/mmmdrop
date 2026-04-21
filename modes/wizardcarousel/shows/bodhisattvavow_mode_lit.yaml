@@ -1,0 +1,9 @@
+#show_version=6
+
+- duration: 200ms
+  lights:
+    l_wizardindicator_rectangle_led: yellow
+- duration: 200ms
+  lights:
+    l_wizardindicator_rectangle_led: stop
+

@@ -61,6 +61,11 @@ coils:
     number: 3208-0
     default_pulse_ms: 20
     label: "Auto Plunger"
+  c_uppost:
+    number: 0804b-3
+    default_pulse_ms: 15
+    label: "Up Post"
+    default_hold_power: 0.5
 
 
 autofire_coils:

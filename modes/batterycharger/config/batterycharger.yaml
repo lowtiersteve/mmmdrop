@@ -344,97 +344,97 @@ widget_player:
       slide: score_overlay
       priority: 901000
       key: "battery"
-  slide_fingerlickingoodfailed_removed{device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.enabled==True and current_player.battery_charged_yesorno==0}:
+  slide_fingerlickingoodfailed_removed{device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.enabled==True and current_player.battery_charged_yesorno==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     charges_remaining:
       action: play
       slide: score_overlay
       priority: 901000
       key: "battery"
-  slide_fingerlickingoodfinish_removed{device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.enabled==True and current_player.battery_charged_yesorno==0}:
+  slide_fingerlickingoodfinish_removed{device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.enabled==True and current_player.battery_charged_yesorno==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     charges_remaining:
       action: play
       slide: score_overlay
       priority: 901000
       key: "battery"
-  slide_highplainsdrifterfailed_removed{device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.enabled==True and current_player.battery_charged_yesorno==0}:
+  slide_highplainsdrifterfailed_removed{device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.enabled==True and current_player.battery_charged_yesorno==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     charges_remaining:
       action: play
       slide: score_overlay
       priority: 901000
       key: "battery"
-  slide_highplainsdrifterfinish_removed{device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.enabled==True and current_player.battery_charged_yesorno==0}:
+  slide_highplainsdrifterfinish_removed{device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.enabled==True and current_player.battery_charged_yesorno==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     charges_remaining:
       action: play
       slide: score_overlay
       priority: 901000
       key: "battery"
-  slide_intergalacticfailed_removed{device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.enabled==True and current_player.battery_charged_yesorno==0}:
+  slide_intergalacticfailed_removed{device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.enabled==True and current_player.battery_charged_yesorno==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     charges_remaining:
       action: play
       slide: score_overlay
       priority: 901000
       key: "battery"
-  slide_intergalacticfinish_removed{device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.enabled==True and current_player.battery_charged_yesorno==0}:
+  slide_intergalacticfinish_removed{device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.enabled==True and current_player.battery_charged_yesorno==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     charges_remaining:
       action: play
       slide: score_overlay
       priority: 901000
       key: "battery"
-  slide_paulreverefailed_removed{device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.enabled==True and current_player.battery_charged_yesorno==0}:
+  slide_paulreverefailed_removed{device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.enabled==True and current_player.battery_charged_yesorno==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     charges_remaining:
       action: play
       slide: score_overlay
       priority: 901000
       key: "battery"
-  slide_paulreverefinish_removed{device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.enabled==True and current_player.battery_charged_yesorno==0}:
+  slide_paulreverefinish_removed{device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.enabled==True and current_player.battery_charged_yesorno==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     charges_remaining:
       action: play
       slide: score_overlay
       priority: 901000
       key: "battery"
-  slide_sabotagefailed_removed{device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.enabled==True and current_player.battery_charged_yesorno==0}:
+  slide_sabotagefailed_removed{device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.enabled==True and current_player.battery_charged_yesorno==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     charges_remaining:
       action: play
       slide: score_overlay
       priority: 901000
       key: "battery"
-  slide_sabotagefinish_removed{device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.enabled==True and current_player.battery_charged_yesorno==0}:
+  slide_sabotagefinish_removed{device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.enabled==True and current_player.battery_charged_yesorno==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     charges_remaining:
       action: play
       slide: score_overlay
       priority: 901000
       key: "battery"
-  slide_threemcsand1djfailed_removed{device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.enabled==True and current_player.battery_charged_yesorno==0}:
+  slide_threemcsand1djfailed_removed{device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.enabled==True and current_player.battery_charged_yesorno==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     charges_remaining:
       action: play
       slide: score_overlay
       priority: 901000
       key: "battery"
-  slide_threemcsand1djfinish_removed{device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.enabled==True and current_player.battery_charged_yesorno==0}:
+  slide_threemcsand1djfinish_removed{device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.enabled==True and current_player.battery_charged_yesorno==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     charges_remaining:
       action: play
       slide: score_overlay
       priority: 901000
       key: "battery"
-  slide_toomanyrappersfailed_removed{device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.enabled==True and current_player.battery_charged_yesorno==0}:
+  slide_toomanyrappersfailed_removed{device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.enabled==True and current_player.battery_charged_yesorno==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     charges_remaining:
       action: play
       slide: score_overlay
       priority: 901000
       key: "battery"
-  slide_toomanyrappersfinish_removed{device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.enabled==True and current_player.battery_charged_yesorno==0}:
+  slide_toomanyrappersfinish_removed{device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.enabled==True and current_player.battery_charged_yesorno==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     charges_remaining:
       action: play
       slide: score_overlay
       priority: 901000
       key: "battery"
-  slide_tripletroublefailed_removed{device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.enabled==True and current_player.battery_charged_yesorno==0}:
+  slide_tripletroublefailed_removed{device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.enabled==True and current_player.battery_charged_yesorno==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     charges_remaining:
       action: play
       slide: score_overlay
       priority: 901000
       key: "battery"
-  slide_tripletroublefinish_removed{device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.enabled==True and current_player.battery_charged_yesorno==0}:
+  slide_tripletroublefinish_removed{device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.enabled==True and current_player.battery_charged_yesorno==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     charges_remaining:
       action: play
       slide: score_overlay
@@ -512,6 +512,29 @@ widget_player:
       action: remove
       key: "battery"
       slide: score_overlay
+  mode_chcheckitout_stopped{current_player.battery_charged_yesorno!=0 and current_player.mode_blocking_flag==0}:
+    charges_remaining:
+      action: play
+      slide: score_overlay
+      priority: 925000
+      key: "battery"
+  mode_bodymovin_stopped{current_player.battery_charged_yesorno!=0 and current_player.mode_blocking_flag==0}:
+    charges_remaining:
+      action: play
+      slide: score_overlay
+      priority: 925000
+      key: "battery"
+  mode_chcheckitout_started:
+    charges_remaining:
+      action: remove
+      key: "battery"
+      slide: score_overlay
+  mode_bodymovin_started:
+    charges_remaining:
+      action: remove
+      key: "battery"
+      slide: score_overlay
+
 
 
 sound_player:

@@ -1,0 +1,86 @@
+[gd_scene load_steps=6 format=3 uid="uid://dqbn5idmqcvx6"]
+
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_8hjcj"]
+[ext_resource type="Texture2D" uid="uid://4raxxrdomjfd" path="res://assets/Soundsofscience.jpg" id="2_8hjcj"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="3_ohsuo"]
+[ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="4_37oc0"]
+[ext_resource type="Script" uid="uid://808knhb8e2nn" path="res://addons/mpf-gmc/classes/mpf_conditional_children.gd" id="5_y3go7"]
+
+[node name="bonus_instruments_slide" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_8hjcj")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(900, 750)
+scale = Vector2(9, 9)
+texture = ExtResource("2_8hjcj")
+
+[node name="instrumentscollected" type="Label" parent="."]
+layout_mode = 0
+offset_left = 406.0
+offset_top = 129.0
+offset_right = 1575.0
+offset_bottom = 410.0
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("3_ohsuo")
+theme_override_font_sizes/font_size = 136
+text = "instruments
+collected:"
+
+[node name="x100000" type="Label" parent="."]
+layout_mode = 0
+offset_left = 736.0
+offset_top = 504.0
+offset_right = 1760.0
+offset_bottom = 643.0
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("3_ohsuo")
+theme_override_font_sizes/font_size = 136
+text = "X 100,000 ="
+
+[node name="instruments_collected_this_ball" type="Label" parent="."]
+layout_mode = 0
+offset_left = 264.0
+offset_top = 520.0
+offset_right = 608.0
+offset_bottom = 634.0
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("3_ohsuo")
+theme_override_font_sizes/font_size = 111
+text = "0"
+horizontal_alignment = 1
+script = ExtResource("4_37oc0")
+variable_name = "instruments_collected_this_ball"
+comma_separate = true
+min_digits = 1
+
+[node name="MPFConditionalChildren" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("5_y3go7")
+variable_type = 1
+variable_name = "entry"
+
+[node name="bonus_instruments" type="Control" parent="MPFConditionalChildren"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="bonus_entry_score" type="Label" parent="MPFConditionalChildren/bonus_instruments"]
+layout_mode = 0
+offset_left = 296.0
+offset_top = 800.0
+offset_right = 1568.0
+offset_bottom = 914.0
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("3_ohsuo")
+theme_override_font_sizes/font_size = 111
+text = "0"
+horizontal_alignment = 1
+script = ExtResource("4_37oc0")
+variable_type = 1
+variable_name = "score"
+comma_separate = true
+min_digits = 1

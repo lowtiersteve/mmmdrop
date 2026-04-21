@@ -3,21 +3,25 @@
 - duration: 100ms
   lights:
     l_scoopmode_square_led: Gold
-    l_wizardindicator2_rectangle_led: Gold
     l_scoop_arrow_led: stop
+    l_leftorbit_arrow_led: stop
 - duration: 200ms
   lights:
     l_scoopmode_circle2_led: Gold
+    l_leftorbit_rectangle_led: Gold
 - duration: 200ms
   lights:
     l_scoopcombo_circle_led: Gold
+    l_leftorbitcombo_circle_led: Gold
     l_scoopmode_square_led: stop
 - duration: 200ms
   lights:
     l_scoop_arrow_led: Gold
+    l_leftorbit_arrow_led: Gold
     l_scoopmode_circle2_led: stop
-    l_wizardindicator2_rectangle_led: stop
+    l_leftorbit_rectangle_led: stop
 - duration: 300ms
   lights:
     l_scoopcombo_circle_led: stop
+    l_leftorbitcombo_circle_led: stop
 

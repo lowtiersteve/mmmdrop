@@ -1,7 +1,7 @@
 #config_version=6
 
 mode:
-  start_events: start_makesomenoise
+  start_events: carousel_item_selected{item=="makesomenoise"}
   stop_events: mode_makesomenoise_stop, multiball_makesomenoise_ended
   priority: 5001
 
@@ -97,20 +97,20 @@ sequences:
 
 variable_player:
   makesomenoise_drops_counter_complete:
-    score: 10000000 * current_player.playfield_x
-    mode_makesomenoise_score: 10000000 * current_player.playfield_x
+    score: 10000000 * current_player.playfield_x * current_player.makesomenoise_mode_multiplier
+    mode_makesomenoise_score: 10000000 * current_player.playfield_x * current_player.makesomenoise_mode_multiplier
   makesomenoise_pops_counter_complete:
-    score: 10000000 * current_player.playfield_x
-    mode_makesomenoise_score: 10000000 * current_player.playfield_x
+    score: 10000000 * current_player.playfield_x * current_player.makesomenoise_mode_multiplier
+    mode_makesomenoise_score: 10000000 * current_player.playfield_x * current_player.makesomenoise_mode_multiplier
   makesomenoise_ramps_counter_complete:
-    score: 10000000 * current_player.playfield_x
-    mode_makesomenoise_score: 10000000 * current_player.playfield_x
+    score: 10000000 * current_player.playfield_x * current_player.makesomenoise_mode_multiplier
+    mode_makesomenoise_score: 10000000 * current_player.playfield_x * current_player.makesomenoise_mode_multiplier
   makesomenoise_spins_counter_complete:
-    score: 10000000 * current_player.playfield_x
-    mode_makesomenoise_score: 10000000 * current_player.playfield_x
+    score: 10000000 * current_player.playfield_x * current_player.makesomenoise_mode_multiplier
+    mode_makesomenoise_score: 10000000 * current_player.playfield_x * current_player.makesomenoise_mode_multiplier
   makesomenoise_final_shot_hit:
-    score: 20000000 * current_player.playfield_x
-    mode_makesomenoise_score: 20000000 * current_player.playfield_x
+    score: 20000000 * current_player.playfield_x * current_player.makesomenoise_mode_multiplier
+    mode_makesomenoise_score: 20000000 * current_player.playfield_x * current_player.makesomenoise_mode_multiplier
     makesomenoise_pops_remaining:
       int: 10
       action: set
@@ -183,6 +183,8 @@ slide_player:
     basevideo3:
       action: remove
     basevideo4:
+      action: remove
+    current_wizard_mode_highlighted:
       action: remove
     makesomenoise:
       action: play
@@ -285,14 +287,6 @@ sound_player:
       bus: effects
       max_queue_time: 1s
 
-
-ball_holds:
-  makesomenoise_scoop_hold:
-    balls_to_hold: 1
-    hold_devices: bd_scoop
-    enable_events: mode_makesomenoise_started
-    disable_events: timer_makesomenoise_intro_show_complete
-    release_one_events: timer_makesomenoise_intro_show_complete
 
 
 timers:

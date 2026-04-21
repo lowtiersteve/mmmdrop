@@ -1,16 +1,14 @@
 [gd_scene load_steps=3 format=3 uid="uid://bfov174o5dkyq"]
 
-[ext_resource type="Script" uid="uid://bp5npfvnd6fvx" path="res://addons/mpf-gmc/classes/mpf_widget.gd" id="1_hcudx"]
+[ext_resource type="Script" uid="uid://d4ky3s4bg1ouq" path="res://addons/mpf-gmc/classes/mpf_widget.gd" id="1_hcudx"]
 [ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="2_f0f82"]
 
-[node name="makercredits" type="Control" node_paths=PackedStringArray("animation_player")]
+[node name="makercredits" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_hcudx")
-animation_player = NodePath("")
-metadata/_custom_type_script = "uid://bp5npfvnd6fvx"
 
 [node name="makercredits" type="Label" parent="."]
 top_level = true
@@ -29,12 +27,12 @@ Michael Rausch
 Rules:
 Michael Rausch and Stephen donaldson
 
-Code:
+Code programming:
 Stephen Donaldson
 
 display art:
 jess hunt
 
 cabinet and translite art:
-?"
+ricardo silva"
 horizontal_alignment = 1

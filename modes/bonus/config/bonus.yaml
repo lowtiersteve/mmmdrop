@@ -25,6 +25,10 @@ mode_settings:
       score: 200000
       player_score_entry: characters_collected
       skip_if_negative: True
+    - entry: bonus_instruments
+      score: 100000
+      player_score_entry: instruments_collected_this_ball
+      skip_if_negative: True
     - entry: bonus_girls_frenzy
       score: 1
       player_score_entry: girls_bonus_score
@@ -93,6 +97,22 @@ slide_player:
     bonus_characters_slide:
       action: play
       priority: 1000000
+  bonus_entry{entry=="bonus_instruments"}:
+    bonus_start_slide:
+      action: remove
+    bonus_modes_played_slide:
+      action: remove
+    bonus_modes_completed_slide:
+      action: remove
+    bonus_time_remaining:
+      action: remove
+    bonus_combos_slide:
+      action: remove
+    bonus_characters_slide:
+      action: remove
+    bonus_instruments_slide:
+      action: play
+      priority: 1000000
   bonus_entry{entry=="bonus_girls_frenzy"}:
     bonus_start_slide:
       action: remove
@@ -105,6 +125,8 @@ slide_player:
     bonus_combos_slide:
       action: remove
     bonus_characters_slide:
+      action: remove
+    bonus_instruments_slide:
       action: remove
     bonus_girls_slide:
       action: play
@@ -121,6 +143,8 @@ slide_player:
     bonus_combos_slide:
       action: remove
     bonus_characters_slide:
+      action: remove
+    bonus_instruments_slide:
       action: remove
     bonus_girls_slide:
       action: remove
@@ -139,6 +163,8 @@ slide_player:
     bonus_combos_slide:
       action: remove
     bonus_characters_slide:
+      action: remove
+    bonus_instruments_slide:
       action: remove
     bonus_girls_slide:
       action: remove
@@ -159,6 +185,8 @@ slide_player:
     bonus_combos_slide:
       action: remove
     bonus_characters_slide:
+      action: remove
+    bonus_instruments_slide:
       action: remove
     bonus_girls_slide:
       action: remove
@@ -204,6 +232,10 @@ sound_player:
     bonus_sound_random:
       action: play
       bus: effects
+  slide_bonus_instruments_slide_active:
+    bonus_sound_random:
+      action: play
+      bus: effects
   slide_bonus_multiplier_slide_active:
     bonus_sound_random:
       action: play
@@ -216,6 +248,7 @@ sound_player:
     bonus_sound_random:
       action: play
       bus: effects
+
 
 widget_player:
   slide_bonus_characters_slide_active{current_player.mca_collected==1}:
