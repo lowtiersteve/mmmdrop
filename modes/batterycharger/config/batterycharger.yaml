@@ -308,7 +308,7 @@ show_player:
     battery_red:
       action: play
       loops: -1
-  logicblock_battery_charged_status_updated{device.counters.battery_charged_status.value<11 and device.counters.battery_charged_status.value>0 and device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.enabled==True}:
+  logicblock_battery_charged_status_updated{device.counters.battery_charged_status.value<11 and device.counters.battery_charged_status.value>0 and device.achievements.wizard1.state!="enabled" and device.counters.battery_charged_status.enabled==True and current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0}:
     battery_red:
       action:
         stop

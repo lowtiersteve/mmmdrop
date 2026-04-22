@@ -193,7 +193,7 @@ slide_player:
       action: play
       priority: 500001
       expire: 8s
-  flipper_cancel{device.ball_holds.makesomenoise_scoop_hold.balls_held==1}:
+  flipper_cancel{device.ball_holds.wizard_scoop_hold.balls_held==1}:
     makesomenoise_instructions:
       action: remove
   timer_makesomenoise_intro_show_complete:
@@ -298,7 +298,7 @@ timers:
         event: mode_makesomenoise_started
       - action: jump
         value: 10
-        event: flipper_cancel{device.ball_holds.makesomenoise_scoop_hold.balls_held==1}
+        event: flipper_cancel{device.ball_holds.wizard_scoop_hold.balls_held==1}
 
 
 show_player:
@@ -322,6 +322,9 @@ show_player:
       action: play
       loops: -1
     makesomenoise_drops_shot:
+      action: play
+      loops: -1
+    ball_save_show:
       action: play
       loops: -1
   makesomenoise_ramps_counter_complete:
@@ -353,10 +356,6 @@ show_player:
       action: play
       loops: -1
     makesomenoise_drops_shot:
-      action: play
-      loops: -1
-  ball_hold_makesomenoise_scoop_hold_balls_released:
-    ball_save_show:
       action: play
       loops: -1
   multiball_makesomenoise_shoot_again_ended:

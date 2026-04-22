@@ -711,7 +711,7 @@ sound_player:
       action: play
       bus: music
       loops: 3
-  mode_base_started{current_player.ball==1}:
+  single_player_ball_started{current_player.ball==1}:
     player1_start:
       action: play
       bus: voice
