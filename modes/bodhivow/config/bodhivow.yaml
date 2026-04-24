@@ -5,7 +5,7 @@ mode:
   stop_events: mode_bodhivow_stop, timer_bodhisattvavow_time_remaining_complete
   priority: 5001
 
-
+#willitwork?
 counters:
   bodhisattvavow_area1_counter:
     count_events: inner_loop_hit, captive_ball_hit, scoop_hit, upper_pop_standup_hit, tshirt_top_standup_hit, tshirt_bottom_standup_hit
