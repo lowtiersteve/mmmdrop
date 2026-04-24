@@ -142,7 +142,7 @@ diverters:
     activation_coil: c_uppost
     activate_events: uppost_up
     deactivate_events: uppost_down, inner_loop_hit, left_orbit_hit, right_orbit_hit
-    activation_time: 1s
+    activation_time: 500ms
     enable_events: ball_started
     disable_events: ball_ending
     type: hold
