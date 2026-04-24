@@ -1,0 +1,30 @@
+#show_version=6
+
+- duration: -1
+  lights:
+    l_backpanel_gi1_led: yellow
+    l_backpanel_gi2_led: yellow
+    l_backpanel_gi3_led: yellow
+    l_backpanel_gi4_led: yellow
+    l_backpanel_gi5_led: yellow
+    l_innerloop_arrow_led: yellow
+    l_upperpop_smallarrow_led: yellow
+    l_captiveball_smallcircle_led: yellow
+    l_upperleftpop_inside_led: yellow
+    l_uppercenterpop_inside_led: yellow
+    l_innerloopcombo_circle_led: yellow
+    l_scoopmode_square_led: yellow
+    l_scoopmode_circle2_led: yellow
+    l_scoopcombo_circle_led: yellow
+    l_scoop_arrow_led: yellow
+    l_tshirttopcircle_led: yellow
+    l_tshirtbottomcircle_led: yellow
+    l_stadium_left_1: yellow
+    l_stadium_left_2: yellow
+    l_stadium_left_3: yellow
+    l_stadium_right_1: yellow
+    l_stadium_right_2: yellow
+    l_stadium_right_3: yellow
+    l_inner_loop_x: yellow
+    l_scoop_x: yellow
+

@@ -1,0 +1,37 @@
+#show_version=6
+
+- duration: -1
+  lights:
+    l_lowerdrop_circle_led: green
+    l_middledrop_circle_led: green
+    l_upperdrop_circle_led: green
+    l_dropstandup_flasher_led: green
+    l_dropbank_rectangle_led: green
+    l_leftoutlane_circle_led: green
+    l_leftinlane_circle_led: green
+    l_modeindicator1_rectangle_led: green
+    l_modeindicator2_rectangle_led: green
+    l_modeindicator5_rectangle_led: green
+    l_modeindicator6_rectangle_led: green
+    l_wizardindicator2_rectangle_led: green
+    l_supercircle1_led: green
+    l_supercircle2_led: green
+    l_supercircle3_led: green
+    l_cassetteleft_led: green
+    l_leftsling_uppergi_led: green
+    l_leftsling_lowergi_led: green
+    l_behinddropflasher_leftgi_led: green
+    l_stadium_left_15: green
+    l_stadium_left_16: green
+    l_stadium_left_17: green
+    l_stadium_left_18: green
+    l_stadium_left_19: green
+    l_stadium_left_20: green
+    l_stadium_left_21: green
+    l_stadium_left_22: green
+    l_stadium_left_23: green
+    l_stadium_left_24: green
+    l_stadium_left_25: green
+    l_stadium_left_26: green
+    l_stadium_left_27: green
+

@@ -1,0 +1,30 @@
+#show_version=6
+
+- duration: -1
+  lights:
+    l_backpanel_gi1_led: orange
+    l_backpanel_gi2_led: orange
+    l_backpanel_gi3_led: orange
+    l_backpanel_gi4_led: orange
+    l_backpanel_gi5_led: orange
+    l_innerloop_arrow_led: orange
+    l_upperpop_smallarrow_led: orange
+    l_captiveball_smallcircle_led: orange
+    l_upperleftpop_inside_led: orange
+    l_uppercenterpop_inside_led: orange
+    l_innerloopcombo_circle_led: orange
+    l_scoopmode_square_led: orange
+    l_scoopmode_circle2_led: orange
+    l_scoopcombo_circle_led: orange
+    l_scoop_arrow_led: orange
+    l_tshirttopcircle_led: orange
+    l_tshirtbottomcircle_led: orange
+    l_stadium_left_1: orange
+    l_stadium_left_2: orange
+    l_stadium_left_3: orange
+    l_stadium_right_1: orange
+    l_stadium_right_2: orange
+    l_stadium_right_3: orange
+    l_inner_loop_x: orange
+    l_scoop_x: orange
+

@@ -1,0 +1,8 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://nnjjeu278t0o"]
+
+[ext_resource type="AudioStream" uid="uid://b1kjfbv18nyjt" path="res://sounds/SureShotmusic.ogg" id="1_lnkhm"]
+
+[resource]
+playback_mode = 2
+streams_count = 1
+stream_0/stream = ExtResource("1_lnkhm")

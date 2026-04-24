@@ -623,8 +623,36 @@ lights:
     subtype: led
     type: rgb
     label: "Stadium Right 27"
-
-
+  l_left_orbit_x:
+    number: lightboard-8-13
+    subtype: led
+    type: rgb
+    label: "Left Orbit X"
+  l_left_ramp_x:
+    number: lightboard-8-14
+    subtype: led
+    type: rgb
+    label: "Left Ramp X"
+  l_inner_loop_x:
+    number: lightboard-8-15
+    subtype: led
+    type: rgb
+    label: "Upper Loop X"
+  l_scoop_x:
+    number: lightboard-8-16
+    subtype: led
+    type: rgb
+    label: "Scoop X"
+  l_right_ramp_x:
+    number: lightboard-8-17
+    subtype: led
+    type: rgb
+    label: "Right Ramp X"
+  l_right_orbit_x:
+    number: lightboard-8-18
+    subtype: led
+    type: rgb
+    label: "Right Orbit X"
 
 
 blinkenlights:

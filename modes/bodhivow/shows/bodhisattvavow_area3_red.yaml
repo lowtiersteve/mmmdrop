@@ -1,0 +1,26 @@
+#show_version=6
+
+- duration: -1
+  lights:
+    l_rightramp_arrow_led: red
+    l_rightorbit_arrow_led: red
+    l_rightrampcombo_circle_led: red
+    l_rightorbitcombo_circle_led: red
+    l_rightramprectangle_led: red
+    l_rightorbitrectangle_led: red
+    l_behindupperflipper_uppergi_led: red
+    l_behindupperflipper_lowergi_led: red
+    l_stadium_right_4: red
+    l_stadium_right_5: red
+    l_stadium_right_6: red
+    l_stadium_right_7: red
+    l_stadium_right_8: red
+    l_stadium_right_9: red
+    l_stadium_right_10: red
+    l_stadium_right_11: red
+    l_stadium_right_12: red
+    l_stadium_right_13: red
+    l_stadium_right_14: red
+    l_right_ramp_x: red
+    l_right_orbit_x: red
+

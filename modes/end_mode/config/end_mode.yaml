@@ -1,0 +1,46 @@
+#config_version=6
+
+mode:
+  start_events:
+    - timer_bodhisattvavow_time_remaining_complete
+  stop_events:
+    - widget_jam_on_removed
+  priority: 8150
+
+
+event_player:
+  mode_end_mode_started:
+    - disable_flippers
+    - disable_pops
+    - disable_slings
+  widget_jam_on_removed:
+    - enable_flippers
+    - enable_pops
+    - enable_slings
+
+
+queue_event_player:
+  mode_end_mode_started:
+    queue_event: my_queue_end_bodhisattvavow
+    events_when_finished: end_end_mode
+
+
+queue_relay_player:
+  my_queue_end_bodhisattvavow:
+    post: start_end_mode_intro
+    wait_for: widget_jam_on_removed
+  balldevice_bd_trough_ball_eject_attempt:
+    post: wait_for_instruction
+    wait_for: widget_jam_on_removed
+
+
+widget_player:
+  mode_end_mode_started:
+    jam_on:
+      action: play
+      slide: score_overlay
+      priority: 975000
+      expire: 10s
+  my_queue_end_bodhisattvavow:
+    jam_on:
+      action: remove

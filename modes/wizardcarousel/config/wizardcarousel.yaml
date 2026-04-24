@@ -15,6 +15,10 @@ mode_settings:
 
 
 variable_player:
+  mode_wizardcarousel_started:
+    girls_blocking_flag:
+      int: 1
+      action: set
   carousel_makesomenoise_selected:
     selected_mode:
       string: "Make Some Noise"
@@ -89,6 +93,21 @@ sound_player:
 
 
 show_player:
+  mode_wizardcarousel_started:
+    GI_on:
+      action: stop
+    GI_backboard_on:
+      action: stop
+    stadium_GI_on:
+      action: stop
+    battery_yellow:
+      action: stop
+    battery_green:
+      action: stop
+    battery_red:
+      action: stop
+    girls_ready:
+      action: stop
   carousel_item_highlighted{item=="makesomenoise"}:
     makesomenoise_mode_lit:
       action: play

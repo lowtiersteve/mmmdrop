@@ -25,6 +25,13 @@ multiballs:
     shoot_again: 45s
     reset_events: multiball_makesomenoise_ended
     enable_events: mode_makesomenoise_starting
+  bodhisattvavow:
+    ball_count: 4
+    start_events: timer_bodhisattvavow_intro_show_complete
+    shoot_again: 1000s
+    reset_events: multiball_bodhisattvavow_ended
+    enable_events: mode_bodhivow_starting
+    stop_events: timer_bodhisattvavow_time_remaining_complete
 
 
 sound_player:

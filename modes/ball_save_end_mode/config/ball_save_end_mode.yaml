@@ -1,0 +1,27 @@
+#config_version=6
+
+mode:
+  start_events:
+    - mode_end_mode_started
+  stop_events:
+    - mode_end_mode_stopped
+  priority: 9100
+
+ball_saves:
+  end_mode_ball_save:
+    enable_events: mode_ball_save_end_mode_started
+    auto_launch: false
+    balls_to_save: 1
+    debug: true
+
+show_player:
+  ball_save_end_mode_ball_save_enabled:
+    ball_save_show:
+      key: end_modes_ball_save_flash
+      speed: 3
+      action: play
+      priority: 9999
+  mode_ball_save_end_mode_stopping:
+    ball_save_show:
+      key: end_modes_ball_save_flash
+      action: stop

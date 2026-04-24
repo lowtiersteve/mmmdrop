@@ -1,0 +1,25 @@
+#show_version=6
+
+- duration: -1
+  lights:
+    l_leftorbit_arrow_led: purple
+    l_leftramp_arrow_led: purple
+    l_leftorbitcombo_circle_led: purple
+    l_leftrampcombo_circle_led: purple
+    l_leftorbitbattery_rectangle_led: purple
+    l_leftramprectangle_led: purple
+    l_leftorbit_rectangle_led: purple
+    l_stadium_left_4: purple
+    l_stadium_left_5: purple
+    l_stadium_left_6: purple
+    l_stadium_left_7: purple
+    l_stadium_left_8: purple
+    l_stadium_left_9: purple
+    l_stadium_left_10: purple
+    l_stadium_left_11: purple
+    l_stadium_left_12: purple
+    l_stadium_left_13: purple
+    l_stadium_left_14: purple
+    l_left_orbit_x: purple
+    l_left_ramp_x: purple
+

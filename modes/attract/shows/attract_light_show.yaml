@@ -100,47 +100,58 @@
     l_leftorbitcombo_circle_led: orange
     l_leftorbit_rectangle_led: orange
     l_leftorbitbattery_rectangle_led: orange
+    l_left_orbit_x: orange
 - duration: 0.8
   lights:
     l_leftorbit_arrow_led: stop
     l_leftorbitcombo_circle_led: stop
     l_leftorbit_rectangle_led: stop
     l_leftorbitbattery_rectangle_led: stop
+    l_left_orbit_x: stop
     l_leftramp_arrow_led: yellow
     l_leftrampcombo_circle_led: yellow
     l_leftramprectangle_led: yellow
+    l_left_ramp_x: yellow
 - duration: 0.8
   lights:
     l_leftramp_arrow_led: stop
     l_leftrampcombo_circle_led: stop
     l_leftramprectangle_led: stop
+    l_left_ramp_x: stop
     l_innerloop_arrow_led: blue
     l_innerloopcombo_circle_led: blue
+    l_inner_loop_x: blue
 - duration: 0.8
   lights:
     l_innerloop_arrow_led: stop
     l_innerloopcombo_circle_led: stop
+    l_inner_loop_x: stop
     l_scoop_arrow_led: indigo
     l_scoopcombo_circle_led: indigo
     l_scoopmode_circle2_led: indigo
     l_scoopmode_square_led: indigo
+    l_scoop_x: indigo
 - duration: 0.8
   lights:
     l_scoop_arrow_led: stop
     l_scoopcombo_circle_led: stop
     l_scoopmode_circle2_led: stop
     l_scoopmode_square_led: stop
+    l_scoop_x: stop
     l_rightramp_arrow_led: violet
     l_rightrampcombo_circle_led: violet
     l_rightramprectangle_led: violet
+    l_right_ramp_x: violet
 - duration: 0.8
   lights:
     l_rightramp_arrow_led: stop
     l_rightrampcombo_circle_led: stop
     l_rightramprectangle_led: stop
+    l_right_ramp_x: stop
     l_rightorbit_arrow_led: lime
     l_rightorbitcombo_circle_led: lime
     l_rightorbitrectangle_led: lime
+    l_right_orbit_x: lime
 - duration: 0.8
   lights:
     l_leftsling_uppergi_led: stop
@@ -148,6 +159,7 @@
     l_rightsling_uppergi_led: stop
     l_rightsling_lowergi_led: stop
     l_rightorbit_arrow_led: stop
+    l_right_orbit_x: stop
     l_rightorbitcombo_circle_led: stop
     l_rightorbitrectangle_led: stop
     l_behindupperflipper_uppergi_led: stop

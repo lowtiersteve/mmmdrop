@@ -1,0 +1,33 @@
+#show_version=6
+
+- duration: -1
+  lights:
+    l_lowerrightstandup_circle_led: purple
+    l_lowerrightpop_inside_led: purple
+    l_lowerrightpop_inside2_led: purple
+    l_rightinlane_circle_led: purple
+    l_rightoutlane_circle_led: purple
+    l_modeindicator3_rectangle_led: purple
+    l_modeindicator4_rectangle_led: purple
+    l_modeindicator7_rectangle_led: purple
+    l_modeindicator8_rectangle_led: purple
+    l_wizardindicator3_rectangle_led: purple
+    l_supercircle4_led: purple
+    l_supercircle5_led: purple
+    l_cassetteright_led: purple
+    l_rightsling_uppergi_led: purple
+    l_rightsling_lowergi_led: purple
+    l_stadium_right_15: purple
+    l_stadium_right_16: purple
+    l_stadium_right_17: purple
+    l_stadium_right_18: purple
+    l_stadium_right_19: purple
+    l_stadium_right_20: purple
+    l_stadium_right_21: purple
+    l_stadium_right_22: purple
+    l_stadium_right_23: purple
+    l_stadium_right_24: purple
+    l_stadium_right_25: purple
+    l_stadium_right_26: purple
+    l_stadium_right_27: purple
+
