@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bhjp6sktkq11m"]
+[gd_scene load_steps=5 format=3 uid="uid://bhjp6sktkq11m"]
 
 [ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_o4v0r"]
-[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="2_gensg"]
-[ext_resource type="Texture2D" uid="uid://bb5nodn5nj5cm" path="res://assets/BeastieGroup1.jpg" id="2_rqxsl"]
+[ext_resource type="Texture2D" uid="uid://bb5nodn5nj5cm" path="res://assets/BeastieGroup1.jpg" id="2_1f1fh"]
+[ext_resource type="Script" uid="uid://bf2dsnm46ji2e" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_1f1fh"]
+[ext_resource type="VideoStream" uid="uid://81gfeefukvll" path="res://modes/base/slides/NYEVideo.ogv" id="3_tj1lo"]
 
 [node name="Attract" type="Control"]
 layout_mode = 3
@@ -10,19 +11,22 @@ anchors_preset = 0
 script = ExtResource("1_o4v0r")
 metadata/_custom_type_script = "uid://d15ukepy10pan"
 
-[node name="BeastieGroup1" type="Sprite2D" parent="."]
-position = Vector2(959, 545)
-scale = Vector2(1.47846, 1.48361)
-texture = ExtResource("2_rqxsl")
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(959, 541)
+scale = Vector2(1.47846, 1.47268)
+texture = ExtResource("2_1f1fh")
 
-[node name="Label" type="Label" parent="."]
+[node name="StartupVideo" type="VideoStreamPlayer" parent="."]
+custom_minimum_size = Vector2(1920, 1080)
 layout_mode = 0
-offset_left = 712.0
-offset_top = 440.0
-offset_right = 1183.0
-offset_bottom = 661.0
-theme_override_constants/outline_size = 20
-theme_override_fonts/font = ExtResource("2_gensg")
-theme_override_font_sizes/font_size = 106
-text = "Press
-Start"
+offset_right = 1920.0
+offset_bottom = 1080.0
+stream = ExtResource("3_tj1lo")
+autoplay = true
+expand = true
+bus = &"music"
+script = ExtResource("3_1f1fh")
+hide_behavior = 1
+events_when_stopped = "remove"
+preview_in_editor = true
+metadata/_custom_type_script = "uid://bf2dsnm46ji2e"

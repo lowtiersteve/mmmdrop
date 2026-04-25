@@ -1,15 +1,14 @@
 [gd_scene load_steps=5 format=3 uid="uid://txsyccuk4ule"]
 
-[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_0ymm0"]
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_0ymm0"]
 [ext_resource type="Texture2D" uid="uid://bb5nodn5nj5cm" path="res://assets/BeastieGroup1.jpg" id="2_0tdqi"]
-[ext_resource type="Script" uid="uid://bf2dsnm46ji2e" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="4_nm3x2"]
+[ext_resource type="Script" uid="uid://bov7mrgxslshq" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="4_nm3x2"]
 [ext_resource type="VideoStream" uid="uid://d0j31c0qpa3j6" path="res://modes/attract/slides/ChCheckItOutAttract.ogv" id="5_78lvc"]
 
-[node name="Attract" type="Control"]
+[node name="Attract_load" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_0ymm0")
-metadata/_custom_type_script = "uid://d15ukepy10pan"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(959, 541)
@@ -29,4 +28,3 @@ script = ExtResource("4_nm3x2")
 hide_behavior = 1
 events_when_stopped = "remove"
 preview_in_editor = true
-metadata/_custom_type_script = "uid://bf2dsnm46ji2e"
