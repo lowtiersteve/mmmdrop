@@ -217,7 +217,7 @@ modes:
 
 settings:
   replay_score:
-    label: "Replay Score"
+    label: "Replay Score Reset"
     values:
       50000000: "50,000,000"
       100000000: "100,000,000 (Default)"

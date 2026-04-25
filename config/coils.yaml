@@ -7,7 +7,7 @@ coils:
     allow_enable: true
     label: "Left Flipper Coil Flip Signal"
     enable_events: enable_flippers
-    disable_events: disable_flippers
+    disable_events: disable_flippers, kill_flippers
   c_flipper_left_hold:
     number: 3208-2
     allow_enable: true
