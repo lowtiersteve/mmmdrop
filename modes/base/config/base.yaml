@@ -824,6 +824,11 @@ sound_player:
       action: play
       bus: music
       loops: 3
+  slide_paulreverefinish_removed{device.achievements.wizard1.state=="enabled" or device.achievements.wizard2.state=="enabled" or device.achievements.wizard3.state=="enabled"}:
+    base_game_random_music:
+      action: play
+      bus: music
+      loops: 3
   slide_paulreverefailed_created:
     attract_crowd:
       action: play
@@ -883,6 +888,11 @@ sound_player:
       action: play
       bus: music
   slide_tripletroublefinish_removed{current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
+    base_game_random_music:
+      action: play
+      bus: music
+      loops: 3
+  slide_tripletroublefinish_removed{device.achievements.wizard1.state=="enabled" or device.achievements.wizard2.state=="enabled" or device.achievements.wizard3.state=="enabled"}:
     base_game_random_music:
       action: play
       bus: music
@@ -1183,6 +1193,10 @@ sound_player:
       action: replace
       bus: music
       loops: 3
+  timer_bodhisattvavow_time_remaining_complete:
+    shutdownsound:
+      action: play
+      bus: voice
 
 
 

@@ -64,11 +64,10 @@ preview_in_editor = true
 metadata/_edit_lock_ = true
 
 [node name="Label" type="Label" parent="."]
-visible = false
 layout_mode = 0
-offset_left = 503.0
+offset_left = 395.0
 offset_top = 399.0
-offset_right = 1487.0
+offset_right = 1501.0
 offset_bottom = 640.0
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("4_3u24p")
