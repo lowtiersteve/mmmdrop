@@ -1,0 +1,16 @@
+#show_version=6
+
+- duration: 200ms
+  lights:
+    l_upperdrop_circle_led: stop
+    l_lowerdrop_circle_led: Purple
+- duration: 200ms
+  lights:
+    l_lowerdrop_circle_led: stop
+    l_middledrop_circle_led: Purple
+- duration: 200ms
+  lights:
+    l_middledrop_circle_led: stop
+    l_upperdrop_circle_led: Purple
+
+

@@ -1,0 +1,21 @@
+#show_version=6
+
+- duration: 100ms
+  lights:
+    l_scoopmode_square_led: Purple
+    l_scoop_arrow_led: stop
+- duration: 200ms
+  lights:
+    l_scoopmode_circle2_led: Purple
+- duration: 200ms
+  lights:
+    l_scoopcombo_circle_led: Purple
+    l_scoopmode_square_led: stop
+- duration: 200ms
+  lights:
+    l_scoop_arrow_led: Purple
+    l_scoopmode_circle2_led: stop
+- duration: 300ms
+  lights:
+    l_scoopcombo_circle_led: stop
+

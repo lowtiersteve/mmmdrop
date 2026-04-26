@@ -106,25 +106,25 @@ autofire_coils:
   left_slingshot:
     coil: c_left_slingshot
     switch: s_left_slingshot
-    enable_events: enable_slings
+    enable_events: enable_slings, ball_will_start
     disable_events: disable_slings
   right_slingshot:
     coil: c_right_slingshot
     switch: s_right_slingshot
-    enable_events: enable_slings
+    enable_events: enable_slings, ball_will_start
     disable_events: disable_slings
   right_lower_pop:
     coil: c_right_lower_pop
     switch: s_right_lower_pop
-    enable_events: enable_pops
+    enable_events: enable_pops, ball_will_start
     disable_events: disable_pops
   left_upper_pop:
     coil: c_left_upper_pop
     switch: s_left_upper_pop
-    enable_events: enable_pops
+    enable_events: enable_pops, ball_will_start
     disable_events: disable_pops
   center_upper_pop:
     coil: c_center_upper_pop
     switch: s_center_upper_pop
-    enable_events: enable_pops
+    enable_events: enable_pops, ball_will_start
     disable_events: disable_pops

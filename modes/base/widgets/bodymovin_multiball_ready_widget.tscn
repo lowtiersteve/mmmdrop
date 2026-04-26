@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dmioe1inhwofy"]
 
-[ext_resource type="Script" uid="uid://bp5npfvnd6fvx" path="res://addons/mpf-gmc/classes/mpf_widget.gd" id="1_ucind"]
-[ext_resource type="Texture2D" uid="uid://dt7hpexqpath5" path="res://assets/action_bubble.png" id="2_8prjb"]
+[ext_resource type="Script" uid="uid://d4ky3s4bg1ouq" path="res://addons/mpf-gmc/classes/mpf_widget.gd" id="1_ucind"]
+[ext_resource type="Texture2D" uid="uid://dtodnmwfxtclr" path="res://assets/burstbacking.png" id="2_ucind"]
 [ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="3_0550p"]
 
 [node name="bodymovin_lock_enabled_widget" type="Control"]
@@ -11,12 +11,11 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_ucind")
-metadata/_custom_type_script = "uid://bp5npfvnd6fvx"
 
 [node name="ActionImage" type="Sprite2D" parent="."]
-position = Vector2(1480.33, 778.25)
-scale = Vector2(0.444077, 0.267791)
-texture = ExtResource("2_8prjb")
+position = Vector2(1464.0001, 791.99994)
+scale = Vector2(0.47637695, 0.36884922)
+texture = ExtResource("2_ucind")
 
 [node name="multiballready" type="Label" parent="."]
 layout_mode = 0

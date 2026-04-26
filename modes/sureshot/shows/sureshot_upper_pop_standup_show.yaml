@@ -1,0 +1,9 @@
+#show_version=6
+
+- duration: 200ms
+  lights:
+    l_upperpop_smallarrow_led: Purple
+- duration: 200ms
+  lights:
+    l_upperpop_smallarrow_led: stop
+

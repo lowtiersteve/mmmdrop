@@ -4,6 +4,7 @@ mode:
   start_events: ball_starting
   priority: 100
 
+
 sequence_shots:
   left_orbit_sequence:
     switch_sequence: s_left_orbit, s_right_orbit
@@ -180,8 +181,8 @@ shot_groups:
       sg_lanes_lit_complete: 1s
   sg_tshirts:
     shots: tshirt_top_standup, tshirt_bottom_standup
-    restart_events: bodymovin_ball_1_locked, bodymovin_ball_2_locked, multiball_bodymovin_ended, ball_started{current_player.ball!=1 and current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_bodymovin_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_chcheckitout_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_makesomenoise_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_bodhivow_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_girls_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, ball_started{current_player.ball==1 or current_player.bodymovin_lock1_locked_flag==1}, mode_bodymovin_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_chcheckitout_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_makesomenoise_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_bodhivow_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_girls_stopped{current_player.bodymovin_lock1_locked_flag==1}, ball_started{current_player.bodymovin_lock2_locked_flag==1}, mode_bodymovin_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_chcheckitout_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_makesomenoise_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_bodhivow_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_girls_stopped{current_player.bodymovin_lock2_locked_flag==1}
-    disable_events: bodymovin_lock_1_enabled, bodymovin_lock_2_enabled, bodymovin_lock_3_enabled, mode_makesomenoise_started, mode_bodhivow_started, mode_chcheckitout_started, mode_girls_started, ball_will_end
+    restart_events: bodymovin_ball_1_locked, bodymovin_ball_2_locked, multiball_bodymovin_ended, ball_started{current_player.ball!=1 and current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_bodymovin_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_chcheckitout_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_makesomenoise_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_bodhivow_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_sureshot_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_girls_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, ball_started{current_player.ball==1 or current_player.bodymovin_lock1_locked_flag==1}, mode_bodymovin_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_chcheckitout_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_makesomenoise_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_sureshot_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_bodhivow_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_girls_stopped{current_player.bodymovin_lock1_locked_flag==1}, ball_started{current_player.bodymovin_lock2_locked_flag==1}, mode_bodymovin_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_chcheckitout_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_makesomenoise_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_sureshot_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_bodhivow_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_girls_stopped{current_player.bodymovin_lock2_locked_flag==1}
+    disable_events: bodymovin_lock_1_enabled, bodymovin_lock_2_enabled, bodymovin_lock_3_enabled, mode_makesomenoise_started, mode_bodhivow_started, mode_sureshot_started, mode_chcheckitout_started, mode_girls_started, ball_will_end
 
 
 slide_player:
@@ -717,6 +718,16 @@ slide_player:
     base:
       action: play
       priority: 5000
+  mode_sureshot_will_stop:
+    sureshot:
+      action: remove
+    sureshot_display_timer:
+      action: remove
+    sureshot_countdown:
+      action: remove
+    base:
+      action: play
+      priority: 5000
 
 
 sound_player:
@@ -984,6 +995,11 @@ sound_player:
       action: replace
       bus: music
       loops: 3
+  mode_sureshot_stopped:
+    base_game_random_music:
+      action: replace
+      bus: music
+      loops: 3
   mode_makesomenoise_complete:
     base_game_random_music:
       action: replace
@@ -1023,6 +1039,9 @@ sound_player:
       action: stop
       bus: music
     bodhisattvavowmusic:
+      action: stop
+      bus: music
+    sureshotmusic:
       action: stop
       bus: music
     tripletroublemusic:
@@ -1323,6 +1342,19 @@ variable_player:
       int: 0
       action: set
   mode_bodhivow_stopped:
+    mode_blocking_flag:
+      int: 0
+      action: set
+    chcheckitout_multiball_blocking_flag:
+      int: 0
+      action: set
+    bodymovin_multiball_blocking_flag:
+      int: 0
+      action: set
+    girls_blocking_flag:
+      int: 0
+      action: set
+  mode_sureshot_stopped:
     mode_blocking_flag:
       int: 0
       action: set
@@ -1684,7 +1716,7 @@ sequences:
       - chcheckitout_multiball_qualified
     events_when_complete: drops_standup_start_multiball
     disable_events: achievement_wizard1_state_enabled, achievement_wizard2_state_enabled, achievement_wizard3_state_enabled, mode_bodymovin_started, mode_girls_started
-    enable_events: mode_bodymovin_stopped{current_player.chcheckitout_qualified_flag==0}, mode_makesomenoise_stopped{current_player.chcheckitout_qualified_flag==0}, mode_bodhivow_stopped{current_player.chcheckitout_qualified_flag==0}, mode_girls_stopped{current_player.chcheckitout_qualified_flag==0}
+    enable_events: mode_bodymovin_stopped{current_player.chcheckitout_qualified_flag==0}, mode_makesomenoise_stopped{current_player.chcheckitout_qualified_flag==0}, mode_bodhivow_stopped{current_player.chcheckitout_qualified_flag==0}, mode_sureshot_stopped{current_player.chcheckitout_qualified_flag==0}, mode_girls_stopped{current_player.chcheckitout_qualified_flag==0}
     reset_on_complete: False
     disable_on_complete: True
     persist_state: True
@@ -1692,12 +1724,12 @@ sequences:
   chcheckitout_multiball_ready:
     events:
       - three_bank_standup_hit{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_qualified_flag==1}
-    restart_events: drops_standup_start_multiball, ball_started{current_player.chcheckitout_qualified_flag==1}, mode_makesomenoise_stopped{current_player.chcheckitout_qualified_flag==1}, mode_bodhivow_stopped{current_player.chcheckitout_qualified_flag==1}, multiball_bodymovin_ended{current_player.chcheckitout_qualified_flag==1}
+    restart_events: drops_standup_start_multiball, ball_started{current_player.chcheckitout_qualified_flag==1}, mode_makesomenoise_stopped{current_player.chcheckitout_qualified_flag==1}, mode_bodhivow_stopped{current_player.chcheckitout_qualified_flag==1}, mode_sureshot_stopped{current_player.chcheckitout_qualified_flag==1}, multiball_bodymovin_ended{current_player.chcheckitout_qualified_flag==1}
     events_when_complete: chcheckitout_start_multiball
     disable_events: achievement_wizard1_state_enabled, achievement_wizard2_state_enabled, achievement_wizard3_state_enabled, mode_bodymovin_started, mode_girls_started
     reset_on_complete: False
     disable_on_complete: True
-    enable_events: mode_bodymovin_stopped{current_player.chcheckitout_qualified_flag==1}, mode_makesomenoise_stopped{current_player.chcheckitout_qualified_flag==1}, mode_bodhivow_stopped{current_player.chcheckitout_qualified_flag==1}, mode_girls_stopped{current_player.chcheckitout_qualified_flag==1}
+    enable_events: mode_bodymovin_stopped{current_player.chcheckitout_qualified_flag==1}, mode_makesomenoise_stopped{current_player.chcheckitout_qualified_flag==1}, mode_bodhivow_stopped{current_player.chcheckitout_qualified_flag==1}, mode_sureshot_stopped{current_player.chcheckitout_qualified_flag==1}, mode_girls_stopped{current_player.chcheckitout_qualified_flag==1}
     persist_state: True
     start_enabled: False
   enable_bodymovin_lock_1:
@@ -1709,7 +1741,7 @@ sequences:
     start_enabled: False
     disable_on_complete: True
     persist_state: True
-    restart_events: ball_started{current_player.ball!=1 and current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_bodymovin_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_chcheckitout_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_makesomenoise_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_bodhivow_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_girls_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}
+    restart_events: ball_started{current_player.ball!=1 and current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_bodymovin_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_chcheckitout_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_makesomenoise_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_bodhivow_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_sureshot_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_girls_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}
   bodymovin_lock_1:
     events:
       - scoop_hit{current_player.chcheckitout_multiball_blocking_flag==0}
@@ -1719,7 +1751,7 @@ sequences:
     start_enabled: False
     disable_on_complete: True
     persist_state: True
-    restart_events: bodymovin_lock_1_enabled, ball_started{current_player.bodymovin_lock1_qualified_flag==1}, mode_bodymovin_stopped{current_player.bodymovin_lock1_qualified_flag==1}, mode_chcheckitout_stopped{current_player.bodymovin_lock1_qualified_flag==1}, mode_makesomenoise_stopped{current_player.bodymovin_lock1_qualified_flag==1}, mode_bodhivow_stopped{current_player.bodymovin_lock1_qualified_flag==1}, mode_girls_stopped{current_player.bodymovin_lock1_qualified_flag==1}
+    restart_events: bodymovin_lock_1_enabled, ball_started{current_player.bodymovin_lock1_qualified_flag==1}, mode_bodymovin_stopped{current_player.bodymovin_lock1_qualified_flag==1}, mode_chcheckitout_stopped{current_player.bodymovin_lock1_qualified_flag==1}, mode_makesomenoise_stopped{current_player.bodymovin_lock1_qualified_flag==1}, mode_bodhivow_stopped{current_player.bodymovin_lock1_qualified_flag==1}, mode_sureshot_stopped{current_player.bodymovin_lock1_qualified_flag==1}, mode_girls_stopped{current_player.bodymovin_lock1_qualified_flag==1}
   enable_bodymovin_lock_2:
     events:
       - lock_standups_complete{current_player.chcheckitout_multiball_blocking_flag==0}
@@ -1729,7 +1761,7 @@ sequences:
     start_enabled: False
     disable_on_complete: True
     persist_state: True
-    restart_events: bodymovin_ball_1_locked, ball_started{current_player.ball==1 or current_player.bodymovin_lock1_locked_flag==1}, mode_bodymovin_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_chcheckitout_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_makesomenoise_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_bodhivow_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_girls_stopped{current_player.bodymovin_lock1_locked_flag==1}
+    restart_events: bodymovin_ball_1_locked, ball_started{current_player.ball==1 or current_player.bodymovin_lock1_locked_flag==1}, mode_bodymovin_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_chcheckitout_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_makesomenoise_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_bodhivow_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_sureshot_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_girls_stopped{current_player.bodymovin_lock1_locked_flag==1}
   bodymovin_lock_2:
     events:
       - scoop_hit{current_player.chcheckitout_multiball_blocking_flag==0}
@@ -1739,7 +1771,7 @@ sequences:
     start_enabled: False
     disable_on_complete: True
     persist_state: True
-    restart_events: bodymovin_lock_2_enabled, ball_started{current_player.bodymovin_lock2_qualified_flag==1}, mode_bodymovin_stopped{current_player.bodymovin_lock2_qualified_flag==1}, mode_chcheckitout_stopped{current_player.bodymovin_lock2_qualified_flag==1}, mode_makesomenoise_stopped{current_player.bodymovin_lock2_qualified_flag==1}, mode_bodhivow_stopped{current_player.bodymovin_lock2_qualified_flag==1}, mode_girls_stopped{current_player.bodymovin_lock2_qualified_flag==1}
+    restart_events: bodymovin_lock_2_enabled, ball_started{current_player.bodymovin_lock2_qualified_flag==1}, mode_bodymovin_stopped{current_player.bodymovin_lock2_qualified_flag==1}, mode_chcheckitout_stopped{current_player.bodymovin_lock2_qualified_flag==1}, mode_makesomenoise_stopped{current_player.bodymovin_lock2_qualified_flag==1}, mode_bodhivow_stopped{current_player.bodymovin_lock2_qualified_flag==1}, mode_sureshot_stopped{current_player.bodymovin_lock2_qualified_flag==1}, mode_girls_stopped{current_player.bodymovin_lock2_qualified_flag==1}
   enable_bodymovin_lock_3:
     events:
       - lock_standups_complete{current_player.chcheckitout_multiball_blocking_flag==0}
@@ -1749,7 +1781,7 @@ sequences:
     start_enabled: False
     disable_on_complete: True
     persist_state: True
-    restart_events: bodymovin_ball_2_locked, ball_started{current_player.bodymovin_lock2_locked_flag==1}, mode_bodymovin_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_chcheckitout_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_makesomenoise_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_bodhivow_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_girls_stopped{current_player.bodymovin_lock2_locked_flag==1}
+    restart_events: bodymovin_ball_2_locked, ball_started{current_player.bodymovin_lock2_locked_flag==1}, mode_bodymovin_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_chcheckitout_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_makesomenoise_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_bodhivow_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_sureshot_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_girls_stopped{current_player.bodymovin_lock2_locked_flag==1}
   bodymovin_multiball_ready:
     events:
       - captive_ball_hit{current_player.chcheckitout_multiball_blocking_flag==0}
@@ -1759,7 +1791,7 @@ sequences:
     reset_on_complete: False
     disable_on_complete: True
     persist_state: True
-    restart_events: bodymovin_lock_3_enabled, ball_started{current_player.bodymovin_multiball_qualified_flag==1}, mode_bodymovin_stopped{current_player.bodymovin_multiball_qualified_flag==1}, mode_chcheckitout_stopped{current_player.bodymovin_multiball_qualified_flag==1}, mode_makesomenoise_stopped{current_player.bodymovin_multiball_qualified_flag==1}, mode_bodhivow_stopped{current_player.bodymovin_multiball_qualified_flag==1}, mode_girls_stopped{current_player.bodymovin_multiball_qualified_flag==1}
+    restart_events: bodymovin_lock_3_enabled, ball_started{current_player.bodymovin_multiball_qualified_flag==1}, mode_bodymovin_stopped{current_player.bodymovin_multiball_qualified_flag==1}, mode_chcheckitout_stopped{current_player.bodymovin_multiball_qualified_flag==1}, mode_makesomenoise_stopped{current_player.bodymovin_multiball_qualified_flag==1}, mode_bodhivow_stopped{current_player.bodymovin_multiball_qualified_flag==1}, mode_sureshot_stopped{current_player.bodymovin_multiball_qualified_flag==1}, mode_girls_stopped{current_player.bodymovin_multiball_qualified_flag==1}
 
 
 counters:
@@ -1774,7 +1806,7 @@ counters:
     reset_on_complete: True
     disable_on_complete: True
     disable_events: drops_standup_start_multiball, achievement_wizard1_state_enabled, achievement_wizard2_state_enabled, achievement_wizard3_state_enabled, mode_bodymovin_started, mode_girls_started
-    enable_events: ball_started{current_player.ball==1 or current_player.chcheckitout_qualified_flag==0}, mode_makesomenoise_stopped{current_player.chcheckitout_qualified_flag==0}, mode_bodhivow_stopped{current_player.chcheckitout_qualified_flag==0}, mode_bodymovin_stopped{current_player.chcheckitout_qualified_flag==0}, mode_girls_stopped{current_player.chcheckitout_qualified_flag==0}
+    enable_events: ball_started{current_player.ball==1 or current_player.chcheckitout_qualified_flag==0}, mode_makesomenoise_stopped{current_player.chcheckitout_qualified_flag==0}, mode_bodhivow_stopped{current_player.chcheckitout_qualified_flag==0}, mode_sureshot_stopped{current_player.chcheckitout_qualified_flag==0}, mode_bodymovin_stopped{current_player.chcheckitout_qualified_flag==0}, mode_girls_stopped{current_player.chcheckitout_qualified_flag==0}
     restart_events: mode_chcheckitout_stopped
     control_events:
       - event: reset_drop_target_bank_counter
@@ -1793,7 +1825,7 @@ counters:
     disable_on_complete: True
     reset_on_complete: False
   played_modes_count:
-    count_events: mode_intergalactic_started, mode_paulrevere_started, mode_tripletrouble_started, mode_sabotage_started, mode_fingerlickingood_started, mode_toomanyrappers_started, mode_threemcsand1dj_started, mode_highplainsdrifter_started, mode_makesomenoise_started, mode_bodhivow_started
+    count_events: mode_intergalactic_started, mode_paulrevere_started, mode_tripletrouble_started, mode_sabotage_started, mode_fingerlickingood_started, mode_toomanyrappers_started, mode_threemcsand1dj_started, mode_highplainsdrifter_started, mode_makesomenoise_started, mode_bodhivow_started, mode_sureshot_started
     starting_count: 0
     count_complete_value: -1
     count_interval: 1
@@ -2181,6 +2213,23 @@ show_player:
       action: stop
     girls_ready:
       action: stop
+  mode_sureshot_started:
+    makesomenoise_mode_qualified_light:
+      action: stop
+    GI_on:
+      action: stop
+    GI_backboard_on:
+      action: stop
+    stadium_GI_on:
+      action: stop
+    battery_yellow:
+      action: stop
+    battery_green:
+      action: stop
+    battery_red:
+      action: stop
+    girls_ready:
+      action: stop
   timer_makesomenoise_intro_show_complete:
     GI_on:
       action: play
@@ -2328,6 +2377,9 @@ show_player:
   ball_save_default_disabled:
     ball_save_show:
       action: stop
+  ball_save_sureshot_ball_saver_disabled:
+    ball_save_show:
+      action: stop
     ball_save_hurryup_show:
       action: stop
   ball_save_mode_start_timer_start:
@@ -2399,6 +2451,10 @@ show_player:
     girls_ready:
       action: play
       loops: -1
+  mode_sureshot_stopped{device.achievements.girls_frenzy.state=="enabled"}:
+    girls_ready:
+      action: play
+      loops: -1
   mode_fingerlickingood_stopped{device.achievements.girls_frenzy.state=="enabled" and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled"}:
     girls_ready:
       action: play
@@ -2437,6 +2493,11 @@ show_player:
       loops: -1
       priority: 10000
   mode_bodhivow_stopped{current_player.chcheckitout_qualified_flag==1}:
+    chcheckitout_lit_strobe:
+      action: play
+      loops: -1
+      priority: 10000
+  mode_sureshot_stopped{current_player.chcheckitout_qualified_flag==1}:
     chcheckitout_lit_strobe:
       action: play
       loops: -1
@@ -2599,6 +2660,57 @@ show_player:
       action: stop
     bodhisattvavow_area5_purple:
       action: stop
+    GI_on:
+      action: play
+      priority: 10000
+    GI_backboard_on:
+      action: play
+      priority: 10000
+    stadium_GI_on:
+      action: play
+      priority: 10000
+  mode_sureshot_stopped:
+    sureshot_backboard_purple:
+      action: stop
+    sureshot_captive_ball_show:
+      action: stop
+    sureshot_drops_show:
+      action: stop
+    sureshot_left_orbit_show:
+      action: stop
+    sureshot_left_ramp_show:
+      action: stop
+    sureshot_right_orbit_show:
+      action: stop
+    sureshot_right_ramp_show:
+      action: stop
+    sureshot_lower_pop_show:
+      action: stop
+    sureshot_lower_pop_standup_show:
+      action: stop
+    sureshot_scoop_show:
+      action: stop
+    sureshot_shot_hit_purple:
+      action: stop
+    sureshot_tshirts_show:
+      action: stop
+    sureshot_upper_left_pop_show:
+      action: stop
+    sureshot_upper_loop_show:
+      action: stop
+    sureshot_upper_pop_standup_show:
+      action: stop
+    sureshot_upper_right_pop_show:
+      action: stop
+    GI_on:
+      action: play
+      priority: 10000
+    GI_backboard_on:
+      action: play
+      priority: 10000
+    stadium_GI_on:
+      action: play
+      priority: 10000
 
 
 
@@ -2872,6 +2984,11 @@ widget_player:
       key: "battery"
       slide: score_overlay
   mode_bodhivow_started:
+    charges_remaining:
+      action: remove
+      key: "battery"
+      slide: score_overlay
+  mode_sureshot_started:
     charges_remaining:
       action: remove
       key: "battery"

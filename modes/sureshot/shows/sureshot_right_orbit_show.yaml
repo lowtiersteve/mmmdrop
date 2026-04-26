@@ -1,0 +1,19 @@
+#show_version=6
+
+- duration: 100ms
+  lights:
+    l_rightorbit_arrow_led: stop
+- duration: 200ms
+  lights:
+    l_rightorbitrectangle_led: Purple
+- duration: 200ms
+  lights:
+    l_rightorbitcombo_circle_led: Purple
+- duration: 200ms
+  lights:
+    l_rightorbit_arrow_led: Purple
+    l_rightorbitrectangle_led: stop
+- duration: 300ms
+  lights:
+    l_rightorbitcombo_circle_led: stop
+

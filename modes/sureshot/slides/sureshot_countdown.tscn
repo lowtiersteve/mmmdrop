@@ -1,0 +1,45 @@
+[gd_scene load_steps=5 format=3 uid="uid://d0sx2u80p6ag5"]
+
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_a4pdf"]
+[ext_resource type="Texture2D" uid="uid://b4vbh6thug3c0" path="res://assets/graffiti_bg_2.png" id="2_8ggxi"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="2_tr5kr"]
+[ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_i2a56"]
+
+[node name="sureshot_countdown" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_a4pdf")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1013.0003, 507)
+scale = Vector2(0.81041664, 0.25601855)
+texture = ExtResource("2_8ggxi")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_top = 279.0
+offset_right = 1917.0
+offset_bottom = 474.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_tr5kr")
+theme_override_font_sizes/font_size = 61
+text = "sure shot
+value:"
+horizontal_alignment = 1
+
+[node name="MPFVariable" type="Label" parent="."]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 465.0
+offset_right = 1917.0
+offset_bottom = 538.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_tr5kr")
+theme_override_font_sizes/font_size = 71
+text = "1,000,000"
+horizontal_alignment = 1
+script = ExtResource("3_i2a56")
+variable_name = "sureshot_score_countdown_value"
+comma_separate = true
+min_digits = 7
+update_event = "timer_sureshot_score_countdown_tick"

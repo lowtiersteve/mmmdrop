@@ -4,7 +4,7 @@
 [ext_resource type="VideoStream" uid="uid://faep0iq48djy" path="res://modes/sabotage/slides/SabotageSuccessVideo.ogv" id="2_6rgrb"]
 [ext_resource type="Script" uid="uid://bov7mrgxslshq" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_7ofjb"]
 [ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="4_3u24p"]
-[ext_resource type="Texture2D" uid="uid://dt7hpexqpath5" path="res://assets/action_bubble.png" id="5_limro"]
+[ext_resource type="Texture2D" uid="uid://b4vbh6thug3c0" path="res://assets/graffiti_bg_2.png" id="5_6rgrb"]
 [ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="6_nxgwm"]
 
 [sub_resource type="Animation" id="Animation_swyhi"]
@@ -85,9 +85,9 @@ autoplay = "Blinking"
 playback_auto_capture = false
 
 [node name="ActionImage" type="Sprite2D" parent="."]
-position = Vector2(921.3288, 874.24963)
-scale = Vector2(0.444077, 0.267791)
-texture = ExtResource("5_limro")
+position = Vector2(945.3288, 874.24963)
+scale = Vector2(0.8, 0.483)
+texture = ExtResource("5_6rgrb")
 
 [node name="ModeTotal" type="Label" parent="."]
 layout_mode = 0

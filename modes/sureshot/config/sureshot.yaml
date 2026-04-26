@@ -1,0 +1,826 @@
+#config_version=6
+
+mode:
+  start_events: carousel_item_selected{item=="sureshot"}
+  stop_events: mode_sureshot_stop, timer_sureshot_time_remaining_complete, sureshot_finish
+  priority: 5001
+
+
+shots:
+  tshirt_top:
+    switch: s_tshirt_top_standup
+  tshirt_bottom:
+    switch: s_tshirt_bottom_standup
+
+
+sequences:
+  sureshot_left_ramp:
+    events:
+      - left_ramp_hit
+    events_when_complete: sureshot_shot_hit, sureshot_left_ramp_hit
+    reset_on_complete: False
+    enable_events: sureshot_enable_left_ramp
+    restart_events: sureshot_enable_left_ramp
+    disable_on_complete: True
+    start_enabled: False
+  sureshot_left_orbit:
+    events:
+      - left_orbit_hit
+    events_when_complete: sureshot_shot_hit, sureshot_left_orbit_hit
+    reset_on_complete: False
+    enable_events: sureshot_enable_left_orbit
+    restart_events: sureshot_enable_left_orbit
+    disable_on_complete: True
+    start_enabled: False
+  sureshot_right_ramp:
+    events:
+      - right_ramp_hit
+    events_when_complete: sureshot_shot_hit, sureshot_right_ramp_hit
+    reset_on_complete: False
+    enable_events: sureshot_enable_right_ramp
+    restart_events: sureshot_enable_right_ramp
+    disable_on_complete: True
+    start_enabled: False
+  sureshot_right_orbit:
+    events:
+      - right_orbit_hit
+    events_when_complete: sureshot_shot_hit, sureshot_right_orbit_hit
+    reset_on_complete: False
+    enable_events: sureshot_enable_right_orbit
+    restart_events: sureshot_enable_right_orbit
+    disable_on_complete: True
+    start_enabled: False
+  sureshot_upper_loop:
+    events:
+      - inner_loop_hit
+    events_when_complete: sureshot_shot_hit, sureshot_upper_loop_hit
+    reset_on_complete: False
+    enable_events: sureshot_enable_upper_loop
+    restart_events: sureshot_enable_upper_loop
+    disable_on_complete: True
+    start_enabled: False
+  sureshot_lower_pop_standup:
+    events:
+      - pop_standup_hit
+    events_when_complete: sureshot_shot_hit, sureshot_lower_pop_standup_hit
+    reset_on_complete: False
+    enable_events: sureshot_enable_lower_pop_standup
+    restart_events: sureshot_enable_lower_pop_standup
+    disable_on_complete: True
+    start_enabled: False
+  sureshot_upper_pop_standup:
+    events:
+      - upper_pop_standup_hit
+    events_when_complete: sureshot_shot_hit, sureshot_upper_pop_standup_hit
+    reset_on_complete: False
+    enable_events: sureshot_enable_upper_pop_standup
+    restart_events: sureshot_enable_upper_pop_standup
+    disable_on_complete: True
+    start_enabled: False
+  sureshot_scoop:
+    events:
+      - scoop_hit
+    events_when_complete: sureshot_shot_hit, sureshot_scoop_hit
+    reset_on_complete: False
+    enable_events: sureshot_enable_scoop
+    restart_events: sureshot_enable_scoop
+    disable_on_complete: True
+    start_enabled: False
+  sureshot_captive_ball:
+    events:
+      - captive_ball_hit
+    events_when_complete: sureshot_shot_hit, sureshot_captive_ball_hit
+    reset_on_complete: False
+    enable_events: sureshot_enable_captive_ball
+    restart_events: sureshot_enable_captive_ball
+    disable_on_complete: True
+    start_enabled: False
+  sureshot_upper_left_pop:
+    events:
+      - pop1_hit
+    events_when_complete: sureshot_shot_hit, sureshot_upper_left_pop_hit
+    reset_on_complete: False
+    enable_events: sureshot_enable_upper_left_pop
+    restart_events: sureshot_enable_upper_left_pop
+    disable_on_complete: True
+    start_enabled: False
+  sureshot_upper_right_pop:
+    events:
+      - pop2_hit
+    events_when_complete: sureshot_shot_hit, sureshot_upper_right_pop_hit
+    reset_on_complete: False
+    enable_events: sureshot_enable_upper_right_pop
+    restart_events: sureshot_enable_upper_right_pop
+    disable_on_complete: True
+    start_enabled: False
+  sureshot_lower_pop:
+    events:
+      - pop3_hit
+    events_when_complete: sureshot_shot_hit, sureshot_lower_pop_hit
+    reset_on_complete: False
+    enable_events: sureshot_enable_lower_pop
+    restart_events: sureshot_enable_lower_pop
+    disable_on_complete: True
+    start_enabled: False
+  sureshot_drops:
+    events:
+      - bottom_drop_hit, middle_drop_hit, top_drop_hit
+    events_when_complete: sureshot_shot_hit, sureshot_drops_hit
+    reset_on_complete: False
+    enable_events: sureshot_enable_drops
+    restart_events: sureshot_enable_drops
+    disable_on_complete: True
+    start_enabled: False
+  sureshot_tshirts:
+    events:
+      - tshirt_top_hit, tshirt_bottom_hit
+    events_when_complete: sureshot_shot_hit, sureshot_tshirts_hit
+    reset_on_complete: False
+    enable_events: sureshot_enable_tshirts
+    restart_events: sureshot_enable_tshirts
+    disable_on_complete: True
+    start_enabled: False
+  sureshot_phase_1:
+    events:
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+    events_when_complete: sureshot_phase1_complete
+    reset_on_complete: False
+    enable_events: timer_sureshot_intro_show_complete
+    disable_on_complete: True
+  sureshot_phase_2:
+    events:
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+    events_when_complete: sureshot_phase2_complete
+    reset_on_complete: False
+    enable_events: sureshot_phase1_complete
+    disable_on_complete: True
+  sureshot_phase_3:
+    events:
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+    events_when_complete: sureshot_phase3_complete
+    reset_on_complete: False
+    enable_events: sureshot_phase2_complete
+    disable_on_complete: True
+  sureshot_phase_4:
+    events:
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+    events_when_complete: sureshot_phase4_complete
+    reset_on_complete: False
+    enable_events: sureshot_phase3_complete
+    disable_on_complete: True
+  sureshot_phase_5:
+    events:
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+    events_when_complete: sureshot_phase5_complete
+    reset_on_complete: False
+    enable_events: sureshot_phase4_complete
+    disable_on_complete: True
+  sureshot_phase_6:
+    events:
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+    events_when_complete: sureshot_phase6_complete
+    reset_on_complete: False
+    enable_events: sureshot_phase5_complete
+    disable_on_complete: True
+  sureshot_phase_7:
+    events:
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+    events_when_complete: sureshot_phase7_complete
+    reset_on_complete: False
+    enable_events: sureshot_phase6_complete
+    disable_on_complete: True
+  sureshot_phase_8:
+    events:
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+    events_when_complete: sureshot_phase8_complete
+    reset_on_complete: False
+    enable_events: sureshot_phase7_complete
+    disable_on_complete: True
+  sureshot_phase_9:
+    events:
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+      - sureshot_left_ramp_hit, sureshot_left_orbit_hit, sureshot_right_ramp_hit, sureshot_right_orbit_hit, sureshot_upper_loop_hit, sureshot_lower_pop_standup_hit, sureshot_upper_pop_standup_hit, sureshot_scoop_hit, sureshot_captive_ball_hit, sureshot_upper_left_pop_hit, sureshot_upper_right_pop_hit, sureshot_lower_pop_hit, sureshot_drops_hit, sureshot_tshirts_hit
+    events_when_complete: sureshot_phase9_complete
+    reset_on_complete: False
+    enable_events: sureshot_phase8_complete
+    disable_on_complete: True
+
+
+
+variable_player:
+  mode_sureshot_started:
+    mode_blocking_flag:
+      int: 1
+      action: set
+    mode_sureshot_score:
+      int: 0
+      action: set
+    modes_played: 1
+    modes_completed: 1
+    battery_charged_yesorno:
+      int: 0
+      action: set
+    sureshot_phase:
+      int: 1
+      action: set
+  timer_sureshot_intro_show_tick:
+    sureshot_intro_show_variable_times_100:
+      int: device.timers.sureshot_intro_show.ticks * 100
+      action: set
+  timer_sureshot_time_remaining_tick:
+    sureshot_time_remaining_variable_times_1:
+      int: device.timers.sureshot_time_remaining.ticks * 1
+      action: set
+  timer_sureshot_score_countdown_tick:
+    sureshot_score_countdown_value:
+      int: device.timers.sureshot_score_countdown.ticks * 100000
+      action: set
+  timer_sureshot_score_countdown_buffer_started:
+    sureshot_score_countdown_value:
+      int: 10000000
+      action: set
+  sureshot_shot_hit:
+    score: current_player.sureshot_score_countdown_value * current_player.playfield_x * current_player.sureshot_mode_multiplier
+    mode_sureshot_score: current_player.sureshot_score_countdown_value * current_player.playfield_x * current_player.sureshot_mode_multiplier
+  sureshot_phase1_complete:
+    sureshot_phase:
+      int: 1
+      action: add
+  sureshot_phase2_complete:
+    sureshot_phase:
+      int: 1
+      action: add
+  sureshot_phase3_complete:
+    sureshot_phase:
+      int: 1
+      action: add
+  sureshot_phase4_complete:
+    sureshot_phase:
+      int: 1
+      action: add
+  sureshot_phase5_complete:
+    sureshot_phase:
+      int: 1
+      action: add
+  sureshot_phase6_complete:
+    sureshot_phase:
+      int: 1
+      action: add
+  sureshot_phase7_complete:
+    sureshot_phase:
+      int: 1
+      action: add
+  sureshot_phase8_complete:
+    sureshot_phase:
+      int: 1
+      action: add
+
+
+event_player:
+  sureshot_phase1_complete: add_sureshot_time_10s, sureshot_phase_complete, sureshot_phase_complete1
+  sureshot_phase2_complete: add_sureshot_time_10s, sureshot_phase_complete, sureshot_phase_complete1, sureshot_phase_complete2
+  sureshot_phase3_complete: add_sureshot_time_10s, sureshot_phase_complete, sureshot_phase_complete1, sureshot_phase_complete2, sureshot_phase_complete3
+  sureshot_phase4_complete: add_sureshot_time_10s, sureshot_phase_complete, sureshot_phase_complete1, sureshot_phase_complete2, sureshot_phase_complete3, sureshot_phase_complete4
+  sureshot_phase5_complete: add_sureshot_time_10s, sureshot_phase_complete, sureshot_phase_complete1, sureshot_phase_complete2, sureshot_phase_complete3, sureshot_phase_complete4, sureshot_phase_complete5
+  sureshot_phase6_complete: add_sureshot_time_10s, sureshot_phase_complete, sureshot_phase_complete1, sureshot_phase_complete2, sureshot_phase_complete3, sureshot_phase_complete4, sureshot_phase_complete5, sureshot_phase_complete6
+  sureshot_phase7_complete: add_sureshot_time_10s, sureshot_phase_complete, sureshot_phase_complete1, sureshot_phase_complete2, sureshot_phase_complete3, sureshot_phase_complete4, sureshot_phase_complete5, sureshot_phase_complete6, sureshot_phase_complete7
+  sureshot_phase8_complete: add_sureshot_time_10s, sureshot_phase_complete, sureshot_phase_complete1, sureshot_phase_complete2, sureshot_phase_complete3, sureshot_phase_complete4, sureshot_phase_complete5, sureshot_phase_complete6, sureshot_phase_complete7, sureshot_phase_complete8
+  sureshot_phase9_complete: sureshot_finish
+  sureshot_shot_hit: add_sureshot_time_3s
+
+
+random_event_player:
+  timer_sureshot_intro_show_complete:
+    events:
+      - sureshot_enable_left_orbit{device.sequences.sureshot_left_orbit.enabled==False}
+      - sureshot_enable_left_ramp{device.sequences.sureshot_left_ramp.enabled==False}
+      - sureshot_enable_scoop{device.sequences.sureshot_scoop.enabled==False}
+      - sureshot_enable_right_ramp{device.sequences.sureshot_right_ramp.enabled==False}
+      - sureshot_enable_right_orbit{device.sequences.sureshot_right_orbit.enabled==False}
+      - sureshot_enable_lower_pop_standup{device.sequences.sureshot_lower_pop_standup.enabled==False}
+      - sureshot_enable_upper_loop{device.sequences.sureshot_upper_loop.enabled==False}
+      - sureshot_enable_drops{device.sequences.sureshot_drops.enabled==False}
+      - sureshot_enable_captive_ball{device.sequences.sureshot_captive_ball.enabled==False}
+      - sureshot_enable_tshirts{device.sequences.sureshot_tshirts.enabled==False}
+      - sureshot_enable_upper_pop_standup{device.sequences.sureshot_upper_pop_standup.enabled==False}
+      - sureshot_enable_lower_pop{device.sequences.sureshot_lower_pop.enabled==False}
+      - sureshot_enable_upper_left_pop{device.sequences.sureshot_upper_left_pop.enabled==False}
+      - sureshot_enable_upper_right_pop{device.sequences.sureshot_upper_right_pop.enabled==False}
+  sureshot_phase_complete:
+    events:
+      - sureshot_enable_left_orbit{device.sequences.sureshot_left_orbit.enabled==False}
+      - sureshot_enable_left_ramp{device.sequences.sureshot_left_ramp.enabled==False}
+      - sureshot_enable_scoop{device.sequences.sureshot_scoop.enabled==False}
+      - sureshot_enable_right_ramp{device.sequences.sureshot_right_ramp.enabled==False}
+      - sureshot_enable_right_orbit{device.sequences.sureshot_right_orbit.enabled==False}
+      - sureshot_enable_lower_pop_standup{device.sequences.sureshot_lower_pop_standup.enabled==False}
+      - sureshot_enable_upper_loop{device.sequences.sureshot_upper_loop.enabled==False}
+      - sureshot_enable_drops{device.sequences.sureshot_drops.enabled==False}
+      - sureshot_enable_captive_ball{device.sequences.sureshot_captive_ball.enabled==False}
+      - sureshot_enable_tshirts{device.sequences.sureshot_tshirts.enabled==False}
+      - sureshot_enable_upper_pop_standup{device.sequences.sureshot_upper_pop_standup.enabled==False}
+      - sureshot_enable_lower_pop{device.sequences.sureshot_lower_pop.enabled==False}
+      - sureshot_enable_upper_left_pop{device.sequences.sureshot_upper_left_pop.enabled==False}
+      - sureshot_enable_upper_right_pop{device.sequences.sureshot_upper_right_pop.enabled==False}
+  sureshot_phase_complete1:
+    events:
+      - sureshot_enable_left_orbit{device.sequences.sureshot_left_orbit.enabled==False}
+      - sureshot_enable_left_ramp{device.sequences.sureshot_left_ramp.enabled==False}
+      - sureshot_enable_scoop{device.sequences.sureshot_scoop.enabled==False}
+      - sureshot_enable_right_ramp{device.sequences.sureshot_right_ramp.enabled==False}
+      - sureshot_enable_right_orbit{device.sequences.sureshot_right_orbit.enabled==False}
+      - sureshot_enable_lower_pop_standup{device.sequences.sureshot_lower_pop_standup.enabled==False}
+      - sureshot_enable_upper_loop{device.sequences.sureshot_upper_loop.enabled==False}
+      - sureshot_enable_drops{device.sequences.sureshot_drops.enabled==False}
+      - sureshot_enable_captive_ball{device.sequences.sureshot_captive_ball.enabled==False}
+      - sureshot_enable_tshirts{device.sequences.sureshot_tshirts.enabled==False}
+      - sureshot_enable_upper_pop_standup{device.sequences.sureshot_upper_pop_standup.enabled==False}
+      - sureshot_enable_lower_pop{device.sequences.sureshot_lower_pop.enabled==False}
+      - sureshot_enable_upper_left_pop{device.sequences.sureshot_upper_left_pop.enabled==False}
+      - sureshot_enable_upper_right_pop{device.sequences.sureshot_upper_right_pop.enabled==False}
+  sureshot_phase_complete2:
+    events:
+      - sureshot_enable_left_orbit{device.sequences.sureshot_left_orbit.enabled==False}
+      - sureshot_enable_left_ramp{device.sequences.sureshot_left_ramp.enabled==False}
+      - sureshot_enable_scoop{device.sequences.sureshot_scoop.enabled==False}
+      - sureshot_enable_right_ramp{device.sequences.sureshot_right_ramp.enabled==False}
+      - sureshot_enable_right_orbit{device.sequences.sureshot_right_orbit.enabled==False}
+      - sureshot_enable_lower_pop_standup{device.sequences.sureshot_lower_pop_standup.enabled==False}
+      - sureshot_enable_upper_loop{device.sequences.sureshot_upper_loop.enabled==False}
+      - sureshot_enable_drops{device.sequences.sureshot_drops.enabled==False}
+      - sureshot_enable_captive_ball{device.sequences.sureshot_captive_ball.enabled==False}
+      - sureshot_enable_tshirts{device.sequences.sureshot_tshirts.enabled==False}
+      - sureshot_enable_upper_pop_standup{device.sequences.sureshot_upper_pop_standup.enabled==False}
+      - sureshot_enable_lower_pop{device.sequences.sureshot_lower_pop.enabled==False}
+      - sureshot_enable_upper_left_pop{device.sequences.sureshot_upper_left_pop.enabled==False}
+      - sureshot_enable_upper_right_pop{device.sequences.sureshot_upper_right_pop.enabled==False}
+  sureshot_phase_complete3:
+    events:
+      - sureshot_enable_left_orbit{device.sequences.sureshot_left_orbit.enabled==False}
+      - sureshot_enable_left_ramp{device.sequences.sureshot_left_ramp.enabled==False}
+      - sureshot_enable_scoop{device.sequences.sureshot_scoop.enabled==False}
+      - sureshot_enable_right_ramp{device.sequences.sureshot_right_ramp.enabled==False}
+      - sureshot_enable_right_orbit{device.sequences.sureshot_right_orbit.enabled==False}
+      - sureshot_enable_lower_pop_standup{device.sequences.sureshot_lower_pop_standup.enabled==False}
+      - sureshot_enable_upper_loop{device.sequences.sureshot_upper_loop.enabled==False}
+      - sureshot_enable_drops{device.sequences.sureshot_drops.enabled==False}
+      - sureshot_enable_captive_ball{device.sequences.sureshot_captive_ball.enabled==False}
+      - sureshot_enable_tshirts{device.sequences.sureshot_tshirts.enabled==False}
+      - sureshot_enable_upper_pop_standup{device.sequences.sureshot_upper_pop_standup.enabled==False}
+      - sureshot_enable_lower_pop{device.sequences.sureshot_lower_pop.enabled==False}
+      - sureshot_enable_upper_left_pop{device.sequences.sureshot_upper_left_pop.enabled==False}
+      - sureshot_enable_upper_right_pop{device.sequences.sureshot_upper_right_pop.enabled==False}
+  sureshot_phase_complete4:
+    events:
+      - sureshot_enable_left_orbit{device.sequences.sureshot_left_orbit.enabled==False}
+      - sureshot_enable_left_ramp{device.sequences.sureshot_left_ramp.enabled==False}
+      - sureshot_enable_scoop{device.sequences.sureshot_scoop.enabled==False}
+      - sureshot_enable_right_ramp{device.sequences.sureshot_right_ramp.enabled==False}
+      - sureshot_enable_right_orbit{device.sequences.sureshot_right_orbit.enabled==False}
+      - sureshot_enable_lower_pop_standup{device.sequences.sureshot_lower_pop_standup.enabled==False}
+      - sureshot_enable_upper_loop{device.sequences.sureshot_upper_loop.enabled==False}
+      - sureshot_enable_drops{device.sequences.sureshot_drops.enabled==False}
+      - sureshot_enable_captive_ball{device.sequences.sureshot_captive_ball.enabled==False}
+      - sureshot_enable_tshirts{device.sequences.sureshot_tshirts.enabled==False}
+      - sureshot_enable_upper_pop_standup{device.sequences.sureshot_upper_pop_standup.enabled==False}
+      - sureshot_enable_lower_pop{device.sequences.sureshot_lower_pop.enabled==False}
+      - sureshot_enable_upper_left_pop{device.sequences.sureshot_upper_left_pop.enabled==False}
+      - sureshot_enable_upper_right_pop{device.sequences.sureshot_upper_right_pop.enabled==False}
+  sureshot_phase_complete5:
+    events:
+      - sureshot_enable_left_orbit{device.sequences.sureshot_left_orbit.enabled==False}
+      - sureshot_enable_left_ramp{device.sequences.sureshot_left_ramp.enabled==False}
+      - sureshot_enable_scoop{device.sequences.sureshot_scoop.enabled==False}
+      - sureshot_enable_right_ramp{device.sequences.sureshot_right_ramp.enabled==False}
+      - sureshot_enable_right_orbit{device.sequences.sureshot_right_orbit.enabled==False}
+      - sureshot_enable_lower_pop_standup{device.sequences.sureshot_lower_pop_standup.enabled==False}
+      - sureshot_enable_upper_loop{device.sequences.sureshot_upper_loop.enabled==False}
+      - sureshot_enable_drops{device.sequences.sureshot_drops.enabled==False}
+      - sureshot_enable_captive_ball{device.sequences.sureshot_captive_ball.enabled==False}
+      - sureshot_enable_tshirts{device.sequences.sureshot_tshirts.enabled==False}
+      - sureshot_enable_upper_pop_standup{device.sequences.sureshot_upper_pop_standup.enabled==False}
+      - sureshot_enable_lower_pop{device.sequences.sureshot_lower_pop.enabled==False}
+      - sureshot_enable_upper_left_pop{device.sequences.sureshot_upper_left_pop.enabled==False}
+      - sureshot_enable_upper_right_pop{device.sequences.sureshot_upper_right_pop.enabled==False}
+  sureshot_phase_complete6:
+    events:
+      - sureshot_enable_left_orbit{device.sequences.sureshot_left_orbit.enabled==False}
+      - sureshot_enable_left_ramp{device.sequences.sureshot_left_ramp.enabled==False}
+      - sureshot_enable_scoop{device.sequences.sureshot_scoop.enabled==False}
+      - sureshot_enable_right_ramp{device.sequences.sureshot_right_ramp.enabled==False}
+      - sureshot_enable_right_orbit{device.sequences.sureshot_right_orbit.enabled==False}
+      - sureshot_enable_lower_pop_standup{device.sequences.sureshot_lower_pop_standup.enabled==False}
+      - sureshot_enable_upper_loop{device.sequences.sureshot_upper_loop.enabled==False}
+      - sureshot_enable_drops{device.sequences.sureshot_drops.enabled==False}
+      - sureshot_enable_captive_ball{device.sequences.sureshot_captive_ball.enabled==False}
+      - sureshot_enable_tshirts{device.sequences.sureshot_tshirts.enabled==False}
+      - sureshot_enable_upper_pop_standup{device.sequences.sureshot_upper_pop_standup.enabled==False}
+      - sureshot_enable_lower_pop{device.sequences.sureshot_lower_pop.enabled==False}
+      - sureshot_enable_upper_left_pop{device.sequences.sureshot_upper_left_pop.enabled==False}
+      - sureshot_enable_upper_right_pop{device.sequences.sureshot_upper_right_pop.enabled==False}
+  sureshot_phase_complete7:
+    events:
+      - sureshot_enable_left_orbit{device.sequences.sureshot_left_orbit.enabled==False}
+      - sureshot_enable_left_ramp{device.sequences.sureshot_left_ramp.enabled==False}
+      - sureshot_enable_scoop{device.sequences.sureshot_scoop.enabled==False}
+      - sureshot_enable_right_ramp{device.sequences.sureshot_right_ramp.enabled==False}
+      - sureshot_enable_right_orbit{device.sequences.sureshot_right_orbit.enabled==False}
+      - sureshot_enable_lower_pop_standup{device.sequences.sureshot_lower_pop_standup.enabled==False}
+      - sureshot_enable_upper_loop{device.sequences.sureshot_upper_loop.enabled==False}
+      - sureshot_enable_drops{device.sequences.sureshot_drops.enabled==False}
+      - sureshot_enable_captive_ball{device.sequences.sureshot_captive_ball.enabled==False}
+      - sureshot_enable_tshirts{device.sequences.sureshot_tshirts.enabled==False}
+      - sureshot_enable_upper_pop_standup{device.sequences.sureshot_upper_pop_standup.enabled==False}
+      - sureshot_enable_lower_pop{device.sequences.sureshot_lower_pop.enabled==False}
+      - sureshot_enable_upper_left_pop{device.sequences.sureshot_upper_left_pop.enabled==False}
+      - sureshot_enable_upper_right_pop{device.sequences.sureshot_upper_right_pop.enabled==False}
+  sureshot_phase_complete8:
+    events:
+      - sureshot_enable_left_orbit{device.sequences.sureshot_left_orbit.enabled==False}
+      - sureshot_enable_left_ramp{device.sequences.sureshot_left_ramp.enabled==False}
+      - sureshot_enable_scoop{device.sequences.sureshot_scoop.enabled==False}
+      - sureshot_enable_right_ramp{device.sequences.sureshot_right_ramp.enabled==False}
+      - sureshot_enable_right_orbit{device.sequences.sureshot_right_orbit.enabled==False}
+      - sureshot_enable_lower_pop_standup{device.sequences.sureshot_lower_pop_standup.enabled==False}
+      - sureshot_enable_upper_loop{device.sequences.sureshot_upper_loop.enabled==False}
+      - sureshot_enable_drops{device.sequences.sureshot_drops.enabled==False}
+      - sureshot_enable_captive_ball{device.sequences.sureshot_captive_ball.enabled==False}
+      - sureshot_enable_tshirts{device.sequences.sureshot_tshirts.enabled==False}
+      - sureshot_enable_upper_pop_standup{device.sequences.sureshot_upper_pop_standup.enabled==False}
+      - sureshot_enable_lower_pop{device.sequences.sureshot_lower_pop.enabled==False}
+      - sureshot_enable_upper_left_pop{device.sequences.sureshot_upper_left_pop.enabled==False}
+      - sureshot_enable_upper_right_pop{device.sequences.sureshot_upper_right_pop.enabled==False}
+
+
+slide_player:
+  mode_sureshot_started:
+    current_mode_highlighted:
+      action: remove
+    base:
+      action: remove
+    basevideo1:
+      action: remove
+    basevideo2:
+      action: remove
+    basevideo3:
+      action: remove
+    basevideo4:
+      action: remove
+    current_wizard_mode_highlighted:
+      action: remove
+    sureshot:
+      action: play
+      priority: 500000
+    sureshot_instructions:
+      action: play
+      priority: 500001
+      expire: 8s
+  timer_sureshot_intro_show_complete:
+    sureshot_instructions:
+      action: remove
+    sureshot_display_timer:
+      action: play
+      priority: 1000000
+    sureshot_countdown:
+      action: play
+      priority: 1000000
+
+
+sound_player:
+  mode_sureshot_started:
+    sureshotmusic:
+      action: replace
+      bus: music
+      loops: 5
+  sureshot_shot_hit:
+    sureshot_quick_hit:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  sureshot_phase1_complete:
+    sureshot_phase_done:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  sureshot_phase2_complete:
+    sureshot_phase_done:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  sureshot_phase3_complete:
+    sureshot_phase_done:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  sureshot_phase4_complete:
+    sureshot_phase_done:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  sureshot_phase5_complete:
+    sureshot_phase_done:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  sureshot_phase6_complete:
+    sureshot_phase_done:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  sureshot_phase7_complete:
+    sureshot_phase_done:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  sureshot_phase8_complete:
+    sureshot_phase_done:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  sureshot_phase9_complete:
+    success_shot:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+
+
+timers:
+  sureshot_intro_show:
+    start_value: 0
+    end_value: 7
+    control_events:
+      - action: start
+        event: mode_sureshot_started
+      - action: jump
+        value: 7
+        event: flipper_cancel{device.ball_holds.wizard_scoop_hold.balls_held==1}
+  sureshot_time_remaining:
+    start_value: 60
+    end_value: 0
+    direction: down
+    control_events:
+      - action: start
+        event: timer_sureshot_intro_show_complete
+      - action: pause
+        event: ball_will_end
+      - action: add
+        value: 10
+        event: add_sureshot_time_10s
+      - action: add
+        value: 3
+        event: add_sureshot_time_3s
+  sureshot_score_countdown_buffer:
+    start_value: 0
+    end_value: 2
+    direction: up
+    start_running: False
+    tick_interval: 1s
+    control_events:
+      - action: start
+        event: timer_sureshot_intro_show_complete
+      - action: pause
+        event: ball_will_end
+      - action: pause
+        event: mode_sureshot_will_end
+      - action: pause
+        event: sureshot_shot_hit
+      - action: restart
+        event: sureshot_phase1_complete
+      - action: restart
+        event: sureshot_phase2_complete
+      - action: restart
+        event: sureshot_phase3_complete
+      - action: restart
+        event: sureshot_phase4_complete
+      - action: restart
+        event: sureshot_phase5_complete
+      - action: restart
+        event: sureshot_phase6_complete
+      - action: restart
+        event: sureshot_phase7_complete
+      - action: restart
+        event: sureshot_phase8_complete
+  sureshot_score_countdown:
+    start_value: 100
+    end_value: 10
+    direction: down
+    start_running: False
+    tick_interval: 200ms
+    control_events:
+      - action: pause
+        event: ball_will_end
+      - action: pause
+        event: mode_sureshot_will_end
+      - action: pause
+        event: sureshot_shot_hit
+      - action: reset
+        event: sureshot_phase1_complete
+      - action: reset
+        event: sureshot_phase2_complete
+      - action: reset
+        event: sureshot_phase3_complete
+      - action: reset
+        event: sureshot_phase4_complete
+      - action: reset
+        event: sureshot_phase5_complete
+      - action: reset
+        event: sureshot_phase6_complete
+      - action: reset
+        event: sureshot_phase7_complete
+      - action: reset
+        event: sureshot_phase8_complete
+      - action: jump
+        value: 100
+        event: sureshot_phase1_complete
+      - action: jump
+        value: 100
+        event: sureshot_phase2_complete
+      - action: jump
+        value: 100
+        event: sureshot_phase3_complete
+      - action: jump
+        value: 100
+        event: sureshot_phase4_complete
+      - action: jump
+        value: 100
+        event: sureshot_phase5_complete
+      - action: jump
+        value: 100
+        event: sureshot_phase6_complete
+      - action: jump
+        value: 100
+        event: sureshot_phase7_complete
+      - action: jump
+        value: 100
+        event: sureshot_phase8_complete
+      - action: restart
+        event: timer_sureshot_score_countdown_buffer_complete
+
+
+show_player:
+  mode_sureshot_started:
+    sureshot_stadium_intro_lights:
+      action: play
+      loops: -1
+  ball_hold_wizard_scoop_hold_balls_released:
+    ball_save_show:
+      action: play
+      loops: -1
+    sureshot_stadium_intro_lights:
+      action: stop
+    sureshot_backboard_purple:
+      action: play
+      loops: -1
+  sureshot_enable_captive_ball:
+    sureshot_captive_ball_show:
+      action: play
+      loops: -1
+      priority: 500000
+  sureshot_captive_ball_hit:
+    sureshot_captive_ball_show:
+      action: stop
+  sureshot_enable_drops:
+    sureshot_drops_show:
+      action: play
+      loops: -1
+      priority: 500000
+  sureshot_drops_hit:
+    sureshot_drops_show:
+      action: stop
+  sureshot_enable_left_orbit:
+    sureshot_left_orbit_show:
+      action: play
+      loops: -1
+      priority: 500000
+  sureshot_left_orbit_hit:
+    sureshot_left_orbit_show:
+      action: stop
+  sureshot_enable_left_ramp:
+    sureshot_left_ramp_show:
+      action: play
+      loops: -1
+      priority: 500000
+  sureshot_left_ramp_hit:
+    sureshot_left_ramp_show:
+      action: stop
+  sureshot_enable_lower_pop:
+    sureshot_lower_pop_show:
+      action: play
+      loops: -1
+      priority: 500000
+  sureshot_lower_pop_hit:
+    sureshot_lower_pop_show:
+      action: stop
+  sureshot_enable_lower_pop_standup:
+    sureshot_lower_pop_standup_show:
+      action: play
+      loops: -1
+      priority: 500000
+  sureshot_lower_pop_standup_hit:
+    sureshot_lower_pop_standup_show:
+      action: stop
+  sureshot_enable_right_orbit:
+    sureshot_right_orbit_show:
+      action: play
+      loops: -1
+      priority: 500000
+  sureshot_right_orbit_hit:
+    sureshot_right_orbit_show:
+      action: stop
+  sureshot_enable_right_ramp:
+    sureshot_right_ramp_show:
+      action: play
+      loops: -1
+      priority: 500000
+  sureshot_right_ramp_hit:
+    sureshot_right_ramp_show:
+      action: stop
+  sureshot_enable_scoop:
+    sureshot_scoop_show:
+      action: play
+      loops: -1
+      priority: 500000
+  sureshot_scoop_hit:
+    sureshot_scoop_show:
+      action: stop
+  sureshot_enable_tshirts:
+    sureshot_tshirts_show:
+      action: play
+      loops: -1
+      priority: 500000
+  sureshot_tshirts_hit:
+    sureshot_tshirts_show:
+      action: stop
+  sureshot_enable_upper_left_pop:
+    sureshot_upper_left_pop_show:
+      action: play
+      loops: -1
+      priority: 500000
+  sureshot_upper_left_pop_hit:
+    sureshot_upper_left_pop_show:
+      action: stop
+  sureshot_enable_upper_right_pop:
+    sureshot_upper_right_pop_show:
+      action: play
+      loops: -1
+      priority: 500000
+  sureshot_upper_right_pop_hit:
+    sureshot_upper_right_pop_show:
+      action: stop
+  sureshot_enable_upper_loop:
+    sureshot_upper_loop_show:
+      action: play
+      loops: -1
+      priority: 500000
+  sureshot_upper_loop_hit:
+    sureshot_upper_loop_show:
+      action: stop
+  sureshot_enable_upper_pop_standup:
+    sureshot_upper_pop_standup_show:
+      action: play
+      loops: -1
+      priority: 500000
+  sureshot_upper_pop_standup_hit:
+    sureshot_upper_pop_standup_show:
+      action: stop
+  sureshot_shot_hit:
+    sureshot_shot_hit_purple:
+      action: play
+      loops: 0
+      priority: 500000
+

@@ -1,0 +1,116 @@
+[gd_scene load_steps=11 format=3 uid="uid://ofx2o5ga680i"]
+
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_5gyf6"]
+[ext_resource type="Texture2D" uid="uid://d23mq1oswe74c" path="res://assets/robot_timer.png" id="2_5gbi0"]
+[ext_resource type="FontFile" uid="uid://cf7wmhhr7tj6q" path="res://fonts/LCD-L__.TTF" id="3_ypeuj"]
+[ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="4_a8mgi"]
+
+[sub_resource type="Animation" id="Animation_yttni"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(968, 992)]
+}
+
+[sub_resource type="Animation" id="Animation_7vpq1"]
+resource_name = "Slide_Up"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0333333, 0.0666667, 0.1, 0.133333, 0.166667, 0.2, 0.233333, 0.266667, 0.3, 0.333333, 0.366667, 0.4, 0.433333, 0.466667, 0.5, 0.533333, 0.566667, 0.6, 0.633333, 0.666667, 0.7, 0.733333, 0.766667, 0.8, 0.833333, 0.866667, 0.9, 0.933333, 0.966667, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(968, 1600), Vector2(968, 1579.73), Vector2(968, 1559.47), Vector2(968, 1539.2), Vector2(968, 1518.93), Vector2(968, 1498.67), Vector2(968, 1478.4), Vector2(968, 1458.13), Vector2(968, 1437.87), Vector2(968, 1417.6), Vector2(968, 1397.33), Vector2(968, 1377.07), Vector2(968, 1356.8), Vector2(968, 1336.53), Vector2(968, 1316.27), Vector2(968, 1296), Vector2(968, 1275.73), Vector2(968, 1255.47), Vector2(968, 1235.2), Vector2(968, 1214.93), Vector2(968, 1194.67), Vector2(968, 1174.4), Vector2(968, 1154.13), Vector2(968, 1133.87), Vector2(968, 1113.6), Vector2(968, 1093.33), Vector2(968, 1073.07), Vector2(968, 1052.8), Vector2(968, 1032.53), Vector2(968, 1012.27), Vector2(968, 992)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2tvem"]
+_data = {
+&"RESET": SubResource("Animation_yttni"),
+&"Slide_Up": SubResource("Animation_7vpq1")
+}
+
+[sub_resource type="Animation" id="Animation_bfix8"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(893, 887)]
+}
+
+[sub_resource type="Animation" id="Animation_vg8h7"]
+resource_name = "Slide_Up_Counter"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0333333, 0.0666667, 0.1, 0.133333, 0.166667, 0.2, 0.233333, 0.266667, 0.3, 0.333333, 0.366667, 0.4, 0.433333, 0.466667, 0.5, 0.533333, 0.566667, 0.6, 0.633333, 0.666667, 0.7, 0.733333, 0.766667, 0.8, 0.833333, 0.866667, 0.9, 0.933333, 0.966667, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(893, 1500), Vector2(893, 1479.57), Vector2(893, 1459.13), Vector2(893, 1438.7), Vector2(893, 1418.27), Vector2(893, 1397.83), Vector2(893, 1377.4), Vector2(893, 1356.97), Vector2(893, 1336.53), Vector2(893, 1316.1), Vector2(893, 1295.67), Vector2(893, 1275.23), Vector2(893, 1254.8), Vector2(893, 1234.37), Vector2(893, 1213.93), Vector2(893, 1193.5), Vector2(893, 1173.07), Vector2(893, 1152.63), Vector2(893, 1132.2), Vector2(893, 1111.77), Vector2(893, 1091.33), Vector2(893, 1070.9), Vector2(893, 1050.47), Vector2(893, 1030.03), Vector2(893, 1009.6), Vector2(893, 989.167), Vector2(893, 968.733), Vector2(893, 948.3), Vector2(893, 927.867), Vector2(893, 907.433), Vector2(893, 887)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_a4638"]
+_data = {
+&"RESET": SubResource("Animation_bfix8"),
+&"Slide_Up_Counter": SubResource("Animation_vg8h7")
+}
+
+[node name="sureshot_display_timer" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_5gyf6")
+
+[node name="Robot" type="Sprite2D" parent="."]
+position = Vector2(968, 992)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_5gbi0")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Robot"]
+libraries = {
+&"": SubResource("AnimationLibrary_2tvem")
+}
+autoplay = "Slide_Up"
+
+[node name="Timer" type="Label" parent="."]
+layout_mode = 0
+offset_left = 893.0
+offset_top = 887.0
+offset_right = 1045.0
+offset_bottom = 1011.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("3_ypeuj")
+theme_override_font_sizes/font_size = 120
+text = "00"
+horizontal_alignment = 1
+script = ExtResource("4_a8mgi")
+variable_name = "sureshot_time_remaining_variable_times_1"
+min_digits = 2
+update_event = "timer_sureshot_time_remaining_tick"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Timer"]
+libraries = {
+&"": SubResource("AnimationLibrary_a4638")
+}
+autoplay = "Slide_Up_Counter"

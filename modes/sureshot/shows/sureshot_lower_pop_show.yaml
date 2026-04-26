@@ -1,0 +1,12 @@
+#show_version=6
+
+- duration: 200ms
+  lights:
+    l_lowerrightpop_inside_led: Purple
+    l_lowerrightpop_inside2_led: Purple
+- duration: 200ms
+  lights:
+    l_lowerrightpop_inside_led: stop
+    l_lowerrightpop_inside2_led: stop
+
+

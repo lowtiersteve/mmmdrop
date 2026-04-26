@@ -26,6 +26,7 @@ mode_settings:
     - highscoremodes3
     - highscoremodes4
     - highscoremodes5
+    - highscoremodes6
   next_item_events: s_right_flipper_active, timer_attract_carousel_timer_complete
   previous_item_events: s_left_flipper_active
 
@@ -505,6 +506,13 @@ widget_player:
       slide: attract
   carousel_item_highlighted{item!="highscoremodes5"}:
     attract_highscoremodes5:
+      action: remove
+  carousel_item_highlighted{item=="highscoremodes6"}:
+    attract_highscoremodes6:
+      action: play
+      slide: attract
+  carousel_item_highlighted{item!="highscoremodes6"}:
+    attract_highscoremodes6:
       action: remove
 
 

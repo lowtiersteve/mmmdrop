@@ -177,6 +177,13 @@ ball_saves:
     enable_events: mode_girls_started
     auto_launch: True
     balls_to_save: -1
+  sureshot_ball_saver:
+    active_time: 0
+    grace_period: 2s
+    enable_events: mode_sureshot_started
+    disable_events: mode_sureshot_stopped
+    auto_launch: True
+    balls_to_save: -1
 
 
 modes:
@@ -213,6 +220,7 @@ modes:
   - bodhivow
   - ball_save_end_mode
   - end_mode
+  - sureshot
 
 
 settings:
@@ -495,6 +503,17 @@ player_vars:
     initial_value: 1
   bodhisattvavow_time_remaining_variable_times_1:
     initial_value: 45
+  mode_sureshot_score:
+    initial_value: 0
+  sureshot_phase:
+    initial_value: 1
+  sureshot_intro_show_variable_times_100:
+    initial_value: 0
+  sureshot_time_remaining_variable_times_1:
+    initial_value: 60
+  sureshot_score_countdown_value:
+    initial_value: 10000
+
 
 
 

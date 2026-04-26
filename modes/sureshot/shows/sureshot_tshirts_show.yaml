@@ -1,0 +1,12 @@
+#show_version=6
+
+- duration: 200ms
+  lights:
+    l_tshirttopcircle_led: Purple
+    l_tshirtbottomcircle_led: Purple
+- duration: 200ms
+  lights:
+    l_tshirttopcircle_led: stop
+    l_tshirtbottomcircle_led: stop
+
+

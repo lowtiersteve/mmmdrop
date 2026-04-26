@@ -2,11 +2,11 @@
 
 - duration: 500ms
   lights:
-    l_leftorbitcombo_circle_led: FFFF00
-    l_innerloopcombo_circle_led: FFFF00
-    l_rightrampcombo_circle_led: FFFF00
-    l_rightorbitcombo_circle_led: FFFF00
-    l_captiveball_smallcircle_led: FFFF00
+    l_leftorbitcombo_circle_led: White
+    l_innerloopcombo_circle_led: White
+    l_rightrampcombo_circle_led: White
+    l_rightorbitcombo_circle_led: White
+    l_captiveball_smallcircle_led: White
 - duration: 500ms
   lights:
     l_leftorbitcombo_circle_led: stop

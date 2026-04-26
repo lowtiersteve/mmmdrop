@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://bsj7bnk7u24x6"]
 
-[ext_resource type="Script" uid="uid://bp5npfvnd6fvx" path="res://addons/mpf-gmc/classes/mpf_widget.gd" id="1_0upi4"]
+[ext_resource type="Script" uid="uid://d4ky3s4bg1ouq" path="res://addons/mpf-gmc/classes/mpf_widget.gd" id="1_0upi4"]
+[ext_resource type="Texture2D" uid="uid://dtodnmwfxtclr" path="res://assets/burstbacking.png" id="2_a13qf"]
 [ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="2_q5k6u"]
-[ext_resource type="Texture2D" uid="uid://dt7hpexqpath5" path="res://assets/action_bubble.png" id="5_bkix4"]
-[ext_resource type="Script" uid="uid://b3ni1cjx2r6sx" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="6_mt3b0"]
+[ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="6_mt3b0"]
 
 [node name="chcheckitoutfinish" type="Control"]
 top_level = true
@@ -12,12 +12,11 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_0upi4")
-metadata/_custom_type_script = "uid://bp5npfvnd6fvx"
 
 [node name="ActionImage" type="Sprite2D" parent="."]
 position = Vector2(1480.33, 778.25)
 scale = Vector2(0.444077, 0.267791)
-texture = ExtResource("5_bkix4")
+texture = ExtResource("2_a13qf")
 
 [node name="ModeTotal" type="Label" parent="."]
 layout_mode = 0
@@ -50,4 +49,3 @@ script = ExtResource("6_mt3b0")
 variable_name = "multiball_chcheckitout_score"
 comma_separate = true
 min_digits = 1
-metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"
