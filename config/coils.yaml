@@ -5,6 +5,8 @@ coils:
     number: 3208-3
     default_pulse_ms: 25
     allow_enable: True
+    default_hold_power: 0.3
+    default_pulse_power: 0.3
     label: "Left Flipper Coil Flip Signal"
     enable_events: enable_flippers, ball_will_start
     disable_events: disable_flippers, ball_will_end
@@ -16,6 +18,8 @@ coils:
     number: 3208-5
     default_pulse_ms: 19
     allow_enable: True
+    default_hold_power: 0.2
+    default_pulse_power: 0.2
     label: "Right Lower Flipper Coil Flip Signal"
     enable_events: enable_flippers, ball_will_start
     disable_events: disable_flippers, ball_will_end
@@ -32,6 +36,8 @@ coils:
     default_pulse_ms: 15
     allow_enable: True
     label: "Left Sling"
+    default_hold_power: 0.2
+    default_pulse_power: 0.2
     enable_events: enable_slings, ball_will_start
     disable_events: disable_slings, ball_will_end
   c_right_slingshot:
@@ -39,12 +45,16 @@ coils:
     default_pulse_ms: 15
     allow_enable: True
     label: "Right Sling"
+    default_hold_power: 0.2
+    default_pulse_power: 0.2
     enable_events: enable_slings, ball_will_start
     disable_events: disable_slings, ball_will_end
   c_flipper_top_right_main:
     number: 0804-0
     default_pulse_ms: 20
     allow_enable: True
+    default_hold_power: 0.2
+    default_pulse_power: 0.2
     label: "Right Upper Flipper Coil Flip Signal"
     enable_events: enable_flippers, ball_will_start
     disable_events: disable_flippers, ball_will_end
@@ -56,6 +66,8 @@ coils:
     number: 0804-2
     default_pulse_ms: 20
     allow_enable: True
+    default_hold_power: 0.2
+    default_pulse_power: 0.2
     label: "Lower Right Pop Bumper"
     enable_events: enable_pops, ball_will_start
     disable_events: disable_pops, ball_will_end
@@ -67,6 +79,8 @@ coils:
     number: 0804b-1
     default_pulse_ms: 20
     allow_enable: True
+    default_hold_power: 0.2
+    default_pulse_power: 0.2
     label: "Upper Right Pop Bumper"
     enable_events: enable_pops, ball_will_start
     disable_events: disable_pops, ball_will_end
@@ -74,6 +88,8 @@ coils:
     number: 0804b-0
     default_pulse_ms: 20
     allow_enable: True
+    default_hold_power: 0.2
+    default_pulse_power: 0.2
     label: "Upper Left Pop Bumper"
     enable_events: enable_pops, ball_will_start
     disable_events: disable_pops, ball_will_end
