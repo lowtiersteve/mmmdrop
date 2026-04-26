@@ -10,10 +10,7 @@ coils:
     disable_events: disable_flippers, ball_will_end
   c_flipper_left_hold:
     number: 3208-2
-    allow_enable: True
     label: "Left Flipper Coil Hold Signal"
-    enable_events: enable_flippers, ball_will_start
-    disable_events: disable_flippers, ball_will_end
   c_flipper_right_main:
     number: 3208-5
     default_pulse_ms: 19
@@ -23,10 +20,7 @@ coils:
     disable_events: disable_flippers, ball_will_end
   c_flipper_right_hold:
     number: 3208-4
-    allow_enable: True
     label: "Right Lower Flipper Coil Hold Signal"
-    enable_events: enable_flippers, ball_will_start
-    disable_events: disable_flippers, ball_will_end
   c_trough_eject:
     number: 3208-1
     default_pulse_ms: 15
@@ -54,10 +48,7 @@ coils:
     disable_events: disable_flippers, ball_will_end
   c_flipper_top_right_hold:
     number: 0804-1
-    allow_enable: True
     label: "Right Upper Flipper Coil Hold Signal"
-    enable_events: enable_flippers, ball_will_start
-    disable_events: disable_flippers, ball_will_end
   c_right_lower_pop:
     number: 0804-2
     default_pulse_ms: 20
