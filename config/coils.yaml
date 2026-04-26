@@ -4,12 +4,7 @@ coils:
   c_flipper_left_main:
     number: 3208-3
     default_pulse_ms: 25
-    allow_enable: True
-    default_hold_power: 0.3
-    default_pulse_power: 0.3
     label: "Left Flipper Coil Flip Signal"
-    enable_events: enable_flippers, ball_will_start
-    disable_events: disable_flippers, ball_will_end
   c_flipper_left_hold:
     number: 3208-2
     allow_enable: True
@@ -17,12 +12,7 @@ coils:
   c_flipper_right_main:
     number: 3208-5
     default_pulse_ms: 19
-    allow_enable: True
-    default_hold_power: 0.2
-    default_pulse_power: 0.2
     label: "Right Lower Flipper Coil Flip Signal"
-    enable_events: enable_flippers, ball_will_start
-    disable_events: disable_flippers, ball_will_end
   c_flipper_right_hold:
     number: 3208-4
     allow_enable: True
@@ -34,30 +24,15 @@ coils:
   c_left_slingshot:
     number: 3208-7
     default_pulse_ms: 15
-    allow_enable: True
     label: "Left Sling"
-    default_hold_power: 0.2
-    default_pulse_power: 0.2
-    enable_events: enable_slings, ball_will_start
-    disable_events: disable_slings, ball_will_end
   c_right_slingshot:
     number: 3208-6
     default_pulse_ms: 15
-    allow_enable: True
     label: "Right Sling"
-    default_hold_power: 0.2
-    default_pulse_power: 0.2
-    enable_events: enable_slings, ball_will_start
-    disable_events: disable_slings, ball_will_end
   c_flipper_top_right_main:
     number: 0804-0
     default_pulse_ms: 20
-    allow_enable: True
-    default_hold_power: 0.2
-    default_pulse_power: 0.2
     label: "Right Upper Flipper Coil Flip Signal"
-    enable_events: enable_flippers, ball_will_start
-    disable_events: disable_flippers, ball_will_end
   c_flipper_top_right_hold:
     number: 0804-1
     allow_enable: True
@@ -65,12 +40,7 @@ coils:
   c_right_lower_pop:
     number: 0804-2
     default_pulse_ms: 20
-    allow_enable: True
-    default_hold_power: 0.2
-    default_pulse_power: 0.2
     label: "Lower Right Pop Bumper"
-    enable_events: enable_pops, ball_will_start
-    disable_events: disable_pops, ball_will_end
   c_three_bank:
     number: 0804-3
     default_pulse_ms: 23
@@ -78,21 +48,11 @@ coils:
   c_center_upper_pop:
     number: 0804b-1
     default_pulse_ms: 20
-    allow_enable: True
-    default_hold_power: 0.2
-    default_pulse_power: 0.2
     label: "Upper Right Pop Bumper"
-    enable_events: enable_pops, ball_will_start
-    disable_events: disable_pops, ball_will_end
   c_left_upper_pop:
     number: 0804b-0
     default_pulse_ms: 20
-    allow_enable: True
-    default_hold_power: 0.2
-    default_pulse_power: 0.2
     label: "Upper Left Pop Bumper"
-    enable_events: enable_pops, ball_will_start
-    disable_events: disable_pops, ball_will_end
   c_scoop_eject:
     number: 0804b-2
     default_pulse_ms: 25
@@ -117,24 +77,24 @@ autofire_coils:
     coil: c_left_slingshot
     switch: s_left_slingshot
     enable_events: enable_slings, ball_will_start
-    disable_events: disable_slings
+    disable_events: disable_slings, ball_will_end
   right_slingshot:
     coil: c_right_slingshot
     switch: s_right_slingshot
     enable_events: enable_slings, ball_will_start
-    disable_events: disable_slings
+    disable_events: disable_slings, ball_will_end
   right_lower_pop:
     coil: c_right_lower_pop
     switch: s_right_lower_pop
     enable_events: enable_pops, ball_will_start
-    disable_events: disable_pops
+    disable_events: disable_pops, ball_will_end
   left_upper_pop:
     coil: c_left_upper_pop
     switch: s_left_upper_pop
     enable_events: enable_pops, ball_will_start
-    disable_events: disable_pops
+    disable_events: disable_pops, ball_will_end
   center_upper_pop:
     coil: c_center_upper_pop
     switch: s_center_upper_pop
     enable_events: enable_pops, ball_will_start
-    disable_events: disable_pops
+    disable_events: disable_pops, ball_will_end

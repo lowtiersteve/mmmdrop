@@ -108,14 +108,20 @@ flippers:
     main_coil: c_flipper_left_main
     hold_coil: c_flipper_left_hold
     activation_switch: s_left_flipper
+    enable_events: enable_flippers, ball_will_start
+    disable_events: disable_flippers, ball_will_end
   right_flipper:
     main_coil: c_flipper_right_main
     hold_coil: c_flipper_right_hold
     activation_switch: s_right_flipper
+    enable_events: enable_flippers, ball_will_start
+    disable_events: disable_flippers, ball_will_end
   top_right_flipper:
     main_coil: c_flipper_top_right_main
     hold_coil: c_flipper_top_right_hold
     activation_switch: s_top_right_flipper
+    enable_events: enable_flippers, ball_will_start
+    disable_events: disable_flippers, ball_will_end
 
 ball_devices:
   bd_trough:
