@@ -67,9 +67,6 @@ coils:
     label: "Up Post"
     default_hold_power: 0.1
     default_pulse_power: 0.1
-    allow_enable: True
-    enable_events: ball_will_start
-    disable_events: ball_will_end
 
 
 autofire_coils:
