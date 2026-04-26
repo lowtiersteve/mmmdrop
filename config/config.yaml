@@ -78,9 +78,9 @@ slide_player:
       action: play
 
 config:
-  - coils.yaml
-  - switches.yaml
   - lights.yaml
+  - switches.yaml
+  - coils.yaml
 
 
 machine_vars:
