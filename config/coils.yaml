@@ -65,8 +65,8 @@ coils:
     number: 0804b-3
     default_pulse_ms: 15
     label: "Up Post"
-    default_hold_power: 0.1
-    default_pulse_power: 0.1
+    default_hold_power: 0.2
+    default_pulse_power: 0.2
 
 
 autofire_coils:

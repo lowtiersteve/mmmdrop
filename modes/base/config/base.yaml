@@ -2377,6 +2377,21 @@ show_player:
   ball_save_default_disabled:
     ball_save_show:
       action: stop
+  ball_save_instrument_collect_timer_start:
+    ball_save_show:
+      action: play
+      loops: -1
+  ball_save_instrument_collect_hurry_up:
+    ball_save_show:
+      action: stop
+    ball_save_hurryup_show:
+      action: play
+      loops: -1
+  ball_save_instrument_collect_grace_period:
+    ball_save_hurryup_show:
+      action: stop
+    ball_save_show:
+      action: stop
   ball_save_sureshot_ball_saver_disabled:
     ball_save_show:
       action: stop
