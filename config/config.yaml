@@ -25,6 +25,8 @@ fast:
       "0804b":
         model: FP-I/O-0804
         order: 4
+    debug: false
+    watchdog: 3000
 
   exp:
     boards:
