@@ -2845,6 +2845,24 @@ widget_player:
       slide: score_overlay
       priority: 975000
       expire: 5s
+  mode_makesomenoise_stopped:
+    makesomenoise_mode_score:
+      action: play
+      slide: score_overlay
+      priority: 975000
+      expire: 5s
+  mode_bodhivow_stopped:
+    bodhivow_mode_score:
+      action: play
+      slide: score_overlay
+      priority: 975000
+      expire: 5s
+  mode_sureshot_stopped:
+    sureshot_mode_score:
+      action: play
+      slide: score_overlay
+      priority: 975000
+      expire: 5s
   timer_chcheckitoutfinish_widget_timer_complete:
     chcheckitoutfinish:
       action: remove
@@ -2901,6 +2919,12 @@ widget_player:
     player_3_billboard_active:
       action: remove
     player_4_billboard_active:
+      action: remove
+    makesomenoise_mode_score:
+      action: remove
+    bodhivow_mode_score:
+      action: remove
+    sureshot_mode_score:
       action: remove
   bodymovin_lock_1_enabled:
     bodymovin_lock_enabled_widget:
@@ -3320,7 +3344,7 @@ event_player:
   s_left_orbit_active{device.diverters.up_post.active==False and device.achievements.wizard1.state=="enabled"}: uppost_up
   s_left_orbit_active{device.diverters.up_post.active==False and device.achievements.wizard2.state=="enabled"}: uppost_up
   s_left_orbit_active{device.diverters.up_post.active==False and device.achievements.wizard3.state=="enabled"}: uppost_up
-  s_left_orbit_active{device.diverters.up_post.active==False and current_player.battery_charged_yesorno==1}: uppost_up
+  s_left_orbit_active{device.diverters.up_post.active==False and current_player.battery_charged_yesorno==1 and current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.girls_blocking_flag==0}: uppost_up
   inner_loop_hit: uppost_down
   left_orbit_hit: uppost_down
   right_orbit_hit: uppost_down
@@ -3337,4 +3361,5 @@ accruals:
       - mode_threemcsand1dj_started
       - mode_tripletrouble_started
       - mode_toomanyrappers_started
+    persist_state: True
     events_when_complete: played_all_modes

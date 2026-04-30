@@ -95,10 +95,10 @@ variable_player:
   scoop_hit:
     score: 3000 * current_player.playfield_x
     girls_bonus_score: 3000 * current_player.playfield_x
-  tshirt_top_standup_hit:
+  machine_var_audits_s_tshirt_top_standup:
     score: 3000 * current_player.playfield_x
     girls_bonus_score: 3000 * current_player.playfield_x
-  tshirt_bottom_standup_hit:
+  machine_var_audits_s_tshirt_bottom_standup:
     score: 3000 * current_player.playfield_x
     girls_bonus_score: 3000 * current_player.playfield_x
   s_left_orbit_active:
@@ -228,13 +228,13 @@ sound_player:
       bus: effects
       max_queue_time: 100ms
       volume: 1.2 db
-  tshirt_top_standup_hit:
+  machine_var_audits_s_tshirt_top_standup:
     girlsvocal:
       action: play
       bus: effects
       max_queue_time: 100ms
       volume: 1.2 db
-  tshirt_bottom_standup_hit:
+  machine_var_audits_s_tshirt_bottom_standup:
     girlsvocal:
       action: play
       bus: effects

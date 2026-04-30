@@ -64,12 +64,11 @@ preview_in_editor = true
 metadata/_edit_lock_ = true
 
 [node name="Label" type="Label" parent="."]
-visible = false
 layout_mode = 0
-offset_left = 503.0
-offset_top = 399.0
-offset_right = 1487.0
-offset_bottom = 640.0
+offset_left = 552.0
+offset_top = 321.0
+offset_right = 1536.0
+offset_bottom = 562.0
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("4_aibgw")
 theme_override_font_sizes/font_size = 116
@@ -85,16 +84,16 @@ autoplay = "Blinking"
 playback_auto_capture = false
 
 [node name="ActionImage" type="Sprite2D" parent="."]
-position = Vector2(983.3288, 426.24963)
+position = Vector2(740, 627.82)
 scale = Vector2(0.8, 0.483)
 texture = ExtResource("5_xl6ia")
 
 [node name="ModeTotal" type="Label" parent="."]
 layout_mode = 0
-offset_left = 573.6578
-offset_top = 303.99963
-offset_right = 982.6578
-offset_bottom = 380.99963
+offset_left = 330.32898
+offset_top = 505.57
+offset_right = 739.329
+offset_bottom = 582.57
 scale = Vector2(1.87781, 1.71507)
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("4_aibgw")
@@ -106,10 +105,10 @@ clip_text = true
 
 [node name="HighPlainsDrifterScore" type="Label" parent="."]
 layout_mode = 0
-offset_left = 583.6578
-offset_top = 420.99963
-offset_right = 1314.6577
-offset_bottom = 490.99963
+offset_left = 340.32898
+offset_top = 622.57
+offset_right = 1071.3289
+offset_bottom = 692.57
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("4_aibgw")
 theme_override_font_sizes/font_size = 50
