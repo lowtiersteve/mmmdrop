@@ -35,7 +35,7 @@ coils:
     label: "Left Sling"
   c_flipper_top_right_main:
     number: 0804-0
-    default_pulse_ms: 18
+    default_pulse_ms: 19
     label: "Right Upper Flipper Coil Flip Signal"
   c_flipper_top_right_hold:
     number: 0804-1
