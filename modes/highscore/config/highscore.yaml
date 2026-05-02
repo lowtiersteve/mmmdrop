@@ -118,3 +118,8 @@ sound_player:
     bonus_sound_random:
       action: play
       bus: effects
+    bizvsnugemusic:
+      action: play
+      bus: music
+      max_queue_time: 0.2s
+

@@ -6,6 +6,12 @@ mode:
   priority: 1001
 
 
+
+shots:
+  fingerlickingood_pop_standup_hit:
+    hit_events: pop_standup_hit
+
+
 variable_player:
   mode_fingerlickingood_started:
     mode_blocking_flag:
@@ -22,9 +28,12 @@ variable_player:
     fingerlickingood_time_remaining_variable_times_1:
       int: device.timers.fingerlickingood_time_remaining.ticks * 1
       action: set
-  pop_standup_hit:
-    score: 3000000 * current_player.fingerlickingood_boost * current_player.playfield_x
-    mode_fingerlickingood_score: 3000000 * current_player.fingerlickingood_boost * current_player.playfield_x
+  fingerlickingood_pop_standup_hit:
+    score: 3000000 * current_player.fingerlickingood_boost * current_player.playfield_x * current_player.loop_shot_multiplier
+    mode_fingerlickingood_score: 3000000 * current_player.fingerlickingood_boost * current_player.playfield_x * current_player.loop_shot_multiplier
+    loop_shot_multiplier:
+      int: 1
+      action: set
   right_inlane_hit:
     score: 
       int: 110 * current_player.playfield_x
@@ -210,7 +219,7 @@ sound_player:
       action: play
       bus: effects
       max_queue_time: 500ms
-  pop_standup_hit:
+  fingerlickingood_pop_standup_hit:
     success_finish:
       action: play
       bus: effects
@@ -267,7 +276,7 @@ timers:
       - action: start
         event: timer_fingerlickingood_intro_show_complete
       - action: pause
-        event: pop_standup_hit
+        event: fingerlickingood_pop_standup_hit
       - action: reset
         event: mode_fingerlickingood_started
       - action: add
@@ -277,7 +286,7 @@ timers:
 
 event_player:
   timer_fingerlickingood_time_remaining_complete: mode_fingerlickingood_failed
-  pop_standup_hit: mode_fingerlickingood_success
+  fingerlickingood_pop_standup_hit: mode_fingerlickingood_success
   left_ramp_hit: finger_boost, add_fingerlickingood_time_7s
   right_ramp_hit: finger_boost, add_fingerlickingood_time_7s
 

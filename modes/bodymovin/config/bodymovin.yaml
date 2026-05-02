@@ -91,35 +91,59 @@ variable_player:
       int: 1
       action: set
   bodymovin_leftramp_jackpot_hit:
-    score: 500000 * current_player.bodymovin_round * current_player.playfield_x * current_player.left_ramp_multiplier
-    multiball_bodymovin_score: 500000 * current_player.bodymovin_round * current_player.playfield_x * current_player.left_ramp_multiplier
+    score: 500000 * current_player.bodymovin_round * current_player.playfield_x * current_player.left_ramp_multiplier * current_player.loop_shot_multiplier
+    multiball_bodymovin_score: 500000 * current_player.bodymovin_round * current_player.playfield_x * current_player.left_ramp_multiplier * current_player.loop_shot_multiplier
+    loop_shot_multiplier:
+      int: 1
+      action: set
   bodymovin_rightramp_jackpot_hit:
-    score: 500000 * current_player.bodymovin_round * current_player.playfield_x * current_player.right_ramp_multiplier
-    multiball_bodymovin_score: 500000 * current_player.bodymovin_round * current_player.playfield_x * current_player.right_ramp_multiplier
+    score: 500000 * current_player.bodymovin_round * current_player.playfield_x * current_player.right_ramp_multiplier * current_player.loop_shot_multiplier
+    multiball_bodymovin_score: 500000 * current_player.bodymovin_round * current_player.playfield_x * current_player.right_ramp_multiplier * current_player.loop_shot_multiplier
+    loop_shot_multiplier:
+      int: 1
+      action: set
   bodymovin_leftorbit_lit_hit:
-    score: 2000000 * current_player.bodymovin_round * current_player.playfield_x * current_player.left_orbit_multiplier
-    multiball_bodymovin_score: 2000000 * current_player.bodymovin_round * current_player.playfield_x * current_player.left_orbit_multiplier
+    score: 2000000 * current_player.bodymovin_round * current_player.playfield_x * current_player.left_orbit_multiplier * current_player.loop_shot_multiplier
+    multiball_bodymovin_score: 2000000 * current_player.bodymovin_round * current_player.playfield_x * current_player.left_orbit_multiplier * current_player.loop_shot_multiplier
     bodymovin_round: 1
+    loop_shot_multiplier:
+      int: 1
+      action: set
   bodymovin_leftramp_lit_hit:
-    score: 2000000 * current_player.bodymovin_round * current_player.playfield_x * current_player.left_ramp_multiplier
-    multiball_bodymovin_score: 2000000 * current_player.bodymovin_round * current_player.playfield_x * current_player.left_ramp_multiplier
+    score: 2000000 * current_player.bodymovin_round * current_player.playfield_x * current_player.left_ramp_multiplier * current_player.loop_shot_multiplier
+    multiball_bodymovin_score: 2000000 * current_player.bodymovin_round * current_player.playfield_x * current_player.left_ramp_multiplier * current_player.loop_shot_multiplier
     bodymovin_round: 1
+    loop_shot_multiplier:
+      int: 1
+      action: set
   bodymovin_captiveball_lit_hit:
-    score: 2000000 * current_player.bodymovin_round * current_player.playfield_x
-    multiball_bodymovin_score: 2000000 * current_player.bodymovin_round * current_player.playfield_x
+    score: 2000000 * current_player.bodymovin_round * current_player.playfield_x * current_player.loop_shot_multiplier
+    multiball_bodymovin_score: 2000000 * current_player.bodymovin_round * current_player.playfield_x * current_player.loop_shot_multiplier
     bodymovin_round: 1
+    loop_shot_multiplier:
+      int: 1
+      action: set
   bodymovin_innerloop_lit_hit:
-    score: 2000000 * current_player.bodymovin_round * current_player.playfield_x * current_player.upper_loop_multiplier
-    multiball_bodymovin_score: 2000000 * current_player.bodymovin_round * current_player.playfield_x * current_player.upper_loop_multiplier
+    score: 2000000 * current_player.bodymovin_round * current_player.playfield_x * current_player.upper_loop_multiplier * current_player.loop_shot_multiplier
+    multiball_bodymovin_score: 2000000 * current_player.bodymovin_round * current_player.playfield_x * current_player.upper_loop_multiplier * current_player.loop_shot_multiplier
     bodymovin_round: 1
+    loop_shot_multiplier:
+      int: 1
+      action: set
   bodymovin_rightramp_lit_hit:
-    score: 2000000 * current_player.bodymovin_round * current_player.playfield_x * current_player.right_ramp_multiplier
-    multiball_bodymovin_score: 2000000 * current_player.bodymovin_round * current_player.playfield_x * current_player.right_ramp_multiplier
+    score: 2000000 * current_player.bodymovin_round * current_player.playfield_x * current_player.right_ramp_multiplier * current_player.loop_shot_multiplier
+    multiball_bodymovin_score: 2000000 * current_player.bodymovin_round * current_player.playfield_x * current_player.right_ramp_multiplier * current_player.loop_shot_multiplier
     bodymovin_round: 1
+    loop_shot_multiplier:
+      int: 1
+      action: set
   bodymovin_rightorbit_lit_hit:
-    score: 2000000 * current_player.bodymovin_round * current_player.playfield_x * current_player.right_orbit_multiplier
-    multiball_bodymovin_score: 2000000 * current_player.bodymovin_round * current_player.playfield_x * current_player.right_orbit_multiplier
+    score: 2000000 * current_player.bodymovin_round * current_player.playfield_x * current_player.right_orbit_multiplier * current_player.loop_shot_multiplier
+    multiball_bodymovin_score: 2000000 * current_player.bodymovin_round * current_player.playfield_x * current_player.right_orbit_multiplier * current_player.loop_shot_multiplier
     bodymovin_round: 1
+    loop_shot_multiplier:
+      int: 1
+      action: set
   right_inlane_hit:
     score: 110 * current_player.playfield_x
     multiball_bodymovin_score: 110 * current_player.playfield_x

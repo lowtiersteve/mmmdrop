@@ -295,12 +295,12 @@ settings:
     sort: 150
   extra_balls_enabled:
     label: "Extra Balls"
-    values:
-      enabled: "Enabled (Default)"
-      disabled: "Disabled"
     default: enabled
     key_type: str
     sort: 160
+    values:
+      disabled: "Disabled"
+      enabled: "Enabled (Default)"
 
 
 event_player:
@@ -547,8 +547,6 @@ player_vars:
     initial_value: 0
   instruments_eb_ready:
     initial_value: 0
-
-
-
-
+  loop_shot_multiplier:
+    initial_value: 1
 

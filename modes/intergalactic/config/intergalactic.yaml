@@ -41,32 +41,59 @@ sequences:
 
 variable_player:
   right_ramp_hit{device.sequences.intergalactic_shot_1.enabled==True}:
-    score: 1000000 * current_player.playfield_x * current_player.right_ramp_multiplier
-    mode_intergalactic_score: 1000000 * current_player.playfield_x * current_player.right_ramp_multiplier
+    score: 1000000 * current_player.playfield_x * current_player.right_ramp_multiplier * current_player.loop_shot_multiplier
+    mode_intergalactic_score: 1000000 * current_player.playfield_x * current_player.right_ramp_multiplier * current_player.loop_shot_multiplier
+    loop_shot_multiplier:
+      int: 1
+      action: set
   right_orbit_hit{device.sequences.intergalactic_shot_1.enabled==True}:
-    score: 1000000 * current_player.playfield_x * current_player.right_orbit_multiplier
-    mode_intergalactic_score: 1000000 * current_player.playfield_x * current_player.right_orbit_multiplier
+    score: 1000000 * current_player.playfield_x * current_player.right_orbit_multiplier * current_player.loop_shot_multiplier
+    mode_intergalactic_score: 1000000 * current_player.playfield_x * current_player.right_orbit_multiplier * current_player.loop_shot_multiplier
+    loop_shot_multiplier:
+      int: 1
+      action: set
   left_ramp_hit{device.sequences.intergalactic_shot_2.enabled==True}:
-    score: 2000000 * current_player.playfield_x * current_player.left_ramp_multiplier
-    mode_intergalactic_score: 2000000 * current_player.playfield_x * current_player.left_ramp_multiplier
+    score: 2000000 * current_player.playfield_x * current_player.left_ramp_multiplier * current_player.loop_shot_multiplier
+    mode_intergalactic_score: 2000000 * current_player.playfield_x * current_player.left_ramp_multiplier * current_player.loop_shot_multiplier
+    loop_shot_multiplier:
+      int: 1
+      action: set
   left_orbit_hit{device.sequences.intergalactic_shot_2.enabled==True}:
-    score: 2000000 * current_player.playfield_x * current_player.left_orbit_multiplier
-    mode_intergalactic_score: 2000000 * current_player.playfield_x * current_player.left_orbit_multiplier
+    score: 2000000 * current_player.playfield_x * current_player.left_orbit_multiplier * current_player.loop_shot_multiplier
+    mode_intergalactic_score: 2000000 * current_player.playfield_x * current_player.left_orbit_multiplier * current_player.loop_shot_multiplier
+    loop_shot_multiplier:
+      int: 1
+      action: set
   right_ramp_hit{device.sequences.intergalactic_shot_3.enabled==True}:
-    score: 3000000 * current_player.playfield_x * current_player.right_ramp_multiplier
-    mode_intergalactic_score: 3000000 * current_player.playfield_x * current_player.right_ramp_multiplier
+    score: 3000000 * current_player.playfield_x * current_player.right_ramp_multiplier * current_player.loop_shot_multiplier
+    mode_intergalactic_score: 3000000 * current_player.playfield_x * current_player.right_ramp_multiplier * current_player.loop_shot_multiplier
+    loop_shot_multiplier:
+      int: 1
+      action: set
   right_orbit_hit{device.sequences.intergalactic_shot_3.enabled==True}:
-    score: 3000000 * current_player.playfield_x * current_player.right_orbit_multiplier
-    mode_intergalactic_score: 3000000 * current_player.playfield_x * current_player.right_orbit_multiplier
+    score: 3000000 * current_player.playfield_x * current_player.right_orbit_multiplier * current_player.loop_shot_multiplier
+    mode_intergalactic_score: 3000000 * current_player.playfield_x * current_player.right_orbit_multiplier * current_player.loop_shot_multiplier
+    loop_shot_multiplier:
+      int: 1
+      action: set
   left_ramp_hit{device.sequences.intergalactic_shot_4.enabled==True}:
-    score: 5000000 * current_player.playfield_x * current_player.left_ramp_multiplier
-    mode_intergalactic_score: 5000000 * current_player.playfield_x * current_player.left_ramp_multiplier
+    score: 5000000 * current_player.playfield_x * current_player.left_ramp_multiplier * current_player.loop_shot_multiplier
+    mode_intergalactic_score: 5000000 * current_player.playfield_x * current_player.left_ramp_multiplier * current_player.loop_shot_multiplier
+    loop_shot_multiplier:
+      int: 1
+      action: set
   left_orbit_hit{device.sequences.intergalactic_shot_4.enabled==True}:
-    score: 5000000 * current_player.playfield_x * current_player.left_orbit_multiplier
-    mode_intergalactic_score: 5000000 * current_player.playfield_x * current_player.left_orbit_multiplier
+    score: 5000000 * current_player.playfield_x * current_player.left_orbit_multiplier * current_player.loop_shot_multiplier
+    mode_intergalactic_score: 5000000 * current_player.playfield_x * current_player.left_orbit_multiplier * current_player.loop_shot_multiplier
+    loop_shot_multiplier:
+      int: 1
+      action: set
   intergalactic_shot_5_done:
-    score: 10000000 * current_player.playfield_x
-    mode_intergalactic_score: 10000000 * current_player.playfield_x
+    score: 10000000 * current_player.playfield_x * current_player.loop_shot_multiplier
+    mode_intergalactic_score: 10000000 * current_player.playfield_x * current_player.loop_shot_multiplier
+    loop_shot_multiplier:
+      int: 1
+      action: set
   timer_intergalactic_intro_show_tick:
     intergalactic_intro_show_variable_times_100:
       int: device.timers.intergalactic_intro_show.ticks * 100
