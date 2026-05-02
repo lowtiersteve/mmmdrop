@@ -113,6 +113,9 @@ variable_player:
     instruments_collected_total:
       int: 1
       action: add
+    instrument_multiplier_ready:
+      int: 1
+      action: set
   boombox_collected:
     boombox_collected:
       int: 1
@@ -127,6 +130,9 @@ variable_player:
     instruments_collected_total:
       int: 1
       action: add
+    instrument_multiplier_ready:
+      int: 1
+      action: set
   turntable_collected:
     turntable_collected:
       int: 1
@@ -141,6 +147,9 @@ variable_player:
     instruments_collected_total:
       int: 1
       action: add
+    instrument_multiplier_ready:
+      int: 1
+      action: set
   all_instruments_collected:
     playfield_x:
       int: 2

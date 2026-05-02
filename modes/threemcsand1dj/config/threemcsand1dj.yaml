@@ -36,25 +36,11 @@ variable_player:
     threemcsand1dj_scratches_remaining:
       int: 3
       action: set
-  pop1_hit:
-    threemcsand1dj_scratch_value:
-      int: 25000
-      action: add
-  pop2_hit:
-    threemcsand1dj_scratch_value:
-      int: 25000
-      action: add
-  pop3_hit:
-    threemcsand1dj_scratch_value:
-      int: 25000
-      action: add
-  captive_ball_hit:
-    threemcsand1dj_mix_multiplier:
-      int: 1
-      action: add
   inner_loop_hit:
-    score: current_player.threemcsand1dj_scratch_value * current_player.threemcsand1dj_mix_multiplier * current_player.playfield_x
-    mode_threemcsand1dj_score: current_player.threemcsand1dj_scratch_value * current_player.threemcsand1dj_mix_multiplier * current_player.playfield_x
+    score:
+      int: current_player.threemcsand1dj_scratch_value * current_player.threemcsand1dj_mix_multiplier * current_player.playfield_x * current_player.upper_loop_multiplier
+      block: True
+    mode_threemcsand1dj_score: current_player.threemcsand1dj_scratch_value * current_player.threemcsand1dj_mix_multiplier * current_player.playfield_x * current_player.upper_loop_multiplier
   timer_threemcsand1dj_intro_show_tick:
     threemcsand1dj_intro_show_variable_times_100:
       int: device.timers.threemcsand1dj_intro_show.ticks * 100
@@ -67,6 +53,153 @@ variable_player:
     threemcsand1dj_scratches_remaining:
       int: -1
       action: add
+  right_inlane_hit:
+    score: 
+      int: 110 * current_player.playfield_x
+      block: True
+    mode_threemcsand1dj_score: 110 * current_player.playfield_x
+  left_inlane_hit:
+    score: 
+      int: 110 * current_player.playfield_x
+      block: True
+    mode_threemcsand1dj_score: 110 * current_player.playfield_x
+  right_outlane_hit:
+    score: 
+      int: 1110 * current_player.playfield_x
+      block: True
+    mode_threemcsand1dj_score: 1110 * current_player.playfield_x
+  left_outlane_hit:
+    score: 
+      int: 1110 * current_player.playfield_x
+      block: True
+    mode_threemcsand1dj_score: 1110 * current_player.playfield_x
+  s_left_slingshot_active:
+    score: 
+      int: 10 * current_player.playfield_x
+      block: True
+    mode_threemcsand1dj_score: 10 * current_player.playfield_x
+  s_right_slingshot_active:
+    score: 
+      int: 10 * current_player.playfield_x
+      block: True
+    mode_threemcsand1dj_score: 10 * current_player.playfield_x
+  pop1_hit:
+    threemcsand1dj_scratch_value:
+      int: 25000
+      action: add
+    score: 
+      int: 1110 * current_player.playfield_x
+      block: True
+    mode_threemcsand1dj_score: 1110 * current_player.playfield_x
+  pop2_hit:
+    threemcsand1dj_scratch_value:
+      int: 25000
+      action: add
+    score: 
+      int: 1110 * current_player.playfield_x
+      block: True
+    mode_threemcsand1dj_score: 1110 * current_player.playfield_x
+  pop3_hit:
+    threemcsand1dj_scratch_value:
+      int: 25000
+      action: add
+    score: 
+      int: 1110 * current_player.playfield_x
+      block: True
+    mode_threemcsand1dj_score: 1110 * current_player.playfield_x
+  upper_pop_standup_hit:
+    score: 
+      int: 5010 * current_player.playfield_x
+      block: True
+    mode_threemcsand1dj_score: 5010 * current_player.playfield_x
+  pop_standup_hit:
+    score: 
+      int: 5010 * current_player.playfield_x
+      block: True
+    mode_threemcsand1dj_score: 5010 * current_player.playfield_x
+  captive_ball_hit:
+    threemcsand1dj_mix_multiplier:
+      int: 1
+      action: add
+    score: 
+      int: 10010 * current_player.playfield_x
+      block: True
+    mode_threemcsand1dj_score: 10010 * current_player.playfield_x
+  spinner_hit:
+    score: 
+      int: 1010 * current_player.playfield_x * current_player.left_orbit_multiplier
+      block: True
+    mode_threemcsand1dj_score: 1010 * current_player.playfield_x * current_player.left_orbit_multiplier
+  bottom_drop_hit:
+    score: 
+      int: 2220 * current_player.playfield_x
+      block: True
+    mode_threemcsand1dj_score: 2220 * current_player.playfield_x
+  middle_drop_hit:
+    score: 
+      int: 2220 * current_player.playfield_x
+      block: True
+    mode_threemcsand1dj_score: 2220 * current_player.playfield_x
+  top_drop_hit:
+    score: 
+      int: 2220 * current_player.playfield_x
+      block: True
+    mode_threemcsand1dj_score: 2220 * current_player.playfield_x
+  scoop_hit:
+    score: 
+      int: 2310 * current_player.playfield_x * current_player.scoop_multiplier
+      block: True
+    mode_threemcsand1dj_score: 2310 * current_player.playfield_x * current_player.scoop_multiplier
+  tshirt_top_standup_hit:
+    score: 
+      int: 5010 * current_player.playfield_x
+      block: True
+    mode_threemcsand1dj_score: 5010 * current_player.playfield_x
+  tshirt_bottom_standup_hit:
+    score: 
+      int: 5010 * current_player.playfield_x
+      block: True
+    mode_threemcsand1dj_score: 5010 * current_player.playfield_x
+  three_bank_standup_hit:
+    score: 
+      int: 20010 * current_player.playfield_x
+      block: True
+    mode_threemcsand1dj_score: 20010 * current_player.playfield_x
+  s_left_orbit_active:
+    score: 
+      int: 110 * current_player.playfield_x * current_player.left_orbit_multiplier
+      block: True
+    mode_threemcsand1dj_score: 110 * current_player.playfield_x * current_player.left_orbit_multiplier
+  s_right_orbit_active:
+    score: 
+      int: 110 * current_player.playfield_x * current_player.right_orbit_multiplier
+      block: True
+    mode_threemcsand1dj_score: 110 * current_player.playfield_x * current_player.right_orbit_multiplier
+  s_inner_orbit_active:
+    score: 
+      int: 1010 * current_player.playfield_x * current_player.upper_loop_multiplier
+      block: True
+    mode_threemcsand1dj_score: 1010 * current_player.playfield_x * current_player.upper_loop_multiplier
+  left_ramp_hit:
+    score: 
+      int: 3010 * current_player.playfield_x * current_player.left_ramp_multiplier
+      block: True
+    mode_threemcsand1dj_score: 3010 * current_player.playfield_x * current_player.left_ramp_multiplier
+  right_ramp_hit:
+    score: 
+      int: 3010 * current_player.playfield_x * current_player.right_ramp_multiplier
+      block: True
+    mode_threemcsand1dj_score: 3010 * current_player.playfield_x * current_player.right_ramp_multiplier
+  left_orbit_hit:
+    score: 
+      int: 1010 * current_player.playfield_x * current_player.left_orbit_multiplier
+      block: True
+    mode_threemcsand1dj_score: 1010 * current_player.playfield_x * current_player.left_orbit_multiplier
+  right_orbit_hit:
+    score: 
+      int: 1010 * current_player.playfield_x * current_player.right_orbit_multiplier
+      block: True
+    mode_threemcsand1dj_score: 1010 * current_player.playfield_x * current_player.right_orbit_multiplier
 
 
 slide_player:

@@ -181,7 +181,7 @@ shot_groups:
       sg_lanes_lit_complete: 1s
   sg_tshirts:
     shots: tshirt_top_standup, tshirt_bottom_standup
-    restart_events: bodymovin_ball_1_locked, bodymovin_ball_2_locked, multiball_bodymovin_ended, ball_started{current_player.ball!=1 and current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_bodymovin_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_chcheckitout_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_makesomenoise_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_bodhivow_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_sureshot_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_girls_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, ball_started{current_player.ball==1 or current_player.bodymovin_lock1_locked_flag==1}, mode_bodymovin_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_chcheckitout_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_makesomenoise_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_sureshot_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_bodhivow_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_girls_stopped{current_player.bodymovin_lock1_locked_flag==1}, ball_started{current_player.bodymovin_lock2_locked_flag==1}, mode_bodymovin_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_chcheckitout_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_makesomenoise_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_sureshot_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_bodhivow_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_girls_stopped{current_player.bodymovin_lock2_locked_flag==1}
+    restart_events: bodymovin_ball_1_locked, bodymovin_ball_2_locked, multiball_bodymovin_ended, ball_started{current_player.ball==1 and is_extra_ball==True and current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, ball_started{current_player.ball!=1 and current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_bodymovin_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_chcheckitout_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_makesomenoise_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_bodhivow_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_sureshot_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_girls_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, ball_started{current_player.ball==1 and is_extra_ball==False}, ball_started{current_player.bodymovin_lock1_locked_flag==1}, mode_bodymovin_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_chcheckitout_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_makesomenoise_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_sureshot_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_bodhivow_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_girls_stopped{current_player.bodymovin_lock1_locked_flag==1}, ball_started{current_player.bodymovin_lock2_locked_flag==1}, mode_bodymovin_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_chcheckitout_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_makesomenoise_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_sureshot_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_bodhivow_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_girls_stopped{current_player.bodymovin_lock2_locked_flag==1}
     disable_events: bodymovin_lock_1_enabled, bodymovin_lock_2_enabled, bodymovin_lock_3_enabled, mode_makesomenoise_started, mode_bodhivow_started, mode_sureshot_started, mode_chcheckitout_started, mode_girls_started, ball_will_end
 
 
@@ -728,6 +728,13 @@ slide_player:
     base:
       action: play
       priority: 5000
+  timer_status_report_timer_complete:
+    status_report_slide:
+      action: play
+      priority: 1200000
+  flipper_cradle_release:
+    status_report_slide:
+      action: remove
 
 
 sound_player:
@@ -736,7 +743,7 @@ sound_player:
       action: play
       bus: music
       loops: 3
-  single_player_ball_started{current_player.ball==1}:
+  ball_started{player==1 and ball==1 and is_extra_ball==False}:
     player1_start:
       action: play
       bus: voice
@@ -1216,6 +1223,18 @@ sound_player:
     shutdownsound:
       action: play
       bus: voice
+  extra_ball_awarded:
+    extraball_callout:
+      action: play
+      bus: voice
+  extra_ball_instruments_collected_eb_lit:
+    extraball_islit_callout:
+      action: play
+      bus: voice
+  extra_ball_modes_played_eb_lit:
+    extraball_islit_callout:
+      action: play
+      bus: voice
 
 
 
@@ -1245,7 +1264,7 @@ variable_player:
   captive_ball_hit:
     score: 10010 * current_player.playfield_x
   spinner_hit:
-    score: 1010 * current_player.playfield_x
+    score: 1010 * current_player.playfield_x * current_player.left_orbit_multiplier
   bottom_drop_hit:
     score: 2220 * current_player.playfield_x
   middle_drop_hit:
@@ -1253,7 +1272,7 @@ variable_player:
   top_drop_hit:
     score: 2220 * current_player.playfield_x
   scoop_hit:
-    score: 2310 * current_player.playfield_x
+    score: 2310 * current_player.playfield_x * current_player.scoop_multiplier
   tshirt_top_standup_hit:
     score: 5010 * current_player.playfield_x
   tshirt_bottom_standup_hit:
@@ -1261,21 +1280,21 @@ variable_player:
   three_bank_standup_hit:
     score: 20010 * current_player.playfield_x
   s_left_orbit_active:
-    score: 110 * current_player.playfield_x
+    score: 110 * current_player.playfield_x * current_player.left_orbit_multiplier
   s_right_orbit_active:
-    score: 110 * current_player.playfield_x
+    score: 110 * current_player.playfield_x * current_player.right_orbit_multiplier
   s_inner_orbit_active:
-    score: 1010 * current_player.playfield_x
+    score: 1010 * current_player.playfield_x * current_player.upper_loop_multiplier
   left_ramp_hit:
-    score: 3010 * current_player.playfield_x
+    score: 3010 * current_player.playfield_x * current_player.left_ramp_multiplier
   right_ramp_hit:
-    score: 3010 * current_player.playfield_x
+    score: 3010 * current_player.playfield_x * current_player.right_ramp_multiplier
   left_orbit_hit:
-    score: 1010 * current_player.playfield_x
+    score: 1010 * current_player.playfield_x * current_player.left_orbit_multiplier
   right_orbit_hit:
-    score: 1010 * current_player.playfield_x
+    score: 1010 * current_player.playfield_x * current_player.right_orbit_multiplier
   inner_loop_hit:
-    score: 2010 * current_player.playfield_x
+    score: 2010 * current_player.playfield_x * current_player.upper_loop_multiplier
   ball_started{current_player.ball!=1}:
     bonus_multiplier:
       int: 1
@@ -1310,11 +1329,93 @@ variable_player:
     boombox_collected:
       int: 0
       action: set
+    instrument_multiplier_ready:
+      int: 0
+      action: set
     playfield_x:
       int: 1
       action: set
     instruments_collected_this_ball:
       int: 0
+      action: set
+    left_orbit_multiplier:
+      int: 1
+      action: set
+    left_ramp_multiplier:
+      int: 1
+      action: set
+    upper_loop_multiplier:
+      int: 1
+      action: set
+    scoop_multiplier:
+      int: 1
+      action: set
+    right_ramp_multiplier:
+      int: 1
+      action: set
+    right_orbit_multiplier:
+      int: 1
+      action: set
+  ball_started{current_player.ball==1 and is_extra_ball==True}:
+    bonus_multiplier:
+      int: 1
+      action: set
+    player_drop_target_bank_counter_count:
+      int: 0
+      action: set
+    characters_collected:
+      int: 0
+      action: set
+    adroc_collected:
+      int: 0
+      action: set
+    miked_collected:
+      int: 0
+      action: set
+    mca_collected:
+      int: 0
+      action: set
+    mmm_collected:
+      int: 0
+      action: set
+    djhurr_collected:
+      int: 0
+      action: set
+    microphone_collected:
+      int: 0
+      action: set
+    turntable_collected:
+      int: 0
+      action: set
+    boombox_collected:
+      int: 0
+      action: set
+    instrument_multiplier_ready:
+      int: 0
+      action: set
+    playfield_x:
+      int: 1
+      action: set
+    instruments_collected_this_ball:
+      int: 0
+      action: set
+    left_orbit_multiplier:
+      int: 1
+      action: set
+    left_ramp_multiplier:
+      int: 1
+      action: set
+    upper_loop_multiplier:
+      int: 1
+      action: set
+    scoop_multiplier:
+      int: 1
+      action: set
+    right_ramp_multiplier:
+      int: 1
+      action: set
+    right_orbit_multiplier:
+      int: 1
       action: set
   battery_charged:
     battery_charged_yesorno:
@@ -1708,6 +1809,64 @@ variable_player:
     wizard_choice_select_variable_times_1:
       int: 10
       action: set
+  left_orbit_hit{current_player.left_orbit_multiplier==1 and current_player.instrument_multiplier_ready==1}:
+    left_orbit_multiplier:
+      int: 2
+      action: set
+    instrument_multiplier_ready:
+      int: 0
+      action: set
+  left_ramp_hit{current_player.left_ramp_multiplier==1 and current_player.instrument_multiplier_ready==1}:
+    left_ramp_multiplier:
+      int: 2
+      action: set
+    instrument_multiplier_ready:
+      int: 0
+      action: set
+  inner_loop_hit{current_player.upper_loop_multiplier==1 and current_player.instrument_multiplier_ready==1}:
+    upper_loop_multiplier:
+      int: 2
+      action: set
+    instrument_multiplier_ready:
+      int: 0
+      action: set
+  scoop_hit{current_player.scoop_multiplier==1 and current_player.instrument_multiplier_ready==1}:
+    scoop_multiplier:
+      int: 2
+      action: set
+    instrument_multiplier_ready:
+      int: 0
+      action: set
+  right_ramp_hit{current_player.right_ramp_multiplier==1 and current_player.instrument_multiplier_ready==1}:
+    right_ramp_multiplier:
+      int: 2
+      action: set
+    instrument_multiplier_ready:
+      int: 0
+      action: set
+  right_orbit_hit{current_player.right_orbit_multiplier==1 and current_player.instrument_multiplier_ready==1}:
+    right_orbit_multiplier:
+      int: 2
+      action: set
+    instrument_multiplier_ready:
+      int: 0
+      action: set
+  extra_ball_instruments_collected_eb_lit:
+    instruments_eb_ready:
+      int: 1
+      action: set
+  extra_ball_instruments_collected_eb_awarded:
+    instruments_eb_ready:
+      int: 0
+      action: set
+  extra_ball_modes_played_eb_lit:
+    modes_eb_ready:
+      int: 1
+      action: set
+  extra_ball_modes_played_eb_awarded:
+    modes_eb_ready:
+      int: 0
+      action: set
 
 
 sequences:
@@ -1741,7 +1900,7 @@ sequences:
     start_enabled: False
     disable_on_complete: True
     persist_state: True
-    restart_events: ball_started{current_player.ball!=1 and current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_bodymovin_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_chcheckitout_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_makesomenoise_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_bodhivow_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_sureshot_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_girls_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}
+    restart_events: ball_started{current_player.ball!=1 and current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, ball_started{current_player.ball==1 and is_extra_ball==True and current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_bodymovin_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_chcheckitout_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_makesomenoise_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_bodhivow_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_sureshot_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_girls_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}
   bodymovin_lock_1:
     events:
       - scoop_hit{current_player.chcheckitout_multiball_blocking_flag==0}
@@ -1761,7 +1920,7 @@ sequences:
     start_enabled: False
     disable_on_complete: True
     persist_state: True
-    restart_events: bodymovin_ball_1_locked, ball_started{current_player.ball==1 or current_player.bodymovin_lock1_locked_flag==1}, mode_bodymovin_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_chcheckitout_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_makesomenoise_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_bodhivow_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_sureshot_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_girls_stopped{current_player.bodymovin_lock1_locked_flag==1}
+    restart_events: bodymovin_ball_1_locked, ball_started{current_player.ball==1 and is_extra_ball==False}, ball_started{current_player.bodymovin_lock1_locked_flag==1}, mode_bodymovin_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_chcheckitout_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_makesomenoise_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_bodhivow_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_sureshot_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_girls_stopped{current_player.bodymovin_lock1_locked_flag==1}
   bodymovin_lock_2:
     events:
       - scoop_hit{current_player.chcheckitout_multiball_blocking_flag==0}
@@ -1806,13 +1965,13 @@ counters:
     reset_on_complete: True
     disable_on_complete: True
     disable_events: drops_standup_start_multiball, achievement_wizard1_state_enabled, achievement_wizard2_state_enabled, achievement_wizard3_state_enabled, mode_bodymovin_started, mode_girls_started
-    enable_events: ball_started{current_player.ball==1 or current_player.chcheckitout_qualified_flag==0}, mode_makesomenoise_stopped{current_player.chcheckitout_qualified_flag==0}, mode_bodhivow_stopped{current_player.chcheckitout_qualified_flag==0}, mode_sureshot_stopped{current_player.chcheckitout_qualified_flag==0}, mode_bodymovin_stopped{current_player.chcheckitout_qualified_flag==0}, mode_girls_stopped{current_player.chcheckitout_qualified_flag==0}
+    enable_events: ball_started{current_player.ball==1 and is_extra_ball==False}, ball_started{current_player.chcheckitout_qualified_flag==0}, mode_makesomenoise_stopped{current_player.chcheckitout_qualified_flag==0}, mode_bodhivow_stopped{current_player.chcheckitout_qualified_flag==0}, mode_sureshot_stopped{current_player.chcheckitout_qualified_flag==0}, mode_bodymovin_stopped{current_player.chcheckitout_qualified_flag==0}, mode_girls_stopped{current_player.chcheckitout_qualified_flag==0}
     restart_events: mode_chcheckitout_stopped
     control_events:
       - event: reset_drop_target_bank_counter
         action: jump
         value: 0
-      - event: ball_started{current_player.ball==1}
+      - event: ball_started{current_player.ball==1 and is_extra_ball==False}
         action: add
         value: 1
   completed_modes_count:
@@ -1906,7 +2065,7 @@ counters:
     persist_state: True
     disable_on_complete: True
     reset_on_complete: False
-    restart_events: ball_started{current_player.ball==1}
+    restart_events: ball_started{current_player.ball==1 and is_extra_ball==False}
     events_when_complete: start_girls_achievement
 
 
@@ -1944,6 +2103,7 @@ random_event_player:
       - tilt2
       - tilt3
       - tilt4
+      - tilt5
 
 
 show_player:
@@ -2363,12 +2523,14 @@ show_player:
     ball_save_show:
       action: play
       loops: -1
+      priority: 2000
   ball_save_default_hurry_up:
     ball_save_show:
       action: stop
     ball_save_hurryup_show:
       action: play
       loops: -1
+      priority: 2000
   ball_save_default_grace_period:
     ball_save_hurryup_show:
       action: stop
@@ -2381,12 +2543,14 @@ show_player:
     ball_save_show:
       action: play
       loops: -1
+      priority: 2000
   ball_save_instrument_collect_hurry_up:
     ball_save_show:
       action: stop
     ball_save_hurryup_show:
       action: play
       loops: -1
+      priority: 2000
   ball_save_instrument_collect_grace_period:
     ball_save_hurryup_show:
       action: stop
@@ -2401,12 +2565,14 @@ show_player:
     ball_save_show:
       action: play
       loops: -1
+      priority: 2000
   ball_save_mode_start_hurry_up:
     ball_save_show:
       action: stop
     ball_save_hurryup_show:
       action: play
       loops: -1
+      priority: 2000
   ball_save_mode_start_grace_period:
     ball_save_hurryup_show:
       action: stop
@@ -2421,12 +2587,14 @@ show_player:
     ball_save_show:
       action: play
       loops: -1
+      priority: 2000
   ball_save_girls_frenzy_hurry_up:
     ball_save_show:
       action: stop
     ball_save_hurryup_show:
       action: play
       loops: -1
+      priority: 2000
   ball_save_girls_frenzy_grace_period:
     ball_save_hurryup_show:
       action: stop
@@ -2596,6 +2764,18 @@ show_player:
       action: stop
     turntable_collected_show:
       action: stop
+    left_orbit_mult_show:
+      action: stop
+    left_ramp_mult_show:
+      action: stop
+    upper_loop_mult_show:
+      action: stop
+    scoop_mult_show:
+      action: stop
+    right_ramp_mult_show:
+      action: stop
+    right_orbit_mult_show:
+      action: stop
   start_superpops:
     superpops_on:
       action: play
@@ -2621,6 +2801,21 @@ show_player:
       action: play
       loops: -1
       priority: 10000
+  mode_superpops_stopped:
+    superpops_on:
+      action: stop
+  mode_superdrops_stopped:
+    superdrops_on:
+      action: stop
+  mode_superspins_stopped:
+    superspins_on:
+      action: stop
+  mode_superstandups_stopped:
+    superstandups_on:
+      action: stop
+  mode_supercombos_stopped:
+    supercombos_on:
+      action: stop
   mode_girls_stopped:
     girls_ready:
       action: stop
@@ -2629,7 +2824,7 @@ show_player:
       action: stop
     bodhisattvavow_area1_yellow:
       action: stop
-    bodhisattvavow_area1_orange:
+    bodhisattvavow_area1_blue:
       action: stop
     bodhisattvavow_area1_red:
       action: stop
@@ -2639,7 +2834,7 @@ show_player:
       action: stop
     bodhisattvavow_area2_yellow:
       action: stop
-    bodhisattvavow_area2_orange:
+    bodhisattvavow_area2_blue:
       action: stop
     bodhisattvavow_area2_red:
       action: stop
@@ -2649,7 +2844,7 @@ show_player:
       action: stop
     bodhisattvavow_area3_yellow:
       action: stop
-    bodhisattvavow_area3_orange:
+    bodhisattvavow_area3_blue:
       action: stop
     bodhisattvavow_area3_red:
       action: stop
@@ -2659,7 +2854,7 @@ show_player:
       action: stop
     bodhisattvavow_area4_yellow:
       action: stop
-    bodhisattvavow_area4_orange:
+    bodhisattvavow_area4_blue:
       action: stop
     bodhisattvavow_area4_red:
       action: stop
@@ -2669,7 +2864,7 @@ show_player:
       action: stop
     bodhisattvavow_area5_yellow:
       action: stop
-    bodhisattvavow_area5_orange:
+    bodhisattvavow_area5_blue:
       action: stop
     bodhisattvavow_area5_red:
       action: stop
@@ -2726,6 +2921,106 @@ show_player:
     stadium_GI_on:
       action: play
       priority: 10000
+  left_orbit_hit{current_player.left_orbit_multiplier==1 and current_player.instrument_multiplier_ready==1 and device.achievements.sureshot_mode.state!="started" and device.achievements.bodhisattvavow_mode.state!="started"}:
+    left_orbit_mult_show:
+      action: play
+      loops: -1
+      priority: 10000
+  left_ramp_hit{current_player.left_ramp_multiplier==1 and current_player.instrument_multiplier_ready==1 and device.achievements.sureshot_mode.state!="started" and device.achievements.bodhisattvavow_mode.state!="started"}:
+    left_ramp_mult_show:
+      action: play
+      loops: -1
+      priority: 10000
+  inner_loop_hit{current_player.upper_loop_multiplier==1 and current_player.instrument_multiplier_ready==1 and device.achievements.sureshot_mode.state!="started" and device.achievements.bodhisattvavow_mode.state!="started"}:
+    upper_loop_mult_show:
+      action: play
+      loops: -1
+      priority: 10000
+  scoop_hit{current_player.scoop_multiplier==1 and current_player.instrument_multiplier_ready==1 and device.achievements.sureshot_mode.state!="started" and device.achievements.bodhisattvavow_mode.state!="started"}:
+    scoop_mult_show:
+      action: play
+      loops: -1
+      priority: 10000
+  right_ramp_hit{current_player.right_ramp_multiplier==1 and current_player.instrument_multiplier_ready==1 and device.achievements.sureshot_mode.state!="started" and device.achievements.bodhisattvavow_mode.state!="started"}:
+    right_ramp_mult_show:
+      action: play
+      loops: -1
+      priority: 10000
+  right_orbit_hit{current_player.right_orbit_multiplier==1 and current_player.instrument_multiplier_ready==1 and device.achievements.sureshot_mode.state!="started" and device.achievements.bodhisattvavow_mode.state!="started"}:
+    right_orbit_mult_show:
+      action: play
+      loops: -1
+      priority: 10000
+  mode_sureshot_stopped{current_player.left_orbit_multiplier==2}:
+    left_orbit_mult_show:
+      action: play
+      loops: -1
+      priority: 10000
+  mode_sureshot_stopped{current_player.left_ramp_multiplier==2}:
+    left_ramp_mult_show:
+      action: play
+      loops: -1
+      priority: 10000
+  mode_sureshot_stopped{current_player.upper_loop_multiplier==2}:
+    upper_loop_mult_show:
+      action: play
+      loops: -1
+      priority: 10000
+  mode_sureshot_stopped{current_player.scoop_multiplier==2}:
+    scoop_mult_show:
+      action: play
+      loops: -1
+      priority: 10000
+  mode_sureshot_stopped{current_player.right_ramp_multiplier==2}:
+    right_ramp_mult_show:
+      action: play
+      loops: -1
+      priority: 10000
+  mode_sureshot_stopped{current_player.right_orbit_multiplier==2}:
+    right_orbit_mult_show:
+      action: play
+      loops: -1
+      priority: 10000
+  mode_bodhivow_stopped{current_player.left_orbit_multiplier==2}:
+    left_orbit_mult_show:
+      action: play
+      loops: -1
+      priority: 10000
+  mode_bodhivow_stopped{current_player.left_ramp_multiplier==2}:
+    left_ramp_mult_show:
+      action: play
+      loops: -1
+      priority: 10000
+  mode_bodhivow_stopped{current_player.upper_loop_multiplier==2}:
+    upper_loop_mult_show:
+      action: play
+      loops: -1
+      priority: 10000
+  mode_bodhivow_stopped{current_player.scoop_multiplier==2}:
+    scoop_mult_show:
+      action: play
+      loops: -1
+      priority: 10000
+  mode_bodhivow_stopped{current_player.right_ramp_multiplier==2}:
+    right_ramp_mult_show:
+      action: play
+      loops: -1
+      priority: 10000
+  mode_bodhivow_stopped{current_player.right_orbit_multiplier==2}:
+    right_orbit_mult_show:
+      action: play
+      loops: -1
+      priority: 10000
+  extra_ball_awarded:
+    extra_ball_show:
+      action: play
+      loops: -1
+      priority: 1000
+  ball_started{current_player.extra_balls==1}:
+    extra_ball_show:
+      action: play
+      loops: -1
+      priority: 1000
 
 
 
@@ -2811,14 +3106,113 @@ blinkenlight_player:
     bl_lowerrightpop_inside_led: remove
     bl_lowerrightpop_inside2_led: remove
     bl_dropbank_rectangle_led: remove
+    bl_left_orbit_x: remove
+    bl_left_ramp_x: remove
+    bl_inner_loop_x: remove
+    bl_scoop_x: remove
+    bl_right_ramp_x: remove
+    bl_right_orbit_x: remove
+  microphone_collected{current_player.left_orbit_multiplier==1}:
+    bl_left_orbit_x: FFFFFF
+  boombox_collected{current_player.left_orbit_multiplier==1}:
+    bl_left_orbit_x: FFFFFF
+  turntable_collected{current_player.left_orbit_multiplier==1}:
+    bl_left_orbit_x: FFFFFF
+  microphone_collected{current_player.left_ramp_multiplier==1}:
+    bl_left_ramp_x: FFFFFF
+  boombox_collected{current_player.left_ramp_multiplier==1}:
+    bl_left_ramp_x: FFFFFF
+  turntable_collected{current_player.left_ramp_multiplier==1}:
+    bl_left_ramp_x: FFFFFF
+  microphone_collected{current_player.upper_loop_multiplier==1}:
+    bl_inner_loop_x: FFFFFF
+  boombox_collected{current_player.upper_loop_multiplier==1}:
+    bl_inner_loop_x: FFFFFF
+  turntable_collected{current_player.upper_loop_multiplier==1}:
+    bl_inner_loop_x: FFFFFF
+  microphone_collected{current_player.scoop_multiplier==1}:
+    bl_scoop_x: FFFFFF
+  boombox_collected{current_player.scoop_multiplier==1}:
+    bl_scoop_x: FFFFFF
+  turntable_collected{current_player.scoop_multiplier==1}:
+    bl_scoop_x: FFFFFF
+  microphone_collected{current_player.right_ramp_multiplier==1}:
+    bl_right_ramp_x: FFFFFF
+  boombox_collected{current_player.right_ramp_multiplier==1}:
+    bl_right_ramp_x: FFFFFF
+  turntable_collected{current_player.right_ramp_multiplier==1}:
+    bl_right_ramp_x: FFFFFF
+  microphone_collected{current_player.right_orbit_multiplier==1}:
+    bl_right_orbit_x: FFFFFF
+  boombox_collected{current_player.right_orbit_multiplier==1}:
+    bl_right_orbit_x: FFFFFF
+  turntable_collected{current_player.right_orbit_multiplier==1}:
+    bl_right_orbit_x: FFFFFF
+  left_orbit_hit{current_player.left_orbit_multiplier==2 and current_player.instrument_multiplier_ready==0}:
+    bl_left_orbit_x: remove
+    bl_left_ramp_x: remove
+    bl_inner_loop_x: remove
+    bl_scoop_x: remove
+    bl_right_ramp_x: remove
+    bl_right_orbit_x: remove
+  left_ramp_hit{current_player.left_ramp_multiplier==2 and current_player.instrument_multiplier_ready==0}:
+    bl_left_orbit_x: remove
+    bl_left_ramp_x: remove
+    bl_inner_loop_x: remove
+    bl_scoop_x: remove
+    bl_right_ramp_x: remove
+    bl_right_orbit_x: remove
+  inner_loop_hit{current_player.upper_loop_multiplier==2 and current_player.instrument_multiplier_ready==0}:
+    bl_left_orbit_x: remove
+    bl_left_ramp_x: remove
+    bl_inner_loop_x: remove
+    bl_scoop_x: remove
+    bl_right_ramp_x: remove
+    bl_right_orbit_x: remove
+  scoop_hit{current_player.scoop_multiplier==2 and current_player.instrument_multiplier_ready==0}:
+    bl_left_orbit_x: remove
+    bl_left_ramp_x: remove
+    bl_inner_loop_x: remove
+    bl_scoop_x: remove
+    bl_right_ramp_x: remove
+    bl_right_orbit_x: remove
+  right_ramp_hit{current_player.right_ramp_multiplier==2 and current_player.instrument_multiplier_ready==0}:
+    bl_left_orbit_x: remove
+    bl_left_ramp_x: remove
+    bl_inner_loop_x: remove
+    bl_scoop_x: remove
+    bl_right_ramp_x: remove
+    bl_right_orbit_x: remove
+  right_orbit_hit{current_player.right_orbit_multiplier==2 and current_player.instrument_multiplier_ready==0}:
+    bl_left_orbit_x: remove
+    bl_left_ramp_x: remove
+    bl_inner_loop_x: remove
+    bl_scoop_x: remove
+    bl_right_ramp_x: remove
+    bl_right_orbit_x: remove
+  mode_sureshot_stopped{current_player.left_orbit_multiplier==1 and current_player.instrument_multiplier_ready==1}:
+    bl_left_orbit_x: FFFFFF
+  mode_sureshot_stopped{current_player.left_ramp_multiplier==1 and current_player.instrument_multiplier_ready==1}:
+    bl_left_ramp_x: FFFFFF
+  mode_sureshot_stopped{current_player.right_orbit_multiplier==1 and current_player.instrument_multiplier_ready==1}:
+    bl_right_orbit_x: FFFFFF
+  mode_sureshot_stopped{current_player.right_ramp_multiplier==1 and current_player.instrument_multiplier_ready==1}:
+    bl_right_ramp_x: FFFFFF
+  mode_sureshot_stopped{current_player.scoop_multiplier==1 and current_player.instrument_multiplier_ready==1}:
+    bl_scoop_x: FFFFFF
+  mode_sureshot_stopped{current_player.upper_loop_multiplier==1 and current_player.instrument_multiplier_ready==1}:
+    bl_inner_loop_x: FFFFFF
+  extra_ball_instruments_collected_eb_lit:
+    bl_scoopmode_circle2_led: FFFF00
+  extra_ball_modes_played_eb_lit:
+    bl_scoopmode_circle2_led: FFFF00
+  extra_ball_awarded:
+    bl_scoopmode_circle2_led: remove
+
+
 
 
 widget_player:
-  single_player_ball_started:
-    player_1_billboard_active:
-      action: play
-      slide: score_overlay
-      priority: 925000
   player_1_ball_started:
     player_1_billboard_active:
       action: play
@@ -2859,6 +3253,12 @@ widget_player:
       expire: 5s
   mode_sureshot_stopped:
     sureshot_mode_score:
+      action: play
+      slide: score_overlay
+      priority: 975000
+      expire: 5s
+  mode_girls_stopped:
+    girls_mode_score:
       action: play
       slide: score_overlay
       priority: 975000
@@ -2925,6 +3325,8 @@ widget_player:
     bodhivow_mode_score:
       action: remove
     sureshot_mode_score:
+      action: remove
+    girls_mode_score:
       action: remove
   bodymovin_lock_1_enabled:
     bodymovin_lock_enabled_widget:
@@ -3062,6 +3464,12 @@ widget_player:
       action: remove
       key: "battery"
       slide: score_overlay
+  extra_ball_awarded:
+    extra_ball_overlay:
+      action: play
+      slide: score_overlay
+      priority: 970000
+      expire: 4s
 
 
 timers:
@@ -3116,6 +3524,16 @@ timers:
       - event: widget_bodymovin_ball_2_locked_widget_active
         action: restart
       - event: ball_ending
+        action: stop
+  status_report_timer:
+    start_value: 0
+    end_value: 5
+    tick_interval: 1s
+    start_running: False
+    control_events:
+      - event: flipper_cradle
+        action: restart
+      - event: flipper_cradle_release
         action: stop
 
 
@@ -3340,7 +3758,7 @@ event_player:
   sg_lanes_lit_complete: add_bonus_x
   sg_tshirts_on_complete: lock_standups_complete
   multiball_makesomenoise_ended: mode_makesomenoise_complete
-  ball_started{current_player.ball==1}: battery_charged
+  ball_started{current_player.ball==1 and is_extra_ball==False}: battery_charged
   s_left_orbit_active{device.diverters.up_post.active==False and device.achievements.wizard1.state=="enabled"}: uppost_up
   s_left_orbit_active{device.diverters.up_post.active==False and device.achievements.wizard2.state=="enabled"}: uppost_up
   s_left_orbit_active{device.diverters.up_post.active==False and device.achievements.wizard3.state=="enabled"}: uppost_up
@@ -3363,3 +3781,15 @@ accruals:
       - mode_toomanyrappers_started
     persist_state: True
     events_when_complete: played_all_modes
+
+
+extra_balls:
+  modes_played_eb:
+    enabled: True
+    light_events: timer_fingerlickingood_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled=="enabled"}, timer_highplainsdrifter_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled=="enabled"}, timer_intergalactic_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled=="enabled"}, timer_paulrevere_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled=="enabled"}, timer_sabotage_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled=="enabled"}, timer_threemcsand1dj_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled=="enabled"}, timer_toomanyrappers_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled=="enabled"}, timer_tripletrouble_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled=="enabled"}
+    award_events: scoop_hit{current_player.modes_eb_ready==1}
+  instruments_collected_eb:
+    enabled: True
+    light_events: boombox_collected{current_player.instruments_collected_total==5 and settings.extra_balls_enabled=="enabled"}, microphone_collected{current_player.instruments_collected_total==5 and settings.extra_balls_enabled=="enabled"}, turntable_collected{current_player.instruments_collected_total==5 and settings.extra_balls_enabled=="enabled"}
+    award_events: scoop_hit{current_player.instruments_eb_ready==1}
+

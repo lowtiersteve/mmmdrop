@@ -55,6 +55,11 @@ slide_player:
       action: play
       priority: 1000000
       expire: 22s
+  tilt5:
+    tilt5:
+      action: play
+      priority: 1000000
+      expire: 10s
   tilt_clear:
     tilt1:
       action: remove
@@ -63,6 +68,8 @@ slide_player:
     tilt3:
       action: remove
     tilt4:
+      action: remove
+    tilt5:
       action: remove
 
 

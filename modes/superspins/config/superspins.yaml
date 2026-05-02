@@ -7,7 +7,7 @@ mode:
 
 variable_player:
   spinner_hit:
-    score: 100000 * current_player.playfield_x
+    score: 100000 * current_player.playfield_x * current_player.left_orbit_multiplier
 
 timers:
   superspins_timer:

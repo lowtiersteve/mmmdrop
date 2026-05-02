@@ -80,14 +80,107 @@ variable_player:
     chcheckitout_multiplier:
       int: 1
       action: set
-  chcheckitout_jackpot_hit:
-    score: 500000 * current_player.chcheckitout_multiplier * current_player.playfield_x
-    multiball_chcheckitout_score: 500000 * current_player.chcheckitout_multiplier * current_player.playfield_x
+  chcheckitout_leftorbit_jackpot_hit:
+    score: 500000 * current_player.chcheckitout_multiplier * current_player.playfield_x * current_player.left_orbit_multiplier
+    multiball_chcheckitout_score: 500000 * current_player.chcheckitout_multiplier * current_player.playfield_x * current_player.left_orbit_multiplier
+  chcheckitout_leftramp_jackpot_hit:
+    score: 500000 * current_player.chcheckitout_multiplier * current_player.playfield_x * current_player.left_ramp_multiplier
+    multiball_chcheckitout_score: 500000 * current_player.chcheckitout_multiplier * current_player.playfield_x * current_player.left_ramp_multiplier
+  chcheckitout_rightramp_jackpot_hit:
+    score: 500000 * current_player.chcheckitout_multiplier * current_player.playfield_x * current_player.right_ramp_multiplier
+    multiball_chcheckitout_score: 500000 * current_player.chcheckitout_multiplier * current_player.playfield_x * current_player.right_ramp_multiplier
+  chcheckitout_rightorbit_jackpot_hit:
+    score: 500000 * current_player.chcheckitout_multiplier * current_player.playfield_x * current_player.right_orbit_multiplier
+    multiball_chcheckitout_score: 500000 * current_player.chcheckitout_multiplier * current_player.playfield_x * current_player.right_orbit_multiplier
   chcheckitout_superjackpot_hit:
-    score: 2000000 * current_player.chcheckitout_multiplier * current_player.playfield_x
-    multiball_chcheckitout_score: 2000000 * current_player.chcheckitout_multiplier * current_player.playfield_x
+    score: 2000000 * current_player.chcheckitout_multiplier * current_player.playfield_x * current_player.upper_loop_multiplier
+    multiball_chcheckitout_score: 2000000 * current_player.chcheckitout_multiplier * current_player.playfield_x * current_player.upper_loop_multiplier
   drop_target_bank_three_bank_down:
     chcheckitout_multiplier: 1
+  right_inlane_hit:
+    score: 110 * current_player.playfield_x * current_player.chcheckitout_multiplier
+    multiball_chcheckitout_score: 110 * current_player.playfield_x * current_player.chcheckitout_multiplier
+  left_inlane_hit:
+    score: 110 * current_player.playfield_x * current_player.chcheckitout_multiplier
+    multiball_chcheckitout_score: 110 * current_player.playfield_x * current_player.chcheckitout_multiplier
+  right_outlane_hit:
+    score: 1110 * current_player.playfield_x * current_player.chcheckitout_multiplier
+    multiball_chcheckitout_score: 1110 * current_player.playfield_x * current_player.chcheckitout_multiplier
+  left_outlane_hit:
+    score: 1110 * current_player.playfield_x * current_player.chcheckitout_multiplier
+    multiball_chcheckitout_score: 1110 * current_player.playfield_x * current_player.chcheckitout_multiplier
+  s_left_slingshot_active:
+    score: 10 * current_player.playfield_x * current_player.chcheckitout_multiplier
+    multiball_chcheckitout_score: 10 * current_player.playfield_x * current_player.chcheckitout_multiplier
+  s_right_slingshot_active:
+    score: 10 * current_player.playfield_x * current_player.chcheckitout_multiplier
+    multiball_chcheckitout_score: 10 * current_player.playfield_x * current_player.chcheckitout_multiplier
+  pop1_hit:
+    score: 1110 * current_player.playfield_x * current_player.chcheckitout_multiplier
+    multiball_chcheckitout_score: 1110 * current_player.playfield_x * current_player.chcheckitout_multiplier
+  pop2_hit:
+    score: 1110 * current_player.playfield_x * current_player.chcheckitout_multiplier
+    multiball_chcheckitout_score: 1110 * current_player.playfield_x * current_player.chcheckitout_multiplier
+  pop3_hit:
+    score: 1110 * current_player.playfield_x * current_player.chcheckitout_multiplier
+    multiball_chcheckitout_score: 1110 * current_player.playfield_x * current_player.chcheckitout_multiplier
+  upper_pop_standup_hit:
+    score: 5010 * current_player.playfield_x * current_player.chcheckitout_multiplier
+    multiball_chcheckitout_score: 5010 * current_player.playfield_x * current_player.chcheckitout_multiplier
+  pop_standup_hit:
+    score: 5010 * current_player.playfield_x * current_player.chcheckitout_multiplier
+    multiball_chcheckitout_score: 5010 * current_player.playfield_x * current_player.chcheckitout_multiplier
+  captive_ball_hit:
+    score: 10010 * current_player.playfield_x * current_player.chcheckitout_multiplier
+    multiball_chcheckitout_score: 10010 * current_player.playfield_x * current_player.chcheckitout_multiplier
+  spinner_hit:
+    score: 1010 * current_player.playfield_x * current_player.chcheckitout_multiplier * current_player.left_orbit_multiplier
+    multiball_chcheckitout_score: 1010 * current_player.playfield_x * current_player.chcheckitout_multiplier * current_player.left_orbit_multiplier
+  bottom_drop_hit:
+    score: 2220 * current_player.playfield_x * current_player.chcheckitout_multiplier
+    multiball_chcheckitout_score: 2220 * current_player.playfield_x * current_player.chcheckitout_multiplier
+  middle_drop_hit:
+    score: 2220 * current_player.playfield_x * current_player.chcheckitout_multiplier
+    multiball_chcheckitout_score: 2220 * current_player.playfield_x * current_player.chcheckitout_multiplier
+  top_drop_hit:
+    score: 2220 * current_player.playfield_x * current_player.chcheckitout_multiplier
+    multiball_chcheckitout_score: 2220 * current_player.playfield_x * current_player.chcheckitout_multiplier
+  scoop_hit:
+    score: 2310 * current_player.playfield_x * current_player.chcheckitout_multiplier * current_player.scoop_multiplier
+    multiball_chcheckitout_score: 2310 * current_player.playfield_x * current_player.chcheckitout_multiplier * current_player.scoop_multiplier
+  tshirt_top_standup_hit:
+    score: 5010 * current_player.playfield_x * current_player.chcheckitout_multiplier
+    multiball_chcheckitout_score: 5010 * current_player.playfield_x * current_player.chcheckitout_multiplier
+  tshirt_bottom_standup_hit:
+    score: 5010 * current_player.playfield_x * current_player.chcheckitout_multiplier
+    multiball_chcheckitout_score: 5010 * current_player.playfield_x * current_player.chcheckitout_multiplier
+  three_bank_standup_hit:
+    score: 20010 * current_player.playfield_x * current_player.chcheckitout_multiplier
+    multiball_chcheckitout_score: 20010 * current_player.playfield_x * current_player.chcheckitout_multiplier
+  s_left_orbit_active:
+    score: 110 * current_player.playfield_x * current_player.chcheckitout_multiplier * current_player.left_orbit_multiplier
+    multiball_chcheckitout_score: 110 * current_player.playfield_x * current_player.chcheckitout_multiplier * current_player.left_orbit_multiplier
+  s_right_orbit_active:
+    score: 110 * current_player.playfield_x * current_player.chcheckitout_multiplier * current_player.right_orbit_multiplier
+    multiball_chcheckitout_score: 110 * current_player.playfield_x * current_player.chcheckitout_multiplier * current_player.right_orbit_multiplier
+  s_inner_orbit_active:
+    score: 1010 * current_player.playfield_x * current_player.chcheckitout_multiplier * current_player.upper_loop_multiplier
+    multiball_chcheckitout_score: 1010 * current_player.playfield_x * current_player.chcheckitout_multiplier * current_player.upper_loop_multiplier
+  left_ramp_hit:
+    score: 3010 * current_player.playfield_x * current_player.chcheckitout_multiplier * current_player.left_ramp_multiplier
+    multiball_chcheckitout_score: 3010 * current_player.playfield_x * current_player.chcheckitout_multiplier * current_player.left_ramp_multiplier
+  right_ramp_hit:
+    score: 3010 * current_player.playfield_x * current_player.chcheckitout_multiplier * current_player.right_ramp_multiplier
+    multiball_chcheckitout_score: 3010 * current_player.playfield_x * current_player.chcheckitout_multiplier * current_player.right_ramp_multiplier
+  left_orbit_hit:
+    score: 1010 * current_player.playfield_x * current_player.chcheckitout_multiplier * current_player.left_orbit_multiplier
+    multiball_chcheckitout_score: 1010 * current_player.playfield_x * current_player.chcheckitout_multiplier * current_player.left_orbit_multiplier
+  right_orbit_hit:
+    score: 1010 * current_player.playfield_x * current_player.chcheckitout_multiplier * current_player.right_orbit_multiplier
+    multiball_chcheckitout_score: 1010 * current_player.playfield_x * current_player.chcheckitout_multiplier * current_player.right_orbit_multiplier
+  inner_loop_hit:
+    score: 2010 * current_player.playfield_x * current_player.chcheckitout_multiplier * current_player.upper_loop_multiplier
+    multiball_chcheckitout_score: 2010 * current_player.playfield_x * current_player.chcheckitout_multiplier * current_player.upper_loop_multiplier
 
 
 accruals:

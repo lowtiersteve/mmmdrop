@@ -398,6 +398,12 @@ widget_player:
       slide: score_overlay
       priority: 901000
       key: "battery"
+  ball_started{current_player.ball==1 and is_extra_ball==True and device.counters.battery_charged_status.value>0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled" and device.counters.battery_charged_status.enabled==True and current_player.battery_charged_yesorno==0}:
+    charges_remaining:
+      action: play
+      slide: score_overlay
+      priority: 901000
+      key: "battery"
   slide_fingerlickingoodfailed_removed{device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled" and device.counters.battery_charged_status.enabled==True and current_player.battery_charged_yesorno==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     charges_remaining:
       action: play

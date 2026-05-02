@@ -1,0 +1,396 @@
+[gd_scene load_steps=7 format=3 uid="uid://covuo5cx50o68"]
+
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_oa54n"]
+[ext_resource type="Texture2D" uid="uid://mpkeol15koho" path="res://assets/PaulsBoutique.jpg" id="2_apnk5"]
+[ext_resource type="Texture2D" uid="uid://dtodnmwfxtclr" path="res://assets/burstbacking.png" id="3_vk8qw"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="4_0f4s6"]
+[ext_resource type="Texture2D" uid="uid://b4vbh6thug3c0" path="res://assets/graffiti_bg_2.png" id="4_luu7j"]
+[ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="5_yx077"]
+
+[node name="status_report_slide" type="Control"]
+top_level = true
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_oa54n")
+
+[node name="background" type="Sprite2D" parent="."]
+position = Vector2(965.00006, 354.00006)
+scale = Vector2(1.9, 1.9)
+texture = ExtResource("2_apnk5")
+
+[node name="TopSpraypaint" type="Sprite2D" parent="."]
+position = Vector2(958, 176)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_vk8qw")
+
+[node name="currentplayer" type="Label" parent="."]
+layout_mode = 0
+offset_left = 848.9999
+offset_top = 156.0
+offset_right = 1138.0
+offset_bottom = 209.0
+rotation = -0.18189362
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_0f4s6")
+theme_override_font_sizes/font_size = 50
+text = "Player 1"
+horizontal_alignment = 1
+script = ExtResource("5_yx077")
+variable_name = "number"
+template_string = "Player %s"
+
+[node name="currentball" type="Label" parent="."]
+layout_mode = 0
+offset_left = 815.99994
+offset_top = 107.000015
+offset_right = 1025.0
+offset_bottom = 159.00002
+rotation = -0.18189362
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_0f4s6")
+theme_override_font_sizes/font_size = 50
+text = "Ball 1"
+horizontal_alignment = 1
+script = ExtResource("5_yx077")
+variable_name = "ball"
+template_string = "Ball %s"
+
+[node name="TopLeftSpraypaint" type="Sprite2D" parent="."]
+position = Vector2(418, 531)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("3_vk8qw")
+
+[node name="scores" type="Label" parent="."]
+layout_mode = 0
+offset_left = 253.0
+offset_top = 228.0
+offset_right = 540.0
+offset_bottom = 302.0
+theme_override_constants/outline_size = 32
+theme_override_fonts/font = ExtResource("4_0f4s6")
+theme_override_font_sizes/font_size = 48
+text = "scores:"
+
+[node name="p1name" type="Label" parent="."]
+layout_mode = 0
+offset_left = -8.0
+offset_top = 339.0
+offset_right = 424.0
+offset_bottom = 403.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("4_0f4s6")
+theme_override_font_sizes/font_size = 40
+text = "Player 1"
+horizontal_alignment = 1
+script = ExtResource("5_yx077")
+variable_type = 4
+min_digits = 0
+template_string = "Player 1"
+format_string = "Player 1"
+initialize_empty = false
+min_players = 1
+
+[node name="p1score" type="Label" parent="."]
+layout_mode = 0
+offset_left = 404.0
+offset_top = 340.0
+offset_right = 836.0
+offset_bottom = 404.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("4_0f4s6")
+theme_override_font_sizes/font_size = 40
+text = "2,000,000,000"
+horizontal_alignment = 1
+script = ExtResource("5_yx077")
+variable_type = 4
+variable_name = "score"
+comma_separate = true
+min_digits = 2
+initialize_empty = false
+min_players = 1
+
+[node name="p2score" type="Label" parent="."]
+layout_mode = 0
+offset_left = 402.0
+offset_top = 414.0
+offset_right = 846.0
+offset_bottom = 478.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("4_0f4s6")
+theme_override_font_sizes/font_size = 40
+text = "2,000,000,000"
+horizontal_alignment = 1
+script = ExtResource("5_yx077")
+variable_type = 5
+variable_name = "score"
+comma_separate = true
+min_digits = 2
+initialize_empty = false
+min_players = 2
+
+[node name="p2name" type="Label" parent="p2score"]
+layout_mode = 0
+offset_left = -394.0
+offset_top = 1.0
+offset_right = 14.0
+offset_bottom = 65.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("4_0f4s6")
+theme_override_font_sizes/font_size = 40
+text = "Player 2"
+horizontal_alignment = 1
+script = ExtResource("5_yx077")
+variable_type = 5
+min_digits = 0
+template_string = "Player 2"
+format_string = "Player 2"
+initialize_empty = false
+min_players = 2
+
+[node name="p3score" type="Label" parent="."]
+layout_mode = 0
+offset_left = 407.0
+offset_top = 483.0
+offset_right = 839.0
+offset_bottom = 547.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("4_0f4s6")
+theme_override_font_sizes/font_size = 40
+text = "2,000,000,000"
+horizontal_alignment = 1
+script = ExtResource("5_yx077")
+variable_type = 6
+variable_name = "score"
+comma_separate = true
+min_digits = 2
+initialize_empty = false
+min_players = 3
+
+[node name="p3name" type="Label" parent="p3score"]
+layout_mode = 0
+offset_left = -405.0
+offset_top = 7.0
+offset_right = 27.0
+offset_bottom = 71.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("4_0f4s6")
+theme_override_font_sizes/font_size = 40
+text = "Player 3"
+horizontal_alignment = 1
+script = ExtResource("5_yx077")
+variable_type = 6
+min_digits = 0
+template_string = "Player 3"
+format_string = "Player 3"
+initialize_empty = false
+min_players = 3
+
+[node name="p4score" type="Label" parent="."]
+layout_mode = 0
+offset_left = 401.0
+offset_top = 558.0
+offset_right = 837.0
+offset_bottom = 622.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("4_0f4s6")
+theme_override_font_sizes/font_size = 40
+text = "2,000,000,000"
+horizontal_alignment = 1
+script = ExtResource("5_yx077")
+variable_type = 7
+variable_name = "score"
+comma_separate = true
+min_digits = 2
+initialize_empty = false
+min_players = 4
+
+[node name="p4name" type="Label" parent="p4score"]
+layout_mode = 0
+offset_left = -387.0
+offset_top = 5.0000086
+offset_right = 27.0
+offset_bottom = 69.00001
+scale = Vector2(1.00845, 0.984678)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("4_0f4s6")
+theme_override_font_sizes/font_size = 40
+text = "Player 4"
+horizontal_alignment = 1
+script = ExtResource("5_yx077")
+variable_type = 7
+min_digits = 0
+template_string = "Player 4"
+format_string = "Player 4"
+initialize_empty = false
+min_players = 4
+
+[node name="BottomRightSpraypaint" type="Sprite2D" parent="."]
+position = Vector2(1507, 873.9999)
+scale = Vector2(0.64000005, 0.64000005)
+texture = ExtResource("3_vk8qw")
+
+[node name="Modesplayed" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1307.0
+offset_top = 713.0
+offset_right = 1782.0
+offset_bottom = 787.0
+theme_override_constants/outline_size = 32
+theme_override_fonts/font = ExtResource("4_0f4s6")
+theme_override_font_sizes/font_size = 48
+text = "Modes played:"
+
+[node name="modes_played" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1295.0
+offset_top = 774.0
+offset_right = 1727.0
+offset_bottom = 838.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("4_0f4s6")
+theme_override_font_sizes/font_size = 60
+text = "1"
+horizontal_alignment = 1
+script = ExtResource("5_yx077")
+variable_name = "modes_played"
+min_digits = 1
+initialize_empty = false
+min_players = 1
+
+[node name="Modescompleted" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1247.0
+offset_top = 876.0
+offset_right = 1840.0
+offset_bottom = 950.0
+theme_override_constants/outline_size = 32
+theme_override_fonts/font = ExtResource("4_0f4s6")
+theme_override_font_sizes/font_size = 48
+text = "Modes completed:"
+
+[node name="modes_completed" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1300.0
+offset_top = 935.0
+offset_right = 1732.0
+offset_bottom = 999.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("4_0f4s6")
+theme_override_font_sizes/font_size = 60
+text = "1"
+horizontal_alignment = 1
+script = ExtResource("5_yx077")
+variable_name = "modes_completed"
+min_digits = 1
+initialize_empty = false
+min_players = 1
+
+[node name="BottomLeftSpraypaint" type="Sprite2D" parent="."]
+position = Vector2(852.4, 915.6)
+scale = Vector2(0.48999998, 0.48999998)
+texture = ExtResource("4_luu7j")
+
+[node name="combos" type="Label" parent="."]
+layout_mode = 0
+offset_left = 598.4
+offset_top = 923.60004
+offset_right = 1030.4
+offset_bottom = 987.60004
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("4_0f4s6")
+theme_override_font_sizes/font_size = 60
+text = "1"
+horizontal_alignment = 1
+script = ExtResource("5_yx077")
+variable_name = "combos"
+comma_separate = true
+min_digits = 1
+initialize_empty = false
+min_players = 1
+
+[node name="Combos" type="Label" parent="."]
+layout_mode = 0
+offset_left = 698.4
+offset_top = 844.60004
+offset_right = 985.4
+offset_bottom = 918.60004
+theme_override_constants/outline_size = 32
+theme_override_fonts/font = ExtResource("4_0f4s6")
+theme_override_font_sizes/font_size = 48
+text = "Combos:"
+
+[node name="TopRightSpraypaint" type="Sprite2D" parent="."]
+position = Vector2(1613, 260.00006)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("4_luu7j")
+
+[node name="bonusmult" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1390.0
+offset_top = 109.00006
+offset_right = 1784.0
+offset_bottom = 215.00006
+theme_override_constants/outline_size = 32
+theme_override_fonts/font = ExtResource("4_0f4s6")
+theme_override_font_sizes/font_size = 48
+text = "bonus
+multiplier:"
+horizontal_alignment = 1
+
+[node name="x" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1601.0
+offset_top = 251.00006
+offset_right = 1719.0
+offset_bottom = 311.00006
+theme_override_constants/outline_size = 32
+theme_override_fonts/font = ExtResource("4_0f4s6")
+theme_override_font_sizes/font_size = 48
+text = "x"
+horizontal_alignment = 1
+
+[node name="bonus_multiplier" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1401.0
+offset_top = 243.00006
+offset_right = 1631.0
+offset_bottom = 307.00006
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("4_0f4s6")
+theme_override_font_sizes/font_size = 60
+text = "1"
+horizontal_alignment = 1
+script = ExtResource("5_yx077")
+variable_name = "bonus_multiplier"
+comma_separate = true
+min_digits = 1
+initialize_empty = false
+min_players = 1

@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cphoat1g76f2p"]
+
+[ext_resource type="Script" uid="uid://d4ky3s4bg1ouq" path="res://addons/mpf-gmc/classes/mpf_widget.gd" id="1_q2d5b"]
+[ext_resource type="Texture2D" uid="uid://dqv58mnh3tick" path="res://assets/extraball.png" id="2_q2d5b"]
+
+[node name="extra_ball_overlay" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_q2d5b")
+metadata/_custom_type_script = "uid://d4ky3s4bg1ouq"
+
+[node name="extraball" type="Sprite2D" parent="."]
+top_level = true
+position = Vector2(1007, 590)
+scale = Vector2(1.1, 1.143)
+texture = ExtResource("2_q2d5b")

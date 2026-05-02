@@ -22,17 +22,150 @@ variable_player:
     fingerlickingood_time_remaining_variable_times_1:
       int: device.timers.fingerlickingood_time_remaining.ticks * 1
       action: set
+  pop_standup_hit:
+    score: 3000000 * current_player.fingerlickingood_boost * current_player.playfield_x
+    mode_fingerlickingood_score: 3000000 * current_player.fingerlickingood_boost * current_player.playfield_x
+  right_inlane_hit:
+    score: 
+      int: 110 * current_player.playfield_x
+      block: True
+    mode_fingerlickingood_score: 110 * current_player.playfield_x
+  left_inlane_hit:
+    score: 
+      int: 110 * current_player.playfield_x
+      block: True
+    mode_fingerlickingood_score: 110 * current_player.playfield_x
+  right_outlane_hit:
+    score: 
+      int: 1110 * current_player.playfield_x
+      block: True
+    mode_fingerlickingood_score: 1110 * current_player.playfield_x
+  left_outlane_hit:
+    score: 
+      int: 1110 * current_player.playfield_x
+      block: True
+    mode_fingerlickingood_score: 1110 * current_player.playfield_x
+  s_left_slingshot_active:
+    score: 
+      int: 10 * current_player.playfield_x
+      block: True
+    mode_fingerlickingood_score: 10 * current_player.playfield_x
+  s_right_slingshot_active:
+    score: 
+      int: 10 * current_player.playfield_x
+      block: True
+    mode_fingerlickingood_score: 10 * current_player.playfield_x
+  pop1_hit:
+    score: 
+      int: 1110 * current_player.playfield_x
+      block: True
+    mode_fingerlickingood_score: 1110 * current_player.playfield_x
+  pop2_hit:
+    score: 
+      int: 1110 * current_player.playfield_x
+      block: True
+    mode_fingerlickingood_score: 1110 * current_player.playfield_x
+  pop3_hit:
+    score: 
+      int: 1110 * current_player.playfield_x
+      block: True
+    mode_fingerlickingood_score: 1110 * current_player.playfield_x
+  upper_pop_standup_hit:
+    score: 
+      int: 5010 * current_player.playfield_x
+      block: True
+    mode_fingerlickingood_score: 5010 * current_player.playfield_x
+  captive_ball_hit:
+    score: 
+      int: 10010 * current_player.playfield_x
+      block: True
+    mode_fingerlickingood_score: 10010 * current_player.playfield_x
+  spinner_hit:
+    score: 
+      int: 1010 * current_player.playfield_x * current_player.left_orbit_multiplier
+      block: True
+    mode_fingerlickingood_score: 1010 * current_player.playfield_x * current_player.left_orbit_multiplier
+  bottom_drop_hit:
+    score: 
+      int: 2220 * current_player.playfield_x
+      block: True
+    mode_fingerlickingood_score: 2220 * current_player.playfield_x
+  middle_drop_hit:
+    score: 
+      int: 2220 * current_player.playfield_x
+      block: True
+    mode_fingerlickingood_score: 2220 * current_player.playfield_x
+  top_drop_hit:
+    score: 
+      int: 2220 * current_player.playfield_x
+      block: True
+    mode_fingerlickingood_score: 2220 * current_player.playfield_x
+  scoop_hit:
+    score: 
+      int: 2310 * current_player.playfield_x * current_player.scoop_multiplier
+      block: True
+    mode_fingerlickingood_score: 2310 * current_player.playfield_x * current_player.scoop_multiplier
+  tshirt_top_standup_hit:
+    score: 
+      int: 5010 * current_player.playfield_x
+      block: True
+    mode_fingerlickingood_score: 5010 * current_player.playfield_x
+  tshirt_bottom_standup_hit:
+    score: 
+      int: 5010 * current_player.playfield_x
+      block: True
+    mode_fingerlickingood_score: 5010 * current_player.playfield_x
+  three_bank_standup_hit:
+    score: 
+      int: 20010 * current_player.playfield_x
+      block: True
+    mode_fingerlickingood_score: 20010 * current_player.playfield_x
+  s_left_orbit_active:
+    score: 
+      int: 110 * current_player.playfield_x * current_player.left_orbit_multiplier
+      block: True
+    mode_fingerlickingood_score: 110 * current_player.playfield_x * current_player.left_orbit_multiplier
+  s_right_orbit_active:
+    score: 
+      int: 110 * current_player.playfield_x * current_player.right_orbit_multiplier
+      block: True
+    mode_fingerlickingood_score: 110 * current_player.playfield_x * current_player.right_orbit_multiplier
+  s_inner_orbit_active:
+    score: 
+      int: 1010 * current_player.playfield_x * current_player.upper_loop_multiplier
+      block: True
+    mode_fingerlickingood_score: 1010 * current_player.playfield_x * current_player.upper_loop_multiplier
   left_ramp_hit:
+    score: 
+      int: 3010 * current_player.playfield_x * current_player.left_ramp_multiplier
+      block: True
+    mode_fingerlickingood_score: 3010 * current_player.playfield_x * current_player.left_ramp_multiplier
     fingerlickingood_boost:
       int: 1
       action: add
   right_ramp_hit:
+    score: 
+      int: 3010 * current_player.playfield_x * current_player.right_ramp_multiplier
+      block: True
+    mode_fingerlickingood_score: 3010 * current_player.playfield_x * current_player.right_ramp_multiplier
     fingerlickingood_boost:
       int: 1
       action: add
-  pop_standup_hit:
-    score: 3000000 * current_player.fingerlickingood_boost * current_player.playfield_x
-    mode_fingerlickingood_score: 3000000 * current_player.fingerlickingood_boost * current_player.playfield_x
+  left_orbit_hit:
+    score: 
+      int: 1010 * current_player.playfield_x * current_player.left_orbit_multiplier
+      block: True
+    mode_fingerlickingood_score: 1010 * current_player.playfield_x * current_player.left_orbit_multiplier
+  right_orbit_hit:
+    score: 
+      int: 1010 * current_player.playfield_x * current_player.right_orbit_multiplier
+      block: True
+    mode_fingerlickingood_score: 1010 * current_player.playfield_x * current_player.right_orbit_multiplier
+  inner_loop_hit:
+    score: 
+      int: 2010 * current_player.playfield_x * current_player.upper_loop_multiplier
+      block: True
+    mode_fingerlickingood_score: 2010 * current_player.playfield_x * current_player.upper_loop_multiplier
 
 
 slide_player:

@@ -1,0 +1,50 @@
+[gd_scene load_steps=5 format=3 uid="uid://c2pbt6rtfams8"]
+
+[ext_resource type="Script" uid="uid://d4ky3s4bg1ouq" path="res://addons/mpf-gmc/classes/mpf_widget.gd" id="1_hl425"]
+[ext_resource type="Texture2D" uid="uid://b4vbh6thug3c0" path="res://assets/graffiti_bg_2.png" id="2_7hxp2"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="3_3l6p4"]
+[ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="4_0axhr"]
+
+[node name="girls_mode_score" type="Control"]
+top_level = true
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_hl425")
+
+[node name="ActionImage" type="Sprite2D" parent="."]
+position = Vector2(947.3288, 879.24963)
+scale = Vector2(0.8, 0.483)
+texture = ExtResource("2_7hxp2")
+
+[node name="ModeTotal" type="Label" parent="."]
+layout_mode = 0
+offset_left = 543.65784
+offset_top = 756.99963
+offset_right = 952.65784
+offset_bottom = 833.99963
+scale = Vector2(1.87781, 1.71507)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("3_3l6p4")
+theme_override_font_sizes/font_size = 25
+text = "Girls:"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="girls_bonus_score" type="Label" parent="."]
+layout_mode = 0
+offset_left = 553.65784
+offset_top = 873.99963
+offset_right = 1284.6578
+offset_bottom = 943.99963
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("3_3l6p4")
+theme_override_font_sizes/font_size = 50
+text = "00"
+horizontal_alignment = 1
+script = ExtResource("4_0axhr")
+variable_name = "girls_bonus_score"
+comma_separate = true
+min_digits = 1

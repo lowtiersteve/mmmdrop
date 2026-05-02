@@ -5,7 +5,7 @@ mode:
   stop_events: mode_bodhivow_stop, timer_bodhisattvavow_time_remaining_complete
   priority: 5001
 
-#willitwork?
+
 counters:
   bodhisattvavow_area1_counter:
     count_events: inner_loop_hit, captive_ball_hit, scoop_hit, upper_pop_standup_hit, tshirt_top_standup_hit, tshirt_bottom_standup_hit
@@ -140,6 +140,76 @@ variable_player:
     bodhisattvavow_area5_counter:
       int: 1
       action: set
+  right_inlane_hit:
+    score:
+      int: 110 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier
+      block: True
+    mode_bodhisattvavow_score: 110 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier
+  left_inlane_hit:
+    score:
+      int: 110 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier
+      block: True
+    mode_bodhisattvavow_score: 110 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier
+  s_left_slingshot_active:
+    score:
+      int: 10 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier
+      block: True
+    mode_bodhisattvavow_score: 10 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier
+  s_right_slingshot_active:
+    score:
+      int: 10 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier
+      block: True
+    mode_bodhisattvavow_score: 10 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier
+  pop1_hit:
+    score:
+      int: 1110 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier
+      block: True
+    mode_bodhisattvavow_score: 1110 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier
+  pop2_hit:
+    score:
+      int: 1110 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier
+      block: True
+    mode_bodhisattvavow_score: 1110 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier
+  spinner_hit:
+    score:
+      int: 1010 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier
+      block: True
+    mode_bodhisattvavow_score: 1010 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier
+  bottom_drop_hit:
+    score:
+      int: 2220 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier
+      block: True
+    mode_bodhisattvavow_score: 2220 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier
+  middle_drop_hit:
+    score:
+      int: 2220 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier
+      block: True
+    mode_bodhisattvavow_score: 2220 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier
+  top_drop_hit:
+    score:
+      int: 2220 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier
+      block: True
+    mode_bodhisattvavow_score: 2220 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier
+  three_bank_standup_hit:
+    score:
+      int: 20010 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier
+      block: True
+    mode_bodhisattvavow_score: 20010 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier
+  s_left_orbit_active:
+    score:
+      int: 110 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier
+      block: True
+    mode_bodhisattvavow_score: 110 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier
+  s_right_orbit_active:
+    score:
+      int: 110 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier
+      block: True
+    mode_bodhisattvavow_score: 110 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier
+  s_inner_orbit_active:
+    score:
+      int: 1010 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier
+      block: True
+    mode_bodhisattvavow_score: 1010 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier
 
 
 event_player:
@@ -239,6 +309,19 @@ timers:
 
 
 show_player:
+  mode_bodhivow_started:
+    left_orbit_mult_show:
+      action: stop
+    left_ramp_mult_show:
+      action: stop
+    upper_loop_mult_show:
+      action: stop
+    scoop_mult_show:
+      action: stop
+    right_ramp_mult_show:
+      action: stop
+    right_orbit_mult_show:
+      action: stop
   ball_hold_wizard_scoop_hold_balls_released:
     ball_save_show:
       action: play
@@ -280,12 +363,12 @@ show_player:
     bodhisattvavow_area1_yellow:
       action: stop
   player_bodhisattvavow_area1_counter{current_player.bodhisattvavow_area1_counter==3}:
-    bodhisattvavow_area1_orange:
+    bodhisattvavow_area1_blue:
       action: play
       loops: -1
       priority: 500000
   player_bodhisattvavow_area1_counter{current_player.bodhisattvavow_area1_counter!=3}:
-    bodhisattvavow_area1_orange:
+    bodhisattvavow_area1_blue:
       action: stop
   player_bodhisattvavow_area1_counter{current_player.bodhisattvavow_area1_counter==4}:
     bodhisattvavow_area1_red:
@@ -314,12 +397,12 @@ show_player:
     bodhisattvavow_area2_yellow:
       action: stop
   player_bodhisattvavow_area2_counter{current_player.bodhisattvavow_area2_counter==3}:
-    bodhisattvavow_area2_orange:
+    bodhisattvavow_area2_blue:
       action: play
       loops: -1
       priority: 500000
   player_bodhisattvavow_area2_counter{current_player.bodhisattvavow_area2_counter!=3}:
-    bodhisattvavow_area2_orange:
+    bodhisattvavow_area2_blue:
       action: stop
   player_bodhisattvavow_area2_counter{current_player.bodhisattvavow_area2_counter==4}:
     bodhisattvavow_area2_red:
@@ -348,12 +431,12 @@ show_player:
     bodhisattvavow_area3_yellow:
       action: stop
   player_bodhisattvavow_area3_counter{current_player.bodhisattvavow_area3_counter==3}:
-    bodhisattvavow_area3_orange:
+    bodhisattvavow_area3_blue:
       action: play
       loops: -1
       priority: 500000
   player_bodhisattvavow_area3_counter{current_player.bodhisattvavow_area3_counter!=3}:
-    bodhisattvavow_area3_orange:
+    bodhisattvavow_area3_blue:
       action: stop
   player_bodhisattvavow_area3_counter{current_player.bodhisattvavow_area3_counter==4}:
     bodhisattvavow_area3_red:
@@ -382,12 +465,12 @@ show_player:
     bodhisattvavow_area4_yellow:
       action: stop
   player_bodhisattvavow_area4_counter{current_player.bodhisattvavow_area4_counter==3}:
-    bodhisattvavow_area4_orange:
+    bodhisattvavow_area4_blue:
       action: play
       loops: -1
       priority: 500000
   player_bodhisattvavow_area4_counter{current_player.bodhisattvavow_area4_counter!=3}:
-    bodhisattvavow_area4_orange:
+    bodhisattvavow_area4_blue:
       action: stop
   player_bodhisattvavow_area4_counter{current_player.bodhisattvavow_area4_counter==4}:
     bodhisattvavow_area4_red:
@@ -416,12 +499,12 @@ show_player:
     bodhisattvavow_area5_yellow:
       action: stop
   player_bodhisattvavow_area5_counter{current_player.bodhisattvavow_area5_counter==3}:
-    bodhisattvavow_area5_orange:
+    bodhisattvavow_area5_blue:
       action: play
       loops: -1
       priority: 500000
   player_bodhisattvavow_area5_counter{current_player.bodhisattvavow_area5_counter!=3}:
-    bodhisattvavow_area5_orange:
+    bodhisattvavow_area5_blue:
       action: stop
   player_bodhisattvavow_area5_counter{current_player.bodhisattvavow_area5_counter==4}:
     bodhisattvavow_area5_red:
@@ -444,3 +527,14 @@ ball_saves:
     auto_launch: false
     balls_to_save: 1
     debug: true
+
+
+
+blinkenlight_player:
+  mode_bodhivow_started:
+    bl_left_orbit_x: remove
+    bl_left_ramp_x: remove
+    bl_inner_loop_x: remove
+    bl_scoop_x: remove
+    bl_right_ramp_x: remove
+    bl_right_orbit_x: remove

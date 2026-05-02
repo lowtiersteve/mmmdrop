@@ -97,7 +97,7 @@ playfields:
   playfield:
     tags: default
     default_source_device: bd_plunger
-    enable_ball_search: False
+    enable_ball_search: True
 
 
 game:
@@ -293,6 +293,14 @@ settings:
     default: 4
     key_type: int
     sort: 150
+  extra_balls_enabled:
+    label: "Extra Balls"
+    values:
+      enabled: "Enabled (Default)"
+      disabled: "Disabled"
+    default: enabled
+    key_type: str
+    sort: 160
 
 
 event_player:
@@ -521,6 +529,24 @@ player_vars:
     initial_value: 60
   sureshot_score_countdown_value:
     initial_value: 10000
+  left_orbit_multiplier:
+    initial_value: 1
+  left_ramp_multiplier:
+    initial_value: 1
+  upper_loop_multiplier:
+    initial_value: 1
+  scoop_multiplier:
+    initial_value: 1
+  right_ramp_multiplier:
+    initial_value: 1
+  right_orbit_multiplier:
+    initial_value: 1
+  instrument_multiplier_ready:
+    initial_value: 0
+  modes_eb_ready:
+    initial_value: 0
+  instruments_eb_ready:
+    initial_value: 0
 
 
 

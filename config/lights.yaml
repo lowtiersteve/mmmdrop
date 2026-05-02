@@ -147,7 +147,8 @@ lights:
     number: lightboard-8-2
     subtype: led
     type: rgb
-    label: "Scoop Mystery Circle"
+    default_on_color: FFFF00
+    label: "Scoop Extra Ball Circle"
   l_scoopcombo_circle_led:
     number: lightboard-8-3
     subtype: led
@@ -728,4 +729,33 @@ blinkenlights:
     off_when_multiple: false
     color_duration: 300ms
     light: l_dropbank_rectangle_led
+  bl_left_orbit_x:
+    off_when_multiple: false
+    color_duration: 300ms
+    light: l_left_orbit_x
+  bl_left_ramp_x:
+    off_when_multiple: false
+    color_duration: 300ms
+    light: l_left_ramp_x
+  bl_inner_loop_x:
+    off_when_multiple: false
+    color_duration: 300ms
+    light: l_inner_loop_x
+  bl_scoop_x:
+    off_when_multiple: false
+    color_duration: 300ms
+    light: l_scoop_x
+  bl_right_ramp_x:
+    off_when_multiple: false
+    color_duration: 300ms
+    light: l_right_ramp_x
+  bl_right_orbit_x:
+    off_when_multiple: false
+    color_duration: 300ms
+    light: l_right_orbit_x
+  bl_scoopmode_circle2_led:
+    off_when_multiple: false
+    color_duration: 750ms
+    light: l_scoopmode_circle2_led
+
 

@@ -1,0 +1,34 @@
+#show_version=6
+
+- duration: -1
+  lights:
+    l_lowerrightstandup_circle_led: blue
+    l_lowerrightpop_inside_led: blue
+    l_lowerrightpop_inside2_led: blue
+    l_rightinlane_circle_led: blue
+    l_rightoutlane_circle_led: blue
+    l_modeindicator3_rectangle_led: blue
+    l_modeindicator4_rectangle_led: blue
+    l_modeindicator7_rectangle_led: blue
+    l_modeindicator8_rectangle_led: blue
+    l_wizardindicator3_rectangle_led: blue
+    l_wizardindicator_rectangle_led: blue
+    l_supercircle4_led: blue
+    l_supercircle5_led: blue
+    l_cassetteright_led: blue
+    l_rightsling_uppergi_led: blue
+    l_rightsling_lowergi_led: blue
+    l_stadium_right_15: blue
+    l_stadium_right_16: blue
+    l_stadium_right_17: blue
+    l_stadium_right_18: blue
+    l_stadium_right_19: blue
+    l_stadium_right_20: blue
+    l_stadium_right_21: blue
+    l_stadium_right_22: blue
+    l_stadium_right_23: blue
+    l_stadium_right_24: blue
+    l_stadium_right_25: blue
+    l_stadium_right_26: blue
+    l_stadium_right_27: blue
+
