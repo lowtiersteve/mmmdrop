@@ -1,0 +1,16 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=6 format=3 uid="uid://gi2kq3c5adov"]
+
+[ext_resource type="AudioStream" uid="uid://0a4pnxacx80r" path="res://sounds/intergalactic_instrumental.ogg" id="1_05nyn"]
+[ext_resource type="AudioStream" uid="uid://b2dimgxdfwc4c" path="res://sounds/chcheckitout_instrumental.ogg" id="2_i3e8y"]
+[ext_resource type="AudioStream" uid="uid://bcit18xf34yfk" path="res://sounds/fingerlickingood_instrumental.ogg" id="3_y2fgx"]
+[ext_resource type="AudioStream" uid="uid://bidsjjw2v6xgr" path="res://sounds/nosleeptilbrooklyn_instrumental.ogg" id="4_5f0t0"]
+[ext_resource type="AudioStream" uid="uid://dbwosyag2jqjl" path="res://sounds/threemcs_instrumental.tres" id="5_3es3e"]
+
+[resource]
+playback_mode = 1
+streams_count = 5
+stream_0/stream = ExtResource("1_05nyn")
+stream_1/stream = ExtResource("2_i3e8y")
+stream_2/stream = ExtResource("3_y2fgx")
+stream_3/stream = ExtResource("4_5f0t0")
+stream_4/stream = ExtResource("5_3es3e")

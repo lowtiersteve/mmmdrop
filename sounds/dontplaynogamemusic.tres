@@ -1,0 +1,8 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://d05tkq0nfi2yu"]
+
+[ext_resource type="AudioStream" uid="uid://bbx4ygbv3vx7s" path="res://sounds/dontplaynogame_music.ogg" id="1_41lfp"]
+
+[resource]
+playback_mode = 2
+streams_count = 1
+stream_0/stream = ExtResource("1_41lfp")

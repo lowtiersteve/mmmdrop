@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_adeqt"]
 [ext_resource type="Script" uid="uid://btfn6s6a0a7rg" path="res://addons/mpf-gmc/classes/mpf_text_input.gd" id="2_6uslk"]
-[ext_resource type="VideoStream" uid="uid://bdkrdeh2cp861" path="res://modes/highscore/slides/DontPlayNoGameThatICantWin.ogv" id="2_au3ls"]
+[ext_resource type="VideoStream" uid="uid://dtwm8nff12e5h" path="res://modes/highscore/slides/DontPlayNoGameThatICantWinNoAudio.ogv" id="2_i5kur"]
 [ext_resource type="Script" uid="uid://bov7mrgxslshq" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_f3egr"]
 [ext_resource type="Texture2D" uid="uid://dtodnmwfxtclr" path="res://assets/burstbacking.png" id="4_i5kur"]
 [ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="5_5lg8l"]
@@ -24,7 +24,7 @@ custom_minimum_size = Vector2(1920, 1080)
 layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
-stream = ExtResource("2_au3ls")
+stream = ExtResource("2_i5kur")
 autoplay = true
 expand = true
 loop = true

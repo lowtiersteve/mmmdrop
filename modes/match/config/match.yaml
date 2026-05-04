@@ -1,0 +1,41 @@
+#config_version=6
+
+queue_relay_player:
+  match_no_match:
+    post: no_match
+    wait_for: match_video_done
+    pass_args: True
+  match_has_match:
+    post: has_match
+    wait_for: match_video_done
+    pass_args: True
+
+
+mode_settings:
+  non_match_number_step: 10
+
+
+slide_player:
+  no_match:
+    no_match_slide:
+      expire: 14s
+  has_match:
+    match_slide:
+      expire: 14s
+  match_video_done:
+    no_match_slide:
+      action: remove
+    match_slide:
+      action: remove
+
+
+sound_player:
+  no_match:
+    futurama_match_audio:
+      action: replace
+      bus: music
+  has_match:
+    futurama_match_audio:
+      action: replace
+      bus: music
+

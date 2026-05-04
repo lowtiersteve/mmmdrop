@@ -1,15 +1,14 @@
 [gd_scene load_steps=5 format=3 uid="uid://dindy1ecnopy2"]
 
-[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_v2xtk"]
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_v2xtk"]
 [ext_resource type="Texture2D" uid="uid://bldchd71jvxls" path="res://assets/LicensedToIll.jpg" id="2_23do0"]
 [ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="3_oau72"]
-[ext_resource type="Script" uid="uid://b3ni1cjx2r6sx" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="4_23do0"]
+[ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="4_23do0"]
 
 [node name="bonus_total_slide" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_v2xtk")
-metadata/_custom_type_script = "uid://d15ukepy10pan"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(944, 584)
@@ -43,4 +42,3 @@ variable_type = 1
 variable_name = "score"
 comma_separate = true
 min_digits = 2
-metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"

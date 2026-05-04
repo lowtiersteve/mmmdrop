@@ -29,8 +29,97 @@ event_player:
   timer_superdrops_timer_complete: mode_superdrops_complete
 
 
-sound_player:
+random_event_player:
   mode_superdrops_started:
+    events:
+      - adrock1_sound
+      - adrock2_sound
+      - adrock3_sound
+      - adrock4_sound
+      - adrock5_sound
+      - adrock6_sound
+      - adrock7_sound
+      - adrock8_sound
+      - adrockrobot_sound
+      - adrockadam_sound
+      - adrockadam2_sound
+
+
+sound_player:
+  adrock1_sound:
+    name_adrock_1:
+      action: play
+      bus: voice
+    superdrops_callout:
+      action: play
+      bus: voice
+  adrock2_sound:
+    name_adrock_2:
+      action: play
+      bus: voice
+    superdrops_callout:
+      action: play
+      bus: voice
+  adrock3_sound:
+    name_adrock_3:
+      action: play
+      bus: voice
+    superdrops_callout:
+      action: play
+      bus: voice
+  adrock4_sound:
+    name_adrock_4:
+      action: play
+      bus: voice
+    superdrops_callout:
+      action: play
+      bus: voice
+  adrock5_sound:
+    name_adrock_5:
+      action: play
+      bus: voice
+    superdrops_callout:
+      action: play
+      bus: voice
+  adrock6_sound:
+    name_adrock_6:
+      action: play
+      bus: voice
+    superdrops_callout:
+      action: play
+      bus: voice
+  adrock7_sound:
+    name_adrock_7:
+      action: play
+      bus: voice
+    superdrops_callout:
+      action: play
+      bus: voice
+  adrock8_sound:
+    name_adrock_8:
+      action: play
+      bus: voice
+    superdrops_callout:
+      action: play
+      bus: voice
+  adrockrobot_sound:
+    name_adrock_robot:
+      action: play
+      bus: voice
+    superdrops_callout:
+      action: play
+      bus: voice
+  adrockadam_sound:
+    name_adrock_adam1:
+      action: play
+      bus: voice
+    superdrops_callout:
+      action: play
+      bus: voice
+  adrockadam2_sound:
+    name_adrock_adam2:
+      action: play
+      bus: voice
     superdrops_callout:
       action: play
       bus: voice

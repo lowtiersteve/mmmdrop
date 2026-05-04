@@ -8,13 +8,13 @@ mode:
 
 
 shots:
-  sabotage_left_orbit_hit:
+  sabotage_left_orbit:
     hit_events: left_orbit_hit
-  sabotage_left_ramp_hit:
+  sabotage_left_ramp:
     hit_events: left_ramp_hit
-  sabotage_right_ramp_hit:
+  sabotage_right_ramp:
     hit_events: right_ramp_hit
-  sabotage_right_orbit_hit:
+  sabotage_right_orbit:
     hit_events: right_orbit_hit
 
 

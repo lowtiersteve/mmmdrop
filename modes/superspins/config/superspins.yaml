@@ -24,8 +24,122 @@ timers:
 event_player:
   timer_superspins_timer_complete: mode_superspins_complete
 
-sound_player:
+
+random_event_player:
   mode_superspins_started:
+    events:
+      - miked1_sound
+      - miked2_sound
+      - miked3_sound
+      - miked4_sound
+      - miked5_sound
+      - miked6_sound
+      - miked7_sound
+      - miked8_sound
+      - miked9_sound
+      - miked10_sound
+      - miked11_sound
+      - mikedmike1_sound
+      - mikedmike2_sound
+      - mikedrobot_sound
+
+
+sound_player:
+  miked1_sound:
+    name_miked_1:
+      action: play
+      bus: voice
+    superspins_callout:
+      action: play
+      bus: voice
+  miked2_sound:
+    name_miked_2:
+      action: play
+      bus: voice
+    superspins_callout:
+      action: play
+      bus: voice
+  miked3_sound:
+    name_miked_3:
+      action: play
+      bus: voice
+    superspins_callout:
+      action: play
+      bus: voice
+  miked4_sound:
+    name_miked_4:
+      action: play
+      bus: voice
+    superspins_callout:
+      action: play
+      bus: voice
+  miked5_sound:
+    name_miked_5:
+      action: play
+      bus: voice
+    superspins_callout:
+      action: play
+      bus: voice
+  miked6_sound:
+    name_miked_6:
+      action: play
+      bus: voice
+    superspins_callout:
+      action: play
+      bus: voice
+  miked7_sound:
+    name_miked_7:
+      action: play
+      bus: voice
+    superspins_callout:
+      action: play
+      bus: voice
+  miked8_sound:
+    name_miked_8:
+      action: play
+      bus: voice
+    superspins_callout:
+      action: play
+      bus: voice
+  miked9_sound:
+    name_miked_9:
+      action: play
+      bus: voice
+    superspins_callout:
+      action: play
+      bus: voice
+  miked10_sound:
+    name_miked_10:
+      action: play
+      bus: voice
+    superspins_callout:
+      action: play
+      bus: voice
+  miked11_sound:
+    name_miked_11:
+      action: play
+      bus: voice
+    superspins_callout:
+      action: play
+      bus: voice
+  mikedrobot_sound:
+    name_miked_robot:
+      action: play
+      bus: voice
+    superspins_callout:
+      action: play
+      bus: voice
+  mikedmike1_sound:
+    name_miked_michaeldiamond:
+      action: play
+      bus: voice
+    superspins_callout:
+      action: play
+      bus: voice
+  mikedmike2_sound:
+    name_miked_michaeldiamond2:
+      action: play
+      bus: voice
     superspins_callout:
       action: play
       bus: voice

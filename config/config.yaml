@@ -229,6 +229,7 @@ modes:
   - ball_save_end_mode
   - end_mode
   - sureshot
+  - match
 
 
 settings:
@@ -295,12 +296,12 @@ settings:
     sort: 150
   extra_balls_enabled:
     label: "Extra Balls"
-    default: enabled
-    key_type: str
+    default: 2
+    key_type: int
     sort: 160
     values:
-      disabled: "Disabled"
-      enabled: "Enabled (Default)"
+      1: "Disabled"
+      2: "Enabled (Default)"
 
 
 event_player:

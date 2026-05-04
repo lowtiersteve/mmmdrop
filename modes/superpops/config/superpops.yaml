@@ -30,8 +30,58 @@ timers:
 event_player:
   timer_superpops_timer_complete: mode_superpops_complete
 
-sound_player:
+
+random_event_player:
   mode_superpops_started:
+    events:
+      - mixmastermike1_sound
+      - mixmastermike2_sound
+      - mixmastermike3_sound
+      - mixmastermike4_sound
+      - mixmastermike5_sound
+      - mixmastermike6_sound
+
+
+sound_player:
+  mixmastermike1_sound:
+    name_mixmastermike_1:
+      action: play
+      bus: voice
+    superpops_callout:
+      action: play
+      bus: voice
+  mixmastermike2_sound:
+    name_mixmastermike_2:
+      action: play
+      bus: voice
+    superpops_callout:
+      action: play
+      bus: voice
+  mixmastermike3_sound:
+    name_mixmastermike_3:
+      action: play
+      bus: voice
+    superpops_callout:
+      action: play
+      bus: voice
+  mixmastermike4_sound:
+    name_mixmastermike_4:
+      action: play
+      bus: voice
+    superpops_callout:
+      action: play
+      bus: voice
+  mixmastermike5_sound:
+    name_mixmastermike_5:
+      action: play
+      bus: voice
+    superpops_callout:
+      action: play
+      bus: voice
+  mixmastermike6_sound:
+    name_mixmastermike_6:
+      action: play
+      bus: voice
     superpops_callout:
       action: play
       bus: voice

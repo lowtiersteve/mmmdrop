@@ -221,10 +221,15 @@ slide_player:
 
 
 sound_player:
-  mode_attract_started:
+  mode_attract_started{machine.game_just_played==0}:
     attract_crowd:
       bus: effects
       action: play
+  mode_attract_started{machine.game_just_played==1}:
+    postgame_instrumental_random:
+      action: play
+      bus: music
+      loops: 4
   mca_sequence_hit:
     attract_crowd:
       action: stop
@@ -546,4 +551,3 @@ show_player:
       action: stop
     attract_stadium_light_show:
       action: stop
-

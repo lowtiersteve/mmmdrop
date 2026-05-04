@@ -244,10 +244,18 @@ sound_player:
     bonus_sound_random:
       action: play
       bus: effects
-  slide_bonus_total_slide_active:
+  slide_bonus_total_slide_active{score<40000000}:
     bonus_sound_random:
       action: play
       bus: effects
+  big_bonus_sound_1:
+    ohmygod_callout:
+      action: play
+      bus: voice
+  big_bonus_sound_2:
+    thatshit_callout:
+      action: play
+      bus: voice
 
 
 widget_player:
@@ -285,21 +293,27 @@ widget_player:
 
 random_event_player:
   mode_bonus_started:
-    - play_red_show
-    - play_pink_show
-    - play_blue_show
-    - play_green_show
-    - play_orange_show
-    - play_purple_show
-    - play_yellow_show
+    events:
+      - play_red_show
+      - play_pink_show
+      - play_blue_show
+      - play_green_show
+      - play_orange_show
+      - play_purple_show
+      - play_yellow_show
   bonus_entry:
-    - play_red_show
-    - play_pink_show
-    - play_blue_show
-    - play_green_show
-    - play_orange_show
-    - play_purple_show
-    - play_yellow_show
+    events:
+      - play_red_show
+      - play_pink_show
+      - play_blue_show
+      - play_green_show
+      - play_orange_show
+      - play_purple_show
+      - play_yellow_show
+  slide_bonus_total_slide_active{score>40000000}:
+    events:
+      - big_bonus_sound_1
+      - big_bonus_sound_2
 
 
 show_player:

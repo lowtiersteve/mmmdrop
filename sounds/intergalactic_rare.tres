@@ -1,0 +1,8 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://c68a2qwcgn2ru"]
+
+[ext_resource type="AudioStream" uid="uid://c3qu3pirgcdf5" path="res://sounds/intergalacticraremusic.ogg" id="1_iq2mh"]
+
+[resource]
+playback_mode = 1
+streams_count = 1
+stream_0/stream = ExtResource("1_iq2mh")

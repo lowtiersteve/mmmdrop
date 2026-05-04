@@ -314,8 +314,12 @@ slide_player:
 
 
 sound_player:
-  mode_intergalactic_started:
+  normal_intergalactic:
     intergalacticmusic:
+      action: play
+      bus: music
+  rare_intergalactic:
+    intergalactic_rare:
       action: play
       bus: music
   intergalactic_shot_1_done:
@@ -366,6 +370,10 @@ random_event_player:
       - tencallout1
       - tencallout2
       - tencallout3
+  mode_intergalactic_started:
+    events:
+      normal_intergalactic: 99
+      rare_intergalactic: 1
 
 
 ball_holds:

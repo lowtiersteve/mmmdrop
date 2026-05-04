@@ -584,6 +584,14 @@ slide_player:
       action: remove
     base:
       action: remove
+    basevideo1:
+      action: remove
+    basevideo2:
+      action: remove
+    basevideo3:
+      action: remove
+    basevideo4:
+      action: remove
     paulrevere:
       action: remove
     paulrevere_display_timer:
@@ -860,6 +868,9 @@ sound_player:
     intergalacticmusic:
       action: stop
       bus: music
+    intergalactic_rare:
+      action: stop
+      bus: music
   mode_intergalactic_success{current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
     base_game_random_music:
       action: play
@@ -1040,6 +1051,9 @@ sound_player:
       action: stop
       bus: music
     intergalacticmusic:
+      action: stop
+      bus: music
+    intergalactic_rare:
       action: stop
       bus: music
     makesomenoisemusic:
@@ -1247,7 +1261,66 @@ sound_player:
     diditwithawiffleballbat:
       action: play
       bus: voice
-
+  outlane_drain_1:
+    outlane_drain_sound:
+      action: play
+      bus: voice
+  outlane_drain_2:
+    outlane_drain_sound_2:
+      action: play
+      bus: voice
+  outlane_drain_3:
+    outlane_drain_sound_3:
+      action: play
+      bus: voice
+  outlane_drain_4:
+    outlane_drain_sound_4:
+      action: play
+      bus: voice
+  beastie_callout_1:
+    name_beastieboys_1:
+      action: play
+      bus: voice
+  beastie_callout_2:
+    name_beastieboys_2:
+      action: play
+      bus: voice
+  beastie_callout_3:
+    name_beastieboys_3:
+      action: play
+      bus: voice
+  beastie_callout_4:
+    name_beastieboys_4:
+      action: play
+      bus: voice
+  ball_started{is_extra_ball==True and player==1}:
+    player1:
+      action: play
+      bus: voice
+    shoot_again_callout:
+      action: play
+      bus: voice
+  ball_started{is_extra_ball==True and player==2}:
+    player2:
+      action: play
+      bus: voice
+    shoot_again_callout:
+      action: play
+      bus: voice
+  ball_started{is_extra_ball==True and player==3}:
+    player3:
+      action: play
+      bus: voice
+    shoot_again_callout:
+      action: play
+      bus: voice
+  ball_started{is_extra_ball==True and player==4}:
+    player4:
+      action: play
+      bus: voice
+    shoot_again_callout:
+      action: play
+      bus: voice
 
 
 variable_player:
@@ -2156,6 +2229,18 @@ random_event_player:
       - play_base_video2
       - play_base_video3
       - play_base_video4
+  left_outlane_hit{device.ball_saves.default.state=="disabled" and device.ball_saves.mode_start.state=="disabled" and device.ball_saves.instrument_collect.state=="disabled" and device.ball_saves.girls_frenzy.state=="disabled" and device.ball_saves.sureshot_ball_saver.state=="disabled" and device.ball_saves.end_mode_ball_save.state=="disabled" and device.ball_saves.fake_bodhisattvavow_ball_save.state=="disabled" and current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.girls_blocking_flag==0}:
+    events:
+      - outlane_drain_1
+      - outlane_drain_2
+      - outlane_drain_3
+      - outlane_drain_4
+  right_outlane_hit{device.ball_saves.default.state=="disabled" and device.ball_saves.mode_start.state=="disabled" and device.ball_saves.instrument_collect.state=="disabled" and device.ball_saves.girls_frenzy.state=="disabled" and device.ball_saves.sureshot_ball_saver.state=="disabled" and device.ball_saves.end_mode_ball_save.state=="disabled" and device.ball_saves.fake_bodhisattvavow_ball_save.state=="disabled" and current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.girls_blocking_flag==0}:
+    events:
+      - outlane_drain_1
+      - outlane_drain_2
+      - outlane_drain_3
+      - outlane_drain_4
   tilt:
     events:
       - tilt1
@@ -2163,6 +2248,12 @@ random_event_player:
       - tilt3
       - tilt4
       - tilt5
+  battery_charged{device.playfields.playfield.balls>0}:
+    events:
+      - beastie_callout_1
+      - beastie_callout_2
+      - beastie_callout_3
+      - beastie_callout_4
 
 
 show_player:
@@ -3171,6 +3262,7 @@ blinkenlight_player:
     bl_scoop_x: remove
     bl_right_ramp_x: remove
     bl_right_orbit_x: remove
+    bl_scoopmode_circle2_led: remove
   microphone_collected{current_player.left_orbit_multiplier==1}:
     bl_left_orbit_x: FFFFFF
   boombox_collected{current_player.left_orbit_multiplier==1}:
@@ -3265,6 +3357,8 @@ blinkenlight_player:
     bl_scoopmode_circle2_led: FFFF00
   extra_ball_modes_played_eb_lit:
     bl_scoopmode_circle2_led: FFFF00
+  ball_started{current_player.instruments_eb_ready==1 or current_player.modes_eb_ready==1}:
+    bl_scoopmode_circle2_led: FFFF00
   extra_ball_awarded:
     bl_scoopmode_circle2_led: remove
 
@@ -3272,26 +3366,26 @@ blinkenlight_player:
 
 
 widget_player:
-  player_1_ball_started:
-    player_1_billboard_active:
-      action: play
-      slide: score_overlay
-      priority: 925000
-  player_2_ball_started:
-    player_2_billboard_active:
-      action: play
-      slide: score_overlay
-      priority: 925000
-  player_3_ball_started:
-    player_3_billboard_active:
-      action: play
-      slide: score_overlay
-      priority: 925000
-  player_4_ball_started:
-    player_4_billboard_active:
-      action: play
-      slide: score_overlay
-      priority: 925000
+#  player_1_ball_started:
+#    player_1_billboard_active:
+#      action: play
+#      slide: score_overlay
+#      priority: 925000
+#  player_2_ball_started:
+#    player_2_billboard_active:
+#      action: play
+#      slide: score_overlay
+#      priority: 925000
+#  player_3_ball_started:
+#    player_3_billboard_active:
+#      action: play
+#      slide: score_overlay
+#      priority: 925000
+#  player_4_ball_started:
+#    player_4_billboard_active:
+#      action: play
+#      slide: score_overlay
+#      priority: 925000
   mode_chcheckitout_stopped:
     chcheckitoutfinish:
       action: play
@@ -3377,14 +3471,14 @@ widget_player:
       action: remove
     instrument_blocks:
       action: remove
-    player_1_billboard_active:
-      action: remove
-    player_2_billboard_active:
-      action: remove
-    player_3_billboard_active:
-      action: remove
-    player_4_billboard_active:
-      action: remove
+#    player_1_billboard_active:
+#      action: remove
+#    player_2_billboard_active:
+#      action: remove
+#    player_3_billboard_active:
+#      action: remove
+#    player_4_billboard_active:
+#      action: remove
     makesomenoise_mode_score:
       action: remove
     bodhivow_mode_score:
@@ -3851,10 +3945,10 @@ accruals:
 extra_balls:
   modes_played_eb:
     enabled: True
-    light_events: timer_fingerlickingood_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled=="enabled"}, timer_highplainsdrifter_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled=="enabled"}, timer_intergalactic_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled=="enabled"}, timer_paulrevere_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled=="enabled"}, timer_sabotage_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled=="enabled"}, timer_threemcsand1dj_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled=="enabled"}, timer_toomanyrappers_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled=="enabled"}, timer_tripletrouble_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled=="enabled"}
+    light_events: timer_fingerlickingood_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled==2}, timer_highplainsdrifter_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled==2}, timer_intergalactic_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled==2}, timer_paulrevere_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled==2}, timer_sabotage_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled==2}, timer_threemcsand1dj_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled==2}, timer_toomanyrappers_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled==2}, timer_tripletrouble_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled==2}
     award_events: scoop_hit{current_player.modes_eb_ready==1}
   instruments_collected_eb:
     enabled: True
-    light_events: boombox_collected{current_player.instruments_collected_total==5 and settings.extra_balls_enabled=="enabled"}, microphone_collected{current_player.instruments_collected_total==5 and settings.extra_balls_enabled=="enabled"}, turntable_collected{current_player.instruments_collected_total==5 and settings.extra_balls_enabled=="enabled"}
+    light_events: boombox_collected{current_player.instruments_collected_total==5 and settings.extra_balls_enabled==2}, microphone_collected{current_player.instruments_collected_total==5 and settings.extra_balls_enabled==2}, turntable_collected{current_player.instruments_collected_total==5 and settings.extra_balls_enabled==2}
     award_events: scoop_hit{current_player.instruments_eb_ready==1}
 

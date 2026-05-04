@@ -1,0 +1,260 @@
+[gd_scene load_steps=10 format=3 uid="uid://bxd1syxhl3e8"]
+
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_0cjf4"]
+[ext_resource type="VideoStream" uid="uid://bpu0t7ieu658e" path="res://modes/match/slides/futurama_match_video_noaudio.ogv" id="2_0cjf4"]
+[ext_resource type="Script" uid="uid://bov7mrgxslshq" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_jp3bs"]
+[ext_resource type="Texture2D" uid="uid://rbubedfq5x75" path="res://assets/player_1_dark.png" id="4_ah0ur"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="5_8ri1r"]
+[ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="6_3l4eh"]
+[ext_resource type="Texture2D" uid="uid://bu8vfumb0u4ff" path="res://assets/player_2_dark.png" id="7_617cl"]
+[ext_resource type="Texture2D" uid="uid://yossu5cu27w7" path="res://assets/player_3_Dark.png" id="8_gjwe4"]
+[ext_resource type="Texture2D" uid="uid://csjjcckm3sbkb" path="res://assets/player_4_dark.png" id="9_k7n2n"]
+
+[node name="no_match_slide" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_0cjf4")
+
+[node name="MPFVideoPlayer" type="VideoStreamPlayer" parent="."]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+stream = ExtResource("2_0cjf4")
+autoplay = true
+expand = true
+script = ExtResource("3_jp3bs")
+hide_behavior = 1
+events_when_stopped = "match_video_done"
+preview_in_editor = true
+
+[node name="p1billboard" type="Sprite2D" parent="."]
+z_as_relative = false
+position = Vector2(960, 544)
+scale = Vector2(0.88, 0.88)
+texture = ExtResource("4_ah0ur")
+
+[node name="p1name" type="Label" parent="."]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 61.0
+offset_right = 464.0
+offset_bottom = 125.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("5_8ri1r")
+theme_override_font_sizes/font_size = 40
+text = "Player 1:"
+horizontal_alignment = 1
+script = ExtResource("6_3l4eh")
+variable_type = 4
+min_digits = 0
+template_string = "Player 1"
+format_string = "Player 1"
+initialize_empty = false
+min_players = 1
+
+[node name="match_number0" type="Label" parent="."]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 144.0
+offset_right = 453.0
+offset_bottom = 226.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("5_8ri1r")
+theme_override_font_sizes/font_size = 80
+text = "10"
+horizontal_alignment = 1
+script = ExtResource("6_3l4eh")
+variable_type = 1
+variable_name = "match_number0"
+min_digits = 2
+initialize_empty = false
+min_players = 1
+
+[node name="match_number1" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1450.0
+offset_top = 145.0
+offset_right = 1894.0
+offset_bottom = 227.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("5_8ri1r")
+theme_override_font_sizes/font_size = 80
+text = "20"
+horizontal_alignment = 1
+script = ExtResource("6_3l4eh")
+variable_type = 1
+variable_name = "match_number1"
+min_digits = 2
+initialize_empty = false
+min_players = 2
+
+[node name="p2billboard" type="Sprite2D" parent="match_number1"]
+show_behind_parent = true
+position = Vector2(-489.99994, 399)
+scale = Vector2(0.88, 0.88)
+texture = ExtResource("7_617cl")
+
+[node name="p2name" type="Label" parent="match_number1"]
+layout_mode = 0
+offset_left = 13.0
+offset_top = -87.0
+offset_right = 421.0
+offset_bottom = -23.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("5_8ri1r")
+theme_override_font_sizes/font_size = 40
+text = "Player 2:"
+horizontal_alignment = 1
+script = ExtResource("6_3l4eh")
+variable_type = 5
+min_digits = 0
+template_string = "Player 2"
+format_string = "Player 2"
+initialize_empty = false
+min_players = 2
+
+[node name="match_number2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 925.0
+offset_right = 444.0
+offset_bottom = 1007.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("5_8ri1r")
+theme_override_font_sizes/font_size = 80
+text = "30"
+horizontal_alignment = 1
+script = ExtResource("6_3l4eh")
+variable_type = 1
+variable_name = "match_number2"
+min_digits = 2
+initialize_empty = false
+min_players = 3
+
+[node name="p3billboard" type="Sprite2D" parent="match_number2"]
+show_behind_parent = true
+position = Vector2(951, -315)
+scale = Vector2(0.88, 0.88)
+texture = ExtResource("8_gjwe4")
+
+[node name="p3name" type="Label" parent="match_number2"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = -76.0
+offset_right = 439.0
+offset_bottom = -12.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("5_8ri1r")
+theme_override_font_sizes/font_size = 40
+text = "Player 3:"
+horizontal_alignment = 1
+script = ExtResource("6_3l4eh")
+variable_type = 6
+min_digits = 0
+template_string = "Player 3"
+format_string = "Player 3"
+initialize_empty = false
+min_players = 3
+
+[node name="match_number3" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1450.0
+offset_top = 935.0
+offset_right = 1886.0
+offset_bottom = 1017.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("5_8ri1r")
+theme_override_font_sizes/font_size = 80
+text = "40"
+horizontal_alignment = 1
+script = ExtResource("6_3l4eh")
+variable_type = 1
+variable_name = "match_number3"
+min_digits = 2
+initialize_empty = false
+min_players = 4
+
+[node name="p4billboard" type="Sprite2D" parent="match_number3"]
+show_behind_parent = true
+position = Vector2(-489.99994, -325)
+scale = Vector2(0.88, 0.88)
+texture = ExtResource("9_k7n2n")
+
+[node name="p4name" type="Label" parent="match_number3"]
+layout_mode = 0
+offset_left = 17.0
+offset_top = -74.0
+offset_right = 431.0
+offset_bottom = -10.0
+scale = Vector2(1.00845, 0.984678)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("5_8ri1r")
+theme_override_font_sizes/font_size = 40
+text = "Player 4:"
+horizontal_alignment = 1
+script = ExtResource("6_3l4eh")
+variable_type = 7
+min_digits = 0
+template_string = "Player 4"
+format_string = "Player 4"
+initialize_empty = false
+min_players = 4
+
+[node name="NOMATCH" type="Label" parent="."]
+layout_mode = 0
+offset_left = 667.0
+offset_top = 56.0
+offset_right = 1277.0
+offset_bottom = 159.0
+theme_override_constants/outline_size = 40
+theme_override_fonts/font = ExtResource("5_8ri1r")
+theme_override_font_sizes/font_size = 100
+text = "NO MATCH"
+
+[node name="MatchNumber" type="Label" parent="."]
+layout_mode = 0
+offset_left = 707.0
+offset_top = 876.0
+offset_right = 1204.0
+offset_bottom = 979.0
+theme_override_constants/outline_size = 40
+theme_override_fonts/font = ExtResource("5_8ri1r")
+theme_override_font_sizes/font_size = 50
+text = "Match number:"
+
+[node name="winner_number" type="Label" parent="."]
+layout_mode = 0
+offset_left = 716.0
+offset_top = 947.0
+offset_right = 1148.0
+offset_bottom = 1050.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 50
+theme_override_fonts/font = ExtResource("5_8ri1r")
+theme_override_font_sizes/font_size = 100
+text = "50"
+horizontal_alignment = 1
+script = ExtResource("6_3l4eh")
+variable_type = 1
+variable_name = "winner_number"
+min_digits = 2
+initialize_empty = false
+min_players = 1

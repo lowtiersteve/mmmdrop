@@ -2,6 +2,10 @@ balls_per_game:
   expire: null
   expire_secs: null
   value: 3
+extra_balls_enabled:
+  expire: null
+  expire_secs: null
+  value: 2
 fast_audio_headphones_volume:
   expire: null
   expire_secs: null
@@ -21,4 +25,4 @@ max_players:
 player1_score:
   expire: null
   expire_secs: null
-  value: 296037130
+  value: 3003330

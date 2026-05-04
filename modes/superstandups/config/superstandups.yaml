@@ -33,8 +33,82 @@ timers:
 event_player:
   timer_superstandups_timer_complete: mode_superstandups_complete
 
-sound_player:
+
+random_event_player:
   mode_superstandups_started:
+    events:
+      - mca1_sound
+      - mca2_sound
+      - mca3_sound
+      - mca4_sound
+      - mca5_sound
+      - mca6_sound
+      - mca7_sound
+      - mca8_sound
+      - mcarobot_sound
+
+
+sound_player:
+  mca1_sound:
+    name_mca_1:
+      action: play
+      bus: voice
+    superstandups_callout:
+      action: play
+      bus: voice
+  mca2_sound:
+    name_mca_2:
+      action: play
+      bus: voice
+    superstandups_callout:
+      action: play
+      bus: voice
+  mca3_sound:
+    name_mca_3:
+      action: play
+      bus: voice
+    superstandups_callout:
+      action: play
+      bus: voice
+  mca4_sound:
+    name_mca_4:
+      action: play
+      bus: voice
+    superstandups_callout:
+      action: play
+      bus: voice
+  mca5_sound:
+    name_mca_5:
+      action: play
+      bus: voice
+    superstandups_callout:
+      action: play
+      bus: voice
+  mca6_sound:
+    name_mca_6:
+      action: play
+      bus: voice
+    superstandups_callout:
+      action: play
+      bus: voice
+  mca7_sound:
+    name_mca_7:
+      action: play
+      bus: voice
+    superstandups_callout:
+      action: play
+      bus: voice
+  mca8_sound:
+    name_mca_8:
+      action: play
+      bus: voice
+    superstandups_callout:
+      action: play
+      bus: voice
+  mcarobot_sound:
+    name_mca_robot:
+      action: play
+      bus: voice
     superstandups_callout:
       action: play
       bus: voice

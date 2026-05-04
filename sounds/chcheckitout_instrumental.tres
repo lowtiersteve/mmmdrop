@@ -1,0 +1,8 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://cooe4btft7ntk"]
+
+[ext_resource type="AudioStream" uid="uid://b2dimgxdfwc4c" path="res://sounds/chcheckitout_instrumental.ogg" id="1_xi322"]
+
+[resource]
+playback_mode = 1
+streams_count = 1
+stream_0/stream = ExtResource("1_xi322")

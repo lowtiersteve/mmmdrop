@@ -21,11 +21,54 @@ timers:
       - event: ball_ending
         action: stop
 
+
 event_player:
   timer_supercombos_timer_complete: mode_supercombos_complete
 
-sound_player:
+
+random_event_player:
   mode_supercombos_started:
+    events:
+      - djhurricane1_sound
+      - djhurricane2_sound
+      - djhurricane3_sound
+      - djhurricane4_sound
+      - djhurricane5_sound
+
+
+sound_player:
+  djhurricane1_sound:
+    name_djhurricane_1:
+      action: play
+      bus: voice
+    supercombos_callout:
+      action: play
+      bus: voice
+  djhurricane2_sound:
+    name_djhurricane_2:
+      action: play
+      bus: voice
+    supercombos_callout:
+      action: play
+      bus: voice
+  djhurricane3_sound:
+    name_djhurricane_3:
+      action: play
+      bus: voice
+    supercombos_callout:
+      action: play
+      bus: voice
+  djhurricane4_sound:
+    name_djhurricane_4:
+      action: play
+      bus: voice
+    supercombos_callout:
+      action: play
+      bus: voice
+  djhurricane5_sound:
+    name_djhurricane_5:
+      action: play
+      bus: voice
     supercombos_callout:
       action: play
       bus: voice

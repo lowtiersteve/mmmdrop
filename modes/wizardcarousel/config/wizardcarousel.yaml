@@ -79,9 +79,13 @@ event_player:
 random_event_player:
   slide_current_wizard_mode_highlighted_created:
     events:
-    - random_mode_picker_makesomenoise
-    - random_mode_picker_sureshot
-    - random_mode_picker_bodhisattvavow
+      - random_mode_picker_makesomenoise
+      - random_mode_picker_sureshot
+      - random_mode_picker_bodhisattvavow
+  mode_wizardcarousel_started:
+    events:
+      - wizardcarousel_callout_1
+      - wizardcarousel_callout_2
 
 
 sound_player:
@@ -90,6 +94,14 @@ sound_player:
       action: replace
       bus: music
       loops: 5
+  wizardcarousel_callout_1:
+    whatyougonnado:
+      action: play
+      bus: voice
+  wizardcarousel_callout_2:
+    whatyougonnado2:
+      action: play
+      bus: voice
 
 
 show_player:

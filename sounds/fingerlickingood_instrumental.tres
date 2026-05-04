@@ -1,0 +1,8 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://dbqbj5k10f6mt"]
+
+[ext_resource type="AudioStream" uid="uid://bcit18xf34yfk" path="res://sounds/fingerlickingood_instrumental.ogg" id="1_bir3c"]
+
+[resource]
+playback_mode = 1
+streams_count = 1
+stream_0/stream = ExtResource("1_bir3c")

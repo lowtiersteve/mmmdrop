@@ -109,17 +109,32 @@ slide_player:
       action: play
 
 
+timers:
+  highscore_sound_timer:
+    start_value: 0
+    end_value: 6
+    tick_interval: 1s
+    start_running: True
+    control_events:
+      - event: mode_highscore_started
+        action: restart
+
+
 sound_player:
   mode_highscore_started:
-    base_game_random_music:
-      action: stop
+    dontplaynogamemusic:
+      action: replace
       bus: music
+  timer_highscore_sound_timer_complete:
+    thatsarecordbuddy_callout:
+      action: play
+      bus: voice
+      delay: 6000ms
   high_score_award_display:
     bonus_sound_random:
       action: play
       bus: effects
     bizvsnugemusic:
-      action: play
+      action: replace
       bus: music
-      max_queue_time: 0.2s
 
