@@ -1,0 +1,178 @@
+[gd_scene load_steps=14 format=3 uid="uid://ciohdgth1ied4"]
+
+[ext_resource type="Script" uid="uid://d4ky3s4bg1ouq" path="res://addons/mpf-gmc/classes/mpf_widget.gd" id="1_3vi4e"]
+[ext_resource type="Texture2D" uid="uid://db8ykxp2xvmim" path="res://assets/middle right billboard.png" id="2_3vi4e"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="3_mtppc"]
+[ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="4_bppp3"]
+
+[sub_resource type="Animation" id="Animation_xs4cs"]
+resource_name = "SlideDown"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333334, 0.46666667, 0.5, 0.53333336, 0.56666666, 0.6, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.76666665, 0.8, 0.8333333, 0.8666667, 0.9, 0.93333334, 0.96666664, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(968, -135), Vector2(968, -126), Vector2(968, -117), Vector2(968, -108), Vector2(968, -99), Vector2(968, -90), Vector2(968, -81), Vector2(968, -72), Vector2(968, -63), Vector2(968, -54), Vector2(968, -45), Vector2(968, -36), Vector2(968, -27), Vector2(968, -18), Vector2(968, -9), Vector2(968, 0), Vector2(968, 9), Vector2(968, 18), Vector2(968, 27), Vector2(968, 36), Vector2(968, 45), Vector2(968, 54), Vector2(968, 63), Vector2(968, 72), Vector2(968, 81), Vector2(968, 90), Vector2(968, 99), Vector2(968, 108), Vector2(968, 117), Vector2(968, 126), Vector2(968, 135)]
+}
+
+[sub_resource type="Animation" id="Animation_awso4"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(968, -135)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_u1cn0"]
+_data = {
+&"RESET": SubResource("Animation_awso4"),
+&"SlideDown": SubResource("Animation_xs4cs")
+}
+
+[sub_resource type="Animation" id="Animation_80hbo"]
+resource_name = "SlideDownMysteryHeader"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333334, 0.46666667, 0.5, 0.53333336, 0.56666666, 0.6, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.76666665, 0.8, 0.8333333, 0.8666667, 0.9, 0.93333334, 0.96666664, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(339.22498, 46.062256), Vector2(339.22498, 56.526848), Vector2(339.22498, 66.99144), Vector2(339.22498, 77.45603), Vector2(339.22498, 87.92062), Vector2(339.22498, 98.385216), Vector2(339.22498, 108.84981), Vector2(339.22498, 119.3144), Vector2(339.22498, 129.77899), Vector2(339.22498, 140.24359), Vector2(339.22498, 150.70818), Vector2(339.22498, 161.17276), Vector2(339.22498, 171.63736), Vector2(339.22498, 182.10194), Vector2(339.22498, 192.56654), Vector2(339.22498, 203.03113), Vector2(339.225, 213.49573), Vector2(339.225, 223.96031), Vector2(339.225, 234.42491), Vector2(339.225, 244.8895), Vector2(339.225, 255.3541), Vector2(339.225, 265.81866), Vector2(339.225, 276.28326), Vector2(339.225, 286.74786), Vector2(339.225, 297.21246), Vector2(339.225, 307.67703), Vector2(339.225, 318.14163), Vector2(339.225, 328.60623), Vector2(339.225, 339.07083), Vector2(339.225, 349.5354), Vector2(339.225, 360)]
+}
+
+[sub_resource type="Animation" id="Animation_ncpia"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(339.22498, 46.062256)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_jaskv"]
+_data = {
+&"RESET": SubResource("Animation_ncpia"),
+&"SlideDownMysteryHeader": SubResource("Animation_80hbo")
+}
+
+[sub_resource type="Animation" id="Animation_2wapc"]
+resource_name = "SlideDownMysteryAwardText"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333334, 0.46666667, 0.5, 0.53333336, 0.56666666, 0.6, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.76666665, 0.8, 0.8333333, 0.8666667, 0.9, 0.93333334, 0.96666664, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(646, -142), Vector2(646, -133.1), Vector2(646, -124.2), Vector2(646, -115.3), Vector2(646, -106.399994), Vector2(646, -97.5), Vector2(646, -88.6), Vector2(646, -79.7), Vector2(646, -70.799995), Vector2(646, -61.899994), Vector2(646, -53), Vector2(646, -44.1), Vector2(646, -35.199997), Vector2(646, -26.299995), Vector2(646, -17.400002), Vector2(646, -8.5), Vector2(646, 0.40000916), Vector2(646, 9.300003), Vector2(646, 18.200012), Vector2(646, 27.09999), Vector2(646, 36), Vector2(646, 44.899994), Vector2(646, 53.800003), Vector2(646, 62.699997), Vector2(646, 71.600006), Vector2(646, 80.5), Vector2(646, 89.40001), Vector2(646, 98.29999), Vector2(646, 107.2), Vector2(646, 116.100006), Vector2(646, 125)]
+}
+
+[sub_resource type="Animation" id="Animation_f6u6e"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(646, -142)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vlv0c"]
+_data = {
+&"RESET": SubResource("Animation_f6u6e"),
+&"SlideDownMysteryAwardText": SubResource("Animation_2wapc")
+}
+
+[node name="mystery_award_widget" type="Control"]
+top_level = true
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_3vi4e")
+
+[node name="billboard" type="Sprite2D" parent="."]
+position = Vector2(968, -135)
+rotation = -3.1415925
+scale = Vector2(0.35, 0.211)
+texture = ExtResource("2_3vi4e")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="billboard"]
+libraries = {
+&"": SubResource("AnimationLibrary_u1cn0")
+}
+autoplay = "SlideDown"
+
+[node name="mysteryaward" type="Label" parent="."]
+layout_mode = 0
+offset_left = 649.0
+offset_top = -211.0
+offset_right = 988.225
+offset_bottom = -164.93774
+scale = Vector2(1.87781, 1.71507)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("3_mtppc")
+theme_override_font_sizes/font_size = 25
+text = "mystery award:"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="mysteryaward"]
+libraries = {
+&"": SubResource("AnimationLibrary_jaskv")
+}
+autoplay = "SlideDownMysteryHeader"
+
+[node name="mystery_award_text" type="Label" parent="."]
+layout_mode = 0
+offset_left = 646.0
+offset_top = -142.0
+offset_right = 1283.0
+offset_bottom = -27.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("3_mtppc")
+theme_override_font_sizes/font_size = 40
+text = "collect microphone"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+script = ExtResource("4_bppp3")
+variable_name = "mystery_award_text"
+min_digits = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="mystery_award_text"]
+libraries = {
+&"": SubResource("AnimationLibrary_vlv0c")
+}
+autoplay = "SlideDownMysteryAwardText"

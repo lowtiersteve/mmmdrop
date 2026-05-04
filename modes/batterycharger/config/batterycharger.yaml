@@ -147,6 +147,9 @@ counters:
       - event: mode_batterycharger_started{current_player.ball!=1 and device.achievements.wizard1.state=="completed" and current_player.battery_charged_yesorno==1}
         action: jump
         value: 0
+      - event: charge_battery
+        action: jump
+        value: 0
 
 
 

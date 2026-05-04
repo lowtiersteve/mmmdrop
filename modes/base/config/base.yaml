@@ -71,7 +71,7 @@ shots:
   three_bank_standup:
     switch: s_three_bank_standup
     profile: base_shot_profile
-    advance_events: logicblock_qualify_chcheckitout_multiball_hit, mode_chcheckitout_started #not sure if this is breaking the multiball
+    advance_events: logicblock_qualify_chcheckitout_multiball_hit, mode_chcheckitout_started
   spinner:
     switch: s_spinner
     profile: base_shot_profile
@@ -1249,6 +1249,10 @@ sound_player:
     extraball_islit_callout:
       action: play
       bus: voice
+  extra_ball_mystery_eb_lit:
+    extraball_islit_callout:
+      action: play
+      bus: voice
   diditlikethis:
     diditlikethis:
       action: play
@@ -1319,6 +1323,14 @@ sound_player:
       action: play
       bus: voice
     shoot_again_callout:
+      action: play
+      bus: voice
+  mystery_ready:
+    mystery_lit_sound:
+      action: play
+      bus: voice
+  mystery_collect:
+    mystery_callout:
       action: play
       bus: voice
 
@@ -1444,6 +1456,12 @@ variable_player:
     loop_shot_multiplier:
       int: 1
       action: set
+    mystery_ready:
+      int: 0
+      action: set
+    mystery_ball_save_used:
+      int: 0
+      action: set
   ball_started{current_player.ball==1 and is_extra_ball==True}:
     bonus_multiplier:
       int: 1
@@ -1507,6 +1525,12 @@ variable_player:
       action: set
     loop_shot_multiplier:
       int: 1
+      action: set
+    mystery_ready:
+      int: 0
+      action: set
+    mystery_ball_save_used:
+      int: 0
       action: set
   battery_charged:
     battery_charged_yesorno:
@@ -1961,6 +1985,14 @@ variable_player:
     modes_eb_ready:
       int: 0
       action: set
+  extra_ball_mystery_eb_lit:
+    mystery_eb_ready:
+      int: 1
+      action: set
+  extra_ball_mystery_eb_awarded:
+    mystery_eb_ready:
+      int: 0
+      action: set
   diditlikethis:
     loop_shot_multiplier:
       int: 2
@@ -1973,6 +2005,62 @@ variable_player:
     loop_shot_multiplier:
       int: 4
       action: set
+  mystery_ready:
+    mystery_ready:
+      int: 1
+      action: set
+  mystery_collect:
+    mystery_ready:
+      int: 0
+      action: set
+  mystery_award_big_points:
+    mystery_award_text:
+      string: "Dope Points"
+      action: set
+    score: 100000 * current_player.playfield_x
+  mystery_award_light_extra_ball:
+    mystery_award_text:
+      string: "Light Extra Ball"
+      action: set
+    mystery_eb_ever_collected:
+      int: 1
+      action: set
+  mystery_award_add_bonus_x:
+    mystery_award_text:
+      string: "+5X Bonus"
+      action: set
+    bonus_multiplier: 5
+  mystery_award_collect_microphone:
+    mystery_award_text:
+      string: "Collect Microphone"
+      action: set
+  mystery_award_collect_boombox:
+    mystery_award_text:
+      string: "Collect Boombox"
+      action: set
+  mystery_award_collect_turntable:
+    mystery_award_text:
+      string: "Collect Turntable"
+      action: set
+  mystery_award_add_tilt_warning:
+    mystery_award_text:
+      string: "Add Tilt Warning"
+      action: set
+    tilt_warnings:
+      int: -1
+      action: add
+  mystery_award_charge_battery:
+    mystery_award_text:
+      string: "Charge Battery"
+      action: set
+  mystery_award_ball_save:
+    mystery_award_text:
+      string: "Activate Ball Save"
+      action: set
+    mystery_ball_save_used:
+      int: 1
+      action: set
+
 
 
 sequences:
@@ -2199,6 +2287,19 @@ counters:
     reset_on_complete: False
     restart_events: ball_started{current_player.ball==1 and is_extra_ball==False}
     events_when_complete: start_girls_achievement
+  mystery_combo_counter:
+    count_events: combo_hit
+    starting_count: 0
+    count_interval: 1
+    count_complete_value: 5
+    direction: up
+    persist_state: True
+    disable_on_complete: False
+    reset_on_complete: True
+    disable_events: mode_makesomenoise_started, mode_bodhivow_started, mode_sureshot_started, mode_girls_started
+    enable_events: mode_makesomenoise_stopped, mode_bodhivow_stopped, mode_sureshot_stopped, mode_girls_stopped
+    restart_events: ball_started, mystery_collect
+    events_when_complete: mystery_ready
 
 
 ball_holds:
@@ -2254,6 +2355,17 @@ random_event_player:
       - beastie_callout_2
       - beastie_callout_3
       - beastie_callout_4
+  mystery_collect:
+    events:
+      - mystery_award_big_points
+      - mystery_award_light_extra_ball{current_player.mystery_eb_ever_collected==0}
+      - mystery_award_add_bonus_x
+      - mystery_award_collect_microphone{current_player.microphone_collected==0}
+      - mystery_award_collect_boombox{current_player.boombox_collected==0}
+      - mystery_award_collect_turntable{current_player.turntable_collected==0}
+      - mystery_award_charge_battery{current_player.battery_charged_yesorno==0}
+      - mystery_award_ball_save{current_player.mystery_ball_save_used==0}
+      - mystery_award_add_tilt_warning{current_player.tilt_warnings>0}
 
 
 show_player:
@@ -3357,10 +3469,18 @@ blinkenlight_player:
     bl_scoopmode_circle2_led: FFFF00
   extra_ball_modes_played_eb_lit:
     bl_scoopmode_circle2_led: FFFF00
-  ball_started{current_player.instruments_eb_ready==1 or current_player.modes_eb_ready==1}:
+  extra_ball_mystery_eb_lit:
+    bl_scoopmode_circle2_led: FFFF00
+  ball_started{current_player.instruments_eb_ready==1 or current_player.modes_eb_ready==1 or current_player.mystery_eb_ready==1}:
     bl_scoopmode_circle2_led: FFFF00
   extra_ball_awarded:
     bl_scoopmode_circle2_led: remove
+  mystery_ready:
+    bl_lowerrightstandup_circle_led: 800080
+  ball_started{current_player.mystery_ready==1}:
+    bl_lowerrightstandup_circle_led: 800080
+  mystery_collect:
+    bl_lowerrightstandup_circle_led: remove
 
 
 
@@ -3629,6 +3749,11 @@ widget_player:
       slide: score_overlay
       priority: 970000
       expire: 4s
+  mystery_collect:
+    mystery_award_widget:
+      action: play
+      priority: 1200000
+      expire: 6s
 
 
 timers:
@@ -3925,6 +4050,12 @@ event_player:
   inner_loop_hit: uppost_down
   left_orbit_hit: uppost_down
   right_orbit_hit: uppost_down
+  pop_standup_hit{current_player.mystery_ready==1}: mystery_collect
+  mystery_award_collect_microphone: microphone_collected
+  mystery_award_collect_boombox: boombox_collected
+  mystery_award_collect_turntable: turntable_collected
+  mystery_award_charge_battery: charge_battery
+  mystery_award_ball_save: mystery_award_ball_saver_start
 
 
 accruals:
@@ -3951,4 +4082,8 @@ extra_balls:
     enabled: True
     light_events: boombox_collected{current_player.instruments_collected_total==5 and settings.extra_balls_enabled==2}, microphone_collected{current_player.instruments_collected_total==5 and settings.extra_balls_enabled==2}, turntable_collected{current_player.instruments_collected_total==5 and settings.extra_balls_enabled==2}
     award_events: scoop_hit{current_player.instruments_eb_ready==1}
+  mystery_eb:
+    enabled: True
+    light_events: mystery_award_light_extra_ball{settings.extra_balls_enabled==2}
+    award_events: scoop_hit{current_player.mystery_eb_ready==1}
 

@@ -161,9 +161,10 @@ ball_saves:
     hurry_up_time: 4s
     grace_period: 2s
     enable_events: mode_base_started
-    timer_start_events: ball_out
+    timer_start_events: ball_out, mystery_award_ball_save
     auto_launch: True
     balls_to_save: -1
+    early_ball_save_events: left_outlane_hit, right_outlane_hit
   mode_start:
     active_time: 5s
     hurry_up_time: 2s
@@ -171,6 +172,7 @@ ball_saves:
     enable_events: ball_hold_fingerlickingood_scoop_hold_balls_released, ball_hold_highplainsdrifter_scoop_hold_balls_released, ball_hold_intergalactic_scoop_hold_balls_released, ball_hold_paulrevere_scoop_hold_balls_released, ball_hold_sabotage_scoop_hold_balls_released, ball_hold_threemcsand1dj_scoop_hold_balls_released, ball_hold_toomanyrappers_scoop_hold_balls_released, ball_hold_tripletrouble_scoop_hold_balls_released
     auto_launch: True
     balls_to_save: -1
+    early_ball_save_events: left_outlane_hit, right_outlane_hit
   instrument_collect:
     active_time: 10s
     hurry_up_time: 3s
@@ -178,6 +180,7 @@ ball_saves:
     enable_events: microphone_collected, boombox_collected, turntable_collected
     auto_launch: True
     balls_to_save: -1
+    early_ball_save_events: left_outlane_hit, right_outlane_hit
   girls_frenzy:
     active_time: 38s
     hurry_up_time: 5s
@@ -185,11 +188,21 @@ ball_saves:
     enable_events: mode_girls_started
     auto_launch: True
     balls_to_save: -1
+    early_ball_save_events: left_outlane_hit, right_outlane_hit
   sureshot_ball_saver:
     active_time: 0
     grace_period: 2s
     enable_events: mode_sureshot_started
     disable_events: mode_sureshot_stopped
+    auto_launch: True
+    balls_to_save: -1
+    early_ball_save_events: left_outlane_hit, right_outlane_hit
+  mystery_ball_saver:
+    active_time: 10s
+    hurry_up_time: 4s
+    grace_period: 2s
+    enable_events: mystery_award_ball_save
+    timer_start_events: mystery_award_ball_saver_start
     auto_launch: True
     balls_to_save: -1
 
@@ -548,6 +561,23 @@ player_vars:
     initial_value: 0
   instruments_eb_ready:
     initial_value: 0
+  mystery_eb_ready:
+    initial_value: 0
+  mystery_eb_ever_collected:
+    initial_value: 0
   loop_shot_multiplier:
+    initial_value: 1
+  mystery_ready:
+    initial_value: 0
+  mystery_award_text:
+    value_type: str
+    initial_value: "Nothing"
+  mystery_ramp_multiplier:
+    initial_value: 1
+  mystery_pop_multiplier:
+    initial_value: 1
+  mystery_spinner_multiplier:
+    initial_value: 1
+  mystery_ball_save_used:
     initial_value: 1
 
