@@ -1,5 +1,10 @@
 #config_version=6
 
+
+mode_settings:
+  non_match_number_step: 10
+
+
 queue_relay_player:
   match_no_match:
     post: no_match
@@ -11,11 +16,13 @@ queue_relay_player:
     pass_args: True
 
 
-mode_settings:
-  non_match_number_step: 10
-
 
 slide_player:
+  mode_match_started:
+    bonus_total_slide:
+      action: remove
+    high_score_award_display:
+      action: remove
   no_match:
     no_match_slide:
       expire: 14s
@@ -23,9 +30,9 @@ slide_player:
     match_slide:
       expire: 14s
   match_video_done:
-    no_match_slide:
+    no_match_slide_1:
       action: remove
-    match_slide:
+    match_slide_1:
       action: remove
 
 
