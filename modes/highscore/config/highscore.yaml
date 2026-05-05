@@ -130,11 +130,16 @@ sound_player:
       action: play
       bus: voice
       delay: 6000ms
+  slide_high_score_removed:
+    dontplaynogamemusic:
+      action: stop
+      bus: music
   high_score_award_display:
     bonus_sound_random:
       action: play
       bus: effects
     bizvsnugemusic:
-      action: replace
+      action: play
       bus: music
+      max_queue_time: 0.5s
 

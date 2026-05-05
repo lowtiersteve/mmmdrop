@@ -2231,6 +2231,8 @@ counters:
     reset_on_complete: False
     restart_events: ball_started
     events_when_complete: start_superpops
+    disable_events: mode_girls_started
+    enable_events: mode_girls_stopped
   superdrops_counter:
     count_events: right_ramp_hit
     starting_count: 0
@@ -2242,6 +2244,8 @@ counters:
     reset_on_complete: False
     restart_events: ball_started
     events_when_complete: start_superdrops
+    disable_events: mode_girls_started
+    enable_events: mode_girls_stopped
   superstandups_counter:
     count_events: left_orbit_hit
     starting_count: 0
@@ -2253,6 +2257,8 @@ counters:
     reset_on_complete: False
     restart_events: ball_started
     events_when_complete: start_superstandups
+    disable_events: mode_girls_started
+    enable_events: mode_girls_stopped
   superspins_counter:
     count_events: left_ramp_hit
     starting_count: 0
@@ -2264,6 +2270,8 @@ counters:
     reset_on_complete: False
     restart_events: ball_started
     events_when_complete: start_superspins
+    disable_events: mode_girls_started
+    enable_events: mode_girls_stopped
   supercombos_counter:
     count_events: right_orbit_hit
     starting_count: 0
@@ -2275,6 +2283,8 @@ counters:
     reset_on_complete: False
     restart_events: ball_started
     events_when_complete: start_supercombos
+    disable_events: mode_girls_started
+    enable_events: mode_girls_stopped
   super_modes_played_counter:
     count_events: achievement_superpops_super_mode_state_completed{restore==False}, achievement_superdrops_super_mode_state_completed{restore==False}, achievement_superspins_super_mode_state_completed{restore==False}, achievement_superstandups_super_mode_state_completed{restore==False}, achievement_supercombos_super_mode_state_completed{restore==False}
     starting_count: 0
@@ -2362,7 +2372,7 @@ random_event_player:
       - mystery_award_collect_microphone{current_player.microphone_collected==0}
       - mystery_award_collect_boombox{current_player.boombox_collected==0}
       - mystery_award_collect_turntable{current_player.turntable_collected==0}
-      - mystery_award_charge_battery{current_player.battery_charged_yesorno==0}
+      - mystery_award_charge_battery{current_player.battery_charged_yesorno==0 and current_player.mode_blocking_flag==0}
       - mystery_award_ball_save{current_player.mystery_ball_save_used==0}
       - mystery_award_add_tilt_warning{current_player.tilt_warnings>0}
 
@@ -3277,7 +3287,7 @@ show_player:
       action: play
       loops: -1
       priority: 1000
-  ball_started{current_player.extra_balls==1}:
+  ball_started{current_player.extra_balls>=1}:
     extra_ball_show:
       action: play
       loops: -1

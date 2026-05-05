@@ -5,4 +5,4 @@
     l_ballsave_circle_led: orange
 - duration: 250ms
   lights:
-    l_ballsave_circle_led: stop
+    l_ballsave_circle_led: off
