@@ -11,7 +11,8 @@ shot_groups:
     shots: bottom_drop, middle_drop, top_drop
     rotate_right_events: timer_instrument_rotate_complete
     restart_events: mode_instruments_started, boombox_collected, microphone_collected, turntable_collected
-    disable_events: ball_will_end
+    disable_events: ball_will_end, mode_makesomenoise_started, mode_sureshot_started, mode_bodhivow_started, mode_girls_started
+    enable_events: mode_instruments_started, mode_makesomenoise_stopped, mode_sureshot_stopped, mode_bodhivow_stopped, mode_girls_stopped
     enable_rotation_events: mode_instruments_started
 
 

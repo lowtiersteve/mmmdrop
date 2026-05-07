@@ -125,6 +125,10 @@ sound_player:
     dontplaynogamemusic:
       action: replace
       bus: music
+  high_score_enter_initials:
+    dontplaynogamemusic:
+      action: replace
+      bus: music
   timer_highscore_sound_timer_complete:
     thatsarecordbuddy_callout:
       action: play

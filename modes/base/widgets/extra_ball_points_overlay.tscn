@@ -1,0 +1,51 @@
+[gd_scene load_steps=4 format=3 uid="uid://c2jun1p2hm07e"]
+
+[ext_resource type="Script" uid="uid://d4ky3s4bg1ouq" path="res://addons/mpf-gmc/classes/mpf_widget.gd" id="1_wrrgk"]
+[ext_resource type="Texture2D" uid="uid://dqv58mnh3tick" path="res://assets/extraball.png" id="2_ejswy"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="3_ejswy"]
+
+[node name="extra_ball_points_overlay" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_wrrgk")
+metadata/_custom_type_script = "uid://d4ky3s4bg1ouq"
+
+[node name="extraball" type="Sprite2D" parent="."]
+top_level = true
+position = Vector2(1007, 590)
+scale = Vector2(1.1, 1.143)
+texture = ExtResource("2_ejswy")
+
+[node name="X" type="Label" parent="."]
+top_level = true
+layout_mode = 0
+offset_left = 469.00003
+offset_top = 89.0
+offset_right = 926.0974
+offset_bottom = 597.0
+scale = Vector2(1.87781, 1.71507)
+theme_override_constants/outline_size = 40
+theme_override_fonts/font = ExtResource("3_ejswy")
+theme_override_font_sizes/font_size = 500
+text = "x"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="points" type="Label" parent="."]
+top_level = true
+layout_mode = 0
+offset_left = 585.0
+offset_top = 474.0
+offset_right = 1042.0974
+offset_bottom = 551.0
+scale = Vector2(1.87781, 1.71507)
+theme_override_constants/outline_size = 50
+theme_override_fonts/font = ExtResource("3_ejswy")
+theme_override_font_sizes/font_size = 60
+text = "20,000,000"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true

@@ -1,37 +1,48 @@
 events:
   game_ended: 14
-  game_started: 204
+  game_started: 206
 missing_switches:
-  s_captive_ball: 1
-  s_center_upper_pop: 1
-  s_left_inlane: 2
-  s_left_orbit: 1
-  s_left_outlane: 27
-  s_left_ramp: 1
-  s_left_slingshot: 91
-  s_left_upper_pop: 1
-  s_right_inlane: 2
-  s_right_outlane: 21
-  s_right_slingshot: 133
-  s_service_down: 202
-  s_service_enter: 171
-  s_service_esc: 202
-  s_service_up: 145
-  s_three_bank_bottom: 1
-  s_three_bank_middle: 2
-  s_three_bank_standup: 82
-  s_three_bank_top: 2
-  s_tilt_bob: 25
-  s_top_right_flipper: 204
-  s_trough2: 21
-  s_trough3: 23
-  s_trough4: 51
-  s_trough5: 106
-  s_trough6: 106
-  s_trough_jam: 106
-  s_tshirt_bottom_standup: 80
-  s_tshirt_top_standup: 1
-  s_upper_pop_standup: 1
+  s_captive_ball: 3
+  s_center_upper_pop: 3
+  s_inner_orbit: 2
+  s_left_flipper: 2
+  s_left_inlane: 4
+  s_left_orbit: 3
+  s_left_outlane: 29
+  s_left_ramp: 3
+  s_left_slingshot: 93
+  s_left_upper_pop: 3
+  s_pop_standup: 2
+  s_right_flipper: 2
+  s_right_inlane: 4
+  s_right_lower_pop: 2
+  s_right_orbit: 2
+  s_right_outlane: 23
+  s_right_ramp: 2
+  s_right_slingshot: 135
+  s_scoop: 2
+  s_service_down: 204
+  s_service_enter: 173
+  s_service_esc: 204
+  s_service_up: 147
+  s_spinner: 2
+  s_start: 1
+  s_three_bank_bottom: 3
+  s_three_bank_middle: 4
+  s_three_bank_standup: 84
+  s_three_bank_top: 4
+  s_tilt_bob: 27
+  s_top_right_flipper: 206
+  s_trough1: 2
+  s_trough2: 23
+  s_trough3: 25
+  s_trough4: 53
+  s_trough5: 108
+  s_trough6: 108
+  s_trough_jam: 108
+  s_tshirt_bottom_standup: 82
+  s_tshirt_top_standup: 3
+  s_upper_pop_standup: 3
 player:
   score:
     average: 127875515
@@ -98,7 +109,7 @@ switches:
   s_left_ramp: 263
   s_left_slingshot: 11
   s_left_upper_pop: 99
-  s_plunger: 524
+  s_plunger: 526
   s_pop_standup: 42
   s_right_flipper: 753
   s_right_inlane: 26
@@ -113,7 +124,7 @@ switches:
   s_service_esc: 0
   s_service_up: 2
   s_spinner: 1921
-  s_start: 89
+  s_start: 91
   s_three_bank_bottom: 146
   s_three_bank_middle: 141
   s_three_bank_standup: 3

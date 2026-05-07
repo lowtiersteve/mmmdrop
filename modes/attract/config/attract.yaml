@@ -206,18 +206,18 @@ slide_player:
     attract:
       action: play
       priority: 1000
-  flipper_cancel:
-    friends:
-      action: remove
-    ghostbusters:
-      action: remove
-    jinglebells:
-      action: remove
-    beastiemuppets:
-      action: remove
-    attract:
-        action: play
-        priority: 1000
+#  flipper_cancel:
+#    friends:
+#      action: remove
+#    ghostbusters:
+#      action: remove
+#    jinglebells:
+#      action: remove
+#    beastiemuppets:
+#      action: remove
+#    attract:
+#        action: play
+#        priority: 1000
 
 
 sound_player:
@@ -314,6 +314,9 @@ timers:
         action: start
       - event: game_started
         action: stop
+      - event: flipper_cancel
+        action: jump
+        value: 192
   adr_attract_video_timer:
     end_value: 49
     tick_interval: 1s
@@ -323,6 +326,9 @@ timers:
         action: start
       - event: game_started
         action: stop
+      - event: flipper_cancel
+        action: jump
+        value: 49
   christmas_attract_video_timer:
     end_value: 54
     tick_interval: 1s
@@ -332,6 +338,9 @@ timers:
         action: start
       - event: game_started
         action: stop
+      - event: flipper_cancel
+        action: jump
+        value: 54
   muppets_attract_video_timer:
     end_value: 54
     tick_interval: 1s
@@ -341,6 +350,9 @@ timers:
         action: start
       - event: game_started
         action: stop
+      - event: flipper_cancel
+        action: jump
+        value: 54
 
 
 widget_player:
@@ -551,3 +563,78 @@ show_player:
       action: stop
     attract_stadium_light_show:
       action: stop
+  mca_sequence_hit:
+    attract_light_show:
+      action: stop
+    attract_stadium_light_show:
+      action: stop
+    ghostbusters_lights:
+      action: play
+      priority: 1000
+      loops: -1
+  timer_mca_attract_video_timer_complete:
+    ghostbusters_lights:
+      action: stop
+    attract_light_show:
+      action: play
+      priority: 1000
+      loops: -1
+    attract_stadium_light_show:
+      action: play
+      priority: 1000
+      loops: -1
+  adr_sequence_hit:
+    attract_light_show:
+      action: stop
+    attract_stadium_light_show:
+      action: stop
+    friends_lights:
+      action: play
+      priority: 1000
+      loops: -1
+  timer_adr_attract_video_timer_complete:
+    friends_lights:
+      action: stop
+    attract_light_show:
+      action: play
+      priority: 1000
+      loops: -1
+    attract_stadium_light_show:
+      action: play
+      priority: 1000
+      loops: -1
+  christmas_sequence_hit:
+    attract_light_show:
+      action: stop
+    attract_stadium_light_show:
+      action: stop
+    christmas_lights:
+      action: play
+      priority: 1000
+      loops: -1
+  timer_christmas_attract_video_timer_complete:
+    christmas_lights:
+      action: stop
+    attract_light_show:
+      action: play
+      priority: 1000
+      loops: -1
+    attract_stadium_light_show:
+      action: play
+      priority: 1000
+      loops: -1
+  muppets_sequence_hit:
+    attract_light_show:
+      action: stop
+    attract_stadium_light_show:
+      action: stop
+  timer_muppets_attract_video_timer_complete:
+    attract_light_show:
+      action: play
+      priority: 1000
+      loops: -1
+    attract_stadium_light_show:
+      action: play
+      priority: 1000
+      loops: -1
+
