@@ -563,6 +563,14 @@ show_player:
       action: stop
     attract_stadium_light_show:
       action: stop
+    christmas_lights:
+      action: stop
+    friends_lights:
+      action: stop
+    ghostbusters_lights:
+      action: stop
+    muppets_lights:
+      action: stop
   mca_sequence_hit:
     attract_light_show:
       action: stop
@@ -628,7 +636,13 @@ show_player:
       action: stop
     attract_stadium_light_show:
       action: stop
+    muppets_lights:
+      action: play
+      priority: 1000
+      loops: -1
   timer_muppets_attract_video_timer_complete:
+    muppets_lights:
+      action: stop
     attract_light_show:
       action: play
       priority: 1000
