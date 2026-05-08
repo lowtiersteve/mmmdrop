@@ -3184,21 +3184,6 @@ show_player:
       action: play
       loops: -1
       priority: 10000
-  mode_superpops_stopped:
-    superpops_on:
-      action: stop
-  mode_superdrops_stopped:
-    superdrops_on:
-      action: stop
-  mode_superspins_stopped:
-    superspins_on:
-      action: stop
-  mode_superstandups_stopped:
-    superstandups_on:
-      action: stop
-  mode_supercombos_stopped:
-    supercombos_on:
-      action: stop
   mode_girls_stopped:
     girls_ready:
       action: stop
