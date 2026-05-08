@@ -250,11 +250,11 @@ sound_player:
       bus: effects
   big_bonus_sound_1:
     ohmygod_callout:
-      action: play
+      action: load
       bus: voice
   big_bonus_sound_2:
     thatshit_callout:
-      action: play
+      action: load
       bus: voice
 
 

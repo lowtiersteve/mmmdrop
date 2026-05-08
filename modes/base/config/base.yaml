@@ -592,6 +592,10 @@ slide_player:
       action: remove
     basevideo4:
       action: remove
+    basevideo5:
+      action: remove
+    basevideo6:
+      action: remove
     paulrevere:
       action: remove
     paulrevere_display_timer:
@@ -694,6 +698,14 @@ slide_player:
     basevideo4:
       action: play
       priority: 5001
+  play_base_video5:
+    basevideo5:
+      action: play
+      priority: 5001
+  play_base_video6:
+    basevideo6:
+      action: play
+      priority: 5001
   mode_makesomenoise_will_stop:
     makesomenoise:
       action: remove
@@ -753,7 +765,7 @@ sound_player:
       loops: 3
   ball_started{player==1 and ball==1 and is_extra_ball==False}:
     player1_start:
-      action: play
+      action: load
       bus: voice
   drop_target_top_down:
     drop_sound_random:
@@ -1096,84 +1108,84 @@ sound_player:
       priority: 5000
   ball_save_default_saving_ball:
     ball_saved_callout:
-      action: play
+      action: load
       bus: voice
       priority: 6000
   ball_save_mode_start_saving_ball:
     ball_saved_callout:
-      action: play
+      action: load
       bus: voice
       priority: 6000
   drops_standup_start_multiball:
     chcheckitout_standup_callout:
-      action: play
+      action: load
       bus: voice
       priority: 5000
   bodymovin_ball_1_locked:
     ball1locked_callout:
-      action: play
+      action: load
       bus: voice
       priority: 5000
   bodymovin_ball_2_locked:
     ball2locked_callout:
-      action: play
+      action: load
       bus: voice
       priority: 5000
   bodymovin_multiball_qualified:
     bodymovin_captiveball_callout:
-      action: play
+      action: load
       bus: voice
       priority: 5000
   achievement_wizard1_state_enabled:
     hitthescoop_callout:
-      action: play
+      action: load
       bus: voice
   achievement_wizard2_state_enabled:
     hitthescoop_callout:
-      action: play
+      action: load
       bus: voice
   achievement_wizard3_state_enabled:
     hitthescoop_callout:
-      action: play
+      action: load
       bus: voice
   mode_fingerlickingood_failed:
     zero_callout:
-      action: play
+      action: load
       bus: voice
       priority: 5000
   mode_highplainsdrifter_failed:
     zero_callout:
-      action: play
+      action: load
       bus: voice
       priority: 5000
   mode_intergalactic_failed:
     zero_callout:
-      action: play
+      action: load
       bus: voice
       priority: 5000
   mode_paulrevere_failed:
     zero_callout:
-      action: play
+      action: load
       bus: voice
       priority: 5000
   mode_sabotage_failed:
     zero_callout:
-      action: play
+      action: load
       bus: voice
       priority: 5000
   mode_threemcsand1dj_failed:
     zero_callout:
-      action: play
+      action: load
       bus: voice
       priority: 5000
   mode_toomanyrappers_failed:
     zero_callout:
-      action: play
+      action: load
       bus: voice
       priority: 5000
   mode_tripletrouble_failed:
     zero_callout:
-      action: play
+      action: load
       bus: voice
       priority: 5000
   mode_fingerlickingood_success:
@@ -1218,15 +1230,15 @@ sound_player:
       priority: 500000
   player_added{num==2}:
     player2_start:
-      action: play
+      action: load
       bus: voice
   player_added{num==3}:
     player3_start:
-      action: play
+      action: load
       bus: voice
   player_added{num==4}:
     player4_start:
-      action: play
+      action: load
       bus: voice
   mode_end_mode_started:
     base_game_random_music:
@@ -1235,151 +1247,151 @@ sound_player:
       loops: 3
   timer_bodhisattvavow_time_remaining_complete:
     shutdownsound:
-      action: play
+      action: load
       bus: voice
   extra_ball_awarded:
     extraball_callout:
-      action: play
+      action: load
       bus: voice
   extra_ball_instruments_collected_eb_lit:
     extraball_islit_callout:
-      action: play
+      action: load
       bus: voice
   extra_ball_modes_played_eb_lit:
     extraball_islit_callout:
-      action: play
+      action: load
       bus: voice
   extra_ball_mystery_eb_lit:
     extraball_islit_callout:
-      action: play
+      action: load
       bus: voice
   diditlikethis:
     diditlikethis:
-      action: play
+      action: load
       bus: voice
   diditlikethat:
     diditlikethat:
-      action: play
+      action: load
       bus: voice
   diditwithawiffleballbat:
     diditwithawiffleballbat:
-      action: play
+      action: load
       bus: voice
   outlane_drain_1:
     outlane_drain_sound:
-      action: play
+      action: load
       bus: voice
   outlane_drain_2:
     outlane_drain_sound_2:
-      action: play
+      action: load
       bus: voice
   outlane_drain_3:
     outlane_drain_sound_3:
-      action: play
+      action: load
       bus: voice
   outlane_drain_4:
     outlane_drain_sound_4:
-      action: play
+      action: load
       bus: voice
   beastie_callout_1:
     name_beastieboys_1:
-      action: play
+      action: load
       bus: voice
   beastie_callout_2:
     name_beastieboys_2:
-      action: play
+      action: load
       bus: voice
   beastie_callout_3:
     name_beastieboys_3:
-      action: play
+      action: load
       bus: voice
   beastie_callout_4:
     name_beastieboys_4:
-      action: play
+      action: load
       bus: voice
   ball_started{is_extra_ball==True and player==1}:
     player1:
-      action: play
+      action: load
       bus: voice
     shoot_again_callout:
-      action: play
+      action: load
       bus: voice
   ball_started{is_extra_ball==True and player==2}:
     player2:
-      action: play
+      action: load
       bus: voice
     shoot_again_callout:
-      action: play
+      action: load
       bus: voice
   ball_started{is_extra_ball==True and player==3}:
     player3:
-      action: play
+      action: load
       bus: voice
     shoot_again_callout:
-      action: play
+      action: load
       bus: voice
   ball_started{is_extra_ball==True and player==4}:
     player4:
-      action: play
+      action: load
       bus: voice
     shoot_again_callout:
-      action: play
+      action: load
       bus: voice
   mystery_ready:
     mystery_lit_sound:
-      action: play
+      action: load
       bus: voice
   mystery_collect:
     mystery_callout:
-      action: play
+      action: load
       bus: voice
   timer_fingerlickingood_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled==1}:
     extraball_islit_callout:
-      action: play
+      action: load
       bus: voice
   timer_highplainsdrifter_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled==1}:
     extraball_islit_callout:
-      action: play
+      action: load
       bus: voice
   timer_intergalactic_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled==1}:
     extraball_islit_callout:
-      action: play
+      action: load
       bus: voice
   timer_paulrevere_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled==1}:
     extraball_islit_callout:
-      action: play
+      action: load
       bus: voice
   timer_sabotage_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled==1}:
     extraball_islit_callout:
-      action: play
+      action: load
       bus: voice
   timer_threemcsand1dj_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled==1}:
     extraball_islit_callout:
-      action: play
+      action: load
       bus: voice
   timer_toomanyrappers_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled==1}:
     extraball_islit_callout:
-      action: play
+      action: load
       bus: voice
   timer_tripletrouble_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled==1}:
     extraball_islit_callout:
-      action: play
+      action: load
       bus: voice
   boombox_collected{current_player.instruments_collected_total==5 and settings.extra_balls_enabled==1}:
     extraball_islit_callout:
-      action: play
+      action: load
       bus: voice
   microphone_collected{current_player.instruments_collected_total==5 and settings.extra_balls_enabled==1}:
     extraball_islit_callout:
-      action: play
+      action: load
       bus: voice
   turntable_collected{current_player.instruments_collected_total==5 and settings.extra_balls_enabled==1}:
     extraball_islit_callout:
-      action: play
+      action: load
       bus: voice
   scoop_hit{current_player.extra_balls_lit_for_points<0}:
     extraball_callout:
-      action: play
+      action: load
       bus: voice
 
 
@@ -1754,6 +1766,22 @@ variable_player:
     highplainsdrifter_played:
       int: 1
       action: set
+  match_end_game_1:
+    this_game_match_video:
+      int: 1
+      action: set_machine
+  match_end_game_2:
+    this_game_match_video:
+      int: 2
+      action: set_machine
+  match_end_game_3:
+    this_game_match_video:
+      int: 3
+      action: set_machine
+  match_end_game_4:
+    this_game_match_video:
+      int: 4
+      action: set_machine
   game_ended:
     game_just_played:
       int: 1
@@ -2415,6 +2443,8 @@ random_event_player:
       - play_base_video2
       - play_base_video3
       - play_base_video4
+      - play_base_video5
+      - play_base_video6
   left_outlane_hit{device.ball_saves.default.state=="disabled" and device.ball_saves.mode_start.state=="disabled" and device.ball_saves.instrument_collect.state=="disabled" and device.ball_saves.girls_frenzy.state=="disabled" and device.ball_saves.sureshot_ball_saver.state=="disabled" and device.ball_saves.end_mode_ball_save.state=="disabled" and device.ball_saves.fake_bodhisattvavow_ball_save.state=="disabled" and current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.girls_blocking_flag==0}:
     events:
       - outlane_drain_1
@@ -2451,6 +2481,12 @@ random_event_player:
       - mystery_award_charge_battery{current_player.battery_charged_yesorno==0 and current_player.mode_blocking_flag==0 and current_player.girls_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0}
       - mystery_award_ball_save{current_player.mystery_ball_save_used==0}
       - mystery_award_add_tilt_warning{current_player.tilt_warnings>0}
+  game_started:
+    events:
+      match_end_game_1: 88
+      match_end_game_2: 6
+      match_end_game_3: 3
+      match_end_game_4: 3
 
 
 show_player:
@@ -4172,6 +4208,7 @@ event_player:
   mystery_award_collect_turntable: turntable_collected
   mystery_award_charge_battery: charge_battery
   mystery_award_ball_save: mystery_award_ball_saver_start
+  ball_started{player==1 and ball==1 and is_extra_ball==False}: game_started
 
 
 accruals:

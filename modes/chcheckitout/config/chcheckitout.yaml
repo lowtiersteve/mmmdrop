@@ -19,6 +19,10 @@ slide_player:
       action: remove
     basevideo4:
       action: remove
+    basevideo5:
+      action: remove
+    basevideo6:
+      action: remove
   play_chcheckitout_video1:
     multiball1:
       action: play
@@ -56,12 +60,12 @@ sound_player:
       loops: 3
   chcheckitout_jackpot_hit:
     jackpot_callout:
-      action: play
+      action: load
       bus: voice
       max_queue_time: 1s
   chcheckitout_superjackpot_hit:
     superjackpot_callout:
-      action: play
+      action: load
       bus: voice
       max_queue_time: 1s
 

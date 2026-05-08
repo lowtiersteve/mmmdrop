@@ -45,44 +45,44 @@ random_event_player:
 sound_player:
   mixmastermike1_sound:
     name_mixmastermike_1:
-      action: play
+      action: load
       bus: voice
     superpops_callout:
-      action: play
+      action: load
       bus: voice
   mixmastermike2_sound:
     name_mixmastermike_2:
-      action: play
+      action: load
       bus: voice
     superpops_callout:
-      action: play
+      action: load
       bus: voice
   mixmastermike3_sound:
     name_mixmastermike_3:
-      action: play
+      action: load
       bus: voice
     superpops_callout:
-      action: play
+      action: load
       bus: voice
   mixmastermike4_sound:
     name_mixmastermike_4:
-      action: play
+      action: load
       bus: voice
     superpops_callout:
-      action: play
+      action: load
       bus: voice
   mixmastermike5_sound:
     name_mixmastermike_5:
-      action: play
+      action: load
       bus: voice
     superpops_callout:
-      action: play
+      action: load
       bus: voice
   mixmastermike6_sound:
     name_mixmastermike_6:
-      action: play
+      action: load
       bus: voice
     superpops_callout:
-      action: play
+      action: load
       bus: voice
 

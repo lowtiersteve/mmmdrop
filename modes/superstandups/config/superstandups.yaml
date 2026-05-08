@@ -51,65 +51,65 @@ random_event_player:
 sound_player:
   mca1_sound:
     name_mca_1:
-      action: play
+      action: load
       bus: voice
     superstandups_callout:
-      action: play
+      action: load
       bus: voice
   mca2_sound:
     name_mca_2:
-      action: play
+      action: load
       bus: voice
     superstandups_callout:
-      action: play
+      action: load
       bus: voice
   mca3_sound:
     name_mca_3:
-      action: play
+      action: load
       bus: voice
     superstandups_callout:
-      action: play
+      action: load
       bus: voice
   mca4_sound:
     name_mca_4:
-      action: play
+      action: load
       bus: voice
     superstandups_callout:
-      action: play
+      action: load
       bus: voice
   mca5_sound:
     name_mca_5:
-      action: play
+      action: load
       bus: voice
     superstandups_callout:
-      action: play
+      action: load
       bus: voice
   mca6_sound:
     name_mca_6:
-      action: play
+      action: load
       bus: voice
     superstandups_callout:
-      action: play
+      action: load
       bus: voice
   mca7_sound:
     name_mca_7:
-      action: play
+      action: load
       bus: voice
     superstandups_callout:
-      action: play
+      action: load
       bus: voice
   mca8_sound:
     name_mca_8:
-      action: play
+      action: load
       bus: voice
     superstandups_callout:
-      action: play
+      action: load
       bus: voice
   mcarobot_sound:
     name_mca_robot:
-      action: play
+      action: load
       bus: voice
     superstandups_callout:
-      action: play
+      action: load
       bus: voice
 

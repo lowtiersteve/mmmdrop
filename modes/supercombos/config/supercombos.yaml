@@ -39,36 +39,36 @@ random_event_player:
 sound_player:
   djhurricane1_sound:
     name_djhurricane_1:
-      action: play
+      action: load
       bus: voice
     supercombos_callout:
-      action: play
+      action: load
       bus: voice
   djhurricane2_sound:
     name_djhurricane_2:
-      action: play
+      action: load
       bus: voice
     supercombos_callout:
-      action: play
+      action: load
       bus: voice
   djhurricane3_sound:
     name_djhurricane_3:
-      action: play
+      action: load
       bus: voice
     supercombos_callout:
-      action: play
+      action: load
       bus: voice
   djhurricane4_sound:
     name_djhurricane_4:
-      action: play
+      action: load
       bus: voice
     supercombos_callout:
-      action: play
+      action: load
       bus: voice
   djhurricane5_sound:
     name_djhurricane_5:
-      action: play
+      action: load
       bus: voice
     supercombos_callout:
-      action: play
+      action: load
       bus: voice

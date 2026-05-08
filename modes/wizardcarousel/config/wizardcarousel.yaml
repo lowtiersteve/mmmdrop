@@ -51,6 +51,10 @@ slide_player:
       action: remove
     basevideo4:
       action: remove
+    basevideo5:
+      action: remove
+    basevideo6:
+      action: remove
     current_wizard_mode_highlighted:
       action: play
       priority: 500000
@@ -96,11 +100,11 @@ sound_player:
       loops: 5
   wizardcarousel_callout_1:
     whatyougonnado:
-      action: play
+      action: load
       bus: voice
   wizardcarousel_callout_2:
     whatyougonnado2:
-      action: play
+      action: load
       bus: voice
 
 

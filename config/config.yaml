@@ -94,7 +94,10 @@ machine_vars:
     initial_value: settings.master_volume
     value_type: float
     persist: True
-
+  this_game_match_video:
+    initial_value: 0
+    persist: True
+    value_type: int
 
 
 playfields:

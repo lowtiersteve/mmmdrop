@@ -1,15 +1,14 @@
 [gd_scene load_steps=5 format=3 uid="uid://bhjp6sktkq11m"]
 
-[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_o4v0r"]
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_o4v0r"]
 [ext_resource type="Texture2D" uid="uid://bb5nodn5nj5cm" path="res://assets/BeastieGroup1.jpg" id="2_1f1fh"]
-[ext_resource type="Script" uid="uid://bf2dsnm46ji2e" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_1f1fh"]
+[ext_resource type="Script" uid="uid://bov7mrgxslshq" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_1f1fh"]
 [ext_resource type="VideoStream" uid="uid://81gfeefukvll" path="res://modes/base/slides/NYEVideo.ogv" id="3_tj1lo"]
 
 [node name="Attract" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_o4v0r")
-metadata/_custom_type_script = "uid://d15ukepy10pan"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(959, 541)
@@ -24,9 +23,9 @@ offset_bottom = 1080.0
 stream = ExtResource("3_tj1lo")
 autoplay = true
 expand = true
+loop = true
 bus = &"music"
 script = ExtResource("3_1f1fh")
 hide_behavior = 1
 events_when_stopped = "remove"
 preview_in_editor = true
-metadata/_custom_type_script = "uid://bf2dsnm46ji2e"

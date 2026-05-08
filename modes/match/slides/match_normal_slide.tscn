@@ -8,7 +8,7 @@
 [ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="6_v4kxx"]
 [ext_resource type="Texture2D" uid="uid://b4vbh6thug3c0" path="res://assets/graffiti_bg_2.png" id="7_p8kaq"]
 
-[node name="match_slide" type="Control"]
+[node name="match_normal_slide" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_lol0l")

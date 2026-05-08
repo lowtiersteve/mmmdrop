@@ -1,27 +1,29 @@
-[gd_scene load_steps=8 format=3 uid="uid://bxd1syxhl3e8"]
+[gd_scene load_steps=8 format=3 uid="uid://csvm2udhl2kug"]
 
-[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_0cjf4"]
-[ext_resource type="VideoStream" uid="uid://bpu0t7ieu658e" path="res://modes/match/slides/futurama_match_video_noaudio.ogv" id="2_0cjf4"]
-[ext_resource type="Script" uid="uid://bov7mrgxslshq" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_jp3bs"]
-[ext_resource type="Texture2D" uid="uid://dtodnmwfxtclr" path="res://assets/burstbacking.png" id="4_2d1qm"]
-[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="5_8ri1r"]
-[ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="6_3l4eh"]
-[ext_resource type="Texture2D" uid="uid://b4vbh6thug3c0" path="res://assets/graffiti_bg_2.png" id="7_gkswd"]
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_b6sfq"]
+[ext_resource type="VideoStream" uid="uid://ckav531lf05iv" path="res://modes/match/slides/grammymatchvideonoaudio.ogv" id="2_b6sfq"]
+[ext_resource type="Script" uid="uid://bov7mrgxslshq" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_twwk1"]
+[ext_resource type="Texture2D" uid="uid://dtodnmwfxtclr" path="res://assets/burstbacking.png" id="4_ou004"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="5_20nx4"]
+[ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="6_vcixh"]
+[ext_resource type="Texture2D" uid="uid://b4vbh6thug3c0" path="res://assets/graffiti_bg_2.png" id="7_wtye4"]
 
-[node name="match_slide" type="Control"]
+[node name="match_grammy_slide" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-script = ExtResource("1_0cjf4")
+script = ExtResource("1_b6sfq")
 
 [node name="MPFVideoPlayer" type="VideoStreamPlayer" parent="."]
 custom_minimum_size = Vector2(1920, 1080)
 layout_mode = 0
-offset_right = 1920.0
-offset_bottom = 1080.0
-stream = ExtResource("2_0cjf4")
+offset_left = 5.0
+offset_top = 3.0
+offset_right = 1925.0
+offset_bottom = 1083.0
+stream = ExtResource("2_b6sfq")
 autoplay = true
 expand = true
-script = ExtResource("3_jp3bs")
+script = ExtResource("3_twwk1")
 hide_behavior = 1
 events_when_stopped = "match_video_done"
 preview_in_editor = true
@@ -30,7 +32,7 @@ preview_in_editor = true
 z_as_relative = false
 position = Vector2(232, 160)
 scale = Vector2(0.45125005, 0.46259254)
-texture = ExtResource("4_2d1qm")
+texture = ExtResource("4_ou004")
 
 [node name="p1name" type="Label" parent="."]
 layout_mode = 0
@@ -39,7 +41,7 @@ offset_top = 49.0
 offset_right = 433.0
 offset_bottom = 152.0
 theme_override_constants/outline_size = 40
-theme_override_fonts/font = ExtResource("5_8ri1r")
+theme_override_fonts/font = ExtResource("5_20nx4")
 theme_override_font_sizes/font_size = 60
 text = "Player 1:"
 
@@ -52,11 +54,11 @@ offset_bottom = 226.0
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 20
-theme_override_fonts/font = ExtResource("5_8ri1r")
+theme_override_fonts/font = ExtResource("5_20nx4")
 theme_override_font_sizes/font_size = 80
 text = "10"
 horizontal_alignment = 1
-script = ExtResource("6_3l4eh")
+script = ExtResource("6_vcixh")
 variable_type = 1
 variable_name = "match_number0"
 min_digits = 2
@@ -73,11 +75,11 @@ offset_bottom = 227.0
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 20
-theme_override_fonts/font = ExtResource("5_8ri1r")
+theme_override_fonts/font = ExtResource("5_20nx4")
 theme_override_font_sizes/font_size = 80
 text = "20"
 horizontal_alignment = 1
-script = ExtResource("6_3l4eh")
+script = ExtResource("6_vcixh")
 variable_type = 1
 variable_name = "match_number1"
 min_digits = 2
@@ -89,7 +91,7 @@ max_players = 4
 show_behind_parent = true
 position = Vector2(254, -31)
 scale = Vector2(0.6134375, 0.58074075)
-texture = ExtResource("7_gkswd")
+texture = ExtResource("7_wtye4")
 
 [node name="p2name" type="Label" parent="match_number1"]
 layout_mode = 0
@@ -98,7 +100,7 @@ offset_top = -94.0
 offset_right = 428.0
 offset_bottom = 9.0
 theme_override_constants/outline_size = 40
-theme_override_fonts/font = ExtResource("5_8ri1r")
+theme_override_fonts/font = ExtResource("5_20nx4")
 theme_override_font_sizes/font_size = 60
 text = "Player 2:"
 
@@ -111,11 +113,11 @@ offset_bottom = 1007.0
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 20
-theme_override_fonts/font = ExtResource("5_8ri1r")
+theme_override_fonts/font = ExtResource("5_20nx4")
 theme_override_font_sizes/font_size = 80
 text = "30"
 horizontal_alignment = 1
-script = ExtResource("6_3l4eh")
+script = ExtResource("6_vcixh")
 variable_type = 1
 variable_name = "match_number2"
 min_digits = 2
@@ -127,7 +129,7 @@ max_players = 4
 show_behind_parent = true
 position = Vector2(283.00003, -18.999985)
 scale = Vector2(0.62333333, 0.5455556)
-texture = ExtResource("7_gkswd")
+texture = ExtResource("7_wtye4")
 
 [node name="p3name" type="Label" parent="match_number2"]
 layout_mode = 0
@@ -136,7 +138,7 @@ offset_top = -88.0
 offset_right = 435.0
 offset_bottom = 15.0
 theme_override_constants/outline_size = 40
-theme_override_fonts/font = ExtResource("5_8ri1r")
+theme_override_fonts/font = ExtResource("5_20nx4")
 theme_override_font_sizes/font_size = 60
 text = "Player 3:"
 
@@ -149,11 +151,11 @@ offset_bottom = 1017.0
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 20
-theme_override_fonts/font = ExtResource("5_8ri1r")
+theme_override_fonts/font = ExtResource("5_20nx4")
 theme_override_font_sizes/font_size = 80
 text = "40"
 horizontal_alignment = 1
-script = ExtResource("6_3l4eh")
+script = ExtResource("6_vcixh")
 variable_type = 1
 variable_name = "match_number3"
 min_digits = 2
@@ -164,7 +166,7 @@ max_players = 4
 show_behind_parent = true
 position = Vector2(193.99985, 19.000015)
 scale = Vector2(0.48947915, 0.6177778)
-texture = ExtResource("4_2d1qm")
+texture = ExtResource("4_ou004")
 
 [node name="p4name" type="Label" parent="match_number3"]
 layout_mode = 0
@@ -173,20 +175,20 @@ offset_top = -82.0
 offset_right = 418.0
 offset_bottom = 21.0
 theme_override_constants/outline_size = 40
-theme_override_fonts/font = ExtResource("5_8ri1r")
+theme_override_fonts/font = ExtResource("5_20nx4")
 theme_override_font_sizes/font_size = 60
 text = "Player 4:"
 
-[node name="NOMATCH" type="Label" parent="."]
+[node name="MATCH" type="Label" parent="."]
 layout_mode = 0
-offset_left = 665.0
-offset_top = 53.0
-offset_right = 1275.0
-offset_bottom = 156.0
+offset_left = 748.0
+offset_top = 32.0
+offset_right = 1143.0
+offset_bottom = 135.0
 theme_override_constants/outline_size = 40
-theme_override_fonts/font = ExtResource("5_8ri1r")
+theme_override_fonts/font = ExtResource("5_20nx4")
 theme_override_font_sizes/font_size = 100
-text = "NO MATCH"
+text = "MATCH"
 
 [node name="MatchNumber" type="Label" parent="."]
 layout_mode = 0
@@ -195,7 +197,7 @@ offset_top = 876.0
 offset_right = 1204.0
 offset_bottom = 979.0
 theme_override_constants/outline_size = 40
-theme_override_fonts/font = ExtResource("5_8ri1r")
+theme_override_fonts/font = ExtResource("5_20nx4")
 theme_override_font_sizes/font_size = 50
 text = "Match number:"
 
@@ -208,11 +210,11 @@ offset_bottom = 1050.0
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 50
-theme_override_fonts/font = ExtResource("5_8ri1r")
+theme_override_fonts/font = ExtResource("5_20nx4")
 theme_override_font_sizes/font_size = 100
 text = "50"
 horizontal_alignment = 1
-script = ExtResource("6_3l4eh")
+script = ExtResource("6_vcixh")
 variable_type = 1
 variable_name = "winner_number"
 min_digits = 2

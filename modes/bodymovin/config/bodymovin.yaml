@@ -20,6 +20,10 @@ slide_player:
       action: remove
     basevideo4:
       action: remove
+    basevideo5:
+      action: remove
+    basevideo6:
+      action: remove
   bodymovinmusic1:
     bodymovin:
       action: play
@@ -47,12 +51,12 @@ sound_player:
       loops: 5
   bodymovin_jackpot_hit:
     jackpot_callout:
-      action: play
+      action: load
       bus: voice
       max_queue_time: 1s
   bodymovin_superjackpot_hit:
     superjackpot_callout:
-      action: play
+      action: load
       bus: voice
       max_queue_time: 1s
 

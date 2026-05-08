@@ -40,12 +40,12 @@ multiballs:
 sound_player:
   multiball_chcheckitout_started:
     chcheckitout_start_callout:
-      action: play
+      action: load
       bus: voice
       priority: 10000
   multiball_bodymovin_started:
     bodymovin_start_callout:
-      action: play
+      action: load
       bus: voice
       priority: 10000
 

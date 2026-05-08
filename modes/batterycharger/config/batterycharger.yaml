@@ -618,11 +618,11 @@ widget_player:
 sound_player:
   batterychargercallout1:
     batterycharger_callout1:
-      action: play
+      action: load
       bus: voice
   batterychargercallout2:
     batterycharger_callout2:
-      action: play
+      action: load
       bus: voice
 
 

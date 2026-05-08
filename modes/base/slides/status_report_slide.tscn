@@ -19,7 +19,7 @@ scale = Vector2(1.9, 1.9)
 texture = ExtResource("2_apnk5")
 
 [node name="TopSpraypaint" type="Sprite2D" parent="."]
-position = Vector2(958, 176)
+position = Vector2(935, 176)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("3_vk8qw")
 
@@ -32,7 +32,8 @@ offset_bottom = 209.0
 rotation = -0.18189362
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("4_0f4s6")
 theme_override_font_sizes/font_size = 50
 text = "Player 1"
@@ -50,7 +51,8 @@ offset_bottom = 159.00002
 rotation = -0.18189362
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("4_0f4s6")
 theme_override_font_sizes/font_size = 50
 text = "Ball 1"
@@ -60,8 +62,8 @@ variable_name = "ball"
 template_string = "Ball %s"
 
 [node name="TopLeftSpraypaint" type="Sprite2D" parent="."]
-position = Vector2(418, 531)
-scale = Vector2(0.8, 0.8)
+position = Vector2(448.00003, 533)
+scale = Vector2(0.85520834, 0.88055557)
 texture = ExtResource("3_vk8qw")
 
 [node name="scores" type="Label" parent="."]
@@ -245,8 +247,8 @@ initialize_empty = false
 min_players = 4
 
 [node name="BottomRightSpraypaint" type="Sprite2D" parent="."]
-position = Vector2(1507, 873.9999)
-scale = Vector2(0.64000005, 0.64000005)
+position = Vector2(1528, 910)
+scale = Vector2(0.7486459, 0.707037)
 texture = ExtResource("3_vk8qw")
 
 [node name="Modesplayed" type="Label" parent="."]

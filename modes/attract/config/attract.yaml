@@ -3,16 +3,14 @@
 mode_settings:
   selectable_items:
     - gameover{machine.game_just_played==1}
-#    - last_scores_1p{machine.game_just_played==1 and not machine.player2_score>0}
-#    - last_scores_2p{machine.player2_score>0 and machine.game_just_played==1 and not machine.player3_score>0}
-#    - last_scores_3p{machine.player3_score>0 and machine.game_just_played==1 and not machine.player4_score>0}
-    - last_scores_4p{machine.game_just_played==1} # and machine.player4_score>0}
+    - last_scores_4p{machine.game_just_played==1}
     - mpf_logo
     - fast_logo
     - specialthanks
     - credits
     - pressstart
     - version
+    - beastie_pinball_logo
     - makercredits
     - dedicated
     - highscoregrandchampion
@@ -54,7 +52,7 @@ sequences:
     - s_right_flipper_active
     - s_left_flipper_active
     disable_events: game_starting
-    reset_on_complete: False
+    reset_on_complete: True
     restart_events: mode_attract_started, adr_sequence_hit, mca_sequence_hit, flipper_cancel, christmas_sequence_hit, muppets_sequence_hit
     events_when_complete: mca_sequence_hit
   adr_sequence:
@@ -86,7 +84,7 @@ sequences:
     - s_right_flipper_active
     - s_left_flipper_active
     disable_events: game_starting
-    reset_on_complete: False
+    reset_on_complete: True
     restart_events: mode_attract_started, adr_sequence_hit, mca_sequence_hit, flipper_cancel, christmas_sequence_hit, muppets_sequence_hit
     events_when_complete: adr_sequence_hit
   christmas_sequence:
@@ -106,7 +104,7 @@ sequences:
       - s_right_flipper_active
       - s_left_flipper_active
     disable_events: game_starting
-    reset_on_complete: False
+    reset_on_complete: True
     restart_events: mode_attract_started, adr_sequence_hit, mca_sequence_hit, flipper_cancel, christmas_sequence_hit, muppets_sequence_hit
     events_when_complete: christmas_sequence_hit
   muppets_sequence:
@@ -126,7 +124,7 @@ sequences:
       - s_right_flipper_active
       - s_left_flipper_active
     disable_events: game_starting
-    reset_on_complete: False
+    reset_on_complete: True
     restart_events: mode_attract_started, adr_sequence_hit, mca_sequence_hit, flipper_cancel, christmas_sequence_hit, muppets_sequence_hit
     events_when_complete: muppets_sequence_hit
 
@@ -146,6 +144,22 @@ slide_player:
       priority: 10000
   mode_attract_started{machine.game_just_played==1}:
     loading:
+      action: remove
+    match_normal_slide:
+      action: remove
+    match_mahjong_slide:
+      action: remove
+    match_mother_slide:
+      action: remove
+    match_grammy_slide:
+      action: remove
+    no_match_normal_slide:
+      action: remove
+    no_match_mahjong_slide:
+      action: remove
+    no_match_mother_slide:
+      action: remove
+    no_match_grammy_slide:
       action: remove
     attract:
       action: play
@@ -206,18 +220,6 @@ slide_player:
     attract:
       action: play
       priority: 1000
-#  flipper_cancel:
-#    friends:
-#      action: remove
-#    ghostbusters:
-#      action: remove
-#    jinglebells:
-#      action: remove
-#    beastiemuppets:
-#      action: remove
-#    attract:
-#        action: play
-#        priority: 1000
 
 
 sound_player:
@@ -227,13 +229,16 @@ sound_player:
       action: play
   mode_attract_started{machine.game_just_played==1}:
     postgame_instrumental_random:
-      action: play
+      action: replace
       bus: music
-      loops: 4
+      fade_out: 5s
   mca_sequence_hit:
     attract_crowd:
       action: stop
       bus: effects
+    postgame_instrumental_random:
+      action: stop
+      bus: music
   timer_mca_attract_video_timer_complete:
     attract_crowd:
       bus: effects
@@ -242,6 +247,9 @@ sound_player:
     attract_crowd:
       action: stop
       bus: effects
+    postgame_instrumental_random:
+      action: stop
+      bus: music
   timer_adr_attract_video_timer_complete:
     attract_crowd:
       bus: effects
@@ -250,6 +258,9 @@ sound_player:
     attract_crowd:
       action: stop
       bus: effects
+    postgame_instrumental_random:
+      action: stop
+      bus: music
   timer_christmas_attract_video_timer_complete:
     attract_crowd:
       bus: effects
@@ -258,6 +269,9 @@ sound_player:
     attract_crowd:
       action: stop
       bus: effects
+    postgame_instrumental_random:
+      action: stop
+      bus: music
   timer_muppets_attract_video_timer_complete:
     attract_crowd:
       bus: effects
@@ -311,48 +325,68 @@ timers:
     start_running: False
     control_events:
       - event: slide_ghostbusters_active
-        action: start
+        action: restart
       - event: game_started
         action: stop
       - event: flipper_cancel
         action: jump
         value: 192
+      - event: slide_ghostbusters_removed
+        action: jump
+        value: 0
+      - event: slide_ghostbusters_removed
+        action: pause
   adr_attract_video_timer:
     end_value: 49
     tick_interval: 1s
     start_running: False
     control_events:
       - event: slide_friends_active
-        action: start
+        action: restart
       - event: game_started
         action: stop
       - event: flipper_cancel
         action: jump
         value: 49
+      - event: slide_friends_removed
+        action: jump
+        value: 0
+      - event: slide_friends_removed
+        action: pause
   christmas_attract_video_timer:
     end_value: 54
     tick_interval: 1s
     start_running: False
     control_events:
       - event: slide_jinglebells_active
-        action: start
+        action: restart
       - event: game_started
         action: stop
       - event: flipper_cancel
         action: jump
         value: 54
+      - event: slide_jinglebells_removed
+        action: jump
+        value: 0
+      - event: slide_jinglebells_removed
+        action: pause
   muppets_attract_video_timer:
     end_value: 54
     tick_interval: 1s
     start_running: False
     control_events:
       - event: slide_beastiemuppets_active
-        action: start
+        action: restart
       - event: game_started
         action: stop
       - event: flipper_cancel
         action: jump
         value: 54
+      - event: slide_beastiemuppets_removed
+        action: jump
+        value: 0
+      - event: slide_beastiemuppets_removed
+        action: pause
 
 
 widget_player:
@@ -397,6 +431,13 @@ widget_player:
       slide: attract
   carousel_item_highlighted{item!="mpf_logo"}:
     attract_mpf_logo:
+      action: remove
+  carousel_item_highlighted{item=="beastie_pinball_logo"}:
+    attract_beastie_pinball_logo:
+      action: play
+      slide: attract
+  carousel_item_highlighted{item!="beastie_pinball_logo"}:
+    attract_beastie_pinball_logo:
       action: remove
   carousel_item_highlighted{item=="fast_logo"}:
     attract_fast_logo:

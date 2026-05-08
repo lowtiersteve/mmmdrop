@@ -48,78 +48,78 @@ random_event_player:
 sound_player:
   adrock1_sound:
     name_adrock_1:
-      action: play
+      action: load
       bus: voice
     superdrops_callout:
-      action: play
+      action: load
       bus: voice
   adrock2_sound:
     name_adrock_2:
-      action: play
+      action: load
       bus: voice
     superdrops_callout:
-      action: play
+      action: load
       bus: voice
   adrock3_sound:
     name_adrock_3:
-      action: play
+      action: load
       bus: voice
     superdrops_callout:
-      action: play
+      action: load
       bus: voice
   adrock4_sound:
     name_adrock_4:
-      action: play
+      action: load
       bus: voice
     superdrops_callout:
-      action: play
+      action: load
       bus: voice
   adrock5_sound:
     name_adrock_5:
-      action: play
+      action: load
       bus: voice
     superdrops_callout:
-      action: play
+      action: load
       bus: voice
   adrock6_sound:
     name_adrock_6:
-      action: play
+      action: load
       bus: voice
     superdrops_callout:
-      action: play
+      action: load
       bus: voice
   adrock7_sound:
     name_adrock_7:
-      action: play
+      action: load
       bus: voice
     superdrops_callout:
-      action: play
+      action: load
       bus: voice
   adrock8_sound:
     name_adrock_8:
-      action: play
+      action: load
       bus: voice
     superdrops_callout:
-      action: play
+      action: load
       bus: voice
   adrockrobot_sound:
     name_adrock_robot:
-      action: play
+      action: load
       bus: voice
     superdrops_callout:
-      action: play
+      action: load
       bus: voice
   adrockadam_sound:
     name_adrock_adam1:
-      action: play
+      action: load
       bus: voice
     superdrops_callout:
-      action: play
+      action: load
       bus: voice
   adrockadam2_sound:
     name_adrock_adam2:
-      action: play
+      action: load
       bus: voice
     superdrops_callout:
-      action: play
+      action: load
       bus: voice

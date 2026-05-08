@@ -320,6 +320,10 @@ slide_player:
       action: remove
     basevideo4:
       action: remove
+    basevideo5:
+      action: remove
+    basevideo6:
+      action: remove
     highplainsdrifter:
       action: play
       priority: 500000
@@ -360,17 +364,17 @@ sound_player:
       max_queue_time: 1s
   tencallout1:
     ten_callout1:
-      action: play
+      action: load
       bus: voice
       max_queue_time: 1s
   tencallout2:
     ten_callout2:
-      action: play
+      action: load
       bus: voice
       max_queue_time: 1s
   tencallout3:
     ten_callout3:
-      action: play
+      action: load
       bus: voice
       max_queue_time: 1s
 

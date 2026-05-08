@@ -23,26 +23,80 @@ slide_player:
       action: remove
     high_score_award_display:
       action: remove
-  no_match:
-    no_match_slide:
-      expire: 14s
-  has_match:
-    match_slide:
-      expire: 14s
+  no_match{machine.this_game_match_video==1}:
+    no_match_normal_slide:
+      action: play
+  has_match{machine.this_game_match_video==1}:
+    match_normal_slide:
+      action: play
+  no_match{machine.this_game_match_video==2}:
+    no_match_mahjong_slide:
+      action: play
+  has_match{machine.this_game_match_video==2}:
+    match_mahjong_slide:
+      action: play
+  no_match{machine.this_game_match_video==3}:
+    no_match_mother_slide:
+      action: play
+  has_match{machine.this_game_match_video==3}:
+    match_mother_slide:
+      action: play
+  no_match{machine.this_game_match_video==4}:
+    no_match_grammy_slide:
+      action: play
+  has_match{machine.this_game_match_video==4}:
+    match_grammy_slide:
+      action: play
   match_video_done:
-    no_match_slide_1:
+    match_normal_slide:
       action: remove
-    match_slide_1:
+    match_mahjong_slide:
+      action: remove
+    match_mother_slide:
+      action: remove
+    match_grammy_slide:
+      action: remove
+    no_match_normal_slide:
+      action: remove
+    no_match_mahjong_slide:
+      action: remove
+    no_match_mother_slide:
+      action: remove
+    no_match_grammy_slide:
       action: remove
 
 
 sound_player:
-  no_match:
+  has_match{machine.this_game_match_video==1}:
     futurama_match_audio:
       action: replace
       bus: music
-  has_match:
+  has_match{machine.this_game_match_video==3}:
+    mother_match_audio:
+      action: replace
+      bus: music
+  has_match{machine.this_game_match_video==2}:
+    mahjong_match_audio:
+      action: replace
+      bus: music
+  has_match{machine.this_game_match_video==4}:
+    grammy_match_audio:
+      action: replace
+      bus: music
+  no_match{machine.this_game_match_video==1}:
     futurama_match_audio:
+      action: replace
+      bus: music
+  no_match{machine.this_game_match_video==3}:
+    mother_match_audio:
+      action: replace
+      bus: music
+  no_match{machine.this_game_match_video==2}:
+    mahjong_match_audio:
+      action: replace
+      bus: music
+  no_match{machine.this_game_match_video==4}:
+    grammy_match_audio:
       action: replace
       bus: music
 

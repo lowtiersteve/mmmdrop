@@ -215,22 +215,22 @@ timers:
 sound_player:
   boombox_collected:
     yougottheboombox_callout:
-      action: play
+      action: load
       bus: voice
       priority: 5000
   microphone_collected:
     yougotthemic_callout:
-      action: play
+      action: load
       bus: voice
       priority: 5000
   turntable_collected:
     yougottheturntable_callout:
-      action: play
+      action: load
       bus: voice
       priority: 5000
   start_playfield_x_timer:
     scoring2x_callout:
-      action: play
+      action: load
       bus: voice
       priority: 5000
 
@@ -295,22 +295,22 @@ widget_player:
     microphone_color:
       action: play
       slide: instrument_blocks
-      priority: 902001
+      priority: 901251
   boombox_collected:
     boombox_color:
       action: play
       slide: instrument_blocks
-      priority: 902002
+      priority: 901252
   turntable_collected:
     turntable_color:
       action: play
       slide: instrument_blocks
-      priority: 902003
+      priority: 901253
   start_playfield_x_timer:
     playfield_2x_scoring:
       action: play
       slide: instrument_blocks
-      priority: 903000
+      priority: 902250
   reset_playfield_x:
     playfield_2x_scoring:
       action: remove

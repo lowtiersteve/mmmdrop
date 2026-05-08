@@ -234,6 +234,10 @@ slide_player:
       action: remove
     basevideo4:
       action: remove
+    basevideo5:
+      action: remove
+    basevideo6:
+      action: remove
     current_wizard_mode_highlighted:
       action: remove
     bodhisattvavow:
