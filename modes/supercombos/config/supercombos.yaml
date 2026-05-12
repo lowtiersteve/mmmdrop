@@ -34,6 +34,8 @@ random_event_player:
       - djhurricane3_sound
       - djhurricane4_sound
       - djhurricane5_sound
+    force_all: False
+    force_different: False
 
 
 sound_player:

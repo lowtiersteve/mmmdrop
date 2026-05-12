@@ -374,10 +374,14 @@ random_event_player:
       - tencallout1
       - tencallout2
       - tencallout3
+    force_all: False
+    force_different: False
   mode_intergalactic_started:
     events:
       normal_intergalactic: 99
       rare_intergalactic: 1
+    force_all: False
+    force_different: False
 
 
 ball_holds:

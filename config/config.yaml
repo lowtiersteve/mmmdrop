@@ -413,23 +413,23 @@ player_vars:
   player_drop_target_bank_counter_count:
     initial_value: 1
   mode_intergalactic_score:
-    initial_value: 1
+    initial_value: 0
   mode_fingerlickingood_score:
-    initial_value: 1
+    initial_value: 0
   mode_highplainsdrifter_score:
-    initial_value: 1
+    initial_value: 0
   mode_makesomenoise_score:
-    initial_value: 1
+    initial_value: 0
   mode_paulrevere_score:
-    initial_value: 1
+    initial_value: 0
   mode_sabotage_score:
-    initial_value: 1
+    initial_value: 0
   mode_threemcsand1dj_score:
-    initial_value: 1
+    initial_value: 0
   mode_toomanyrappers_score:
-    initial_value: 1
+    initial_value: 0
   mode_tripletrouble_score:
-    initial_value: 1
+    initial_value: 0
   mode_time_remaining_total:
     initial_value: 0
   selected_mode:

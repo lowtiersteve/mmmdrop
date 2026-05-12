@@ -42,6 +42,8 @@ random_event_player:
       - mikedmike1_sound
       - mikedmike2_sound
       - mikedrobot_sound
+    force_all: False
+    force_different: False
 
 
 sound_player:

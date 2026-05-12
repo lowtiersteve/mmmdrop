@@ -307,11 +307,15 @@ random_event_player:
       - play_chcheckitout_video1
       - play_chcheckitout_video2
       - play_chcheckitout_video3
+    force_all: False
+    force_different: False
   chcheckitout_music_from_mode:
     events:
       - play_chcheckitout_video1
       - play_chcheckitout_video2
       - play_chcheckitout_video3
+    force_all: False
+    force_different: False
 
 
 event_player:

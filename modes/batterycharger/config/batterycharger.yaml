@@ -631,3 +631,5 @@ random_event_player:
     events:
       - batterychargercallout1
       - batterychargercallout2
+    force_all: False
+    force_different: False

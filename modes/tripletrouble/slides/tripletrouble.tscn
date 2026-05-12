@@ -1,14 +1,13 @@
 [gd_scene load_steps=4 format=3 uid="uid://c7f4onw3sp2jm"]
 
-[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_xsva6"]
-[ext_resource type="VideoStream" uid="uid://bhood0rixhqav" path="res://modes/tripletrouble/slides/TripleTrouble50.ogv" id="2_bdm8g"]
-[ext_resource type="Script" uid="uid://bf2dsnm46ji2e" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_0vc0n"]
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_xsva6"]
+[ext_resource type="VideoStream" uid="uid://bijbakhuix1km" path="res://modes/tripletrouble/slides/TripleTroubleFinalCutNoAudio.ogv" id="2_bdm8g"]
+[ext_resource type="Script" uid="uid://bov7mrgxslshq" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_0vc0n"]
 
-[node name="paulrevere" type="Control"]
+[node name="tripletrouble" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_xsva6")
-metadata/_custom_type_script = "uid://d15ukepy10pan"
 
 [node name="MPFVideoPlayer" type="VideoStreamPlayer" parent="."]
 custom_minimum_size = Vector2(1920, 1080)
@@ -22,4 +21,3 @@ loop = true
 script = ExtResource("3_0vc0n")
 hide_behavior = 1
 preview_in_editor = true
-metadata/_custom_type_script = "uid://bf2dsnm46ji2e"

@@ -250,6 +250,10 @@ sound_player:
     postgame_instrumental_random:
       action: stop
       bus: music
+  timer_adr_attract_video_timer_started:
+    friendsmusic:
+      action: play
+      bus: music
   timer_adr_attract_video_timer_complete:
     attract_crowd:
       bus: effects
@@ -577,14 +581,14 @@ widget_player:
 
 show_player:
   mode_attract_started:
-    attract_light_show:
+    attract_light_show_new:
       action: play
       priority: 1000
       loops: -1
-    attract_stadium_light_show:
-      action: play
-      priority: 1000
-      loops: -1
+#    attract_stadium_light_show:
+#      action: play
+#      priority: 1000
+#      loops: -1
     bonus_count_show_blue:
       action: stop
     bonus_count_show_green:
@@ -600,10 +604,10 @@ show_player:
     bonus_count_show_yellow:
       action: stop
   mode_attract_stopping:
-    attract_light_show:
+    attract_light_show_new:
       action: stop
-    attract_stadium_light_show:
-      action: stop
+#    attract_stadium_light_show:
+#      action: stop
     christmas_lights:
       action: stop
     friends_lights:
@@ -613,10 +617,10 @@ show_player:
     muppets_lights:
       action: stop
   mca_sequence_hit:
-    attract_light_show:
+    attract_light_show_new:
       action: stop
-    attract_stadium_light_show:
-      action: stop
+#    attract_stadium_light_show:
+#      action: stop
     ghostbusters_lights:
       action: play
       priority: 1000
@@ -624,19 +628,19 @@ show_player:
   timer_mca_attract_video_timer_complete:
     ghostbusters_lights:
       action: stop
-    attract_light_show:
+    attract_light_show_new:
       action: play
       priority: 1000
       loops: -1
-    attract_stadium_light_show:
-      action: play
-      priority: 1000
-      loops: -1
+#    attract_stadium_light_show:
+#      action: play
+#      priority: 1000
+#      loops: -1
   adr_sequence_hit:
-    attract_light_show:
+    attract_light_show_new:
       action: stop
-    attract_stadium_light_show:
-      action: stop
+#    attract_stadium_light_show:
+#      action: stop
     friends_lights:
       action: play
       priority: 1000
@@ -644,19 +648,19 @@ show_player:
   timer_adr_attract_video_timer_complete:
     friends_lights:
       action: stop
-    attract_light_show:
+    attract_light_show_new:
       action: play
       priority: 1000
       loops: -1
-    attract_stadium_light_show:
-      action: play
-      priority: 1000
-      loops: -1
+#    attract_stadium_light_show:
+#      action: play
+#      priority: 1000
+#      loops: -1
   christmas_sequence_hit:
-    attract_light_show:
+    attract_light_show_new:
       action: stop
-    attract_stadium_light_show:
-      action: stop
+#    attract_stadium_light_show:
+#      action: stop
     christmas_lights:
       action: play
       priority: 1000
@@ -664,19 +668,19 @@ show_player:
   timer_christmas_attract_video_timer_complete:
     christmas_lights:
       action: stop
-    attract_light_show:
+    attract_light_show_new:
       action: play
       priority: 1000
       loops: -1
-    attract_stadium_light_show:
-      action: play
-      priority: 1000
-      loops: -1
+#    attract_stadium_light_show:
+#      action: play
+#      priority: 1000
+#      loops: -1
   muppets_sequence_hit:
-    attract_light_show:
+    attract_light_show_new:
       action: stop
-    attract_stadium_light_show:
-      action: stop
+#    attract_stadium_light_show:
+#      action: stop
     muppets_lights:
       action: play
       priority: 1000
@@ -684,12 +688,12 @@ show_player:
   timer_muppets_attract_video_timer_complete:
     muppets_lights:
       action: stop
-    attract_light_show:
+    attract_light_show_new:
       action: play
       priority: 1000
       loops: -1
-    attract_stadium_light_show:
-      action: play
-      priority: 1000
-      loops: -1
+#    attract_stadium_light_show:
+#      action: play
+#      priority: 1000
+#      loops: -1
 

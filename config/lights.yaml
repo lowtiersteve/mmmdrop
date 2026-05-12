@@ -209,17 +209,17 @@ lights:
     number: lightboard-3-17
     subtype: led
     type: rgb
-    label: "Wizard 2 Bottom Square - Bodhisattva Vow"
+    label: "Wizard Bottom Square - Sure Shot"
   l_wizardindicator2_rectangle_led:
     number: lightboard-3-7
     subtype: led
     type: rgb
-    label: "Wizard 1 Top Square - Make Some Noise"
+    label: "Wizard Top Square - Make Some Noise"
   l_wizardindicator3_rectangle_led:
     number: lightboard-3-11
     subtype: led
     type: rgb
-    label: "Final Wizard Middle Square - Fight!"
+    label: "Wizard Middle Square - Bodhi Vow"
   l_supercircle1_led:
     number: lightboard-3-4
     subtype: led

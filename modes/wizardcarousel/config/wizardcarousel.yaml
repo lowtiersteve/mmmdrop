@@ -86,10 +86,14 @@ random_event_player:
       - random_mode_picker_makesomenoise
       - random_mode_picker_sureshot
       - random_mode_picker_bodhisattvavow
+    force_all: False
+    force_different: False
   mode_wizardcarousel_started:
     events:
       - wizardcarousel_callout_1
       - wizardcarousel_callout_2
+    force_all: False
+    force_different: False
 
 
 sound_player:

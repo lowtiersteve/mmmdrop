@@ -763,10 +763,6 @@ sound_player:
       action: play
       bus: music
       loops: 3
-  ball_started{player==1 and ball==1 and is_extra_ball==False}:
-    player1_start:
-      action: load
-      bus: voice
   drop_target_top_down:
     drop_sound_random:
       action: play
@@ -1391,6 +1387,10 @@ sound_player:
       bus: voice
   scoop_hit{current_player.extra_balls_lit_for_points<0}:
     extraball_callout:
+      action: load
+      bus: voice
+  ball_started{is_extra_ball==False and current_player.ball==1 and current_player.number==1}:
+    player1_start:
       action: load
       bus: voice
 
@@ -2164,7 +2164,6 @@ variable_player:
       int: 0
       action: set
 
-##
 
 sequences:
   qualify_chcheckitout_multiball:
@@ -2445,18 +2444,24 @@ random_event_player:
       - play_base_video4
       - play_base_video5
       - play_base_video6
+    force_all: False
+    force_different: False
   left_outlane_hit{device.ball_saves.default.state=="disabled" and device.ball_saves.mode_start.state=="disabled" and device.ball_saves.instrument_collect.state=="disabled" and device.ball_saves.girls_frenzy.state=="disabled" and device.ball_saves.sureshot_ball_saver.state=="disabled" and device.ball_saves.end_mode_ball_save.state=="disabled" and device.ball_saves.fake_bodhisattvavow_ball_save.state=="disabled" and current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.girls_blocking_flag==0}:
     events:
       - outlane_drain_1
       - outlane_drain_2
       - outlane_drain_3
       - outlane_drain_4
+    force_all: False
+    force_different: False
   right_outlane_hit{device.ball_saves.default.state=="disabled" and device.ball_saves.mode_start.state=="disabled" and device.ball_saves.instrument_collect.state=="disabled" and device.ball_saves.girls_frenzy.state=="disabled" and device.ball_saves.sureshot_ball_saver.state=="disabled" and device.ball_saves.end_mode_ball_save.state=="disabled" and device.ball_saves.fake_bodhisattvavow_ball_save.state=="disabled" and current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.girls_blocking_flag==0}:
     events:
       - outlane_drain_1
       - outlane_drain_2
       - outlane_drain_3
       - outlane_drain_4
+    force_all: False
+    force_different: False
   tilt:
     events:
       - tilt1
@@ -2464,12 +2469,16 @@ random_event_player:
       - tilt3
       - tilt4
       - tilt5
+    force_all: False
+    force_different: False
   battery_charged{device.playfields.playfield.balls>0}:
     events:
       - beastie_callout_1
       - beastie_callout_2
       - beastie_callout_3
       - beastie_callout_4
+    force_all: False
+    force_different: False
   mystery_collect:
     events:
       - mystery_award_big_points
@@ -2481,12 +2490,16 @@ random_event_player:
       - mystery_award_charge_battery{current_player.battery_charged_yesorno==0 and current_player.mode_blocking_flag==0 and current_player.girls_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0}
       - mystery_award_ball_save{current_player.mystery_ball_save_used==0}
       - mystery_award_add_tilt_warning{current_player.tilt_warnings>0}
+    force_all: False
+    force_different: False
   game_started:
     events:
       match_end_game_1: 88
       match_end_game_2: 6
       match_end_game_3: 3
       match_end_game_4: 3
+    force_all: False
+    force_different: False
 
 
 show_player:
@@ -3616,26 +3629,26 @@ blinkenlight_player:
 
 
 widget_player:
-#  player_1_ball_started:
-#    player_1_billboard_active:
-#      action: play
-#      slide: score_overlay
-#      priority: 925000
-#  player_2_ball_started:
-#    player_2_billboard_active:
-#      action: play
-#      slide: score_overlay
-#      priority: 925000
-#  player_3_ball_started:
-#    player_3_billboard_active:
-#      action: play
-#      slide: score_overlay
-#      priority: 925000
-#  player_4_ball_started:
-#    player_4_billboard_active:
-#      action: play
-#      slide: score_overlay
-#      priority: 925000
+  player_1_ball_started:
+    player_1_billboard_active:
+      action: play
+      slide: score_overlay
+      priority: 925000
+  player_2_ball_started:
+    player_2_billboard_active:
+      action: play
+      slide: score_overlay
+      priority: 925000
+  player_3_ball_started:
+    player_3_billboard_active:
+      action: play
+      slide: score_overlay
+      priority: 925000
+  player_4_ball_started:
+    player_4_billboard_active:
+      action: play
+      slide: score_overlay
+      priority: 925000
   mode_chcheckitout_stopped:
     chcheckitoutfinish:
       action: play
@@ -3721,14 +3734,14 @@ widget_player:
       action: remove
     instrument_blocks:
       action: remove
-#    player_1_billboard_active:
-#      action: remove
-#    player_2_billboard_active:
-#      action: remove
-#    player_3_billboard_active:
-#      action: remove
-#    player_4_billboard_active:
-#      action: remove
+    player_1_billboard_active:
+      action: remove
+    player_2_billboard_active:
+      action: remove
+    player_3_billboard_active:
+      action: remove
+    player_4_billboard_active:
+      action: remove
     makesomenoise_mode_score:
       action: remove
     bodhivow_mode_score:

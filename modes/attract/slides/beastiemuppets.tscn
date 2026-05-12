@@ -16,6 +16,7 @@ scale = Vector2(1.47846, 1.47268)
 texture = ExtResource("2_j46fx")
 
 [node name="StartupVideo" type="VideoStreamPlayer" parent="."]
+top_level = true
 custom_minimum_size = Vector2(1920, 1080)
 layout_mode = 0
 offset_right = 1920.0

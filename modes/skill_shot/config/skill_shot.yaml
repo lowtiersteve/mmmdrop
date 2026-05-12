@@ -212,6 +212,8 @@ random_event_player:
     - advance_skill_hideout
     - advance_skill_left_outlane
     - advance_skill_lower_pop
+    force_all: False
+    force_different: False
 
 event_player:
   timer_skill_shot_timeout_complete: skill_failed

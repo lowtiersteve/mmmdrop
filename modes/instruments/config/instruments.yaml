@@ -281,6 +281,8 @@ random_event_player:
     - advance_instrument_bottom
     - advance_instrument_middle
     - advance_instrument_top
+    force_all: False
+    force_different: False
 
 
 slide_player:

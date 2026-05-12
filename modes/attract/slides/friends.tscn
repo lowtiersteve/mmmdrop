@@ -1,15 +1,14 @@
 [gd_scene load_steps=5 format=3 uid="uid://dq2xs2w1dlhtw"]
 
-[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_o6jri"]
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_o6jri"]
 [ext_resource type="Texture2D" uid="uid://bb5nodn5nj5cm" path="res://assets/BeastieGroup1.jpg" id="2_wwbnn"]
-[ext_resource type="VideoStream" uid="uid://craiki5sisrn0" path="res://modes/attract/slides/Friends.ogv" id="3_o6jri"]
-[ext_resource type="Script" uid="uid://bf2dsnm46ji2e" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="4_4qnd8"]
+[ext_resource type="VideoStream" uid="uid://fvycniwouh3r" path="res://modes/attract/slides/FriendsNoAudio.ogv" id="3_o6jri"]
+[ext_resource type="Script" uid="uid://bov7mrgxslshq" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="4_4qnd8"]
 
-[node name="Attract" type="Control"]
+[node name="friends" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_o6jri")
-metadata/_custom_type_script = "uid://d15ukepy10pan"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(959, 541)
@@ -17,6 +16,7 @@ scale = Vector2(1.47846, 1.47268)
 texture = ExtResource("2_wwbnn")
 
 [node name="StartupVideo" type="VideoStreamPlayer" parent="."]
+top_level = true
 custom_minimum_size = Vector2(1920, 1080)
 layout_mode = 0
 offset_right = 1920.0
@@ -29,4 +29,3 @@ script = ExtResource("4_4qnd8")
 hide_behavior = 1
 events_when_stopped = "remove"
 preview_in_editor = true
-metadata/_custom_type_script = "uid://bf2dsnm46ji2e"

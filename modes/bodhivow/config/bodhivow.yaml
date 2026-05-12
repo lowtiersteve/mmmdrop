@@ -92,7 +92,7 @@ variable_player:
       action: set
   counter_bodhisattvavow_area1_counter_hit:
     score: 60000 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier * current_player.bodhisattvavow_area1_counter
-    mode_bodhisattvavow_score: 5000 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier * current_player.bodhisattvavow_area1_counter
+    mode_bodhisattvavow_score: 60000 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier * current_player.bodhisattvavow_area1_counter
     bodhisattvavow_area1_counter:
       int: device.counters.bodhisattvavow_area1_counter.value * 1
       action: set
@@ -102,7 +102,7 @@ variable_player:
       action: set
   counter_bodhisattvavow_area2_counter_hit:
     score: 60000 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier * current_player.bodhisattvavow_area2_counter
-    mode_bodhisattvavow_score: 5000 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier * current_player.bodhisattvavow_area2_counter
+    mode_bodhisattvavow_score: 60000 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier * current_player.bodhisattvavow_area2_counter
     bodhisattvavow_area2_counter:
       int: device.counters.bodhisattvavow_area2_counter.value * 1
       action: set
@@ -112,7 +112,7 @@ variable_player:
       action: set
   counter_bodhisattvavow_area3_counter_hit:
     score: 60000 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier * current_player.bodhisattvavow_area3_counter
-    mode_bodhisattvavow_score: 5000 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier * current_player.bodhisattvavow_area3_counter
+    mode_bodhisattvavow_score: 60000 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier * current_player.bodhisattvavow_area3_counter
     bodhisattvavow_area3_counter:
       int: device.counters.bodhisattvavow_area3_counter.value * 1
       action: set
@@ -122,7 +122,7 @@ variable_player:
       action: set
   counter_bodhisattvavow_area4_counter_hit:
     score: 60000 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier * current_player.bodhisattvavow_area4_counter
-    mode_bodhisattvavow_score: 5000 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier * current_player.bodhisattvavow_area4_counter
+    mode_bodhisattvavow_score: 60000 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier * current_player.bodhisattvavow_area4_counter
     bodhisattvavow_area4_counter:
       int: device.counters.bodhisattvavow_area4_counter.value * 1
       action: set
@@ -132,7 +132,7 @@ variable_player:
       action: set
   counter_bodhisattvavow_area5_counter_hit:
     score: 60000 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier * current_player.bodhisattvavow_area5_counter
-    mode_bodhisattvavow_score: 5000 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier * current_player.bodhisattvavow_area5_counter
+    mode_bodhisattvavow_score: 60000 * current_player.playfield_x * current_player.bodhisattvavow_mode_multiplier * current_player.bodhisattvavow_area5_counter
     bodhisattvavow_area5_counter:
       int: device.counters.bodhisattvavow_area5_counter.value * 1
       action: set

@@ -43,6 +43,8 @@ random_event_player:
       - adrockrobot_sound
       - adrockadam_sound
       - adrockadam2_sound
+    force_all: False
+    force_different: False
 
 
 sound_player:

@@ -283,6 +283,8 @@ random_event_player:
       - tencallout1
       - tencallout2
       - tencallout3
+    force_all: False
+    force_different: False
 
 
 ball_holds:
@@ -343,19 +345,19 @@ shot_profiles:
 
 show_player:
   mode_threemcsand1dj_started:
-    threemcsand1dj_backboard_show:
-      action: play
-      loops: -1
     threemcsand1dj_stadium_intro_lights:
       action: play
       loops: -1
   timer_threemcsand1dj_intro_show_complete:
     threemcsand1dj_stadium_intro_lights:
       action: stop
+    threemcsand1dj_backboard_show:
+      action: play
+      loops: -1
 
 
 blinkenlight_player:
-  mode_threemcsand1dj_started:
+  timer_threemcsand1dj_intro_show_complete:
     bl_lowerrightpop_inside_led:
       color: red
     bl_lowerrightpop_inside2_led:

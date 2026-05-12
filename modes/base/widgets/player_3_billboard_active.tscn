@@ -34,12 +34,6 @@ min_digits = 2
 initialize_empty = false
 min_players = 3
 
-[node name="p3billboard" type="Sprite2D" parent="p3score"]
-show_behind_parent = true
-position = Vector2(947, -340)
-scale = Vector2(0.88, 0.88)
-texture = ExtResource("4_n4iy2")
-
 [node name="p3name" type="Label" parent="p3score"]
 layout_mode = 0
 offset_left = 3.0
@@ -60,3 +54,8 @@ template_string = "Player 3"
 format_string = "Player 3"
 initialize_empty = false
 min_players = 3
+
+[node name="p3billboard2" type="Sprite2D" parent="p3score"]
+show_behind_parent = true
+position = Vector2(947, -340)
+texture = ExtResource("4_n4iy2")

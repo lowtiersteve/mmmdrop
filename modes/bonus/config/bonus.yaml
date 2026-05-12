@@ -301,6 +301,8 @@ random_event_player:
       - play_orange_show
       - play_purple_show
       - play_yellow_show
+    force_all: False
+    force_different: False
   bonus_entry:
     events:
       - play_red_show
@@ -310,10 +312,14 @@ random_event_player:
       - play_orange_show
       - play_purple_show
       - play_yellow_show
+    force_all: False
+    force_different: False
   slide_bonus_total_slide_active{score>40000000}:
     events:
       - big_bonus_sound_1
       - big_bonus_sound_2
+    force_all: False
+    force_different: False
 
 
 show_player:

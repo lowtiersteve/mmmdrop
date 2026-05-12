@@ -66,10 +66,14 @@ random_event_player:
     events:
       - bodymovinmusic1
       - bodymovinmusic2
+    force_all: False
+    force_different: False
   bodymovin_music_from_mode:
     events:
       - bodymovinmusic1
       - bodymovinmusic2
+    force_all: False
+    force_different: False
   bodymovin_advance_super_jackpot_random:
     events:
       - bodymovin_advance_super_leftorbit
@@ -78,6 +82,8 @@ random_event_player:
       - bodymovin_advance_super_innerloop
       - bodymovin_advance_super_rightramp
       - bodymovin_advance_super_rightorbit
+    force_all: False
+    force_different: False
 
 
 variable_player:

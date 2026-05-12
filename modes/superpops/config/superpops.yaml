@@ -40,6 +40,8 @@ random_event_player:
       - mixmastermike4_sound
       - mixmastermike5_sound
       - mixmastermike6_sound
+    force_all: False
+    force_different: False
 
 
 sound_player:

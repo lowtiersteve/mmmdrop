@@ -46,6 +46,8 @@ random_event_player:
       - mca7_sound
       - mca8_sound
       - mcarobot_sound
+    force_all: False
+    force_different: False
 
 
 sound_player:

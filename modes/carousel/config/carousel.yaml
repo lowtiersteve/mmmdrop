@@ -86,6 +86,8 @@ random_event_player:
     - random_mode_picker_toomanyrappers
     - random_mode_picker_threemcsand1dj
     - random_mode_picker_highplainsdrifter
+    force_all: False
+    force_different: False
 
 
 show_player:
