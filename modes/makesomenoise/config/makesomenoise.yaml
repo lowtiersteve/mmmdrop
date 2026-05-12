@@ -40,7 +40,7 @@ counters:
         action: jump
         value: 4
   makesomenoise_drops_counter:
-    count_events: bottom_drop_hit, middle_drop_hit, top_drop_hit
+    count_events: drop_target_middle_down, drop_target_bottom_down, drop_target_top_down
     events_when_complete: makesomenoise_drops_counter_complete
     starting_count: 6
     count_complete_value: 0
@@ -233,17 +233,17 @@ variable_player:
       int: 1010 * current_player.playfield_x * current_player.makesomenoise_mode_multiplier * current_player.left_orbit_multiplier
       block: True
     mode_makesomenoise_score: 1010 * current_player.playfield_x * current_player.makesomenoise_mode_multiplier * current_player.left_orbit_multiplier
-  bottom_drop_hit:
+  drop_target_bottom_down:
     score: 
       int: 2220 * current_player.playfield_x * current_player.makesomenoise_mode_multiplier
       block: True
     mode_makesomenoise_score: 2220 * current_player.playfield_x * current_player.makesomenoise_mode_multiplier
-  middle_drop_hit:
+  drop_target_middle_down:
     score: 
       int: 2220 * current_player.playfield_x * current_player.makesomenoise_mode_multiplier
       block: True
     mode_makesomenoise_score: 2220 * current_player.playfield_x * current_player.makesomenoise_mode_multiplier
-  top_drop_hit:
+  drop_target_top_down:
     score: 
       int: 2220 * current_player.playfield_x * current_player.makesomenoise_mode_multiplier
       block: True
