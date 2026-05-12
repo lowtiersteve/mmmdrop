@@ -1305,28 +1305,28 @@ sound_player:
     name_beastieboys_4:
       action: load
       bus: voice
-  ball_started{is_extra_ball==True and player==1}:
+  ball_started{is_extra_ball==True and current_player.number==1}:
     player1:
       action: load
       bus: voice
     shoot_again_callout:
       action: load
       bus: voice
-  ball_started{is_extra_ball==True and player==2}:
+  ball_started{is_extra_ball==True and current_player.number==2}:
     player2:
       action: load
       bus: voice
     shoot_again_callout:
       action: load
       bus: voice
-  ball_started{is_extra_ball==True and player==3}:
+  ball_started{is_extra_ball==True and current_player.number==3}:
     player3:
       action: load
       bus: voice
     shoot_again_callout:
       action: load
       bus: voice
-  ball_started{is_extra_ball==True and player==4}:
+  ball_started{is_extra_ball==True and current_player.number==4}:
     player4:
       action: load
       bus: voice
