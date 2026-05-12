@@ -127,9 +127,9 @@ timers:
       - action: start
         event: balldevice_bd_plunger_ball_eject_success
       - action: reset
-        event: ball_starting
+        event: mode_skill_shot_started
       - action: pause
-        event: ball_starting
+        event: mode_skill_shot_started
 
 
 slide_player:

@@ -19,7 +19,7 @@ counters:
     reset_on_complete: False
     disable_events: multiball_chcheckitout_started, mode_makesomenoise_started, mode_bodhivow_started, multiball_bodymovin_started, mode_girls_started, ball_is_ending, mode_sureshot_started
     enable_events: multiball_chcheckitout_ended, multiball_bodymovin_ended, multiball_makesomenoise_ended, mode_bodhivow_stopped, mode_girls_stopped, mode_sureshot_stopped
-    restart_events: ball_started, mode_intergalactic_stopped, mode_intergalactic_success, mode_paulrevere_stopped, mode_paulrevere_success, mode_tripletrouble_stopped, mode_tripletrouble_success, mode_sabotage_stopped, mode_sabotage_success, mode_fingerlickingood_stopped, mode_fingerlickingood_success, mode_toomanyrappers_stopped, mode_toomanyrappers_success, mode_threemcsand1dj_stopped, mode_threemcsand1dj_success, mode_highplainsdrifter_stopped, mode_highplainsdrifter_success
+    restart_events: mode_batterycharger_started, mode_intergalactic_stopped, mode_intergalactic_success, mode_paulrevere_stopped, mode_paulrevere_success, mode_tripletrouble_stopped, mode_tripletrouble_success, mode_sabotage_stopped, mode_sabotage_success, mode_fingerlickingood_stopped, mode_fingerlickingood_success, mode_toomanyrappers_stopped, mode_toomanyrappers_success, mode_threemcsand1dj_stopped, mode_threemcsand1dj_success, mode_highplainsdrifter_stopped, mode_highplainsdrifter_success
     control_events:
       - event: mode_batterycharger_started{current_player.ball==1}
         action: jump
@@ -395,13 +395,13 @@ widget_player:
       slide: score_overlay
       priority: 901000
       key: "battery"
-  ball_started{current_player.ball!=1 and device.counters.battery_charged_status.value>0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled" and device.counters.battery_charged_status.enabled==True and current_player.battery_charged_yesorno==0}:
+  mode_batterycharger_started{current_player.ball!=1 and device.counters.battery_charged_status.value>0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled" and device.counters.battery_charged_status.enabled==True and current_player.battery_charged_yesorno==0}:
     charges_remaining:
       action: play
       slide: score_overlay
       priority: 901000
       key: "battery"
-  ball_started{current_player.ball==1 and is_extra_ball==True and device.counters.battery_charged_status.value>0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled" and device.counters.battery_charged_status.enabled==True and current_player.battery_charged_yesorno==0}:
+  mode_batterycharger_started{current_player.ball==1 and is_extra_ball==True and device.counters.battery_charged_status.value>0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled" and device.counters.battery_charged_status.enabled==True and current_player.battery_charged_yesorno==0}:
     charges_remaining:
       action: play
       slide: score_overlay
