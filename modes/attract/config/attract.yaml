@@ -11,6 +11,7 @@ mode_settings:
     - pressstart
     - version
     - beastie_pinball_logo
+    - show_logo
     - makercredits
     - dedicated
     - highscoregrandchampion
@@ -442,6 +443,13 @@ widget_player:
       slide: attract
   carousel_item_highlighted{item!="beastie_pinball_logo"}:
     attract_beastie_pinball_logo:
+      action: remove
+  carousel_item_highlighted{item=="show_logo"}:
+    attract_pinball_show:
+      action: play
+      slide: attract
+  carousel_item_highlighted{item!="show_logo"}:
+    attract_pinball_show:
       action: remove
   carousel_item_highlighted{item=="fast_logo"}:
     attract_fast_logo:

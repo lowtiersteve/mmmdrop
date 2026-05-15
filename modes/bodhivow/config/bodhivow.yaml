@@ -326,7 +326,12 @@ show_player:
       action: stop
     right_orbit_mult_show:
       action: stop
+    bodhivow_intro_show:
+      action: play
+      loops: -1
   ball_hold_wizard_scoop_hold_balls_released:
+    bodhivow_intro_show:
+      action: stop
     ball_save_show:
       action: play
       loops: -1
