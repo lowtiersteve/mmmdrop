@@ -503,7 +503,7 @@ widget_player:
       slide: score_overlay
       priority: 901000
       key: "battery"
-  mode_base_started{current_player.ball!=1 and current_player.battery_charged_yesorno==0}:
+  mode_batterycharger_started{current_player.ball!=1 and current_player.battery_charged_yesorno==0}:
     charges_remaining:
       action: play
       slide: score_overlay
@@ -590,13 +590,19 @@ widget_player:
       action: remove
       key: "battery"
       slide: score_overlay
-  mode_chcheckitout_stopped{current_player.battery_charged_yesorno!=0 and current_player.mode_blocking_flag==0}:
+  mode_chcheckitout_stopped{current_player.battery_charged_yesorno==0 and current_player.mode_blocking_flag==0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled" }:
     charges_remaining:
       action: play
       slide: score_overlay
       priority: 925000
       key: "battery"
-  mode_bodymovin_stopped{current_player.battery_charged_yesorno!=0 and current_player.mode_blocking_flag==0}:
+  mode_bodymovin_stopped{current_player.battery_charged_yesorno==0 and current_player.mode_blocking_flag==0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled" }:
+    charges_remaining:
+      action: play
+      slide: score_overlay
+      priority: 925000
+      key: "battery"
+  mode_girls_stopped{current_player.battery_charged_yesorno==0 and current_player.mode_blocking_flag==0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled" }:
     charges_remaining:
       action: play
       slide: score_overlay

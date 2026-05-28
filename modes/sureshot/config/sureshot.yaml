@@ -124,7 +124,7 @@ sequences:
     start_enabled: False
   sureshot_drops:
     events:
-      - bottom_drop_hit, middle_drop_hit, top_drop_hit
+      - drop_target_bottom_down, drop_target_middle_down, drop_target_top_down
     events_when_complete: sureshot_shot_hit, sureshot_drops_hit
     reset_on_complete: False
     enable_events: sureshot_enable_drops
@@ -374,17 +374,17 @@ variable_player:
       int: 1010 * current_player.playfield_x * current_player.sureshot_mode_multiplier
       block: True
     mode_sureshot_score: 1010 * current_player.playfield_x * current_player.sureshot_mode_multiplier
-  bottom_drop_hit:
+  drop_target_bottom_down:
     score: 
       int: 2220 * current_player.playfield_x * current_player.sureshot_mode_multiplier
       block: True
     mode_sureshot_score: 2220 * current_player.playfield_x * current_player.sureshot_mode_multiplier
-  middle_drop_hit:
+  drop_target_middle_down:
     score: 
       int: 2220 * current_player.playfield_x * current_player.sureshot_mode_multiplier
       block: True
     mode_sureshot_score: 2220 * current_player.playfield_x * current_player.sureshot_mode_multiplier
-  top_drop_hit:
+  drop_target_top_down:
     score: 
       int: 2220 * current_player.playfield_x * current_player.sureshot_mode_multiplier
       block: True

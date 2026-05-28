@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://c2e0042cjolvf"]
+[gd_scene load_steps=11 format=3 uid="uid://c2e0042cjolvf"]
 
 [ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_hvh7a"]
 [ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="2_65xid"]
@@ -8,6 +8,8 @@
 [ext_resource type="FontFile" uid="uid://cf7wmhhr7tj6q" path="res://fonts/LCD-L__.TTF" id="4_gj5rs"]
 [ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="4_q8gsv"]
 [ext_resource type="Texture2D" uid="uid://ddcnxju02dwc" path="res://assets/white-arrow-png-41943.png" id="8_jmso3"]
+[ext_resource type="Texture2D" uid="uid://dwb0rdaftnsi7" path="res://assets/beastieboys_hotsauce.jpg" id="9_xkow3"]
+[ext_resource type="Texture2D" uid="uid://dpqmqttajwyak" path="res://assets/IllCommunication.jpg" id="10_igvp6"]
 
 [node name="carousel" type="Control"]
 layout_mode = 3
@@ -149,6 +151,12 @@ script = ExtResource("4_q8gsv")
 variable_name = "makesomenoise_mode_multiplier"
 min_digits = 1
 
+[node name="albumart" type="Sprite2D" parent="MPFCarousel/makesomenoise"]
+top_level = true
+position = Vector2(934, 935)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("9_xkow3")
+
 [node name="sureshot" type="Label" parent="MPFCarousel"]
 layout_mode = 0
 offset_left = -1.0
@@ -177,6 +185,12 @@ script = ExtResource("4_q8gsv")
 variable_name = "sureshot_mode_multiplier"
 min_digits = 1
 
+[node name="albumart" type="Sprite2D" parent="MPFCarousel/sureshot"]
+top_level = true
+position = Vector2(933, 935)
+scale = Vector2(0.18, 0.18)
+texture = ExtResource("10_igvp6")
+
 [node name="bodhisattvavow" type="Label" parent="MPFCarousel"]
 layout_mode = 0
 offset_left = 1.0
@@ -204,3 +218,9 @@ horizontal_alignment = 1
 script = ExtResource("4_q8gsv")
 variable_name = "bodhisattvavow_mode_multiplier"
 min_digits = 1
+
+[node name="albumart" type="Sprite2D" parent="MPFCarousel/bodhisattvavow"]
+top_level = true
+position = Vector2(944.99994, 935.00006)
+scale = Vector2(0.18, 0.18)
+texture = ExtResource("10_igvp6")

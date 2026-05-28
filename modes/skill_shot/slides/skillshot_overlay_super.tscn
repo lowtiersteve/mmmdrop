@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://d18fr4oovc85f"]
+[gd_scene load_steps=5 format=3 uid="uid://d18fr4oovc85f"]
 
 [ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_s0ar0"]
 [ext_resource type="Texture2D" uid="uid://b4vbh6thug3c0" path="res://assets/graffiti_bg_2.png" id="2_s0ar0"]
 [ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="3_rafj1"]
+[ext_resource type="Texture2D" uid="uid://ddcnxju02dwc" path="res://assets/white-arrow-png-41943.png" id="4_2ua2j"]
 
 [node name="SkillshotOverlay" type="Control"]
 top_level = true
@@ -46,3 +47,16 @@ text = "super loop:
 +5x bonus"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="arrowright" type="Sprite2D" parent="."]
+top_level = true
+position = Vector2(448.00006, 624)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("4_2ua2j")
+
+[node name="arrowleft" type="Sprite2D" parent="."]
+top_level = true
+position = Vector2(48.00003, 624.00006)
+rotation = -3.1415925
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("4_2ua2j")

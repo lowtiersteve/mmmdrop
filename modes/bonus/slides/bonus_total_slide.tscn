@@ -29,9 +29,9 @@ text = "Total Bonus:"
 [node name="totalscore" type="Label" parent="."]
 layout_mode = 0
 offset_left = 24.0
-offset_top = 568.0
+offset_top = 646.0
 offset_right = 1896.0
-offset_bottom = 682.0
+offset_bottom = 760.0
 theme_override_constants/outline_size = 30
 theme_override_fonts/font = ExtResource("3_oau72")
 theme_override_font_sizes/font_size = 111

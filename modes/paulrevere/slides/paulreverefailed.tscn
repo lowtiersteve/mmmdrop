@@ -1,15 +1,14 @@
 [gd_scene load_steps=5 format=3 uid="uid://pciglknmitr7"]
 
-[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_qulnd"]
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_qulnd"]
 [ext_resource type="VideoStream" uid="uid://c7upeejlm6qdc" path="res://modes/paulrevere/slides/PaulRevereFailVideo.ogv" id="2_xj2rt"]
-[ext_resource type="Script" uid="uid://bf2dsnm46ji2e" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_oark5"]
+[ext_resource type="Script" uid="uid://bov7mrgxslshq" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_oark5"]
 [ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="4_qenon"]
 
 [node name="Paulreverefailed" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_qulnd")
-metadata/_custom_type_script = "uid://d15ukepy10pan"
 
 [node name="MPFVideoPlayer" type="VideoStreamPlayer" parent="."]
 custom_minimum_size = Vector2(1920, 1080)
@@ -23,7 +22,6 @@ bus = &"effects"
 script = ExtResource("3_oark5")
 hide_behavior = 1
 preview_in_editor = true
-metadata/_custom_type_script = "uid://bf2dsnm46ji2e"
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
@@ -35,5 +33,5 @@ theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("4_qenon")
 theme_override_font_sizes/font_size = 116
 text = "stuck in
-the past"
+the past!"
 horizontal_alignment = 1

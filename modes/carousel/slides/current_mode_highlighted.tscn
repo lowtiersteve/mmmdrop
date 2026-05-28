@@ -1,14 +1,20 @@
-[gd_scene load_steps=4 format=3 uid="uid://cfchbfgunagos"]
+[gd_scene load_steps=11 format=3 uid="uid://cfchbfgunagos"]
 
-[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_wh4wg"]
-[ext_resource type="Script" uid="uid://bg3lbwyn7udbh" path="res://addons/mpf-gmc/classes/mpf_carousel.gd" id="3_5j6cv"]
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_wh4wg"]
+[ext_resource type="Script" uid="uid://dpe3dq8axt3g7" path="res://addons/mpf-gmc/classes/mpf_carousel.gd" id="3_5j6cv"]
 [ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="3_ruqgo"]
+[ext_resource type="Texture2D" uid="uid://bmmhcuy3oswo8" path="res://assets/HelloNasty.webp" id="4_cwpeh"]
+[ext_resource type="Texture2D" uid="uid://bldchd71jvxls" path="res://assets/LicensedToIll.jpg" id="5_5hjjd"]
+[ext_resource type="Texture2D" uid="uid://fy7wp70m04a3" path="res://assets/Beastie_Boys_-_To_the_5_Boroughs.png" id="6_vpagk"]
+[ext_resource type="Texture2D" uid="uid://dpqmqttajwyak" path="res://assets/IllCommunication.jpg" id="7_6nlpa"]
+[ext_resource type="Texture2D" uid="uid://dvrrx3ek1s05w" path="res://assets/CheckYourHead.jpg" id="8_6emqt"]
+[ext_resource type="Texture2D" uid="uid://dwb0rdaftnsi7" path="res://assets/beastieboys_hotsauce.jpg" id="9_4t2nu"]
+[ext_resource type="Texture2D" uid="uid://mpkeol15koho" path="res://assets/PaulsBoutique.jpg" id="10_i2717"]
 
 [node name="carousel" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_wh4wg")
-metadata/_custom_type_script = "uid://d15ukepy10pan"
 
 [node name="ModeReady" type="Label" parent="."]
 layout_mode = 0
@@ -30,7 +36,6 @@ offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("3_5j6cv")
 carousel_name = "carousel"
-metadata/_custom_type_script = "uid://bg3lbwyn7udbh"
 
 [node name="intergalactic" type="Label" parent="MPFCarousel"]
 layout_mode = 0
@@ -42,6 +47,12 @@ theme_override_fonts/font = ExtResource("3_ruqgo")
 theme_override_font_sizes/font_size = 81
 text = "iNTERGALACTiC"
 horizontal_alignment = 1
+
+[node name="albumart" type="Sprite2D" parent="MPFCarousel/intergalactic"]
+top_level = true
+position = Vector2(952, 940)
+scale = Vector2(0.08, 0.08)
+texture = ExtResource("4_cwpeh")
 
 [node name="paulrevere" type="Label" parent="MPFCarousel"]
 layout_mode = 0
@@ -56,6 +67,12 @@ text = "Paul
 Revere"
 horizontal_alignment = 1
 
+[node name="albumart" type="Sprite2D" parent="MPFCarousel/paulrevere"]
+top_level = true
+position = Vector2(952, 940)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("5_5hjjd")
+
 [node name="tripletrouble" type="Label" parent="MPFCarousel"]
 layout_mode = 0
 offset_left = -3.0
@@ -69,6 +86,12 @@ text = "Triple
 Trouble"
 horizontal_alignment = 1
 
+[node name="albumart" type="Sprite2D" parent="MPFCarousel/tripletrouble"]
+top_level = true
+position = Vector2(952, 940)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("6_vpagk")
+
 [node name="sabotage" type="Label" parent="MPFCarousel"]
 layout_mode = 0
 offset_left = 3.0
@@ -80,6 +103,12 @@ theme_override_fonts/font = ExtResource("3_ruqgo")
 theme_override_font_sizes/font_size = 81
 text = "Sabotage"
 horizontal_alignment = 1
+
+[node name="albumart" type="Sprite2D" parent="MPFCarousel/sabotage"]
+top_level = true
+position = Vector2(952, 940)
+scale = Vector2(0.18, 0.18)
+texture = ExtResource("7_6nlpa")
 
 [node name="fingerlickingood" type="Label" parent="MPFCarousel"]
 layout_mode = 0
@@ -95,6 +124,12 @@ Lickin'
 Good"
 horizontal_alignment = 1
 
+[node name="albumart" type="Sprite2D" parent="MPFCarousel/fingerlickingood"]
+top_level = true
+position = Vector2(952, 940)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("8_6emqt")
+
 [node name="toomanyrappers" type="Label" parent="MPFCarousel"]
 layout_mode = 0
 offset_left = 5.0
@@ -109,6 +144,12 @@ Many
 Rappers"
 horizontal_alignment = 1
 
+[node name="albumart" type="Sprite2D" parent="MPFCarousel/toomanyrappers"]
+top_level = true
+position = Vector2(952, 940)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("9_4t2nu")
+
 [node name="threemcsand1dj" type="Label" parent="MPFCarousel"]
 layout_mode = 0
 offset_left = 1.0
@@ -121,6 +162,12 @@ theme_override_font_sizes/font_size = 81
 text = "3 MC's
 and One DJ"
 horizontal_alignment = 1
+
+[node name="albumart" type="Sprite2D" parent="MPFCarousel/threemcsand1dj"]
+top_level = true
+position = Vector2(952, 940)
+scale = Vector2(0.08, 0.08)
+texture = ExtResource("4_cwpeh")
 
 [node name="highplainsdrifter" type="Label" parent="MPFCarousel"]
 layout_mode = 0
@@ -135,3 +182,9 @@ text = "High
 Plains
 Drifter"
 horizontal_alignment = 1
+
+[node name="albumart" type="Sprite2D" parent="MPFCarousel/highplainsdrifter"]
+top_level = true
+position = Vector2(952, 940)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("10_i2717")

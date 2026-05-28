@@ -1,4 +1,5 @@
 #config_version=6
+
 mode:
   code: mpf.modes.tilt.code.tilt.Tilt
   priority: 1000000
@@ -9,6 +10,25 @@ mode:
 # Instructions on how to use this mode:
 # https://missionpinball.org/game_logic/tilt
 
+
+#timers:
+#  upper_flipper_tilt:
+#    start_running: False
+#    restart_on_complete: True
+#    start_value: 0
+#    end_value: 10
+#    tick_interval: 10s
+#    control_events:
+#      - event: tilt
+#        action: restart
+#      - event: ball_will_start
+#        action: stop
+
+
+#event_player:
+#  timer_upper_flipper_tilt_complete: s_top_right_flipper
+
+
 tilt:
   tilt_warning_switch_tag: tilt_warning
   tilt_switch_tag: tilt
@@ -17,6 +37,7 @@ tilt:
   multiple_hit_window: settings.multiple_hit_window
   settle_time: settings.settle_time
   warnings_to_tilt: settings.warnings_to_tilt
+  reset_warnings_events: ball_will_end, ball_started
 
 
 slide_player:
@@ -60,6 +81,11 @@ slide_player:
       action: play
       priority: 1000000
       expire: 10s
+  tilt6:
+    tilt6:
+      action: play
+      priority: 1000000
+      expire: 11s
   tilt_clear:
     tilt1:
       action: remove
@@ -70,6 +96,8 @@ slide_player:
     tilt4:
       action: remove
     tilt5:
+      action: remove
+    tilt6:
       action: remove
 
 

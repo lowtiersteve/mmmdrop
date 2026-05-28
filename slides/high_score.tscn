@@ -64,6 +64,7 @@ offset_bottom = 1055.0
 script = ExtResource("2_6uslk")
 allowed_characters = "ABCDEFGHiJKLMNOPQRSTUVWXYZ"
 grid_width = 30
+max_length = 3
 display_node = NodePath("../RichTextLabel")
 character_appearance = SubResource("LabelSettings_5lg8l")
 

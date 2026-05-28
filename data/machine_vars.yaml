@@ -2,6 +2,10 @@ balls_per_game:
   expire: null
   expire_secs: null
   value: 3
+effects_volume:
+  expire: null
+  expire_secs: null
+  value: 0.9
 extra_balls_enabled:
   expire: null
   expire_secs: null
@@ -17,15 +21,19 @@ fast_audio_main_volume:
 master_volume:
   expire: null
   expire_secs: null
-  value: 0.75
+  value: 1.0
 max_players:
   expire: null
   expire_secs: null
   value: 4
+music_volume:
+  expire: null
+  expire_secs: null
+  value: 0.9
 player1_score:
   expire: null
   expire_secs: null
-  value: 3007770
+  value: 27473890
 this_game_match_video:
   expire: null
   expire_secs: null

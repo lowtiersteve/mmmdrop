@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://b7du8lsger6rx"]
+
+[ext_resource type="Script" uid="uid://d4ky3s4bg1ouq" path="res://addons/mpf-gmc/classes/mpf_widget.gd" id="1_w635p"]
+[ext_resource type="Texture2D" uid="uid://b0nxpkjmmmp4b" path="res://assets/shoot_again.png" id="2_gv4gp"]
+
+[node name="shoot_again_p4" type="Control"]
+top_level = true
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_w635p")
+metadata/_custom_type_script = "uid://d4ky3s4bg1ouq"
+
+[node name="shootagain" type="Sprite2D" parent="."]
+top_level = true
+position = Vector2(1308, 913)
+scale = Vector2(0.3, 0.312)
+texture = ExtResource("2_gv4gp")

@@ -227,6 +227,16 @@
     l_backpanel_gi5_led: red
     l_upperleftpop_inside_led: red
     l_uppercenterpop_inside_led: red
+    l_lowerrightpop_inside_led: red
+    l_lowerrightpop_inside2_led: red
+    l_leftsling_uppergi_led: red
+    l_leftsling_lowergi_led: red
+    l_rightsling_uppergi_led: red
+    l_rightsling_lowergi_led: red
+    l_behindupperflipper_uppergi_led: red
+    l_behindupperflipper_lowergi_led: red
+    l_behinddropflasher_leftgi_led: red
+
 - duration: 150ms
   lights:
     l_stadium_left_1: stop
@@ -290,6 +300,15 @@
     l_backpanel_gi5_led: stop
     l_upperleftpop_inside_led: stop
     l_uppercenterpop_inside_led: stop
+    l_lowerrightpop_inside_led: stop
+    l_lowerrightpop_inside2_led: stop
+    l_leftsling_uppergi_led: stop
+    l_leftsling_lowergi_led: stop
+    l_rightsling_uppergi_led: stop
+    l_rightsling_lowergi_led: stop
+    l_behindupperflipper_uppergi_led: stop
+    l_behindupperflipper_lowergi_led: stop
+    l_behinddropflasher_leftgi_led: stop
 - duration: 250ms
   lights:
     l_stadium_left_1: red
@@ -353,6 +372,15 @@
     l_backpanel_gi5_led: red
     l_upperleftpop_inside_led: red
     l_uppercenterpop_inside_led: red
+    l_lowerrightpop_inside_led: red
+    l_lowerrightpop_inside2_led: red
+    l_leftsling_uppergi_led: red
+    l_leftsling_lowergi_led: red
+    l_rightsling_uppergi_led: red
+    l_rightsling_lowergi_led: red
+    l_behindupperflipper_uppergi_led: red
+    l_behindupperflipper_lowergi_led: red
+    l_behinddropflasher_leftgi_led: red
 - duration: 150ms
   lights:
     l_stadium_left_1: stop
@@ -416,6 +444,15 @@
     l_backpanel_gi5_led: stop
     l_upperleftpop_inside_led: stop
     l_uppercenterpop_inside_led: stop
+    l_lowerrightpop_inside_led: stop
+    l_lowerrightpop_inside2_led: stop
+    l_leftsling_uppergi_led: stop
+    l_leftsling_lowergi_led: stop
+    l_rightsling_uppergi_led: stop
+    l_rightsling_lowergi_led: stop
+    l_behindupperflipper_uppergi_led: stop
+    l_behindupperflipper_lowergi_led: stop
+    l_behinddropflasher_leftgi_led: stop
 - duration: 250ms
   lights:
     l_stadium_left_1: red
@@ -479,6 +516,15 @@
     l_backpanel_gi5_led: red
     l_upperleftpop_inside_led: red
     l_uppercenterpop_inside_led: red
+    l_lowerrightpop_inside_led: red
+    l_lowerrightpop_inside2_led: red
+    l_leftsling_uppergi_led: red
+    l_leftsling_lowergi_led: red
+    l_rightsling_uppergi_led: red
+    l_rightsling_lowergi_led: red
+    l_behindupperflipper_uppergi_led: red
+    l_behindupperflipper_lowergi_led: red
+    l_behinddropflasher_leftgi_led: red
 - duration: 50ms
   lights:
     l_stadium_left_1: stop
@@ -542,6 +588,15 @@
     l_backpanel_gi5_led: stop
     l_upperleftpop_inside_led: stop
     l_uppercenterpop_inside_led: stop
+    l_lowerrightpop_inside_led: stop
+    l_lowerrightpop_inside2_led: stop
+    l_leftsling_uppergi_led: stop
+    l_leftsling_lowergi_led: stop
+    l_rightsling_uppergi_led: stop
+    l_rightsling_lowergi_led: stop
+    l_behindupperflipper_uppergi_led: stop
+    l_behindupperflipper_lowergi_led: stop
+    l_behinddropflasher_leftgi_led: stop
 - duration: 250ms
   lights:
     l_stadium_left_1: red
@@ -605,6 +660,15 @@
     l_backpanel_gi5_led: red
     l_upperleftpop_inside_led: red
     l_uppercenterpop_inside_led: red
+    l_lowerrightpop_inside_led: red
+    l_lowerrightpop_inside2_led: red
+    l_leftsling_uppergi_led: red
+    l_leftsling_lowergi_led: red
+    l_rightsling_uppergi_led: red
+    l_rightsling_lowergi_led: red
+    l_behindupperflipper_uppergi_led: red
+    l_behindupperflipper_lowergi_led: red
+    l_behinddropflasher_leftgi_led: red
 - duration: 150ms
   lights:
     l_stadium_left_1: stop
@@ -668,6 +732,15 @@
     l_backpanel_gi5_led: stop
     l_upperleftpop_inside_led: stop
     l_uppercenterpop_inside_led: stop
+    l_lowerrightpop_inside_led: stop
+    l_lowerrightpop_inside2_led: stop
+    l_leftsling_uppergi_led: stop
+    l_leftsling_lowergi_led: stop
+    l_rightsling_uppergi_led: stop
+    l_rightsling_lowergi_led: stop
+    l_behindupperflipper_uppergi_led: stop
+    l_behindupperflipper_lowergi_led: stop
+    l_behinddropflasher_leftgi_led: stop
 - duration: 250ms
   lights:
     l_stadium_left_1: red
@@ -731,6 +804,15 @@
     l_backpanel_gi5_led: red
     l_upperleftpop_inside_led: red
     l_uppercenterpop_inside_led: red
+    l_lowerrightpop_inside_led: red
+    l_lowerrightpop_inside2_led: red
+    l_leftsling_uppergi_led: red
+    l_leftsling_lowergi_led: red
+    l_rightsling_uppergi_led: red
+    l_rightsling_lowergi_led: red
+    l_behindupperflipper_uppergi_led: red
+    l_behindupperflipper_lowergi_led: red
+    l_behinddropflasher_leftgi_led: red
 - duration: 250ms
   lights:
     l_stadium_left_1: stop
@@ -794,6 +876,15 @@
     l_backpanel_gi5_led: stop
     l_upperleftpop_inside_led: stop
     l_uppercenterpop_inside_led: stop
+    l_lowerrightpop_inside_led: stop
+    l_lowerrightpop_inside2_led: stop
+    l_leftsling_uppergi_led: stop
+    l_leftsling_lowergi_led: stop
+    l_rightsling_uppergi_led: stop
+    l_rightsling_lowergi_led: stop
+    l_behindupperflipper_uppergi_led: stop
+    l_behindupperflipper_lowergi_led: stop
+    l_behinddropflasher_leftgi_led: stop
 - duration: 250ms
   lights:
     l_stadium_left_1: red
@@ -857,6 +948,15 @@
     l_backpanel_gi5_led: red
     l_upperleftpop_inside_led: red
     l_uppercenterpop_inside_led: red
+    l_lowerrightpop_inside_led: red
+    l_lowerrightpop_inside2_led: red
+    l_leftsling_uppergi_led: red
+    l_leftsling_lowergi_led: red
+    l_rightsling_uppergi_led: red
+    l_rightsling_lowergi_led: red
+    l_behindupperflipper_uppergi_led: red
+    l_behindupperflipper_lowergi_led: red
+    l_behinddropflasher_leftgi_led: red
 - duration: 150ms
   lights:
     l_stadium_left_1: stop
@@ -920,6 +1020,15 @@
     l_backpanel_gi5_led: stop
     l_upperleftpop_inside_led: stop
     l_uppercenterpop_inside_led: stop
+    l_lowerrightpop_inside_led: stop
+    l_lowerrightpop_inside2_led: stop
+    l_leftsling_uppergi_led: stop
+    l_leftsling_lowergi_led: stop
+    l_rightsling_uppergi_led: stop
+    l_rightsling_lowergi_led: stop
+    l_behindupperflipper_uppergi_led: stop
+    l_behindupperflipper_lowergi_led: stop
+    l_behinddropflasher_leftgi_led: stop
 - duration: 150ms
   lights:
     l_stadium_left_1: red
@@ -983,6 +1092,15 @@
     l_backpanel_gi5_led: red
     l_upperleftpop_inside_led: red
     l_uppercenterpop_inside_led: red
+    l_lowerrightpop_inside_led: red
+    l_lowerrightpop_inside2_led: red
+    l_leftsling_uppergi_led: red
+    l_leftsling_lowergi_led: red
+    l_rightsling_uppergi_led: red
+    l_rightsling_lowergi_led: red
+    l_behindupperflipper_uppergi_led: red
+    l_behindupperflipper_lowergi_led: red
+    l_behinddropflasher_leftgi_led: red
 - duration: 150ms
   lights:
     l_stadium_left_1: stop
@@ -1046,6 +1164,15 @@
     l_backpanel_gi5_led: stop
     l_upperleftpop_inside_led: stop
     l_uppercenterpop_inside_led: stop
+    l_lowerrightpop_inside_led: stop
+    l_lowerrightpop_inside2_led: stop
+    l_leftsling_uppergi_led: stop
+    l_leftsling_lowergi_led: stop
+    l_rightsling_uppergi_led: stop
+    l_rightsling_lowergi_led: stop
+    l_behindupperflipper_uppergi_led: stop
+    l_behindupperflipper_lowergi_led: stop
+    l_behinddropflasher_leftgi_led: stop
 - duration: 250ms
   lights:
     l_stadium_left_1: red
@@ -1109,6 +1236,15 @@
     l_backpanel_gi5_led: red
     l_upperleftpop_inside_led: red
     l_uppercenterpop_inside_led: red
+    l_lowerrightpop_inside_led: red
+    l_lowerrightpop_inside2_led: red
+    l_leftsling_uppergi_led: red
+    l_leftsling_lowergi_led: red
+    l_rightsling_uppergi_led: red
+    l_rightsling_lowergi_led: red
+    l_behindupperflipper_uppergi_led: red
+    l_behindupperflipper_lowergi_led: red
+    l_behinddropflasher_leftgi_led: red
 - duration: 150ms
   lights:
     l_stadium_left_1: stop
@@ -1172,6 +1308,15 @@
     l_backpanel_gi5_led: stop
     l_upperleftpop_inside_led: stop
     l_uppercenterpop_inside_led: stop
+    l_lowerrightpop_inside_led: stop
+    l_lowerrightpop_inside2_led: stop
+    l_leftsling_uppergi_led: stop
+    l_leftsling_lowergi_led: stop
+    l_rightsling_uppergi_led: stop
+    l_rightsling_lowergi_led: stop
+    l_behindupperflipper_uppergi_led: stop
+    l_behindupperflipper_lowergi_led: stop
+    l_behinddropflasher_leftgi_led: stop
 - duration: 250ms
   lights:
     l_stadium_left_1: red
@@ -1235,6 +1380,15 @@
     l_backpanel_gi5_led: red
     l_upperleftpop_inside_led: red
     l_uppercenterpop_inside_led: red
+    l_lowerrightpop_inside_led: red
+    l_lowerrightpop_inside2_led: red
+    l_leftsling_uppergi_led: red
+    l_leftsling_lowergi_led: red
+    l_rightsling_uppergi_led: red
+    l_rightsling_lowergi_led: red
+    l_behindupperflipper_uppergi_led: red
+    l_behindupperflipper_lowergi_led: red
+    l_behinddropflasher_leftgi_led: red
 - duration: 200ms
   lights:
     l_stadium_left_1: stop
@@ -1298,6 +1452,15 @@
     l_backpanel_gi5_led: stop
     l_upperleftpop_inside_led: stop
     l_uppercenterpop_inside_led: stop
+    l_lowerrightpop_inside_led: stop
+    l_lowerrightpop_inside2_led: stop
+    l_leftsling_uppergi_led: stop
+    l_leftsling_lowergi_led: stop
+    l_rightsling_uppergi_led: stop
+    l_rightsling_lowergi_led: stop
+    l_behindupperflipper_uppergi_led: stop
+    l_behindupperflipper_lowergi_led: stop
+    l_behinddropflasher_leftgi_led: stop
 - duration: 250ms
   lights:
     l_stadium_left_1: red
@@ -1361,6 +1524,15 @@
     l_backpanel_gi5_led: red
     l_upperleftpop_inside_led: red
     l_uppercenterpop_inside_led: red
+    l_lowerrightpop_inside_led: red
+    l_lowerrightpop_inside2_led: red
+    l_leftsling_uppergi_led: red
+    l_leftsling_lowergi_led: red
+    l_rightsling_uppergi_led: red
+    l_rightsling_lowergi_led: red
+    l_behindupperflipper_uppergi_led: red
+    l_behindupperflipper_lowergi_led: red
+    l_behinddropflasher_leftgi_led: red
 - duration: 5000ms
   lights:
     l_stadium_left_1: stop
@@ -1424,4 +1596,13 @@
     l_backpanel_gi5_led: stop
     l_upperleftpop_inside_led: stop
     l_uppercenterpop_inside_led: stop
+    l_lowerrightpop_inside_led: stop
+    l_lowerrightpop_inside2_led: stop
+    l_leftsling_uppergi_led: stop
+    l_leftsling_lowergi_led: stop
+    l_rightsling_uppergi_led: stop
+    l_rightsling_lowergi_led: stop
+    l_behindupperflipper_uppergi_led: stop
+    l_behindupperflipper_lowergi_led: stop
+    l_behinddropflasher_leftgi_led: stop
 

@@ -37,7 +37,7 @@ offset_bottom = 643.0
 theme_override_constants/outline_size = 30
 theme_override_fonts/font = ExtResource("3_ohsuo")
 theme_override_font_sizes/font_size = 136
-text = "X 100,000 ="
+text = "X 25,000 ="
 
 [node name="instruments_collected_this_ball" type="Label" parent="."]
 layout_mode = 0

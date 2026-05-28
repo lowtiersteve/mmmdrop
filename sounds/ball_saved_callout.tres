@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://8w1dn35u20tw" path="res://addons/mpf-gmc/classes/mpf_ducking.gd" id="1_krj0p"]
 [ext_resource type="Script" uid="uid://bsvo8cxf10088" path="res://addons/mpf-gmc/classes/mpf_sound_marker.gd" id="1_xhli4"]
 [ext_resource type="Script" uid="uid://e2h352i1jeqi" path="res://addons/mpf-gmc/classes/mpf_sound.gd" id="2_a5it8"]
-[ext_resource type="AudioStream" uid="uid://qvu4kut6e5gp" path="res://sounds/ballsavedcallout.ogg" id="4_naexo"]
+[ext_resource type="AudioStream" uid="uid://dxdwom0sos2re" path="res://sounds/gratitude.ogg" id="4_7ri0e"]
 
 [sub_resource type="Resource" id="Resource_dnknj"]
 script = ExtResource("1_krj0p")
@@ -16,6 +16,6 @@ metadata/_custom_type_script = "uid://dg58qg3qtrfxx"
 
 [resource]
 script = ExtResource("2_a5it8")
-stream = ExtResource("4_naexo")
+stream = ExtResource("4_7ri0e")
 bus = "voice"
 ducking = SubResource("Resource_dnknj")

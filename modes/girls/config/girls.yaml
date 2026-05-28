@@ -48,127 +48,152 @@ variable_player:
     score:
       int: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
       block: True
-    girls_bonus_score: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
+    girls_frenzy_score: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
+    girls_bonus_score: 5000
   pop2_hit:
     score:
       int: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
       block: True
-    girls_bonus_score: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
+    girls_frenzy_score: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
+    girls_bonus_score: 5000
   pop3_hit:
     score:
       int: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
       block: True
-    girls_bonus_score: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
+    girls_frenzy_score: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
+    girls_bonus_score: 5000
   drop_target_top_down:
     score:
       int: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
       block: True
-    girls_bonus_score: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
+    girls_frenzy_score: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
+    girls_bonus_score: 5000
   drop_target_middle_down:
     score:
       int: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
       block: True
-    girls_bonus_score: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
+    girls_frenzy_score: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
+    girls_bonus_score: 5000
   drop_target_bottom_down:
     score:
       int: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
       block: True
-    girls_bonus_score: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
+    girls_frenzy_score: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
+    girls_bonus_score: 5000
   left_outlane_hit:
     score:
       int: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
       block: True
-    girls_bonus_score: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
+    girls_frenzy_score: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
+    girls_bonus_score: 5000
   left_inlane_hit:
     score:
       int: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
       block: True
-    girls_bonus_score: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
+    girls_frenzy_score: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
+    girls_bonus_score: 5000
   right_inlane_hit:
     score:
       int: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
       block: True
-    girls_bonus_score: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
+    girls_frenzy_score: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
+    girls_bonus_score: 5000
   right_outlane_hit:
     score:
       int: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
       block: True
-    girls_bonus_score: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
+    girls_frenzy_score: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
+    girls_bonus_score: 5000
   s_left_slingshot_active:
     score:
       int: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
       block: True
-    girls_bonus_score: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
+    girls_frenzy_score: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
+    girls_bonus_score: 5000
   s_right_slingshot_active:
     score:
       int: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
       block: True
-    girls_bonus_score: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
+    girls_frenzy_score: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
+    girls_bonus_score: 5000
   upper_pop_standup_hit:
     score:
       int: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
       block: True
-    girls_bonus_score: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
+    girls_frenzy_score: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
+    girls_bonus_score: 5000
   pop_standup_hit:
     score:
       int: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
       block: True
-    girls_bonus_score: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
+    girls_frenzy_score: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
+    girls_bonus_score: 5000
   captive_ball_hit:
     score:
       int: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
       block: True
-    girls_bonus_score: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
+    girls_frenzy_score: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
+    girls_bonus_score: 5000
   spinner_hit:
     score:
       int: 500000 * current_player.playfield_x * current_player.left_orbit_multiplier * current_player.loop_shot_multiplier
       block: True
-    girls_bonus_score: 500000 * current_player.playfield_x * current_player.left_orbit_multiplier * current_player.loop_shot_multiplier
+    girls_frenzy_score: 500000 * current_player.playfield_x * current_player.left_orbit_multiplier * current_player.loop_shot_multiplier
+    girls_bonus_score: 5000
   scoop_hit:
     score:
       int: 500000 * current_player.playfield_x * current_player.scoop_multiplier * current_player.loop_shot_multiplier
       block: True
-    girls_bonus_score: 500000 * current_player.playfield_x * current_player.scoop_multiplier * current_player.loop_shot_multiplier
+    girls_frenzy_score: 500000 * current_player.playfield_x * current_player.scoop_multiplier * current_player.loop_shot_multiplier
+    girls_bonus_score: 5000
   machine_var_audits_s_tshirt_top_standup:
     score:
       int: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
       block: True
-    girls_bonus_score: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
+    girls_frenzy_score: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
+    girls_bonus_score: 5000
   machine_var_audits_s_tshirt_bottom_standup:
     score:
       int: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
       block: True
-    girls_bonus_score: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
+    girls_frenzy_score: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
+    girls_bonus_score: 5000
   s_left_orbit_active:
     score:
       int: 500000 * current_player.playfield_x * current_player.left_orbit_multiplier * current_player.loop_shot_multiplier
       block: True
-    girls_bonus_score: 500000 * current_player.playfield_x * current_player.left_orbit_multiplier * current_player.loop_shot_multiplier
+    girls_frenzy_score: 500000 * current_player.playfield_x * current_player.left_orbit_multiplier * current_player.loop_shot_multiplier
+    girls_bonus_score: 5000
   s_right_orbit_active:
     score:
       int: 500000 * current_player.playfield_x * current_player.right_orbit_multiplier * current_player.loop_shot_multiplier
       block: True
-    girls_bonus_score: 500000 * current_player.playfield_x * current_player.right_orbit_multiplier * current_player.loop_shot_multiplier
+    girls_frenzy_score: 500000 * current_player.playfield_x * current_player.right_orbit_multiplier * current_player.loop_shot_multiplier
+    girls_bonus_score: 5000
   s_inner_orbit_active:
     score:
       int: 500000 * current_player.playfield_x * current_player.upper_loop_multiplier * current_player.loop_shot_multiplier
       block: True
-    girls_bonus_score: 500000 * current_player.playfield_x * current_player.upper_loop_multiplier * current_player.loop_shot_multiplier
+    girls_frenzy_score: 500000 * current_player.playfield_x * current_player.upper_loop_multiplier * current_player.loop_shot_multiplier
+    girls_bonus_score: 5000
   left_ramp_hit:
     score:
       int: 500000 * current_player.playfield_x * current_player.left_ramp_multiplier * current_player.loop_shot_multiplier
       block: True
-    girls_bonus_score: 500000 * current_player.playfield_x * current_player.left_ramp_multiplier * current_player.loop_shot_multiplier
+    girls_frenzy_score: 500000 * current_player.playfield_x * current_player.left_ramp_multiplier * current_player.loop_shot_multiplier
+    girls_bonus_score: 5000
   right_ramp_hit:
     score:
       int: 500000 * current_player.playfield_x * current_player.right_ramp_multiplier * current_player.loop_shot_multiplier
       block: True
-    girls_bonus_score: 500000 * current_player.playfield_x * current_player.right_ramp_multiplier * current_player.loop_shot_multiplier
+    girls_frenzy_score: 500000 * current_player.playfield_x * current_player.right_ramp_multiplier * current_player.loop_shot_multiplier
+    girls_bonus_score: 5000
   three_bank_standup_hit:
     score:
       int: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
       block: True
-    girls_bonus_score: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
+    girls_frenzy_score: 500000 * current_player.playfield_x * current_player.loop_shot_multiplier
+    girls_bonus_score: 5000
 
 
 sound_player:

@@ -8,18 +8,26 @@ layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_fliiw")
 
+[node name="instructions_header" type="Label" parent="."]
+layout_mode = 0
+offset_top = 328.0
+offset_right = 1912.0
+offset_bottom = 472.0
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("2_fliiw")
+theme_override_font_sizes/font_size = 110
+text = "Robo-Battle!"
+horizontal_alignment = 1
+
 [node name="instructions" type="Label" parent="."]
 layout_mode = 0
-offset_left = 16.0
-offset_top = 352.0
-offset_right = 1928.0
-offset_bottom = 773.0
+offset_top = 504.0
+offset_right = 1912.0
+offset_bottom = 925.0
 theme_override_constants/outline_size = 30
 theme_override_fonts/font = ExtResource("2_fliiw")
 theme_override_font_sizes/font_size = 70
-text = "Robo-Battle!
-
-Take out the Kaiju with 
+text = "Take out the Kaiju with 
 Alternating Shots
 
 knock 'em out at

@@ -1,16 +1,15 @@
 [gd_scene load_steps=6 format=3 uid="uid://c30qruoyca6gm"]
 
-[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_kq101"]
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_kq101"]
 [ext_resource type="Texture2D" uid="uid://dvrrx3ek1s05w" path="res://assets/CheckYourHead.jpg" id="2_kq101"]
 [ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="3_tw2yc"]
-[ext_resource type="Script" uid="uid://b3ni1cjx2r6sx" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="4_1367i"]
-[ext_resource type="Script" uid="uid://dhkurvlb7ig52" path="res://addons/mpf-gmc/classes/mpf_conditional_children.gd" id="5_x3xu8"]
+[ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="4_1367i"]
+[ext_resource type="Script" uid="uid://808knhb8e2nn" path="res://addons/mpf-gmc/classes/mpf_conditional_children.gd" id="5_x3xu8"]
 
 [node name="bonus_combos_slide" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_kq101")
-metadata/_custom_type_script = "uid://d15ukepy10pan"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(944, 584)
@@ -19,14 +18,14 @@ texture = ExtResource("2_kq101")
 
 [node name="comboshit" type="Label" parent="."]
 layout_mode = 0
-offset_left = 432.0
 offset_top = 272.0
-offset_right = 1576.0
+offset_right = 1920.0
 offset_bottom = 411.0
 theme_override_constants/outline_size = 30
 theme_override_fonts/font = ExtResource("3_tw2yc")
 theme_override_font_sizes/font_size = 136
-text = "Combos Hit:"
+text = "VW Combos:"
+horizontal_alignment = 1
 
 [node name="x25000" type="Label" parent="."]
 layout_mode = 0
@@ -37,7 +36,7 @@ offset_bottom = 643.0
 theme_override_constants/outline_size = 30
 theme_override_fonts/font = ExtResource("3_tw2yc")
 theme_override_font_sizes/font_size = 136
-text = "X 25,000 ="
+text = "X 10,000 ="
 
 [node name="combos" type="Label" parent="."]
 layout_mode = 0
@@ -54,7 +53,6 @@ script = ExtResource("4_1367i")
 variable_name = "combos"
 comma_separate = true
 min_digits = 1
-metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"
 
 [node name="MPFConditionalChildren" type="Control" parent="."]
 anchors_preset = 0
@@ -63,7 +61,6 @@ offset_bottom = 40.0
 script = ExtResource("5_x3xu8")
 variable_type = 1
 variable_name = "entry"
-metadata/_custom_type_script = "uid://dhkurvlb7ig52"
 
 [node name="bonus_combos" type="Control" parent="MPFConditionalChildren"]
 anchors_preset = 0
@@ -86,4 +83,3 @@ variable_type = 1
 variable_name = "score"
 comma_separate = true
 min_digits = 1
-metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"

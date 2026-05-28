@@ -11,7 +11,7 @@ mode:
 high_score:
   _overwrite: true
   enter_initials_timeout: 200
-  award_slide_display_time: 6s
+  award_slide_display_time: 3s
   categories: !!omap
     - score:
         - GRAND CHAMPION
@@ -47,6 +47,8 @@ high_score:
         - SURE SHOT CHAMPION
     - girls_bonus_score:
         - GIRLS FRENZY CHAMPION
+    - highest_bonus:
+        - BONUS CHAMPION
   defaults:
     score:
       - MCA: 300000000
@@ -82,6 +84,8 @@ high_score:
       - SLD: 5000000
     girls_bonus_score:
       - GRL: 50000
+    highest_bonus:
+      - JDH: 500000
 
 
 event_player:

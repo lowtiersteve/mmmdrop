@@ -278,19 +278,19 @@ settings:
     label: "Time Tilt Bob Takes to Settle (Start Next Ball)"
     values:
       3000: "3 Seconds"
-      5000: "5 Seconds (Default)"
+      6000: "6 Seconds (Default)"
       10000: "10 Seconds"
-    default: 5000
+    default: 6000
     key_type: int
     sort: 610
   multiple_hit_window:
     label: "Tilt Sensitivity"
     values:
-      150: "Sensitive"
-      300: "Normal (Default)"
-      500: "Insensitive"
-      1000: "Very Insensitive"
-    default: 300
+      300: "Sensitive"
+      600: "Normal (Default)"
+      900: "Insensitive"
+      1200: "Very Insensitive"
+    default: 600
     key_type: int
     sort: 620
   balls_per_game:
@@ -323,6 +323,14 @@ settings:
       0: "Fully Disabled"
       1: "20 Million Points"
       2: "Enabled (Default)"
+  tournament_mode_enabled:
+    label: "Tournament Mode"
+    default: 0
+    key_type: int
+    sort: 170
+    values:
+      0: "Disabled"
+      1: "Enabled"
 
 
 event_player:
@@ -377,6 +385,8 @@ player_vars:
   bodymovin_round:
     initial_value: 0
   girls_bonus_score:
+    initial_value: 0
+  girls_frenzy_score:
     initial_value: 0
   girls_blocking_flag:
     initial_value: 0
@@ -589,5 +599,7 @@ player_vars:
   mystery_ball_save_used:
     initial_value: 1
   extra_balls_lit_for_points:
+    initial_value: 0
+  highest_bonus:
     initial_value: 0
 

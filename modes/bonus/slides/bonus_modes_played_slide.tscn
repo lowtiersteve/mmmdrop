@@ -1,15 +1,14 @@
 [gd_scene load_steps=5 format=3 uid="uid://dlscjgbqknbm0"]
 
-[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_p53ww"]
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_p53ww"]
 [ext_resource type="Texture2D" uid="uid://mpkeol15koho" path="res://assets/PaulsBoutique.jpg" id="2_p53ww"]
 [ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="3_l8jg5"]
-[ext_resource type="Script" uid="uid://b3ni1cjx2r6sx" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="4_vvjyu"]
+[ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="4_vvjyu"]
 
 [node name="bonus_modes_played_slide" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_p53ww")
-metadata/_custom_type_script = "uid://d15ukepy10pan"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(944, 584)
@@ -18,14 +17,16 @@ texture = ExtResource("2_p53ww")
 
 [node name="modesplayed" type="Label" parent="."]
 layout_mode = 0
-offset_left = 336.0
-offset_top = 272.0
-offset_right = 1684.0
-offset_bottom = 411.0
+offset_left = 8.0
+offset_top = 123.0
+offset_right = 1912.0
+offset_bottom = 404.0
 theme_override_constants/outline_size = 30
 theme_override_fonts/font = ExtResource("3_l8jg5")
 theme_override_font_sizes/font_size = 136
-text = "Modes Played:"
+text = "mix Modes 
+Played:"
+horizontal_alignment = 1
 
 [node name="x100000" type="Label" parent="."]
 layout_mode = 0
@@ -36,7 +37,7 @@ offset_bottom = 643.0
 theme_override_constants/outline_size = 30
 theme_override_fonts/font = ExtResource("3_l8jg5")
 theme_override_font_sizes/font_size = 136
-text = "X 100,000 ="
+text = "X 25,000 ="
 
 [node name="modes_played" type="Label" parent="."]
 layout_mode = 0
@@ -53,7 +54,6 @@ script = ExtResource("4_vvjyu")
 variable_name = "modes_played"
 comma_separate = true
 min_digits = 1
-metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"
 
 [node name="bonus_modes_played_score" type="Label" parent="."]
 layout_mode = 0
@@ -71,4 +71,3 @@ variable_type = 1
 variable_name = "score"
 comma_separate = true
 min_digits = 1
-metadata/_custom_type_script = "uid://b3ni1cjx2r6sx"

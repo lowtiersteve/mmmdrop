@@ -6,27 +6,27 @@ mode_settings:
   hurry_up_event: flipper_cancel
   bonus_entries:
     - entry: bonus_modes_played
-      score: 100000
+      score: 25000
       player_score_entry: modes_played
       skip_if_negative: True
     - entry: bonus_modes_completed
-      score: 250000
+      score: 50000
       player_score_entry: modes_completed
       skip_if_negative: True
     - entry: bonus_time_remaining
-      score: 1000
+      score: 500
       player_score_entry: mode_time_remaining_total
       skip_if_negative: True
     - entry: bonus_combos
-      score: 25000
+      score: 10000
       player_score_entry: combos
       skip_if_negative: True
     - entry: bonus_characters
-      score: 200000
+      score: 50000
       player_score_entry: characters_collected
       skip_if_negative: True
     - entry: bonus_instruments
-      score: 100000
+      score: 25000
       player_score_entry: instruments_collected_this_ball
       skip_if_negative: True
     - entry: bonus_girls_frenzy
@@ -40,6 +40,8 @@ variable_player:
     mode_time_remaining_total:
       int: current_player.intergalactic_time_remaining_variable_times_1 + current_player.paulrevere_time_remaining_variable_times_1 + current_player.tripletrouble_time_remaining_variable_times_1 + current_player.sabotage_time_remaining_variable_times_1 + current_player.fingerlickingood_time_remaining_variable_times_1 + current_player.toomanyrappers_time_remaining_variable_times_1 + current_player.threemcsand1dj_time_remaining_variable_times_1 + current_player.highplainsdrifter_time_remaining_variable_times_1
       action: set
+  bonus_entry{entry=="total" and score>=current_player.highest_bonus}:
+    highest_bonus: score
 
 
 slide_player:

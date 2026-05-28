@@ -1393,6 +1393,14 @@ sound_player:
     player1_start:
       action: load
       bus: voice
+  timer_ball_waiting_autoplunge_timer_complete:
+    autoplunged_sound:
+      action: load
+      bus: voice
+  timer_ball_waiting_autoplunge_timer_tick{ticks==30}:
+    hurryup_sound:
+      action: load
+      bus: voice
 
 
 variable_player:
@@ -2469,6 +2477,7 @@ random_event_player:
       - tilt3
       - tilt4
       - tilt5
+      - tilt6
     force_all: False
     force_different: False
   battery_charged{device.playfields.playfield.balls>0}:
@@ -2482,14 +2491,14 @@ random_event_player:
   mystery_collect:
     events:
       - mystery_award_big_points
-      - mystery_award_light_extra_ball{current_player.mystery_eb_ever_collected==0 and settings.extra_balls_enabled==2}
+      - mystery_award_light_extra_ball{current_player.mystery_eb_ever_collected==0 and settings.extra_balls_enabled==2 and settings.tournament_mode_enabled==0}
       - mystery_award_add_bonus_x
       - mystery_award_collect_microphone{current_player.microphone_collected==0}
       - mystery_award_collect_boombox{current_player.boombox_collected==0}
       - mystery_award_collect_turntable{current_player.turntable_collected==0}
       - mystery_award_charge_battery{current_player.battery_charged_yesorno==0 and current_player.mode_blocking_flag==0 and current_player.girls_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0}
-      - mystery_award_ball_save{current_player.mystery_ball_save_used==0}
-      - mystery_award_add_tilt_warning{current_player.tilt_warnings>0}
+      - mystery_award_ball_save{current_player.mystery_ball_save_used==0 and settings.tournament_mode_enabled==0}
+      - mystery_award_add_tilt_warning{current_player.tilt_warnings>0 and settings.tournament_mode_enabled==0}
     force_all: False
     force_different: False
   game_started:
@@ -3649,6 +3658,35 @@ widget_player:
       action: play
       slide: score_overlay
       priority: 925000
+  mode_base_started{current_player.number==1 and is_extra_ball==True}:
+    shoot_again_p1:
+      action: play
+      slide: score_overlay
+      priority: 990500
+  mode_base_started{current_player.number==2 and is_extra_ball==True}:
+    shoot_again_p2:
+      action: play
+      slide: score_overlay
+      priority: 990500
+  mode_base_started{current_player.number==3 and is_extra_ball==True}:
+    shoot_again_p3:
+      action: play
+      slide: score_overlay
+      priority: 990500
+  mode_base_started{current_player.number==4 and is_extra_ball==True}:
+    shoot_again_p4:
+      action: play
+      slide: score_overlay
+      priority: 990500
+  playfield_active:
+    shoot_again_p1:
+      action: remove
+    shoot_again_p2:
+      action: remove
+    shoot_again_p3:
+      action: remove
+    shoot_again_p4:
+      action: remove
   mode_chcheckitout_stopped:
     chcheckitoutfinish:
       action: play
@@ -3969,11 +4007,23 @@ timers:
         action: restart
       - event: flipper_cradle_release
         action: stop
+  ball_waiting_autoplunge_timer:
+    start_value: 0
+    end_value: 120
+    tick_interval: 1s
+    start_running: True
+    control_events:
+      - event: base_mode_started{settings.tournament_mode_enabled==0}
+        action: restart
+      - event: base_mode_started{settings.tournament_mode_enabled==1}
+        action: stop
+      - event: playfield_active
+        action: stop
 
 
 achievements:
   wizard1:
-    enable_events: logicblock_completed_modes_count_hit{count==2 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0 and current_player.girls_blocking_flag==0}, multiball_chcheckitout_ended{device.counters.completed_modes_count.value==2 and device.achievements.wizard1.state=="disabled"}, multiball_bodymovin_ended{device.counters.completed_modes_count.value==2 and device.achievements.wizard1.state=="disabled"}, mode_girls_stopped{device.counters.completed_modes_count.value==2 and device.achievements.wizard1.state=="disabled"}, mode_base_started{device.counters.completed_modes_count.value==2 and device.achievements.wizard1.state=="disabled"}, player_modes_completed{device.counters.completed_modes_count.value==2 and chcheckitout_multiball_blocking_flag==0 and bodymovin_multiball_blocking_flag==0 and girls_blocking_flag==0}
+    enable_events: logicblock_completed_modes_count_hit{count==2 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0 and current_player.girls_blocking_flag==0}, multiball_chcheckitout_ended{device.counters.completed_modes_count.value==2 and device.achievements.wizard1.state=="disabled"}, multiball_bodymovin_ended{device.counters.completed_modes_count.value==2 and device.achievements.wizard1.state=="disabled"}, mode_girls_stopped{device.counters.completed_modes_count.value==2 and device.achievements.wizard1.state=="disabled"}, mode_base_started{device.counters.completed_modes_count.value==2 and device.achievements.wizard1.state=="disabled"}, player_modes_completed{device.counters.completed_modes_count.value==2 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0 and current_player.girls_blocking_flag==0}
     start_events: scoop_hit{device.counters.completed_modes_count.value==2}
     events_when_started: start_wizardcarousel
     restart_after_stop_possible: False
@@ -3981,7 +4031,7 @@ achievements:
     complete_events: mode_makesomenoise_started, mode_sureshot_started, mode_bodhivow_started
     restart_on_next_ball_when_started: True
   wizard2:
-    enable_events: logicblock_completed_modes_count_hit{count==5 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0 and current_player.girls_blocking_flag==0}, multiball_chcheckitout_ended{device.counters.completed_modes_count.value==5 and device.achievements.wizard2.state=="disabled"}, multiball_bodymovin_ended{device.counters.completed_modes_count.value==5 and device.achievements.wizard2.state=="disabled"}, mode_girls_stopped{device.counters.completed_modes_count.value==5 and device.achievements.wizard2.state=="disabled"}, mode_base_started{device.counters.completed_modes_count.value==5 and device.achievements.wizard2.state=="disabled"}, player_modes_completed{device.counters.completed_modes_count.value==5 and chcheckitout_multiball_blocking_flag==0 and bodymovin_multiball_blocking_flag==0 and girls_blocking_flag==0}
+    enable_events: logicblock_completed_modes_count_hit{count==5 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0 and current_player.girls_blocking_flag==0}, multiball_chcheckitout_ended{device.counters.completed_modes_count.value==5 and device.achievements.wizard2.state=="disabled"}, multiball_bodymovin_ended{device.counters.completed_modes_count.value==5 and device.achievements.wizard2.state=="disabled"}, mode_girls_stopped{device.counters.completed_modes_count.value==5 and device.achievements.wizard2.state=="disabled"}, mode_base_started{device.counters.completed_modes_count.value==5 and device.achievements.wizard2.state=="disabled"}, player_modes_completed{device.counters.completed_modes_count.value==5 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0 and current_player.girls_blocking_flag==0}
     start_events: scoop_hit{device.counters.completed_modes_count.value==5}
     events_when_started: start_wizardcarousel
     restart_after_stop_possible: False
@@ -3989,7 +4039,7 @@ achievements:
     complete_events: mode_makesomenoise_started, mode_sureshot_started, mode_bodhivow_started
     restart_on_next_ball_when_started: True
   wizard3:
-    enable_events: logicblock_completed_modes_count_hit{count==8 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0 and current_player.girls_blocking_flag==0}, multiball_chcheckitout_ended{device.counters.completed_modes_count.value==8 and device.achievements.wizard3.state=="disabled"}, multiball_bodymovin_ended{device.counters.completed_modes_count.value==8 and device.achievements.wizard3.state=="disabled"}, mode_girls_stopped{device.counters.completed_modes_count.value==8 and device.achievements.wizard3.state=="disabled"}, ball_started{device.counters.completed_modes_count.value==8 and device.achievements.wizard3.state=="disabled"}, player_modes_completed{device.counters.completed_modes_count.value==8 and chcheckitout_multiball_blocking_flag==0 and bodymovin_multiball_blocking_flag==0 and girls_blocking_flag==0}
+    enable_events: logicblock_completed_modes_count_hit{count==8 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0 and current_player.girls_blocking_flag==0}, multiball_chcheckitout_ended{device.counters.completed_modes_count.value==8 and device.achievements.wizard3.state=="disabled"}, multiball_bodymovin_ended{device.counters.completed_modes_count.value==8 and device.achievements.wizard3.state=="disabled"}, mode_girls_stopped{device.counters.completed_modes_count.value==8 and device.achievements.wizard3.state=="disabled"}, ball_started{device.counters.completed_modes_count.value==8 and device.achievements.wizard3.state=="disabled"}, player_modes_completed{device.counters.completed_modes_count.value==8 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0 and current_player.girls_blocking_flag==0}
     start_events: scoop_hit{device.counters.completed_modes_count.value==8}
     events_when_started: start_wizardcarousel
     restart_after_stop_possible: False
@@ -4211,6 +4261,7 @@ event_player:
   mode_base_started{current_player.number==2 and is_extra_ball==True}: p2_extra_ball_starting
   mode_base_started{current_player.number==3 and is_extra_ball==True}: p3_extra_ball_starting
   mode_base_started{current_player.number==4 and is_extra_ball==True}: p4_extra_ball_starting
+  timer_ball_waiting_autoplunge_timer_complete: autoplunge_ball_now
 
 
 accruals:
@@ -4231,14 +4282,14 @@ accruals:
 extra_balls:
   modes_played_eb:
     enabled: True
-    light_events: timer_fingerlickingood_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled==2}, timer_highplainsdrifter_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled==2}, timer_intergalactic_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled==2}, timer_paulrevere_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled==2}, timer_sabotage_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled==2}, timer_threemcsand1dj_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled==2}, timer_toomanyrappers_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled==2}, timer_tripletrouble_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled==2}
+    light_events: timer_fingerlickingood_intro_show_complete{current_player.modes_played==5 and settings.extra_balls_enabled==2 and settings.tournament_mode_enabled==0}, timer_highplainsdrifter_intro_show_complete{current_player.modes_played==5 and settings.extra_balls_enabled==2 and settings.tournament_mode_enabled==0}, timer_intergalactic_intro_show_complete{current_player.modes_played==5 and settings.extra_balls_enabled==2 and settings.tournament_mode_enabled==0}, timer_paulrevere_intro_show_complete{current_player.modes_played==5 and settings.extra_balls_enabled==2 and settings.tournament_mode_enabled==0}, timer_sabotage_intro_show_complete{current_player.modes_played==5 and settings.extra_balls_enabled==2 and settings.tournament_mode_enabled==0}, timer_threemcsand1dj_intro_show_complete{current_player.modes_played==5 and settings.extra_balls_enabled==2 and settings.tournament_mode_enabled==0}, timer_toomanyrappers_intro_show_complete{current_player.modes_played==5 and settings.extra_balls_enabled==2 and settings.tournament_mode_enabled==0}, timer_tripletrouble_intro_show_complete{current_player.modes_played==5 and settings.extra_balls_enabled==2 and settings.tournament_mode_enabled==0}
     award_events: scoop_hit{current_player.modes_eb_ready==1}
   instruments_collected_eb:
     enabled: True
-    light_events: boombox_collected{current_player.instruments_collected_total==5 and settings.extra_balls_enabled==2}, microphone_collected{current_player.instruments_collected_total==5 and settings.extra_balls_enabled==2}, turntable_collected{current_player.instruments_collected_total==5 and settings.extra_balls_enabled==2}
+    light_events: boombox_collected{current_player.instruments_collected_total==5 and settings.extra_balls_enabled==2 and settings.tournament_mode_enabled==0}, microphone_collected{current_player.instruments_collected_total==5 and settings.extra_balls_enabled==2 and settings.tournament_mode_enabled==0}, turntable_collected{current_player.instruments_collected_total==5 and settings.extra_balls_enabled==2 and settings.tournament_mode_enabled==0}
     award_events: scoop_hit{current_player.instruments_eb_ready==1}
   mystery_eb:
     enabled: True
-    light_events: mystery_award_light_extra_ball{settings.extra_balls_enabled==2}
+    light_events: mystery_award_light_extra_ball{settings.extra_balls_enabled==2 and settings.tournament_mode_enabled==0}
     award_events: scoop_hit{current_player.mystery_eb_ready==1}
 
