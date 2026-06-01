@@ -1224,15 +1224,15 @@ sound_player:
       action: play
       bus: effects
       priority: 500000
-  player_added{num==2}:
+  player2_start_sound_play:
     player2_start:
       action: load
       bus: voice
-  player_added{num==3}:
+  player3_start_sound_play:
     player3_start:
       action: load
       bus: voice
-  player_added{num==4}:
+  player4_start_sound_play:
     player4_start:
       action: load
       bus: voice
@@ -2257,7 +2257,7 @@ sequences:
     restart_events: bodymovin_lock_3_enabled, mode_base_started{current_player.bodymovin_multiball_qualified_flag==1}, mode_bodymovin_stopped{current_player.bodymovin_multiball_qualified_flag==1}, mode_chcheckitout_stopped{current_player.bodymovin_multiball_qualified_flag==1}, mode_makesomenoise_stopped{current_player.bodymovin_multiball_qualified_flag==1}, mode_bodhivow_stopped{current_player.bodymovin_multiball_qualified_flag==1}, mode_sureshot_stopped{current_player.bodymovin_multiball_qualified_flag==1}, mode_girls_stopped{current_player.bodymovin_multiball_qualified_flag==1}
   diditwithawiffleballbat:
     events:
-      - inner_loop_hit{current_player.loop_shot_multiplier==3}
+      - hit_wifflebat
     enable_events: diditlikethat, mode_sureshot_stopped{current_player.loop_shot_multiplier==3}, mode_bodhivow_stopped{current_player.loop_shot_multiplier==3}, mode_makesomenoise_stopped{current_player.loop_shot_multiplier==3}
     restart_events: diditlikethat
     start_enabled: False
@@ -2266,7 +2266,7 @@ sequences:
     disable_events: mode_girls_started, bodymovin_leftramp_jackpot_hit, bodymovin_rightramp_jackpot_hit, bodymovin_leftorbit_lit_hit, bodymovin_leftramp_lit_hit, bodymovin_captiveball_lit_hit, bodymovin_innerloop_lit_hit, bodymovin_rightramp_lit_hit, bodymovin_rightorbit_lit_hit, chcheckitout_leftorbit_jackpot_hit, chcheckitout_leftramp_jackpot_hit, chcheckitout_rightramp_jackpot_hit, chcheckitout_rightorbit_jackpot_hit, chcheckitout_superjackpot_hit, mode_girls_stopped, fingerlickingood_pop_standup_hit, logicblock_highplainsdrifter_shots_counter_hit, highplainsdrifter_left_orbit_1_done, highplainsdrifter_left_ramp_1_done, highplainsdrifter_inner_loop_1_done, highplainsdrifter_right_ramp_1_done, highplainsdrifter_right_orbit_1_done, right_ramp_hit{device.sequences.intergalactic_shot_1.enabled==True}, right_orbit_hit{device.sequences.intergalactic_shot_1.enabled==True}, left_ramp_hit{device.sequences.intergalactic_shot_2.enabled==True}, left_orbit_hit{device.sequences.intergalactic_shot_2.enabled==True}, right_ramp_hit{device.sequences.intergalactic_shot_3.enabled==True}, right_orbit_hit{device.sequences.intergalactic_shot_3.enabled==True}, left_ramp_hit{device.sequences.intergalactic_shot_4.enabled==True}, left_orbit_hit{device.sequences.intergalactic_shot_4.enabled==True}, intergalactic_shot_5_done, paulrevere_shot_1_done, paulrevere_shot_2_done, paulrevere_shot_3_done, paulrevere_shot_4_done, paulrevere_shot_5_done, paulrevere_shot_6_done, sabotage_left_orbit_hit, sabotage_left_ramp_hit, sabotage_right_ramp_hit, sabotage_right_orbit_hit, mode_threemcsand1dj_success, toomanyrappers_rightorbit_lit_hit, toomanyrappers_rightramp_lit_hit, toomanyrappers_leftorbit_lit_hit, toomanyrappers_leftramp_lit_hit, toomanyrappers_scoop_lit_hit, toomanyrappers_captiveball_lit_hit, logicblock_spit_rhymes_once_hit, rhymes_spit_twice, tripletrouble_final_shot_hit, mode_sureshot_started, mode_bodhivow_started, mode_makesomenoise_started
   diditlikethat:
     events:
-      - inner_loop_hit{current_player.loop_shot_multiplier==2}
+      - hit_likethat
     enable_events: diditlikethis, mode_sureshot_stopped{current_player.loop_shot_multiplier==2}, mode_bodhivow_stopped{current_player.loop_shot_multiplier==2}, mode_makesomenoise_stopped{current_player.loop_shot_multiplier==2}
     restart_events: diditlikethis
     start_enabled: False
@@ -2275,7 +2275,7 @@ sequences:
     disable_events: mode_girls_started, bodymovin_leftramp_jackpot_hit, bodymovin_rightramp_jackpot_hit, bodymovin_leftorbit_lit_hit, bodymovin_leftramp_lit_hit, bodymovin_captiveball_lit_hit, bodymovin_innerloop_lit_hit, bodymovin_rightramp_lit_hit, bodymovin_rightorbit_lit_hit, chcheckitout_leftorbit_jackpot_hit, chcheckitout_leftramp_jackpot_hit, chcheckitout_rightramp_jackpot_hit, chcheckitout_rightorbit_jackpot_hit, chcheckitout_superjackpot_hit, mode_girls_stopped, fingerlickingood_pop_standup_hit, logicblock_highplainsdrifter_shots_counter_hit, highplainsdrifter_left_orbit_1_done, highplainsdrifter_left_ramp_1_done, highplainsdrifter_inner_loop_1_done, highplainsdrifter_right_ramp_1_done, highplainsdrifter_right_orbit_1_done, right_ramp_hit{device.sequences.intergalactic_shot_1.enabled==True}, right_orbit_hit{device.sequences.intergalactic_shot_1.enabled==True}, left_ramp_hit{device.sequences.intergalactic_shot_2.enabled==True}, left_orbit_hit{device.sequences.intergalactic_shot_2.enabled==True}, right_ramp_hit{device.sequences.intergalactic_shot_3.enabled==True}, right_orbit_hit{device.sequences.intergalactic_shot_3.enabled==True}, left_ramp_hit{device.sequences.intergalactic_shot_4.enabled==True}, left_orbit_hit{device.sequences.intergalactic_shot_4.enabled==True}, intergalactic_shot_5_done, paulrevere_shot_1_done, paulrevere_shot_2_done, paulrevere_shot_3_done, paulrevere_shot_4_done, paulrevere_shot_5_done, paulrevere_shot_6_done, sabotage_left_orbit_hit, sabotage_left_ramp_hit, sabotage_right_ramp_hit, sabotage_right_orbit_hit, mode_threemcsand1dj_success, toomanyrappers_rightorbit_lit_hit, toomanyrappers_rightramp_lit_hit, toomanyrappers_leftorbit_lit_hit, toomanyrappers_leftramp_lit_hit, toomanyrappers_scoop_lit_hit, toomanyrappers_captiveball_lit_hit, logicblock_spit_rhymes_once_hit, rhymes_spit_twice, tripletrouble_final_shot_hit, mode_sureshot_started, mode_bodhivow_started, mode_makesomenoise_started
   diditlikethis:
     events:
-      - inner_loop_hit{current_player.loop_shot_multiplier==1}
+      - hit_likethis
     events_when_complete: diditlikethis
     reset_on_complete: False
     start_enabled: True
@@ -3658,35 +3658,52 @@ widget_player:
       action: play
       slide: score_overlay
       priority: 925000
-  mode_base_started{current_player.number==1 and is_extra_ball==True}:
+  p1_extra_ball_starting:
     shoot_again_p1:
       action: play
       slide: score_overlay
       priority: 990500
-  mode_base_started{current_player.number==2 and is_extra_ball==True}:
+  p2_extra_ball_starting:
     shoot_again_p2:
       action: play
       slide: score_overlay
       priority: 990500
-  mode_base_started{current_player.number==3 and is_extra_ball==True}:
+  p3_extra_ball_starting:
     shoot_again_p3:
       action: play
       slide: score_overlay
       priority: 990500
-  mode_base_started{current_player.number==4 and is_extra_ball==True}:
+  p4_extra_ball_starting:
     shoot_again_p4:
       action: play
       slide: score_overlay
       priority: 990500
+  balldevice_playfield_ball_enter:
+    shoot_again_p1:
+      action: remove
+      slide: score_overlay
+    shoot_again_p2:
+      action: remove
+      slide: score_overlay
+    shoot_again_p3:
+      action: remove
+      slide: score_overlay
+    shoot_again_p4:
+      action: remove
+      slide: score_overlay
   playfield_active:
     shoot_again_p1:
       action: remove
+      slide: score_overlay
     shoot_again_p2:
       action: remove
+      slide: score_overlay
     shoot_again_p3:
       action: remove
+      slide: score_overlay
     shoot_again_p4:
       action: remove
+      slide: score_overlay
   mode_chcheckitout_stopped:
     chcheckitoutfinish:
       action: play
@@ -4262,6 +4279,12 @@ event_player:
   mode_base_started{current_player.number==3 and is_extra_ball==True}: p3_extra_ball_starting
   mode_base_started{current_player.number==4 and is_extra_ball==True}: p4_extra_ball_starting
   timer_ball_waiting_autoplunge_timer_complete: autoplunge_ball_now
+  player_added{num==2}: player2_start_sound_play
+  player_added{num==3}: player3_start_sound_play
+  player_added{num==4}: player4_start_sound_play
+  inner_loop_hit{current_player.loop_shot_multiplier==1}: hit_likethis
+  inner_loop_hit{current_player.loop_shot_multiplier==2}: hit_likethat
+  inner_loop_hit{current_player.loop_shot_multiplier==3}: hit_wifflebat
 
 
 accruals:
