@@ -57,7 +57,7 @@ lights:
     type: rgb
     label: "Upper Drop Rectangle"
   l_dropstandup_flasher_led:
-    number: lightboard-4-21
+    number: lightboard-4-22
     subtype: led
     type: rgb
     label: "Behind Drops Standup Flasher"
@@ -88,7 +88,7 @@ lights:
     type: rgb
     label: "Drops 2x Scoring Square"
   l_leftoutlane_circle_led:
-    number: lightboard-4-20
+    number: lightboard-4-21
     subtype: led
     type: rgb
     label: "Left Outlane Circle"
@@ -108,7 +108,7 @@ lights:
     type: rgb
     label: "Right Outlane Circle"
   l_ballsave_circle_led:
-    number: lightboard-3-33
+    number: lightboard-3-32
     subtype: led
     type: rgb
     label: "Ball Save Circle"
@@ -186,27 +186,27 @@ lights:
     type: rgb
     label: "Mode Rectangle 4 - Sabotage"
   l_modeindicator5_rectangle_led:
-    number: lightboard-3-28
+    number: lightboard-4-20
     subtype: led
     type: rgb
     label: "Mode Rectangle 5 - Finger Lickin Good"
   l_modeindicator6_rectangle_led:
-    number: lightboard-3-29
+    number: lightboard-3-28
     subtype: led
     type: rgb
     label: "Mode Rectangle 6 - Too Many Rappers"
   l_modeindicator7_rectangle_led:
-    number: lightboard-3-30
+    number: lightboard-3-29
     subtype: led
     type: rgb
     label: "Mode Rectangle 7 - 3 MCs and One DJ"
   l_modeindicator8_rectangle_led:
-    number: lightboard-3-31
+    number: lightboard-3-30
     subtype: led
     type: rgb
     label: "Mode Rectangle 8 - High Plains Drifter"
   l_wizardindicator_rectangle_led:
-    number: lightboard-3-32
+    number: lightboard-3-31
     subtype: led
     type: rgb
     label: "Wizard Bottom Square - Sure Shot"
