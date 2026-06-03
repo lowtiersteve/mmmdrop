@@ -603,3 +603,7 @@ player_vars:
   highest_bonus:
     initial_value: 0
 
+light_settings:
+  color_correction_profiles:
+    reduce_brightness:
+      gamma: 1.5

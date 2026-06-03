@@ -255,81 +255,97 @@ lights:
     subtype: led
     type: rgb
     label: "Cassette Left Mini Circle 1"
+    color_correction_profile: reduce_brightness
   l_cassetteleft_2_led:
     number: lightboard-3-21
     subtype: led
     type: rgb
     label: "Cassette Left Mini Circle 2"
+    color_correction_profile: reduce_brightness
   l_cassetteleft_3_led:
     number: lightboard-3-22
     subtype: led
     type: rgb
     label: "Cassette Left Mini Circle 3"
+    color_correction_profile: reduce_brightness
   l_cassetteleft_4_led:
     number: lightboard-3-23
     subtype: led
     type: rgb
     label: "Cassette Left Mini Circle 4"
+    color_correction_profile: reduce_brightness
   l_cassetteleft_5_led:
     number: lightboard-3-24
     subtype: led
     type: rgb
     label: "Cassette Left Mini Circle 5"
+    color_correction_profile: reduce_brightness
   l_cassetteleft_6_led:
     number: lightboard-3-25
     subtype: led
     type: rgb
     label: "Cassette Left Mini Circle 6"
+    color_correction_profile: reduce_brightness
   l_cassetteleft_7_led:
     number: lightboard-3-26
     subtype: led
     type: rgb
     label: "Cassette Left Mini Circle 7"
+    color_correction_profile: reduce_brightness
   l_cassetteleft_8_led:
     number: lightboard-3-27
     subtype: led
     type: rgb
     label: "Cassette Left Mini Circle 8"
+    color_correction_profile: reduce_brightness
   l_cassetteright_1_led:
     number: lightboard-3-11
     subtype: led
     type: rgb
     label: "Cassette Right Mini Circle 1"
+    color_correction_profile: reduce_brightness
   l_cassetteright_2_led:
     number: lightboard-3-12
     subtype: led
     type: rgb
     label: "Cassette Right Mini Circle 2"
+    color_correction_profile: reduce_brightness
   l_cassetteright_3_led:
     number: lightboard-3-13
     subtype: led
     type: rgb
     label: "Cassette Right Mini Circle 3"
+    color_correction_profile: reduce_brightness
   l_cassetteright_4_led:
     number: lightboard-3-14
     subtype: led
     type: rgb
     label: "Cassette Right Mini Circle 4"
+    color_correction_profile: reduce_brightness
   l_cassetteright_5_led:
     number: lightboard-3-15
     subtype: led
     type: rgb
     label: "Cassette Right Mini Circle 5"
+    color_correction_profile: reduce_brightness
   l_cassetteright_6_led:
     number: lightboard-3-16
     subtype: led
     type: rgb
     label: "Cassette Right Mini Circle 6"
+    color_correction_profile: reduce_brightness
   l_cassetteright_7_led:
     number: lightboard-3-17
     subtype: led
     type: rgb
     label: "Cassette Right Mini Circle 7"
+    color_correction_profile: reduce_brightness
   l_cassetteright_8_led:
     number: lightboard-3-18
     subtype: led
     type: rgb
     label: "Cassette Right Mini Circle 8"
+    color_correction_profile: reduce_brightness
   l_leftramprectangle_led:
     number: lightboard-3-3
     subtype: led
