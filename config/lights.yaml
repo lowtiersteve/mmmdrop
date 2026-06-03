@@ -108,7 +108,7 @@ lights:
     type: rgb
     label: "Right Outlane Circle"
   l_ballsave_circle_led:
-    number: lightboard-3-19
+    number: lightboard-3-33
     subtype: led
     type: rgb
     label: "Ball Save Circle"
@@ -186,27 +186,27 @@ lights:
     type: rgb
     label: "Mode Rectangle 4 - Sabotage"
   l_modeindicator5_rectangle_led:
-    number: lightboard-3-14
+    number: lightboard-3-28
     subtype: led
     type: rgb
     label: "Mode Rectangle 5 - Finger Lickin Good"
   l_modeindicator6_rectangle_led:
-    number: lightboard-3-15
+    number: lightboard-3-29
     subtype: led
     type: rgb
     label: "Mode Rectangle 6 - Too Many Rappers"
   l_modeindicator7_rectangle_led:
-    number: lightboard-3-16
+    number: lightboard-3-30
     subtype: led
     type: rgb
     label: "Mode Rectangle 7 - 3 MCs and One DJ"
   l_modeindicator8_rectangle_led:
-    number: lightboard-3-17
+    number: lightboard-3-31
     subtype: led
     type: rgb
     label: "Mode Rectangle 8 - High Plains Drifter"
   l_wizardindicator_rectangle_led:
-    number: lightboard-3-18
+    number: lightboard-3-32
     subtype: led
     type: rgb
     label: "Wizard Bottom Square - Sure Shot"
@@ -216,7 +216,7 @@ lights:
     type: rgb
     label: "Wizard Top Square - Make Some Noise"
   l_wizardindicator3_rectangle_led:
-    number: lightboard-3-12
+    number: lightboard-3-19
     subtype: led
     type: rgb
     label: "Wizard Middle Square - Bodhi Vow"
@@ -250,16 +250,86 @@ lights:
     type: rgb
     label: "Super Circle 5 - Combos"
     fade_ms: 500
-  l_cassetteleft_led:
-    number: lightboard-3-13
+  l_cassetteleft_1_led:
+    number: lightboard-3-20 #originally 3-13
     subtype: led
     type: rgb
-    label: "Cassette Left Mini Circle"
-  l_cassetteright_led:
+    label: "Cassette Left Mini Circle 1"
+  l_cassetteleft_2_led:
+    number: lightboard-3-21
+    subtype: led
+    type: rgb
+    label: "Cassette Left Mini Circle 2"
+  l_cassetteleft_3_led:
+    number: lightboard-3-22
+    subtype: led
+    type: rgb
+    label: "Cassette Left Mini Circle 3"
+  l_cassetteleft_4_led:
+    number: lightboard-3-23
+    subtype: led
+    type: rgb
+    label: "Cassette Left Mini Circle 4"
+  l_cassetteleft_5_led:
+    number: lightboard-3-24
+    subtype: led
+    type: rgb
+    label: "Cassette Left Mini Circle 5"
+  l_cassetteleft_6_led:
+    number: lightboard-3-25
+    subtype: led
+    type: rgb
+    label: "Cassette Left Mini Circle 6"
+  l_cassetteleft_7_led:
+    number: lightboard-3-26
+    subtype: led
+    type: rgb
+    label: "Cassette Left Mini Circle 7"
+  l_cassetteleft_8_led:
+    number: lightboard-3-27
+    subtype: led
+    type: rgb
+    label: "Cassette Left Mini Circle 8"
+  l_cassetteright_1_led:
     number: lightboard-3-11
     subtype: led
     type: rgb
-    label: "Cassette Right Mini Circle"
+    label: "Cassette Right Mini Circle 1"
+  l_cassetteright_2_led:
+    number: lightboard-3-12
+    subtype: led
+    type: rgb
+    label: "Cassette Right Mini Circle 2"
+  l_cassetteright_3_led:
+    number: lightboard-3-13
+    subtype: led
+    type: rgb
+    label: "Cassette Right Mini Circle 3"
+  l_cassetteright_4_led:
+    number: lightboard-3-14
+    subtype: led
+    type: rgb
+    label: "Cassette Right Mini Circle 4"
+  l_cassetteright_5_led:
+    number: lightboard-3-15
+    subtype: led
+    type: rgb
+    label: "Cassette Right Mini Circle 5"
+  l_cassetteright_6_led:
+    number: lightboard-3-16
+    subtype: led
+    type: rgb
+    label: "Cassette Right Mini Circle 6"
+  l_cassetteright_7_led:
+    number: lightboard-3-17
+    subtype: led
+    type: rgb
+    label: "Cassette Right Mini Circle 7"
+  l_cassetteright_8_led:
+    number: lightboard-3-18
+    subtype: led
+    type: rgb
+    label: "Cassette Right Mini Circle 8"
   l_leftramprectangle_led:
     number: lightboard-3-3
     subtype: led

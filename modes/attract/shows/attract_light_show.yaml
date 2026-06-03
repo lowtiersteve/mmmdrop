@@ -42,8 +42,6 @@
     l_supercircle3_led: cyan
     l_supercircle4_led: cyan
     l_supercircle5_led: cyan
-    l_cassetteleft_led: cyan
-    l_cassetteright_led: cyan
 - duration: 0.8
   lights:
     l_modeindicator1_rectangle_led: stop
@@ -62,8 +60,6 @@
     l_supercircle3_led: stop
     l_supercircle4_led: stop
     l_supercircle5_led: stop
-    l_cassetteleft_led: stop
-    l_cassetteright_led: stop
     l_lowerdrop_circle_led: green
     l_middledrop_circle_led: green
     l_upperdrop_circle_led: green

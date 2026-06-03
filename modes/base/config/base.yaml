@@ -3181,6 +3181,14 @@ show_player:
       action: stop
     right_orbit_mult_show:
       action: stop
+    cassette_spin_rewind_slow:
+      action: stop
+    cassette_spin_fast:
+      action: stop
+    cassette_spin_slow:
+      action: stop
+    cassette_spin_rewind_fast:
+      action: stop
   start_superpops:
     superpops_on:
       action: play
@@ -3411,7 +3419,21 @@ show_player:
       action: play
       loops: -1
       priority: 1000
-
+  pop1_hit{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.mode_blocking_flag==0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled" and current_player.girls_blocking_flag==0}:
+    cassette_spin_fast:
+      action: play
+      loops: 1
+      priority: 50000
+  pop2_hit{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.mode_blocking_flag==0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled" and current_player.girls_blocking_flag==0}:
+    cassette_spin_fast:
+      action: play
+      loops: 1
+      priority: 50000
+  pop3_hit{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.mode_blocking_flag==0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled" and current_player.girls_blocking_flag==0}:
+    cassette_spin_rewind_fast:
+      action: play
+      loops: 1
+      priority: 50000
 
 
 blinkenlight_player:
@@ -4145,7 +4167,7 @@ achievements:
     restart_on_next_ball_when_started: True
   chcheckitout_multiball:
     show_tokens:
-      lights: l_cassetteleft_led
+      lights: l_cassetteleft_1_led, l_cassetteleft_2_led, l_cassetteleft_3_led, l_cassetteleft_4_led, l_cassetteleft_5_led, l_cassetteleft_6_led, l_cassetteleft_7_led, l_cassetteleft_8_led
     show_when_started: flash
     show_when_completed: on
     start_events: multiball_chcheckitout_started
@@ -4155,7 +4177,7 @@ achievements:
     restart_on_next_ball_when_started: True
   bodymovin_multiball:
     show_tokens:
-      lights: l_cassetteright_led
+      lights: l_cassetteright_1_led, l_cassetteright_2_led, l_cassetteright_3_led, l_cassetteright_4_led, l_cassetteright_5_led, l_cassetteright_6_led, l_cassetteright_7_led, l_cassetteright_8_led
     show_when_started: flash
     show_when_completed: on
     start_events: multiball_bodymovin_started

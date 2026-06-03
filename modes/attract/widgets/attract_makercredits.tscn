@@ -13,10 +13,10 @@ script = ExtResource("1_hcudx")
 [node name="makercredits" type="Label" parent="."]
 top_level = true
 layout_mode = 0
-offset_left = 209.0
-offset_top = 101.0
-offset_right = 1724.0
-offset_bottom = 1013.0
+offset_left = 289.0
+offset_top = 63.0
+offset_right = 1667.0
+offset_bottom = 1036.0
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("2_f0f82")
 theme_override_font_sizes/font_size = 56
@@ -25,14 +25,15 @@ Michael Rausch
 
 
 Rules:
-Michael Rausch and Stephen donaldson
+Michael Rausch and 
+Stephen donaldson
+
+art:
+ricardo silva and
+jess hunt
+
 
 Code programming:
 Stephen Donaldson
-
-display art:
-jess hunt
-
-cabinet and translite art:
-ricardo silva"
+"
 horizontal_alignment = 1

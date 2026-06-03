@@ -325,6 +325,16 @@ random_event_player:
 
 
 show_player:
+  mode_bonus_started:
+    cassette_spin_slow:
+      action: play
+      priority: 100000
+  flipper_cancel:
+    cassette_spin_slow:
+      action: stop
+    cassette_spin_fast:
+      action: play
+      priority: 100000
   bonus_entry:
     bonus_count_show_red:
       action: stop
@@ -375,3 +385,9 @@ show_player:
       action: play
       loops: 0
       priority: 1000000
+  mode_bonus_will_end:
+    cassette_spin_fast:
+      action: stop
+    cassette_spin_slow:
+      action: stop
+

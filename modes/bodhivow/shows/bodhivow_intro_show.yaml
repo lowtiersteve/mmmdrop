@@ -64,7 +64,14 @@
     l_leftramprectangle_led: red
     l_left_ramp_x: red
     l_innerloop_arrow_led: red
-    l_cassetteleft_led: red
+    l_cassetteleft_1_led: red
+    l_cassetteleft_2_led: red
+    l_cassetteleft_3_led: red
+    l_cassetteleft_4_led: red
+    l_cassetteleft_5_led: red
+    l_cassetteleft_6_led: red
+    l_cassetteleft_7_led: red
+    l_cassetteleft_8_led: red
 - duration: 50ms
   lights:
     l_innerloopcombo_circle_led: red
@@ -94,7 +101,14 @@
 - duration: 50ms
   lights:
     l_supercircle4_led: red
-    l_cassetteright_led: red
+    l_cassetteright_1_led: red
+    l_cassetteright_2_led: red
+    l_cassetteright_3_led: red
+    l_cassetteright_4_led: red
+    l_cassetteright_5_led: red
+    l_cassetteright_6_led: red
+    l_cassetteright_7_led: red
+    l_cassetteright_8_led: red
     l_scoop_arrow_led: red
     l_scoopcombo_circle_led: red
     l_scoopmode_circle2_led: red
@@ -220,7 +234,14 @@
     l_leftramprectangle_led: orange
     l_left_ramp_x: orange
     l_innerloop_arrow_led: orange
-    l_cassetteleft_led: orange
+    l_cassetteleft_1_led: orange
+    l_cassetteleft_2_led: orange
+    l_cassetteleft_3_led: orange
+    l_cassetteleft_4_led: orange
+    l_cassetteleft_5_led: orange
+    l_cassetteleft_6_led: orange
+    l_cassetteleft_7_led: orange
+    l_cassetteleft_8_led: orange
 - duration: 50ms
   lights:
     l_innerloopcombo_circle_led: orange
@@ -250,7 +271,14 @@
 - duration: 50ms
   lights:
     l_supercircle4_led: orange
-    l_cassetteright_led: orange
+    l_cassetteright_1_led: orange
+    l_cassetteright_2_led: orange
+    l_cassetteright_3_led: orange
+    l_cassetteright_4_led: orange
+    l_cassetteright_5_led: orange
+    l_cassetteright_6_led: orange
+    l_cassetteright_7_led: orange
+    l_cassetteright_8_led: orange
     l_scoop_arrow_led: orange
     l_scoopcombo_circle_led: orange
     l_scoopmode_circle2_led: orange
@@ -376,7 +404,14 @@
     l_leftramprectangle_led: yellow
     l_left_ramp_x: yellow
     l_innerloop_arrow_led: yellow
-    l_cassetteleft_led: yellow
+    l_cassetteleft_1_led: yellow
+    l_cassetteleft_2_led: yellow
+    l_cassetteleft_3_led: yellow
+    l_cassetteleft_4_led: yellow
+    l_cassetteleft_5_led: yellow
+    l_cassetteleft_6_led: yellow
+    l_cassetteleft_7_led: yellow
+    l_cassetteleft_8_led: yellow
 - duration: 50ms
   lights:
     l_innerloopcombo_circle_led: yellow
@@ -406,7 +441,14 @@
 - duration: 50ms
   lights:
     l_supercircle4_led: yellow
-    l_cassetteright_led: yellow
+    l_cassetteright_1_led: yellow
+    l_cassetteright_2_led: yellow
+    l_cassetteright_3_led: yellow
+    l_cassetteright_4_led: yellow
+    l_cassetteright_5_led: yellow
+    l_cassetteright_6_led: yellow
+    l_cassetteright_7_led: yellow
+    l_cassetteright_8_led: yellow
     l_scoop_arrow_led: yellow
     l_scoopcombo_circle_led: yellow
     l_scoopmode_circle2_led: yellow
@@ -532,7 +574,14 @@
     l_leftramprectangle_led: green
     l_left_ramp_x: green
     l_innerloop_arrow_led: green
-    l_cassetteleft_led: green
+    l_cassetteleft_1_led: green
+    l_cassetteleft_2_led: green
+    l_cassetteleft_3_led: green
+    l_cassetteleft_4_led: green
+    l_cassetteleft_5_led: green
+    l_cassetteleft_6_led: green
+    l_cassetteleft_7_led: green
+    l_cassetteleft_8_led: green
 - duration: 50ms
   lights:
     l_innerloopcombo_circle_led: green
@@ -562,7 +611,14 @@
 - duration: 50ms
   lights:
     l_supercircle4_led: green
-    l_cassetteright_led: green
+    l_cassetteright_1_led: green
+    l_cassetteright_2_led: green
+    l_cassetteright_3_led: green
+    l_cassetteright_4_led: green
+    l_cassetteright_5_led: green
+    l_cassetteright_6_led: green
+    l_cassetteright_7_led: green
+    l_cassetteright_8_led: green
     l_scoop_arrow_led: green
     l_scoopcombo_circle_led: green
     l_scoopmode_circle2_led: green
@@ -688,7 +744,14 @@
     l_leftramprectangle_led: blue
     l_left_ramp_x: blue
     l_innerloop_arrow_led: blue
-    l_cassetteleft_led: blue
+    l_cassetteleft_1_led: blue
+    l_cassetteleft_2_led: blue
+    l_cassetteleft_3_led: blue
+    l_cassetteleft_4_led: blue
+    l_cassetteleft_5_led: blue
+    l_cassetteleft_6_led: blue
+    l_cassetteleft_7_led: blue
+    l_cassetteleft_8_led: blue
 - duration: 50ms
   lights:
     l_innerloopcombo_circle_led: blue
@@ -718,7 +781,14 @@
 - duration: 50ms
   lights:
     l_supercircle4_led: blue
-    l_cassetteright_led: blue
+    l_cassetteright_1_led: blue
+    l_cassetteright_2_led: blue
+    l_cassetteright_3_led: blue
+    l_cassetteright_4_led: blue
+    l_cassetteright_5_led: blue
+    l_cassetteright_6_led: blue
+    l_cassetteright_7_led: blue
+    l_cassetteright_8_led: blue
     l_scoop_arrow_led: blue
     l_scoopcombo_circle_led: blue
     l_scoopmode_circle2_led: blue
@@ -844,7 +914,14 @@
     l_leftramprectangle_led: purple
     l_left_ramp_x: purple
     l_innerloop_arrow_led: purple
-    l_cassetteleft_led: purple
+    l_cassetteleft_1_led: purple
+    l_cassetteleft_2_led: purple
+    l_cassetteleft_3_led: purple
+    l_cassetteleft_4_led: purple
+    l_cassetteleft_5_led: purple
+    l_cassetteleft_6_led: purple
+    l_cassetteleft_7_led: purple
+    l_cassetteleft_8_led: purple
 - duration: 50ms
   lights:
     l_innerloopcombo_circle_led: purple
@@ -874,7 +951,14 @@
 - duration: 50ms
   lights:
     l_supercircle4_led: purple
-    l_cassetteright_led: purple
+    l_cassetteright_1_led: purple
+    l_cassetteright_2_led: purple
+    l_cassetteright_3_led: purple
+    l_cassetteright_4_led: purple
+    l_cassetteright_5_led: purple
+    l_cassetteright_6_led: purple
+    l_cassetteright_7_led: purple
+    l_cassetteright_8_led: purple
     l_scoop_arrow_led: purple
     l_scoopcombo_circle_led: purple
     l_scoopmode_circle2_led: purple
@@ -1000,7 +1084,14 @@
     l_leftramprectangle_led: red
     l_left_ramp_x: red
     l_innerloop_arrow_led: red
-    l_cassetteleft_led: red
+    l_cassetteleft_1_led: red
+    l_cassetteleft_2_led: red
+    l_cassetteleft_3_led: red
+    l_cassetteleft_4_led: red
+    l_cassetteleft_5_led: red
+    l_cassetteleft_6_led: red
+    l_cassetteleft_7_led: red
+    l_cassetteleft_8_led: red
 - duration: 50ms
   lights:
     l_innerloopcombo_circle_led: red
@@ -1030,7 +1121,14 @@
 - duration: 50ms
   lights:
     l_supercircle4_led: red
-    l_cassetteright_led: red
+    l_cassetteright_1_led: red
+    l_cassetteright_2_led: red
+    l_cassetteright_3_led: red
+    l_cassetteright_4_led: red
+    l_cassetteright_5_led: red
+    l_cassetteright_6_led: red
+    l_cassetteright_7_led: red
+    l_cassetteright_8_led: red
     l_scoop_arrow_led: red
     l_scoopcombo_circle_led: red
     l_scoopmode_circle2_led: red
@@ -1156,7 +1254,14 @@
     l_leftramprectangle_led: orange
     l_left_ramp_x: orange
     l_innerloop_arrow_led: orange
-    l_cassetteleft_led: orange
+    l_cassetteleft_1_led: orange
+    l_cassetteleft_2_led: orange
+    l_cassetteleft_3_led: orange
+    l_cassetteleft_4_led: orange
+    l_cassetteleft_5_led: orange
+    l_cassetteleft_6_led: orange
+    l_cassetteleft_7_led: orange
+    l_cassetteleft_8_led: orange
 - duration: 50ms
   lights:
     l_innerloopcombo_circle_led: orange
@@ -1186,7 +1291,14 @@
 - duration: 50ms
   lights:
     l_supercircle4_led: orange
-    l_cassetteright_led: orange
+    l_cassetteright_1_led: orange
+    l_cassetteright_2_led: orange
+    l_cassetteright_3_led: orange
+    l_cassetteright_4_led: orange
+    l_cassetteright_5_led: orange
+    l_cassetteright_6_led: orange
+    l_cassetteright_7_led: orange
+    l_cassetteright_8_led: orange
     l_scoop_arrow_led: orange
     l_scoopcombo_circle_led: orange
     l_scoopmode_circle2_led: orange
@@ -1312,7 +1424,14 @@
     l_leftramprectangle_led: yellow
     l_left_ramp_x: yellow
     l_innerloop_arrow_led: yellow
-    l_cassetteleft_led: yellow
+    l_cassetteleft_1_led: yellow
+    l_cassetteleft_2_led: yellow
+    l_cassetteleft_3_led: yellow
+    l_cassetteleft_4_led: yellow
+    l_cassetteleft_5_led: yellow
+    l_cassetteleft_6_led: yellow
+    l_cassetteleft_7_led: yellow
+    l_cassetteleft_8_led: yellow
 - duration: 50ms
   lights:
     l_innerloopcombo_circle_led: yellow
@@ -1342,7 +1461,14 @@
 - duration: 50ms
   lights:
     l_supercircle4_led: yellow
-    l_cassetteright_led: yellow
+    l_cassetteright_1_led: yellow
+    l_cassetteright_2_led: yellow
+    l_cassetteright_3_led: yellow
+    l_cassetteright_4_led: yellow
+    l_cassetteright_5_led: yellow
+    l_cassetteright_6_led: yellow
+    l_cassetteright_7_led: yellow
+    l_cassetteright_8_led: yellow
     l_scoop_arrow_led: yellow
     l_scoopcombo_circle_led: yellow
     l_scoopmode_circle2_led: yellow
@@ -1468,7 +1594,14 @@
     l_leftramprectangle_led: green
     l_left_ramp_x: green
     l_innerloop_arrow_led: green
-    l_cassetteleft_led: green
+    l_cassetteleft_1_led: green
+    l_cassetteleft_2_led: green
+    l_cassetteleft_3_led: green
+    l_cassetteleft_4_led: green
+    l_cassetteleft_5_led: green
+    l_cassetteleft_6_led: green
+    l_cassetteleft_7_led: green
+    l_cassetteleft_8_led: green
 - duration: 50ms
   lights:
     l_innerloopcombo_circle_led: green
@@ -1498,7 +1631,14 @@
 - duration: 50ms
   lights:
     l_supercircle4_led: green
-    l_cassetteright_led: green
+    l_cassetteright_1_led: green
+    l_cassetteright_2_led: green
+    l_cassetteright_3_led: green
+    l_cassetteright_4_led: green
+    l_cassetteright_5_led: green
+    l_cassetteright_6_led: green
+    l_cassetteright_7_led: green
+    l_cassetteright_8_led: green
     l_scoop_arrow_led: green
     l_scoopcombo_circle_led: green
     l_scoopmode_circle2_led: green
@@ -1624,7 +1764,14 @@
     l_leftramprectangle_led: blue
     l_left_ramp_x: blue
     l_innerloop_arrow_led: blue
-    l_cassetteleft_led: blue
+    l_cassetteleft_1_led: blue
+    l_cassetteleft_2_led: blue
+    l_cassetteleft_3_led: blue
+    l_cassetteleft_4_led: blue
+    l_cassetteleft_5_led: blue
+    l_cassetteleft_6_led: blue
+    l_cassetteleft_7_led: blue
+    l_cassetteleft_8_led: blue
 - duration: 50ms
   lights:
     l_innerloopcombo_circle_led: blue
@@ -1654,7 +1801,14 @@
 - duration: 50ms
   lights:
     l_supercircle4_led: blue
-    l_cassetteright_led: blue
+    l_cassetteright_1_led: blue
+    l_cassetteright_2_led: blue
+    l_cassetteright_3_led: blue
+    l_cassetteright_4_led: blue
+    l_cassetteright_5_led: blue
+    l_cassetteright_6_led: blue
+    l_cassetteright_7_led: blue
+    l_cassetteright_8_led: blue
     l_scoop_arrow_led: blue
     l_scoopcombo_circle_led: blue
     l_scoopmode_circle2_led: blue
@@ -1780,7 +1934,14 @@
     l_leftramprectangle_led: purple
     l_left_ramp_x: purple
     l_innerloop_arrow_led: purple
-    l_cassetteleft_led: purple
+    l_cassetteleft_1_led: purple
+    l_cassetteleft_2_led: purple
+    l_cassetteleft_3_led: purple
+    l_cassetteleft_4_led: purple
+    l_cassetteleft_5_led: purple
+    l_cassetteleft_6_led: purple
+    l_cassetteleft_7_led: purple
+    l_cassetteleft_8_led: purple
 - duration: 50ms
   lights:
     l_innerloopcombo_circle_led: purple
@@ -1810,7 +1971,14 @@
 - duration: 50ms
   lights:
     l_supercircle4_led: purple
-    l_cassetteright_led: purple
+    l_cassetteright_1_led: purple
+    l_cassetteright_2_led: purple
+    l_cassetteright_3_led: purple
+    l_cassetteright_4_led: purple
+    l_cassetteright_5_led: purple
+    l_cassetteright_6_led: purple
+    l_cassetteright_7_led: purple
+    l_cassetteright_8_led: purple
     l_scoop_arrow_led: purple
     l_scoopcombo_circle_led: purple
     l_scoopmode_circle2_led: purple
@@ -1936,7 +2104,14 @@
     l_leftramprectangle_led: red
     l_left_ramp_x: red
     l_innerloop_arrow_led: red
-    l_cassetteleft_led: red
+    l_cassetteleft_1_led: red
+    l_cassetteleft_2_led: red
+    l_cassetteleft_3_led: red
+    l_cassetteleft_4_led: red
+    l_cassetteleft_5_led: red
+    l_cassetteleft_6_led: red
+    l_cassetteleft_7_led: red
+    l_cassetteleft_8_led: red
 - duration: 50ms
   lights:
     l_innerloopcombo_circle_led: red
@@ -1966,7 +2141,14 @@
 - duration: 50ms
   lights:
     l_supercircle4_led: red
-    l_cassetteright_led: red
+    l_cassetteright_1_led: red
+    l_cassetteright_2_led: red
+    l_cassetteright_3_led: red
+    l_cassetteright_4_led: red
+    l_cassetteright_5_led: red
+    l_cassetteright_6_led: red
+    l_cassetteright_7_led: red
+    l_cassetteright_8_led: red
     l_scoop_arrow_led: red
     l_scoopcombo_circle_led: red
     l_scoopmode_circle2_led: red
@@ -2092,7 +2274,14 @@
     l_leftramprectangle_led: orange
     l_left_ramp_x: orange
     l_innerloop_arrow_led: orange
-    l_cassetteleft_led: orange
+    l_cassetteleft_1_led: orange
+    l_cassetteleft_2_led: orange
+    l_cassetteleft_3_led: orange
+    l_cassetteleft_4_led: orange
+    l_cassetteleft_5_led: orange
+    l_cassetteleft_6_led: orange
+    l_cassetteleft_7_led: orange
+    l_cassetteleft_8_led: orange
 - duration: 50ms
   lights:
     l_innerloopcombo_circle_led: orange
@@ -2122,7 +2311,14 @@
 - duration: 50ms
   lights:
     l_supercircle4_led: orange
-    l_cassetteright_led: orange
+    l_cassetteright_1_led: orange
+    l_cassetteright_2_led: orange
+    l_cassetteright_3_led: orange
+    l_cassetteright_4_led: orange
+    l_cassetteright_5_led: orange
+    l_cassetteright_6_led: orange
+    l_cassetteright_7_led: orange
+    l_cassetteright_8_led: orange
     l_scoop_arrow_led: orange
     l_scoopcombo_circle_led: orange
     l_scoopmode_circle2_led: orange
@@ -2248,7 +2444,14 @@
     l_leftramprectangle_led: yellow
     l_left_ramp_x: yellow
     l_innerloop_arrow_led: yellow
-    l_cassetteleft_led: yellow
+    l_cassetteleft_1_led: yellow
+    l_cassetteleft_2_led: yellow
+    l_cassetteleft_3_led: yellow
+    l_cassetteleft_4_led: yellow
+    l_cassetteleft_5_led: yellow
+    l_cassetteleft_6_led: yellow
+    l_cassetteleft_7_led: yellow
+    l_cassetteleft_8_led: yellow
 - duration: 50ms
   lights:
     l_innerloopcombo_circle_led: yellow
@@ -2278,7 +2481,14 @@
 - duration: 50ms
   lights:
     l_supercircle4_led: yellow
-    l_cassetteright_led: yellow
+    l_cassetteright_1_led: yellow
+    l_cassetteright_2_led: yellow
+    l_cassetteright_3_led: yellow
+    l_cassetteright_4_led: yellow
+    l_cassetteright_5_led: yellow
+    l_cassetteright_6_led: yellow
+    l_cassetteright_7_led: yellow
+    l_cassetteright_8_led: yellow
     l_scoop_arrow_led: yellow
     l_scoopcombo_circle_led: yellow
     l_scoopmode_circle2_led: yellow
@@ -2404,7 +2614,14 @@
     l_leftramprectangle_led: green
     l_left_ramp_x: green
     l_innerloop_arrow_led: green
-    l_cassetteleft_led: green
+    l_cassetteleft_1_led: green
+    l_cassetteleft_2_led: green
+    l_cassetteleft_3_led: green
+    l_cassetteleft_4_led: green
+    l_cassetteleft_5_led: green
+    l_cassetteleft_6_led: green
+    l_cassetteleft_7_led: green
+    l_cassetteleft_8_led: green
 - duration: 50ms
   lights:
     l_innerloopcombo_circle_led: green
@@ -2434,7 +2651,14 @@
 - duration: 50ms
   lights:
     l_supercircle4_led: green
-    l_cassetteright_led: green
+    l_cassetteright_1_led: green
+    l_cassetteright_2_led: green
+    l_cassetteright_3_led: green
+    l_cassetteright_4_led: green
+    l_cassetteright_5_led: green
+    l_cassetteright_6_led: green
+    l_cassetteright_7_led: green
+    l_cassetteright_8_led: green
     l_scoop_arrow_led: green
     l_scoopcombo_circle_led: green
     l_scoopmode_circle2_led: green
@@ -2560,7 +2784,14 @@
     l_leftramprectangle_led: blue
     l_left_ramp_x: blue
     l_innerloop_arrow_led: blue
-    l_cassetteleft_led: blue
+    l_cassetteleft_1_led: blue
+    l_cassetteleft_2_led: blue
+    l_cassetteleft_3_led: blue
+    l_cassetteleft_4_led: blue
+    l_cassetteleft_5_led: blue
+    l_cassetteleft_6_led: blue
+    l_cassetteleft_7_led: blue
+    l_cassetteleft_8_led: blue
 - duration: 50ms
   lights:
     l_innerloopcombo_circle_led: blue
@@ -2590,7 +2821,14 @@
 - duration: 50ms
   lights:
     l_supercircle4_led: blue
-    l_cassetteright_led: blue
+    l_cassetteright_1_led: blue
+    l_cassetteright_2_led: blue
+    l_cassetteright_3_led: blue
+    l_cassetteright_4_led: blue
+    l_cassetteright_5_led: blue
+    l_cassetteright_6_led: blue
+    l_cassetteright_7_led: blue
+    l_cassetteright_8_led: blue
     l_scoop_arrow_led: blue
     l_scoopcombo_circle_led: blue
     l_scoopmode_circle2_led: blue
@@ -2716,7 +2954,14 @@
     l_leftramprectangle_led: purple
     l_left_ramp_x: purple
     l_innerloop_arrow_led: purple
-    l_cassetteleft_led: purple
+    l_cassetteleft_1_led: purple
+    l_cassetteleft_2_led: purple
+    l_cassetteleft_3_led: purple
+    l_cassetteleft_4_led: purple
+    l_cassetteleft_5_led: purple
+    l_cassetteleft_6_led: purple
+    l_cassetteleft_7_led: purple
+    l_cassetteleft_8_led: purple
 - duration: 50ms
   lights:
     l_innerloopcombo_circle_led: purple
@@ -2746,7 +2991,14 @@
 - duration: 50ms
   lights:
     l_supercircle4_led: purple
-    l_cassetteright_led: purple
+    l_cassetteright_1_led: purple
+    l_cassetteright_2_led: purple
+    l_cassetteright_3_led: purple
+    l_cassetteright_4_led: purple
+    l_cassetteright_5_led: purple
+    l_cassetteright_6_led: purple
+    l_cassetteright_7_led: purple
+    l_cassetteright_8_led: purple
     l_scoop_arrow_led: purple
     l_scoopcombo_circle_led: purple
     l_scoopmode_circle2_led: purple

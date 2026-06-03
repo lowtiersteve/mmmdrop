@@ -434,6 +434,10 @@ show_player:
     paulrevere_stadium_intro_lights:
       action: play
       loops: -1
+    cassette_spin_rewind_slow:
+      action: play
+      loops: -1
+      priority: 100000
   timer_paulrevere_intro_show_complete:
     paulrevere_stadium_intro_lights:
       action: stop

@@ -17,8 +17,6 @@
   lights:
     l_wizardindicator_rectangle_led: stop
     l_wizardindicator3_rectangle_led: green
-    l_cassetteleft_led: green
-    l_cassetteright_led: green
 - duration: 50ms
   lights:
     l_modeindicator5_rectangle_led: stop
@@ -36,8 +34,6 @@
 - duration: 50ms
   lights:
     l_wizardindicator3_rectangle_led: stop
-    l_cassetteleft_led: stop
-    l_cassetteright_led: stop
     l_wizardindicator2_rectangle_led: green
 - duration: 50ms
   lights:

@@ -6,6 +6,7 @@ mode_settings:
     - last_scores_4p{machine.game_just_played==1}
     - mpf_logo
     - fast_logo
+    - riot_logo
     - specialthanks
     - credits
     - pressstart
@@ -458,6 +459,13 @@ widget_player:
       slide: attract
   carousel_item_highlighted{item!="fast_logo"}:
     attract_fast_logo:
+      action: remove
+  carousel_item_highlighted{item=="riot_logo"}:
+    attract_riot_logo:
+      action: play
+      slide: attract
+  carousel_item_highlighted{item!="riot_logo"}:
+    attract_riot_logo:
       action: remove
   carousel_item_highlighted{item=="specialthanks"}:
     attract_specialthanks:
