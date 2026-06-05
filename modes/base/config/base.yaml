@@ -787,19 +787,43 @@ sound_player:
     pops_sound:
       action: play
       bus: effects
-      max_queue_time: 500ms
+      max_queue_time: 250ms
       volume: 0.8
   pop2_hit:
     pops_sound:
       action: play
       bus: effects
-      max_queue_time: 500ms
+      max_queue_time: 250ms
       volume: 0.8
   pop3_hit:
     pops_sound_rewind:
       action: play
       bus: effects
-      max_queue_time: 500ms
+      max_queue_time: 250ms
+      volume: 0.8
+  left_ramp_hit:
+    ramp_and_orbit_scratch:
+      action: play
+      bus: effects
+      max_queue_time: 250ms
+      volume: 0.8
+  right_ramp_hit:
+    ramp_and_orbit_scratch:
+      action: play
+      bus: effects
+      max_queue_time: 250ms
+      volume: 0.8
+  left_orbit_hit:
+    ramp_and_orbit_scratch:
+      action: play
+      bus: effects
+      max_queue_time: 250ms
+      volume: 0.8
+  right_orbit_hit:
+    ramp_and_orbit_scratch:
+      action: play
+      bus: effects
+      max_queue_time: 250ms
       volume: 0.8
   three_bank_standup_hit:
     standup_sound:
@@ -1385,7 +1409,7 @@ sound_player:
     extraball_islit_callout:
       action: load
       bus: voice
-  scoop_hit{current_player.extra_balls_lit_for_points<0}:
+  scoop_hit{current_player.extra_balls_lit_for_points>0}:
     extraball_callout:
       action: load
       bus: voice
@@ -2166,7 +2190,7 @@ variable_player:
     extra_balls_lit_for_points: 1
   turntable_collected{current_player.instruments_collected_total==5 and settings.extra_balls_enabled==1}:
     extra_balls_lit_for_points: 1
-  scoop_hit{current_player.extra_balls_lit_for_points<0}:
+  scoop_hit{current_player.extra_balls_lit_for_points>0}:
     score: 20000000 * current_player.extra_balls_lit_for_points
     extra_balls_lit_for_points:
       int: 0
@@ -2905,6 +2929,10 @@ show_player:
   mode_threemcsand1dj_stopped:
     threemcsand1dj_backboard_show:
       action: stop
+    threemcs_right_orbit_uppost_show:
+      action: stop
+    threemcs_upper_loop_show:
+      action: stop
     GI_backboard_on:
       action: play
       priority: 10000
@@ -3154,6 +3182,10 @@ show_player:
     stache_show:
       action: stop
     threemcsand1dj_backboard_show:
+      action: stop
+    threemcs_right_orbit_uppost_show:
+      action: stop
+    threemcs_upper_loop_show:
       action: stop
     toomanyrappers_backboard_show:
       action: stop
@@ -3974,7 +4006,7 @@ widget_player:
       action: play
       priority: 1200000
       expire: 6s
-  scoop_hit{current_player.extra_balls_lit_for_points>0}:
+  play_extra_ball_points_overlay:
     extra_ball_points_overlay:
       action: play
       slide: score_overlay
@@ -4055,9 +4087,17 @@ timers:
       - event: base_mode_started{settings.tournament_mode_enabled==0}
         action: restart
       - event: base_mode_started{settings.tournament_mode_enabled==1}
-        action: stop
+        action: pause
       - event: playfield_active
-        action: stop
+        action: pause
+      - event: scoop_hit
+        action: pause
+      - event: pop3_hit
+        action: pause
+      - event: s_left_slingshot_active
+        action: pause
+      - event: s_right_slingshot_active
+        action: pause
 
 
 achievements:
@@ -4307,6 +4347,7 @@ event_player:
   inner_loop_hit{current_player.loop_shot_multiplier==1}: hit_likethis
   inner_loop_hit{current_player.loop_shot_multiplier==2}: hit_likethat
   inner_loop_hit{current_player.loop_shot_multiplier==3}: hit_wifflebat
+  scoop_hit{current_player.extra_balls_lit_for_points>0}: play_extra_ball_points_overlay
 
 
 accruals:

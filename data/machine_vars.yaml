@@ -9,7 +9,7 @@ effects_volume:
 extra_balls_enabled:
   expire: null
   expire_secs: null
-  value: 2
+  value: 1
 fast_audio_headphones_volume:
   expire: null
   expire_secs: null
@@ -38,3 +38,7 @@ this_game_match_video:
   expire: null
   expire_secs: null
   value: 1
+voice_volume:
+  expire: null
+  expire_secs: null
+  value: 0.95

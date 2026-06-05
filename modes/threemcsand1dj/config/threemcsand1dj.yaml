@@ -354,6 +354,13 @@ show_player:
     threemcsand1dj_backboard_show:
       action: play
       loops: -1
+    threemcs_upper_loop_show:
+      action: play
+      loops: -1
+    threemcs_right_orbit_uppost_show:
+      action: play
+      loops: -1
+
 
 
 blinkenlight_player:
@@ -368,12 +375,9 @@ blinkenlight_player:
       color: red
     bl_captiveball_smallcircle_led:
       color: red
-    bl_innerloop_arrow_led:
-      color: green
   threemcsand1dj_scratches_counter_complete:
     bl_lowerrightpop_inside_led: stop
     bl_lowerrightpop_inside2_led: stop
     bl_upperleftpop_inside_led: stop
     bl_uppercenterpop_inside_led: stop
     bl_captiveball_smallcircle_led: stop
-    bl_innerloop_arrow_led: stop
