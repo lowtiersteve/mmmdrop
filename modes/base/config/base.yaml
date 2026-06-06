@@ -2210,7 +2210,7 @@ sequences:
     restart_events: mode_base_started{current_player.ball==1 or current_player.chcheckitout_qualified_flag==0}, mode_chcheckitout_stopped
   chcheckitout_multiball_ready:
     events:
-      - three_bank_standup_hit{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_qualified_flag==1}
+      - three_bank_standup_hit{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_qualified_flag==1 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled"}
     restart_events: drops_standup_start_multiball, mode_base_started{current_player.chcheckitout_qualified_flag==1}, mode_makesomenoise_stopped{current_player.chcheckitout_qualified_flag==1}, mode_bodhivow_stopped{current_player.chcheckitout_qualified_flag==1}, mode_sureshot_stopped{current_player.chcheckitout_qualified_flag==1}, multiball_bodymovin_ended{current_player.chcheckitout_qualified_flag==1}
     events_when_complete: chcheckitout_start_multiball
     disable_events: achievement_wizard1_state_enabled, achievement_wizard2_state_enabled, achievement_wizard3_state_enabled, mode_bodymovin_started, mode_girls_started
@@ -2359,7 +2359,7 @@ counters:
     count_events: scoop_hit
     starting_count: 0
     count_interval: 1
-    count_complete_value: 4
+    count_complete_value: 3
     direction: up
     persist_state: False
     disable_on_complete: True
@@ -2372,7 +2372,7 @@ counters:
     count_events: right_ramp_hit
     starting_count: 0
     count_interval: 1
-    count_complete_value: 4
+    count_complete_value: 3
     direction: up
     persist_state: False
     disable_on_complete: True
@@ -2385,7 +2385,7 @@ counters:
     count_events: left_orbit_hit
     starting_count: 0
     count_interval: 1
-    count_complete_value: 4
+    count_complete_value: 3
     direction: up
     persist_state: False
     disable_on_complete: True
@@ -2398,7 +2398,7 @@ counters:
     count_events: left_ramp_hit
     starting_count: 0
     count_interval: 1
-    count_complete_value: 4
+    count_complete_value: 3
     direction: up
     persist_state: False
     disable_on_complete: True
@@ -2411,7 +2411,7 @@ counters:
     count_events: right_orbit_hit
     starting_count: 0
     count_interval: 1
-    count_complete_value: 4
+    count_complete_value: 3
     direction: up
     persist_state: False
     disable_on_complete: True
@@ -3679,7 +3679,7 @@ blinkenlight_player:
     bl_scoopmode_circle2_led: FFFF00
   extra_ball_awarded:
     bl_scoopmode_circle2_led: remove
-  scoop_hit{current_player.extra_balls_lit_for_points>0}:
+  scoop_hit:
     bl_scoopmode_circle2_led: remove
   mystery_ready:
     bl_lowerrightstandup_circle_led: 800080

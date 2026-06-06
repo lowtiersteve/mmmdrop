@@ -472,15 +472,11 @@ random_event_player:
       - sureshot_enable_scoop{device.sequences.sureshot_scoop.enabled==False}
       - sureshot_enable_right_ramp{device.sequences.sureshot_right_ramp.enabled==False}
       - sureshot_enable_right_orbit{device.sequences.sureshot_right_orbit.enabled==False}
-      - sureshot_enable_lower_pop_standup{device.sequences.sureshot_lower_pop_standup.enabled==False}
-      - sureshot_enable_upper_loop{device.sequences.sureshot_upper_loop.enabled==False}
       - sureshot_enable_drops{device.sequences.sureshot_drops.enabled==False}
       - sureshot_enable_captive_ball{device.sequences.sureshot_captive_ball.enabled==False}
       - sureshot_enable_tshirts{device.sequences.sureshot_tshirts.enabled==False}
       - sureshot_enable_upper_pop_standup{device.sequences.sureshot_upper_pop_standup.enabled==False}
       - sureshot_enable_lower_pop{device.sequences.sureshot_lower_pop.enabled==False}
-      - sureshot_enable_upper_left_pop{device.sequences.sureshot_upper_left_pop.enabled==False}
-      - sureshot_enable_upper_right_pop{device.sequences.sureshot_upper_right_pop.enabled==False}
     force_all: False
     force_different: False
   sureshot_phase_complete:

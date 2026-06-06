@@ -42,10 +42,10 @@ switches:
   s_trough6:
     number: 3208-5
     label: "Trough 6"
-  s_trough_jam:
-    number: 3208-6
-    type: NC
-    label: "Trough Jam"
+#  s_trough_jam:
+#    number: 3208-6
+#    type: NC
+#    label: "Trough Jam"
   s_plunger:
     number: 3208-7
     events_when_activated: ball_in
