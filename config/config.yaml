@@ -139,15 +139,13 @@ ball_devices:
     tags: trough, home, drain
     jam_switch: s_trough_jam
     eject_coil_jam_pulse: 15ms
-    confirm_eject_type: switch
-    confirm_eject_switch: s_plunger
-#    eject_targets: s_plunger
-    eject_timeouts: 3s
+    eject_targets: bd_plunger
+    eject_timeouts: 4s
   bd_plunger:
     ball_switches: s_plunger
     mechanical_eject: True
     eject_coil: c_plunger
-    eject_timeouts: 3s
+    eject_timeouts: 5s
   bd_scoop:
     ball_switches: s_scoop
     eject_coil: c_scoop_eject
