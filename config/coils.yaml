@@ -24,7 +24,7 @@ coils:
     label: "Right Lower Flipper Coil Hold Signal"
   c_flipper_right_main:
     number: 3208-5
-    default_pulse_ms: 19
+    default_pulse_ms: 21
     label: "Right Lower Flipper Coil Flip Signal"
   c_right_slingshot:
     number: 3208-6
