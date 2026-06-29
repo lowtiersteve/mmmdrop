@@ -134,12 +134,14 @@ flippers:
 
 ball_devices:
   bd_trough:
-    ball_switches: s_trough1, s_trough2, s_trough3, s_trough4, s_trough5, s_trough6 #, s_trough_jam
+    ball_switches: s_trough1, s_trough2, s_trough3, s_trough4, s_trough5, s_trough6, s_trough_jam
     eject_coil: c_trough_eject
     tags: trough, home, drain
-#    jam_switch: s_trough_jam
-#    eject_coil_jam_pulse: 15ms
-    eject_targets: bd_plunger
+    jam_switch: s_trough_jam
+    eject_coil_jam_pulse: 15ms
+    confirm_eject_type: switch
+    confirm_eject_switch: s_plunger
+#    eject_targets: s_plunger
     eject_timeouts: 3s
   bd_plunger:
     ball_switches: s_plunger
