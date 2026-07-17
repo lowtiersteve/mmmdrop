@@ -1136,7 +1136,7 @@ sound_player:
       action: load
       bus: voice
       priority: 6000
-  drops_standup_start_multiball:
+  drops_standup_start_multiball{current_player.wizard_blocking_flag==0}:
     chcheckitout_standup_callout:
       action: load
       bus: voice
@@ -1640,6 +1640,9 @@ variable_player:
     mode_blocking_flag:
       int: 0
       action: set
+    wizard_blocking_flag:
+      int: 0
+      action: set
     chcheckitout_multiball_blocking_flag:
       int: 0
       action: set
@@ -1653,6 +1656,9 @@ variable_player:
     mode_blocking_flag:
       int: 0
       action: set
+    wizard_blocking_flag:
+      int: 0
+      action: set
     chcheckitout_multiball_blocking_flag:
       int: 0
       action: set
@@ -1664,6 +1670,9 @@ variable_player:
       action: set
   mode_sureshot_stopped:
     mode_blocking_flag:
+      int: 0
+      action: set
+    wizard_blocking_flag:
       int: 0
       action: set
     chcheckitout_multiball_blocking_flag:
@@ -1831,9 +1840,6 @@ variable_player:
     makesomenoise_mode_multiplier:
       action: add
       int: 2
-    bodhisattvavow_mode_multiplier:
-      action: add
-      int: 2
   mode_tripletrouble_success:
     modes_completed: 1
     makesomenoise_mode_multiplier:
@@ -1855,14 +1861,8 @@ variable_player:
     makesomenoise_mode_multiplier:
       action: add
       int: 2
-    bodhisattvavow_mode_multiplier:
-      action: add
-      int: 2
   mode_fingerlickingood_success:
     modes_completed: 1
-    bodhisattvavow_mode_multiplier:
-      action: add
-      int: 2
     sureshot_mode_multiplier:
       action: add
       int: 2
@@ -1887,17 +1887,11 @@ variable_player:
       action: set
   mode_highplainsdrifter_success:
     modes_completed: 1
-    bodhisattvavow_mode_multiplier:
-      action: add
-      int: 2
     sureshot_mode_multiplier:
       action: add
       int: 2
   mode_intergalactic_failed:
     makesomenoise_mode_multiplier:
-      action: add
-      int: 1
-    bodhisattvavow_mode_multiplier:
       action: add
       int: 1
   mode_tripletrouble_failed:
@@ -1918,13 +1912,7 @@ variable_player:
     makesomenoise_mode_multiplier:
       action: add
       int: 1
-    bodhisattvavow_mode_multiplier:
-      action: add
-      int: 1
   mode_fingerlickingood_failed:
-    bodhisattvavow_mode_multiplier:
-      action: add
-      int: 1
     sureshot_mode_multiplier:
       action: add
       int: 1
@@ -1943,9 +1931,6 @@ variable_player:
       action: add
       int: 1
   mode_highplainsdrifter_failed:
-    bodhisattvavow_mode_multiplier:
-      action: add
-      int: 1
     sureshot_mode_multiplier:
       action: add
       int: 1
@@ -2210,7 +2195,7 @@ sequences:
     restart_events: mode_base_started{current_player.ball==1 or current_player.chcheckitout_qualified_flag==0}, mode_chcheckitout_stopped
   chcheckitout_multiball_ready:
     events:
-      - three_bank_standup_hit{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_qualified_flag==1 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled"}
+      - three_bank_standup_hit{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_qualified_flag==1 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled" and current_player.wizard_blocking_flag==0}
     restart_events: drops_standup_start_multiball, mode_base_started{current_player.chcheckitout_qualified_flag==1}, mode_makesomenoise_stopped{current_player.chcheckitout_qualified_flag==1}, mode_bodhivow_stopped{current_player.chcheckitout_qualified_flag==1}, mode_sureshot_stopped{current_player.chcheckitout_qualified_flag==1}, multiball_bodymovin_ended{current_player.chcheckitout_qualified_flag==1}
     events_when_complete: chcheckitout_start_multiball
     disable_events: achievement_wizard1_state_enabled, achievement_wizard2_state_enabled, achievement_wizard3_state_enabled, mode_bodymovin_started, mode_girls_started
@@ -2271,7 +2256,7 @@ sequences:
     restart_events: bodymovin_ball_2_locked, mode_base_started{current_player.bodymovin_lock2_locked_flag==1}, mode_bodymovin_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_chcheckitout_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_makesomenoise_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_bodhivow_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_sureshot_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_girls_stopped{current_player.bodymovin_lock2_locked_flag==1}
   bodymovin_multiball_ready:
     events:
-      - captive_ball_hit{current_player.chcheckitout_multiball_blocking_flag==0}
+      - captive_ball_hit{current_player.chcheckitout_multiball_blocking_flag==0 and current_player.wizard_blocking_flag==0}
     enable_events: bodymovin_lock_3_enabled
     disable_events: achievement_wizard1_state_enabled, achievement_wizard2_state_enabled, achievement_wizard3_state_enabled, mode_chcheckitout_started, mode_girls_started
     events_when_complete: bodymovin_start_multiball
@@ -2309,7 +2294,7 @@ sequences:
 
 counters:
   drop_target_bank_counter:
-    count_events: drop_target_bank_three_bank_down{current_player.bodymovin_multiball_blocking_flag==0}
+    count_events: drop_target_bank_three_bank_down{current_player.bodymovin_multiball_blocking_flag==0 and current_player.wizard_blocking_flag==0}
     events_when_complete: chcheckitout_multiball_qualified
     starting_count: 0
     count_complete_value: 2
@@ -2559,42 +2544,42 @@ show_player:
   mode_intergalactic_success:
     intergalactic_success_show:
       action: play
-      loops: 4
+      loops: 2
       priority: 50000
   mode_paulrevere_success:
     paulrevere_success_show:
       action: play
-      loops: 4
+      loops: 2
       priority: 50000
   mode_tripletrouble_success:
     tripletrouble_success_show:
       action: play
-      loops: 4
+      loops: 2
       priority: 50000
   mode_sabotage_success:
     sabotage_success_show:
       action: play
-      loops: 4
+      loops: 2
       priority: 50000
   mode_fingerlickingood_success:
     fingerlickingood_success_show:
       action: play
-      loops: 4
+      loops: 2
       priority: 50000
   mode_toomanyrappers_success:
     toomanyrappers_success_show:
       action: play
-      loops: 4
+      loops: 2
       priority: 50000
   mode_threemcsand1dj_success:
     threemcsand1dj_success_show:
       action: play
-      loops: 4
+      loops: 2
       priority: 50000
   mode_highplainsdrifter_success:
     highplainsdrifter_success_show:
       action: play
-      loops: 4
+      loops: 2
       priority: 50000
   achievement_wizard1_state_enabled:
     makesomenoise_mode_qualified_light:
@@ -3466,7 +3451,11 @@ show_player:
       action: play
       loops: 1
       priority: 50000
-
+  sg_lanes_lit_complete:
+    lanes_complete_show:
+      action: play
+      loops: 2
+      priority: 50000
 
 blinkenlight_player:
   mode_chcheckitout_stopped:

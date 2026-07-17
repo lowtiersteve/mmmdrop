@@ -1,6 +1,6 @@
 #show_version=6
 
-- duration: 500ms
+- duration: 300ms
   lights:
     l_scoopmode_square_led: Gold
     l_scoop_arrow_led: Gold
@@ -18,7 +18,7 @@
     l_rightorbitcombo_circle_led: Gold
     l_rightorbitrectangle_led: Gold
     l_lowerrightstandup_circle_led: Gold
-- duration: 500ms
+- duration: 300ms
   lights:
     l_scoopmode_square_led: stop
     l_scoop_arrow_led: stop

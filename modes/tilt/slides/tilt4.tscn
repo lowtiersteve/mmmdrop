@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://c8o6irptx5l72"]
 
 [ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_j4avn"]
-[ext_resource type="VideoStream" uid="uid://djoygw58460bv" path="res://modes/tilt/slides/tilt5piecechickendinner.ogv" id="2_j4avn"]
+[ext_resource type="VideoStream" uid="uid://cumgfpx5urbjs" path="res://modes/tilt/slides/MSNtiltvideofixed.ogv" id="2_j4avn"]
 [ext_resource type="Script" uid="uid://bov7mrgxslshq" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_upcti"]
 [ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="4_120og"]
 
@@ -16,7 +16,7 @@ layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
 stream = ExtResource("2_j4avn")
-volume_db = 3.15
+volume_db = 10.0
 autoplay = true
 expand = true
 script = ExtResource("3_upcti")

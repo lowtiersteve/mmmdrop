@@ -1,6 +1,6 @@
 #show_version=6
 
-- duration: 500ms
+- duration: 300ms
   lights:
     l_scoopmode_square_led: green
     l_scoop_arrow_led: green
@@ -18,7 +18,7 @@
     l_rightorbitcombo_circle_led: green
     l_rightorbitrectangle_led: green
     l_lowerrightstandup_circle_led: green
-- duration: 500ms
+- duration: 300ms
   lights:
     l_scoopmode_square_led: stop
     l_scoop_arrow_led: stop

@@ -31,6 +31,7 @@ mode_settings:
   next_item_events: s_right_flipper_active, timer_attract_carousel_timer_complete
   previous_item_events: s_left_flipper_active
 
+
 sequences:
   mca_sequence:
     events:
@@ -256,6 +257,10 @@ sound_player:
   timer_adr_attract_video_timer_started:
     friendsmusic:
       action: play
+      bus: music
+  slide_friends_removed:
+    friendsmusic:
+      action: stop
       bus: music
   timer_adr_attract_video_timer_complete:
     attract_crowd:

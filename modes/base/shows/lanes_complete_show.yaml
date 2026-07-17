@@ -1,0 +1,14 @@
+#show_version=6
+
+- duration: 100ms
+  lights:
+    l_rightinlane_circle_led: yellow
+    l_rightoutlane_circle_led: yellow
+    l_leftinlane_circle_led: yellow
+    l_leftoutlane_circle_led: yellow
+- duration: 100ms
+  lights:
+    l_rightinlane_circle_led: stop
+    l_rightoutlane_circle_led: stop
+    l_leftinlane_circle_led: stop
+    l_leftoutlane_circle_led: stop

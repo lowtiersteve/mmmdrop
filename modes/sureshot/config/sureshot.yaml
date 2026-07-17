@@ -247,6 +247,9 @@ variable_player:
     mode_blocking_flag:
       int: 1
       action: set
+    wizard_blocking_flag:
+      int: 1
+      action: set
     mode_sureshot_score:
       int: 0
       action: set
@@ -462,6 +465,9 @@ event_player:
   sureshot_phase8_complete: add_sureshot_time_10s, sureshot_phase_complete, sureshot_phase_complete1, sureshot_phase_complete2, sureshot_phase_complete3, sureshot_phase_complete4, sureshot_phase_complete5, sureshot_phase_complete6, sureshot_phase_complete7, sureshot_phase_complete8
   sureshot_phase9_complete: sureshot_finish
   sureshot_shot_hit: add_sureshot_time_3s
+  s_right_orbit_active{device.sequences.sureshot_upper_loop.enabled==True and device.sequences.sureshot_right_orbit.enabled==False and device.diverters.up_post.active==False}: uppost_up
+  inner_loop_hit: uppost_down
+  s_inner_orbit_active: uppost_down
 
 
 random_event_player:
@@ -970,8 +976,13 @@ show_player:
       action: play
       loops: -1
       priority: 500000
+    sureshot_right_orbit_uppost_show:
+      action: play
+      loops: -1
   sureshot_upper_loop_hit:
     sureshot_upper_loop_show:
+      action: stop
+    sureshot_right_orbit_uppost_show:
       action: stop
   sureshot_enable_upper_pop_standup:
     sureshot_upper_pop_standup_show:

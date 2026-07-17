@@ -45,6 +45,6 @@ theme_override_font_sizes/font_size = 50
 text = "00"
 horizontal_alignment = 1
 script = ExtResource("4_0axhr")
-variable_name = "girls_bonus_score"
+variable_name = "girls_frenzy_score"
 comma_separate = true
 min_digits = 1

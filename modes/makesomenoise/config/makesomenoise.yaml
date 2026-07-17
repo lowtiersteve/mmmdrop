@@ -131,6 +131,9 @@ variable_player:
     mode_blocking_flag:
       int: 1
       action: set
+    wizard_blocking_flag:
+      int: 1
+      action: set
     mode_makesomenoise_score:
       int: 0
       action: set
