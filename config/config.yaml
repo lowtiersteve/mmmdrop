@@ -180,11 +180,27 @@ ball_saves:
     auto_launch: True
     balls_to_save: -1
     early_ball_save_events: left_outlane_hit, right_outlane_hit
-  instrument_collect:
-    active_time: 10s
+  instrument_boombox_collect:
+    active_time: 6s
     hurry_up_time: 3s
     grace_period: 1s
-    enable_events: microphone_collected, boombox_collected, turntable_collected
+    enable_events: boombox_collected
+    auto_launch: True
+    balls_to_save: -1
+    early_ball_save_events: left_outlane_hit, right_outlane_hit
+  instrument_turntable_collect:
+    active_time: 6s
+    hurry_up_time: 3s
+    grace_period: 1s
+    enable_events: turntable_collected
+    auto_launch: True
+    balls_to_save: -1
+    early_ball_save_events: left_outlane_hit, right_outlane_hit
+  instrument_microphone_collect:
+    active_time: 6s
+    hurry_up_time: 3s
+    grace_period: 1s
+    enable_events: microphone_collected
     auto_launch: True
     balls_to_save: -1
     early_ball_save_events: left_outlane_hit, right_outlane_hit

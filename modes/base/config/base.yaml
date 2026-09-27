@@ -1136,6 +1136,21 @@ sound_player:
       action: load
       bus: voice
       priority: 6000
+  ball_save_instrument_boombox_collect_saving_ball:
+    ball_saved_boombox_callout:
+      action: load
+      bus: voice
+      priority: 6000
+  ball_save_instrument_microphone_collect_saving_ball:
+    ball_saved_microphone_callout:
+      action: load
+      bus: voice
+      priority: 6000
+  ball_save_instrument_turntable_collect_saving_ball:
+    ball_saved_turntable_callout:
+      action: load
+      bus: voice
+      priority: 6000
   drops_standup_start_multiball{current_player.wizard_blocking_flag==0}:
     chcheckitout_standup_callout:
       action: load
@@ -2957,19 +2972,53 @@ show_player:
   ball_save_default_disabled:
     ball_save_show:
       action: stop
-  ball_save_instrument_collect_timer_start:
+  ball_save_instrument_boombox_collect_timer_start:
     ball_save_show:
       action: play
       loops: -1
       priority: 2000
-  ball_save_instrument_collect_hurry_up:
+  ball_save_instrument_boombox_collect_hurry_up:
     ball_save_show:
       action: stop
     ball_save_hurryup_show:
       action: play
       loops: -1
       priority: 2000
-  ball_save_instrument_collect_grace_period:
+  ball_save_instrument_boombox_collect_grace_period:
+    ball_save_hurryup_show:
+      action: stop
+    ball_save_show:
+      action: stop
+  ball_save_instrument_microphone_collect_timer_start:
+    ball_save_show:
+      action: play
+      loops: -1
+      priority: 2000
+  ball_save_instrument_microphone_collect_hurry_up:
+    ball_save_show:
+      action: stop
+    ball_save_hurryup_show:
+      action: play
+      loops: -1
+      priority: 2000
+  ball_save_instrument_microphone_collect_grace_period:
+    ball_save_hurryup_show:
+      action: stop
+    ball_save_show:
+      action: stop
+  ball_save_instrument_turntable_collect_timer_start:
+    ball_save_show:
+      action: play
+      loops: -1
+      priority: 2000
+  ball_save_instrument_turntable_collect_hurry_up:
+    ball_save_show:
+      action: stop
+    ball_save_hurryup_show:
+      action: play
+      loops: -1
+      priority: 2000
+  ball_save_instrument_turntable_collect_grace_period:
     ball_save_hurryup_show:
       action: stop
     ball_save_show:
