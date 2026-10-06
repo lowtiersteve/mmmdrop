@@ -410,8 +410,32 @@ show_player:
       action: stop
     stache_show:
       action: stop
+    mode_shot_hit_lights:
+      action: play
+      priority: 500000
   sabotage_perps_counter_failed:
     sirens_show:
       action: stop
     stache_show:
       action: stop
+  left_ramp_hit:
+    mode_shot_hit_lights:
+      action: play
+      priority: 500000
+      loops: 0
+  left_orbit_hit:
+    mode_shot_hit_lights:
+      action: play
+      priority: 500000
+      loops: 0
+  right_ramp_hit:
+    mode_shot_hit_lights:
+      action: play
+      priority: 500000
+      loops: 0
+  right_orbit_hit:
+    mode_shot_hit_lights:
+      action: play
+      priority: 500000
+      loops: 0
+

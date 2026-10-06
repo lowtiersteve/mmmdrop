@@ -396,6 +396,36 @@ show_player:
     tripletrouble_pops_show:
       action: play
       loops: -1
+  pop_standup_hit:
+    mode_shot_hit_lights:
+      action: play
+      priority: 500000
+      loops: 0
+  upper_pop_standup_hit:
+    mode_shot_hit_lights:
+      action: play
+      priority: 500000
+      loops: 0
+  three_bank_standup_hit:
+    mode_shot_hit_lights:
+      action: play
+      priority: 500000
+      loops: 0
+  s_tshirt_top_standup_active:
+    mode_shot_hit_lights:
+      action: play
+      priority: 500000
+      loops: 0
+  s_tshirt_bottom_standup_active:
+    mode_shot_hit_lights:
+      action: play
+      priority: 500000
+      loops: 0
+  captive_ball_hit:
+    mode_shot_hit_lights:
+      action: play
+      priority: 500000
+      loops: 0
 
 
 blinkenlight_player:

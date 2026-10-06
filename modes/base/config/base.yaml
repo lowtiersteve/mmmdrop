@@ -2697,8 +2697,8 @@ random_event_player:
     force_different: False
   set_player_add_callouts:
     events:
-      player_callouts_1: 50
-      player_callouts_2: 50
+      player_callouts_1: 65
+      player_callouts_2: 35
     force_all: False
     force_different: False
 
@@ -4307,6 +4307,16 @@ timers:
         action: pause
       - event: s_right_slingshot_active
         action: pause
+  drop_target_backup_reset_timer:
+    start_value: 0
+    end_value: 6
+    tick_interval: 1s
+    start_running: False
+    control_events:
+      - event: drop_target_bank_three_bank_down
+        action: restart
+      - event: drop_target_bank_three_bank_up
+        action: stop
 
 
 achievements:
@@ -4550,6 +4560,7 @@ event_player:
   mode_base_started{current_player.number==3 and is_extra_ball==True}: p3_extra_ball_starting
   mode_base_started{current_player.number==4 and is_extra_ball==True}: p4_extra_ball_starting
   timer_ball_waiting_autoplunge_timer_complete: autoplunge_ball_now
+  timer_drop_target_backup_reset_timer_complete: reset_drop_bank
   game_started: set_match_number, set_player_add_callouts
   player_added{num==2 and machine.this_game_player_callouts==1}: player2_start_sound_play
   player_added{num==3 and machine.this_game_player_callouts==1}: player3_start_sound_play

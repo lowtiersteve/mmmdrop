@@ -319,6 +319,19 @@ show_player:
   timer_fingerlickingood_intro_show_complete:
     fingerlickingood_stadium_intro_lights:
       action: stop
+  left_ramp_hit:
+    mode_shot_hit_lights:
+      action: play
+      priority: 500000
+  right_ramp_hit:
+    mode_shot_hit_lights:
+      action: play
+      priority: 500000
+  fingerlickingood_pop_standup_hit:
+    mode_shot_hit_lights:
+      action: play
+      priority: 500000
+      loops: 0
 
 
 

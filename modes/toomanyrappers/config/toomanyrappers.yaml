@@ -480,6 +480,26 @@ show_player:
   timer_toomanyrappers_intro_show_complete:
     toomanyrappers_stadium_intro_lights:
       action: stop
+  enable_spit_rhymes_once:
+    mode_shot_hit_lights:
+      action: play
+      priority: 500000
+      loops: 0
+  enable_spit_rhymes_twice:
+    mode_shot_hit_lights:
+      action: play
+      priority: 500000
+      loops: 0
+  enable_load_rhymes_twice:
+    mode_shot_hit_lights:
+      action: play
+      priority: 500000
+      loops: 0
+  rhymes_spit_twice:
+    mode_shot_hit_lights:
+      action: play
+      priority: 500000
+      loops: 0
 
 
 

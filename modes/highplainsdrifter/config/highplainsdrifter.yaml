@@ -458,6 +458,36 @@ show_player:
   timer_highplainsdrifter_intro_show_complete:
     highplainsdrifter_stadium_intro_lights:
       action: stop
+  highplainsdrifter_left_orbit_1_done:
+    mode_shot_hit_lights:
+      action: play
+      priority: 500000
+      loops: 0
+  highplainsdrifter_left_ramp_1_done:
+    mode_shot_hit_lights:
+      action: play
+      priority: 500000
+      loops: 0
+  highplainsdrifter_inner_loop_1_done:
+    mode_shot_hit_lights:
+      action: play
+      priority: 500000
+      loops: 0
+  highplainsdrifter_right_ramp_1_done:
+    mode_shot_hit_lights:
+      action: play
+      priority: 500000
+      loops: 0
+  highplainsdrifter_right_orbit_1_done:
+    mode_shot_hit_lights:
+      action: play
+      priority: 500000
+      loops: 0
+  logicblock_highplainsdrifter_shots_counter_hit:
+    mode_shot_hit_lights:
+      action: play
+      priority: 500000
+      loops: 0
 
 
 blinkenlight_player:

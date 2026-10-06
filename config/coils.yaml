@@ -49,6 +49,7 @@ coils:
   c_three_bank:
     number: 0804-3
     default_pulse_ms: 23
+    pulse_events: reset_drop_bank
     label: "Drop Target Reset"
   c_left_upper_pop:
     number: 0804b-0

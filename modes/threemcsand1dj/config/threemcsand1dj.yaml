@@ -360,6 +360,11 @@ show_player:
     threemcs_right_orbit_uppost_show:
       action: play
       loops: -1
+  inner_loop_hit:
+    mode_shot_hit_lights:
+      action: play
+      priority: 500000
+      loops: 0
 
 
 
