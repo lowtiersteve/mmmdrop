@@ -86,6 +86,12 @@ variable_player:
     tripletrouble_standups_remaining:
       int: 7
       action: set
+    active_mode:
+      string: "Triple Trouble"
+      action: set
+    active_mode_objective:
+      string: "Hit Standups, Finish at Scoop"
+      action: set
   timer_tripletrouble_time_remaining_tick:
     tripletrouble_time_remaining_variable_times_1:
       int: device.timers.tripletrouble_time_remaining.ticks * 1

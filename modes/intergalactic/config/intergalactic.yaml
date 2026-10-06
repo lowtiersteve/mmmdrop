@@ -106,6 +106,12 @@ variable_player:
     mode_blocking_flag:
       int: 1
       action: set
+    active_mode:
+      string: "Intergalactic"
+      action: set
+    active_mode_objective:
+      string: "Alternating Ramps/Orbits, Finish at Lower Pop"
+      action: set
   right_inlane_hit:
     score: 
       int: 110 * current_player.playfield_x

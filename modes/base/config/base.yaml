@@ -717,6 +717,8 @@ slide_player:
       action: remove
     makesomenoise_spins_counter:
       action: remove
+    makesomenoise_damagewave_counter:
+      action: remove
     makesomenoise_final_shot_lit:
       action: remove
     makesomenoise_superjackpot:
@@ -1766,9 +1768,21 @@ variable_player:
     mode_blocking_flag:
       int: 0
       action: set
+    active_mode:
+      string: "None"
+      action: set
+    active_mode_objective:
+      string: "None"
+      action: set
   mode_paulrevere_stopped:
     mode_blocking_flag:
       int: 0
+      action: set
+    active_mode:
+      string: "None"
+      action: set
+    active_mode_objective:
+      string: "None"
       action: set
   mode_makesomenoise_stopped:
     mode_blocking_flag:
@@ -1786,6 +1800,12 @@ variable_player:
     girls_blocking_flag:
       int: 0
       action: set
+    active_mode:
+      string: "None"
+      action: set
+    active_mode_objective:
+      string: "None"
+      action: set
   mode_bodhivow_stopped:
     mode_blocking_flag:
       int: 0
@@ -1801,6 +1821,12 @@ variable_player:
       action: set
     girls_blocking_flag:
       int: 0
+      action: set
+    active_mode:
+      string: "None"
+      action: set
+    active_mode_objective:
+      string: "None"
       action: set
   mode_sureshot_stopped:
     mode_blocking_flag:
@@ -1818,29 +1844,71 @@ variable_player:
     girls_blocking_flag:
       int: 0
       action: set
+    active_mode:
+      string: "None"
+      action: set
+    active_mode_objective:
+      string: "None"
+      action: set
   mode_tripletrouble_stopped:
     mode_blocking_flag:
       int: 0
+      action: set
+    active_mode:
+      string: "None"
+      action: set
+    active_mode_objective:
+      string: "None"
       action: set
   mode_sabotage_stopped:
     mode_blocking_flag:
       int: 0
       action: set
+    active_mode:
+      string: "None"
+      action: set
+    active_mode_objective:
+      string: "None"
+      action: set
   mode_fingerlickingood_stopped:
     mode_blocking_flag:
       int: 0
+      action: set
+    active_mode:
+      string: "None"
+      action: set
+    active_mode_objective:
+      string: "None"
       action: set
   mode_toomanyrappers_stopped:
     mode_blocking_flag:
       int: 0
       action: set
+    active_mode:
+      string: "None"
+      action: set
+    active_mode_objective:
+      string: "None"
+      action: set
   mode_threemcsand1dj_stopped:
     mode_blocking_flag:
       int: 0
       action: set
+    active_mode:
+      string: "None"
+      action: set
+    active_mode_objective:
+      string: "None"
+      action: set
   mode_highplainsdrifter_stopped:
     mode_blocking_flag:
       int: 0
+      action: set
+    active_mode:
+      string: "None"
+      action: set
+    active_mode_objective:
+      string: "None"
       action: set
   mode_intergalactic_started:
     mode_intergalactic_score:

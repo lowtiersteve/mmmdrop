@@ -89,6 +89,12 @@ variable_player:
     mode_blocking_flag:
       int: 1
       action: set
+    active_mode:
+      string: "Paul Revere"
+      action: set
+    active_mode_objective:
+      string: "Shoot Lit Shots Left to Right, Finish at Scoop"
+      action: set
   timer_paulrevere_time_remaining_tick:
     paulrevere_time_remaining_variable_times_1:
       int: device.timers.paulrevere_time_remaining.ticks * 1

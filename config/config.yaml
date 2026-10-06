@@ -636,6 +636,14 @@ player_vars:
     initial_value: 0
   superstandups_active:
     initial_value: 0
+  makesomenoise_wave:
+    initial_value: 1
+  active_mode:
+    value_type: str
+    initial_value: "None"
+  active_mode_objective:
+    value_type: str
+    initial_value: "None"
 
 light_settings:
   color_correction_profiles:
