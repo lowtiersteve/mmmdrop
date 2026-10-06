@@ -2710,7 +2710,7 @@ random_event_player:
       - play_base_video6
     force_all: False
     force_different: False
-  left_outlane_hit{device.ball_saves.default.state=="disabled" and device.ball_saves.mode_start.state=="disabled" and device.ball_saves.instrument_collect.state=="disabled" and device.ball_saves.girls_frenzy.state=="disabled" and device.ball_saves.sureshot_ball_saver.state=="disabled" and device.ball_saves.end_mode_ball_save.state=="disabled" and device.ball_saves.fake_bodhisattvavow_ball_save.state=="disabled" and current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.girls_blocking_flag==0}:
+  left_outlane_hit{device.ball_saves.default.state=="disabled" and device.ball_saves.mode_start.state=="disabled" and device.ball_saves.instrument_boombox_collect.state=="disabled" and device.ball_saves.instrument_microphone_collect.state=="disabled" and device.ball_saves.instrument_turntable_collect.state=="disabled" and device.ball_saves.girls_frenzy.state=="disabled" and device.ball_saves.sureshot_ball_saver.state=="disabled" and device.ball_saves.end_mode_ball_save.state=="disabled" and device.ball_saves.fake_bodhisattvavow_ball_save.state=="disabled" and current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.girls_blocking_flag==0}:
     events:
       - outlane_drain_1
       - outlane_drain_2
@@ -2718,7 +2718,7 @@ random_event_player:
       - outlane_drain_4
     force_all: False
     force_different: False
-  right_outlane_hit{device.ball_saves.default.state=="disabled" and device.ball_saves.mode_start.state=="disabled" and device.ball_saves.instrument_collect.state=="disabled" and device.ball_saves.girls_frenzy.state=="disabled" and device.ball_saves.sureshot_ball_saver.state=="disabled" and device.ball_saves.end_mode_ball_save.state=="disabled" and device.ball_saves.fake_bodhisattvavow_ball_save.state=="disabled" and current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.girls_blocking_flag==0}:
+  right_outlane_hit{device.ball_saves.default.state=="disabled" and device.ball_saves.mode_start.state=="disabled" and device.ball_saves.instrument_boombox_collect.state=="disabled" and device.ball_saves.instrument_microphone_collect.state=="disabled" and device.ball_saves.instrument_turntable_collect.state=="disabled" and device.ball_saves.girls_frenzy.state=="disabled" and device.ball_saves.sureshot_ball_saver.state=="disabled" and device.ball_saves.end_mode_ball_save.state=="disabled" and device.ball_saves.fake_bodhisattvavow_ball_save.state=="disabled" and current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.girls_blocking_flag==0}:
     events:
       - outlane_drain_1
       - outlane_drain_2
