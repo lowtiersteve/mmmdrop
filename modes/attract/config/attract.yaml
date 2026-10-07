@@ -618,6 +618,14 @@ show_player:
 #      action: play
 #      priority: 1000
 #      loops: -1
+    start_button_show:
+      action: play
+      priority: 1000
+      loops: -1
+    coin_door_show:
+      action: play
+      priority: 1000
+      loops: -1
     bonus_count_show_blue:
       action: stop
     bonus_count_show_green:
@@ -644,6 +652,10 @@ show_player:
     ghostbusters_lights:
       action: stop
     muppets_lights:
+      action: stop
+    start_button_show:
+      action: stop
+    coin_door_show:
       action: stop
   mca_sequence_hit:
     attract_light_show_new:

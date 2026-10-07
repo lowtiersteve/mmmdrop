@@ -740,6 +740,16 @@ lights:
     subtype: led
     type: rgb
     label: "Right Orbit X"
+  l_start_button:
+    number: cab-L2
+    subtype: led
+    type: rgb
+    label: "Start Button"
+  l_coin_door:
+    number: cab-L0
+    subtype: led
+    type: rgb
+    label: "Coin Door Lights"
 
 
 blinkenlights:
