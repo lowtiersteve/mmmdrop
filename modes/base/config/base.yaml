@@ -206,6 +206,8 @@ slide_player:
       action: remove
     jukebox:
       action: remove
+    gamemodeselect:
+      action: remove
   mode_intergalactic_failed:
     intergalactic:
       action: remove
@@ -792,11 +794,13 @@ sound_player:
       action: play
       bus: effects
       max_queue_time: 1s
+      volume: 0.8
   drop_target_bottom_down{current_player.superdrops_active==1}:
     super_drop_sound:
       action: play
       bus: effects
       max_queue_time: 1s
+      volume: 0.8
   spinner_hit{current_player.superspins_active==0}:
     spinner_sound:
       action: play
@@ -806,6 +810,7 @@ sound_player:
     super_spinner_sound:
       action: play
       bus: effects
+      volume: 0.8
   pop1_hit{current_player.superpops_active==0}:
     pops_sound:
       action: play
@@ -829,16 +834,19 @@ sound_player:
       action: play
       bus: effects
       max_queue_time: 250ms
+      volume: 0.8
   pop2_hit{current_player.superpops_active==1}:
     super_pops_sound:
       action: play
       bus: effects
       max_queue_time: 250ms
+      volume: 0.8
   pop3_hit{current_player.superpops_active==1}:
     super_pops_sound:
       action: play
       bus: effects
       max_queue_time: 250ms
+      volume: 0.8
   left_ramp_hit:
     ramp_and_orbit_scratch:
       action: play
@@ -898,26 +906,31 @@ sound_player:
       action: play
       bus: effects
       max_queue_time: 250ms
+      volume: 0.8
   pop_standup_hit{current_player.superstandups_active==1}:
     super_standup_sound:
       action: play
       bus: effects
       max_queue_time: 250ms
+      volume: 0.8
   upper_pop_standup_hit{current_player.superstandups_active==1}:
     super_standup_sound:
       action: play
       bus: effects
       max_queue_time: 250ms
+      volume: 0.8
   tshirt_top_standup_hit{current_player.superstandups_active==1}:
     super_standup_sound:
       action: play
       bus: effects
       max_queue_time: 250ms
+      volume: 0.8
   tshirt_bottom_standup_hit{current_player.superstandups_active==1}:
     super_standup_sound:
       action: play
       bus: effects
       max_queue_time: 250ms
+      volume: 0.8
   captive_ball_hit{current_player.superstandups_active==0}:
     standup_sound:
       action: play
@@ -929,6 +942,7 @@ sound_player:
       action: play
       bus: effects
       max_queue_time: 500ms
+      volume: 0.8
   carousel_item_selected:
     base_game_random_music:
       action: stop
@@ -1533,6 +1547,7 @@ sound_player:
     super_combo_sound:
       action: load
       bus: effects
+      volume: 0.8
 
 
 variable_player:

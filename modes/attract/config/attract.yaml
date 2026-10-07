@@ -30,35 +30,34 @@ mode_settings:
     - highscoremodes7
   next_item_events: s_right_flipper_active, timer_attract_carousel_timer_complete
   previous_item_events: s_left_flipper_active
+  disable_events: mode_gamemodeselectcarousel_started
+  enable_events: restart_attract
+  select_item_events: thiseventwillneverbepostedbutisnecessary
 
 
 sequences:
-  mca_sequence:
+  muppets_sequence:
     events:
-    - s_right_flipper_active
-    - s_right_flipper_active
-    - s_right_flipper_active
-    - s_right_flipper_active
-    - s_right_flipper_active
-    - s_right_flipper_active
-    - s_right_flipper_active
-    - s_right_flipper_active
-    - s_right_flipper_active
-    - s_right_flipper_active
-    - s_right_flipper_active
-    - s_right_flipper_active
-    - s_right_flipper_active
-    - s_left_flipper_active
-    - s_right_flipper_active
-    - s_right_flipper_active
-    - s_right_flipper_active
-    - s_left_flipper_active
-    - s_right_flipper_active
-    - s_left_flipper_active
-    disable_events: game_starting
+      - s_right_flipper_active
+      - s_right_flipper_active
+      - s_right_flipper_active
+      - s_left_flipper_active
+      - s_right_flipper_active
+      - s_left_flipper_active
+      - s_right_flipper_active
+      - s_right_flipper_active
+      - s_right_flipper_active
+      - s_right_flipper_active
+      - s_right_flipper_active
+      - s_right_flipper_active
+      - s_right_flipper_active
+      - s_left_flipper_active
+    disable_events: game_starting, mode_gamemodeselectcarousel_started
+    enable_events: restart_attract
+    start_enabled: True
     reset_on_complete: True
-    restart_events: mode_attract_started, adr_sequence_hit, mca_sequence_hit, flipper_cancel, christmas_sequence_hit, muppets_sequence_hit
-    events_when_complete: mca_sequence_hit
+    restart_events: mode_attract_started, adr_sequence_hit, mca_sequence_hit, flipper_cancel{device.timers.muppets_attract_video_timer.running==True or device.sequences.muppets_sequence.enabled==True}, christmas_sequence_hit, muppets_sequence_hit
+    events_when_complete: muppets_sequence_hit
   adr_sequence:
     events:
     - s_right_flipper_active
@@ -87,9 +86,11 @@ sequences:
     - s_right_flipper_active
     - s_right_flipper_active
     - s_left_flipper_active
-    disable_events: game_starting
+    disable_events: game_starting, mode_gamemodeselectcarousel_started
+    enable_events: restart_attract
+    start_enabled: True
     reset_on_complete: True
-    restart_events: mode_attract_started, adr_sequence_hit, mca_sequence_hit, flipper_cancel, christmas_sequence_hit, muppets_sequence_hit
+    restart_events: mode_attract_started, adr_sequence_hit, mca_sequence_hit, flipper_cancel{device.timers.adr_attract_video_timer.running==True or device.sequences.adr_sequence.enabled==True}, christmas_sequence_hit, muppets_sequence_hit
     events_when_complete: adr_sequence_hit
   christmas_sequence:
     events:
@@ -107,30 +108,40 @@ sequences:
       - s_right_flipper_active
       - s_right_flipper_active
       - s_left_flipper_active
-    disable_events: game_starting
+    disable_events: game_starting, mode_gamemodeselectcarousel_started
+    enable_events: restart_attract
+    start_enabled: True
     reset_on_complete: True
-    restart_events: mode_attract_started, adr_sequence_hit, mca_sequence_hit, flipper_cancel, christmas_sequence_hit, muppets_sequence_hit
+    restart_events: mode_attract_started, adr_sequence_hit, mca_sequence_hit, flipper_cancel{device.timers.christmas_attract_video_timer.running==True or device.sequences.christmas_sequence.enabled==True}, christmas_sequence_hit, muppets_sequence_hit
     events_when_complete: christmas_sequence_hit
-  muppets_sequence:
+  mca_sequence:
     events:
-      - s_right_flipper_active
-      - s_right_flipper_active
-      - s_right_flipper_active
-      - s_left_flipper_active
-      - s_right_flipper_active
-      - s_left_flipper_active
-      - s_right_flipper_active
-      - s_right_flipper_active
-      - s_right_flipper_active
-      - s_right_flipper_active
-      - s_right_flipper_active
-      - s_right_flipper_active
-      - s_right_flipper_active
-      - s_left_flipper_active
-    disable_events: game_starting
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_left_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_right_flipper_active
+    - s_left_flipper_active
+    - s_right_flipper_active
+    - s_left_flipper_active
+    disable_events: game_starting, mode_gamemodeselectcarousel_started
+    enable_events: restart_attract
+    start_enabled: True
     reset_on_complete: True
-    restart_events: mode_attract_started, adr_sequence_hit, mca_sequence_hit, flipper_cancel, christmas_sequence_hit, muppets_sequence_hit
-    events_when_complete: muppets_sequence_hit
+    restart_events: mode_attract_started, adr_sequence_hit, mca_sequence_hit, christmas_sequence_hit, muppets_sequence_hit, flipper_cancel{device.timers.mca_attract_video_timer.running==True or device.sequences.mca_sequence.enabled==True}
+    events_when_complete: mca_sequence_hit
 
 
 slide_player:
@@ -142,6 +153,16 @@ slide_player:
       priority: 1000000
   timer_attract_intro_timer_complete{machine.game_just_played==0}:
     attract_load:
+      action: remove
+    attract:
+      action: play
+      priority: 10000
+  restart_attract:
+    jukebox:
+      action: remove
+    jukebox_bg:
+      action: remove
+    gamemodeselect:
       action: remove
     attract:
       action: play
@@ -296,11 +317,11 @@ timers:
     tick_interval: 1s
     start_running: False
     control_events:
-      - event: carousel_item_highlighted
+      - event: timer_attract_carousel_timer_complete
         action: restart
       - event: flipper_cradle
         action: stop
-      - event: flipper_cradle_release
+      - event: restart_attract
         action: restart
       - event: timer_attract_intro_timer_complete
         action: start
@@ -331,6 +352,8 @@ timers:
         action: restart
       - event: game_started
         action: stop
+      - event: mode_gamemodeselectcarousel_started
+        action: stop
   mca_attract_video_timer:
     end_value: 192
     tick_interval: 1s
@@ -340,7 +363,7 @@ timers:
         action: restart
       - event: game_started
         action: stop
-      - event: flipper_cancel
+      - event: flipper_cancel{device.timers.mca_attract_video_timer.running==True}
         action: jump
         value: 192
       - event: slide_ghostbusters_removed
@@ -357,7 +380,7 @@ timers:
         action: restart
       - event: game_started
         action: stop
-      - event: flipper_cancel
+      - event: flipper_cancel{device.timers.adr_attract_video_timer.running==True}
         action: jump
         value: 49
       - event: slide_friends_removed
@@ -374,7 +397,7 @@ timers:
         action: restart
       - event: game_started
         action: stop
-      - event: flipper_cancel
+      - event: flipper_cancel{device.timers.christmas_attract_video_timer.running==True}
         action: jump
         value: 54
       - event: slide_jinglebells_removed
@@ -391,7 +414,7 @@ timers:
         action: restart
       - event: game_started
         action: stop
-      - event: flipper_cancel
+      - event: flipper_cancel{device.timers.muppets_attract_video_timer.running==True}
         action: jump
         value: 54
       - event: slide_beastiemuppets_removed
@@ -399,9 +422,89 @@ timers:
         value: 0
       - event: slide_beastiemuppets_removed
         action: pause
+#  select_game_type_timer:
+#    start_value: 0
+#    end_value: 3
+#    tick_interval: 1s
+#    start_running: False
+#    restart_on_complete: False
+#    control_events:
+#      - event: flipper_cradle
+#        action: restart
+#      - event: flipper_cradle_release{device.timers.select_game_type_timer.running==True}
+#        action: stop
+#      - event: flipper_cradle_release{device.timers.select_game_type_timer.running==True}
+#        action: jump
+#        value: 0
+
+
+#event_player:
+#  timer_end_jukebox_timer_complete: restart_attract, end_jukebox
+#  timer_select_game_type_timer_complete: show_mode_select_widget
+#  carousel_item_selected{carousel=="gamemodeselectcarousel" and item=="normal"}: restart_attract
+#  carousel_item_selected{carousel=="gamemodeselectcarousel" and item=="jukebox"}: start_jukebox
 
 
 widget_player:
+  show_mode_select_widget:
+    attract_gameover:
+      action: remove
+    attract_last_scores_1p:
+      action: remove
+    attract_last_scores_2p:
+      action: remove
+    attract_last_scores_3p:
+      action: remove
+    attract_last_scores_4p:
+      action: remove
+    attract_mpf_logo:
+      action: remove
+    attract_beastie_pinball_logo:
+      action: remove
+    attract_pinball_show:
+      action: remove
+    attract_fast_logo:
+      action: remove
+    attract_riot_logo:
+      action: remove
+    attract_specialthanks:
+      action: remove
+    attract_credits:
+      action: remove
+    attract_pressstart:
+      action: remove
+    attract_version:
+      action: remove
+    attract_makercredits:
+      action: remove
+    attract_dedicated:
+      action: remove
+    attract_highscore1:
+      action: remove
+    attract_highscore2:
+      action: remove
+    attract_highscore3:
+      action: remove
+    attract_highscore4:
+      action: remove
+    attract_multiballs:
+      action: remove
+    attract_highscoregrandchampion:
+      action: remove
+    attract_highscoremodes1:
+      action: remove
+    attract_highscoremodes2:
+      action: remove
+    attract_highscoremodes3:
+      action: remove
+    attract_highscoremodes4:
+      action: remove
+    attract_highscoremodes5:
+      action: remove
+    attract_highscoremodes6:
+      action: remove
+    attract_highscoremodes7:
+      action: remove
   carousel_item_highlighted{item=="gameover"}:
     attract_gameover:
       action: play

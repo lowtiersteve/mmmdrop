@@ -27,10 +27,10 @@ tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.0333333, 0.0666667, 0.1, 0.133333, 0.166667, 0.2, 0.233333, 0.266667, 0.3, 0.333333, 0.366667, 0.4, 0.433333, 0.466667, 0.5, 0.533333, 0.566667, 0.6, 0.633333, 0.666667, 0.7, 0.733333, 0.766667, 0.8, 0.833333, 0.866667, 0.9, 0.933333, 0.966667, 1),
+"times": PackedFloat32Array(0, 0.033333335, 0.06666667, 0.1, 0.13333334, 0.16666667, 0.2, 0.23333333, 0.26666668, 0.3, 0.33333334, 0.36666667, 0.4, 0.43333334, 0.46666667, 0.5, 0.53333336, 0.56666666, 0.6, 0.6333333, 0.6666667, 0.7, 0.73333335, 0.76666665, 0.8, 0.8333333, 0.8666667, 0.9, 0.93333334, 0.96666664, 1),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(2350, 504), Vector2(2304.2, 504), Vector2(2258.4, 504), Vector2(2212.6, 504), Vector2(2166.8, 504), Vector2(2121, 504), Vector2(2075.2, 504), Vector2(2029.4, 504), Vector2(1983.6, 504), Vector2(1937.8, 504), Vector2(1892, 504), Vector2(1846.2, 504), Vector2(1800.4, 504), Vector2(1754.6, 504), Vector2(1708.8, 504), Vector2(1663, 504), Vector2(1617.2, 504), Vector2(1571.4, 504), Vector2(1525.6, 504), Vector2(1479.8, 504), Vector2(1434, 504), Vector2(1388.2, 504), Vector2(1342.4, 504), Vector2(1296.6, 504), Vector2(1250.8, 504), Vector2(1205, 504), Vector2(1159.2, 504), Vector2(1113.4, 504), Vector2(1067.6, 504), Vector2(1021.8, 504), Vector2(976, 504)]
+"values": [Vector2(1800.4, 375), Vector2(1756.22, 374.16666), Vector2(1712.04, 373.33334), Vector2(1667.86, 372.5), Vector2(1623.68, 371.66666), Vector2(1579.5, 370.83334), Vector2(1535.3201, 370), Vector2(1491.14, 369.16666), Vector2(1446.96, 368.33334), Vector2(1402.78, 367.5), Vector2(1358.6, 366.66666), Vector2(1314.42, 365.83334), Vector2(1270.24, 365), Vector2(1226.06, 364.16666), Vector2(1181.88, 363.33334), Vector2(1137.7, 362.5), Vector2(1093.52, 361.66666), Vector2(1049.3401, 360.83334), Vector2(1005.16, 360), Vector2(960.98004, 359.16666), Vector2(916.8, 358.33334), Vector2(872.62, 357.5), Vector2(828.44, 356.66666), Vector2(784.26, 355.83334), Vector2(740.07996, 355), Vector2(695.9, 354.16666), Vector2(651.72, 353.33334), Vector2(607.54004, 352.5), Vector2(563.36, 351.66666), Vector2(519.18005, 350.83334), Vector2(475, 350)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_gw4em"]
@@ -46,6 +46,19 @@ offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_p24si")
 animation_player = NodePath("riot_logo/AnimationPlayer")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 976.0
+offset_top = 504.0
+offset_right = 2009.9998
+offset_bottom = 856.9996
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ColorRect"]
+libraries = {
+&"": SubResource("AnimationLibrary_gw4em")
+}
+autoplay = "SlideInLeft"
 
 [node name="riot_logo" type="Sprite2D" parent="."]
 top_level = true
