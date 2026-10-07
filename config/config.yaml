@@ -359,6 +359,8 @@ event_player:
     game_just_played:
       action: set_machine
       int: 0
+  mode_attract_started: enable_always_on_drivers
+  game_started: enable_always_on_drivers
 
 
 variable_player:

@@ -69,6 +69,14 @@ coils:
     label: "Up Post"
     default_pulse_power: 0.9
     default_hold_power: 0.8
+  c_start_light:
+    number: cab-L2
+    allow_enable: True
+    enable_events: enable_always_on_drivers
+  c_coin_lights:
+    number: cab-L0
+    allow_enable: True
+    enable_events: enable_always_on_drivers
 
 
 autofire_coils:

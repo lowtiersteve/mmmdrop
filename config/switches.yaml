@@ -188,12 +188,10 @@ switches:
     label: "Service Door Enter"
   s_coin_right:
     number: cab-4
-    tags: service_enter
     debounce: normal
     label: "Coin Door Right"
   s_coin_left:
     number: cab-5
-    tags: service_enter
     debounce: normal
     label: "Coin Door Left"
 
