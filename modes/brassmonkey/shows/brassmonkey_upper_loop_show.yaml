@@ -1,0 +1,19 @@
+#show_version=6
+
+- duration: 100ms
+  lights:
+    l_innerloop_arrow_led: stop
+- duration: 200ms
+  lights:
+    l_inner_loop_x: red
+- duration: 200ms
+  lights:
+    l_innerloopcombo_circle_led: red
+- duration: 200ms
+  lights:
+    l_innerloop_arrow_led: red
+    l_inner_loop_x: stop
+- duration: 300ms
+  lights:
+    l_innerloopcombo_circle_led: stop
+

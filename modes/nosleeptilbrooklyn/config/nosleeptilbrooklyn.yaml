@@ -1,0 +1,475 @@
+#config_version=6
+
+mode:
+  start_events: brassmonkey_finish, start_nosleeptilbrooklyn
+  stop_events: mode_nosleeptilbrooklyn_stop, nosleeptilbrooklyn_finish, ball_will_end
+  priority: 5001
+
+
+counters:
+  nosleeptilbrooklyn_leftorbit_counter:
+    count_events: left_orbit_hit
+    events_when_complete: nosleeptilbrooklyn_leftorbit_counter_complete
+    starting_count: 1
+    count_complete_value: 4
+    count_interval: 1
+    direction: up
+    persist_state: False
+    disable_on_complete: True
+    reset_on_complete: False
+    disable_events: mode_nosleeptilbrooklyn_ended, mode_nosleeptilbrooklyn_stopped
+    restart_events: mode_nosleeptilbrooklyn_started
+  nosleeptilbrooklyn_leftramp_counter:
+    count_events: left_ramp_hit
+    events_when_complete: nosleeptilbrooklyn_leftramp_counter_complete
+    starting_count: 1
+    count_complete_value: 4
+    count_interval: 1
+    direction: up
+    persist_state: False
+    disable_on_complete: True
+    reset_on_complete: False
+    disable_events: mode_nosleeptilbrooklyn_ended, mode_nosleeptilbrooklyn_stopped
+    restart_events: mode_nosleeptilbrooklyn_started
+  nosleeptilbrooklyn_upper_loop_counter:
+    count_events: inner_loop_hit
+    events_when_complete: nosleeptilbrooklyn_upper_loop_counter_complete
+    starting_count: 1
+    count_complete_value: 4
+    count_interval: 1
+    direction: up
+    persist_state: False
+    disable_on_complete: True
+    reset_on_complete: False
+    disable_events: mode_nosleeptilbrooklyn_ended, mode_nosleeptilbrooklyn_stopped
+    restart_events: mode_nosleeptilbrooklyn_started
+  nosleeptilbrooklyn_rightorbit_counter:
+    count_events: right_orbit_hit
+    events_when_complete: nosleeptilbrooklyn_rightorbit_counter_complete
+    starting_count: 1
+    count_complete_value: 4
+    count_interval: 1
+    direction: up
+    persist_state: False
+    disable_on_complete: True
+    reset_on_complete: False
+    disable_events: mode_nosleeptilbrooklyn_ended, mode_nosleeptilbrooklyn_stopped
+    restart_events: mode_nosleeptilbrooklyn_started
+  nosleeptilbrooklyn_rightramp_counter:
+    count_events: right_ramp_hit
+    events_when_complete: nosleeptilbrooklyn_rightramp_counter_complete
+    starting_count: 1
+    count_complete_value: 4
+    count_interval: 1
+    direction: up
+    persist_state: False
+    disable_on_complete: True
+    reset_on_complete: False
+    disable_events: mode_nosleeptilbrooklyn_ended, mode_nosleeptilbrooklyn_stopped
+    restart_events: mode_nosleeptilbrooklyn_started
+
+
+accruals:
+  nosleeptilbrooklyn_collect_shots:
+    events:
+      - nosleeptilbrooklyn_rightramp_counter_complete
+      - nosleeptilbrooklyn_leftramp_counter_complete
+      - nosleeptilbrooklyn_rightorbit_counter_complete
+      - nosleeptilbrooklyn_leftorbit_counter_complete
+      - nosleeptilbrooklyn_upper_loop_counter_complete
+    events_when_complete: nosleeptilbrooklyn_enable_scoop
+    reset_on_complete: False
+    restart_events: slide_nosleeptilbrooklyn_instructions_removed
+    enable_events: slide_nosleeptilbrooklyn_instructions_removed
+    disable_on_complete: True
+
+sequences:
+  nosleeptilbrooklyn_final_shot:
+    events:
+      - scoop_hit
+    events_when_complete: nosleeptilbrooklyn_finish
+    reset_on_complete: False
+    enable_events: nosleeptilbrooklyn_enable_scoop
+    disable_on_complete: True
+
+
+variable_player:
+  mode_nosleeptilbrooklyn_started:
+    mode_blocking_flag:
+      int: 1
+      action: set
+    wizard_blocking_flag:
+      int: 1
+      action: set
+    mode_nosleeptilbrooklyn_score:
+      int: 0
+      action: set
+    modes_played: 1
+    battery_charged_yesorno:
+      int: 0
+      action: set
+    active_mode:
+      string: "No Sleep Til Brooklyn"
+      action: set
+    active_mode_objective:
+      string: "Hit Lit Shots 3 Times To Turn Them Off"
+      action: set
+    final_wizard_level:
+      int: 2
+      action: set
+  counter_nosleeptilbrooklyn_leftorbit_counter_hit:
+    score: 5000000 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier * current_player.nosleeptilbrooklyn_leftorbit_counter
+    mode_nosleeptilbrooklyn_score: 5000000 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier * current_player.nosleeptilbrooklyn_leftorbit_counter
+    nosleeptilbrooklyn_leftorbit_counter:
+      int: device.counters.nosleeptilbrooklyn_leftorbit_counter.value * 1
+      action: set
+  counter_nosleeptilbrooklyn_leftramp_counter_hit:
+    score: 5000000 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier * current_player.nosleeptilbrooklyn_leftramp_counter
+    mode_nosleeptilbrooklyn_score: 5000000 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier * current_player.nosleeptilbrooklyn_leftramp_counter
+    nosleeptilbrooklyn_leftramp_counter:
+      int: device.counters.nosleeptilbrooklyn_leftramp_counter.value * 1
+      action: set
+  counter_nosleeptilbrooklyn_rightorbit_counter_hit:
+    score: 5000000 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier * current_player.nosleeptilbrooklyn_rightorbit_counter
+    mode_nosleeptilbrooklyn_score: 5000000 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier * current_player.nosleeptilbrooklyn_rightorbit_counter
+    nosleeptilbrooklyn_rightorbit_counter:
+      int: device.counters.nosleeptilbrooklyn_rightorbit_counter.value * 1
+      action: set
+  counter_nosleeptilbrooklyn_rightramp_counter_hit:
+    score: 5000000 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier * current_player.nosleeptilbrooklyn_rightramp_counter
+    mode_nosleeptilbrooklyn_score: 5000000 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier * current_player.nosleeptilbrooklyn_rightramp_counter
+    nosleeptilbrooklyn_rightramp_counter:
+      int: device.counters.nosleeptilbrooklyn_rightramp_counter.value * 1
+      action: set
+  counter_nosleeptilbrooklyn_upper_loop_counter_hit:
+    score: 5000000 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier * current_player.nosleeptilbrooklyn_upper_loop_counter
+    mode_nosleeptilbrooklyn_score: 5000000 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier * current_player.nosleeptilbrooklyn_upper_loop_counter
+    nosleeptilbrooklyn_upper_loop_counter:
+      int: device.counters.nosleeptilbrooklyn_upper_loop_counter.value * 1
+      action: set
+  right_inlane_hit:
+    score:
+      int: 110 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+      block: True
+    mode_nosleeptilbrooklyn_score: 110 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+  left_inlane_hit:
+    score:
+      int: 110 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+      block: True
+    mode_nosleeptilbrooklyn_score: 110 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+  s_left_slingshot_active:
+    score:
+      int: 10 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+      block: True
+    mode_nosleeptilbrooklyn_score: 10 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+  s_right_slingshot_active:
+    score:
+      int: 10 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+      block: True
+    mode_nosleeptilbrooklyn_score: 10 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+  pop1_hit:
+    score:
+      int: 1110 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+      block: True
+    mode_nosleeptilbrooklyn_score: 1110 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+  pop2_hit:
+    score:
+      int: 1110 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+      block: True
+    mode_nosleeptilbrooklyn_score: 1110 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+  spinner_hit:
+    score:
+      int: 1010 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+      block: True
+    mode_nosleeptilbrooklyn_score: 1010 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+  bottom_drop_hit:
+    score:
+      int: 2220 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+      block: True
+    mode_nosleeptilbrooklyn_score: 2220 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+  middle_drop_hit:
+    score:
+      int: 2220 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+      block: True
+    mode_nosleeptilbrooklyn_score: 2220 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+  top_drop_hit:
+    score:
+      int: 2220 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+      block: True
+    mode_nosleeptilbrooklyn_score: 2220 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+  three_bank_standup_hit:
+    score:
+      int: 20010 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+      block: True
+    mode_nosleeptilbrooklyn_score: 20010 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+  s_left_orbit_active:
+    score:
+      int: 110 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+      block: True
+    mode_nosleeptilbrooklyn_score: 110 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+  s_right_orbit_active:
+    score:
+      int: 110 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+      block: True
+    mode_nosleeptilbrooklyn_score: 110 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+  s_inner_orbit_active:
+    score:
+      int: 1010 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+      block: True
+    mode_nosleeptilbrooklyn_score: 1010 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+
+
+event_player:
+  s_right_orbit_active{device.counters.nosleeptilbrooklyn_upper_loop_counter.enabled==True and device.counters.nosleeptilbrooklyn_rightorbit_counter.enabled==False and device.diverters.up_post.active==False}: uppost_up
+  s_left_orbit_active{device.diverters.up_post.active==False and device.sequences.nosleeptilbrooklyn_final_shot.enabled==True}: uppost_up
+  inner_loop_hit: uppost_down
+  s_inner_orbit_active: uppost_down
+
+
+slide_player:
+  mode_nosleeptilbrooklyn_started:
+    current_mode_highlighted:
+      action: remove
+    base:
+      action: remove
+    basevideo1:
+      action: remove
+    basevideo2:
+      action: remove
+    basevideo3:
+      action: remove
+    basevideo4:
+      action: remove
+    basevideo5:
+      action: remove
+    basevideo6:
+      action: remove
+    basevideo7:
+      action: remove
+    basevideoricky:
+      action: remove
+    current_wizard_mode_highlighted:
+      action: remove
+    nosleeptilbrooklyn_intro:
+      action: play
+      priority: 500000
+      expire: 26s
+  slide_nosleeptilbrooklyn_intro_removed:
+    nosleeptilbrooklyn:
+      action: play
+      priority: 500000
+    nosleeptilbrooklyn_instructions:
+      action: play
+      priority: 505000
+      expire: 7s
+
+
+sound_player:
+  mode_nosleeptilbrooklyn_started:
+    base_game_random_music:
+      action: stop
+      bus: music
+  slide_nosleeptilbrooklyn_intro_removed:
+    nosleeptilbrooklynmusic:
+      action: replace
+      bus: music
+      loops: 5
+  nosleeptilbrooklyn_rightramp_counter_complete:
+    success_shot:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  nosleeptilbrooklyn_rightorbit_counter_complete:
+    success_shot:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  nosleeptilbrooklyn_leftramp_counter_complete:
+    success_shot:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  nosleeptilbrooklyn_leftorbit_counter_complete:
+    success_shot:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  nosleeptilbrooklyn_upper_loop_counter_complete:
+    success_shot:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  nosleeptilbrooklyn_enable_scoop:
+    hitthescoop:
+      action: play
+      bus: voice
+
+
+show_player:
+  mode_nosleeptilbrooklyn_started:
+    brassmonkey_backboard_red:
+      action: stop
+    brassmonkey_final_shot_show:
+      action: stop
+    nosleeptilbrooklyn_stadium_intro_lights:
+      action: play
+      loops: -1
+    left_orbit_mult_show:
+      action: stop
+    left_ramp_mult_show:
+      action: stop
+    upper_loop_mult_show:
+      action: stop
+    scoop_mult_show:
+      action: stop
+    right_ramp_mult_show:
+      action: stop
+    right_orbit_mult_show:
+      action: stop
+  slide_nosleeptilbrooklyn_instructions_removed:
+    nosleeptilbrooklyn_stadium_intro_lights:
+      action: stop
+    nosleeptilbrooklyn_leftorbit_green:
+      action: play
+      loops: -1
+      priority: 500000
+    nosleeptilbrooklyn_leftramp_green:
+      action: play
+      loops: -1
+      priority: 500000
+    nosleeptilbrooklyn_upperloop_green:
+      action: play
+      loops: -1
+      priority: 500000
+    nosleeptilbrooklyn_rightramp_green:
+      action: play
+      loops: -1
+      priority: 500000
+    nosleeptilbrooklyn_rightorbit_green:
+      action: play
+      loops: -1
+      priority: 500000
+    GI_on:
+      action: play
+      priority: 10000
+    GI_backboard_on:
+      action: play
+      priority: 10000
+    stadium_GI_on:
+      action: play
+      priority: 10000
+  player_nosleeptilbrooklyn_leftorbit_counter{current_player.nosleeptilbrooklyn_leftorbit_counter==2}:
+    nosleeptilbrooklyn_leftorbit_green:
+      action: stop
+    nosleeptilbrooklyn_leftorbit_yellow:
+      action: play
+      loops: -1
+      priority: 500000
+  player_nosleeptilbrooklyn_leftorbit_counter{current_player.nosleeptilbrooklyn_leftorbit_counter==3}:
+    nosleeptilbrooklyn_leftorbit_yellow:
+      action: stop
+    nosleeptilbrooklyn_leftorbit_red:
+      action: play
+      loops: -1
+      priority: 500000
+  player_nosleeptilbrooklyn_leftorbit_counter{current_player.nosleeptilbrooklyn_leftorbit_counter==4}:
+    nosleeptilbrooklyn_leftorbit_red:
+      action: stop
+  player_nosleeptilbrooklyn_leftramp_counter{current_player.nosleeptilbrooklyn_leftramp_counter==2}:
+    nosleeptilbrooklyn_leftramp_green:
+      action: stop
+    nosleeptilbrooklyn_leftramp_yellow:
+      action: play
+      loops: -1
+      priority: 500000
+  player_nosleeptilbrooklyn_leftramp_counter{current_player.nosleeptilbrooklyn_leftramp_counter==3}:
+    nosleeptilbrooklyn_leftramp_yellow:
+      action: stop
+    nosleeptilbrooklyn_leftramp_red:
+      action: play
+      loops: -1
+      priority: 500000
+  player_nosleeptilbrooklyn_leftramp_counter{current_player.nosleeptilbrooklyn_leftramp_counter==4}:
+    nosleeptilbrooklyn_leftramp_red:
+      action: stop
+  player_nosleeptilbrooklyn_upper_loop_counter{current_player.nosleeptilbrooklyn_upper_loop_counter==2}:
+    nosleeptilbrooklyn_upperloop_green:
+      action: stop
+    nosleeptilbrooklyn_upperloop_yellow:
+      action: play
+      loops: -1
+      priority: 500000
+  player_nosleeptilbrooklyn_upper_loop_counter{current_player.nosleeptilbrooklyn_upper_loop_counter==3}:
+    nosleeptilbrooklyn_upperloop_yellow:
+      action: stop
+    nosleeptilbrooklyn_upperloop_red:
+      action: play
+      loops: -1
+      priority: 500000
+  player_nosleeptilbrooklyn_upper_loop_counter{current_player.nosleeptilbrooklyn_upper_loop_counter==4}:
+    nosleeptilbrooklyn_upperloop_red:
+      action: stop
+    nosleeptilbrooklyn_right_orbit_uppost_show:
+      action: stop
+  player_nosleeptilbrooklyn_rightramp_counter{current_player.nosleeptilbrooklyn_rightramp_counter==2}:
+    nosleeptilbrooklyn_rightramp_green:
+      action: stop
+    nosleeptilbrooklyn_rightramp_yellow:
+      action: play
+      loops: -1
+      priority: 500000
+  player_nosleeptilbrooklyn_rightramp_counter{current_player.nosleeptilbrooklyn_rightramp_counter==3}:
+    nosleeptilbrooklyn_rightramp_yellow:
+      action: stop
+    nosleeptilbrooklyn_rightramp_red:
+      action: play
+      loops: -1
+      priority: 500000
+  player_nosleeptilbrooklyn_rightramp_counter{current_player.nosleeptilbrooklyn_rightramp_counter==4}:
+    nosleeptilbrooklyn_rightramp_red:
+      action: stop
+  player_nosleeptilbrooklyn_rightorbit_counter{current_player.nosleeptilbrooklyn_rightorbit_counter==2}:
+    nosleeptilbrooklyn_rightorbit_green:
+      action: stop
+    nosleeptilbrooklyn_rightorbit_yellow:
+      action: play
+      loops: -1
+      priority: 500000
+  player_nosleeptilbrooklyn_rightorbit_counter{current_player.nosleeptilbrooklyn_rightorbit_counter==3}:
+    nosleeptilbrooklyn_rightorbit_yellow:
+      action: stop
+    nosleeptilbrooklyn_rightorbit_red:
+      action: play
+      loops: -1
+      priority: 500000
+  player_nosleeptilbrooklyn_rightorbit_counter{current_player.nosleeptilbrooklyn_rightorbit_counter==4}:
+    nosleeptilbrooklyn_rightorbit_red:
+      action: stop
+  player_nosleeptilbrooklyn_rightorbit_counter{current_player.nosleeptilbrooklyn_rightorbit_counter==4 and device.counters.nosleeptilbrooklyn_upper_loop_counter.enabled==True}:
+    nosleeptilbrooklyn_right_orbit_uppost_show:
+      action: play
+      loops: -1
+  nosleeptilbrooklyn_enable_scoop:
+    nosleeptilbrooklyn_final_shot_show:
+      action: play
+      priority: 50000
+      loops: -1
+
+
+ball_saves:
+  fake_nosleeptilbrooklyn_ball_save:
+    enable_events: nosleeptilbrooklyn_finish
+    auto_launch: false
+    balls_to_save: 1
+    debug: true
+
+
+
+blinkenlight_player:
+  mode_nosleeptilbrooklyn_started:
+    bl_left_orbit_x: remove
+    bl_left_ramp_x: remove
+    bl_inner_loop_x: remove
+    bl_scoop_x: remove
+    bl_right_ramp_x: remove
+    bl_right_orbit_x: remove

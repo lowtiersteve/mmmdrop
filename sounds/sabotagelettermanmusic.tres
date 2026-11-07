@@ -1,0 +1,8 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://bru2a7ch0v4ex"]
+
+[ext_resource type="AudioStream" uid="uid://dtg0hmy0k2on1" path="res://sounds/sabotage_letterman_music.ogg" id="1_u11k5"]
+
+[resource]
+playback_mode = 2
+streams_count = 1
+stream_0/stream = ExtResource("1_u11k5")

@@ -1,7 +1,7 @@
 #config_version=6
 
 mode:
-  start_events: mode_skill_shot_stopped
+  start_events: mode_skill_shot_stopped{device.achievements.finalwizard.status=="disabled"}
   stop_events: ball_will_end
   priority: 750
 

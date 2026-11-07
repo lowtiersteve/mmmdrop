@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3prrjch1vgt5"]
+
+[ext_resource type="Script" uid="uid://d4ky3s4bg1ouq" path="res://addons/mpf-gmc/classes/mpf_widget.gd" id="1_4cu6t"]
+[ext_resource type="Texture2D" uid="uid://cvcdftik45233" path="res://assets/girlswidget.png" id="2_jvge1"]
+
+[node name="girls_widget_9" type="Control"]
+top_level = true
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_4cu6t")
+metadata/_custom_type_script = "uid://d4ky3s4bg1ouq"
+
+[node name="girlswidget" type="Sprite2D" parent="."]
+position = Vector2(1550, 894)
+scale = Vector2(1.5, 1.559)
+texture = ExtResource("2_jvge1")

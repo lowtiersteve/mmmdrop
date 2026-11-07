@@ -1,0 +1,807 @@
+#config_version=6
+
+mode:
+  start_events: start_brassmonkey
+  stop_events: mode_brassmonkey_stop, brassmonkey_finish, ball_will_end
+  priority: 5001
+
+
+#shots:
+#  tshirt_top:
+#    switch: s_tshirt_top_standup
+#  tshirt_bottom:
+#    switch: s_tshirt_bottom_standup
+
+
+sequences:
+  brassmonkey_left_ramp:
+    events:
+      - left_ramp_hit
+    events_when_complete: brassmonkey_shot_hit, brassmonkey_left_ramp_hit
+    reset_on_complete: False
+    enable_events: brassmonkey_enable_left_ramp
+    restart_events: brassmonkey_enable_left_ramp
+    disable_on_complete: True
+    start_enabled: False
+  brassmonkey_left_orbit:
+    events:
+      - left_orbit_hit
+    events_when_complete: brassmonkey_shot_hit, brassmonkey_left_orbit_hit
+    reset_on_complete: False
+    enable_events: brassmonkey_enable_left_orbit
+    restart_events: brassmonkey_enable_left_orbit
+    disable_on_complete: True
+    start_enabled: False
+  brassmonkey_right_ramp:
+    events:
+      - right_ramp_hit
+    events_when_complete: brassmonkey_shot_hit, brassmonkey_right_ramp_hit
+    reset_on_complete: False
+    enable_events: brassmonkey_enable_right_ramp
+    restart_events: brassmonkey_enable_right_ramp
+    disable_on_complete: True
+    start_enabled: False
+  brassmonkey_right_orbit:
+    events:
+      - right_orbit_hit
+    events_when_complete: brassmonkey_shot_hit, brassmonkey_right_orbit_hit
+    reset_on_complete: False
+    enable_events: brassmonkey_enable_right_orbit
+    restart_events: brassmonkey_enable_right_orbit
+    disable_on_complete: True
+    start_enabled: False
+  brassmonkey_upper_loop:
+    events:
+      - inner_loop_hit
+    events_when_complete: brassmonkey_shot_hit, brassmonkey_upper_loop_hit
+    reset_on_complete: False
+    enable_events: brassmonkey_enable_upper_loop
+    restart_events: brassmonkey_enable_upper_loop
+    disable_on_complete: True
+    start_enabled: False
+  brassmonkey_lower_pop_standup:
+    events:
+      - pop_standup_hit
+    events_when_complete: brassmonkey_shot_hit, brassmonkey_lower_pop_standup_hit
+    reset_on_complete: False
+    enable_events: brassmonkey_enable_lower_pop_standup
+    restart_events: brassmonkey_enable_lower_pop_standup
+    disable_on_complete: True
+    start_enabled: False
+  brassmonkey_upper_pop_standup:
+    events:
+      - upper_pop_standup_hit
+    events_when_complete: brassmonkey_shot_hit, brassmonkey_upper_pop_standup_hit
+    reset_on_complete: False
+    enable_events: brassmonkey_enable_upper_pop_standup
+    restart_events: brassmonkey_enable_upper_pop_standup
+    disable_on_complete: True
+    start_enabled: False
+  brassmonkey_scoop:
+    events:
+      - scoop_hit
+    events_when_complete: brassmonkey_shot_hit, brassmonkey_scoop_hit
+    reset_on_complete: False
+    enable_events: brassmonkey_enable_scoop
+    restart_events: brassmonkey_enable_scoop
+    disable_on_complete: True
+    start_enabled: False
+  brassmonkey_captive_ball:
+    events:
+      - captive_ball_hit
+    events_when_complete: brassmonkey_shot_hit, brassmonkey_captive_ball_hit
+    reset_on_complete: False
+    enable_events: brassmonkey_enable_captive_ball
+    restart_events: brassmonkey_enable_captive_ball
+    disable_on_complete: True
+    start_enabled: False
+  brassmonkey_upper_left_pop:
+    events:
+      - pop1_hit
+    events_when_complete: brassmonkey_shot_hit, brassmonkey_upper_left_pop_hit
+    reset_on_complete: False
+    enable_events: brassmonkey_enable_upper_left_pop
+    restart_events: brassmonkey_enable_upper_left_pop
+    disable_on_complete: True
+    start_enabled: False
+  brassmonkey_upper_right_pop:
+    events:
+      - pop2_hit
+    events_when_complete: brassmonkey_shot_hit, brassmonkey_upper_right_pop_hit
+    reset_on_complete: False
+    enable_events: brassmonkey_enable_upper_right_pop
+    restart_events: brassmonkey_enable_upper_right_pop
+    disable_on_complete: True
+    start_enabled: False
+  brassmonkey_lower_pop:
+    events:
+      - pop3_hit
+    events_when_complete: brassmonkey_shot_hit, brassmonkey_lower_pop_hit
+    reset_on_complete: False
+    enable_events: brassmonkey_enable_lower_pop
+    restart_events: brassmonkey_enable_lower_pop
+    disable_on_complete: True
+    start_enabled: False
+  brassmonkey_drops:
+    events:
+      - drop_target_bottom_down, drop_target_middle_down, drop_target_top_down
+    events_when_complete: brassmonkey_shot_hit, brassmonkey_drops_hit
+    reset_on_complete: False
+    enable_events: brassmonkey_enable_drops
+    restart_events: brassmonkey_enable_drops
+    disable_on_complete: True
+    start_enabled: False
+  brassmonkey_tshirts:
+    events:
+      - tshirt_top_hit, tshirt_bottom_hit, sg_tshirts_hit, machine_var_audits_switches_s_tshirt_top_standup, machine_var_audits_switches_s_tshirt_bottom_standup
+    events_when_complete: brassmonkey_shot_hit, brassmonkey_tshirts_hit
+    reset_on_complete: False
+    enable_events: brassmonkey_enable_tshirts
+    restart_events: brassmonkey_enable_tshirts
+    disable_on_complete: True
+    start_enabled: False
+  brassmonkey_phase_1:
+    events:
+      - brassmonkey_left_ramp_hit, brassmonkey_left_orbit_hit, brassmonkey_right_ramp_hit, brassmonkey_right_orbit_hit, brassmonkey_upper_loop_hit, brassmonkey_lower_pop_standup_hit, brassmonkey_upper_pop_standup_hit, brassmonkey_scoop_hit, brassmonkey_captive_ball_hit, brassmonkey_upper_left_pop_hit, brassmonkey_upper_right_pop_hit, brassmonkey_lower_pop_hit, brassmonkey_drops_hit, brassmonkey_tshirts_hit
+    events_when_complete: brassmonkey_phase1_complete
+    reset_on_complete: False
+    enable_events: slide_brassmonkey_instructions_removed
+    disable_on_complete: True
+  brassmonkey_phase_2:
+    events:
+      - brassmonkey_left_ramp_hit, brassmonkey_left_orbit_hit, brassmonkey_right_ramp_hit, brassmonkey_right_orbit_hit, brassmonkey_upper_loop_hit, brassmonkey_lower_pop_standup_hit, brassmonkey_upper_pop_standup_hit, brassmonkey_scoop_hit, brassmonkey_captive_ball_hit, brassmonkey_upper_left_pop_hit, brassmonkey_upper_right_pop_hit, brassmonkey_lower_pop_hit, brassmonkey_drops_hit, brassmonkey_tshirts_hit
+    events_when_complete: brassmonkey_phase2_complete
+    reset_on_complete: False
+    enable_events: brassmonkey_phase1_complete
+    disable_on_complete: True
+  brassmonkey_phase_3:
+    events:
+      - brassmonkey_left_ramp_hit, brassmonkey_left_orbit_hit, brassmonkey_right_ramp_hit, brassmonkey_right_orbit_hit, brassmonkey_upper_loop_hit, brassmonkey_lower_pop_standup_hit, brassmonkey_upper_pop_standup_hit, brassmonkey_scoop_hit, brassmonkey_captive_ball_hit, brassmonkey_upper_left_pop_hit, brassmonkey_upper_right_pop_hit, brassmonkey_lower_pop_hit, brassmonkey_drops_hit, brassmonkey_tshirts_hit
+    events_when_complete: brassmonkey_phase3_complete
+    reset_on_complete: False
+    enable_events: brassmonkey_phase2_complete
+    disable_on_complete: True
+  brassmonkey_phase_4:
+    events:
+      - brassmonkey_left_ramp_hit, brassmonkey_left_orbit_hit, brassmonkey_right_ramp_hit, brassmonkey_right_orbit_hit, brassmonkey_upper_loop_hit, brassmonkey_lower_pop_standup_hit, brassmonkey_upper_pop_standup_hit, brassmonkey_scoop_hit, brassmonkey_captive_ball_hit, brassmonkey_upper_left_pop_hit, brassmonkey_upper_right_pop_hit, brassmonkey_lower_pop_hit, brassmonkey_drops_hit, brassmonkey_tshirts_hit
+    events_when_complete: brassmonkey_phase4_complete
+    reset_on_complete: False
+    enable_events: brassmonkey_phase3_complete
+    disable_on_complete: True
+  brassmonkey_phase_5:
+    events:
+      - brassmonkey_left_ramp_hit, brassmonkey_left_orbit_hit, brassmonkey_right_ramp_hit, brassmonkey_right_orbit_hit, brassmonkey_upper_loop_hit, brassmonkey_lower_pop_standup_hit, brassmonkey_upper_pop_standup_hit, brassmonkey_scoop_hit, brassmonkey_captive_ball_hit, brassmonkey_upper_left_pop_hit, brassmonkey_upper_right_pop_hit, brassmonkey_lower_pop_hit, brassmonkey_drops_hit, brassmonkey_tshirts_hit
+    events_when_complete: brassmonkey_phase5_complete
+    reset_on_complete: False
+    enable_events: brassmonkey_phase4_complete
+    disable_on_complete: True
+  brassmonkey_final_shot:
+    events:
+      - scoop_hit
+    events_when_complete: brassmonkey_finish
+    reset_on_complete: False
+    enable_events: brassmonkey_phase5_complete
+    disable_on_complete: True
+
+
+
+variable_player:
+  mode_brassmonkey_started:
+    mode_blocking_flag:
+      int: 1
+      action: set
+    wizard_blocking_flag:
+      int: 1
+      action: set
+    active_mode:
+      string: "Brass Monkey"
+      action: set
+    active_mode_objective:
+      string: "Shoot Red Blinking Shots and Targets"
+      action: set
+    mode_brassmonkey_score:
+      int: 0
+      action: set
+    modes_played: 1
+    battery_charged_yesorno:
+      int: 0
+      action: set
+    brassmonkey_phase:
+      int: 1
+      action: set
+  timer_brassmonkey_score_countdown_tick:
+    brassmonkey_score_countdown_value:
+      int: device.timers.brassmonkey_score_countdown.ticks * 100000
+      action: set
+  timer_brassmonkey_score_countdown_buffer_started:
+    brassmonkey_score_countdown_value:
+      int: 10000000
+      action: set
+  brassmonkey_shot_hit:
+    score: current_player.brassmonkey_score_countdown_value * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+    mode_brassmonkey_score: current_player.brassmonkey_score_countdown_value * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+  brassmonkey_finish:
+    score: current_player.brassmonkey_score_countdown_value * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+    mode_brassmonkey_score: current_player.brassmonkey_score_countdown_value * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+  brassmonkey_phase1_complete:
+    brassmonkey_phase:
+      int: 1
+      action: add
+  brassmonkey_phase2_complete:
+    brassmonkey_phase:
+      int: 1
+      action: add
+  brassmonkey_phase3_complete:
+    brassmonkey_phase:
+      int: 1
+      action: add
+  brassmonkey_phase4_complete:
+    brassmonkey_phase:
+      int: 1
+      action: add
+  right_inlane_hit:
+    score: 
+      int: 110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+    mode_brassmonkey_score: 110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+  left_inlane_hit:
+    score: 
+      int: 110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+    mode_brassmonkey_score: 110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+  right_outlane_hit:
+    score: 
+      int: 1110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+    mode_brassmonkey_score: 1110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+  left_outlane_hit:
+    score: 
+      int: 1110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+    mode_brassmonkey_score: 1110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+  s_left_slingshot_active:
+    score: 
+      int: 10 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+    mode_brassmonkey_score: 10 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+  s_right_slingshot_active:
+    score: 
+      int: 10 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+    mode_brassmonkey_score: 10 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+  pop1_hit:
+    score: 
+      int: 1110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+    mode_brassmonkey_score: 1110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+  pop2_hit:
+    score: 
+      int: 1110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+    mode_brassmonkey_score: 1110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+  pop3_hit:
+    score: 
+      int: 1110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+    mode_brassmonkey_score: 1110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+  upper_pop_standup_hit:
+    score: 
+      int: 5010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+    mode_brassmonkey_score: 5010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+  pop_standup_hit:
+    score: 
+      int: 5010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+    mode_brassmonkey_score: 5010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+  captive_ball_hit:
+    score: 
+      int: 10010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+    mode_brassmonkey_score: 10010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+  spinner_hit:
+    score: 
+      int: 1010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+    mode_brassmonkey_score: 1010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+  drop_target_bottom_down:
+    score: 
+      int: 2220 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+    mode_brassmonkey_score: 2220 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+  drop_target_middle_down:
+    score: 
+      int: 2220 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+    mode_brassmonkey_score: 2220 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+  drop_target_top_down:
+    score: 
+      int: 2220 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+    mode_brassmonkey_score: 2220 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+  scoop_hit:
+    score: 
+      int: 2310 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+    mode_brassmonkey_score: 2310 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+  tshirt_top_standup_hit:
+    score: 
+      int: 5010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+    mode_brassmonkey_score: 5010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+  tshirt_bottom_standup_hit:
+    score: 
+      int: 5010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+    mode_brassmonkey_score: 5010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+  three_bank_standup_hit:
+    score: 
+      int: 20010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+    mode_brassmonkey_score: 20010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+  s_left_orbit_active:
+    score: 
+      int: 110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+    mode_brassmonkey_score: 110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+  s_right_orbit_active:
+    score: 
+      int: 110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+    mode_brassmonkey_score: 110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+  s_inner_orbit_active:
+    score: 
+      int: 1010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+    mode_brassmonkey_score: 1010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+  left_ramp_hit:
+    score: 
+      int: 3010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+    mode_brassmonkey_score: 3010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+  right_ramp_hit:
+    score: 
+      int: 3010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+    mode_brassmonkey_score: 3010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+  left_orbit_hit:
+    score: 
+      int: 1010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+    mode_brassmonkey_score: 1010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+  right_orbit_hit:
+    score: 
+      int: 1010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+    mode_brassmonkey_score: 1010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+  inner_loop_hit:
+    score: 
+      int: 2010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+    mode_brassmonkey_score: 2010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+
+
+event_player:
+  brassmonkey_phase1_complete: brassmonkey_phase_complete1
+  brassmonkey_phase2_complete: brassmonkey_phase_complete2
+  brassmonkey_phase3_complete: brassmonkey_phase_complete3
+  brassmonkey_phase4_complete: brassmonkey_phase_complete4
+  brassmonkey_phase5_complete: brassmonkey_phase_complete5
+  s_right_orbit_active{device.sequences.brassmonkey_upper_loop.enabled==True and device.sequences.brassmonkey_right_orbit.enabled==False and device.diverters.up_post.active==False}: uppost_up
+  s_right_orbit_active{device.sequences.brassmonkey_captive_ball.enabled==True and device.sequences.brassmonkey_right_orbit.enabled==False and device.diverters.up_post.active==False}: uppost_up
+  s_left_orbit_active{device.diverters.up_post.active==False and device.sequences.brassmonkey_scoop.enabled==True and device.sequences.brassmonkey_left_orbit.enabled==False}: uppost_up
+  s_left_orbit_active{device.diverters.up_post.active==False and device.sequences.brassmonkey_final_shot.enabled==True}: uppost_up
+  inner_loop_hit: uppost_down
+  s_inner_orbit_active: uppost_down
+
+
+random_event_player:
+  slide_brassmonkey_instructions_removed:
+    events:
+      - brassmonkey_enable_left_orbit{device.sequences.brassmonkey_left_orbit.enabled==False}
+      - brassmonkey_enable_left_ramp{device.sequences.brassmonkey_left_ramp.enabled==False}
+      - brassmonkey_enable_scoop{device.sequences.brassmonkey_scoop.enabled==False}
+      - brassmonkey_enable_right_ramp{device.sequences.brassmonkey_right_ramp.enabled==False}
+      - brassmonkey_enable_right_orbit{device.sequences.brassmonkey_right_orbit.enabled==False}
+      - brassmonkey_enable_lower_pop_standup{device.sequences.brassmonkey_lower_pop_standup.enabled==False}
+      - brassmonkey_enable_upper_loop{device.sequences.brassmonkey_upper_loop.enabled==False}
+      - brassmonkey_enable_drops{device.sequences.brassmonkey_drops.enabled==False}
+      - brassmonkey_enable_captive_ball{device.sequences.brassmonkey_captive_ball.enabled==False}
+      - brassmonkey_enable_tshirts{device.sequences.brassmonkey_tshirts.enabled==False}
+      - brassmonkey_enable_upper_pop_standup{device.sequences.brassmonkey_upper_pop_standup.enabled==False}
+      - brassmonkey_enable_lower_pop{device.sequences.brassmonkey_lower_pop.enabled==False}
+      - brassmonkey_enable_upper_left_pop{device.sequences.brassmonkey_upper_left_pop.enabled==False}
+      - brassmonkey_enable_upper_right_pop{device.sequences.brassmonkey_upper_right_pop.enabled==False}
+    force_all: False
+    force_different: False
+  brassmonkey_phase_complete1:
+    events:
+      - brassmonkey_enable_left_orbit{device.sequences.brassmonkey_left_orbit.enabled==False}
+      - brassmonkey_enable_left_ramp{device.sequences.brassmonkey_left_ramp.enabled==False}
+      - brassmonkey_enable_scoop{device.sequences.brassmonkey_scoop.enabled==False}
+      - brassmonkey_enable_right_ramp{device.sequences.brassmonkey_right_ramp.enabled==False}
+      - brassmonkey_enable_right_orbit{device.sequences.brassmonkey_right_orbit.enabled==False}
+      - brassmonkey_enable_lower_pop_standup{device.sequences.brassmonkey_lower_pop_standup.enabled==False}
+      - brassmonkey_enable_upper_loop{device.sequences.brassmonkey_upper_loop.enabled==False}
+      - brassmonkey_enable_drops{device.sequences.brassmonkey_drops.enabled==False}
+      - brassmonkey_enable_captive_ball{device.sequences.brassmonkey_captive_ball.enabled==False}
+      - brassmonkey_enable_tshirts{device.sequences.brassmonkey_tshirts.enabled==False}
+      - brassmonkey_enable_upper_pop_standup{device.sequences.brassmonkey_upper_pop_standup.enabled==False}
+      - brassmonkey_enable_lower_pop{device.sequences.brassmonkey_lower_pop.enabled==False}
+      - brassmonkey_enable_upper_left_pop{device.sequences.brassmonkey_upper_left_pop.enabled==False}
+      - brassmonkey_enable_upper_right_pop{device.sequences.brassmonkey_upper_right_pop.enabled==False}
+    force_all: False
+  brassmonkey_phase_complete2:
+    events:
+      - brassmonkey_enable_left_orbit{device.sequences.brassmonkey_left_orbit.enabled==False}
+      - brassmonkey_enable_left_ramp{device.sequences.brassmonkey_left_ramp.enabled==False}
+      - brassmonkey_enable_scoop{device.sequences.brassmonkey_scoop.enabled==False}
+      - brassmonkey_enable_right_ramp{device.sequences.brassmonkey_right_ramp.enabled==False}
+      - brassmonkey_enable_right_orbit{device.sequences.brassmonkey_right_orbit.enabled==False}
+      - brassmonkey_enable_lower_pop_standup{device.sequences.brassmonkey_lower_pop_standup.enabled==False}
+      - brassmonkey_enable_upper_loop{device.sequences.brassmonkey_upper_loop.enabled==False}
+      - brassmonkey_enable_drops{device.sequences.brassmonkey_drops.enabled==False}
+      - brassmonkey_enable_captive_ball{device.sequences.brassmonkey_captive_ball.enabled==False}
+      - brassmonkey_enable_tshirts{device.sequences.brassmonkey_tshirts.enabled==False}
+      - brassmonkey_enable_upper_pop_standup{device.sequences.brassmonkey_upper_pop_standup.enabled==False}
+      - brassmonkey_enable_lower_pop{device.sequences.brassmonkey_lower_pop.enabled==False}
+      - brassmonkey_enable_upper_left_pop{device.sequences.brassmonkey_upper_left_pop.enabled==False}
+      - brassmonkey_enable_upper_right_pop{device.sequences.brassmonkey_upper_right_pop.enabled==False}
+    force_all: False
+  brassmonkey_phase_complete3:
+    events:
+      - brassmonkey_enable_left_orbit{device.sequences.brassmonkey_left_orbit.enabled==False}
+      - brassmonkey_enable_left_ramp{device.sequences.brassmonkey_left_ramp.enabled==False}
+      - brassmonkey_enable_scoop{device.sequences.brassmonkey_scoop.enabled==False}
+      - brassmonkey_enable_right_ramp{device.sequences.brassmonkey_right_ramp.enabled==False}
+      - brassmonkey_enable_right_orbit{device.sequences.brassmonkey_right_orbit.enabled==False}
+      - brassmonkey_enable_lower_pop_standup{device.sequences.brassmonkey_lower_pop_standup.enabled==False}
+      - brassmonkey_enable_upper_loop{device.sequences.brassmonkey_upper_loop.enabled==False}
+      - brassmonkey_enable_drops{device.sequences.brassmonkey_drops.enabled==False}
+      - brassmonkey_enable_captive_ball{device.sequences.brassmonkey_captive_ball.enabled==False}
+      - brassmonkey_enable_tshirts{device.sequences.brassmonkey_tshirts.enabled==False}
+      - brassmonkey_enable_upper_pop_standup{device.sequences.brassmonkey_upper_pop_standup.enabled==False}
+      - brassmonkey_enable_lower_pop{device.sequences.brassmonkey_lower_pop.enabled==False}
+      - brassmonkey_enable_upper_left_pop{device.sequences.brassmonkey_upper_left_pop.enabled==False}
+      - brassmonkey_enable_upper_right_pop{device.sequences.brassmonkey_upper_right_pop.enabled==False}
+    force_all: False
+  brassmonkey_phase_complete4:
+    events:
+      - brassmonkey_enable_left_orbit{device.sequences.brassmonkey_left_orbit.enabled==False}
+      - brassmonkey_enable_left_ramp{device.sequences.brassmonkey_left_ramp.enabled==False}
+      - brassmonkey_enable_scoop{device.sequences.brassmonkey_scoop.enabled==False}
+      - brassmonkey_enable_right_ramp{device.sequences.brassmonkey_right_ramp.enabled==False}
+      - brassmonkey_enable_right_orbit{device.sequences.brassmonkey_right_orbit.enabled==False}
+      - brassmonkey_enable_lower_pop_standup{device.sequences.brassmonkey_lower_pop_standup.enabled==False}
+      - brassmonkey_enable_upper_loop{device.sequences.brassmonkey_upper_loop.enabled==False}
+      - brassmonkey_enable_drops{device.sequences.brassmonkey_drops.enabled==False}
+      - brassmonkey_enable_captive_ball{device.sequences.brassmonkey_captive_ball.enabled==False}
+      - brassmonkey_enable_tshirts{device.sequences.brassmonkey_tshirts.enabled==False}
+      - brassmonkey_enable_upper_pop_standup{device.sequences.brassmonkey_upper_pop_standup.enabled==False}
+      - brassmonkey_enable_lower_pop{device.sequences.brassmonkey_lower_pop.enabled==False}
+      - brassmonkey_enable_upper_left_pop{device.sequences.brassmonkey_upper_left_pop.enabled==False}
+      - brassmonkey_enable_upper_right_pop{device.sequences.brassmonkey_upper_right_pop.enabled==False}
+    force_all: False
+
+
+slide_player:
+  mode_brassmonkey_started:
+    current_mode_highlighted:
+      action: remove
+    base:
+      action: remove
+    basevideo1:
+      action: remove
+    basevideo2:
+      action: remove
+    basevideo3:
+      action: remove
+    basevideo4:
+      action: remove
+    basevideo5:
+      action: remove
+    basevideo6:
+      action: remove
+    basevideo7:
+      action: remove
+    basevideoricky:
+      action: remove
+    current_wizard_mode_highlighted:
+      action: remove
+    brassmonkey_intro:
+      action: play
+      priority: 500000
+      expire: 20s
+  slide_brassmonkey_intro_removed:
+    brassmonkey:
+      action: play
+      priority: 500000
+    brassmonkey_instructions:
+      action: play
+      priority: 505000
+      expire: 7s
+  slide_brassmonkey_instructions_removed:
+    brassmonkey_countdown:
+      action: play
+      priority: 1000000
+
+
+sound_player:
+  mode_brassmonkey_started:
+    base_game_random_music:
+      action: stop
+      bus: music
+  slide_brassmonkey_intro_removed:
+    brassmonkeymusic:
+      action: replace
+      bus: music
+      loops: 5
+  brassmonkey_shot_hit:
+    sureshot_quick_hit:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  brassmonkey_phase1_complete:
+    sureshot_phase_done:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  brassmonkey_phase2_complete:
+    sureshot_phase_done:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  brassmonkey_phase3_complete:
+    sureshot_phase_done:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  brassmonkey_phase4_complete:
+    sureshot_phase_done:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+  brassmonkey_phase5_complete:
+    sureshot_phase_done:
+      action: play
+      bus: effects
+      max_queue_time: 500ms
+    hitthescoop:
+      action: play
+      bus: voice
+
+
+timers:
+  brassmonkey_score_countdown_buffer:
+    start_value: 0
+    end_value: 2
+    direction: up
+    start_running: False
+    tick_interval: 1s
+    control_events:
+      - action: start
+        event: slide_brassmonkey_instructions_removed
+      - action: pause
+        event: ball_will_end
+      - action: pause
+        event: mode_brassmonkey_will_end
+      - action: pause
+        event: brassmonkey_shot_hit
+      - action: restart
+        event: brassmonkey_phase1_complete
+      - action: restart
+        event: brassmonkey_phase2_complete
+      - action: restart
+        event: brassmonkey_phase3_complete
+      - action: restart
+        event: brassmonkey_phase4_complete
+      - action: restart
+        event: brassmonkey_phase5_complete
+  brassmonkey_score_countdown:
+    start_value: 100
+    end_value: 10
+    direction: down
+    start_running: False
+    tick_interval: 200ms
+    control_events:
+      - action: pause
+        event: ball_will_end
+      - action: pause
+        event: mode_brassmonkey_will_end
+      - action: pause
+        event: brassmonkey_shot_hit
+      - action: reset
+        event: brassmonkey_phase1_complete
+      - action: reset
+        event: brassmonkey_phase2_complete
+      - action: reset
+        event: brassmonkey_phase3_complete
+      - action: reset
+        event: brassmonkey_phase4_complete
+      - action: reset
+        event: brassmonkey_phase5_complete
+      - action: jump
+        value: 100
+        event: brassmonkey_phase1_complete
+      - action: jump
+        value: 100
+        event: brassmonkey_phase2_complete
+      - action: jump
+        value: 100
+        event: brassmonkey_phase3_complete
+      - action: jump
+        value: 100
+        event: brassmonkey_phase4_complete
+      - action: jump
+        value: 100
+        event: brassmonkey_phase5_complete
+      - action: restart
+        event: timer_brassmonkey_score_countdown_buffer_complete
+
+
+show_player:
+  mode_brassmonkey_started:
+    brassmonkey_stadium_intro_lights:
+      action: play
+      loops: -1
+    left_orbit_mult_show:
+      action: stop
+    left_ramp_mult_show:
+      action: stop
+    upper_loop_mult_show:
+      action: stop
+    scoop_mult_show:
+      action: stop
+    right_ramp_mult_show:
+      action: stop
+    right_orbit_mult_show:
+      action: stop
+  ball_hold_wizard_scoop_hold_balls_released:
+    brassmonkey_stadium_intro_lights:
+      action: stop
+    brassmonkey_backboard_red:
+      action: play
+      loops: -1
+  brassmonkey_enable_captive_ball:
+    brassmonkey_captive_ball_show:
+      action: play
+      loops: -1
+      priority: 500000
+    brassmonkey_right_orbit_uppost_show:
+      action: play
+      loops: -1
+  brassmonkey_captive_ball_hit:
+    brassmonkey_captive_ball_show:
+      action: stop
+    brassmonkey_right_orbit_uppost_show:
+      action: stop
+  brassmonkey_enable_drops:
+    brassmonkey_drops_show:
+      action: play
+      loops: -1
+      priority: 500000
+  brassmonkey_drops_hit:
+    brassmonkey_drops_show:
+      action: stop
+  brassmonkey_enable_left_orbit:
+    brassmonkey_left_orbit_show:
+      action: play
+      loops: -1
+      priority: 500000
+  brassmonkey_left_orbit_hit:
+    brassmonkey_left_orbit_show:
+      action: stop
+  brassmonkey_enable_left_ramp:
+    brassmonkey_left_ramp_show:
+      action: play
+      loops: -1
+      priority: 500000
+  brassmonkey_left_ramp_hit:
+    brassmonkey_left_ramp_show:
+      action: stop
+  brassmonkey_enable_lower_pop:
+    brassmonkey_lower_pop_show:
+      action: play
+      loops: -1
+      priority: 500000
+  brassmonkey_lower_pop_hit:
+    brassmonkey_lower_pop_show:
+      action: stop
+  brassmonkey_enable_lower_pop_standup:
+    brassmonkey_lower_pop_standup_show:
+      action: play
+      loops: -1
+      priority: 500000
+  brassmonkey_lower_pop_standup_hit:
+    brassmonkey_lower_pop_standup_show:
+      action: stop
+  brassmonkey_enable_right_orbit:
+    brassmonkey_right_orbit_show:
+      action: play
+      loops: -1
+      priority: 500000
+  brassmonkey_right_orbit_hit:
+    brassmonkey_right_orbit_show:
+      action: stop
+  brassmonkey_enable_right_ramp:
+    brassmonkey_right_ramp_show:
+      action: play
+      loops: -1
+      priority: 500000
+  brassmonkey_right_ramp_hit:
+    brassmonkey_right_ramp_show:
+      action: stop
+  brassmonkey_enable_scoop:
+    brassmonkey_scoop_show:
+      action: play
+      loops: -1
+      priority: 500000
+  brassmonkey_scoop_hit:
+    brassmonkey_scoop_show:
+      action: stop
+  brassmonkey_enable_tshirts:
+    brassmonkey_tshirts_show:
+      action: play
+      loops: -1
+      priority: 500000
+  brassmonkey_tshirts_hit:
+    brassmonkey_tshirts_show:
+      action: stop
+  brassmonkey_enable_upper_left_pop:
+    brassmonkey_upper_left_pop_show:
+      action: play
+      loops: -1
+      priority: 500000
+  brassmonkey_upper_left_pop_hit:
+    brassmonkey_upper_left_pop_show:
+      action: stop
+  brassmonkey_enable_upper_right_pop:
+    brassmonkey_upper_right_pop_show:
+      action: play
+      loops: -1
+      priority: 500000
+  brassmonkey_upper_right_pop_hit:
+    brassmonkey_upper_right_pop_show:
+      action: stop
+  brassmonkey_enable_upper_loop:
+    brassmonkey_upper_loop_show:
+      action: play
+      loops: -1
+      priority: 500000
+    brassmonkey_right_orbit_uppost_show:
+      action: play
+      loops: -1
+  brassmonkey_upper_loop_hit:
+    brassmonkey_upper_loop_show:
+      action: stop
+    brassmonkey_right_orbit_uppost_show:
+      action: stop
+  brassmonkey_enable_upper_pop_standup:
+    brassmonkey_upper_pop_standup_show:
+      action: play
+      loops: -1
+      priority: 500000
+  brassmonkey_upper_pop_standup_hit:
+    brassmonkey_upper_pop_standup_show:
+      action: stop
+  brassmonkey_shot_hit:
+    brassmonkey_shot_hit_red:
+      action: play
+      loops: 0
+      priority: 500000
+  brassmonkey_phase5_complete:
+    brassmonkey_final_shot_show:
+      action: play
+      loops: -1
+      priority: 500000
+
+
+blinkenlight_player:
+  mode_brassmonkey_started:
+    bl_left_orbit_x: remove
+    bl_left_ramp_x: remove
+    bl_inner_loop_x: remove
+    bl_scoop_x: remove
+    bl_right_ramp_x: remove
+    bl_right_orbit_x: remove
+

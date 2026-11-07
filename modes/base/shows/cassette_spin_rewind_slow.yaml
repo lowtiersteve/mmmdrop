@@ -1,6 +1,6 @@
 #show_version=6
 
-- duration: 350ms
+- duration: 175ms
   lights:
     l_cassetteleft_2_led: off
     l_cassetteleft_6_led: off
@@ -10,7 +10,7 @@
     l_cassetteright_6_led: off
     l_cassetteright_1_led: white
     l_cassetteright_5_led: white
-- duration: 350ms
+- duration: 175ms
   lights:
     l_cassetteleft_1_led: off
     l_cassetteleft_5_led: off
@@ -20,7 +20,7 @@
     l_cassetteright_5_led: off
     l_cassetteright_4_led: white
     l_cassetteright_8_led: white
-- duration: 350ms
+- duration: 175ms
   lights:
     l_cassetteleft_4_led: off
     l_cassetteleft_8_led: off
@@ -30,7 +30,7 @@
     l_cassetteright_8_led: off
     l_cassetteright_3_led: white
     l_cassetteright_7_led: white
-- duration: 350ms
+- duration: 175ms
   lights:
     l_cassetteleft_3_led: off
     l_cassetteleft_7_led: off

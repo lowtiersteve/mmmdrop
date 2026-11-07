@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=3 uid="uid://bxn774xm1axvh"]
+
+[ext_resource type="Script" uid="uid://d4ky3s4bg1ouq" path="res://addons/mpf-gmc/classes/mpf_widget.gd" id="1_hyodb"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="2_ceeb3"]
+[ext_resource type="Texture2D" uid="uid://bldchd71jvxls" path="res://assets/LicensedToIll.jpg" id="3_6k2yq"]
+
+[node name="licensedtoillA" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_hyodb")
+
+[node name="licensedtoillA" type="Label" parent="."]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 756.0
+offset_right = 1920.0
+offset_bottom = 826.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_ceeb3")
+theme_override_font_sizes/font_size = 50
+text = "licensed to ill - SiDE A"
+horizontal_alignment = 1
+
+[node name="albumart" type="Sprite2D" parent="licensedtoillA"]
+top_level = true
+position = Vector2(966, 381)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("3_6k2yq")
+
+[node name="track list" type="Label" parent="."]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 837.0
+offset_right = 1903.0
+offset_bottom = 1067.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_ceeb3")
+theme_override_font_sizes/font_size = 40
+text = "
+Rhymin & Stealin', The New Style, She's Crafty, Posse in Effect, 
+Slow Ride, Girls, Fight For Your Right"
+horizontal_alignment = 1
+autowrap_mode = 3

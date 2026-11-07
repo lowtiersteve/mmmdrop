@@ -1,0 +1,27 @@
+#show_version=6
+
+- duration: 100ms
+  lights:
+    l_scoopmode_square_led: red
+    l_scoop_arrow_led: stop
+    l_leftorbit_arrow_led: stop
+- duration: 200ms
+  lights:
+    l_scoopmode_circle2_led: red
+    l_leftorbit_rectangle_led: red
+- duration: 200ms
+  lights:
+    l_scoopcombo_circle_led: red
+    l_leftorbitcombo_circle_led: red
+    l_scoopmode_square_led: stop
+- duration: 200ms
+  lights:
+    l_scoop_arrow_led: red
+    l_leftorbit_arrow_led: red
+    l_scoopmode_circle2_led: stop
+    l_leftorbit_rectangle_led: stop
+- duration: 300ms
+  lights:
+    l_scoopcombo_circle_led: stop
+    l_leftorbitcombo_circle_led: stop
+

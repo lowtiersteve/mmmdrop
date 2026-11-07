@@ -1,0 +1,8 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://dppu4bdgwt5v3"]
+
+[ext_resource type="AudioStream" uid="uid://cekrcy338fgru" path="res://sounds/brassmonkeymvaudio.ogg" id="1_gcbwt"]
+
+[resource]
+playback_mode = 2
+streams_count = 1
+stream_0/stream = ExtResource("1_gcbwt")

@@ -2,7 +2,7 @@
 
 mode:
   start_events: show_mode_select_widget
-  stop_events: start_jukebox, restart_attract, start_finalwizard
+  stop_events: start_jukebox, restart_attract, start_finalwizard_game
   game_mode: False
   code: mpf.modes.carousel.code.carousel.Carousel
   priority: 3000
@@ -13,9 +13,30 @@ mode_settings:
     - jukebox
     - finalwizard
     - normal
-  select_item_events: flipper_cancel
+  select_item_events: timer_mode_selection_timer_complete
   next_item_events: s_right_flipper_active
   previous_item_events: s_left_flipper_active
+
+timers:
+  mode_selection_timer:
+    start_value: 4
+    end_value: 0
+    direction: down
+    tick_interval: 1s
+    start_running: True
+    control_events:
+      - event: carousel_item_highlighted{carousel=="gamemodeselectcarousel"}
+        action: restart
+
+variable_player:
+  mode_gamemodeselectcarousel_started:
+    game_mode_select_variable_times_1:
+      int: 4
+      action: set_machine
+  timer_mode_selection_timer_tick:
+    game_mode_select_variable_times_1:
+      int: device.timers.mode_selection_timer.ticks * 1
+      action: set_machine
 
 
 slide_player:

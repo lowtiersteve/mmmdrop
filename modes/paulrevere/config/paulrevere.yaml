@@ -259,6 +259,10 @@ slide_player:
       action: remove
     basevideo6:
       action: remove
+    basevideo7:
+      action: remove
+    basevideoricky:
+      action: remove
     paulrevere:
       action: play
       priority: 500000

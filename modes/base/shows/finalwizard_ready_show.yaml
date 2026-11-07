@@ -1,0 +1,412 @@
+#show_version=6
+
+- duration: 1000ms
+  lights:
+    l_stadium_left_1:
+      color: white
+      fade: 500ms
+    l_stadium_left_2:
+      color: white
+      fade: 500ms
+    l_stadium_left_3:
+      color: white
+      fade: 500ms
+    l_stadium_left_4:
+      color: white
+      fade: 500ms
+    l_stadium_left_5:
+      color: white
+      fade: 500ms
+    l_stadium_left_6:
+      color: white
+      fade: 500ms
+    l_stadium_left_7:
+      color: white
+      fade: 500ms
+    l_stadium_left_8:
+      color: white
+      fade: 500ms
+    l_stadium_left_9:
+      color: white
+      fade: 500ms
+    l_stadium_left_10:
+      color: white
+      fade: 500ms
+    l_stadium_left_11:
+      color: white
+      fade: 500ms
+    l_stadium_left_12:
+      color: white
+      fade: 500ms
+    l_stadium_left_13:
+      color: white
+      fade: 500ms
+    l_stadium_left_14:
+      color: white
+      fade: 500ms
+    l_stadium_left_15:
+      color: white
+      fade: 500ms
+    l_stadium_left_16:
+      color: white
+      fade: 500ms
+    l_stadium_left_17:
+      color: white
+      fade: 500ms
+    l_stadium_left_18:
+      color: white
+      fade: 500ms
+    l_stadium_left_19:
+      color: white
+      fade: 500ms
+    l_stadium_left_20:
+      color: white
+      fade: 500ms
+    l_stadium_left_21:
+      color: white
+      fade: 500ms
+    l_stadium_left_22:
+      color: white
+      fade: 500ms
+    l_stadium_left_23:
+      color: white
+      fade: 500ms
+    l_stadium_left_24:
+      color: white
+      fade: 500ms
+    l_stadium_left_25:
+      color: white
+      fade: 500ms
+    l_stadium_left_26:
+      color: white
+      fade: 500ms
+    l_stadium_left_27:
+      color: white
+      fade: 500ms
+    l_stadium_right_1:
+      color: white
+      fade: 500ms
+    l_stadium_right_2:
+      color: white
+      fade: 500ms
+    l_stadium_right_3:
+      color: white
+      fade: 500ms
+    l_stadium_right_4:
+      color: white
+      fade: 500ms
+    l_stadium_right_5:
+      color: white
+      fade: 500ms
+    l_stadium_right_6:
+      color: white
+      fade: 500ms
+    l_stadium_right_7:
+      color: white
+      fade: 500ms
+    l_stadium_right_8:
+      color: white
+      fade: 500ms
+    l_stadium_right_9:
+      color: white
+      fade: 500ms
+    l_stadium_right_10:
+      color: white
+      fade: 500ms
+    l_stadium_right_11:
+      color: white
+      fade: 500ms
+    l_stadium_right_12:
+      color: white
+      fade: 500ms
+    l_stadium_right_13:
+      color: white
+      fade: 500ms
+    l_stadium_right_14:
+      color: white
+      fade: 500ms
+    l_stadium_right_15:
+      color: white
+      fade: 500ms
+    l_stadium_right_16:
+      color: white
+      fade: 500ms
+    l_stadium_right_17:
+      color: white
+      fade: 500ms
+    l_stadium_right_18:
+      color: white
+      fade: 500ms
+    l_stadium_right_19:
+      color: white
+      fade: 500ms
+    l_stadium_right_20:
+      color: white
+      fade: 500ms
+    l_stadium_right_21:
+      color: white
+      fade: 500ms
+    l_stadium_right_22:
+      color: white
+      fade: 500ms
+    l_stadium_right_23:
+      color: white
+      fade: 500ms
+    l_stadium_right_24:
+      color: white
+      fade: 500ms
+    l_stadium_right_25:
+      color: white
+      fade: 500ms
+    l_stadium_right_26:
+      color: white
+      fade: 500ms
+    l_stadium_right_27:
+      color: white
+      fade: 500ms
+    l_left_orbit_x:
+      color: white
+      fade: 500ms
+    l_left_ramp_x:
+      color: white
+      fade: 500ms
+    l_inner_loop_x:
+      color: white
+      fade: 500ms
+    l_right_ramp_x:
+      color: white
+      fade: 500ms
+    l_right_orbit_x:
+      color: white
+      fade: 500ms
+    l_backpanel_gi1_led:
+      color: white
+      fade: 500ms
+    l_backpanel_gi2_led:
+      color: white
+      fade: 500ms
+    l_backpanel_gi3_led:
+      color: white
+      fade: 500ms
+    l_backpanel_gi4_led:
+      color: white
+      fade: 500ms
+    l_backpanel_gi5_led:
+      color: white
+      fade: 500ms
+    l_leftsling_uppergi_led:
+      color: white
+      fade: 500ms
+    l_leftsling_lowergi_led:
+      color: white
+      fade: 500ms
+    l_rightsling_uppergi_led:
+      color: white
+      fade: 500ms
+    l_rightsling_lowergi_led:
+      color: white
+      fade: 500ms
+    l_behindupperflipper_uppergi_led:
+      color: white
+      fade: 500ms
+    l_behindupperflipper_lowergi_led:
+      color: white
+      fade: 500ms
+    l_behinddropflasher_leftgi_led:
+      color: white
+      fade: 500ms
+    l_lowerrightstandup_circle_led:
+      color: white
+      fade: 500ms
+    l_dropstandup_flasher_led:
+      color: white
+      fade: 500ms
+    l_wizardindicator_rectangle_led:
+      color: white
+      fade: 500ms
+    l_modeindicator5_rectangle_led:
+      color: white
+      fade: 500ms
+    l_modeindicator6_rectangle_led:
+      color: white
+      fade: 500ms
+    l_modeindicator7_rectangle_led:
+      color: white
+      fade: 500ms
+    l_modeindicator8_rectangle_led:
+      color: white
+      fade: 500ms
+    l_wizardindicator3_rectangle_led:
+      color: white
+      fade: 500ms
+    l_cassetteleft_1_led:
+      color: white
+      fade: 500ms
+    l_cassetteright_1_led:
+      color: white
+      fade: 500ms
+    l_cassetteleft_2_led:
+      color: white
+      fade: 500ms
+    l_cassetteright_2_led:
+      color: white
+      fade: 500ms
+    l_cassetteleft_3_led:
+      color: white
+      fade: 500ms
+    l_cassetteright_3_led:
+      color: white
+      fade: 500ms
+    l_cassetteleft_4_led:
+      color: white
+      fade: 500ms
+    l_cassetteright_4_led:
+      color: white
+      fade: 500ms
+    l_cassetteleft_5_led:
+      color: white
+      fade: 500ms
+    l_cassetteright_5_led:
+      color: white
+      fade: 500ms
+    l_cassetteleft_6_led:
+      color: white
+      fade: 500ms
+    l_cassetteright_6_led:
+      color: white
+      fade: 500ms
+    l_cassetteleft_7_led:
+      color: white
+      fade: 500ms
+    l_cassetteright_7_led:
+      color: white
+      fade: 500ms
+    l_cassetteleft_8_led:
+      color: white
+      fade: 500ms
+    l_cassetteright_8_led:
+      color: white
+      fade: 500ms
+    l_modeindicator1_rectangle_led:
+      color: white
+      fade: 500ms
+    l_modeindicator2_rectangle_led:
+      color: white
+      fade: 500ms
+    l_modeindicator3_rectangle_led:
+      color: white
+      fade: 500ms
+    l_modeindicator4_rectangle_led:
+      color: white
+      fade: 500ms
+    l_leftoutlane_circle_led:
+      color: white
+      fade: 500ms
+    l_leftinlane_circle_led:
+      color: white
+      fade: 500ms
+    l_rightinlane_circle_led:
+      color: white
+      fade: 500ms
+    l_rightoutlane_circle_led:
+      color: white
+      fade: 500ms
+    l_wizardindicator2_rectangle_led:
+      color: white
+      fade: 500ms
+    l_supercircle1_led:
+      color: white
+      fade: 500ms
+    l_supercircle2_led:
+      color: white
+      fade: 500ms
+    l_supercircle3_led:
+      color: white
+      fade: 500ms
+    l_supercircle4_led:
+      color: white
+      fade: 500ms
+    l_supercircle5_led:
+      color: white
+      fade: 500ms
+    l_lowerrightpop_inside_led:
+      color: white
+      fade: 500ms
+    l_lowerrightpop_inside2_led:
+      color: white
+      fade: 500ms
+    l_lowerdrop_circle_led:
+      color: white
+      fade: 500ms
+    l_middledrop_circle_led:
+      color: white
+      fade: 500ms
+    l_dropbank_rectangle_led:
+      color: white
+      fade: 500ms
+    l_upperdrop_circle_led:
+      color: white
+      fade: 500ms
+    l_leftrampcombo_circle_led:
+      color: white
+      fade: 500ms
+    l_leftramprectangle_led:
+      color: white
+      fade: 500ms
+    l_leftramp_arrow_led:
+      color: white
+      fade: 500ms
+    l_leftorbitbattery_rectangle_led:
+      color: white
+      fade: 500ms
+    l_tshirtbottomcircle_led:
+      color: white
+      fade: 500ms
+    l_rightramprectangle_led:
+      color: white
+      fade: 500ms
+    l_leftorbit_rectangle_led:
+      color: white
+      fade: 500ms
+    l_tshirttopcircle_led:
+      color: white
+      fade: 500ms
+    l_leftorbitcombo_circle_led:
+      color: white
+      fade: 500ms
+    l_rightorbitrectangle_led:
+      color: white
+      fade: 500ms
+    l_innerloop_arrow_led:
+      color: white
+      fade: 500ms
+    l_innerloopcombo_circle_led:
+      color: white
+      fade: 500ms
+    l_leftorbit_arrow_led:
+      color: white
+      fade: 500ms
+    l_rightrampcombo_circle_led:
+      color: white
+      fade: 500ms
+    l_rightorbitcombo_circle_led:
+      color: white
+      fade: 500ms
+    l_rightramp_arrow_led:
+      color: white
+      fade: 500ms
+    l_captiveball_smallcircle_led:
+      color: white
+      fade: 500ms
+    l_upperleftpop_inside_led:
+      color: white
+      fade: 500ms
+    l_uppercenterpop_inside_led:
+      color: white
+      fade: 500ms
+    l_upperpop_smallarrow_led:
+      color: white
+      fade: 500ms
+    l_rightorbit_arrow_led:
+      color: white
+      fade: 500ms

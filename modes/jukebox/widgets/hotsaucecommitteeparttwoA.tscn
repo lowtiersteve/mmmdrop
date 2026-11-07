@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=3 uid="uid://cf0bk2s6owibv"]
+
+[ext_resource type="Script" uid="uid://d4ky3s4bg1ouq" path="res://addons/mpf-gmc/classes/mpf_widget.gd" id="1_krgj5"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="2_ocr7n"]
+[ext_resource type="Texture2D" uid="uid://dwb0rdaftnsi7" path="res://assets/beastieboys_hotsauce.jpg" id="3_krgj5"]
+
+[node name="hotsaucecommitteeparttwoA" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_krgj5")
+
+[node name="hotsaucecommitteeparttwoA" type="Label" parent="."]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 769.0
+offset_right = 1926.0
+offset_bottom = 1024.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_ocr7n")
+theme_override_font_sizes/font_size = 50
+text = "hot sauce committee part two - side a"
+horizontal_alignment = 1
+
+[node name="albumart" type="Sprite2D" parent="hotsaucecommitteeparttwoA"]
+top_level = true
+position = Vector2(966, 381)
+texture = ExtResource("3_krgj5")
+
+[node name="track list" type="Label" parent="."]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 837.0
+offset_right = 1903.0
+offset_bottom = 1067.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_ocr7n")
+theme_override_font_sizes/font_size = 40
+text = "
+make some noise, nonstop disco powerpack, ok, too many rappers,
+say it, the bill harper collection,
+don't play no game that i can't win, long burn the fire"
+horizontal_alignment = 1
+autowrap_mode = 3

@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://des1753w457ub"]
+
+[ext_resource type="Script" uid="uid://d4ky3s4bg1ouq" path="res://addons/mpf-gmc/classes/mpf_widget.gd" id="1_q2p70"]
+[ext_resource type="Texture2D" uid="uid://cb6ng2jc8vt2k" path="res://assets/jackpotwidget.png" id="2_q2p70"]
+
+[node name="jackpot_widget" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_q2p70")
+metadata/_custom_type_script = "uid://d4ky3s4bg1ouq"
+
+[node name="jackpot" type="Sprite2D" parent="."]
+position = Vector2(965, 639)
+scale = Vector2(1.5, 1.559)
+texture = ExtResource("2_q2p70")

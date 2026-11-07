@@ -1,0 +1,23 @@
+#show_version=6
+
+- duration: 100ms
+  lights:
+    l_leftorbit_arrow_led: stop
+- duration: 200ms
+  lights:
+    l_left_orbit_x: yellow
+- duration: 200ms
+  lights:
+    l_leftorbit_rectangle_led: yellow
+- duration: 200ms
+  lights:
+    l_leftorbitcombo_circle_led: yellow
+    l_left_orbit_x: stop
+- duration: 200ms
+  lights:
+    l_leftorbit_arrow_led: yellow
+    l_leftorbit_rectangle_led: stop
+- duration: 300ms
+  lights:
+    l_leftorbitcombo_circle_led: stop
+

@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://dsp8k88j3ewyt"]
+
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_lshcv"]
+[ext_resource type="VideoStream" uid="uid://cvbnp04t5g120" path="res://modes/nosleeptilbrooklyn/slides/finalwizard_nosleepintrowsound.ogv" id="2_1cp24"]
+[ext_resource type="Script" uid="uid://bov7mrgxslshq" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_mx6mk"]
+
+[node name="nosleeptilbrooklyn_intro" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_lshcv")
+
+[node name="MPFVideoPlayer" type="VideoStreamPlayer" parent="."]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+stream = ExtResource("2_1cp24")
+autoplay = true
+expand = true
+loop = true
+script = ExtResource("3_mx6mk")
+hide_behavior = 1
+preview_in_editor = true

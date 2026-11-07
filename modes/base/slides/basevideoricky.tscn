@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://35yx07ke451v"]
+
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_mc6on"]
+[ext_resource type="VideoStream" uid="uid://cgx6ddre4jbb0" path="res://modes/base/slides/rickysthememvnoaudio.ogv" id="2_mc6on"]
+[ext_resource type="Script" uid="uid://bov7mrgxslshq" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_sg0nk"]
+
+[node name="Base" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_mc6on")
+
+[node name="MPFVideoPlayer" type="VideoStreamPlayer" parent="."]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+stream = ExtResource("2_mc6on")
+autoplay = true
+expand = true
+loop = true
+script = ExtResource("3_sg0nk")
+hide_behavior = 1
+preview_in_editor = true

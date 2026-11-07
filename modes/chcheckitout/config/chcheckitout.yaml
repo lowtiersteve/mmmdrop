@@ -23,6 +23,10 @@ slide_player:
       action: remove
     basevideo6:
       action: remove
+    basevideo7:
+      action: remove
+    basevideoricky:
+      action: remove
   play_chcheckitout_video1:
     multiball1:
       action: play
@@ -67,7 +71,11 @@ sound_player:
     superjackpot_callout:
       action: load
       bus: voice
-      max_queue_time: 1s
+  three_bank_standup_hit{current_player.chcheckitout_addaballs_earned<=1}:
+    addaball_callout:
+      action: load
+      bus: voice
+
 
 
 variable_player:
@@ -83,6 +91,9 @@ variable_player:
       action: set
     chcheckitout_multiplier:
       int: 1
+      action: set
+    chcheckitout_addaballs_earned:
+      int: 0
       action: set
   chcheckitout_leftorbit_jackpot_hit:
     score: 500000 * current_player.chcheckitout_multiplier * current_player.playfield_x * current_player.left_orbit_multiplier * current_player.loop_shot_multiplier
@@ -176,6 +187,7 @@ variable_player:
   three_bank_standup_hit:
     score: 20010 * current_player.playfield_x * current_player.chcheckitout_multiplier
     multiball_chcheckitout_score: 20010 * current_player.playfield_x * current_player.chcheckitout_multiplier
+    chcheckitout_addaballs_earned: 1
   s_left_orbit_active:
     score: 110 * current_player.playfield_x * current_player.chcheckitout_multiplier * current_player.left_orbit_multiplier
     multiball_chcheckitout_score: 110 * current_player.playfield_x * current_player.chcheckitout_multiplier * current_player.left_orbit_multiplier
@@ -267,8 +279,13 @@ show_player:
   chcheckitout_superjackpot_lit:
     chcheckitout_inner_loop_shot:
       action: play
+    chcheckitout_right_orbit_uppost_show:
+      action: play
+      loops: -1
   chcheckitout_superjackpot_hit:
     chcheckitout_inner_loop_shot:
+      action: stop
+    chcheckitout_right_orbit_uppost_show:
       action: stop
 
 

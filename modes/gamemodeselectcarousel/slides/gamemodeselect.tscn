@@ -1,10 +1,12 @@
-[gd_scene load_steps=7 format=3 uid="uid://ccg1vhpo2h33l"]
+[gd_scene load_steps=9 format=3 uid="uid://ccg1vhpo2h33l"]
 
 [ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_8ndlb"]
 [ext_resource type="VideoStream" uid="uid://bng0dn0hnxnev" path="res://modes/wizardcarousel/slides/HoldItNowHitItMV.ogv" id="2_mj7xt"]
 [ext_resource type="Script" uid="uid://bov7mrgxslshq" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_s35au"]
 [ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="6_jsrle"]
 [ext_resource type="Texture2D" uid="uid://ddcnxju02dwc" path="res://assets/white-arrow-png-41943.png" id="7_11k5h"]
+[ext_resource type="FontFile" uid="uid://cf7wmhhr7tj6q" path="res://fonts/LCD-L__.TTF" id="7_loejq"]
+[ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="8_b2phc"]
 [ext_resource type="Script" uid="uid://dpe3dq8axt3g7" path="res://addons/mpf-gmc/classes/mpf_carousel.gd" id="8_u10fs"]
 
 [node name="gamemodeselectcarousel" type="Control"]
@@ -67,7 +69,7 @@ offset_right = 1927.0
 offset_bottom = 754.0
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("6_jsrle")
-theme_override_font_sizes/font_size = 111
+theme_override_font_sizes/font_size = 80
 text = "jukebox"
 horizontal_alignment = 1
 
@@ -76,10 +78,10 @@ layout_mode = 0
 offset_left = 1.0
 offset_top = 360.0
 offset_right = 1917.0
-offset_bottom = 905.0
+offset_bottom = 1316.0
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("6_jsrle")
-theme_override_font_sizes/font_size = 131
+theme_override_font_sizes/font_size = 80
 text = "fight
 for
 your
@@ -94,6 +96,42 @@ offset_right = 1925.0
 offset_bottom = 861.0
 theme_override_constants/outline_size = 20
 theme_override_fonts/font = ExtResource("6_jsrle")
-theme_override_font_sizes/font_size = 141
-text = "normal"
+theme_override_font_sizes/font_size = 80
+text = "normal
+
+game"
 horizontal_alignment = 1
+
+[node name="TimerRight" type="Label" parent="."]
+top_level = true
+layout_mode = 0
+offset_left = 1464.0
+offset_top = 288.0
+offset_right = 1616.0
+offset_bottom = 412.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("7_loejq")
+theme_override_font_sizes/font_size = 120
+text = "0"
+horizontal_alignment = 1
+script = ExtResource("8_b2phc")
+variable_type = 2
+variable_name = "game_mode_select_variable_times_1"
+min_digits = 1
+
+[node name="TimerLeft" type="Label" parent="."]
+top_level = true
+layout_mode = 0
+offset_left = 311.0
+offset_top = 291.0
+offset_right = 463.0
+offset_bottom = 415.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("7_loejq")
+theme_override_font_sizes/font_size = 120
+text = "0"
+horizontal_alignment = 1
+script = ExtResource("8_b2phc")
+variable_type = 2
+variable_name = "game_mode_select_variable_times_1"
+min_digits = 1

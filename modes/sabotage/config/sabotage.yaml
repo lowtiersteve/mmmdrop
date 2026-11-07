@@ -6,7 +6,6 @@ mode:
   priority: 1001
 
 
-
 shots:
   sabotage_left_orbit:
     hit_events: left_orbit_hit
@@ -255,7 +254,20 @@ slide_player:
       action: remove
     basevideo6:
       action: remove
+    basevideo7:
+      action: remove
+    basevideoricky:
+      action: remove
+  normal_sabotage:
     sabotage:
+      action: play
+      priority: 500000
+    sabotage_instructions:
+      action: play
+      priority: 500001
+      expire: 11s
+  rare_sabotage:
+    sabotage_letterman:
       action: play
       priority: 500000
     sabotage_instructions:
@@ -289,8 +301,12 @@ slide_player:
 
 
 sound_player:
-  mode_sabotage_started:
+  normal_sabotage:
     sabotagemusic:
+      action: play
+      bus: music
+  rare_sabotage:
+    sabotagelettermanmusic:
       action: play
       bus: music
   increase_perps:
@@ -326,6 +342,12 @@ random_event_player:
       - tencallout1
       - tencallout2
       - tencallout3
+    force_all: False
+    force_different: False
+  mode_sabotage_started:
+    events:
+      normal_sabotage: 95
+      rare_sabotage: 5
     force_all: False
     force_different: False
 
@@ -377,6 +399,10 @@ event_player:
   right_orbit_hit: increase_perps
   increase_perps: add_sabotage_time_7s
   pop_standup_hit: add_sabotage_time_15s, decrease_perps
+  upper_pop_standup_hit: decrease_perps
+  sg_tshirts_hit: decrease_perps
+  captive_ball_hit: decrease_perps
+  three_bank_standup_hit: decrease_perps
   player_sabotage_perps_caught{current_player.sabotage_perps_caught==4}: sabotage_perps_counter_complete
 
 

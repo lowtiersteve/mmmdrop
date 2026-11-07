@@ -1,24 +1,29 @@
-[gd_scene load_steps=3 format=3 uid="uid://b4qgvj8kq7hcq"]
+[gd_scene load_steps=4 format=3 uid="uid://b4qgvj8kq7hcq"]
 
-[ext_resource type="Script" uid="uid://d15ukepy10pan" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_0ny71"]
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_0ny71"]
 [ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="2_bmaix"]
+[ext_resource type="Texture2D" uid="uid://dnk6q1gpcbocj" path="res://assets/superjackpotwidget.png" id="3_bmaix"]
 
-[node name="IntergalacticRightShotLit" type="Control"]
+[node name="makesomenoise_superjackpot" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_0ny71")
-metadata/_custom_type_script = "uid://d15ukepy10pan"
 
-[node name="shootrightshot" type="Label" parent="."]
+[node name="20million" type="Label" parent="."]
 layout_mode = 0
-offset_left = 546.0
-offset_top = 428.0
-offset_right = 1416.0
-offset_bottom = 706.0
+offset_left = 536.0
+offset_top = 506.0
+offset_right = 1406.0
+offset_bottom = 784.0
 theme_override_constants/outline_size = 30
 theme_override_fonts/font = ExtResource("2_bmaix")
 theme_override_font_sizes/font_size = 80
-text = "Super Jackpot
+text = "
 
 20,000,000"
 horizontal_alignment = 1
+
+[node name="superjackpot" type="Sprite2D" parent="."]
+position = Vector2(978, 457)
+scale = Vector2(1.5, 1.559)
+texture = ExtResource("3_bmaix")

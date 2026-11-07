@@ -1,8 +1,8 @@
 #config_version=6
 
 mode:
-  start_events: battery_charged, multiball_chcheckitout_ended{current_player.mode_blocking_flag==0 and current_player.battery_charged_yesorno==1}, multiball_bodymovin_ended{current_player.mode_blocking_flag==0 and current_player.battery_charged_yesorno==1}, mode_girls_stopped{current_player.battery_charged_yesorno==1}, ball_started{current_player.ball!=1 and current_player.battery_charged_yesorno==1}, ball_started{current_player.ball==1 and is_extra_ball==True and current_player.battery_charged_yesorno==1}
-  stop_events: carousel_item_selected, chcheckitout_start_multiball, bodymovin_start_multiball, start_girls, ball_will_end
+  start_events: battery_charged{machine.game_mode_select_variable_times_1!=9}, multiball_chcheckitout_ended{current_player.mode_blocking_flag==0 and current_player.battery_charged_yesorno==1}, multiball_bodymovin_ended{current_player.mode_blocking_flag==0 and current_player.battery_charged_yesorno==1}, mode_girls_stopped{current_player.battery_charged_yesorno==1}, ball_started{current_player.ball!=1 and current_player.battery_charged_yesorno==1 and machine.game_mode_select_variable_times_1!=9}, ball_started{current_player.ball==1 and is_extra_ball==True and current_player.battery_charged_yesorno==1 and machine.game_mode_select_variable_times_1!=9}
+  stop_events: carousel_item_selected{carousel=="carousel"}, chcheckitout_start_multiball, bodymovin_start_multiball, start_girls, ball_will_end, start_finalwizard
   code: mpf.modes.carousel.code.carousel.Carousel
   priority: 200
 
@@ -66,6 +66,9 @@ event_player:
 #  select_threemcsand1dj: mode_threemcsand1dj_start
 #  select_highplainsdrifter: mode_highplainsdrifter_start
   achievement_wizard1_state_enabled: stop_carousel
+  achievement_wizard2_state_enabled: stop_carousel
+  achievement_wizard3_state_enabled: stop_carousel
+  achievement_finalwizard_state_enabled: stop_carousel
   random_mode_picker_paulrevere: carousel_advance
   random_mode_picker_tripletrouble: carousel_advance, carousel_advance_2
   random_mode_picker_sabotage: carousel_advance, carousel_advance_2, carousel_advance_3

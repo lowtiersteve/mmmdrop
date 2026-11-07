@@ -10,14 +10,15 @@ script = ExtResource("1_gj6do")
 
 [node name="shootrightshot" type="Label" parent="."]
 layout_mode = 0
-offset_left = 402.0
-offset_top = 452.0
-offset_right = 1586.0
-offset_bottom = 730.0
+offset_left = 1.0
+offset_top = 358.0
+offset_right = 1916.0
+offset_bottom = 695.0
 theme_override_constants/outline_size = 30
 theme_override_fonts/font = ExtResource("2_uxye5")
 theme_override_font_sizes/font_size = 80
-text = "Shoot the Upper Loop
+text = "Shoot the 
+Upper Loop
 for
 super jackpot!"
 horizontal_alignment = 1

@@ -1,5 +1,6 @@
 #config_version=6
 
+
 mode_settings:
   selectable_items:
     - gameover{machine.game_just_played==1}
@@ -28,8 +29,11 @@ mode_settings:
     - highscoremodes5
     - highscoremodes6
     - highscoremodes7
-  next_item_events: s_right_flipper_active, timer_attract_carousel_timer_complete
-  previous_item_events: s_left_flipper_active
+    - highscoresupermodes1
+    - highscoresupermodes2
+    - highscoresupermodes3
+  next_item_events: s_right_flipper_active{machine.jukebox_blocking_flag==0}, timer_attract_carousel_timer_complete
+  previous_item_events: s_left_flipper_active{machine.jukebox_blocking_flag==0}
   disable_events: mode_gamemodeselectcarousel_started
   enable_events: restart_attract
   select_item_events: thiseventwillneverbepostedbutisnecessary
@@ -422,27 +426,40 @@ timers:
         value: 0
       - event: slide_beastiemuppets_removed
         action: pause
-#  select_game_type_timer:
-#    start_value: 0
-#    end_value: 3
-#    tick_interval: 1s
-#    start_running: False
-#    restart_on_complete: False
-#    control_events:
-#      - event: flipper_cradle
-#        action: restart
-#      - event: flipper_cradle_release{device.timers.select_game_type_timer.running==True}
-#        action: stop
-#      - event: flipper_cradle_release{device.timers.select_game_type_timer.running==True}
-#        action: jump
-#        value: 0
+  select_game_type_timer:
+    start_value: 0
+    end_value: 3
+    tick_interval: 1s
+    start_running: False
+    restart_on_complete: False
+    control_events:
+      - event: flipper_cradle
+        action: restart
+      - event: flipper_cradle_release{device.timers.select_game_type_timer.running==True}
+        action: stop
+      - event: flipper_cradle_release{device.timers.select_game_type_timer.running==True}
+        action: jump
+        value: 0
 
 
-#event_player:
-#  timer_end_jukebox_timer_complete: restart_attract, end_jukebox
-#  timer_select_game_type_timer_complete: show_mode_select_widget
-#  carousel_item_selected{carousel=="gamemodeselectcarousel" and item=="normal"}: restart_attract
-#  carousel_item_selected{carousel=="gamemodeselectcarousel" and item=="jukebox"}: start_jukebox
+variable_player:
+  mode_attract_started:
+    game_mode_select_variable_times_1:
+      int: 4
+      action: set_machine
+  start_finalwizard_game:
+    game_mode_select_variable_times_1:
+      int: 9
+      action: set_machine
+
+
+event_player:
+  timer_end_jukebox_timer_complete: restart_attract, end_jukebox
+  timer_select_game_type_timer_complete: show_mode_select_widget
+  carousel_item_selected{carousel=="gamemodeselectcarousel" and item=="normal"}: restart_attract
+  carousel_item_selected{carousel=="gamemodeselectcarousel" and item=="jukebox"}: start_jukebox
+  carousel_item_selected{carousel=="gamemodeselectcarousel" and item=="finalwizard"}: start_finalwizard_game
+  start_finalwizard_game: start
 
 
 widget_player:
@@ -504,6 +521,12 @@ widget_player:
     attract_highscoremodes6:
       action: remove
     attract_highscoremodes7:
+      action: remove
+    attract_highscoresupermodes1:
+      action: remove
+    attract_highscoresupermodes2:
+      action: remove
+    attract_highscoresupermodes3:
       action: remove
   carousel_item_highlighted{item=="gameover"}:
     attract_gameover:
@@ -708,6 +731,27 @@ widget_player:
   carousel_item_highlighted{item!="highscoremodes7"}:
     attract_highscoremodes7:
       action: remove
+  carousel_item_highlighted{item=="highscoresupermodes1"}:
+    attract_highscoresupermodes1:
+      action: play
+      slide: attract
+  carousel_item_highlighted{item!="highscoresupermodes1"}:
+    attract_highscoresupermodes1:
+      action: remove
+  carousel_item_highlighted{item=="highscoresupermodes2"}:
+    attract_highscoresupermodes2:
+      action: play
+      slide: attract
+  carousel_item_highlighted{item!="highscoresupermodes2"}:
+    attract_highscoresupermodes2:
+      action: remove
+  carousel_item_highlighted{item=="highscoresupermodes3"}:
+    attract_highscoresupermodes3:
+      action: play
+      slide: attract
+  carousel_item_highlighted{item!="highscoresupermodes3"}:
+    attract_highscoresupermodes3:
+      action: remove
 
 
 
@@ -840,4 +884,3 @@ show_player:
 #      action: play
 #      priority: 1000
 #      loops: -1
-

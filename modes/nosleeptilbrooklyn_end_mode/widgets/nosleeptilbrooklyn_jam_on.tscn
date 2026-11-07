@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1x0vsi0btdw7"]
+
+[ext_resource type="Script" uid="uid://d4ky3s4bg1ouq" path="res://addons/mpf-gmc/classes/mpf_widget.gd" id="1_khmdl"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="2_q2g7w"]
+
+[node name="nosleeptilbrooklyn_jam_on" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_khmdl")
+metadata/_custom_type_script = "uid://d4ky3s4bg1ouq"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 292.0
+offset_top = 393.0
+offset_right = 1612.0
+offset_bottom = 684.0
+theme_override_constants/outline_size = 35
+theme_override_constants/shadow_outline_size = 6
+theme_override_fonts/font = ExtResource("2_q2g7w")
+theme_override_font_sizes/font_size = 100
+text = "you made it
+to the party!"
+horizontal_alignment = 1

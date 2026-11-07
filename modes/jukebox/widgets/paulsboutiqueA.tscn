@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=3 uid="uid://b5d7xbrr4g2pw"]
+
+[ext_resource type="Script" uid="uid://d4ky3s4bg1ouq" path="res://addons/mpf-gmc/classes/mpf_widget.gd" id="1_by7c7"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="2_wojwl"]
+[ext_resource type="Texture2D" uid="uid://mpkeol15koho" path="res://assets/PaulsBoutique.jpg" id="3_by7c7"]
+
+[node name="paulsboutiqueA" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_by7c7")
+
+[node name="paulsboutiqueA" type="Label" parent="."]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 769.0
+offset_right = 1926.0
+offset_bottom = 840.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_wojwl")
+theme_override_font_sizes/font_size = 50
+text = "paul's boutique - Side A"
+horizontal_alignment = 1
+
+[node name="albumart" type="Sprite2D" parent="paulsboutiqueA"]
+top_level = true
+position = Vector2(966, 381)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("3_by7c7")
+
+[node name="track list" type="Label" parent="."]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 837.0
+offset_right = 1903.0
+offset_bottom = 1067.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_wojwl")
+theme_override_font_sizes/font_size = 40
+text = "
+to all the girls, shake your rump, johnny ryall,
+egg man, high plains drifter, the sounds of science,
+3-minute rule, hey ladies"
+horizontal_alignment = 1
+autowrap_mode = 3

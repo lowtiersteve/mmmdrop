@@ -1,0 +1,520 @@
+#config_version=6
+
+mode:
+  start_events: mode_ffyr_ball_save_end_mode_stopped, start_fightforyourright
+  stop_events: mode_fightforyourright_stop, fightforyourright_finish
+  priority: 5001
+
+
+
+sequences:
+  fightforyourright_shot_1:
+    events:
+      - left_orbit_hit, right_orbit_hit
+    events_when_complete: fightforyourright_shot_1_done
+    reset_on_complete: False
+    restart_events: slide_fightforyourright_instructions_removed
+    start_enabled: False
+  fightforyourright_shot_2:
+    events:
+      - left_ramp_hit, right_ramp_hit
+    enable_events: fightforyourright_shot_1_done
+    events_when_complete: fightforyourright_shot_2_done
+    reset_on_complete: False
+    start_enabled: False
+  fightforyourright_shot_3:
+    events:
+      - captive_ball_hit, inner_loop_hit
+    enable_events: fightforyourright_shot_2_done
+    events_when_complete: fightforyourright_shot_3_done
+    reset_on_complete: False
+    start_enabled: False
+  fightforyourright_shot_4:
+    events:
+      - right_orbit_hit, left_orbit_hit
+    enable_events: fightforyourright_shot_3_done
+    events_when_complete: fightforyourright_shot_4_done
+    reset_on_complete: False
+    start_enabled: False
+  fightforyourright_shot_5:
+    events:
+      - right_ramp_hit, left_ramp_hit
+    enable_events: fightforyourright_shot_4_done
+    events_when_complete: fightforyourright_shot_5_done
+    reset_on_complete: False
+    start_enabled: False
+  fightforyourright_shot_6:
+    events:
+      - captive_ball_hit, inner_loop_hit
+    enable_events: fightforyourright_shot_5_done
+    events_when_complete: fightforyourright_shot_6_done
+    reset_on_complete: False
+    start_enabled: False
+  fightforyourright_final_shot:
+    events:
+      - scoop_hit
+    enable_events: fightforyourright_shot_6_done
+    events_when_complete: fightforyourright_final_shot_done
+    reset_on_complete: False
+    start_enabled: False
+
+
+variable_player:
+  mode_fightforyourright_started:
+    mode_blocking_flag:
+      int: 1
+      action: set
+    wizard_blocking_flag:
+      int: 1
+      action: set
+    mode_fightforyourright_score:
+      int: 0
+      action: set
+    modes_played: 1
+    battery_charged_yesorno:
+      int: 0
+      action: set
+    active_mode:
+      string: "Fight For Your Right"
+      action: set
+    active_mode_objective:
+      string: "MASSIVE POINTS!!!"
+      action: set
+    final_wizard_level:
+      int: 3
+      action: set
+  right_inlane_hit:
+    score: 
+      int: 1100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+    mode_fightforyourright_score: 1100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+  left_inlane_hit:
+    score: 
+      int: 1100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+    mode_fightforyourright_score: 1100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+  right_outlane_hit:
+    score: 
+      int: 11100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+    mode_fightforyourright_score: 11100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+  left_outlane_hit:
+    score: 
+      int: 11100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+    mode_fightforyourright_score: 11100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+  s_left_slingshot_active:
+    score: 
+      int: 100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+    mode_fightforyourright_score: 100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+  s_right_slingshot_active:
+    score: 
+      int: 100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+    mode_fightforyourright_score: 100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+  pop1_hit:
+    score: 
+      int: 11100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+    mode_fightforyourright_score: 11100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+  pop2_hit:
+    score: 
+      int: 11100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+    mode_fightforyourright_score: 11100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+  pop3_hit:
+    score: 
+      int: 11100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+    mode_fightforyourright_score: 11100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+  upper_pop_standup_hit:
+    score: 
+      int: 50100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+    mode_fightforyourright_score: 50100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+  pop_standup_hit:
+    score: 
+      int: 50100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+    mode_fightforyourright_score: 50100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+  captive_ball_hit:
+    score: 
+      int: 100100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+    mode_fightforyourright_score: 100100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+  spinner_hit:
+    score: 
+      int: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.left_orbit_multiplier
+      block: True
+    mode_fightforyourright_score: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.left_orbit_multiplier
+  drop_target_bottom_down:
+    score: 
+      int: 22200 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+    mode_fightforyourright_score: 22200 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+  drop_target_middle_down:
+    score: 
+      int: 22200 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+    mode_fightforyourright_score: 22200 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+  drop_target_top_down:
+    score: 
+      int: 22200 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+    mode_fightforyourright_score: 22200 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+  scoop_hit:
+    score: 
+      int: 13100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.scoop_multiplier
+      block: True
+    mode_fightforyourright_score: 13100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.scoop_multiplier
+  tshirt_top_standup_hit:
+    score: 
+      int: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+    mode_fightforyourright_score: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+  tshirt_bottom_standup_hit:
+    score: 
+      int: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+    mode_fightforyourright_score: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+  three_bank_standup_hit:
+    score: 
+      int: 40100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+    mode_fightforyourright_score: 40100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+  s_left_orbit_active:
+    score: 
+      int: 1100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.left_orbit_multiplier
+      block: True
+    mode_fightforyourright_score: 1100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.left_orbit_multiplier
+  s_right_orbit_active:
+    score: 
+      int: 1100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.right_orbit_multiplier
+      block: True
+    mode_fightforyourright_score: 1100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.right_orbit_multiplier
+  s_inner_orbit_active:
+    score: 
+      int: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.upper_loop_multiplier
+      block: True
+    mode_fightforyourright_score: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.upper_loop_multiplier
+  left_ramp_hit:
+    score: 
+      int: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.left_ramp_multiplier
+      block: True
+    mode_fightforyourright_score: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.left_ramp_multiplier
+  right_ramp_hit:
+    score: 
+      int: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.right_ramp_multiplier
+      block: True
+    mode_fightforyourright_score: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.right_ramp_multiplier
+  left_orbit_hit:
+    score: 
+      int: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.left_orbit_multiplier
+      block: True
+    mode_fightforyourright_score: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.left_orbit_multiplier
+  right_orbit_hit:
+    score: 
+      int: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.right_orbit_multiplier
+      block: True
+    mode_fightforyourright_score: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.right_orbit_multiplier
+  inner_loop_hit:
+    score: 
+      int: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.upper_loop_multiplier
+      block: True
+    mode_fightforyourright_score: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.upper_loop_multiplier
+  fightforyourright_shot_1_done:
+    score:
+      int: 20000000 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+    mode_fightforyourright_score: 20000000 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+  fightforyourright_shot_2_done:
+    score:
+      int: 20000000 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+    mode_fightforyourright_score: 20000000 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+  fightforyourright_shot_3_done:
+    score:
+      int: 20000000 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+    mode_fightforyourright_score: 20000000 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+  fightforyourright_shot_4_done:
+    score:
+      int: 20000000 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+    mode_fightforyourright_score: 20000000 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+  fightforyourright_shot_5_done:
+    score:
+      int: 20000000 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+    mode_fightforyourright_score: 20000000 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+  fightforyourright_shot_6_done:
+    score:
+      int: 20000000 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+    mode_fightforyourright_score: 20000000 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+  fightforyourright_final_shot_done:
+    score:
+      int: 50000000 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+    mode_fightforyourright_score: 50000000 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+
+
+slide_player:
+  mode_fightforyourright_started:
+    current_mode_highlighted:
+      action: remove
+    base:
+      action: remove
+    basevideo1:
+      action: remove
+    basevideo2:
+      action: remove
+    basevideo3:
+      action: remove
+    basevideo4:
+      action: remove
+    basevideo5:
+      action: remove
+    basevideo6:
+      action: remove
+    basevideo7:
+      action: remove
+    basevideoricky:
+      action: remove
+    current_wizard_mode_highlighted:
+      action: remove
+    nosleeptilbrooklyn:
+      action: remove
+    fightforyourright_intro:
+      action: play
+      priority: 500000
+      expire: 15s
+  slide_fightforyourright_intro_removed:
+    fightforyourright:
+      action: play
+      priority: 50000
+    fightforyourright_instructions:
+      action: play
+      priority: 500001
+      expire: 7s
+  fightforyourright_final_shot_done:
+    fightforyourright:
+      action: remove
+    eggman_outro:
+      action: play
+      priority: 500000
+      expire: 30s
+  slide_eggman_outro_removed:
+    intergalactic_outro:
+      action: play
+      priority: 500000
+      expire: 20s
+
+
+sound_player:
+  mode_fightforyourright_started:
+    base_game_random_music:
+      action: stop
+      bus: music
+  slide_fightforyourright_intro_removed:
+    fightforyourrightmusic:
+      action: replace
+      bus: music
+      loops: 5
+  slide_fightforyourright_instructions_removed:
+    ffyr_kickit:
+      action: play
+      bus: effects
+  adrock_sound:
+    name_adrock_3:
+      action: play
+      bus: effects
+  miked_sound:
+    name_miked_4:
+      action: play
+      bus: effects
+  mca_sound:
+    name_mca_2:
+      action: play
+      bus: effects
+  fightforyourright_shot_1_done:
+    ffyr_vocals1:
+      action: play
+      bus: effects
+  fightforyourright_shot_2_done:
+    ffyr_vocals1:
+      action: stop
+      bus: effects
+    ffyr_vocals2:
+      action: play
+      bus: effects
+  fightforyourright_shot_3_done:
+    ffyr_vocals2:
+      action: stop
+      bus: effects
+    ffyr_vocals3:
+      action: play
+      bus: effects
+  fightforyourright_shot_4_done:
+    ffyr_vocals3:
+      action: stop
+      bus: effects
+    ffyr_vocals4:
+      action: play
+      bus: effects
+  fightforyourright_shot_5_done:
+    ffyr_vocals4:
+      action: stop
+      bus: effects
+    ffyr_vocals5:
+      action: play
+      bus: effects
+  fightforyourright_shot_6_done:
+    ffyr_vocals5:
+      action: stop
+      bus: effects
+    ffyr_vocals6:
+      action: play
+      bus: effects
+  fightforyourright_final_shot_done:
+    ffyr_vocals6:
+      action: stop
+      bus: effects
+    fightforyourrightmusic:
+      action: stop
+      bus: music
+    ffyr_toparty:
+      action: play
+      bus: effects
+
+
+show_player:
+  mode_fightforyourright_started:
+    nosleeptilbrooklyn_final_shot_show:
+      action: stop
+    fightforyourright_stadium_intro_lights:
+      action: play
+      loops: -1
+  slide_fightforyourright_instructions_removed:
+    fightforyourright_stadium_intro_lights:
+      action: stop
+    GI_on:
+      action: play
+      priority: 10000
+    GI_backboard_on:
+      action: play
+      priority: 10000
+    stadium_GI_on:
+      action: play
+      priority: 10000
+    ball_save_show:
+      action: play
+      priority: 10001
+    fightforyourright_leftorbit_green:
+      action: play
+      priority: 20000
+    fightforyourright_rightorbit_green:
+      action: play
+      priority: 20000
+  multiball_fightforyourright_shoot_again_ended:
+    ball_save_show:
+      action: stop
+  fightforyourright_shot_1_done:
+    fightforyourright_leftorbit_green:
+      action: stop
+    fightforyourright_rightorbit_green:
+      action: stop
+    fightforyourright_leftramp_green:
+      action: play
+      priority: 20000
+    fightforyourright_rightramp_green:
+      action: play
+      priority: 20000
+  fightforyourright_shot_2_done:
+    fightforyourright_leftramp_green:
+      action: stop
+    fightforyourright_rightramp_green:
+      action: stop
+    fightforyourright_upperloop_green:
+      action: play
+      priority: 20000
+  fightforyourright_shot_3_done:
+    fightforyourright_upperloop_green:
+      action: stop
+    fightforyourright_leftorbit_green:
+      action: play
+      priority: 20000
+    fightforyourright_rightorbit_green:
+      action: play
+      priority: 20000
+  fightforyourright_shot_4_done:
+    fightforyourright_leftorbit_green:
+      action: stop
+    fightforyourright_rightorbit_green:
+      action: stop
+    fightforyourright_leftramp_green:
+      action: play
+      priority: 20000
+    fightforyourright_rightramp_green:
+      action: play
+      priority: 20000
+  fightforyourright_shot_5_done:
+    fightforyourright_leftramp_green:
+      action: stop
+    fightforyourright_rightramp_green:
+      action: stop
+    fightforyourright_upperloop_green:
+      action: play
+      priority: 20000
+  fightforyourright_shot_6_done:
+    fightforyourright_upperloop_green:
+      action: stop
+    fightforyourright_final_shot_show:
+      action: play
+      priority: 20000
+  fightforyourright_final_shot_done:
+    fightforyourright_final_shot_show:
+      action: stop
+    GI_on:
+      action: stop
+    GI_backboard_on:
+      action: stop
+    stadium_GI_on:
+      action: stop
+    ball_save_show:
+      action: stop
+
+
+blinkenlight_player:
+  fightforyourright_shot_2_done:
+    bl_captiveball_smallcircle_led: 4CBB17
+  fightforyourright_shot_3_done:
+    bl_captiveball_smallcircle_led: remove
+  fightforyourright_shot_5_done:
+    bl_captiveball_smallcircle_led: 4CBB17
+  fightforyourright_shot_6_done:
+    bl_captiveball_smallcircle_led: remove
+
+
+random_event_player:
+  balldevice_bd_plunger_ejecting_ball:
+    - adrock_sound
+    - miked_sound
+    - mca_sound
+  force_all: True
+  force_different: True
+
+
+event_player:
+  slide_intergalactic_outro_removed: fightforyourright_finish
+  fightforyourright_final_shot_done:
+    - disable_flippers
+    - disable_pops
+    - disable_slings
+
+
+widget_player:
+  mode_fightforyourright_started:
+    nosleeptilbrooklyn_jam_on:
+      action: remove

@@ -49,6 +49,16 @@ high_score:
         - GIRLS FRENZY CHAMPION
     - highest_bonus:
         - BONUS CHAMPION
+    - superpops_score:
+        - SUPER POPS CHAMPION
+    - superdrops_score:
+        - SUPER DROPS CHAMPION
+    - superspins_score:
+        - SUPER SPINS CHAMPION
+    - superstandups_score:
+        - SUPER STANDUPS CHAMPION
+    - supercombos_score:
+        - SUPER COMBOS CHAMPION
   defaults:
     score:
       - MCA: 300000000
@@ -86,6 +96,16 @@ high_score:
       - GRL: 50000
     highest_bonus:
       - JDH: 500000
+    superpops_score:
+      - POP: 10000
+    superdrops_score:
+      - DRP: 10000
+    superspins_score:
+      - SPN: 10000
+    superstandups_score:
+      - UPS: 10000
+    supercombos_score:
+      - COM: 10000
 
 
 event_player:

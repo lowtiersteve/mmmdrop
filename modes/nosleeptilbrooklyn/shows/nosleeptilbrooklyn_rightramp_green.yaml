@@ -1,0 +1,23 @@
+#show_version=6
+
+- duration: 100ms
+  lights:
+    l_rightramp_arrow_led: stop
+- duration: 200ms
+  lights:
+    l_right_ramp_x: green
+- duration: 200ms
+  lights:
+    l_rightramprectangle_led: green
+- duration: 200ms
+  lights:
+    l_rightrampcombo_circle_led: green
+    l_right_ramp_x: stop
+- duration: 200ms
+  lights:
+    l_rightramp_arrow_led: green
+    l_rightramprectangle_led: stop
+- duration: 300ms
+  lights:
+    l_rightrampcombo_circle_led: stop
+

@@ -10,7 +10,7 @@ counters:
   highplainsdrifter_shots_counter:
     count_events: highplainsdrifter_second_shot_hit
     events_when_complete: highplainsdrifter_shots_counter_complete
-    starting_count: 3
+    starting_count: 2
     count_complete_value: 0
     count_interval: 1
     direction: down
@@ -23,7 +23,7 @@ counters:
     control_events:
       - event: reset_highplainsdrifter_shots_counter
         action: jump
-        value: 3
+        value: 2
 
 
 sequences:
@@ -158,7 +158,7 @@ variable_player:
       int: 1
       action: set
     highplainsdrifter_shots_remaining:
-      int: 3
+      int: 2
       action: set
     active_mode:
       string: "High Plains Drifter"
@@ -330,6 +330,10 @@ slide_player:
       action: remove
     basevideo6:
       action: remove
+    basevideo7:
+      action: remove
+    basevideoricky:
+      action: remove
     highplainsdrifter:
       action: play
       priority: 500000
@@ -438,6 +442,11 @@ event_player:
   highplainsdrifter_shots_counter_complete: mode_highplainsdrifter_success
   pop_standup_hit: add_highplainsdrifter_time_7s
   highplainsdrifter_second_shot_hit: add_highplainsdrifter_time_5s
+  highplainsdrifter_left_orbit_1_done: add_highplainsdrifter_time_5s
+  highplainsdrifter_left_ramp_1_done: add_highplainsdrifter_time_5s
+  highplainsdrifter_inner_loop_1_done: add_highplainsdrifter_time_5s
+  highplainsdrifter_right_ramp_1_done: add_highplainsdrifter_time_5s
+  highplainsdrifter_right_orbit_1_done: add_highplainsdrifter_time_5s
   s_right_orbit_active{device.diverters.up_post.active==False and device.sequences.highplainsdrifter_inner_loop_2.enabled==True}: uppost_up
   inner_loop_hit: uppost_down
 
@@ -479,6 +488,10 @@ show_player:
       action: play
       priority: 500000
       loops: 0
+    highplainsdrifter_right_orbit_uppost_show:
+      action: play
+      priority: 500000
+      loops: -1
   highplainsdrifter_right_ramp_1_done:
     mode_shot_hit_lights:
       action: play
@@ -494,6 +507,8 @@ show_player:
       action: play
       priority: 500000
       loops: 0
+    highplainsdrifter_right_orbit_uppost_show:
+      action: stop
 
 
 blinkenlight_player:

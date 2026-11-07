@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=3 uid="uid://cdbp1el72oey6"]
+
+[ext_resource type="Script" uid="uid://d4ky3s4bg1ouq" path="res://addons/mpf-gmc/classes/mpf_widget.gd" id="1_q0y2s"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="2_45a44"]
+[ext_resource type="Texture2D" uid="uid://dpqmqttajwyak" path="res://assets/IllCommunication.jpg" id="3_f65m1"]
+
+[node name="illcommunicationB" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_q0y2s")
+
+[node name="illcommunicationB" type="Label" parent="."]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 769.0
+offset_right = 1926.0
+offset_bottom = 1024.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_45a44")
+theme_override_font_sizes/font_size = 50
+text = "ill communication - side b"
+horizontal_alignment = 1
+
+[node name="albumart" type="Sprite2D" parent="illcommunicationB"]
+top_level = true
+position = Vector2(966, 381)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("3_f65m1")
+
+[node name="track list" type="Label" parent="."]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 837.0
+offset_right = 1903.0
+offset_bottom = 1067.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("2_45a44")
+theme_override_font_sizes/font_size = 40
+text = "
+alright hear this, eugene's lament, flute loop, do it,
+ricky's theme, heart attack man, the scoop, shamabala,
+bodhisattva vow, transitions"
+horizontal_alignment = 1
+autowrap_mode = 3

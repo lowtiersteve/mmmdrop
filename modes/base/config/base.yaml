@@ -111,12 +111,14 @@ shots:
       led: l_tshirttopcircle_led
       color: 39FF14
     profile: ball_lock_profile
+    disable_events: achievement_finalwizard_status_enabled, achievement_finalwizard_status_started, start_finalwizard
   tshirt_bottom_standup:
     switch: s_tshirt_bottom_standup
     show_tokens:
       led: l_tshirtbottomcircle_led
       color: 39FF14
     profile: ball_lock_profile
+    disable_events: achievement_finalwizard_status_enabled, achievement_finalwizard_status_started, start_finalwizard
   left_outlane:
     switch: s_left_outlane
     show_tokens:
@@ -182,7 +184,7 @@ shot_groups:
   sg_tshirts:
     shots: tshirt_top_standup, tshirt_bottom_standup
     restart_events: bodymovin_ball_1_locked, bodymovin_ball_2_locked, multiball_bodymovin_ended, mode_base_started{current_player.ball==1 and is_extra_ball==True and current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_base_started{current_player.ball!=1 and current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_bodymovin_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_chcheckitout_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_makesomenoise_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_bodhivow_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_sureshot_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_girls_stopped{current_player.bodymovin_lock1_qualified_flag==0 and current_player.bodymovin_lock1_locked_flag==0 and current_player.bodymovin_lock2_qualified_flag==0 and current_player.bodymovin_lock2_locked_flag==0 and current_player.bodymovin_multiball_qualified_flag==0}, mode_base_started{current_player.ball==1 and is_extra_ball==False}, mode_base_started{current_player.bodymovin_lock1_locked_flag==1}, mode_bodymovin_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_chcheckitout_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_makesomenoise_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_sureshot_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_bodhivow_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_girls_stopped{current_player.bodymovin_lock1_locked_flag==1}, mode_base_started{current_player.bodymovin_lock2_locked_flag==1}, mode_bodymovin_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_chcheckitout_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_makesomenoise_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_sureshot_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_bodhivow_stopped{current_player.bodymovin_lock2_locked_flag==1}, mode_girls_stopped{current_player.bodymovin_lock2_locked_flag==1}
-    disable_events: bodymovin_lock_1_enabled, bodymovin_lock_2_enabled, bodymovin_lock_3_enabled, mode_makesomenoise_started, mode_bodhivow_started, mode_sureshot_started, mode_chcheckitout_started, mode_girls_started, ball_will_end
+    disable_events: bodymovin_lock_1_enabled, bodymovin_lock_2_enabled, bodymovin_lock_3_enabled, mode_makesomenoise_started, mode_bodhivow_started, mode_sureshot_started, mode_chcheckitout_started, mode_girls_started, ball_will_end, achievement_finalwizard_status_enabled, achievement_finalwizard_status_started
 
 
 slide_player:
@@ -331,6 +333,8 @@ slide_player:
   mode_sabotage_stop:
     sabotage:
       action: remove
+    sabotage_letterman:
+      action: remove
     sabotage_perps_counter:
       action: remove
     sabotage_display_timer:
@@ -344,6 +348,8 @@ slide_player:
       priority: 5000
   mode_sabotage_failed:
     sabotage:
+      action: remove
+    sabotage_letterman:
       action: remove
     sabotage_perps_counter:
       action: remove
@@ -362,6 +368,8 @@ slide_player:
       priority: 5000
   mode_sabotage_success:
     sabotage:
+      action: remove
+    sabotage_letterman:
       action: remove
     sabotage_display_timer:
       action: remove
@@ -600,6 +608,10 @@ slide_player:
       action: remove
     basevideo6:
       action: remove
+    basevideo7:
+      action: remove
+    basevideoricky:
+      action: remove
     paulrevere:
       action: remove
     paulrevere_display_timer:
@@ -617,6 +629,8 @@ slide_player:
     tripletroublefailed:
       action: remove
     sabotage:
+      action: remove
+    sabotage_letterman:
       action: remove
     sabotage_display_timer:
       action: remove
@@ -686,6 +700,14 @@ slide_player:
       action: remove
     bodymovin_round_slide:
       action: remove
+    brassmonkey:
+      action: remove
+    brassmonkey_countdown:
+      action: remove
+    nosleeptilbrooklyn:
+      action: remove
+    fightforyourright:
+      action: remove
   play_base_video1:
     basevideo1:
       action: play
@@ -710,6 +732,14 @@ slide_player:
     basevideo6:
       action: play
       priority: 5001
+  play_base_video7:
+    basevideo7:
+      action: play
+      priority: 5001
+  play_base_videoricky:
+    basevideoricky:
+      action: play
+      priority: 5001
   mode_makesomenoise_will_stop:
     makesomenoise:
       action: remove
@@ -732,6 +762,12 @@ slide_player:
       priority: 5000
   mode_end_mode_started:
     bodhisattvavow:
+      action: remove
+    base:
+      action: play
+      priority: 5000
+  mode_nosleeptilbrooklyn_end_mode_started:
+    nosleeptilbrooklyn:
       action: remove
     base:
       action: play
@@ -947,7 +983,7 @@ sound_player:
     base_game_random_music:
       action: stop
       bus: music
-  scoop_hit{device.achievements.wizard1.state=="enabled" or device.achievements.wizard2.state=="enabled" or device.achievements.wizard3.state=="enabled"}:
+  scoop_hit{device.achievements.wizard1.state=="enabled" or device.achievements.wizard2.state=="enabled" or device.achievements.wizard3.state=="enabled" or device.achievements.finalwizard.state=="enabled"}:
     base_game_random_music:
       action: stop
       bus: music
@@ -964,7 +1000,7 @@ sound_player:
       action: play
       bus: music
       loops: 3
-  slide_paulreverefinish_removed{device.achievements.wizard1.state=="enabled" or device.achievements.wizard2.state=="enabled" or device.achievements.wizard3.state=="enabled"}:
+  slide_paulreverefinish_removed{device.achievements.wizard1.state=="enabled" or device.achievements.wizard2.state=="enabled" or device.achievements.wizard3.state=="enabled" or device.achievements.finalwizard.state=="enabled"}:
     base_game_random_music:
       action: play
       bus: music
@@ -1035,7 +1071,7 @@ sound_player:
       action: play
       bus: music
       loops: 3
-  slide_tripletroublefinish_removed{device.achievements.wizard1.state=="enabled" or device.achievements.wizard2.state=="enabled" or device.achievements.wizard3.state=="enabled"}:
+  slide_tripletroublefinish_removed{device.achievements.wizard1.state=="enabled" or device.achievements.wizard2.state=="enabled" or device.achievements.wizard3.state=="enabled" or device.achievements.finalwizard}:
     base_game_random_music:
       action: play
       bus: music
@@ -1047,6 +1083,9 @@ sound_player:
       loops: 3
   mode_sabotage_stopped:
     sabotagemusic:
+      action: stop
+      bus: music
+    sabotagelettermanmusic:
       action: stop
       bus: music
   mode_sabotage_success{current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0}:
@@ -1142,6 +1181,11 @@ sound_player:
       action: replace
       bus: music
       loops: 3
+  mode_fightforyourright_stopped:
+    base_game_random_music:
+      action: replace
+      bus: music
+      loops: 3
   ball_will_end:
     chcheckitoutmultiballmusic:
       action: stop
@@ -1185,6 +1229,9 @@ sound_player:
     sabotagemusic:
       action: stop
       bus: music
+    sabotagelettermanmusic:
+      action: stop
+      bus: music
     fingerlickingoodmusic:
       action: stop
       bus: music
@@ -1201,6 +1248,33 @@ sound_player:
       action: stop
       bus: music
     attract_crowd:
+      action: stop
+      bus: effects
+    brassmonkeymusic:
+      action: stop
+      bus: music
+    nosleeptilbrooklynmusic:
+      action: stop
+      bus: music
+    fightforyourrightmusic:
+      action: stop
+      bus: music
+    ffyr_vocals1:
+      action: stop
+      bus: effects
+    ffyr_vocals2:
+      action: stop
+      bus: effects
+    ffyr_vocals3:
+      action: stop
+      bus: effects
+    ffyr_vocals4:
+      action: stop
+      bus: effects
+    ffyr_vocals5:
+      action: stop
+      bus: effects
+    ffyr_vocals6:
       action: stop
       bus: effects
   skillshot_lit_hit:
@@ -1262,6 +1336,10 @@ sound_player:
       action: load
       bus: voice
   achievement_wizard3_state_enabled:
+    hitthescoop_callout:
+      action: load
+      bus: voice
+  achievement_finalwizard_state_enabled:
     hitthescoop_callout:
       action: load
       bus: voice
@@ -1422,6 +1500,10 @@ sound_player:
     outlane_drain_sound_4:
       action: load
       bus: voice
+  outlane_drain_5:
+    outlane_drain_sound_5:
+      action: load
+      bus: voice
   beastie_callout_1:
     name_beastieboys_1:
       action: load
@@ -1518,8 +1600,8 @@ sound_player:
     extraball_islit_callout:
       action: load
       bus: voice
-  scoop_hit{current_player.extra_balls_lit_for_points>0}:
-    extraball_callout:
+  play_extra_ball_points_overlay:
+    extraballpoints_callout:
       action: load
       bus: voice
   player_callouts_1:
@@ -1823,6 +1905,7 @@ variable_player:
     active_mode_objective:
       string: "Hit Spinner to Charge Battery, Scoop to Start Mode"
       action: set
+    wizard_modes_played: 1
   mode_bodhivow_stopped:
     mode_blocking_flag:
       int: 0
@@ -1845,7 +1928,9 @@ variable_player:
     active_mode_objective:
       string: "Hit Spinner to Charge Battery, Scoop to Start Mode"
       action: set
+    wizard_modes_played: 1
   mode_sureshot_stopped:
+    wizard_modes_played: 1
     mode_blocking_flag:
       int: 0
       action: set
@@ -2274,6 +2359,19 @@ variable_player:
     bodymovin_multiball_blocking_flag:
       int: 1
       action: set
+  achievement_finalwizard_state_enabled:
+    chcheckitout_multiball_blocking_flag:
+      int: 1
+      action: set
+    bodymovin_multiball_blocking_flag:
+      int: 1
+      action: set
+    girls_blocking_flag:
+      int: 1
+      action: set
+    mode_blocking_flag:
+      int: 1
+      action: set
   played_all_modes:
     all_modes_played:
       int: 1
@@ -2442,6 +2540,38 @@ variable_player:
     extra_balls_lit_for_points:
       int: 0
       action: set
+  jukebox1:
+    jukebox_album_start:
+      action: set_machine
+      int: 1
+  jukebox2:
+    jukebox_album_start:
+      action: set_machine
+      int: 2
+  jukebox3:
+    jukebox_album_start:
+      action: set_machine
+      int: 3
+  jukebox4:
+    jukebox_album_start:
+      action: set_machine
+      int: 4
+  jukebox5:
+    jukebox_album_start:
+      action: set_machine
+      int: 5
+  jukebox6:
+    jukebox_album_start:
+      action: set_machine
+      int: 6
+  jukebox7:
+    jukebox_album_start:
+      action: set_machine
+      int: 7
+  jukebox8:
+    jukebox_album_start:
+      action: set_machine
+      int: 8
 
 
 sequences:
@@ -2449,7 +2579,7 @@ sequences:
     events:
       - chcheckitout_multiball_qualified
     events_when_complete: drops_standup_start_multiball
-    disable_events: achievement_wizard1_state_enabled, achievement_wizard2_state_enabled, achievement_wizard3_state_enabled, mode_bodymovin_started, mode_girls_started
+    disable_events: achievement_wizard1_state_enabled, achievement_wizard2_state_enabled, achievement_wizard3_state_enabled, mode_bodymovin_started, mode_girls_started, achievement_finalwizard_state_enabled
     enable_events: mode_bodymovin_stopped{current_player.chcheckitout_qualified_flag==0}, mode_makesomenoise_stopped{current_player.chcheckitout_qualified_flag==0}, mode_bodhivow_stopped{current_player.chcheckitout_qualified_flag==0}, mode_sureshot_stopped{current_player.chcheckitout_qualified_flag==0}, mode_girls_stopped{current_player.chcheckitout_qualified_flag==0}
     reset_on_complete: False
     disable_on_complete: True
@@ -2457,10 +2587,10 @@ sequences:
     restart_events: mode_base_started{current_player.ball==1 or current_player.chcheckitout_qualified_flag==0}, mode_chcheckitout_stopped
   chcheckitout_multiball_ready:
     events:
-      - three_bank_standup_hit{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_qualified_flag==1 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled" and current_player.wizard_blocking_flag==0}
+      - three_bank_standup_hit{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_qualified_flag==1 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled" and current_player.wizard_blocking_flag==0 and device.achievements.finalwizard.state!="enabled"}
     restart_events: drops_standup_start_multiball, mode_base_started{current_player.chcheckitout_qualified_flag==1}, mode_makesomenoise_stopped{current_player.chcheckitout_qualified_flag==1}, mode_bodhivow_stopped{current_player.chcheckitout_qualified_flag==1}, mode_sureshot_stopped{current_player.chcheckitout_qualified_flag==1}, multiball_bodymovin_ended{current_player.chcheckitout_qualified_flag==1}
     events_when_complete: chcheckitout_start_multiball
-    disable_events: achievement_wizard1_state_enabled, achievement_wizard2_state_enabled, achievement_wizard3_state_enabled, mode_bodymovin_started, mode_girls_started
+    disable_events: achievement_wizard1_state_enabled, achievement_wizard2_state_enabled, achievement_wizard3_state_enabled, mode_bodymovin_started, mode_girls_started, achievement_finalwizard_state_enabled
     reset_on_complete: False
     disable_on_complete: True
     enable_events: mode_bodymovin_stopped{current_player.chcheckitout_qualified_flag==1}, mode_makesomenoise_stopped{current_player.chcheckitout_qualified_flag==1}, mode_bodhivow_stopped{current_player.chcheckitout_qualified_flag==1}, mode_sureshot_stopped{current_player.chcheckitout_qualified_flag==1}, mode_girls_stopped{current_player.chcheckitout_qualified_flag==1}
@@ -2470,7 +2600,7 @@ sequences:
     events:
       - lock_standups_complete{current_player.chcheckitout_multiball_blocking_flag==0}
     events_when_complete: bodymovin_lock_1_enabled
-    disable_events: achievement_wizard1_state_enabled, achievement_wizard2_state_enabled, achievement_wizard3_state_enabled, mode_chcheckitout_started, mode_girls_started
+    disable_events: achievement_wizard1_state_enabled, achievement_wizard2_state_enabled, achievement_wizard3_state_enabled, mode_chcheckitout_started, mode_girls_started, achievement_finalwizard_state_enabled
     reset_on_complete: False
     start_enabled: False
     disable_on_complete: True
@@ -2480,7 +2610,7 @@ sequences:
     events:
       - scoop_hit{current_player.chcheckitout_multiball_blocking_flag==0}
     events_when_complete: bodymovin_ball_1_locked
-    disable_events: achievement_wizard1_state_enabled, achievement_wizard2_state_enabled, achievement_wizard3_state_enabled, mode_chcheckitout_started, mode_girls_started
+    disable_events: achievement_wizard1_state_enabled, achievement_wizard2_state_enabled, achievement_wizard3_state_enabled, mode_chcheckitout_started, mode_girls_started, achievement_finalwizard_state_enabled
     reset_on_complete: False
     start_enabled: False
     disable_on_complete: True
@@ -2490,7 +2620,7 @@ sequences:
     events:
       - lock_standups_complete{current_player.chcheckitout_multiball_blocking_flag==0}
     events_when_complete: bodymovin_lock_2_enabled
-    disable_events: achievement_wizard1_state_enabled, achievement_wizard2_state_enabled, achievement_wizard3_state_enabled, mode_chcheckitout_started, mode_girls_started
+    disable_events: achievement_wizard1_state_enabled, achievement_wizard2_state_enabled, achievement_wizard3_state_enabled, mode_chcheckitout_started, mode_girls_started, achievement_finalwizard_state_enabled
     reset_on_complete: False
     start_enabled: False
     disable_on_complete: True
@@ -2500,7 +2630,7 @@ sequences:
     events:
       - scoop_hit{current_player.chcheckitout_multiball_blocking_flag==0}
     events_when_complete: bodymovin_ball_2_locked
-    disable_events: achievement_wizard1_state_enabled, achievement_wizard2_state_enabled, achievement_wizard3_state_enabled, mode_chcheckitout_started, mode_girls_started
+    disable_events: achievement_wizard1_state_enabled, achievement_wizard2_state_enabled, achievement_wizard3_state_enabled, mode_chcheckitout_started, mode_girls_started, achievement_finalwizard_state_enabled
     reset_on_complete: False
     start_enabled: False
     disable_on_complete: True
@@ -2510,7 +2640,7 @@ sequences:
     events:
       - lock_standups_complete{current_player.chcheckitout_multiball_blocking_flag==0}
     events_when_complete: bodymovin_lock_3_enabled, bodymovin_multiball_qualified
-    disable_events: achievement_wizard1_state_enabled, achievement_wizard2_state_enabled, achievement_wizard3_state_enabled, mode_chcheckitout_started, mode_girls_started
+    disable_events: achievement_wizard1_state_enabled, achievement_wizard2_state_enabled, achievement_wizard3_state_enabled, mode_chcheckitout_started, mode_girls_started, achievement_finalwizard_state_enabled
     reset_on_complete: False
     start_enabled: False
     disable_on_complete: True
@@ -2520,7 +2650,7 @@ sequences:
     events:
       - captive_ball_hit{current_player.chcheckitout_multiball_blocking_flag==0 and current_player.wizard_blocking_flag==0}
     enable_events: bodymovin_lock_3_enabled
-    disable_events: achievement_wizard1_state_enabled, achievement_wizard2_state_enabled, achievement_wizard3_state_enabled, mode_chcheckitout_started, mode_girls_started
+    disable_events: achievement_wizard1_state_enabled, achievement_wizard2_state_enabled, achievement_wizard3_state_enabled, mode_chcheckitout_started, mode_girls_started, achievement_finalwizard_state_enabled
     events_when_complete: bodymovin_start_multiball
     reset_on_complete: False
     disable_on_complete: True
@@ -2534,7 +2664,7 @@ sequences:
     start_enabled: False
     events_when_complete: diditwithawiffleballbat
     reset_on_complete: False
-    disable_events: mode_girls_started, bodymovin_leftramp_jackpot_hit, bodymovin_rightramp_jackpot_hit, bodymovin_leftorbit_lit_hit, bodymovin_leftramp_lit_hit, bodymovin_captiveball_lit_hit, bodymovin_innerloop_lit_hit, bodymovin_rightramp_lit_hit, bodymovin_rightorbit_lit_hit, chcheckitout_leftorbit_jackpot_hit, chcheckitout_leftramp_jackpot_hit, chcheckitout_rightramp_jackpot_hit, chcheckitout_rightorbit_jackpot_hit, chcheckitout_superjackpot_hit, mode_girls_stopped, fingerlickingood_pop_standup_hit, logicblock_highplainsdrifter_shots_counter_hit, highplainsdrifter_left_orbit_1_done, highplainsdrifter_left_ramp_1_done, highplainsdrifter_inner_loop_1_done, highplainsdrifter_right_ramp_1_done, highplainsdrifter_right_orbit_1_done, right_ramp_hit{device.sequences.intergalactic_shot_1.enabled==True}, right_orbit_hit{device.sequences.intergalactic_shot_1.enabled==True}, left_ramp_hit{device.sequences.intergalactic_shot_2.enabled==True}, left_orbit_hit{device.sequences.intergalactic_shot_2.enabled==True}, right_ramp_hit{device.sequences.intergalactic_shot_3.enabled==True}, right_orbit_hit{device.sequences.intergalactic_shot_3.enabled==True}, left_ramp_hit{device.sequences.intergalactic_shot_4.enabled==True}, left_orbit_hit{device.sequences.intergalactic_shot_4.enabled==True}, intergalactic_shot_5_done, paulrevere_shot_1_done, paulrevere_shot_2_done, paulrevere_shot_3_done, paulrevere_shot_4_done, paulrevere_shot_5_done, paulrevere_shot_6_done, sabotage_left_orbit_hit, sabotage_left_ramp_hit, sabotage_right_ramp_hit, sabotage_right_orbit_hit, mode_threemcsand1dj_success, toomanyrappers_rightorbit_lit_hit, toomanyrappers_rightramp_lit_hit, toomanyrappers_leftorbit_lit_hit, toomanyrappers_leftramp_lit_hit, toomanyrappers_scoop_lit_hit, toomanyrappers_captiveball_lit_hit, logicblock_spit_rhymes_once_hit, rhymes_spit_twice, tripletrouble_final_shot_hit, mode_sureshot_started, mode_bodhivow_started, mode_makesomenoise_started
+    disable_events: mode_girls_started, bodymovin_leftramp_jackpot_hit, bodymovin_rightramp_jackpot_hit, bodymovin_leftorbit_lit_hit, bodymovin_leftramp_lit_hit, bodymovin_captiveball_lit_hit, bodymovin_innerloop_lit_hit, bodymovin_rightramp_lit_hit, bodymovin_rightorbit_lit_hit, chcheckitout_leftorbit_jackpot_hit, chcheckitout_leftramp_jackpot_hit, chcheckitout_rightramp_jackpot_hit, chcheckitout_rightorbit_jackpot_hit, chcheckitout_superjackpot_hit, mode_girls_stopped, fingerlickingood_pop_standup_hit, logicblock_highplainsdrifter_shots_counter_hit, highplainsdrifter_left_orbit_1_done, highplainsdrifter_left_ramp_1_done, highplainsdrifter_inner_loop_1_done, highplainsdrifter_right_ramp_1_done, highplainsdrifter_right_orbit_1_done, right_ramp_hit{device.sequences.intergalactic_shot_1.enabled==True}, right_orbit_hit{device.sequences.intergalactic_shot_1.enabled==True}, left_ramp_hit{device.sequences.intergalactic_shot_2.enabled==True}, left_orbit_hit{device.sequences.intergalactic_shot_2.enabled==True}, right_ramp_hit{device.sequences.intergalactic_shot_3.enabled==True}, right_orbit_hit{device.sequences.intergalactic_shot_3.enabled==True}, left_ramp_hit{device.sequences.intergalactic_shot_4.enabled==True}, left_orbit_hit{device.sequences.intergalactic_shot_4.enabled==True}, intergalactic_shot_5_done, paulrevere_shot_1_done, paulrevere_shot_2_done, paulrevere_shot_3_done, paulrevere_shot_4_done, paulrevere_shot_5_done, paulrevere_shot_6_done, sabotage_left_orbit_hit, sabotage_left_ramp_hit, sabotage_right_ramp_hit, sabotage_right_orbit_hit, mode_threemcsand1dj_success, toomanyrappers_rightorbit_lit_hit, toomanyrappers_rightramp_lit_hit, toomanyrappers_leftorbit_lit_hit, toomanyrappers_leftramp_lit_hit, toomanyrappers_scoop_lit_hit, toomanyrappers_captiveball_lit_hit, logicblock_spit_rhymes_once_hit, rhymes_spit_twice, tripletrouble_final_shot_hit, mode_sureshot_started, mode_bodhivow_started, mode_makesomenoise_started, achievement_finalwizard_status_enabled, start_finalwizard
   diditlikethat:
     events:
       - hit_likethat
@@ -2543,7 +2673,7 @@ sequences:
     start_enabled: False
     events_when_complete: diditlikethat
     reset_on_complete: False
-    disable_events: mode_girls_started, bodymovin_leftramp_jackpot_hit, bodymovin_rightramp_jackpot_hit, bodymovin_leftorbit_lit_hit, bodymovin_leftramp_lit_hit, bodymovin_captiveball_lit_hit, bodymovin_innerloop_lit_hit, bodymovin_rightramp_lit_hit, bodymovin_rightorbit_lit_hit, chcheckitout_leftorbit_jackpot_hit, chcheckitout_leftramp_jackpot_hit, chcheckitout_rightramp_jackpot_hit, chcheckitout_rightorbit_jackpot_hit, chcheckitout_superjackpot_hit, mode_girls_stopped, fingerlickingood_pop_standup_hit, logicblock_highplainsdrifter_shots_counter_hit, highplainsdrifter_left_orbit_1_done, highplainsdrifter_left_ramp_1_done, highplainsdrifter_inner_loop_1_done, highplainsdrifter_right_ramp_1_done, highplainsdrifter_right_orbit_1_done, right_ramp_hit{device.sequences.intergalactic_shot_1.enabled==True}, right_orbit_hit{device.sequences.intergalactic_shot_1.enabled==True}, left_ramp_hit{device.sequences.intergalactic_shot_2.enabled==True}, left_orbit_hit{device.sequences.intergalactic_shot_2.enabled==True}, right_ramp_hit{device.sequences.intergalactic_shot_3.enabled==True}, right_orbit_hit{device.sequences.intergalactic_shot_3.enabled==True}, left_ramp_hit{device.sequences.intergalactic_shot_4.enabled==True}, left_orbit_hit{device.sequences.intergalactic_shot_4.enabled==True}, intergalactic_shot_5_done, paulrevere_shot_1_done, paulrevere_shot_2_done, paulrevere_shot_3_done, paulrevere_shot_4_done, paulrevere_shot_5_done, paulrevere_shot_6_done, sabotage_left_orbit_hit, sabotage_left_ramp_hit, sabotage_right_ramp_hit, sabotage_right_orbit_hit, mode_threemcsand1dj_success, toomanyrappers_rightorbit_lit_hit, toomanyrappers_rightramp_lit_hit, toomanyrappers_leftorbit_lit_hit, toomanyrappers_leftramp_lit_hit, toomanyrappers_scoop_lit_hit, toomanyrappers_captiveball_lit_hit, logicblock_spit_rhymes_once_hit, rhymes_spit_twice, tripletrouble_final_shot_hit, mode_sureshot_started, mode_bodhivow_started, mode_makesomenoise_started
+    disable_events: mode_girls_started, bodymovin_leftramp_jackpot_hit, bodymovin_rightramp_jackpot_hit, bodymovin_leftorbit_lit_hit, bodymovin_leftramp_lit_hit, bodymovin_captiveball_lit_hit, bodymovin_innerloop_lit_hit, bodymovin_rightramp_lit_hit, bodymovin_rightorbit_lit_hit, chcheckitout_leftorbit_jackpot_hit, chcheckitout_leftramp_jackpot_hit, chcheckitout_rightramp_jackpot_hit, chcheckitout_rightorbit_jackpot_hit, chcheckitout_superjackpot_hit, mode_girls_stopped, fingerlickingood_pop_standup_hit, logicblock_highplainsdrifter_shots_counter_hit, highplainsdrifter_left_orbit_1_done, highplainsdrifter_left_ramp_1_done, highplainsdrifter_inner_loop_1_done, highplainsdrifter_right_ramp_1_done, highplainsdrifter_right_orbit_1_done, right_ramp_hit{device.sequences.intergalactic_shot_1.enabled==True}, right_orbit_hit{device.sequences.intergalactic_shot_1.enabled==True}, left_ramp_hit{device.sequences.intergalactic_shot_2.enabled==True}, left_orbit_hit{device.sequences.intergalactic_shot_2.enabled==True}, right_ramp_hit{device.sequences.intergalactic_shot_3.enabled==True}, right_orbit_hit{device.sequences.intergalactic_shot_3.enabled==True}, left_ramp_hit{device.sequences.intergalactic_shot_4.enabled==True}, left_orbit_hit{device.sequences.intergalactic_shot_4.enabled==True}, intergalactic_shot_5_done, paulrevere_shot_1_done, paulrevere_shot_2_done, paulrevere_shot_3_done, paulrevere_shot_4_done, paulrevere_shot_5_done, paulrevere_shot_6_done, sabotage_left_orbit_hit, sabotage_left_ramp_hit, sabotage_right_ramp_hit, sabotage_right_orbit_hit, mode_threemcsand1dj_success, toomanyrappers_rightorbit_lit_hit, toomanyrappers_rightramp_lit_hit, toomanyrappers_leftorbit_lit_hit, toomanyrappers_leftramp_lit_hit, toomanyrappers_scoop_lit_hit, toomanyrappers_captiveball_lit_hit, logicblock_spit_rhymes_once_hit, rhymes_spit_twice, tripletrouble_final_shot_hit, mode_sureshot_started, mode_bodhivow_started, mode_makesomenoise_started, achievement_finalwizard_status_enabled, start_finalwizard
   diditlikethis:
     events:
       - hit_likethis
@@ -2551,7 +2681,7 @@ sequences:
     reset_on_complete: False
     start_enabled: True
     restart_events: bodymovin_leftramp_jackpot_hit, bodymovin_rightramp_jackpot_hit, bodymovin_leftorbit_lit_hit, bodymovin_leftramp_lit_hit, bodymovin_captiveball_lit_hit, bodymovin_innerloop_lit_hit, bodymovin_rightramp_lit_hit, bodymovin_rightorbit_lit_hit, chcheckitout_leftorbit_jackpot_hit, chcheckitout_leftramp_jackpot_hit, chcheckitout_rightramp_jackpot_hit, chcheckitout_rightorbit_jackpot_hit, chcheckitout_superjackpot_hit, mode_girls_stopped, fingerlickingood_pop_standup_hit, logicblock_highplainsdrifter_shots_counter_hit, highplainsdrifter_left_orbit_1_done, highplainsdrifter_left_ramp_1_done, highplainsdrifter_inner_loop_1_done, highplainsdrifter_right_ramp_1_done, highplainsdrifter_right_orbit_1_done, right_ramp_hit{device.sequences.intergalactic_shot_1.enabled==True}, right_orbit_hit{device.sequences.intergalactic_shot_1.enabled==True}, left_ramp_hit{device.sequences.intergalactic_shot_2.enabled==True}, left_orbit_hit{device.sequences.intergalactic_shot_2.enabled==True}, right_ramp_hit{device.sequences.intergalactic_shot_3.enabled==True}, right_orbit_hit{device.sequences.intergalactic_shot_3.enabled==True}, left_ramp_hit{device.sequences.intergalactic_shot_4.enabled==True}, left_orbit_hit{device.sequences.intergalactic_shot_4.enabled==True}, intergalactic_shot_5_done, paulrevere_shot_1_done, paulrevere_shot_2_done, paulrevere_shot_3_done, paulrevere_shot_4_done, paulrevere_shot_5_done, paulrevere_shot_6_done, sabotage_left_orbit_hit, sabotage_left_ramp_hit, sabotage_right_ramp_hit, sabotage_right_orbit_hit, mode_threemcsand1dj_success, toomanyrappers_rightorbit_lit_hit, toomanyrappers_rightramp_lit_hit, toomanyrappers_leftorbit_lit_hit, toomanyrappers_leftramp_lit_hit, toomanyrappers_scoop_lit_hit, toomanyrappers_captiveball_lit_hit, logicblock_spit_rhymes_once_hit, rhymes_spit_twice, tripletrouble_final_shot_hit, , mode_sureshot_stopped{current_player.loop_shot_multiplier==1}, mode_bodhivow_stopped{current_player.loop_shot_multiplier==1}, mode_makesomenoise_stopped{current_player.loop_shot_multiplier==1}
-    disable_events: mode_sureshot_started, mode_bodhivow_started, mode_makesomenoise_started, mode_girls_started
+    disable_events: mode_sureshot_started, mode_bodhivow_started, mode_makesomenoise_started, mode_girls_started, achievement_finalwizard_status_enabled, start_finalwizard
 
 
 counters:
@@ -2565,7 +2695,7 @@ counters:
     persist_state: True
     reset_on_complete: True
     disable_on_complete: True
-    disable_events: drops_standup_start_multiball, achievement_wizard1_state_enabled, achievement_wizard2_state_enabled, achievement_wizard3_state_enabled, mode_bodymovin_started, mode_girls_started
+    disable_events: drops_standup_start_multiball, achievement_wizard1_state_enabled, achievement_wizard2_state_enabled, achievement_wizard3_state_enabled, mode_bodymovin_started, mode_girls_started, achievement_finalwizard_state_enabled
     enable_events: mode_base_started{current_player.ball==1 and is_extra_ball==False}, mode_base_started{current_player.chcheckitout_qualified_flag==0}, mode_makesomenoise_stopped{current_player.chcheckitout_qualified_flag==0}, mode_bodhivow_stopped{current_player.chcheckitout_qualified_flag==0}, mode_sureshot_stopped{current_player.chcheckitout_qualified_flag==0}, mode_bodymovin_stopped{current_player.chcheckitout_qualified_flag==0}, mode_girls_stopped{current_player.chcheckitout_qualified_flag==0}
     restart_events: mode_chcheckitout_stopped
     control_events:
@@ -2585,7 +2715,7 @@ counters:
     disable_on_complete: True
     reset_on_complete: False
   played_modes_count:
-    count_events: mode_intergalactic_started, mode_paulrevere_started, mode_tripletrouble_started, mode_sabotage_started, mode_fingerlickingood_started, mode_toomanyrappers_started, mode_threemcsand1dj_started, mode_highplainsdrifter_started, mode_makesomenoise_started, mode_bodhivow_started, mode_sureshot_started
+    count_events: mode_intergalactic_started, mode_paulrevere_started, mode_tripletrouble_started, mode_sabotage_started, mode_fingerlickingood_started, mode_toomanyrappers_started, mode_threemcsand1dj_started, mode_highplainsdrifter_started, mode_makesomenoise_started, mode_bodhivow_started, mode_sureshot_started, mode_brassmonkey_started, mode_nosleeptilbrooklyn_started, mode_fightforyourright_started
     starting_count: 0
     count_complete_value: -1
     count_interval: 1
@@ -2611,9 +2741,9 @@ counters:
     persist_state: False
     disable_on_complete: True
     reset_on_complete: False
-    restart_events: mode_base_started
+    restart_events: mode_base_started{device.achievements.finalwizard.state!="enabled" and device.achievements.finalwizard.state!="started"}
     events_when_complete: start_superpops
-    disable_events: mode_girls_started, mode_makesomenoise_started, mode_sureshot_started, mode_bodhivow_started
+    disable_events: mode_girls_started, mode_makesomenoise_started, mode_sureshot_started, mode_bodhivow_started, achievement_finalwizard_status_enabled, start_finalwizard
     enable_events: mode_girls_stopped, mode_makesomenoise_stopped, mode_sureshot_stopped, mode_bodhivow_stopped
   superdrops_counter:
     count_events: right_ramp_hit
@@ -2624,9 +2754,9 @@ counters:
     persist_state: False
     disable_on_complete: True
     reset_on_complete: False
-    restart_events: mode_base_started
+    restart_events: mode_base_started{device.achievements.finalwizard.state!="enabled" and device.achievements.finalwizard.state!="started"}
     events_when_complete: start_superdrops
-    disable_events: mode_girls_started, mode_makesomenoise_started, mode_sureshot_started, mode_bodhivow_started
+    disable_events: mode_girls_started, mode_makesomenoise_started, mode_sureshot_started, mode_bodhivow_started, achievement_finalwizard_status_enabled, start_finalwizard
     enable_events: mode_girls_stopped, mode_makesomenoise_stopped, mode_sureshot_stopped, mode_bodhivow_stopped
   superstandups_counter:
     count_events: left_orbit_hit
@@ -2637,9 +2767,9 @@ counters:
     persist_state: False
     disable_on_complete: True
     reset_on_complete: False
-    restart_events: mode_base_started
+    restart_events: mode_base_started{device.achievements.finalwizard.state!="enabled" and device.achievements.finalwizard.state!="started"}
     events_when_complete: start_superstandups
-    disable_events: mode_girls_started, mode_makesomenoise_started, mode_sureshot_started, mode_bodhivow_started
+    disable_events: mode_girls_started, mode_makesomenoise_started, mode_sureshot_started, mode_bodhivow_started, achievement_finalwizard_status_enabled, start_finalwizard
     enable_events: mode_girls_stopped, mode_makesomenoise_stopped, mode_sureshot_stopped, mode_bodhivow_stopped
   superspins_counter:
     count_events: left_ramp_hit
@@ -2650,9 +2780,9 @@ counters:
     persist_state: False
     disable_on_complete: True
     reset_on_complete: False
-    restart_events: mode_base_started
+    restart_events: mode_base_started{device.achievements.finalwizard.state!="enabled" and device.achievements.finalwizard.state!="started"}
     events_when_complete: start_superspins
-    disable_events: mode_girls_started, mode_makesomenoise_started, mode_sureshot_started, mode_bodhivow_started
+    disable_events: mode_girls_started, mode_makesomenoise_started, mode_sureshot_started, mode_bodhivow_started, achievement_finalwizard_status_enabled, start_finalwizard
     enable_events: mode_girls_stopped, mode_makesomenoise_stopped, mode_sureshot_stopped, mode_bodhivow_stopped
   supercombos_counter:
     count_events: right_orbit_hit
@@ -2663,9 +2793,9 @@ counters:
     persist_state: False
     disable_on_complete: True
     reset_on_complete: False
-    restart_events: mode_base_started
+    restart_events: mode_base_started{device.achievements.finalwizard.state!="enabled" and device.achievements.finalwizard.state!="started"}
     events_when_complete: start_supercombos
-    disable_events: mode_girls_started, mode_makesomenoise_started, mode_sureshot_started, mode_bodhivow_started
+    disable_events: mode_girls_started, mode_makesomenoise_started, mode_sureshot_started, mode_bodhivow_started, achievement_finalwizard_status_enabled, start_finalwizard
     enable_events: mode_girls_stopped, mode_makesomenoise_stopped, mode_sureshot_stopped, mode_bodhivow_stopped
   super_modes_played_counter:
     count_events: achievement_superpops_super_mode_state_completed{restore==False}, achievement_superdrops_super_mode_state_completed{restore==False}, achievement_superspins_super_mode_state_completed{restore==False}, achievement_superstandups_super_mode_state_completed{restore==False}, achievement_supercombos_super_mode_state_completed{restore==False}
@@ -2687,9 +2817,9 @@ counters:
     persist_state: True
     disable_on_complete: False
     reset_on_complete: True
-    disable_events: mode_makesomenoise_started, mode_bodhivow_started, mode_sureshot_started, mode_girls_started
+    disable_events: mode_makesomenoise_started, mode_bodhivow_started, mode_sureshot_started, mode_girls_started, achievement_finalwizard_status_enabled, achievement_finalwizard_status_started, start_brassmonkey, start_nosleeptilbrooklyn, start_fightforyourright
     enable_events: mode_makesomenoise_stopped, mode_bodhivow_stopped, mode_sureshot_stopped, mode_girls_stopped
-    restart_events: mode_base_started, mystery_collect
+    restart_events: mode_base_started{device.achievements.finalwizard.state!="enabled" and device.achievements.finalwizard.state!="started"}, mystery_collect
     events_when_complete: mystery_ready
 
 
@@ -2709,20 +2839,22 @@ ball_holds:
   wizard_scoop_hold:
     balls_to_hold: 1
     hold_devices: bd_scoop
-    enable_events: achievement_wizard1_state_enabled, achievement_wizard2_state_enabled, achievement_wizard3_state_enabled, mode_base_started{device.achievements.wizard1.state=="enabled"}, mode_base_started{device.achievements.wizard2.state=="enabled"}, mode_base_started{device.achievements.wizard3.state=="enabled"}
-    disable_events: timer_makesomenoise_intro_show_complete, timer_bodhisattvavow_intro_show_complete, timer_sureshot_intro_show_complete
-    release_one_events: timer_makesomenoise_intro_show_complete, timer_bodhisattvavow_intro_show_complete, timer_sureshot_intro_show_complete
+    enable_events: achievement_wizard1_state_enabled, achievement_wizard2_state_enabled, achievement_wizard3_state_enabled, mode_base_started{device.achievements.wizard1.state=="enabled"}, mode_base_started{device.achievements.wizard2.state=="enabled"}, mode_base_started{device.achievements.wizard3.state=="enabled"}, achievement_finalwizard_state_enabled, brassmonkey_finish, nosleeptilbrooklyn_finish, start_fightforyourright, fightforyourright_final_shot_done
+    disable_events: timer_makesomenoise_intro_show_complete, timer_bodhisattvavow_intro_show_complete, timer_sureshot_intro_show_complete, slide_brassmonkey_instructions_removed, slide_nosleeptilbrooklyn_instructions_removed, slide_fightforyourright_instructions_removed, fightforyourright_finish
+    release_one_events: timer_makesomenoise_intro_show_complete, timer_bodhisattvavow_intro_show_complete, timer_sureshot_intro_show_complete, slide_brassmonkey_instructions_removed, slide_nosleeptilbrooklyn_instructions_removed, slide_fightforyourright_instructions_removed, fightforyourright_finish
 
 
 random_event_player:
   slide_base_created:
     events:
-      - play_base_video1
-      - play_base_video2
-      - play_base_video3
-      - play_base_video4
-      - play_base_video5
-      - play_base_video6
+      play_base_video1: 13
+      play_base_video2: 13
+      play_base_video3: 13
+      play_base_video4: 14
+      play_base_video5: 14
+      play_base_video6: 14
+      play_base_video7: 14
+      play_base_videoricky: 5
     force_all: False
     force_different: False
   left_outlane_hit{device.ball_saves.default.state=="disabled" and device.ball_saves.mode_start.state=="disabled" and device.ball_saves.instrument_boombox_collect.state=="disabled" and device.ball_saves.instrument_microphone_collect.state=="disabled" and device.ball_saves.instrument_turntable_collect.state=="disabled" and device.ball_saves.girls_frenzy.state=="disabled" and device.ball_saves.sureshot_ball_saver.state=="disabled" and device.ball_saves.end_mode_ball_save.state=="disabled" and device.ball_saves.fake_bodhisattvavow_ball_save.state=="disabled" and current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.girls_blocking_flag==0}:
@@ -2731,6 +2863,7 @@ random_event_player:
       - outlane_drain_2
       - outlane_drain_3
       - outlane_drain_4
+      - outlane_drain_5
     force_all: False
     force_different: False
   right_outlane_hit{device.ball_saves.default.state=="disabled" and device.ball_saves.mode_start.state=="disabled" and device.ball_saves.instrument_boombox_collect.state=="disabled" and device.ball_saves.instrument_microphone_collect.state=="disabled" and device.ball_saves.instrument_turntable_collect.state=="disabled" and device.ball_saves.girls_frenzy.state=="disabled" and device.ball_saves.sureshot_ball_saver.state=="disabled" and device.ball_saves.end_mode_ball_save.state=="disabled" and device.ball_saves.fake_bodhisattvavow_ball_save.state=="disabled" and current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.girls_blocking_flag==0}:
@@ -2739,6 +2872,7 @@ random_event_player:
       - outlane_drain_2
       - outlane_drain_3
       - outlane_drain_4
+      - outlane_drain_5
     force_all: False
     force_different: False
   tilt:
@@ -2780,6 +2914,18 @@ random_event_player:
       match_end_game_4: 3
     force_all: False
     force_different: False
+  set_jukebox_start:
+    events:
+      jukebox1: 12
+      jukebox2: 13
+      jukebox3: 12
+      jukebox4: 13
+      jukebox5: 12
+      jukebox6: 13
+      jukebox7: 12
+      jukebox8: 13
+    force_all: False
+    force_different: False
   set_player_add_callouts:
     events:
       player_callouts_1: 65
@@ -2799,13 +2945,18 @@ show_player:
     stadium_GI_on:
       action: play
       priority: 10000
-  mode_base_started{current_player.chcheckitout_qualified_flag==1 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled"}:
+  mode_base_started{current_player.chcheckitout_qualified_flag==1 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled" and device.achievements.finalwizard.state!="enabled"}:
     chcheckitout_lit_strobe:
       action: play
       priority: 10000
       loops: -1
-  mode_base_started{device.achievements.girls_frenzy.state=="enabled" and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled"}:
+  mode_base_started{device.achievements.girls_frenzy.state=="enabled" and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled" and device.achievements.finalwizard.state!="enabled"}:
     girls_ready:
+      action: play
+      priority: 1100000
+      loops: -1
+  mode_base_started{device.achievements.finalwizard.state=="enabled"}:
+    finalwizard_ready_show:
       action: play
       priority: 1100000
       loops: -1
@@ -2881,6 +3032,10 @@ show_player:
     makesomenoise_mode_qualified_light:
       action: play
       loops: -1
+  achievement_finalwizard_state_enabled:
+    makesomenoise_mode_qualified_light:
+      action: play
+      loops: -1
     chcheckitout_lit_strobe:
       action: stop
     battery_green:
@@ -2891,6 +3046,10 @@ show_player:
       action: stop
     girls_ready:
       action: stop
+    finalwizard_ready_show:
+      action: play
+      priority: 500000
+      loops: -1
   mode_wizardcarousel_started:
     makesomenoise_mode_qualified_light:
       action: stop
@@ -2912,7 +3071,13 @@ show_player:
     girls_ready:
       action: play
       loops: -1
-  mode_base_started{device.achievements.wizard1.state=="enabled" or device.achievements.wizard2.state=="enabled" or device.achievements.wizard3.state=="enabled"}:
+  mode_base_started{device.achievements.wizard1.state=="enabled" or device.achievements.wizard2.state=="enabled" or device.achievements.wizard3.state=="enabled" and device.achievements.finalwizard.state=="enabled"}:
+    makesomenoise_mode_qualified_light:
+      action: play
+      loops: -1
+    chcheckitout_lit_strobe:
+      action: stop
+  mode_base_started{device.achievements.wizard1.state=="enabled" or device.achievements.wizard2.state=="enabled" or device.achievements.wizard3.state=="enabled" and device.achievements.finalwizard.state=="started"}:
     makesomenoise_mode_qualified_light:
       action: play
       loops: -1
@@ -3057,6 +3222,63 @@ show_player:
       action: stop
   mode_sureshot_started:
     makesomenoise_mode_qualified_light:
+      action: stop
+    GI_on:
+      action: stop
+    GI_backboard_on:
+      action: stop
+    stadium_GI_on:
+      action: stop
+    battery_yellow:
+      action: stop
+    battery_green:
+      action: stop
+    battery_red:
+      action: stop
+    girls_ready:
+      action: stop
+  mode_brassmonkey_started:
+    makesomenoise_mode_qualified_light:
+      action: stop
+    finalwizard_ready_show:
+      action: stop
+    GI_on:
+      action: stop
+    GI_backboard_on:
+      action: stop
+    stadium_GI_on:
+      action: stop
+    battery_yellow:
+      action: stop
+    battery_green:
+      action: stop
+    battery_red:
+      action: stop
+    girls_ready:
+      action: stop
+  mode_nosleeptilbrooklyn_started:
+    makesomenoise_mode_qualified_light:
+      action: stop
+    finalwizard_ready_show:
+      action: stop
+    GI_on:
+      action: stop
+    GI_backboard_on:
+      action: stop
+    stadium_GI_on:
+      action: stop
+    battery_yellow:
+      action: stop
+    battery_green:
+      action: stop
+    battery_red:
+      action: stop
+    girls_ready:
+      action: stop
+  mode_fightforyourright_started:
+    makesomenoise_mode_qualified_light:
+      action: stop
+    finalwizard_ready_show:
       action: stop
     GI_on:
       action: stop
@@ -3325,6 +3547,28 @@ show_player:
       action: stop
     ball_save_hurryup_show:
       action: stop
+  ball_save_mystery_ball_saver_timer_start:
+    ball_save_show:
+      action: play
+      loops: -1
+      priority: 2000
+  ball_save_mystery_ball_saver_hurry_up:
+    ball_save_show:
+      action: stop
+    ball_save_hurryup_show:
+      action: play
+      loops: -1
+      priority: 2000
+  ball_save_mystery_ball_saver_grace_period:
+    ball_save_hurryup_show:
+      action: stop
+    ball_save_show:
+      action: stop
+  ball_save_mystery_ball_saver_disabled:
+    ball_save_show:
+      action: stop
+    ball_save_hurryup_show:
+      action: stop
   chcheckitout_multiball_qualified:
     chcheckitout_lit_strobe:
       action: play
@@ -3358,35 +3602,35 @@ show_player:
     girls_ready:
       action: play
       loops: -1
-  mode_fingerlickingood_stopped{device.achievements.girls_frenzy.state=="enabled" and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled"}:
+  mode_fingerlickingood_stopped{device.achievements.girls_frenzy.state=="enabled" and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled" and device.achievements.finalwizard.state!="enabled"}:
     girls_ready:
       action: play
       loops: -1
-  mode_highplainsdrifter_stopped{device.achievements.girls_frenzy.state=="enabled" and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled"}:
+  mode_highplainsdrifter_stopped{device.achievements.girls_frenzy.state=="enabled" and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled" and device.achievements.finalwizard.state!="enabled"}:
     girls_ready:
       action: play
       loops: -1
-  mode_intergalactic_stopped{device.achievements.girls_frenzy.state=="enabled" and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled"}:
+  mode_intergalactic_stopped{device.achievements.girls_frenzy.state=="enabled" and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled" and device.achievements.finalwizard.state!="enabled"}:
     girls_ready:
       action: play
       loops: -1
-  mode_paulrevere_stopped{device.achievements.girls_frenzy.state=="enabled" and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled"}:
+  mode_paulrevere_stopped{device.achievements.girls_frenzy.state=="enabled" and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled" and device.achievements.finalwizard.state!="enabled"}:
     girls_ready:
       action: play
       loops: -1
-  mode_sabotage_stopped{device.achievements.girls_frenzy.state=="enabled" and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled"}:
+  mode_sabotage_stopped{device.achievements.girls_frenzy.state=="enabled" and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled" and device.achievements.finalwizard.state!="enabled"}:
     girls_ready:
       action: play
       loops: -1
-  mode_threemcsand1dj_stopped{device.achievements.girls_frenzy.state=="enabled" and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled"}:
+  mode_threemcsand1dj_stopped{device.achievements.girls_frenzy.state=="enabled" and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled" and device.achievements.finalwizard.state!="enabled"}:
     girls_ready:
       action: play
       loops: -1
-  mode_toomanyrappers_stopped{device.achievements.girls_frenzy.state=="enabled" and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled"}:
+  mode_toomanyrappers_stopped{device.achievements.girls_frenzy.state=="enabled" and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled" and device.achievements.finalwizard.state!="enabled"}:
     girls_ready:
       action: play
       loops: -1
-  mode_tripletrouble_stopped{device.achievements.girls_frenzy.state=="enabled" and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled"}:
+  mode_tripletrouble_stopped{device.achievements.girls_frenzy.state=="enabled" and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled" and device.achievements.finalwizard.state!="enabled"}:
     girls_ready:
       action: play
       loops: -1
@@ -3508,27 +3752,77 @@ show_player:
       action: stop
     cassette_spin_rewind_fast:
       action: stop
-  start_superpops:
+    extra_ball_lit_show:
+      action: stop
+    brassmonkey_final_shot_show:
+      action: stop
+    nosleeptilbrooklyn_final_shot_show:
+      action: stop
+    nosleeptilbrooklyn_leftorbit_green:
+      action: stop
+    nosleeptilbrooklyn_leftorbit_yellow:
+      action: stop
+    nosleeptilbrooklyn_leftorbit_red:
+      action: stop
+    nosleeptilbrooklyn_leftramp_green:
+      action: stop
+    nosleeptilbrooklyn_leftramp_yellow:
+      action: stop
+    nosleeptilbrooklyn_leftramp_red:
+      action: stop
+    nosleeptilbrooklyn_upperloop_green:
+      action: stop
+    nosleeptilbrooklyn_upperloop_yellow:
+      action: stop
+    nosleeptilbrooklyn_upperloop_red:
+      action: stop
+    nosleeptilbrooklyn_rightramp_green:
+      action: stop
+    nosleeptilbrooklyn_rightramp_yellow:
+      action: stop
+    nosleeptilbrooklyn_rightramp_red:
+      action: stop
+    nosleeptilbrooklyn_rightorbit_green:
+      action: stop
+    nosleeptilbrooklyn_rightorbit_yellow:
+      action: stop
+    nosleeptilbrooklyn_rightorbit_red:
+      action: stop
+    nosleeptilbrooklyn_right_orbit_uppost_show:
+      action: stop
+    fightforyourright_final_shot_show:
+      action: stop
+    fightforyourright_leftorbit_green:
+      action: stop
+    fightforyourright_leftramp_green:
+      action: stop
+    fightforyourright_rightorbit_green:
+      action: stop
+    fightforyourright_rightramp_green:
+      action: stop
+    fightforyourright_upperloop_green:
+      action: stop
+  start_superpops{device.achievements.finalwizard.state!="enabled" and device.achievements.finalwizard.state!="started"}:
     superpops_on:
       action: play
       loops: -1
       priority: 10000
-  start_superdrops:
+  start_superdrops{device.achievements.finalwizard.state!="enabled" and device.achievements.finalwizard.state!="started"}:
     superdrops_on:
       action: play
       loops: -1
       priority: 10000
-  start_superspins:
+  start_superspins{device.achievements.finalwizard.state!="enabled" and device.achievements.finalwizard.state!="started"}:
     superspins_on:
       action: play
       loops: -1
       priority: 10000
-  start_superstandups:
+  start_superstandups{device.achievements.finalwizard.state!="enabled" and device.achievements.finalwizard.state!="started"}:
     superstandups_on:
       action: play
       loops: -1
       priority: 10000
-  start_supercombos:
+  start_supercombos{device.achievements.finalwizard.state!="enabled" and device.achievements.finalwizard.state!="started"}:
     supercombos_on:
       action: play
       loops: -1
@@ -3638,6 +3932,74 @@ show_player:
     stadium_GI_on:
       action: play
       priority: 10000
+  mode_brassmonkey_stopped:
+    brassmonkey_backboard_red:
+      action: stop
+    brassmonkey_captive_ball_show:
+      action: stop
+    brassmonkey_drops_show:
+      action: stop
+    brassmonkey_left_orbit_show:
+      action: stop
+    brassmonkey_left_ramp_show:
+      action: stop
+    brassmonkey_right_orbit_show:
+      action: stop
+    brassmonkey_right_ramp_show:
+      action: stop
+    brassmonkey_lower_pop_show:
+      action: stop
+    brassmonkey_lower_pop_standup_show:
+      action: stop
+    brassmonkey_scoop_show:
+      action: stop
+    brassmonkey_shot_hit_red:
+      action: stop
+    brassmonkey_tshirts_show:
+      action: stop
+    brassmonkey_upper_left_pop_show:
+      action: stop
+    brassmonkey_upper_loop_show:
+      action: stop
+    brassmonkey_upper_pop_standup_show:
+      action: stop
+    brassmonkey_upper_right_pop_show:
+      action: stop
+  mode_nosleeptilbrooklyn_stopped:
+    nosleeptilbrooklyn_final_shot_show:
+      action: stop
+    nosleeptilbrooklyn_leftorbit_green:
+      action: stop
+    nosleeptilbrooklyn_leftorbit_yellow:
+      action: stop
+    nosleeptilbrooklyn_leftorbit_red:
+      action: stop
+    nosleeptilbrooklyn_leftramp_green:
+      action: stop
+    nosleeptilbrooklyn_leftramp_yellow:
+      action: stop
+    nosleeptilbrooklyn_leftramp_red:
+      action: stop
+    nosleeptilbrooklyn_upperloop_green:
+      action: stop
+    nosleeptilbrooklyn_upperloop_yellow:
+      action: stop
+    nosleeptilbrooklyn_upperloop_red:
+      action: stop
+    nosleeptilbrooklyn_rightramp_green:
+      action: stop
+    nosleeptilbrooklyn_rightramp_yellow:
+      action: stop
+    nosleeptilbrooklyn_rightramp_red:
+      action: stop
+    nosleeptilbrooklyn_rightorbit_green:
+      action: stop
+    nosleeptilbrooklyn_rightorbit_yellow:
+      action: stop
+    nosleeptilbrooklyn_rightorbit_red:
+      action: stop
+    nosleeptilbrooklyn_rightorbit_uppost_show:
+      action: stop
   left_orbit_hit{current_player.left_orbit_multiplier==1 and current_player.instrument_multiplier_ready==1 and device.achievements.sureshot_mode.state!="started" and device.achievements.bodhisattvavow_mode.state!="started"}:
     left_orbit_mult_show:
       action: play
@@ -3733,22 +4095,24 @@ show_player:
       action: play
       loops: -1
       priority: 1000
+    extra_ball_lit_show:
+      action: stop
   mode_base_started{current_player.extra_balls>=1}:
     extra_ball_show:
       action: play
       loops: -1
       priority: 1000
-  pop1_hit{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.mode_blocking_flag==0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled" and current_player.girls_blocking_flag==0}:
+  pop1_hit{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.mode_blocking_flag==0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled" and current_player.girls_blocking_flag==0 and device.achievements.finalwizard.state!="enabled"}:
     cassette_spin_fast:
       action: play
       loops: 1
       priority: 50000
-  pop2_hit{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.mode_blocking_flag==0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled" and current_player.girls_blocking_flag==0}:
+  pop2_hit{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.mode_blocking_flag==0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled" and current_player.girls_blocking_flag==0 and device.achievements.finalwizard.state!="enabled"}:
     cassette_spin_fast:
       action: play
       loops: 1
       priority: 50000
-  pop3_hit{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.mode_blocking_flag==0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled" and current_player.girls_blocking_flag==0}:
+  pop3_hit{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.mode_blocking_flag==0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled" and current_player.girls_blocking_flag==0 and device.achievements.finalwizard.state!="enabled"}:
     cassette_spin_rewind_fast:
       action: play
       loops: 1
@@ -3758,6 +4122,85 @@ show_player:
       action: play
       loops: 2
       priority: 50000
+  extra_ball_instruments_collected_eb_lit:
+    extra_ball_lit_show:
+      action: play
+      loops: -1
+      priority: 50000
+  extra_ball_modes_played_eb_lit:
+    extra_ball_lit_show:
+      action: play
+      loops: -1
+      priority: 50000
+  extra_ball_mystery_eb_lit:
+    extra_ball_lit_show:
+      action: play
+      loops: -1
+      priority: 50000
+  mode_base_started{current_player.instruments_eb_ready==1 or current_player.modes_eb_ready==1 or current_player.mystery_eb_ready==1 or current_player.extra_balls_lit_for_points>0}:
+    extra_ball_lit_show:
+      action: play
+      loops: -1
+      priority: 50000
+  timer_fingerlickingood_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled==1}:
+    extra_ball_lit_show:
+      action: play
+      loops: -1
+      priority: 50000
+  timer_highplainsdrifter_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled==1}:
+    extra_ball_lit_show:
+      action: play
+      loops: -1
+      priority: 50000
+  timer_intergalactic_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled==1}:
+    extra_ball_lit_show:
+      action: play
+      loops: -1
+      priority: 50000
+  timer_paulrevere_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled==1}:
+    extra_ball_lit_show:
+      action: play
+      loops: -1
+      priority: 50000
+  timer_sabotage_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled==1}:
+    extra_ball_lit_show:
+      action: play
+      loops: -1
+      priority: 50000
+  timer_threemcsand1dj_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled==1}:
+    extra_ball_lit_show:
+      action: play
+      loops: -1
+      priority: 50000
+  timer_toomanyrappers_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled==1}:
+    extra_ball_lit_show:
+      action: play
+      loops: -1
+      priority: 50000
+  timer_tripletrouble_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled==1}:
+    extra_ball_lit_show:
+      action: play
+      loops: -1
+      priority: 50000
+  boombox_collected{current_player.instruments_collected_total==5 and settings.extra_balls_enabled==1}:
+    extra_ball_lit_show:
+      action: play
+      loops: -1
+      priority: 50000
+  microphone_collected{current_player.instruments_collected_total==5 and settings.extra_balls_enabled==1}:
+    extra_ball_lit_show:
+      action: play
+      loops: -1
+      priority: 50000
+  turntable_collected{current_player.instruments_collected_total==5 and settings.extra_balls_enabled==1}:
+    extra_ball_lit_show:
+      action: play
+      loops: -1
+      priority: 50000
+  scoop_hit:
+    extra_ball_lit_show:
+      action: stop
+
 
 blinkenlight_player:
   mode_chcheckitout_stopped:
@@ -3777,11 +4220,11 @@ blinkenlight_player:
     bl_captiveball_smallcircle_led: 4CBB17
   mode_bodymovin_started:
     bl_captiveball_smallcircle_led: remove
-  mode_base_started{current_player.bodymovin_lock1_qualified_flag==1 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled"}:
+  mode_base_started{current_player.bodymovin_lock1_qualified_flag==1 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled" and device.achievements.finalwizard.state!="enabled"}:
     bl_scoop_arrow_led: 4CBB17
-  mode_base_started{current_player.bodymovin_lock2_qualified_flag==1 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled"}:
+  mode_base_started{current_player.bodymovin_lock2_qualified_flag==1 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled" and device.achievements.finalwizard.state!="enabled"}:
     bl_scoop_arrow_led: 4CBB17
-  mode_base_started{current_player.bodymovin_multiball_qualified_flag==1 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled"}:
+  mode_base_started{current_player.bodymovin_multiball_qualified_flag==1 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled" and device.achievements.finalwizard.state!="enabled"}:
     bl_captiveball_smallcircle_led: 4CBB17
   mode_makesomenoise_stopped{current_player.bodymovin_lock1_qualified_flag==1}:
     bl_scoop_arrow_led: 4CBB17
@@ -3813,6 +4256,9 @@ blinkenlight_player:
     bl_captiveball_smallcircle_led: remove
     bl_scoop_arrow_led: remove
   achievement_wizard3_state_enabled:
+    bl_captiveball_smallcircle_led: remove
+    bl_scoop_arrow_led: remove
+  achievement_finalwizard_state_enabled:
     bl_captiveball_smallcircle_led: remove
     bl_scoop_arrow_led: remove
   mode_chcheckitout_started:
@@ -3850,7 +4296,6 @@ blinkenlight_player:
     bl_scoop_x: remove
     bl_right_ramp_x: remove
     bl_right_orbit_x: remove
-    bl_scoopmode_circle2_led: remove
   microphone_collected{current_player.left_orbit_multiplier==1}:
     bl_left_orbit_x: FFFFFF
   boombox_collected{current_player.left_orbit_multiplier==1}:
@@ -3941,40 +4386,6 @@ blinkenlight_player:
     bl_scoop_x: FFFFFF
   mode_sureshot_stopped{current_player.upper_loop_multiplier==1 and current_player.instrument_multiplier_ready==1}:
     bl_inner_loop_x: FFFFFF
-  extra_ball_instruments_collected_eb_lit:
-    bl_scoopmode_circle2_led: FFFF00
-  extra_ball_modes_played_eb_lit:
-    bl_scoopmode_circle2_led: FFFF00
-  extra_ball_mystery_eb_lit:
-    bl_scoopmode_circle2_led: FFFF00
-  mode_base_started{current_player.instruments_eb_ready==1 or current_player.modes_eb_ready==1 or current_player.mystery_eb_ready==1 or current_player.extra_balls_lit_for_points>0}:
-    bl_scoopmode_circle2_led: FFFF00
-  timer_fingerlickingood_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled==1}:
-    bl_scoopmode_circle2_led: FFFF00
-  timer_highplainsdrifter_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled==1}:
-    bl_scoopmode_circle2_led: FFFF00
-  timer_intergalactic_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled==1}:
-    bl_scoopmode_circle2_led: FFFF00
-  timer_paulrevere_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled==1}:
-    bl_scoopmode_circle2_led: FFFF00
-  timer_sabotage_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled==1}:
-    bl_scoopmode_circle2_led: FFFF00
-  timer_threemcsand1dj_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled==1}:
-    bl_scoopmode_circle2_led: FFFF00
-  timer_toomanyrappers_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled==1}:
-    bl_scoopmode_circle2_led: FFFF00
-  timer_tripletrouble_intro_show_complete{current_player.modes_played==4 and settings.extra_balls_enabled==1}:
-    bl_scoopmode_circle2_led: FFFF00
-  boombox_collected{current_player.instruments_collected_total==5 and settings.extra_balls_enabled==1}:
-    bl_scoopmode_circle2_led: FFFF00
-  microphone_collected{current_player.instruments_collected_total==5 and settings.extra_balls_enabled==1}:
-    bl_scoopmode_circle2_led: FFFF00
-  turntable_collected{current_player.instruments_collected_total==5 and settings.extra_balls_enabled==1}:
-    bl_scoopmode_circle2_led: FFFF00
-  extra_ball_awarded:
-    bl_scoopmode_circle2_led: remove
-  scoop_hit:
-    bl_scoopmode_circle2_led: remove
   mystery_ready:
     bl_lowerrightstandup_circle_led: 800080
   mode_base_started{current_player.mystery_ready==1}:
@@ -4076,6 +4487,11 @@ widget_player:
       slide: score_overlay
       priority: 975000
       expire: 5s
+  mode_girls_started:
+    charges_remaining:
+      action: remove
+      key: "battery"
+      slide: score_overlay
   mode_girls_stopped:
     girls_mode_score:
       action: play
@@ -4100,13 +4516,19 @@ widget_player:
       slide: score_overlay
       priority: 970000
       expire: 2s
-  mode_base_started{current_player.ball!=1 and current_player.battery_charged_yesorno==0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled"}:
+  mode_base_started{current_player.ball!=1 and current_player.battery_charged_yesorno==0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled" and device.achievements.finalwizard.state!="enabled"}:
     charges_remaining:
       action: play
       slide: score_overlay
       priority: 925000
       key: "battery"
-  mode_base_started{current_player.ball==1 and is_extra_ball==True and current_player.battery_charged_yesorno==0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled"}:
+  mode_base_started{current_player.ball==1 and is_extra_ball==True and current_player.battery_charged_yesorno==0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled" and device.achievements.finalwizard.state!="enabled"}:
+    charges_remaining:
+      action: play
+      slide: score_overlay
+      priority: 925000
+      key: "battery"
+  mode_girls_stopped{current_player.battery_charged_yesorno==0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled" and device.achievements.finalwizard.state!="enabled"}:
     charges_remaining:
       action: play
       slide: score_overlay
@@ -4152,6 +4574,10 @@ widget_player:
     sureshot_mode_score:
       action: remove
     girls_mode_score:
+      action: remove
+    jackpot_widget:
+      action: remove
+    superjackpot_widget:
       action: remove
   bodymovin_lock_1_enabled:
     bodymovin_lock_enabled_widget:
@@ -4229,6 +4655,11 @@ widget_player:
       action: remove
       key: "battery"
       slide: score_overlay
+  achievement_finalwizard_state_enabled:
+    charges_remaining:
+      action: remove
+      key: "battery"
+      slide: score_overlay
   mode_fingerlickingood_started:
     charges_remaining:
       action: remove
@@ -4255,6 +4686,26 @@ widget_player:
       key: "battery"
       slide: score_overlay
   mode_sureshot_started:
+    charges_remaining:
+      action: remove
+      key: "battery"
+      slide: score_overlay
+  achievement_finalwizard_status_enabled:
+    charges_remaining:
+      action: remove
+      key: "battery"
+      slide: score_overlay
+  mode_brassmonkey_started:
+    charges_remaining:
+      action: remove
+      key: "battery"
+      slide: score_overlay
+  mode_nosleeptilbrooklyn_started:
+    charges_remaining:
+      action: remove
+      key: "battery"
+      slide: score_overlay
+  mode_fightforyourright_started:
     charges_remaining:
       action: remove
       key: "battery"
@@ -4306,7 +4757,30 @@ widget_player:
       slide: score_overlay
       priority: 970000
       expire: 4s
-
+  bodymovin_jackpot_hit:
+    jackpot_widget:
+      action: play
+      slide: score_overlay
+      priority: 970000
+      expire: 2s
+  bodymovin_superjackpot_hit:
+    superjackpot_widget:
+      action: play
+      slide: score_overlay
+      priority: 970000
+      expire: 3s
+  chcheckitout_jackpot_hit:
+    jackpot_widget:
+      action: play
+      slide: score_overlay
+      priority: 970000
+      expire: 2s
+  chcheckitout_superjackpot_hit:
+    superjackpot_widget:
+      action: play
+      slide: score_overlay
+      priority: 970000
+      expire: 3s
 
 
 timers:
@@ -4392,6 +4866,16 @@ timers:
         action: pause
       - event: s_right_slingshot_active
         action: pause
+      - event: begin_finalwizard
+        action: pause
+      - event: start_finalwizard
+        action: pause
+      - event: start_brassmonkey
+        action: pause
+      - event: start_nosleeptilbrooklyn
+        action: pause
+      - event: start_fightforyourright
+        action: pause
   drop_target_backup_reset_timer:
     start_value: 0
     end_value: 6
@@ -4413,6 +4897,7 @@ achievements:
     events_when_completed: wizard1_played
     complete_events: mode_makesomenoise_started, mode_sureshot_started, mode_bodhivow_started
     restart_on_next_ball_when_started: True
+    disable_events: start_finalwizard
   wizard2:
     enable_events: logicblock_completed_modes_count_hit{count==5 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0 and current_player.girls_blocking_flag==0}, multiball_chcheckitout_ended{device.counters.completed_modes_count.value==5 and device.achievements.wizard2.state=="disabled"}, multiball_bodymovin_ended{device.counters.completed_modes_count.value==5 and device.achievements.wizard2.state=="disabled"}, mode_girls_stopped{device.counters.completed_modes_count.value==5 and device.achievements.wizard2.state=="disabled"}, mode_base_started{device.counters.completed_modes_count.value==5 and device.achievements.wizard2.state=="disabled"}, player_modes_completed{device.counters.completed_modes_count.value==5 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0 and current_player.girls_blocking_flag==0}
     start_events: scoop_hit{device.counters.completed_modes_count.value==5}
@@ -4421,14 +4906,16 @@ achievements:
     events_when_completed: wizard2_played
     complete_events: mode_makesomenoise_started, mode_sureshot_started, mode_bodhivow_started
     restart_on_next_ball_when_started: True
+    disable_events: start_finalwizard
   wizard3:
-    enable_events: logicblock_completed_modes_count_hit{count==8 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0 and current_player.girls_blocking_flag==0}, multiball_chcheckitout_ended{device.counters.completed_modes_count.value==8 and device.achievements.wizard3.state=="disabled"}, multiball_bodymovin_ended{device.counters.completed_modes_count.value==8 and device.achievements.wizard3.state=="disabled"}, mode_girls_stopped{device.counters.completed_modes_count.value==8 and device.achievements.wizard3.state=="disabled"}, ball_started{device.counters.completed_modes_count.value==8 and device.achievements.wizard3.state=="disabled"}, player_modes_completed{device.counters.completed_modes_count.value==8 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0 and current_player.girls_blocking_flag==0}
+    enable_events: logicblock_completed_modes_count_hit{count==8 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0 and current_player.girls_blocking_flag==0}, multiball_chcheckitout_ended{device.counters.completed_modes_count.value==8 and device.achievements.wizard3.state=="disabled"}, multiball_bodymovin_ended{device.counters.completed_modes_count.value==8 and device.achievements.wizard3.state=="disabled"}, mode_girls_stopped{device.counters.completed_modes_count.value==8 and device.achievements.wizard3.state=="disabled"}, mode_base_started{device.counters.completed_modes_count.value==8 and device.achievements.wizard3.state=="disabled"}, player_modes_completed{device.counters.completed_modes_count.value==8 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.bodymovin_multiball_blocking_flag==0 and current_player.girls_blocking_flag==0}
     start_events: scoop_hit{device.counters.completed_modes_count.value==8}
     events_when_started: start_wizardcarousel
     restart_after_stop_possible: False
     events_when_completed: wizard3_played
     complete_events: mode_makesomenoise_started, mode_sureshot_started, mode_bodhivow_started
     restart_on_next_ball_when_started: True
+    disable_events: start_finalwizard
   intergalactic_mode:
     show_tokens:
       lights: l_modeindicator1_rectangle_led
@@ -4439,6 +4926,7 @@ achievements:
     reset_events: game_start_over
     start_enabled: True
     restart_on_next_ball_when_started: True
+    disable_events: start_finalwizard
   paulrevere_mode:
     show_tokens:
       lights: l_modeindicator2_rectangle_led
@@ -4449,6 +4937,7 @@ achievements:
     reset_events: game_start_over
     start_enabled: True
     restart_on_next_ball_when_started: True
+    disable_events: start_finalwizard
   tripletrouble_mode:
     show_tokens:
       lights: l_modeindicator3_rectangle_led
@@ -4459,6 +4948,7 @@ achievements:
     reset_events: game_start_over
     start_enabled: True
     restart_on_next_ball_when_started: True
+    disable_events: start_finalwizard
   sabotage_mode:
     show_tokens:
       lights: l_modeindicator4_rectangle_led
@@ -4469,6 +4959,7 @@ achievements:
     reset_events: game_start_over
     start_enabled: True
     restart_on_next_ball_when_started: True
+    disable_events: start_finalwizard
   fingerlickingood_mode:
     show_tokens:
       lights: l_modeindicator5_rectangle_led
@@ -4479,6 +4970,7 @@ achievements:
     reset_events: game_start_over
     start_enabled: True
     restart_on_next_ball_when_started: True
+    disable_events: start_finalwizard
   toomanyrappers_mode:
     show_tokens:
       lights: l_modeindicator6_rectangle_led
@@ -4489,6 +4981,7 @@ achievements:
     reset_events: game_start_over
     start_enabled: True
     restart_on_next_ball_when_started: True
+    disable_events: start_finalwizard
   threemcsand1dj_mode:
     show_tokens:
       lights: l_modeindicator7_rectangle_led
@@ -4499,6 +4992,7 @@ achievements:
     reset_events: game_start_over
     start_enabled: True
     restart_on_next_ball_when_started: True
+    disable_events: start_finalwizard
   highplainsdrifter_mode:
     show_tokens:
       lights: l_modeindicator8_rectangle_led
@@ -4509,6 +5003,7 @@ achievements:
     reset_events: game_start_over
     start_enabled: True
     restart_on_next_ball_when_started: True
+    disable_events: start_finalwizard
   chcheckitout_multiball:
     show_tokens:
       lights: l_cassetteleft_1_led, l_cassetteleft_2_led, l_cassetteleft_3_led, l_cassetteleft_4_led, l_cassetteleft_5_led, l_cassetteleft_6_led, l_cassetteleft_7_led, l_cassetteleft_8_led
@@ -4519,6 +5014,7 @@ achievements:
     reset_events: game_start_over
     start_enabled: True
     restart_on_next_ball_when_started: True
+    disable_events: start_finalwizard
   bodymovin_multiball:
     show_tokens:
       lights: l_cassetteright_1_led, l_cassetteright_2_led, l_cassetteright_3_led, l_cassetteright_4_led, l_cassetteright_5_led, l_cassetteright_6_led, l_cassetteright_7_led, l_cassetteright_8_led
@@ -4529,6 +5025,7 @@ achievements:
     reset_events: game_start_over
     start_enabled: True
     restart_on_next_ball_when_started: True
+    disable_events: start_finalwizard
   superpops_super_mode:
     show_tokens:
       lights: l_supercircle3_led
@@ -4539,6 +5036,7 @@ achievements:
     reset_events: game_start_over
     start_enabled: True
     restart_on_next_ball_when_started: True
+    disable_events: start_finalwizard
   superdrops_super_mode:
     show_tokens:
       lights: l_supercircle4_led
@@ -4549,6 +5047,7 @@ achievements:
     reset_events: game_start_over
     start_enabled: True
     restart_on_next_ball_when_started: True
+    disable_events: start_finalwizard
   superspins_super_mode:
     show_tokens:
       lights: l_supercircle2_led
@@ -4559,6 +5058,7 @@ achievements:
     reset_events: game_start_over
     start_enabled: True
     restart_on_next_ball_when_started: True
+    disable_events: start_finalwizard
   superstandups_super_mode:
     show_tokens:
       lights: l_supercircle1_led
@@ -4569,6 +5069,7 @@ achievements:
     reset_events: game_start_over
     start_enabled: True
     restart_on_next_ball_when_started: True
+    disable_events: start_finalwizard
   supercombos_super_mode:
     show_tokens:
       lights: l_supercircle5_led
@@ -4579,14 +5080,16 @@ achievements:
     reset_events: game_start_over
     start_enabled: True
     restart_on_next_ball_when_started: True
+    disable_events: start_finalwizard
   girls_frenzy:
     enable_events: start_girls_achievement
-    start_events: pop_standup_hit{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.mode_blocking_flag==0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled"}
+    start_events: pop_standup_hit{current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.mode_blocking_flag==0 and device.achievements.wizard1.state!="enabled" and device.achievements.wizard2.state!="enabled" and device.achievements.wizard3.state!="enabled" and device.achievements.finalwizard.state!="enabled"}
     complete_events: mode_girls_started
     reset_events: game_start_over
     start_enabled: False
     restart_on_next_ball_when_started: False
     events_when_started: start_girls
+    disable_events: start_finalwizard
   makesomenoise_mode:
     show_tokens:
       lights: l_wizardindicator2_rectangle_led
@@ -4597,6 +5100,7 @@ achievements:
     reset_events: game_start_over
     start_enabled: True
     restart_on_next_ball_when_started: True
+    disable_events: start_finalwizard
   sureshot_mode:
     show_tokens:
       lights: l_wizardindicator_rectangle_led
@@ -4607,6 +5111,7 @@ achievements:
     reset_events: game_start_over
     start_enabled: True
     restart_on_next_ball_when_started: True
+    disable_events: start_finalwizard
   bodhisattvavow_mode:
     show_tokens:
       lights: l_wizardindicator3_rectangle_led
@@ -4617,7 +5122,15 @@ achievements:
     reset_events: game_start_over
     start_enabled: True
     restart_on_next_ball_when_started: True
-
+    disable_events: start_finalwizard
+  finalwizard:
+    enable_events: multiball_chcheckitout_ended{device.achievements.bodhisattvavow_mode.state=="completed" and device.achievements.sureshot_mode.state=="completed" and device.achievements.makesomenoise_mode.state=="completed" and device.achievements.girls_frenzy.state=="completed" and device.achievements.supercombos_super_mode.state=="completed" and device.achievements.superspins_super_mode.state=="completed" and device.achievements.superdrops_super_mode.state=="completed" and device.achievements.superpops_super_mode.state=="completed" and device.achievements.superstandups_super_mode.state=="completed" and device.achievements.bodymovin_multiball.state=="completed" and device.achievements.chcheckitout_multiball.state=="completed"}, multiball_bodymovin_ended{device.achievements.bodhisattvavow_mode.state=="completed" and device.achievements.sureshot_mode.state=="completed" and device.achievements.makesomenoise_mode.state=="completed" and device.achievements.girls_frenzy.state=="completed" and device.achievements.supercombos_super_mode.state=="completed" and device.achievements.superspins_super_mode.state=="completed" and device.achievements.superdrops_super_mode.state=="completed" and device.achievements.superpops_super_mode.state=="completed" and device.achievements.superstandups_super_mode.state=="completed" and device.achievements.bodymovin_multiball.state=="completed" and device.achievements.chcheckitout_multiball.state=="completed"}, mode_girls_stopped{device.achievements.bodhisattvavow_mode.state=="completed" and device.achievements.sureshot_mode.state=="completed" and device.achievements.makesomenoise_mode.state=="completed" and device.achievements.girls_frenzy.state=="completed" and device.achievements.supercombos_super_mode.state=="completed" and device.achievements.superspins_super_mode.state=="completed" and device.achievements.superdrops_super_mode.state=="completed" and device.achievements.superpops_super_mode.state=="completed" and device.achievements.superstandups_super_mode.state=="completed" and device.achievements.bodymovin_multiball.state=="completed" and device.achievements.chcheckitout_multiball.state=="completed"}, mode_base_started{device.achievements.bodhisattvavow_mode.state=="completed" and device.achievements.sureshot_mode.state=="completed" and device.achievements.makesomenoise_mode.state=="completed" and device.achievements.girls_frenzy.state=="completed" and device.achievements.supercombos_super_mode.state=="completed" and device.achievements.superspins_super_mode.state=="completed" and device.achievements.superdrops_super_mode.state=="completed" and device.achievements.superpops_super_mode.state=="completed" and device.achievements.superstandups_super_mode.state=="completed" and device.achievements.bodymovin_multiball.state=="completed" and device.achievements.chcheckitout_multiball.state=="completed"}, achievement_bodhisattvavow_mode_state_completed{device.achievements.bodhisattvavow_mode.state=="completed" and device.achievements.sureshot_mode.state=="completed" and device.achievements.makesomenoise_mode.state=="completed" and device.achievements.girls_frenzy.state=="completed" and device.achievements.supercombos_super_mode.state=="completed" and device.achievements.superspins_super_mode.state=="completed" and device.achievements.superdrops_super_mode.state=="completed" and device.achievements.superpops_super_mode.state=="completed" and device.achievements.superstandups_super_mode.state=="completed" and device.achievements.bodymovin_multiball.state=="completed" and device.achievements.chcheckitout_multiball.state=="completed"}, achievement_sureshot_mode_state_completed{device.achievements.bodhisattvavow_mode.state=="completed" and device.achievements.sureshot_mode.state=="completed" and device.achievements.makesomenoise_mode.state=="completed" and device.achievements.girls_frenzy.state=="completed" and device.achievements.supercombos_super_mode.state=="completed" and device.achievements.superspins_super_mode.state=="completed" and device.achievements.superdrops_super_mode.state=="completed" and device.achievements.superpops_super_mode.state=="completed" and device.achievements.superstandups_super_mode.state=="completed" and device.achievements.bodymovin_multiball.state=="completed" and device.achievements.chcheckitout_multiball.state=="completed"}, achievement_makesomenoise_mode_state_completed{device.achievements.bodhisattvavow_mode.state=="completed" and device.achievements.sureshot_mode.state=="completed" and device.achievements.makesomenoise_mode.state=="completed" and device.achievements.girls_frenzy.state=="completed" and device.achievements.supercombos_super_mode.state=="completed" and device.achievements.superspins_super_mode.state=="completed" and device.achievements.superdrops_super_mode.state=="completed" and device.achievements.superpops_super_mode.state=="completed" and device.achievements.superstandups_super_mode.state=="completed" and device.achievements.bodymovin_multiball.state=="completed" and device.achievements.chcheckitout_multiball.state=="completed"}, begin_finalwizard
+    start_events: scoop_hit{device.achievements.finalwizard.state=="enabled"}, gamemodeselect_finalwizard, begin_finalwizard
+    events_when_started: start_finalwizard
+    restart_after_stop_possible: True
+    events_when_completed: finalwizard_done
+    complete_events: fightforyourright_finish
+    restart_on_next_ball_when_started: True
 
 
 event_player:
@@ -4629,6 +5142,8 @@ event_player:
   s_left_orbit_active{device.diverters.up_post.active==False and device.achievements.wizard1.state=="enabled"}: uppost_up
   s_left_orbit_active{device.diverters.up_post.active==False and device.achievements.wizard2.state=="enabled"}: uppost_up
   s_left_orbit_active{device.diverters.up_post.active==False and device.achievements.wizard3.state=="enabled"}: uppost_up
+  s_left_orbit_active{device.diverters.up_post.active==False and device.achievements.finalwizard.state=="enabled" and current_player.wizard_blocking_flag==0}: uppost_up
+  s_left_orbit_active{device.diverters.up_post.active==False and device.achievements.wizard3.state=="started" and current_player.wizard_blocking_flag==0}: uppost_up
   s_left_orbit_active{device.diverters.up_post.active==False and current_player.battery_charged_yesorno==1 and current_player.bodymovin_multiball_blocking_flag==0 and current_player.chcheckitout_multiball_blocking_flag==0 and current_player.girls_blocking_flag==0}: uppost_up
   inner_loop_hit: uppost_down
   left_orbit_hit: uppost_down
@@ -4646,7 +5161,7 @@ event_player:
   mode_base_started{current_player.number==4 and is_extra_ball==True}: p4_extra_ball_starting
   timer_ball_waiting_autoplunge_timer_complete: autoplunge_ball_now
   timer_drop_target_backup_reset_timer_complete: reset_drop_bank
-  game_started: set_match_number, set_player_add_callouts
+  game_started: set_match_number, set_player_add_callouts, set_jukebox_start
   player_added{num==2 and machine.this_game_player_callouts==1}: player2_start_sound_play
   player_added{num==3 and machine.this_game_player_callouts==1}: player3_start_sound_play
   player_added{num==4 and machine.this_game_player_callouts==1}: player4_start_sound_play
@@ -4657,6 +5172,14 @@ event_player:
   inner_loop_hit{current_player.loop_shot_multiplier==2}: hit_likethat
   inner_loop_hit{current_player.loop_shot_multiplier==3}: hit_wifflebat
   scoop_hit{current_player.extra_balls_lit_for_points>0}: play_extra_ball_points_overlay
+  start_finalwizard{current_player.final_wizard_level==1}: start_brassmonkey
+  start_finalwizard{current_player.final_wizard_level==2}: start_nosleeptilbrooklyn
+  start_finalwizard{current_player.final_wizard_level==3}: start_fightforyourright
+  fightforyourright_finish{machine.game_mode_select_variable_times_1==9}: end_game
+  mode_base_started{machine.game_mode_select_variable_times_1==9}: begin_finalwizard
+  mode_base_started{device.achievements.finalwizard.state=="enabled" or device.achievements.finalwizard.state=="started"}: start_finalwizard
+  mode_base_started{device.achievements.finalwizard.state=="completed"}: disable_flippers, disable_pops, disable_slings
+  mode_base_started{device.achievements.finalwizard.state!="completed"}: enable_flippers, enable_pops, enable_slings
 
 
 accruals:
@@ -4688,3 +5211,9 @@ extra_balls:
     light_events: mystery_award_light_extra_ball{settings.extra_balls_enabled==2 and settings.tournament_mode_enabled==0}
     award_events: scoop_hit{current_player.mystery_eb_ready==1}
 
+
+timed_switches:
+  game_cancel:
+    switch_tags: start
+    time: 5s
+    events_when_active: end_game

@@ -102,4 +102,4 @@ sound_player:
 
 event_player:
   flipper_cancel: match_video_done
-  sw_start_inactive: match_video_done
+  s_start_inactive: match_video_done

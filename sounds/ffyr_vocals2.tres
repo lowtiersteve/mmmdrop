@@ -1,0 +1,8 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://0bpn6bjigs1l"]
+
+[ext_resource type="AudioStream" uid="uid://tfiilhvn3x6t" path="res://sounds/ffyr_vocals2.ogg" id="1_ph0ee"]
+
+[resource]
+playback_mode = 1
+streams_count = 1
+stream_0/stream = ExtResource("1_ph0ee")

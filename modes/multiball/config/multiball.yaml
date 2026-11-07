@@ -10,7 +10,7 @@ multiballs:
     ball_count: 3
     start_events: mode_chcheckitout_started
     shoot_again: 15s
-    add_a_ball_events: three_bank_standup_hit
+    add_a_ball_events: three_bank_standup_hit{current_player.chcheckitout_addaballs_earned<=1}
     add_a_ball_shoot_again: 4s
     reset_events: multiball_chcheckitout_ended
     enable_events: mode_chcheckitout_starting
@@ -18,7 +18,7 @@ multiballs:
     ball_count: 3
     start_events: mode_bodymovin_started
     shoot_again: 15s
-    add_a_ball_events: three_bank_standup_hit
+    add_a_ball_events: three_bank_standup_hit{current_player.bodymovin_addaballs_earned<=1}
     add_a_ball_shoot_again: 4s
     reset_events: multiball_bodymovin_ended
     enable_events: mode_bodymovin_starting
@@ -37,6 +37,12 @@ multiballs:
     reset_events: multiball_bodhisattvavow_ended
     enable_events: mode_bodhivow_starting
     stop_events: timer_bodhisattvavow_time_remaining_complete
+  fightforyourright:
+    ball_count: 3
+    start_events: slide_fightforyourright_intro_removed
+    shoot_again: 60s
+    reset_events: multiball_fightforyourright_ended
+    enable_events: mode_fightforyourright_starting
 
 
 sound_player:

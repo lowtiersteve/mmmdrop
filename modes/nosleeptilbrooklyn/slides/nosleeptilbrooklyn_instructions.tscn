@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=3 uid="uid://bv3usr5ssfnmy"]
+
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_u3drb"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="2_yhhbv"]
+
+[node name="nosleeptilbrooklyn_instructions" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_u3drb")
+
+[node name="instructions" type="Label" parent="."]
+layout_mode = 0
+offset_left = 324.0
+offset_top = 250.0
+offset_right = 1626.0
+offset_bottom = 401.0
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("2_yhhbv")
+theme_override_font_sizes/font_size = 120
+text = "no sleep
+til brooklyn"
+horizontal_alignment = 1
+
+[node name="instructions2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 337.0
+offset_top = 625.0
+offset_right = 1639.0
+offset_bottom = 886.0
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = ExtResource("2_yhhbv")
+theme_override_font_sizes/font_size = 75
+text = "hit lit shots 3 times &
+
+finish at the scoop"
+horizontal_alignment = 1

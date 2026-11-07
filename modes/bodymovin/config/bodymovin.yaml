@@ -24,6 +24,10 @@ slide_player:
       action: remove
     basevideo6:
       action: remove
+    basevideo7:
+      action: remove
+    basevideoricky:
+      action: remove
   bodymovinmusic1:
     bodymovin:
       action: play
@@ -58,7 +62,10 @@ sound_player:
     superjackpot_callout:
       action: load
       bus: voice
-      max_queue_time: 1s
+  three_bank_standup_hit{current_player.bodymovin_addaballs_earned<=1}:
+    addaball_callout:
+      action: load
+      bus: voice
 
 
 random_event_player:
@@ -99,6 +106,9 @@ variable_player:
       action: set
     bodymovin_round:
       int: 1
+      action: set
+    bodymovin_addaballs_earned:
+      int: 0
       action: set
   bodymovin_leftramp_jackpot_hit:
     score: 500000 * current_player.bodymovin_round * current_player.playfield_x * current_player.left_ramp_multiplier * current_player.loop_shot_multiplier
@@ -214,6 +224,7 @@ variable_player:
   three_bank_standup_hit:
     score: 20010 * current_player.playfield_x
     multiball_bodymovin_score: 20010 * current_player.playfield_x
+    bodymovin_addaballs_earned: 1
   s_left_orbit_active:
     score: 110 * current_player.playfield_x * current_player.left_orbit_multiplier
     multiball_bodymovin_score: 110 * current_player.playfield_x * current_player.left_orbit_multiplier

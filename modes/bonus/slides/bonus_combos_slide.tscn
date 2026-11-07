@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://c30qruoyca6gm"]
+[gd_scene load_steps=7 format=3 uid="uid://c30qruoyca6gm"]
 
 [ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_kq101"]
 [ext_resource type="Texture2D" uid="uid://dvrrx3ek1s05w" path="res://assets/CheckYourHead.jpg" id="2_kq101"]
+[ext_resource type="Texture2D" uid="uid://o7gx8vp6whlg" path="res://assets/VW_1 1.png" id="3_1367i"]
 [ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="3_tw2yc"]
 [ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="4_1367i"]
 [ext_resource type="Script" uid="uid://808knhb8e2nn" path="res://addons/mpf-gmc/classes/mpf_conditional_children.gd" id="5_x3xu8"]
@@ -16,15 +17,21 @@ position = Vector2(944, 584)
 scale = Vector2(9, 9)
 texture = ExtResource("2_kq101")
 
+[node name="vwlogo" type="Sprite2D" parent="."]
+position = Vector2(576, 320)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("3_1367i")
+
 [node name="comboshit" type="Label" parent="."]
 layout_mode = 0
-offset_top = 272.0
-offset_right = 1920.0
-offset_bottom = 411.0
+offset_left = 784.0
+offset_top = 256.0
+offset_right = 1608.0
+offset_bottom = 395.0
 theme_override_constants/outline_size = 30
 theme_override_fonts/font = ExtResource("3_tw2yc")
 theme_override_font_sizes/font_size = 136
-text = "VW Combos:"
+text = "Combos:"
 horizontal_alignment = 1
 
 [node name="x25000" type="Label" parent="."]

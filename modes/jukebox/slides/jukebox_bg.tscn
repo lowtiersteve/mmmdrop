@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://dtgjjo6oxifil"]
+[gd_scene load_steps=5 format=3 uid="uid://dtgjjo6oxifil"]
 
 [ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_xiqh3"]
 [ext_resource type="VideoStream" uid="uid://c0q3u5kb15na0" path="res://modes/jukebox/slides/bodhivowvisualizerMV2.ogv" id="2_7ovue"]
 [ext_resource type="Script" uid="uid://bov7mrgxslshq" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_cjpjb"]
+[ext_resource type="Texture2D" uid="uid://ddcnxju02dwc" path="res://assets/white-arrow-png-41943.png" id="4_d1aic"]
 
 [node name="jukebox_bg" type="Control"]
 layout_mode = 3
@@ -21,3 +22,16 @@ loop = true
 script = ExtResource("3_cjpjb")
 hide_behavior = 1
 preview_in_editor = true
+
+[node name="arrowright" type="Sprite2D" parent="."]
+top_level = true
+position = Vector2(1749, 652)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("4_d1aic")
+
+[node name="arrowleft" type="Sprite2D" parent="."]
+top_level = true
+position = Vector2(145, 624)
+rotation = -3.1415925
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("4_d1aic")

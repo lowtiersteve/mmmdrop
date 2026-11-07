@@ -472,6 +472,8 @@ event_player:
   sureshot_phase9_complete: sureshot_finish
   sureshot_shot_hit: add_sureshot_time_3s
   s_right_orbit_active{device.sequences.sureshot_upper_loop.enabled==True and device.sequences.sureshot_right_orbit.enabled==False and device.diverters.up_post.active==False}: uppost_up
+  s_right_orbit_active{device.sequences.sureshot_captive_ball.enabled==True and device.sequences.sureshot_right_orbit.enabled==False and device.diverters.up_post.active==False}: uppost_up
+  s_left_orbit_active{device.diverters.up_post.active==False and device.sequences.sureshot_scoop.enabled==True and device.sequences.sureshot_left_orbit.enabled==False }: uppost_up
   inner_loop_hit: uppost_down
   s_inner_orbit_active: uppost_down
 
@@ -663,6 +665,10 @@ slide_player:
     basevideo5:
       action: remove
     basevideo6:
+      action: remove
+    basevideo7:
+      action: remove
+    basevideoricky:
       action: remove
     current_wizard_mode_highlighted:
       action: remove
@@ -886,8 +892,13 @@ show_player:
       action: play
       loops: -1
       priority: 500000
+    sureshot_right_orbit_uppost_show:
+      action: play
+      loops: -1
   sureshot_captive_ball_hit:
     sureshot_captive_ball_show:
+      action: stop
+    sureshot_right_orbit_uppost_show:
       action: stop
   sureshot_enable_drops:
     sureshot_drops_show:
