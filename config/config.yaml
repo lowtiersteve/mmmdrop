@@ -717,6 +717,10 @@ player_vars:
     initial_value: 1
   nosleeptilbrooklyn_rightorbit_counter:
     initial_value: 1
+  fightforyourright_name_callouts:
+    initial_value: 0
+  ffyr_wizard_score:
+    initial_value: 0
 
 
 light_settings:

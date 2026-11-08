@@ -1,0 +1,62 @@
+[gd_scene load_steps=5 format=3 uid="uid://bdamiyuh33lg8"]
+
+[ext_resource type="Script" uid="uid://d4ky3s4bg1ouq" path="res://addons/mpf-gmc/classes/mpf_widget.gd" id="1_4p1bf"]
+[ext_resource type="FontFile" uid="uid://b2or65be6mpbg" path="res://fonts/ratcage.TTF" id="3_1kjp5"]
+[ext_resource type="Texture2D" uid="uid://rbubedfq5x75" path="res://assets/player_1_dark.png" id="4_4p1bf"]
+[ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="4_f864l"]
+
+[node name="player_1_billboard_nonactive_ffyr" type="Control"]
+top_level = true
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_4p1bf")
+
+[node name="p1score" type="Label" parent="."]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 159.0
+offset_right = 464.0
+offset_bottom = 223.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("3_1kjp5")
+theme_override_font_sizes/font_size = 40
+text = "2,000,000,000"
+horizontal_alignment = 1
+script = ExtResource("4_f864l")
+variable_type = 4
+variable_name = "ffyr_wizard_score"
+comma_separate = true
+min_digits = 2
+initialize_empty = false
+min_players = 1
+
+[node name="p1billboard" type="Sprite2D" parent="p1score"]
+show_behind_parent = true
+z_as_relative = false
+position = Vector2(928, 385)
+scale = Vector2(0.88, 0.88)
+texture = ExtResource("4_4p1bf")
+
+[node name="p1name" type="Label" parent="p1score"]
+layout_mode = 0
+offset_top = -98.0
+offset_right = 432.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("3_1kjp5")
+theme_override_font_sizes/font_size = 40
+text = "Player 1"
+horizontal_alignment = 1
+script = ExtResource("4_f864l")
+variable_type = 4
+min_digits = 0
+template_string = "Player 1"
+format_string = "Player 1"
+initialize_empty = false
+min_players = 1

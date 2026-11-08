@@ -277,11 +277,11 @@ variable_player:
       action: set
   timer_sureshot_score_countdown_tick:
     sureshot_score_countdown_value:
-      int: device.timers.sureshot_score_countdown.ticks * 100000
+      int: device.timers.sureshot_score_countdown.ticks * 50000
       action: set
   timer_sureshot_score_countdown_buffer_started:
     sureshot_score_countdown_value:
-      int: 10000000
+      int: 5000000
       action: set
   sureshot_shot_hit:
     score: current_player.sureshot_score_countdown_value * current_player.playfield_x * current_player.sureshot_mode_multiplier

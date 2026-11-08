@@ -39,7 +39,7 @@ multiballs:
     stop_events: timer_bodhisattvavow_time_remaining_complete
   fightforyourright:
     ball_count: 3
-    start_events: slide_fightforyourright_intro_removed
+    start_events: slide_fightforyourright_intructions_removed
     shoot_again: 60s
     reset_events: multiball_fightforyourright_ended
     enable_events: mode_fightforyourright_starting

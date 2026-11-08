@@ -1,8 +1,10 @@
-[gd_resource type="AudioStreamRandomizer" load_steps=2 format=3 uid="uid://ki7x7xnclxaw"]
+[gd_resource type="Resource" script_class="MPFSoundAsset" load_steps=4 format=3 uid="uid://ki7x7xnclxaw"]
 
-[ext_resource type="AudioStream" uid="uid://dqworrkpkvyil" path="res://sounds/ffyr_vocals4.ogg" id="1_v42uu"]
+[ext_resource type="Script" uid="uid://bsvo8cxf10088" path="res://addons/mpf-gmc/classes/mpf_sound_marker.gd" id="1_bsbo5"]
+[ext_resource type="Script" uid="uid://e2h352i1jeqi" path="res://addons/mpf-gmc/classes/mpf_sound.gd" id="2_otffp"]
+[ext_resource type="AudioStream" uid="uid://dqworrkpkvyil" path="res://sounds/ffyr_vocals4.ogg" id="3_bsbo5"]
 
 [resource]
-playback_mode = 1
-streams_count = 1
-stream_0/stream = ExtResource("1_v42uu")
+script = ExtResource("2_otffp")
+stream = ExtResource("3_bsbo5")
+bus = "voice"

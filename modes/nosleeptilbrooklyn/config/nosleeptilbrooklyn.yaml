@@ -117,106 +117,187 @@ variable_player:
     final_wizard_level:
       int: 2
       action: set
-  counter_nosleeptilbrooklyn_leftorbit_counter_hit:
+  counter_nosleeptilbrooklyn_leftorbit_counter_hit{machine.game_mode_select_variable_times_1==4}:
     score: 5000000 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier * current_player.nosleeptilbrooklyn_leftorbit_counter
     mode_nosleeptilbrooklyn_score: 5000000 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier * current_player.nosleeptilbrooklyn_leftorbit_counter
     nosleeptilbrooklyn_leftorbit_counter:
       int: device.counters.nosleeptilbrooklyn_leftorbit_counter.value * 1
       action: set
-  counter_nosleeptilbrooklyn_leftramp_counter_hit:
+  counter_nosleeptilbrooklyn_leftramp_counter_hit{machine.game_mode_select_variable_times_1==4}:
     score: 5000000 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier * current_player.nosleeptilbrooklyn_leftramp_counter
     mode_nosleeptilbrooklyn_score: 5000000 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier * current_player.nosleeptilbrooklyn_leftramp_counter
     nosleeptilbrooklyn_leftramp_counter:
       int: device.counters.nosleeptilbrooklyn_leftramp_counter.value * 1
       action: set
-  counter_nosleeptilbrooklyn_rightorbit_counter_hit:
+  counter_nosleeptilbrooklyn_rightorbit_counter_hit{machine.game_mode_select_variable_times_1==4}:
     score: 5000000 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier * current_player.nosleeptilbrooklyn_rightorbit_counter
     mode_nosleeptilbrooklyn_score: 5000000 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier * current_player.nosleeptilbrooklyn_rightorbit_counter
     nosleeptilbrooklyn_rightorbit_counter:
       int: device.counters.nosleeptilbrooklyn_rightorbit_counter.value * 1
       action: set
-  counter_nosleeptilbrooklyn_rightramp_counter_hit:
+  counter_nosleeptilbrooklyn_rightramp_counter_hit{machine.game_mode_select_variable_times_1==4}:
     score: 5000000 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier * current_player.nosleeptilbrooklyn_rightramp_counter
     mode_nosleeptilbrooklyn_score: 5000000 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier * current_player.nosleeptilbrooklyn_rightramp_counter
     nosleeptilbrooklyn_rightramp_counter:
       int: device.counters.nosleeptilbrooklyn_rightramp_counter.value * 1
       action: set
-  counter_nosleeptilbrooklyn_upper_loop_counter_hit:
+  counter_nosleeptilbrooklyn_upper_loop_counter_hit{machine.game_mode_select_variable_times_1==4}:
     score: 5000000 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier * current_player.nosleeptilbrooklyn_upper_loop_counter
     mode_nosleeptilbrooklyn_score: 5000000 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier * current_player.nosleeptilbrooklyn_upper_loop_counter
     nosleeptilbrooklyn_upper_loop_counter:
       int: device.counters.nosleeptilbrooklyn_upper_loop_counter.value * 1
       action: set
-  right_inlane_hit:
+  right_inlane_hit{machine.game_mode_select_variable_times_1==4}:
     score:
       int: 110 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
       block: True
     mode_nosleeptilbrooklyn_score: 110 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
-  left_inlane_hit:
+  left_inlane_hit{machine.game_mode_select_variable_times_1==4}:
     score:
       int: 110 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
       block: True
     mode_nosleeptilbrooklyn_score: 110 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
-  s_left_slingshot_active:
+  s_left_slingshot_active{machine.game_mode_select_variable_times_1==4}:
     score:
       int: 10 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
       block: True
     mode_nosleeptilbrooklyn_score: 10 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
-  s_right_slingshot_active:
+  s_right_slingshot_active{machine.game_mode_select_variable_times_1==4}:
     score:
       int: 10 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
       block: True
     mode_nosleeptilbrooklyn_score: 10 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
-  pop1_hit:
+  pop1_hit{machine.game_mode_select_variable_times_1==4}:
     score:
       int: 1110 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
       block: True
     mode_nosleeptilbrooklyn_score: 1110 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
-  pop2_hit:
+  pop2_hit{machine.game_mode_select_variable_times_1==4}:
     score:
       int: 1110 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
       block: True
     mode_nosleeptilbrooklyn_score: 1110 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
-  spinner_hit:
+  spinner_hit{machine.game_mode_select_variable_times_1==4}:
     score:
       int: 1010 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
       block: True
     mode_nosleeptilbrooklyn_score: 1010 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
-  bottom_drop_hit:
+  bottom_drop_hit{machine.game_mode_select_variable_times_1==4}:
     score:
       int: 2220 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
       block: True
     mode_nosleeptilbrooklyn_score: 2220 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
-  middle_drop_hit:
+  middle_drop_hit{machine.game_mode_select_variable_times_1==4}:
     score:
       int: 2220 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
       block: True
     mode_nosleeptilbrooklyn_score: 2220 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
-  top_drop_hit:
+  top_drop_hit{machine.game_mode_select_variable_times_1==4}:
     score:
       int: 2220 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
       block: True
     mode_nosleeptilbrooklyn_score: 2220 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
-  three_bank_standup_hit:
+  three_bank_standup_hit{machine.game_mode_select_variable_times_1==4}:
     score:
       int: 20010 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
       block: True
     mode_nosleeptilbrooklyn_score: 20010 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
-  s_left_orbit_active:
+  s_left_orbit_active{machine.game_mode_select_variable_times_1==4}:
     score:
       int: 110 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
       block: True
     mode_nosleeptilbrooklyn_score: 110 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
-  s_right_orbit_active:
+  s_right_orbit_active{machine.game_mode_select_variable_times_1==4}:
     score:
       int: 110 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
       block: True
     mode_nosleeptilbrooklyn_score: 110 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
-  s_inner_orbit_active:
+  s_inner_orbit_active{machine.game_mode_select_variable_times_1==4}:
     score:
       int: 1010 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
       block: True
     mode_nosleeptilbrooklyn_score: 1010 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+  counter_nosleeptilbrooklyn_leftorbit_counter_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score: 5000000 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier * current_player.nosleeptilbrooklyn_leftorbit_counter
+    nosleeptilbrooklyn_leftorbit_counter:
+      int: device.counters.nosleeptilbrooklyn_leftorbit_counter.value * 1
+      action: set
+  counter_nosleeptilbrooklyn_leftramp_counter_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score: 5000000 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier * current_player.nosleeptilbrooklyn_leftramp_counter
+    nosleeptilbrooklyn_leftramp_counter:
+      int: device.counters.nosleeptilbrooklyn_leftramp_counter.value * 1
+      action: set
+  counter_nosleeptilbrooklyn_rightorbit_counter_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score: 5000000 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier * current_player.nosleeptilbrooklyn_rightorbit_counter
+    nosleeptilbrooklyn_rightorbit_counter:
+      int: device.counters.nosleeptilbrooklyn_rightorbit_counter.value * 1
+      action: set
+  counter_nosleeptilbrooklyn_rightramp_counter_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score: 5000000 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier * current_player.nosleeptilbrooklyn_rightramp_counter
+    nosleeptilbrooklyn_rightramp_counter:
+      int: device.counters.nosleeptilbrooklyn_rightramp_counter.value * 1
+      action: set
+  counter_nosleeptilbrooklyn_upper_loop_counter_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score: 5000000 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier * current_player.nosleeptilbrooklyn_upper_loop_counter
+    nosleeptilbrooklyn_upper_loop_counter:
+      int: device.counters.nosleeptilbrooklyn_upper_loop_counter.value * 1
+      action: set
+  right_inlane_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 110 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+      block: True
+  left_inlane_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 110 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+      block: True
+  s_left_slingshot_active{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 10 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+      block: True
+  s_right_slingshot_active{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 10 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+      block: True
+  pop1_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 1110 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+      block: True
+  pop2_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 1110 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+      block: True
+  spinner_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 1010 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+      block: True
+  bottom_drop_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 2220 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+      block: True
+  middle_drop_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 2220 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+      block: True
+  top_drop_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 2220 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+      block: True
+  three_bank_standup_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 20010 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+      block: True
+  s_left_orbit_active{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 110 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+      block: True
+  s_right_orbit_active{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 110 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+      block: True
+  s_inner_orbit_active{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 1010 * current_player.playfield_x * current_player.nosleeptilbrooklyn_mode_multiplier
+      block: True
 
 
 event_player:

@@ -209,6 +209,10 @@ variable_player:
     brassmonkey_phase:
       int: 1
       action: set
+  mode_brassmonkey_started{machine.game_mode_select_variable_times_1==9}:
+    ball:
+      int: 3
+      action: set
   timer_brassmonkey_score_countdown_tick:
     brassmonkey_score_countdown_value:
       int: device.timers.brassmonkey_score_countdown.ticks * 100000
@@ -217,12 +221,6 @@ variable_player:
     brassmonkey_score_countdown_value:
       int: 10000000
       action: set
-  brassmonkey_shot_hit:
-    score: current_player.brassmonkey_score_countdown_value * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
-    mode_brassmonkey_score: current_player.brassmonkey_score_countdown_value * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
-  brassmonkey_finish:
-    score: current_player.brassmonkey_score_countdown_value * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
-    mode_brassmonkey_score: current_player.brassmonkey_score_countdown_value * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
   brassmonkey_phase1_complete:
     brassmonkey_phase:
       int: 1
@@ -239,146 +237,268 @@ variable_player:
     brassmonkey_phase:
       int: 1
       action: add
-  right_inlane_hit:
+  brassmonkey_shot_hit{machine.game_mode_select_variable_times_1==4}:
+    score: current_player.brassmonkey_score_countdown_value * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+    mode_brassmonkey_score: current_player.brassmonkey_score_countdown_value * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+  brassmonkey_finish{machine.game_mode_select_variable_times_1==4}:
+    score: current_player.brassmonkey_score_countdown_value * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+    mode_brassmonkey_score: current_player.brassmonkey_score_countdown_value * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+  right_inlane_hit{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
       block: True
     mode_brassmonkey_score: 110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
-  left_inlane_hit:
+  left_inlane_hit{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
       block: True
     mode_brassmonkey_score: 110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
-  right_outlane_hit:
+  right_outlane_hit{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 1110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
       block: True
     mode_brassmonkey_score: 1110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
-  left_outlane_hit:
+  left_outlane_hit{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 1110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
       block: True
     mode_brassmonkey_score: 1110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
-  s_left_slingshot_active:
+  s_left_slingshot_active{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 10 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
       block: True
     mode_brassmonkey_score: 10 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
-  s_right_slingshot_active:
+  s_right_slingshot_active{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 10 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
       block: True
     mode_brassmonkey_score: 10 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
-  pop1_hit:
+  pop1_hit{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 1110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
       block: True
     mode_brassmonkey_score: 1110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
-  pop2_hit:
+  pop2_hit{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 1110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
       block: True
     mode_brassmonkey_score: 1110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
-  pop3_hit:
+  pop3_hit{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 1110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
       block: True
     mode_brassmonkey_score: 1110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
-  upper_pop_standup_hit:
+  upper_pop_standup_hit{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 5010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
       block: True
     mode_brassmonkey_score: 5010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
-  pop_standup_hit:
+  pop_standup_hit{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 5010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
       block: True
     mode_brassmonkey_score: 5010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
-  captive_ball_hit:
+  captive_ball_hit{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 10010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
       block: True
     mode_brassmonkey_score: 10010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
-  spinner_hit:
+  spinner_hit{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 1010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
       block: True
     mode_brassmonkey_score: 1010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
-  drop_target_bottom_down:
+  drop_target_bottom_down{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 2220 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
       block: True
     mode_brassmonkey_score: 2220 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
-  drop_target_middle_down:
+  drop_target_middle_down{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 2220 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
       block: True
     mode_brassmonkey_score: 2220 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
-  drop_target_top_down:
+  drop_target_top_down{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 2220 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
       block: True
     mode_brassmonkey_score: 2220 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
-  scoop_hit:
+  scoop_hit{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 2310 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
       block: True
     mode_brassmonkey_score: 2310 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
-  tshirt_top_standup_hit:
+  tshirt_top_standup_hit{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 5010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
       block: True
     mode_brassmonkey_score: 5010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
-  tshirt_bottom_standup_hit:
+  tshirt_bottom_standup_hit{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 5010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
       block: True
     mode_brassmonkey_score: 5010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
-  three_bank_standup_hit:
+  three_bank_standup_hit{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 20010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
       block: True
     mode_brassmonkey_score: 20010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
-  s_left_orbit_active:
+  s_left_orbit_active{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
       block: True
     mode_brassmonkey_score: 110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
-  s_right_orbit_active:
+  s_right_orbit_active{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
       block: True
     mode_brassmonkey_score: 110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
-  s_inner_orbit_active:
+  s_inner_orbit_active{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 1010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
       block: True
     mode_brassmonkey_score: 1010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
-  left_ramp_hit:
+  left_ramp_hit{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 3010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
       block: True
     mode_brassmonkey_score: 3010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
-  right_ramp_hit:
+  right_ramp_hit{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 3010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
       block: True
     mode_brassmonkey_score: 3010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
-  left_orbit_hit:
+  left_orbit_hit{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 1010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
       block: True
     mode_brassmonkey_score: 1010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
-  right_orbit_hit:
+  right_orbit_hit{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 1010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
       block: True
     mode_brassmonkey_score: 1010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
-  inner_loop_hit:
+  inner_loop_hit{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 2010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
       block: True
     mode_brassmonkey_score: 2010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+  brassmonkey_shot_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score: current_player.brassmonkey_score_countdown_value * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+  brassmonkey_finish{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score: current_player.brassmonkey_score_countdown_value * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+  right_inlane_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+  left_inlane_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+  right_outlane_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 1110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+  left_outlane_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 1110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+  s_left_slingshot_active{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 10 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+  s_right_slingshot_active{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 10 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+  pop1_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 1110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+  pop2_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 1110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+  pop3_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 1110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+  upper_pop_standup_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 5010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+  pop_standup_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 5010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+  captive_ball_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 10010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+  spinner_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 1010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+  drop_target_bottom_down{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 2220 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+  drop_target_middle_down{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 2220 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+  drop_target_top_down{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 2220 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+  scoop_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 2310 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+  tshirt_top_standup_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 5010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+  tshirt_bottom_standup_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 5010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+  three_bank_standup_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 20010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+  s_left_orbit_active{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+  s_right_orbit_active{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 110 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+  s_inner_orbit_active{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 1010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+  left_ramp_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 3010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+  right_ramp_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 3010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+  left_orbit_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 1010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+  right_orbit_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 1010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
+  inner_loop_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 2010 * current_player.playfield_x * current_player.brassmonkey_mode_multiplier
+      block: True
 
 
 event_player:

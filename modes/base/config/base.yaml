@@ -4397,23 +4397,67 @@ blinkenlight_player:
 
 
 widget_player:
-  mode_base_started{current_player.number==1}:
+  mode_base_started{current_player.number==1 and machine.game_mode_select_variable_times_1==4}:
     player_1_billboard_active:
       action: play
       slide: score_overlay
       priority: 925000
-  mode_base_started{current_player.number==2}:
+  mode_base_started{current_player.number==2 and machine.game_mode_select_variable_times_1==4}:
     player_2_billboard_active:
       action: play
       slide: score_overlay
       priority: 925000
-  mode_base_started{current_player.number==3}:
+  mode_base_started{current_player.number==3 and machine.game_mode_select_variable_times_1==4}:
     player_3_billboard_active:
       action: play
       slide: score_overlay
       priority: 925000
-  mode_base_started{current_player.number==4}:
+  mode_base_started{current_player.number==4 and machine.game_mode_select_variable_times_1==4}:
     player_4_billboard_active:
+      action: play
+      slide: score_overlay
+      priority: 925000
+  mode_base_started{current_player.number==1 and machine.game_mode_select_variable_times_1==9}:
+    player_1_billboard_active_ffyr:
+      action: play
+      slide: score_overlay
+      priority: 925000
+  mode_base_started{current_player.number==2 and machine.game_mode_select_variable_times_1==9}:
+    player_1_billboard_nonactive_ffyr:
+      action: play
+      slide: score_overlay
+      priority: 925000
+    player_2_billboard_active_ffyr:
+      action: play
+      slide: score_overlay
+      priority: 925000
+  mode_base_started{current_player.number==3 and machine.game_mode_select_variable_times_1==9}:
+    player_1_billboard_nonactive_ffyr:
+      action: play
+      slide: score_overlay
+      priority: 925000
+    player_2_billboard_nonactive_ffyr:
+      action: play
+      slide: score_overlay
+      priority: 925000
+    player_3_billboard_active_ffyr:
+      action: play
+      slide: score_overlay
+      priority: 925000
+  mode_base_started{current_player.number==4 and machine.game_mode_select_variable_times_1==9}:
+    player_1_billboard_nonactive_ffyr:
+      action: play
+      slide: score_overlay
+      priority: 925000
+    player_2_billboard_nonactive_ffyr:
+      action: play
+      slide: score_overlay
+      priority: 925000
+    player_3_billboard_nonactive_ffyr:
+      action: play
+      slide: score_overlay
+      priority: 925000
+    player_4_billboard_active_ffyr:
       action: play
       slide: score_overlay
       priority: 925000
@@ -4566,6 +4610,22 @@ widget_player:
     player_3_billboard_active:
       action: remove
     player_4_billboard_active:
+      action: remove
+    player_1_billboard_active_ffyr:
+      action: remove
+    player_2_billboard_active_ffyr:
+      action: remove
+    player_3_billboard_active_ffyr:
+      action: remove
+    player_4_billboard_active_ffyr:
+      action: remove
+    player_1_billboard_nonactive_ffyr:
+      action: remove
+    player_2_billboard_nonactive_ffyr:
+      action: remove
+    player_3_billboard_nonactive_ffyr:
+      action: remove
+    player_4_billboard_nonactive_ffyr:
       action: remove
     makesomenoise_mode_score:
       action: remove

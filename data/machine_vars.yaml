@@ -21,7 +21,7 @@ fast_audio_main_volume:
 jukebox_album_start:
   expire: null
   expire_secs: null
-  value: 7
+  value: 1
 master_volume:
   expire: null
   expire_secs: null
@@ -37,7 +37,11 @@ music_volume:
 player1_score:
   expire: null
   expire_secs: null
-  value: 5550
+  value: 3001110
+player2_score:
+  expire: null
+  expire_secs: null
+  value: 0
 this_game_match_video:
   expire: null
   expire_secs: null

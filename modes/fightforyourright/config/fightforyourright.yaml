@@ -83,181 +83,329 @@ variable_player:
     final_wizard_level:
       int: 3
       action: set
-  right_inlane_hit:
+  right_inlane_hit{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 1100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
       block: True
     mode_fightforyourright_score: 1100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
-  left_inlane_hit:
+  left_inlane_hit{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 1100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
       block: True
     mode_fightforyourright_score: 1100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
-  right_outlane_hit:
+  right_outlane_hit{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 11100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
       block: True
     mode_fightforyourright_score: 11100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
-  left_outlane_hit:
+  left_outlane_hit{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 11100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
       block: True
     mode_fightforyourright_score: 11100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
-  s_left_slingshot_active:
+  s_left_slingshot_active{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
       block: True
     mode_fightforyourright_score: 100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
-  s_right_slingshot_active:
+  s_right_slingshot_active{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
       block: True
     mode_fightforyourright_score: 100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
-  pop1_hit:
+  pop1_hit{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 11100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
       block: True
     mode_fightforyourright_score: 11100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
-  pop2_hit:
+  pop2_hit{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 11100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
       block: True
     mode_fightforyourright_score: 11100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
-  pop3_hit:
+  pop3_hit{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 11100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
       block: True
     mode_fightforyourright_score: 11100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
-  upper_pop_standup_hit:
+  upper_pop_standup_hit{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 50100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
       block: True
     mode_fightforyourright_score: 50100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
-  pop_standup_hit:
+  pop_standup_hit{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 50100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
       block: True
     mode_fightforyourright_score: 50100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
-  captive_ball_hit:
+  captive_ball_hit{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 100100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
       block: True
     mode_fightforyourright_score: 100100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
-  spinner_hit:
+  spinner_hit{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.left_orbit_multiplier
       block: True
     mode_fightforyourright_score: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.left_orbit_multiplier
-  drop_target_bottom_down:
+  drop_target_bottom_down{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 22200 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
       block: True
     mode_fightforyourright_score: 22200 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
-  drop_target_middle_down:
+  drop_target_middle_down{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 22200 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
       block: True
     mode_fightforyourright_score: 22200 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
-  drop_target_top_down:
+  drop_target_top_down{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 22200 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
       block: True
     mode_fightforyourright_score: 22200 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
-  scoop_hit:
+  scoop_hit{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 13100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.scoop_multiplier
       block: True
     mode_fightforyourright_score: 13100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.scoop_multiplier
-  tshirt_top_standup_hit:
+  tshirt_top_standup_hit{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
       block: True
     mode_fightforyourright_score: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
-  tshirt_bottom_standup_hit:
+  tshirt_bottom_standup_hit{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
       block: True
     mode_fightforyourright_score: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
-  three_bank_standup_hit:
+  three_bank_standup_hit{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 40100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
       block: True
     mode_fightforyourright_score: 40100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
-  s_left_orbit_active:
+  s_left_orbit_active{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 1100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.left_orbit_multiplier
       block: True
     mode_fightforyourright_score: 1100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.left_orbit_multiplier
-  s_right_orbit_active:
+  s_right_orbit_active{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 1100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.right_orbit_multiplier
       block: True
     mode_fightforyourright_score: 1100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.right_orbit_multiplier
-  s_inner_orbit_active:
+  s_inner_orbit_active{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.upper_loop_multiplier
       block: True
     mode_fightforyourright_score: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.upper_loop_multiplier
-  left_ramp_hit:
+  left_ramp_hit{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.left_ramp_multiplier
       block: True
     mode_fightforyourright_score: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.left_ramp_multiplier
-  right_ramp_hit:
+  right_ramp_hit{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.right_ramp_multiplier
       block: True
     mode_fightforyourright_score: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.right_ramp_multiplier
-  left_orbit_hit:
+  left_orbit_hit{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.left_orbit_multiplier
       block: True
     mode_fightforyourright_score: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.left_orbit_multiplier
-  right_orbit_hit:
+  right_orbit_hit{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.right_orbit_multiplier
       block: True
     mode_fightforyourright_score: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.right_orbit_multiplier
-  inner_loop_hit:
+  inner_loop_hit{machine.game_mode_select_variable_times_1==4}:
     score: 
       int: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.upper_loop_multiplier
       block: True
     mode_fightforyourright_score: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.upper_loop_multiplier
-  fightforyourright_shot_1_done:
+  fightforyourright_shot_1_done{machine.game_mode_select_variable_times_1==4}:
     score:
       int: 20000000 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
       block: True
     mode_fightforyourright_score: 20000000 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
-  fightforyourright_shot_2_done:
+  fightforyourright_shot_2_done{machine.game_mode_select_variable_times_1==4}:
     score:
       int: 20000000 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
       block: True
     mode_fightforyourright_score: 20000000 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
-  fightforyourright_shot_3_done:
+  fightforyourright_shot_3_done{machine.game_mode_select_variable_times_1==4}:
     score:
       int: 20000000 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
       block: True
     mode_fightforyourright_score: 20000000 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
-  fightforyourright_shot_4_done:
+  fightforyourright_shot_4_done{machine.game_mode_select_variable_times_1==4}:
     score:
       int: 20000000 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
       block: True
     mode_fightforyourright_score: 20000000 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
-  fightforyourright_shot_5_done:
+  fightforyourright_shot_5_done{machine.game_mode_select_variable_times_1==4}:
     score:
       int: 20000000 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
       block: True
     mode_fightforyourright_score: 20000000 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
-  fightforyourright_shot_6_done:
+  fightforyourright_shot_6_done{machine.game_mode_select_variable_times_1==4}:
     score:
       int: 20000000 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
       block: True
     mode_fightforyourright_score: 20000000 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
-  fightforyourright_final_shot_done:
+  fightforyourright_final_shot_done{machine.game_mode_select_variable_times_1==4}:
     score:
       int: 50000000 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
       block: True
     mode_fightforyourright_score: 50000000 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+    ball:
+      int: 3
+      action: set
+    extra_balls:
+      int: 0
+      action: set
+  balldevice_bd_plunger_ejecting_ball:
+    fightforyourright_name_callouts: 1
+  right_inlane_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 1100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+  left_inlane_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 1100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+  right_outlane_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 11100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+  left_outlane_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 11100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+  s_left_slingshot_active{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+  s_right_slingshot_active{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+  pop1_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 11100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+  pop2_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 11100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+  pop3_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 11100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+  upper_pop_standup_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 50100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+  pop_standup_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 50100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+  captive_ball_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 100100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+  spinner_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.left_orbit_multiplier
+      block: True
+  drop_target_bottom_down{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 22200 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+  drop_target_middle_down{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 22200 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+  drop_target_top_down{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 22200 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+  scoop_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 13100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.scoop_multiplier
+      block: True
+  tshirt_top_standup_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+  tshirt_bottom_standup_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+  three_bank_standup_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 40100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+  s_left_orbit_active{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 1100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.left_orbit_multiplier
+      block: True
+  s_right_orbit_active{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 1100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.right_orbit_multiplier
+      block: True
+  s_inner_orbit_active{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.upper_loop_multiplier
+      block: True
+  left_ramp_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.left_ramp_multiplier
+      block: True
+  right_ramp_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.right_ramp_multiplier
+      block: True
+  left_orbit_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.left_orbit_multiplier
+      block: True
+  right_orbit_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.right_orbit_multiplier
+      block: True
+  inner_loop_hit{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 10100 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier * current_player.upper_loop_multiplier
+      block: True
+  fightforyourright_shot_1_done{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 20000000 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+  fightforyourright_shot_2_done{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 20000000 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+  fightforyourright_shot_3_done{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 20000000 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+  fightforyourright_shot_4_done{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 20000000 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+  fightforyourright_shot_5_done{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 20000000 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+  fightforyourright_shot_6_done{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 20000000 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
+  fightforyourright_final_shot_done{machine.game_mode_select_variable_times_1==9}:
+    ffyr_wizard_score:
+      int: 50000000 * current_player.playfield_x * current_player.fightforyourright_mode_multiplier
+      block: True
 
 
 slide_player:
@@ -340,53 +488,48 @@ sound_player:
       bus: effects
   fightforyourright_shot_1_done:
     ffyr_vocals1:
-      action: play
-      bus: effects
+      action: load
+      bus: voice
   fightforyourright_shot_2_done:
-    ffyr_vocals1:
-      action: stop
-      bus: effects
     ffyr_vocals2:
-      action: play
-      bus: effects
+      action: load
+      bus: voice
   fightforyourright_shot_3_done:
-    ffyr_vocals2:
-      action: stop
-      bus: effects
     ffyr_vocals3:
-      action: play
-      bus: effects
+      action: load
+      bus: voice
   fightforyourright_shot_4_done:
-    ffyr_vocals3:
-      action: stop
-      bus: effects
     ffyr_vocals4:
-      action: play
-      bus: effects
+      action: load
+      bus: voice
   fightforyourright_shot_5_done:
-    ffyr_vocals4:
-      action: stop
-      bus: effects
     ffyr_vocals5:
-      action: play
-      bus: effects
+      action: load
+      bus: voice
   fightforyourright_shot_6_done:
-    ffyr_vocals5:
-      action: stop
-      bus: effects
     ffyr_vocals6:
-      action: play
-      bus: effects
-  fightforyourright_final_shot_done:
-    ffyr_vocals6:
-      action: stop
-      bus: effects
+      action: load
+      bus: voice
+  scoop_hit{device.sequences.fightforyourright_final_shot.status=="enabled"}:
     fightforyourrightmusic:
       action: stop
       bus: music
-    ffyr_toparty:
-      action: play
-      bus: effects
+    ffyr_vocals6:
+      action: stop
+      bus: voice
+#    ffyr_toparty:
+#      action: load
+#      bus: voice
+  fightforyourright_final_shot_done:
+    fightforyourrightmusic:
+      action: stop
+      bus: music
+    ffyr_vocals6:
+      action: stop
+      bus: voice
+#    ffyr_toparty:
+#      action: load
+#      bus: voice
 
 
 show_player:
@@ -498,7 +641,7 @@ blinkenlight_player:
 
 
 random_event_player:
-  balldevice_bd_plunger_ejecting_ball:
+  balldevice_bd_plunger_ejecting_ball{current_player.fightforyourright_name_callouts<=3}:
     - adrock_sound
     - miked_sound
     - mca_sound
