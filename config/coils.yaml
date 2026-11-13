@@ -48,7 +48,7 @@ coils:
     label: "Lower Right Pop Bumper"
   c_three_bank:
     number: 0804-3
-    default_pulse_ms: 45
+    default_pulse_ms: 60
     default_pulse_power: 1.0
     pulse_events: reset_drop_bank
     label: "Drop Target Reset"
