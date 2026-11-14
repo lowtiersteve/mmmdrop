@@ -210,6 +210,9 @@ drop_target_banks:
     drop_targets: bottom, middle, top
     reset_coils: c_three_bank
     reset_on_complete: 1s
+    ignore_switch_ms: 500ms
+    max_reset_attempts: -1
+    reset_coil_max_wait_ms: 1s
 
 
 spinners:
