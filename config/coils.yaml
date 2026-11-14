@@ -49,7 +49,7 @@ coils:
   c_three_bank:
     number: 0804-3
     default_pulse_ms: 255
-    max_hold_duration: 500ms
+    max_hold_duration: 1s
     default_pulse_power: 1.0
     default_hold_power: 1.0
     pulse_events: reset_drop_bank
