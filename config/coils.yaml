@@ -50,6 +50,7 @@ coils:
     number: 0804-3
     default_pulse_ms: 255
     max_hold_duration: 1s
+    max_hold_power: 1.0
     default_pulse_power: 1.0
     default_hold_power: 1.0
     pulse_events: reset_drop_bank
